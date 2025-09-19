@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "home": "Urubaniro",
+    "about": "Twebwe",
+    "services": "Serivisi",
+    "training": "Kwiga",
+    "contact": "Tuvugane",
+    "admin": "Admin",
+    "login": "Winjira",
+    "logout": "Sohoka"
+  },
+  "hero": {
+    "title": "Ubuhanga bw'Imisoro ku Isi",
+    "subtitle": "Ikigo cy'ubuhanga mu by'ubucuruzi, gusuzuma, no gufasha cyifite ubwoba ku isi",
+    "description": "Dutanga ubuyobozi bw'ubuhanga mu by'umusoro n'ubucuruzi buhuye n'abantu bose, ibikoresho, n'ibikorwa. Tunatanga na serivisi zose zihariye mu by'ubucuruzi n'ubwoba.",
+    "cta": "Duvugane Uyu munsi"
+  },
+  "about": {
+    "title": "Twebwe Turi Bande",
+    "description": "EXCI-MAA ni ikigo cyashinzwe n'abahanga bazi neza mu by'ubucuruzi, gusuzuma, imisoro, iterambere ry'ubucuruzi, sisitemu y'amakuru, uburenganzira, n'ibindi byinshi. Dufite ubuhanga bw'isi mu Canada, Leta Zunze Ubumwe za Amerika, Ubufaransa, Ubwongereza, na Afurika, dutanga ubuhanga buhagije ku bantu bacu.",
+    "mission": "Intego yacu ni ugufasha abantu bacu bakora ku isoko ry'Afurika kugera ku buhanga bw'ubucuruzi. Dushimishijwe n'ubuhanga bwacu mu byiciro byinshi, byose bikoresha ubucuruzi n'ibindi, dutanga ibisubizo byihariye binyuze mu gufasha, gusuzuma, na serivisi z'ubuyobozi, bihuye n'ibikoresho byose n'ibyiciro.",
+    "learnMore": "Menya Byinshi"
+  },
+  "services": {
+    "title": "Serivisi Zacu",
+    "subtitle": "Ibisubizo by'ubuhanga bihuye n'ibyifuzo by'ubucuruzi bwawe",
+    "accounting": {
+      "title": "Ubuhanga mu Bucuruzi",
+      "description": "Ikigo cy'ubucuruzi EXCI-MAA cyizwi n'ubuhanga bwo. Gifasha ibikoresho byinshi mu bucuruzi bwabyo bwa buri munsi, harimo gusuzuma, gusuzuma imari, amakuru y'umwaka, gusuzuma ibyifuzo, gufasha mu gutanga amakuru, na gusuzuma."
+    },
+    "audit": {
+      "title": "Gusuzuma Uburenganzira, Imisoro na Kontira",
+      "description": "Dusuzuma ibyifuzo byose by'ubucuruzi, gusuzuma kontira, gusuzuma mu ndi, no gufata ibyago. Gusuzuma imari gushimisha amakuru y'ubucuruzi yizewe n'ihuje."
+    },
+    "advice": {
+      "title": "Ubuyobozi ku Banyamabanga",
+      "description": "Umunyamabanga agomba gufashwa no gufashwa buri munsi, kugira ngo akore neza imisoro ye, ubwoba, n'ubutunzi, kuva mu gutangira ikoresho cye kugeza mu gutanga."
+    },
+    "payroll": {
+      "title": "Gutanga Amafaranga n'Ubuyobozi bw'Ubwoba",
+      "description": "Dutanga ubufasha buhuye n'ibyifuzo byawe. Amafaranga, imisoro y'ubwoba, umusoro w'ubwoba, kwiga ubwoba, amasezerano y'akazi; dushimishijwe n'abahanga bacu, gufata ubwoba bwanyu byoroshye."
+    },
+    "consolidation": {
+      "title": "Gusuzuma",
+      "description": "Dutegura amakuru yacu yose mu nzira z'ubwoba z'isi n'ubwoba. Dukagufasha mu gutangira gusuzuma no gutanga abahanga b'ubwoba."
+    },
+    "risk": {
+      "title": "Ubuyobozi mu Byago",
+      "description": "Dukora ku byifuzo by'ibikoresho by'ubwoba, byinshi byanditswe, mu byiciro by'ubwoba n'ubwoba."
+    },
+    "it": {
+      "title": "Ubuyobozi mu Sisitemu y'Amakuru",
+      "description": "Nk'umunyamabanga w'ubucuruzi, ibikoresho byawe by'ubwoba ni by'ingenzi ku bucuruzi bwawe. Dukagufasha guhitamo ibikoresho bihuye n'ubucuruzi bwawe no gutegura ubwoba."
+    },
+    "reporting": {
+      "title": "Gutanga Amakuru y'Imari",
+      "description": "Dukora ku byifuzo by'ibikoresho by'ubwoba, byinshi byinshi, mu byiciro by'ubwoba n'ubwoba."
+    }
+  },
+  "training": {
+    "title": "Amahugurwa Yacu",
+    "subtitle": "Porogaramu z'iterambere ry'ubwoba ku bahanga mu bucuruzi n'ubwoba",
+    "locations": "Aho kwiga: Amahugurwa yacu akorwa mu mazu yacu ya Douala na Pointe-Noire, ku matsinda y'abantu barengeje icumi.",
+    "international": "Kwiga ku isi: Dufite ubushobozi bwo gutegura amahugurwa mu mahanga yose duhari.",
+    "flexibility": "Ubwoba bw'isi: Mu bwoba bwawe, tuzasuzuma ubushobozi bwo gutegura amahugurwa mu mahanga wifuza.",
+    "pricing": "Amahitamo y'ubucuruzi: Amafaranga ashobora guhinduka bitewe n'aho amahugurwa atangwa.",
+    "bookNow": "Kwiga Kwiga",
+    "categories": {
+      "accounting": "Ubucuruzi / Imisoro / Ubwoba",
+      "audit": "Gusuzuma ubwoba / Ubwoba bw'ubwoba",
+      "advice": "Ubuyobozi",
+      "various": "Ibyiciro byinshi"
+    }
+  },
+  "contact": {
+    "title": "Duvugane",
+    "subtitle": "Vugana n'abahanga bacu",
+    "form": {
+      "name": "Amazina Yose",
+      "email": "Aderesi ya Email",
+      "phone": "Numero ya Telefone",
+      "company": "Ubucuruzi",
+      "service": "Icyifuzo cya Serivisi",
+      "message": "Ubutumwa",
+      "submit": "Ohereza Ubutumwa"
+    },
+    "offices": "Amazu Yacu",
+    "newsletter": {
+      "title": "Winjira mu rutonde rwacu rw'amakuru",
+      "placeholder": "Injiza email",
+      "submit": "Kwiyandikisha"
+    }
+  },
+  "footer": {
+    "description": "Dutanga ubuyobozi bw'ubuhanga mu by'umusoro n'ubucuruzi buhuye n'abantu bose, ibikoresho, n'ibikorwa. Tunatanga na serivisi zose zihariye mu by'ubucuruzi n'ubwoba.",
+    "quickLinks": "Ibyiciro byihuse",
+    "contactInfo": "Amakuru y'Ubwoba",
+    "rights": "Uburenganzira bwose burabitswe."
+  }
+}

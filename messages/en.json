@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "training": "Training",
+    "contact": "Contact",
+    "admin": "Admin",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Global Tax Expertise",
+    "subtitle": "Professional accounting, auditing, and consulting firm with international presence",
+    "description": "We offer tax and accounting advice tailored to individuals, businesses, and corporations. We also offer a full range of specialized finance and business planning services.",
+    "cta": "Contact Us Today"
+  },
+  "about": {
+    "title": "Who We Are",
+    "description": "EXCI-MAA is a firm founded by recognized experts in auditing, accounting, taxation, business development, management information systems, law, and much more. With international experience in Canada, the United States, France, the United Kingdom, and Africa, we bring comprehensive expertise to our clients.",
+    "mission": "Our mission is to support our clients operating in the African market towards financial excellence. Thanks to our expertise in multiple sectors, both commercial and non-commercial, we offer you personalized solutions through consulting, statutory auditing, and advisory services, adapted to companies of all sizes and sectors.",
+    "learnMore": "Learn More"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Expert solutions tailored to your business needs",
+    "accounting": {
+      "title": "Accounting Expertise",
+      "description": "The EXCI-MAA accounting firm is renowned for its expertise. It assists numerous businesses with their daily administrative and accounting management, including bookkeeping, financial review, annual financial statements, budget forecasts, reporting assistance, and even domiciliation."
+    },
+    "audit": {
+      "title": "Legal, Tax and Contractual Audit",
+      "description": "We meet all your statutory audit, contractual audit, internal audit, and risk management needs. Financial auditing ensures reliable and relevant financial information."
+    },
+    "advice": {
+      "title": "Advice to Managers",
+      "description": "The manager needs to be supported and advised on a daily basis, to optimize his tax, social and asset situation, from the creation of his company to its transfer."
+    },
+    "payroll": {
+      "title": "Payroll and Social Council",
+      "description": "We offer support tailored to your needs. Salaries, social security contributions, apprenticeship tax, professional training, employment contracts; thanks to our dedicated experts, managing your HR is easier."
+    },
+    "consolidation": {
+      "title": "Consolidation",
+      "description": "We prepare your consolidated accounts in revised SYSCOHADA standards and in IFRS standards. We help you set up an initial consolidation and provide specialized consultants."
+    },
+    "risk": {
+      "title": "Risk Consulting",
+      "description": "We work at the request of private companies, often listed, in risk management and internal control areas."
+    },
+    "it": {
+      "title": "Information Systems Consulting",
+      "description": "As a business owner, your IT tools are essential to your business. We help you select the equipment best suited to your business and define maintenance plans."
+    },
+    "reporting": {
+      "title": "Financial Reporting",
+      "description": "We work at the request of private companies, generally large groups, in financial reporting and compliance areas."
+    }
+  },
+  "training": {
+    "title": "Our Training Courses",
+    "subtitle": "Professional development programs for accounting and business professionals",
+    "locations": "Training locations: Our sessions take place in our offices in Douala and Pointe-Noire, for groups of less than ten people.",
+    "international": "International training: We have the capacity to organize training in all the countries where we are present.",
+    "flexibility": "Geographic flexibility: At your convenience, we will study the possibility of organizing training in the destinations of your choice.",
+    "pricing": "Financial terms: Costs may vary depending on the geographical location where the training is provided.",
+    "bookNow": "Book Training",
+    "categories": {
+      "accounting": "Accounting / Taxation / Social",
+      "audit": "Statutory audit / Management control",
+      "advice": "Advice",
+      "various": "Various themes"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our experts",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company",
+      "service": "Service Interest",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "offices": "Our Offices",
+    "newsletter": {
+      "title": "Join our mailing list",
+      "placeholder": "Enter email",
+      "submit": "Subscribe"
+    }
+  },
+  "footer": {
+    "description": "We offer tax and accounting advice tailored to individuals, businesses, and corporations. We also offer a full range of specialized finance and business planning services.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "rights": "All rights reserved."
+  }
+}

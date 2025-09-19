@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "training": "Formation",
+    "contact": "Contact",
+    "admin": "Admin",
+    "login": "Connexion",
+    "logout": "Déconnexion"
+  },
+  "hero": {
+    "title": "Expertise Fiscale Mondiale",
+    "subtitle": "Cabinet d'expertise comptable, d'audit et de conseil avec présence internationale",
+    "description": "Nous offrons des conseils fiscaux et comptables adaptés aux particuliers, aux entreprises et aux sociétés. Nous proposons également une gamme complète de services spécialisés de finance et de planification d'entreprise.",
+    "cta": "Contactez-nous Aujourd'hui"
+  },
+  "about": {
+    "title": "Qui Nous Sommes",
+    "description": "EXCI-MAA est un cabinet fondé par des experts reconnus en audit, comptabilité, fiscalité, développement d'entreprise, systèmes d'information de gestion, droit, et bien plus encore. Avec une expérience internationale au Canada, aux États-Unis, en France, au Royaume-Uni et en Afrique, nous apportons une expertise complète à nos clients.",
+    "mission": "Notre mission est de soutenir nos clients opérant sur le marché africain vers l'excellence financière. Grâce à notre expertise dans plusieurs secteurs, tant commerciaux que non commerciaux, nous vous offrons des solutions personnalisées par le conseil, l'audit statutaire et les services consultatifs, adaptés aux entreprises de toutes tailles et secteurs.",
+    "learnMore": "En Savoir Plus"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions expertes adaptées aux besoins de votre entreprise",
+    "accounting": {
+      "title": "Expertise Comptable",
+      "description": "Le cabinet comptable EXCI-MAA est réputé pour son expertise. Il assiste de nombreuses entreprises dans leur gestion administrative et comptable quotidienne, y compris la tenue de livres, la révision financière, les états financiers annuels, les prévisions budgétaires, l'assistance au reporting, et même la domiciliation."
+    },
+    "audit": {
+      "title": "Audit Légal, Fiscal et Contractuel",
+      "description": "Nous répondons à tous vos besoins d'audit statutaire, d'audit contractuel, d'audit interne et de gestion des risques. L'audit financier garantit des informations financières fiables et pertinentes."
+    },
+    "advice": {
+      "title": "Conseil aux Dirigeants",
+      "description": "Le dirigeant a besoin d'être soutenu et conseillé au quotidien, pour optimiser sa situation fiscale, sociale et patrimoniale, de la création de son entreprise à sa transmission."
+    },
+    "payroll": {
+      "title": "Paie et Conseil Social",
+      "description": "Nous vous offrons un accompagnement en fonction de votre besoin. Salaires, charges sociales, taxe d'apprentissage, formation professionnelle, contrats de travail; grâce à nos experts dédiés, la gestion de vos RH est plus aisée."
+    },
+    "consolidation": {
+      "title": "Consolidation",
+      "description": "Nous préparons vos comptes consolidés selon les normes SYSCOHADA révisées et les normes IFRS. Nous vous aidons à mettre en place une consolidation initiale et fournissons des consultants spécialisés."
+    },
+    "risk": {
+      "title": "Conseil en Risques",
+      "description": "Nous travaillons à la demande d'entreprises privées, souvent cotées, dans les domaines de la gestion des risques et du contrôle interne."
+    },
+    "it": {
+      "title": "Conseil en Systèmes d'Information",
+      "description": "En tant que propriétaire d'entreprise, vos outils informatiques sont essentiels à votre activité. Nous vous aidons à sélectionner l'équipement le mieux adapté à votre entreprise et à définir des plans de maintenance."
+    },
+    "reporting": {
+      "title": "Reporting Financier",
+      "description": "Nous travaillons à la demande d'entreprises privées, généralement de grands groupes, dans les domaines du reporting financier et de la conformité."
+    }
+  },
+  "training": {
+    "title": "Nos Formations",
+    "subtitle": "Programmes de développement professionnel pour les professionnels de la comptabilité et des affaires",
+    "locations": "Lieux de formation : Nos sessions se déroulent dans nos bureaux de Douala et Pointe-Noire, pour des groupes de moins de dix personnes.",
+    "international": "Formation internationale : Nous avons la capacité d'organiser des formations dans tous les pays où nous sommes présents.",
+    "flexibility": "Flexibilité géographique : À votre convenance, nous étudierons la possibilité d'organiser des formations dans les destinations de votre choix.",
+    "pricing": "Conditions financières : Les coûts peuvent varier selon la localisation géographique où la formation est dispensée.",
+    "bookNow": "Réserver Formation",
+    "categories": {
+      "accounting": "Comptabilité / Fiscalité / Social",
+      "audit": "Audit statutaire / Contrôle de gestion",
+      "advice": "Conseil",
+      "various": "Thèmes divers"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Entrez en contact avec nos experts",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "company": "Entreprise",
+      "service": "Intérêt de Service",
+      "message": "Message",
+      "submit": "Envoyer le Message"
+    },
+    "offices": "Nos Bureaux",
+    "newsletter": {
+      "title": "Rejoignez notre liste de diffusion",
+      "placeholder": "Entrez l'email",
+      "submit": "S'abonner"
+    }
+  },
+  "footer": {
+    "description": "Nous offrons des conseils fiscaux et comptables adaptés aux particuliers, aux entreprises et aux sociétés. Nous proposons également une gamme complète de services spécialisés de finance et de planification d'entreprise.",
+    "quickLinks": "Liens Rapides",
+    "contactInfo": "Informations de Contact",
+    "rights": "Tous droits réservés."
+  }
+}
