@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Enyumba",
+    "about": "Ku bireetera",
+    "services": "Eby'okukola",
+    "globalOffices": "Amabiro ag'ensi yonna",
+    "insights": "Okutegeera",
+    "careers": "Emirimu",
+    "contact": "Okukwatagana"
+  },
+  "auth": {
+    "signIn": "Okwenyigira",
+    "signOut": "Okuggyako",
+    "admin": "Omukulembeze",
+    "adminPanel": "Ekibaho ky'okukulembeza"
+  },
+  "footer": {
+    "description": "Ekibuga ky'eby'okukola, okukakasa, n'okukulembeza ekirina obukulembeze bw'ensi yonna. Tugabira obukulembeze obw'omugaso okusobola okukola ebintu by'omugaso.",
+    "quickLinks": "Enkola z'omugaso",
+    "ourServices": "Eby'okukola byaffe",
+    "contactInfo": "Amakulu g'okukwatagana",
+    "douala": "Douala, Cameroon",
+    "globalPresence": "Obukulembeze bw'ensi yonna",
+    "allRightsReserved": "Obukulembeze bwonna bukwatibwa.",
+    "privacyPolicy": "Enkola y'okukulembeza",
+    "termsOfService": "Enkola z'eby'okukola",
+    "cookiePolicy": "Enkola y'amakulu"
+  },
+  "services": {
+    "accounting": "Obukulembeze bw'okukola",
+    "legal": "Okukakasa n'okukulembeza",
+    "managerial": "Amagezi g'okukulembeza",
+    "payroll": "Okukola n'okukulembeza kw'abantu",
+    "consolidation": "Okukwatagana",
+    "risk": "Obukulembeze bw'okukola",
+    "it": "Obukulembeze bw'eby'okukola",
+    "financial": "Amakulu g'eby'okukola"
+  }
+}
+
+

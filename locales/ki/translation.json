@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Ubutangazamakuru",
+    "about": "Ibyerekeye",
+    "services": "Serivisi",
+    "globalOffices": "Amabiro y'isi",
+    "insights": "Ubushakashatsi",
+    "careers": "Akazi",
+    "contact": "Kwandikira"
+  },
+  "auth": {
+    "signIn": "Kwiyandikisha",
+    "signOut": "Gusohoka",
+    "admin": "Umuyobozi",
+    "adminPanel": "Ikibaho cy'ubuyobozi"
+  },
+  "footer": {
+    "description": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite ubwoba bw'isi. Dutanga ubuhanga buhagije gufasha ibyo ukeneye.",
+    "quickLinks": "Amahuza yihuse",
+    "ourServices": "Serivisi zacu",
+    "contactInfo": "Amakuru y'ubwoba",
+    "douala": "Douala, Kameruni",
+    "globalPresence": "Ubwoba bw'isi",
+    "allRightsReserved": "Ubutaka bose burabagirwa.",
+    "privacyPolicy": "Politiki y'ubwoba",
+    "termsOfService": "Amabwiriza y'ubucuruzi",
+    "cookiePolicy": "Politiki y'amakuru"
+  },
+  "services": {
+    "accounting": "Ubuhanga bwo kubara",
+    "legal": "Gukuraho n'impamvu z'umutekano",
+    "managerial": "Inama z'ubuyobozi",
+    "payroll": "Kwishyura n'ubuyobozi bw'abantu",
+    "consolidation": "Guhuza",
+    "risk": "Ubunyangamugayo bw'ingorane",
+    "it": "Ubunyangamugayo bw'ikoranabuhanga",
+    "financial": "Raporo z'ubucuruzi"
+  }
+}
+
+

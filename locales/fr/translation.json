@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "globalOffices": "Bureaux Mondiaux",
+    "insights": "Perspectives",
+    "careers": "Carrières",
+    "contact": "Contact"
+  },
+  "auth": {
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter",
+    "admin": "Admin",
+    "adminPanel": "Panneau d'administration"
+  },
+  "footer": {
+    "description": "Cabinet professionnel de comptabilité, d'audit et de conseil avec une présence internationale. Nous offrons une expertise complète pour soutenir vos besoins commerciaux.",
+    "quickLinks": "Liens rapides",
+    "ourServices": "Nos Services",
+    "contactInfo": "Informations de contact",
+    "douala": "Douala, Cameroun",
+    "globalPresence": "Présence mondiale",
+    "allRightsReserved": "Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookiePolicy": "Politique des cookies"
+  },
+  "services": {
+    "accounting": "Expertise Comptable",
+    "legal": "Audit Légal et Fiscal",
+    "managerial": "Conseil en Gestion",
+    "payroll": "Paie et Conseil Social",
+    "consolidation": "Consolidation",
+    "risk": "Conseil en Risque",
+    "it": "Conseil IT",
+    "financial": "Rapports Financiers"
+  }
+}
+
+

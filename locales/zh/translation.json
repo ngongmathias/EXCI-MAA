@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "globalOffices": "全球办事处",
+    "insights": "洞察",
+    "careers": "职业",
+    "contact": "联系我们"
+  },
+  "auth": {
+    "signIn": "登录",
+    "signOut": "退出",
+    "admin": "管理员",
+    "adminPanel": "管理面板"
+  },
+  "footer": {
+    "description": "具有国际影响力的专业会计、审计和咨询公司。我们提供全面的专业知识来支持您的业务需求。",
+    "quickLinks": "快速链接",
+    "ourServices": "我们的服务",
+    "contactInfo": "联系信息",
+    "douala": "杜阿拉，喀麦隆",
+    "globalPresence": "全球存在",
+    "allRightsReserved": "版权所有。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "cookiePolicy": "Cookie政策"
+  },
+  "services": {
+    "accounting": "会计专业知识",
+    "legal": "法律和税务审计",
+    "managerial": "管理建议",
+    "payroll": "工资和社会委员会",
+    "consolidation": "合并",
+    "risk": "风险咨询",
+    "it": "IT咨询",
+    "financial": "财务报告"
+  }
+}
+
+

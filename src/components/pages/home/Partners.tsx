@@ -1,0 +1,152 @@
+import { FC } from 'react';
+import { Award, Briefcase, User } from 'lucide-react';
+
+const Partners: FC = () => {
+  const founders = [
+    {
+      name: 'Pierre KEMENI',
+      title: 'MBA, CPA, DEC',
+      description: 'Chartered accountant and auditor with over 27 years of experience in international accounting and auditing.',
+      image: '/api/placeholder/200/200',
+      specialties: ['International Accounting', 'Auditing', 'Tax Consulting']
+    },
+    {
+      name: 'Patrick NGATCHA',
+      title: 'DEC, DSCG, Master CCA, MSTCF',
+      description: 'Chartered accountant and auditor with over 13 years of experience in business development and financial consulting.',
+      image: '/api/placeholder/200/200',
+      specialties: ['Business Development', 'Financial Consulting', 'Risk Management']
+    }
+  ];
+
+  const partners = [
+    {name: 'Partner 1', logo: '/api/placeholder/150/80'},
+    {name: 'Partner 2', logo: '/api/placeholder/150/80'},
+    {name: 'Partner 3', logo: '/api/placeholder/150/80'},
+    {name: 'Partner 4', logo: '/api/placeholder/150/80'},
+    {name: 'Partner 5', logo: '/api/placeholder/150/80'},
+    {name: 'Partner 6', logo: '/api/placeholder/150/80'},
+  ];
+
+  return (
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Founders Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Our Founders
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Meet the experienced professionals who founded EXCI-MAA and continue to lead our firm with expertise and dedication.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          {founders.map((founder, index) => (
+            <div key={index} className="card">
+              <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                <div className="w-32 h-32 bg-blue-100 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                  <Award className="h-16 w-16 text-blue-600" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    {founder.name}
+                  </h3>
+                  <p className="text-blue-600 font-semibold mb-3">
+                    {founder.title}
+                  </p>
+                  <p className="text-gray-600 mb-4">
+                    {founder.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    {founder.specialties.map((specialty, specIndex) => (
+                      <span
+                        key={specIndex}
+                        className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full"
+                      >
+                        {specialty}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Partners Section */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Our Partners
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            We are proud to work with leading organizations and institutions across the globe.
+          </p>
+        </div>
+
+        {/* Partners Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
+          {partners.map((partner, index) => (
+            <div key={index} className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
+                <Briefcase className="h-6 w-6 text-gray-400" />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Trust Indicators */}
+        <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              They Trust Us
+            </h3>
+            <p className="text-gray-600">
+              Our clients and partners rely on our expertise and commitment to excellence.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-blue-600" />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                Certified Professionals
+              </h4>
+              <p className="text-gray-600 text-sm">
+                All our team members hold relevant professional certifications and maintain ongoing education.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <User className="h-6 w-6 text-blue-600" />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                Continuous Learning
+              </h4>
+              <p className="text-gray-600 text-sm">
+                We invest in ongoing training and development to stay current with industry best practices.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Briefcase className="h-8 w-8 text-blue-600" />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                Proven Track Record
+              </h4>
+              <p className="text-gray-600 text-sm">
+                Decades of successful projects and satisfied clients across multiple industries and countries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Partners;

@@ -1,14 +1,42 @@
-import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Supported locales
-const locales = ['en', 'fr', 'rw', 'ar', 'de', 'sw'];
+// Import translation files
+import en from '../locales/en/translation.json' assert { type: 'json' };
+import fr from '../locales/fr/translation.json' assert { type: 'json' };
+import ar from '../locales/ar/translation.json' assert { type: 'json' };
+import rw from '../locales/rw/translation.json' assert { type: 'json' };
+import ki from '../locales/ki/translation.json' assert { type: 'json' };
+import zh from '../locales/zh/translation.json' assert { type: 'json' };
+import lg from '../locales/lg/translation.json' assert { type: 'json' };
 
-export default getRequestConfig(async ({locale}) => {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+const resources = {
+  en: { translation: en },
+  fr: { translation: fr },
+  ar: { translation: ar },
+  rw: { translation: rw },
+  ki: { translation: ki },
+  zh: { translation: zh },
+  lg: { translation: lg },
+};
 
-  return {
-    messages: (await import(`../messages/${locale}.json`)).default
-  };
-});
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'en',
+    debug: process.env.NODE_ENV === 'development',
+    
+    interpolation: {
+      escapeValue: false,
+    },
+    
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag'],
+      caches: ['localStorage'],
+    },
+  });
+
+export default i18n;

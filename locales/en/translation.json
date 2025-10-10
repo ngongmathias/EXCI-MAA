@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "globalOffices": "Global Offices",
+    "insights": "Insights",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "admin": "Admin",
+    "adminPanel": "Admin Panel"
+  },
+  "footer": {
+    "description": "Professional accounting, auditing, and consulting firm with international presence. We offer comprehensive expertise to support your business needs.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactInfo": "Contact Info",
+    "douala": "Douala, Cameroon",
+    "globalPresence": "Global Presence",
+    "allRightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "services": {
+    "accounting": "Accounting Expertise",
+    "legal": "Legal & Tax Audit",
+    "managerial": "Managerial Advice",
+    "payroll": "Payroll & Social Council",
+    "consolidation": "Consolidation",
+    "risk": "Risk Consulting",
+    "it": "IT Consulting",
+    "financial": "Financial Reporting"
+  },
+  "hero": {
+    "title": "Professional Accounting &",
+    "titleHighlight": "Consulting Excellence",
+    "subtitle": "Comprehensive accounting, auditing, and consulting services with international presence. We deliver expert solutions to support your business growth.",
+    "feature1": "International expertise with local understanding",
+    "feature2": "Comprehensive audit and consulting services",
+    "feature3": "Dedicated support for your business success",
+    "cta1": "Explore Services",
+    "cta2": "Get Consultation"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn more about our company and values",
+    "feature1Title": "Professional Excellence",
+    "feature1Desc": "We maintain the highest standards in all our services",
+    "feature2Title": "Global Reach",
+    "feature2Desc": "Serving clients across multiple countries and regions",
+    "feature3Title": "Expert Team",
+    "feature3Desc": "Our experienced professionals deliver exceptional results",
+    "heroTitle": "About EXCI-MAA",
+    "heroSubtitle": "Professional accounting, auditing, and consulting firm with international presence",
+    "historyTitle": "Our History",
+    "historySubtitle": "Building trust through excellence since our founding",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The principles that guide everything we do",
+    "teamTitle": "Our Team",
+    "teamSubtitle": "Meet the professionals behind our success",
+    "testimonialsTitle": "Client Testimonials",
+    "testimonialsSubtitle": "What our clients say about us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions for your business needs",
+    "heroTitle": "Professional Services",
+    "heroSubtitle": "Expert solutions tailored to your business requirements",
+    "detailedTitle": "Service Details",
+    "detailedSubtitle": "In-depth information about our offerings",
+    "processTitle": "Our Process",
+    "processSubtitle": "How we deliver exceptional results",
+    "faqTitle": "Frequently Asked Questions",
+    "faqSubtitle": "Common questions about our services",
+    "pricingTitle": "Pricing",
+    "pricingSubtitle": "Transparent pricing for all our services",
+    "learnMore": "Learn More",
+    "viewAll": "View All Services",
+    "service1Title": "Accounting Expertise",
+    "service1Desc": "Comprehensive accounting services for businesses",
+    "service2Title": "Legal & Tax Audit",
+    "service2Desc": "Professional auditing and compliance services",
+    "service3Title": "Managerial Advice",
+    "service3Desc": "Strategic consulting for business growth",
+    "service4Title": "Payroll & Social Council",
+    "service4Desc": "Complete payroll and HR management",
+    "service5Title": "Consolidation",
+    "service5Desc": "Financial consolidation for multi-entity organizations",
+    "service6Title": "Risk Consulting",
+    "service6Desc": "Comprehensive risk assessment and management"
+  },
+  "globalOffices": {
+    "heroTitle": "Global Offices",
+    "heroSubtitle": "Our international presence and local expertise",
+    "mapTitle": "Interactive Map",
+    "mapSubtitle": "Explore our offices around the world",
+    "listTitle": "Office Locations",
+    "listSubtitle": "Find the office nearest to you"
+  },
+  "insights": {
+    "heroTitle": "Insights & News",
+    "heroSubtitle": "Stay updated with industry insights and company news",
+    "eventsTitle": "Events",
+    "eventsSubtitle": "Upcoming and past events",
+    "blogTitle": "Blog",
+    "blogSubtitle": "Latest articles and insights",
+    "promotionsTitle": "Promotions",
+    "promotionsSubtitle": "Special offers and announcements"
+  },
+  "careers": {
+    "heroTitle": "Join Our Team",
+    "heroSubtitle": "Build your career with EXCI-MAA",
+    "jobsTitle": "Open Positions",
+    "jobsSubtitle": "Current job opportunities",
+    "chartTitle": "Organizational Chart",
+    "chartSubtitle": "Our company structure and leadership",
+    "benefitsTitle": "Benefits & Perks",
+    "benefitsSubtitle": "What we offer our employees"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "heroTitle": "Get In Touch",
+    "heroSubtitle": "We're here to help with your business needs",
+    "formTitle": "Send us a Message",
+    "formSubtitle": "Fill out the form below and we'll get back to you",
+    "mapTitle": "Find Us",
+    "mapSubtitle": "Visit our offices around the world",
+    "infoTitle": "Contact Information",
+    "infoSubtitle": "Multiple ways to reach us",
+    "cta": "Contact Us Now"
+  },
+  "training": {
+    "title": "Training Programs",
+    "subtitle": "Professional development and certification programs"
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Trusted organizations we work with"
+  },
+  "offices": {
+    "title": "Global Presence",
+    "subtitle": "Serving clients worldwide"
+  },
+  "admin": {
+    "dashboardTitle": "Admin Dashboard",
+    "dashboardSubtitle": "Manage your content and analytics",
+    "contentTitle": "Content Management",
+    "contentSubtitle": "Manage services, events, and blog posts",
+    "analyticsTitle": "Analytics",
+    "analyticsSubtitle": "View performance metrics and insights"
+  }
+}
