@@ -96,7 +96,7 @@ const ContactCard = ({ method, index }: { method: typeof contactMethods[0], inde
         y: -5,
         boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)'
       }}
-      className={`group overflow-hidden rounded-2xl bg-white/95 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 border border-white/20 hover:border-exci-blue-200/50`}
+      className={`group overflow-hidden rounded-2xl bg-white/95 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200/50 hover:border-blue-200/50`}
     >
       {method.href ? (
         <a 
@@ -139,19 +139,12 @@ export default function ContactHero() {
   );
   
   return (
-    <div className="relative bg-gradient-to-br from-exci-blue-900 via-exci-blue-800 to-exci-blue-900 overflow-hidden">
+    <div className="relative bg-gradient-to-br from-blue-50 to-white overflow-hidden">
       {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden -z-10">
-        {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-exci-blue-900/90 via-exci-blue-800/90 to-exci-blue-900/90"></div>
-        
-        {/* Animated blobs */}
-        <Blob className="w-64 h-64 bg-exci-blue-500 -top-32 -left-32" delay={0} />
-        <Blob className="w-96 h-96 bg-exci-yellow-500 -bottom-48 -right-48" delay={2} />
-        <Blob className="w-80 h-80 bg-exci-blue-400 top-1/2 left-1/3" delay={4} />
-        
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-grid-white/[0.03] bg-[length:40px_40px]"></div>
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-20 right-20 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32">
@@ -168,7 +161,7 @@ export default function ContactHero() {
             } : {}}
           >
             <motion.p 
-              className="text-base font-semibold text-exci-yellow-400 mb-4"
+              className="text-base font-semibold text-blue-600 mb-4"
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { 
                 opacity: 1, 
@@ -179,7 +172,7 @@ export default function ContactHero() {
               Get in Touch
             </motion.p>
             <motion.h1 
-              className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-white to-exci-blue-100"
+              className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { 
                 opacity: 1, 
@@ -188,10 +181,10 @@ export default function ContactHero() {
               } : {}}
             >
               Let's Talk About Your
-              <span className="block mt-2 text-exci-yellow-400">Business Needs</span>
+              <span className="block mt-2 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Business Needs</span>
             </motion.h1>
             <motion.p 
-              className="mt-6 text-lg md:text-xl text-exci-blue-100 max-w-3xl mx-auto leading-relaxed"
+              className="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { 
                 opacity: 1, 
@@ -229,15 +222,15 @@ export default function ContactHero() {
             }
           } : {}}
         >
-          <p className="text-lg text-exci-blue-100 mb-8">
+          <p className="text-lg text-gray-600 mb-8">
             Or fill out our contact form and we'll get back to you within 24 hours.
           </p>
           <motion.a
             href="#contact-form"
-            className="group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-exci-yellow-500 via-exci-yellow-500 to-exci-yellow-600 px-8 py-4 text-base font-extrabold text-white shadow-lg hover:shadow-xl hover:shadow-exci-yellow-500/40 transition-all duration-300 hover:-translate-y-0.5 relative overflow-hidden border-2 border-exci-yellow-500/30"
+            className="group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 px-8 py-4 text-base font-extrabold text-white shadow-lg hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5 relative overflow-hidden border-2 border-blue-500/30"
             whileHover={{ 
               scale: 1.03, 
-              boxShadow: '0 10px 25px -5px rgba(245, 158, 11, 0.5)',
+              boxShadow: '0 10px 25px -5px rgba(59, 130, 246, 0.5)',
               y: -2
             }}
             whileTap={{ scale: 0.98 }}

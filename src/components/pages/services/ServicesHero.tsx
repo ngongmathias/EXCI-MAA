@@ -21,24 +21,18 @@ const ServicesHero: FC = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-blue-900 to-blue-800 pt-24 pb-32 sm:pt-32 sm:pb-40">
+    <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-white pt-24 pb-32 sm:pt-32 sm:pb-40">
       {/* Background elements */}
-      <div className="absolute inset-0 overflow-hidden -z-10">
-        {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-blue-800/90"></div>
-        
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:40px_40px] opacity-20"></div>
-        
-        {/* Fixed gradient accents */}
-        <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-blue-600/5 rounded-full blur-3xl"></div>
-        <div className="absolute -right-1/4 -bottom-1/4 w-1/2 h-1/2 bg-yellow-500/5 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-20 right-20 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-4xl text-center">
           <motion.h1 
-            className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -47,7 +41,7 @@ const ServicesHero: FC = () => {
           </motion.h1>
           
           <motion.p 
-            className="mt-6 text-xl leading-8 text-blue-100 mb-20"
+            className="mt-6 text-xl leading-8 text-gray-600 mb-20"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -68,10 +62,10 @@ const ServicesHero: FC = () => {
             repeat: Infinity,
             repeatType: 'loop',
           }}
-          className="w-8 h-14 rounded-full border-2 border-yellow-400 flex justify-center p-2"
+          className="w-8 h-14 rounded-full border-2 border-blue-400 flex justify-center p-2"
         >
           <motion.div
-            className="w-1 h-3 bg-yellow-400 rounded-full"
+            className="w-1 h-3 bg-blue-400 rounded-full"
             animate={{
               y: [0, 10],
               opacity: [0.2, 1, 0.2],

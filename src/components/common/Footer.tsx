@@ -13,10 +13,10 @@ const Footer: FC = () => {
   ];
 
   const socialLinks = [
-    {icon: Facebook, href: '#', label: 'Facebook'},
-    {icon: Twitter, href: '#', label: 'Twitter'},
-    {icon: Linkedin, href: '#', label: 'LinkedIn'},
-    {icon: Instagram, href: '#', label: 'Instagram'},
+    {icon: Facebook, href: 'https://web.facebook.com/ExciMaaOfficial/?_rdc=1&_rdr', label: 'Facebook'},
+    {icon: Twitter, href: 'https://twitter.com/ExciMaa/', label: 'Twitter'},
+    {icon: Linkedin, href: 'https://www.linkedin.com/company/exci-maa-cameroun/', label: 'LinkedIn'},
+    {icon: Instagram, href: 'https://www.instagram.com/excimaa/', label: 'Instagram'},
   ];
 
   return (
