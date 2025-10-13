@@ -32,6 +32,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     if (savedLanguage && ['en', 'fr', 'ar', 'rw', 'ki', 'zh', 'lg'].includes(savedLanguage)) {
       setCurrentLanguage(savedLanguage);
       i18n.changeLanguage(savedLanguage);
+      document.documentElement.lang = savedLanguage;
+      document.documentElement.dir = savedLanguage === 'ar' ? 'rtl' : 'ltr';
     }
   }, []);
 
@@ -39,6 +41,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     setCurrentLanguage(language);
     i18n.changeLanguage(language);
     localStorage.setItem('language', language);
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
   };
 
   const t = (key: string): string => {

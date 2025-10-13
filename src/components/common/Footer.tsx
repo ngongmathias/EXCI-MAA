@@ -1,15 +1,17 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Footer: FC = () => {
+  const { t } = useLanguage();
   const quickLinks = [
-    {name: 'About', href: '/about'},
-    {name: 'Services', href: '/services'},
-    {name: 'Contact', href: '/contact'},
+    {name: t('nav.about'), href: '/about'},
+    {name: t('nav.services'), href: '/services'},
+    {name: t('nav.contact'), href: '/contact'},
     {name: 'Blog', href: '/blog'},
-    {name: 'Privacy', href: '/privacy'},
-    {name: 'Terms', href: '/terms'},
+    {name: t('footer.privacyPolicy'), href: '/privacy'},
+    {name: t('footer.termsOfService'), href: '/terms'},
   ];
 
   const socialLinks = [
@@ -32,7 +34,7 @@ const Footer: FC = () => {
               <span className="ml-2 text-xl font-bold">EXCIMAA</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Professional accounting and business consulting services to help your business grow and succeed in today's competitive market.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -51,7 +53,7 @@ const Footer: FC = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-6">
-              Quick Links
+              {t('footer.quickLinks')}
             </h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
@@ -70,7 +72,7 @@ const Footer: FC = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-6">
-              Contact Us
+              {t('contact.title')}
             </h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
@@ -104,11 +106,11 @@ const Footer: FC = () => {
           {/* Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-6">
-              Newsletter
+              {t('partners.title')}
             </h3>
-            <p className="text-gray-300 mb-6">
-              Subscribe to our newsletter for the latest updates and insights.
-            </p>
+              <p className="text-gray-300 mb-6">
+                {t('partners.subtitle')}
+              </p>
             <form className="space-y-4">
               <input
                 type="email"
@@ -119,7 +121,7 @@ const Footer: FC = () => {
                 type="submit"
                 className="w-full bg-blue-600 text-white hover:bg-blue-700 font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
               >
-                Subscribe
+                {t('hero.cta2')}
               </button>
             </form>
           </div>
@@ -129,7 +131,7 @@ const Footer: FC = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="text-center">
             <p className="text-gray-400 text-sm">
-              © 2025 EXCIMAA. All rights reserved.
+              © 2025 EXCIMAA. {t('footer.allRightsReserved')}
             </p>
           </div>
         </div>

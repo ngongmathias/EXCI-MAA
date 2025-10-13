@@ -34,7 +34,16 @@
     "consolidation": "Okukwatagana",
     "risk": "Obukulembeze bw'okukola",
     "it": "Obukulembeze bw'eby'okukola",
-    "financial": "Amakulu g'eby'okukola"
+    "financial": "Amakulu g'eby'okukola",
+    "title": "Eby'okukola byaffe",
+    "subtitle": "Ebisubizo ebikwatagana n'ebyo weetaaga",
+    "learnMore": "Manya ebisingawo",
+    "viewAll": "Laba eby'okukola byonna",
+    "categories": {
+      "all": "Eby'okukola byonna",
+      "finance": "Eby'obuvunanyizibwa",
+      "business": "Eby'obusuubuzi"
+    }
   }
 }
 

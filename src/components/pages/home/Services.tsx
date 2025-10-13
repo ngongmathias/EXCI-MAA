@@ -5,24 +5,13 @@ import {
   ArrowRight, 
   Calculator, 
   FileText, 
-  Users, 
-  CreditCard, 
   BarChart3, 
   Shield, 
-  Monitor, 
-  TrendingUp, 
   Briefcase,
   FileCheck,
-  PieChart,
-  UserPlus,
-  Search,
-  ClipboardCheck,
-  Settings,
-  Globe,
-  Target,
-  Zap,
-  Lock
 } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
+import type { MouseEvent } from 'react';
 
 type Service = {
   id: string;
@@ -36,14 +25,17 @@ type Service = {
 };
 
 const Services: FC = () => {
+  // Create typed aliases for motion elements to avoid TS prop inference issues in this file
+  const MotionDiv = motion.div as unknown as React.FC<React.HTMLAttributes<HTMLDivElement> & any>;
   const [activeTab, setActiveTab] = useState('all');
+  const { t } = useLanguage();
   const [selectedService, setSelectedService] = useState<Service | null>(null);
   
   const services: Service[] = [
     {
       id: 'accounting',
       icon: Calculator,
-      title: 'Accounting & Bookkeeping',
+      title: 'services.accounting',
       shortDesc: 'Comprehensive financial record keeping',
       description: 'Professional accounting services including bookkeeping, financial statements, and tax preparation to keep your business financially healthy.',
       color: 'bg-blue-500',
@@ -59,7 +51,7 @@ const Services: FC = () => {
     {
       id: 'audit',
       icon: FileCheck,
-      title: 'Audit & Assurance',
+      title: 'services.legal',
       shortDesc: 'Independent financial verification',
       description: 'Our audit services provide independent verification of your financial statements, ensuring accuracy and compliance with regulations.',
       color: 'bg-green-500',
@@ -75,7 +67,7 @@ const Services: FC = () => {
     {
       id: 'tax',
       icon: FileText,
-      title: 'Tax Consulting',
+      title: 'services.legal',
       shortDesc: 'Strategic tax planning',
       description: 'Expert tax planning and compliance services to minimize your tax liability while ensuring full compliance with tax laws.',
       color: 'bg-purple-500',
@@ -91,7 +83,7 @@ const Services: FC = () => {
     {
       id: 'advisory',
       icon: Briefcase,
-      title: 'Business Advisory',
+      title: 'services.managerial',
       shortDesc: 'Strategic business guidance',
       description: 'Strategic advice to help your business grow, improve operations, and increase profitability.',
       color: 'bg-yellow-500',
@@ -107,7 +99,7 @@ const Services: FC = () => {
     {
       id: 'risk',
       icon: Shield,
-      title: 'Risk Management',
+      title: 'services.risk',
       shortDesc: 'Identify and mitigate risks',
       description: 'Comprehensive risk assessment and management services to protect your business from potential threats.',
       color: 'bg-red-500',
@@ -123,7 +115,7 @@ const Services: FC = () => {
     {
       id: 'reporting',
       icon: BarChart3,
-      title: 'Financial Reporting',
+      title: 'services.financial',
       shortDesc: 'Accurate financial insights',
       description: 'Professional financial reporting services to help you make informed business decisions.',
       color: 'bg-indigo-500',
@@ -147,9 +139,9 @@ const Services: FC = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('services.title')}</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive financial and business solutions tailored to your needs
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -163,7 +155,7 @@ const Services: FC = () => {
                 : 'bg-white text-gray-700 hover:bg-gray-100'
             }`}
           >
-            All Services
+            {t('services.categories.all')}
           </button>
           <button
             onClick={() => setActiveTab('finance')}
@@ -173,7 +165,7 @@ const Services: FC = () => {
                 : 'bg-white text-gray-700 hover:bg-gray-100'
             }`}
           >
-            Financial Services
+            {t('services.categories.finance')}
           </button>
           <button
             onClick={() => setActiveTab('business')}
@@ -183,14 +175,14 @@ const Services: FC = () => {
                 : 'bg-white text-gray-700 hover:bg-gray-100'
             }`}
           >
-            Business Services
+            {t('services.categories.business')}
           </button>
         </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredServices.map((service) => (
-            <motion.div
+            <MotionDiv
               key={service.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -203,7 +195,7 @@ const Services: FC = () => {
                 <div className={`w-12 h-12 ${service.color} bg-opacity-10 rounded-lg flex items-center justify-center mb-4`}>
                   <service.icon className={`h-6 w-6 ${service.color.replace('bg-', 'text-')}`} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{t(service.title)}</h3>
                 <p className="text-gray-600 mb-4">{service.shortDesc}</p>
                 <ul className="space-y-2 mb-6">
                   {service.features.slice(0, 3).map((feature, i) => (
@@ -219,11 +211,11 @@ const Services: FC = () => {
                   onClick={() => setSelectedService(service)}
                   className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors"
                 >
-                  Learn more
+                  {t('services.learnMore')}
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </button>
               </div>
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
       </div>
@@ -231,19 +223,19 @@ const Services: FC = () => {
       {/* Service Modal */}
       <AnimatePresence>
         {selectedService && (
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
             onClick={() => setSelectedService(null)}
           >
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: MouseEvent<HTMLDivElement>) => e.stopPropagation()}
             >
               <div className={`h-2 ${selectedService.color}`}></div>
               <div className="p-6">
@@ -296,8 +288,8 @@ const Services: FC = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </MotionDiv>
+          </MotionDiv>
         )}
       </AnimatePresence>
     </section>

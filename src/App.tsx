@@ -12,6 +12,8 @@ import InsightsPage from './pages/InsightsPage';
 import CareersPage from './pages/CareersPage';
 import ContactPage from './pages/ContactPage';
 import AdminPage from './pages/AdminPage';
+import SignInPage from './pages/SignInPage';
+import SignUpPage from './pages/SignUpPage';
 import './App.css';
 
 const queryClient = new QueryClient({
@@ -34,6 +36,8 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Layout />}>
                     <Route index element={<HomePage />} />
+                    <Route path="sign-in" element={<SignInPage />} />
+                    <Route path="sign-up" element={<SignUpPage />} />
                     <Route path="about" element={<AboutPage />} />
                     <Route path="services" element={<ServicesPage />} />
                     <Route path="global-offices" element={<GlobalOfficesPage />} />

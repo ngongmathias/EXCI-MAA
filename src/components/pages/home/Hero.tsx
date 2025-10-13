@@ -1,38 +1,40 @@
 import { FC, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, BarChart2, Globe, Shield, Users } from 'lucide-react';
+import { ArrowRight, BarChart2, Globe, Shield, Users } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
-const features = [
+const features = (t: (k: string) => string) => [
   {
     icon: <BarChart2 className="h-6 w-6" />,
-    title: 'Financial Excellence',
-    description: 'Comprehensive financial solutions tailored to your needs'
+    title: t('services.service3Title'),
+    description: t('hero.feature2')
   },
   {
     icon: <Globe className="h-6 w-6" />,
-    title: 'Global Reach',
-    description: 'International expertise with local market knowledge'
+    title: t('about.feature2Title'),
+    description: t('hero.feature1')
   },
   {
     icon: <Shield className="h-6 w-6" />,
-    title: 'Risk Management',
-    description: 'Protecting your assets and investments'
+    title: t('services.service6Title'),
+    description: t('hero.feature2')
   },
   {
     icon: <Users className="h-6 w-6" />,
-    title: 'Client-Centric',
-    description: 'Personalized service for every client'
+    title: t('about.feature3Title'),
+    description: t('about.feature3Desc')
   }
 ];
 
-const heroTexts = [
-  'Global Tax Expertise',
-  'Financial Solutions',
-  'Business Consulting',
-  'Audit & Assurance'
+const heroTexts = (t: (k: string) => string) => [
+  t('services.service2Title'),
+  t('services.title'),
+  t('services.service3Title'),
+  t('services.service4Title')
 ];
 
 const Hero: FC = () => {
+  const { t } = useLanguage();
   const [currentText, setCurrentText] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -40,7 +42,7 @@ const Hero: FC = () => {
     const interval = setInterval(() => {
       setIsVisible(false);
       setTimeout(() => {
-        setCurrentText((prev) => (prev + 1) % heroTexts.length);
+        setCurrentText((prev) => (prev + 1) % heroTexts(t).length);
         setIsVisible(true);
       }, 500);
     }, 3000);
@@ -63,18 +65,18 @@ const Hero: FC = () => {
           <div className="space-y-8 z-10">
             <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                Trusted by 1000+ clients worldwide
+                {t('offices.subtitle')}
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                <span className="block">Transforming</span>
+                <span className="block">{t('hero.title')}</span>
                 <span className={`inline-block mt-2 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
-                  {heroTexts[currentText]}
+                  {heroTexts(t)[currentText]}
                 </span>
               </h1>
               
               <p className="text-xl text-blue-600 font-semibold">
-                Professional accounting, auditing, and consulting firm with international presence
+                {t('hero.subtitle')}
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -84,7 +86,7 @@ const Hero: FC = () => {
 
             {/* Key Features Grid */}
             <div className="grid grid-cols-2 gap-4">
-              {features.map((feature, index) => (
+              {features(t).map((feature, index) => (
                 <div key={index} className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <div className="p-2 bg-blue-50 rounded-lg text-blue-600">
                     {feature.icon}
@@ -103,14 +105,14 @@ const Hero: FC = () => {
                 to="/contact"
                 className="btn-primary group inline-flex items-center justify-center space-x-2 px-6 py-3 text-base font-medium rounded-lg shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
               >
-                <span>Get Started Today</span>
+                <span>{t('hero.cta2')}</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/services"
                 className="btn-secondary inline-flex items-center justify-center"
               >
-                Our Services
+                {t('services.viewAll')}
               </Link>
             </div>
           </div>
@@ -137,6 +139,18 @@ const Hero: FC = () => {
                     <div className="bg-white/10 rounded-lg p-3">
                       <div className="font-semibold">Cameroon</div>
                       <div className="text-blue-100">+237 698 835 251</div>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <div className="font-semibold">Burundi</div>
+                      <div className="text-blue-100">+257 793 439 93</div>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <div className="font-semibold">United States of America</div>
+                      <div className="text-blue-100">+1 502 299 247</div>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <div className="font-semibold">Democratic Republic of Congo</div>
+                      <div className="text-blue-100">+ 1(416) 624 2510 / +242 06 444 0729</div>
                     </div>
                   </div>
                 </div>

@@ -34,7 +34,16 @@
     "consolidation": "合并",
     "risk": "风险咨询",
     "it": "IT咨询",
-    "financial": "财务报告"
+    "financial": "财务报告",
+    "title": "我们的服务",
+    "subtitle": "为您的业务需求提供全面解决方案",
+    "learnMore": "了解更多",
+    "viewAll": "查看所有服务",
+    "categories": {
+      "all": "所有服务",
+      "finance": "金融服务",
+      "business": "商务服务"
+    }
   }
 }
 

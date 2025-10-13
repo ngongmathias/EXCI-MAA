@@ -1,7 +1,9 @@
 import { FC } from 'react';
 import { Award, Briefcase, User } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const Partners: FC = () => {
+  const { t } = useLanguage();
   const founders = [
     {
       name: 'Pierre KEMENI',
@@ -34,10 +36,10 @@ const Partners: FC = () => {
         {/* Founders Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our Founders
+            {t('partners.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet the experienced professionals who founded EXCI-MAA and continue to lead our firm with expertise and dedication.
+            {t('partners.subtitle')}
           </p>
         </div>
 
@@ -77,10 +79,10 @@ const Partners: FC = () => {
         {/* Partners Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our Partners
+            {t('partners.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We are proud to work with leading organizations and institutions across the globe.
+            {t('partners.subtitle')}
           </p>
         </div>
 
@@ -99,10 +101,10 @@ const Partners: FC = () => {
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              They Trust Us
+              {t('offices.title')}
             </h3>
             <p className="text-gray-600">
-              Our clients and partners rely on our expertise and commitment to excellence.
+              {t('offices.subtitle')}
             </p>
           </div>
 
@@ -112,10 +114,10 @@ const Partners: FC = () => {
                 <Award className="h-8 w-8 text-blue-600" />
               </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                Certified Professionals
+                {t('about.feature1Title')}
               </h4>
               <p className="text-gray-600 text-sm">
-                All our team members hold relevant professional certifications and maintain ongoing education.
+                {t('about.feature1Desc')}
               </p>
             </div>
 
@@ -124,10 +126,10 @@ const Partners: FC = () => {
                 <User className="h-6 w-6 text-blue-600" />
               </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                Continuous Learning
+                {t('training.title')}
               </h4>
               <p className="text-gray-600 text-sm">
-                We invest in ongoing training and development to stay current with industry best practices.
+                {t('training.subtitle')}
               </p>
             </div>
 
@@ -136,10 +138,10 @@ const Partners: FC = () => {
                 <Briefcase className="h-8 w-8 text-blue-600" />
               </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                Proven Track Record
+                {t('insights.heroTitle')}
               </h4>
               <p className="text-gray-600 text-sm">
-                Decades of successful projects and satisfied clients across multiple industries and countries.
+                {t('insights.heroSubtitle')}
               </p>
             </div>
           </div>

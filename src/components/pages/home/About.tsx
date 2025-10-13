@@ -2,6 +2,7 @@ import { FC, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import { Users, Globe, Award, Target, BarChart2, Shield, Lightbulb, UserPlus, Briefcase, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const stats = [
   { icon: Users, value: '27+', label: 'Years Experience' },
@@ -35,6 +36,7 @@ const coreValues = [
 
 const About: FC = () => {
   const ref = useRef(null);
+  const { t } = useLanguage();
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
@@ -45,10 +47,10 @@ const About: FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 text-sm font-semibold text-blue-700 bg-blue-100 rounded-full mb-4">
-            About Our Firm
+            {t('about.title')}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Pioneering Financial Excellence <span className="text-blue-600">Since 1996</span>
+            {t('about.subtitle')} <span className="text-blue-600">Since 1996</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto rounded-full"></div>
         </div>
@@ -62,10 +64,10 @@ const About: FC = () => {
               transition={{ duration: 0.5 }}
             >
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                EXCI-MAA stands at the forefront of financial consulting, offering unparalleled expertise in auditing, accounting, taxation, and business development. With a distinguished presence across North America, Europe, and Africa, we bring a global perspective with local market intelligence.
+                {t('about.feature1Desc')}
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Our team of certified professionals combines decades of experience with innovative solutions to navigate the complex financial landscapes of today's dynamic markets. We're committed to empowering businesses with strategic insights and actionable intelligence.
+                {t('about.feature2Desc')}
               </p>
             </motion.div>
 
@@ -84,8 +86,8 @@ const About: FC = () => {
                       {value.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">{value.title}</h3>
-                      <p className="text-sm text-gray-600">{value.description}</p>
+                      <h3 className="font-semibold text-gray-900">{t('about.feature1Title')}</h3>
+                      <p className="text-sm text-gray-600">{t('about.feature1Desc')}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -101,7 +103,7 @@ const About: FC = () => {
                 to="/about"
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
               >
-                <span>Discover Our Story</span>
+                <span>{t('services.learnMore')}</span>
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>

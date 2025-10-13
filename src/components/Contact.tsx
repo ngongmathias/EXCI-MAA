@@ -1,9 +1,11 @@
 'use client';
 
 import {useState} from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import {Send, Mail, Phone, MapPin, Clock, CheckCircle} from 'lucide-react';
 
 export default function Contact() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -66,10 +68,10 @@ export default function Contact() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Contact
+            {t('contact.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We offer tax and accounting advice tailored to individuals, businesses, and corporations. We also offer a full range of specialized finance and business planning services.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -77,17 +79,17 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="card">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Send us a Message
+              {t('contact.formTitle')}
             </h3>
 
             {isSubmitted ? (
               <div className="text-center py-8">
                 <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">
-                  Message Sent Successfully!
+                  {t('services.learnMore')}
                 </h4>
                 <p className="text-gray-600">
-                  Thank you for contacting us. We&apos;ll get back to you within 24 hours.
+                  {t('contact.formSubtitle')}
                 </p>
               </div>
             ) : (
@@ -95,7 +97,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Name *
+                    {t('about.teamTitle')} *
                     </label>
                     <input
                       type="text"
@@ -105,7 +107,7 @@ export default function Contact() {
                       onChange={handleInputChange}
                       required
                       className="form-input"
-                      placeholder="Your full name"
+                      placeholder={t('about.teamSubtitle')}
                     />
                   </div>
                   <div>
@@ -128,7 +130,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone
+                    Phone
                     </label>
                     <input
                       type="tel"
@@ -158,7 +160,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                    Service
+                    {t('services.title')}
                   </label>
                   <select
                     id="service"
@@ -167,7 +169,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     className="form-input"
                   >
-                    <option value="">Select a service</option>
+                    <option value="">{t('services.viewAll')}</option>
                     {services.map((service, index) => (
                       <option key={index} value={service}>
                         {service}
@@ -178,7 +180,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message *
+                    {t('contact.cta')} *
                   </label>
                   <textarea
                     id="message"
@@ -188,7 +190,7 @@ export default function Contact() {
                     required
                     rows={5}
                     className="form-textarea"
-                    placeholder="Tell us about your needs and how we can help you..."
+                    placeholder={t('services.subtitle')}
                   />
                 </div>
 
@@ -200,12 +202,12 @@ export default function Contact() {
                   {isSubmitting ? (
                     <>
                       <div className="spinner"></div>
-                      <span>Sending...</span>
+                      <span>{t('services.learnMore')}</span>
                     </>
                   ) : (
                     <>
                       <Send className="h-4 w-4" />
-                      <span>Send Message</span>
+                      <span>{t('contact.cta')}</span>
                     </>
                   )}
                 </button>

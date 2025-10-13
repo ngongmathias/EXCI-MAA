@@ -93,6 +93,12 @@
     "service5Desc": "Financial consolidation for multi-entity organizations",
     "service6Title": "Risk Consulting",
     "service6Desc": "Comprehensive risk assessment and management"
+    ,
+    "categories": {
+      "all": "All Services",
+      "finance": "Financial Services",
+      "business": "Business Services"
+    }
   },
   "globalOffices": {
     "heroTitle": "Global Offices",

@@ -1,19 +1,20 @@
 import { FC, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Users, Briefcase, BookOpen, Mail, Globe, User } from 'lucide-react';
+import { Menu, X, Home, Users, Briefcase, Mail } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import AuthButton from './AuthButton';
 
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
   const location = useLocation();
 
   const navigation = [
-    {name: 'Home', href: '/', icon: <Home className="h-4 w-4" />},
-    {name: 'About', href: '/about', icon: <Users className="h-4 w-4" />},
-    {name: 'Services', href: '/services', icon: <Briefcase className="h-4 w-4" />},
-    {name: 'Training', href: '/training', icon: <BookOpen className="h-4 w-4" />},
-    {name: 'Contact', href: '/contact', icon: <Mail className="h-4 w-4" />},
+    {name: t('nav.home'), href: '/', icon: <Home className="h-4 w-4" />},
+    {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
+    {name: t('nav.services'), href: '/services', icon: <Briefcase className="h-4 w-4" />},
+    {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />},
   ];
 
   return (

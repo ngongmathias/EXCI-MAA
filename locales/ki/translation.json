@@ -34,7 +34,16 @@
     "consolidation": "Guhuza",
     "risk": "Ubunyangamugayo bw'ingorane",
     "it": "Ubunyangamugayo bw'ikoranabuhanga",
-    "financial": "Raporo z'ubucuruzi"
+    "financial": "Raporo z'ubucuruzi",
+    "title": "Serivisi zacu",
+    "subtitle": "Ibisubizo birambuye ku byo ukeneye",
+    "learnMore": "Menya vyinshi",
+    "viewAll": "Raba serivisi zose",
+    "categories": {
+      "all": "Serivisi zose",
+      "finance": "Serivisi z'ubutunzi",
+      "business": "Serivisi z'ubudandaji"
+    }
   }
 }
 

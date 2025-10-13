@@ -34,7 +34,16 @@
     "consolidation": "Consolidation",
     "risk": "Conseil en Risque",
     "it": "Conseil IT",
-    "financial": "Rapports Financiers"
+    "financial": "Rapports Financiers",
+    "title": "Nos Services",
+    "subtitle": "Solutions complètes pour vos besoins",
+    "learnMore": "En savoir plus",
+    "viewAll": "Voir tous les services",
+    "categories": {
+      "all": "Tous les services",
+      "finance": "Services financiers",
+      "business": "Services aux entreprises"
+    }
   }
 }
 

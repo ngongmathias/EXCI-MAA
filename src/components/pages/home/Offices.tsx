@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const Offices: FC = () => {
   const offices = [
@@ -61,17 +62,17 @@ const Offices: FC = () => {
     }
   ];
 
+  const { t } = useLanguage();
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our Offices
+            {t('globalOffices.heroTitle')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            With offices across multiple countries, we provide local expertise with global reach. 
-            Find the office nearest to you.
+            {t('globalOffices.heroSubtitle')}
           </p>
         </div>
 
@@ -116,15 +117,13 @@ const Offices: FC = () => {
 
                 <div className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-600 text-sm">
-                    Mon-Fri: 9:00 AM - 6:00 PM
-                  </span>
+                  <span className="text-gray-600 text-sm">{t('contact.infoSubtitle')}</span>
                 </div>
               </div>
 
               <div className="mt-6 pt-4 border-t border-gray-200">
                 <button className="w-full btn-secondary text-sm">
-                  Get Directions
+                  {t('globalOffices.mapTitle')}
                 </button>
               </div>
             </div>
@@ -133,20 +132,14 @@ const Offices: FC = () => {
 
         {/* Map Section Placeholder */}
         <div className="mt-16 bg-gray-100 rounded-2xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Interactive Office Map
-          </h3>
-          <p className="text-gray-600 mb-6">
-            Click on any location to view office details and get directions.
-          </p>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('globalOffices.mapTitle')}</h3>
+          <p className="text-gray-600 mb-6">{t('globalOffices.mapSubtitle')}</p>
           <div className="bg-white rounded-lg p-8 shadow-inner">
             <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-500">Interactive Map Coming Soon</p>
-                <p className="text-sm text-gray-400 mt-2">
-                  We&apos;re working on an interactive map to help you find our offices
-                </p>
+                <p className="text-gray-500">{t('globalOffices.mapTitle')}</p>
+                <p className="text-sm text-gray-400 mt-2">{t('globalOffices.mapSubtitle')}</p>
               </div>
             </div>
           </div>
