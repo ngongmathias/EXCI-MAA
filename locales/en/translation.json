@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "training": "Training",
     "globalOffices": "Global Offices",
     "insights": "Insights",
     "careers": "Careers",
@@ -143,7 +144,7 @@
   },
   "training": {
     "title": "Training Programs",
-    "subtitle": "Professional development and certification programs"
+    "subtitle": "We offer Professional development and certification programs"
   },
   "partners": {
     "title": "Our Partners",

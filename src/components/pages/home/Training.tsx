@@ -108,7 +108,7 @@ const Training: FC = () => {
             </div>
             <div className="flex items-center justify-center space-x-3 p-4 bg-blue-50 rounded-lg">
               <DollarSign className="h-5 w-5 text-blue-600" />
-              <span className="text-sm text-gray-700">{t('pricingSubtitle') || ' '}</span>
+              <span className="text-sm text-gray-700">{t('training.subtitle')}</span>
             </div>
           </div>
         </div>

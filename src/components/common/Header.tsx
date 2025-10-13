@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Users, Briefcase, Mail } from 'lucide-react';
+import { Menu, X, Home, Users, Briefcase, Mail, BookOpen } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import AuthButton from './AuthButton';
@@ -14,6 +14,7 @@ const Header: FC = () => {
     {name: t('nav.home'), href: '/', icon: <Home className="h-4 w-4" />},
     {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
     {name: t('nav.services'), href: '/services', icon: <Briefcase className="h-4 w-4" />},
+    {name: t('nav.training'), href: '/training', icon: <BookOpen className="h-4 w-4" />},
     {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />},
   ];
 
