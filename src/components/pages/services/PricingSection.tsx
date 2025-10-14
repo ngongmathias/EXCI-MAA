@@ -100,7 +100,7 @@ const PricingSection: FC = () => {
   const MotionDiv = motion.div as unknown as React.FC<React.HTMLAttributes<HTMLDivElement> & any>;
 
   const PricingCard = ({ 
-    plan,
+    plan, 
     isAnnual,
     isPopular = false 
   }: { 
@@ -281,10 +281,10 @@ const PricingSection: FC = () => {
           </p>
         <Link
           to={ROUTES.CONSULTATION}
-          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md hover:shadow-lg transition-all duration-200"
-        >
-          Get a Custom Quote
-          <ArrowRight className="ml-2 h-4 w-4" />
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md hover:shadow-lg transition-all duration-200"
+          >
+            Get a Custom Quote
+            <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
         </MotionDiv>
         
@@ -301,10 +301,10 @@ const PricingSection: FC = () => {
             <div className="mt-6">
             <Link
               to={ROUTES.CONSULTATION}
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 shadow-sm"
-            >
-              <Calendar className="mr-2 h-5 w-5" />
-              Schedule a Free Consultation
+                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 shadow-sm"
+              >
+                <Calendar className="mr-2 h-5 w-5" />
+                Schedule a Free Consultation
             </Link>
             </div>
           </div>

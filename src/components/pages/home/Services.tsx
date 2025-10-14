@@ -36,7 +36,7 @@ const Services: FC = () => {
     {
       id: 'accounting',
       icon: Calculator,
-      title: 'services.accounting',
+      title: 'services.service1Title',
       shortDesc: 'Comprehensive financial record keeping',
       description: 'Professional accounting services including bookkeeping, financial statements, and tax preparation to keep your business financially healthy.',
       color: 'bg-blue-500',
@@ -52,7 +52,7 @@ const Services: FC = () => {
     {
       id: 'audit',
       icon: FileCheck,
-      title: 'services.legal',
+      title: 'services.service2Title',
       shortDesc: 'Independent financial verification',
       description: 'Our audit services provide independent verification of your financial statements, ensuring accuracy and compliance with regulations.',
       color: 'bg-green-500',
@@ -68,7 +68,7 @@ const Services: FC = () => {
     {
       id: 'tax',
       icon: FileText,
-      title: 'services.legal',
+      title: 'services.service2Title',
       shortDesc: 'Strategic tax planning',
       description: 'Expert tax planning and compliance services to minimize your tax liability while ensuring full compliance with tax laws.',
       color: 'bg-purple-500',
@@ -84,7 +84,7 @@ const Services: FC = () => {
     {
       id: 'advisory',
       icon: Briefcase,
-      title: 'services.managerial',
+      title: 'services.service3Title',
       shortDesc: 'Strategic business guidance',
       description: 'Strategic advice to help your business grow, improve operations, and increase profitability.',
       color: 'bg-yellow-500',
@@ -100,7 +100,7 @@ const Services: FC = () => {
     {
       id: 'risk',
       icon: Shield,
-      title: 'services.risk',
+      title: 'services.service6Title',
       shortDesc: 'Identify and mitigate risks',
       description: 'Comprehensive risk assessment and management services to protect your business from potential threats.',
       color: 'bg-red-500',
@@ -116,7 +116,7 @@ const Services: FC = () => {
     {
       id: 'reporting',
       icon: BarChart3,
-      title: 'services.financial',
+      title: 'services.service4Title',
       shortDesc: 'Accurate financial insights',
       description: 'Professional financial reporting services to help you make informed business decisions.',
       color: 'bg-indigo-500',
@@ -185,31 +185,31 @@ const Services: FC = () => {
           {filteredServices.map((service) => (
             <MotionInView key={service.id}>
               <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className={`h-2 ${service.color}`}></div>
-                <div className="p-6">
-                  <div className={`w-12 h-12 ${service.color} bg-opacity-10 rounded-lg flex items-center justify-center mb-4`}>
-                    <service.icon className={`h-6 w-6 ${service.color.replace('bg-', 'text-')}`} />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{t(service.title)}</h3>
-                  <p className="text-gray-600 mb-4">{service.shortDesc}</p>
-                  <ul className="space-y-2 mb-6">
-                    {service.features.slice(0, 3).map((feature, i) => (
-                      <li key={i} className="flex items-center text-gray-700">
-                        <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <button
-                    onClick={() => setSelectedService(service)}
-                    className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors"
-                  >
-                    {t('services.learnMore')}
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </button>
+              <div className={`h-2 ${service.color}`}></div>
+              <div className="p-6">
+                <div className={`w-12 h-12 ${service.color} bg-opacity-10 rounded-lg flex items-center justify-center mb-4`}>
+                  <service.icon className={`h-6 w-6 ${service.color.replace('bg-', 'text-')}`} />
                 </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{t(service.title)}</h3>
+                <p className="text-gray-600 mb-4">{service.shortDesc}</p>
+                <ul className="space-y-2 mb-6">
+                  {service.features.slice(0, 3).map((feature, i) => (
+                    <li key={i} className="flex items-center text-gray-700">
+                      <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <button
+                  onClick={() => setSelectedService(service)}
+                  className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors"
+                >
+                  {t('services.learnMore')}
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </button>
+              </div>
               </div>
             </MotionInView>
           ))}
@@ -240,7 +240,7 @@ const Services: FC = () => {
                     <div className={`w-12 h-12 ${selectedService.color} bg-opacity-10 rounded-lg flex items-center justify-center mb-4`}>
                       <selectedService.icon className={`h-6 w-6 ${selectedService.color.replace('bg-', 'text-')}`} />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900">{selectedService.title}</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">{t(selectedService.title)}</h3>
                     <p className="text-gray-600 mt-1">{selectedService.shortDesc}</p>
                   </div>
                   <button
