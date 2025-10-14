@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, HelpCircle, MessageSquare, Phone, Mail, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 type FAQItem = {
   id: number;
@@ -44,6 +45,7 @@ const faqs: FAQItem[] = [
 ];
 
 export default function FAQSection() {
+  const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {
@@ -91,10 +93,10 @@ export default function FAQSection() {
             <HelpCircle className="h-8 w-8 text-exci-blue-600" />
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Frequently Asked Questions
+            {t('contact.faq.title')}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Find answers to common questions about our services, processes, and how we can help your business thrive.
+            {t('contact.faq.description')}
           </p>
         </motion.div>
 
@@ -122,7 +124,7 @@ export default function FAQSection() {
                   aria-controls={`faq-${faq.id}`}
                 >
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900">{t(`contact.faq.questions.${index}.question`)}</h3>
                     <motion.span
                       className="ml-4 flex-shrink-0 text-exci-blue-600"
                       animate={{
@@ -163,7 +165,7 @@ export default function FAQSection() {
                     >
                       <div className="px-6 pb-5 pt-0 text-gray-600">
                         <div className="border-t border-gray-100 mt-2 pt-4">
-                          {faq.answer}
+                          {t(`contact.faq.questions.${index}.answer`)}
                         </div>
                       </div>
                     </motion.div>
@@ -183,10 +185,9 @@ export default function FAQSection() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-8 sm:p-10 lg:p-12">
-              <h3 className="text-2xl font-bold text-white">Still have questions?</h3>
+              <h3 className="text-2xl font-bold text-white">{t('contact.faq.stillHaveQuestions')}</h3>
               <p className="mt-4 text-exci-blue-100">
-                Can't find the answer you're looking for? Our team is here to help. 
-                Reach out to us and we'll get back to you as soon as possible.
+                {t('contact.faq.stillHaveDescription')}
               </p>
               
               <div className="mt-8 space-y-4">
@@ -195,15 +196,15 @@ export default function FAQSection() {
                     <MessageSquare className="h-5 w-5 text-exci-yellow-400" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-sm font-medium text-white">Chat with us</h4>
+                    <h4 className="text-sm font-medium text-white">{t('contact.faq.chatWithUs')}</h4>
                     <p className="mt-1 text-sm text-exci-blue-100">
-                      Our team is here to help
+                      {t('contact.faq.chatDescription')}
                     </p>
                     <a 
                       href="#contact-form"
                       className="mt-2 inline-flex items-center text-sm font-medium text-exci-yellow-400 hover:text-exci-yellow-300 group"
                     >
-                      Send us a message
+                      {t('contact.faq.sendUsMessage')}
                       <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
                   </div>
@@ -214,9 +215,9 @@ export default function FAQSection() {
                     <Phone className="h-5 w-5 text-exci-yellow-400" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-sm font-medium text-white">Call us</h4>
+                    <h4 className="text-sm font-medium text-white">{t('contact.faq.callUs')}</h4>
                     <p className="mt-1 text-sm text-exci-blue-100">
-                      Monday to Friday, 9am to 6pm
+                      {t('contact.faq.callDescription')}
                     </p>
                     <a 
                       href="tel:+966123456789"
@@ -232,9 +233,9 @@ export default function FAQSection() {
                     <Mail className="h-5 w-5 text-exci-yellow-400" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-sm font-medium text-white">Email us</h4>
+                    <h4 className="text-sm font-medium text-white">{t('contact.faq.emailUs')}</h4>
                     <p className="mt-1 text-sm text-exci-blue-100">
-                      We'll get back to you within 24 hours
+                      {t('contact.faq.emailDescription')}
                     </p>
                     <a 
                       href="mailto:info@exci-maa.com"
@@ -251,16 +252,16 @@ export default function FAQSection() {
                 <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-exci-blue-800 mb-6">
                   <MessageSquare className="h-8 w-8 text-exci-yellow-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white">Can't find what you're looking for?</h3>
+                <h3 className="text-xl font-bold text-white">{t('contact.faq.cantFindWhat')}</h3>
                 <p className="mt-2 text-exci-blue-100">
-                  Our team of experts is here to answer any questions you may have.
+                  {t('contact.faq.expertsDescription')}
                 </p>
                 <div className="mt-6">
                   <a
                     href="#contact-form"
                     className="inline-flex items-center justify-center rounded-full border border-transparent bg-exci-yellow-500 px-6 py-3 text-base font-medium text-exci-blue-900 shadow-sm hover:bg-exci-yellow-400 focus:outline-none focus:ring-2 focus:ring-exci-yellow-500 focus:ring-offset-2 focus:ring-offset-exci-blue-900 transition-colors duration-200"
                   >
-                    Contact Support
+                    {t('contact.faq.contactSupport')}
                   </a>
                 </div>
               </div>

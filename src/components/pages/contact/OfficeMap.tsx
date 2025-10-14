@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 // Define the type for the Google Maps object
 declare global {
@@ -22,6 +23,7 @@ const OFFICE_LOCATION = {
 };
 
 export default function OfficeMap() {
+  const { t } = useLanguage();
   const mapRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<google.maps.Map | null>(null);
   const [marker, setMarker] = useState<google.maps.Marker | null>(null);
@@ -154,10 +156,10 @@ export default function OfficeMap() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Find Our Office
+            {t('contact.map.findOurOffice')}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Visit us at our conveniently located office. We're here to assist you with all your financial needs.
+            {t('contact.map.description')}
           </p>
         </motion.div>
 
@@ -197,7 +199,7 @@ export default function OfficeMap() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="bg-white p-6 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-bold text-exci-blue-900 mb-4">Our Office</h3>
+              <h3 className="text-xl font-bold text-exci-blue-900 mb-4">{t('contact.map.ourOffice')}</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -205,7 +207,7 @@ export default function OfficeMap() {
                     <MapPin className="h-5 w-5 text-exci-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-sm font-medium text-gray-900">Address</h4>
+                    <h4 className="text-sm font-medium text-gray-900">{t('contact.map.address')}</h4>
                     <p className="mt-1 text-sm text-gray-600">{OFFICE_LOCATION.address}</p>
                     <a 
                       href={`https://www.google.com/maps/dir/?api=1&destination=${OFFICE_LOCATION.lat},${OFFICE_LOCATION.lng}`}
@@ -213,7 +215,7 @@ export default function OfficeMap() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center mt-2 text-sm font-medium text-exci-yellow-600 hover:text-exci-yellow-700 group"
                     >
-                      Get Directions
+                      {t('contact.map.getDirections')}
                       <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
                   </div>
@@ -224,7 +226,7 @@ export default function OfficeMap() {
                     <Phone className="h-5 w-5 text-exci-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-sm font-medium text-gray-900">Phone</h4>
+                    <h4 className="text-sm font-medium text-gray-900">{t('contact.map.phone')}</h4>
                     <a 
                       href={`tel:${OFFICE_LOCATION.phone}`}
                       className="mt-1 text-sm text-gray-600 hover:text-exci-blue-600"
@@ -239,7 +241,7 @@ export default function OfficeMap() {
                     <Mail className="h-5 w-5 text-exci-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-sm font-medium text-gray-900">Email</h4>
+                    <h4 className="text-sm font-medium text-gray-900">{t('contact.map.email')}</h4>
                     <a 
                       href={`mailto:${OFFICE_LOCATION.email}`}
                       className="mt-1 text-sm text-gray-600 hover:text-exci-blue-600 break-all"
@@ -254,7 +256,7 @@ export default function OfficeMap() {
                     <Clock className="h-5 w-5 text-exci-blue-600" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-sm font-medium text-gray-900">Business Hours</h4>
+                    <h4 className="text-sm font-medium text-gray-900">{t('contact.map.businessHours')}</h4>
                     <p className="mt-1 text-sm text-gray-600">{OFFICE_LOCATION.hours}</p>
                     <p className="text-sm text-gray-500">Saturday - Sunday: Closed</p>
                   </div>
@@ -263,9 +265,9 @@ export default function OfficeMap() {
             </div>
 
             <div className="bg-exci-blue-900 rounded-2xl p-6 text-white">
-              <h3 className="text-lg font-bold mb-3">Need Help Finding Us?</h3>
+              <h3 className="text-lg font-bold mb-3">{t('contact.map.needHelpFinding')}</h3>
               <p className="text-exci-blue-100 text-sm mb-4">
-                Our office is conveniently located in the heart of the business district with easy access to public transportation.
+                {t('contact.map.helpDescription')}
               </p>
               <button
                 onClick={() => {
@@ -280,7 +282,7 @@ export default function OfficeMap() {
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-exci-blue-900 bg-exci-yellow-400 hover:bg-exci-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-exci-blue-900 focus:ring-exci-yellow-400 transition-colors duration-200"
               >
                 <MapPin className="-ml-1 mr-2 h-4 w-4" />
-                Center Map on Our Location
+                {t('contact.map.centerMap')}
               </button>
             </div>
           </motion.div>

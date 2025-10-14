@@ -2,13 +2,14 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Mail, Phone, MapPin, Clock, MessageSquare, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, MessageSquare } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
-const contactMethods = [
+const getContactMethods = (t: (key: string) => string) => [
   {
     icon: <Mail className="h-6 w-6 text-exci-blue-600" />,
-    title: 'Email Us',
-    description: 'Our team will get back to you within 24 hours',
+    title: t('contact.hero.contactMethods.emailUs'),
+    description: t('contact.hero.contactMethods.emailDescription'),
     value: 'info@exci-maa.com',
     href: 'mailto:info@exci-maa.com',
     color: 'bg-blue-50',
@@ -16,8 +17,8 @@ const contactMethods = [
   },
   {
     icon: <Phone className="h-6 w-6 text-green-600" />,
-    title: 'Call Us',
-    description: 'Mon-Fri from 9am to 5pm',
+    title: t('contact.hero.contactMethods.callUs'),
+    description: t('contact.hero.contactMethods.callDescription'),
     value: '+1 (555) 123-4567',
     href: 'tel:+15551234567',
     color: 'bg-green-50',
@@ -25,8 +26,8 @@ const contactMethods = [
   },
   {
     icon: <MapPin className="h-6 w-6 text-red-600" />,
-    title: 'Visit Us',
-    description: 'Come say hello at our office',
+    title: t('contact.hero.contactMethods.visitUs'),
+    description: t('contact.hero.contactMethods.visitDescription'),
     value: '123 Business Ave, City, Country',
     href: 'https://maps.google.com',
     color: 'bg-red-50',
@@ -35,15 +36,15 @@ const contactMethods = [
   },
   {
     icon: <Clock className="h-6 w-6 text-yellow-600" />,
-    title: 'Office Hours',
-    description: 'Our working hours',
+    title: t('contact.hero.contactMethods.officeHours'),
+    description: t('contact.hero.contactMethods.hoursDescription'),
     value: 'Mon - Fri: 9:00 - 18:00',
     color: 'bg-yellow-50',
     hoverColor: 'hover:bg-yellow-100'
   }
 ];
 
-const ContactCard = ({ method, index }: { method: typeof contactMethods[0], index: number }) => {
+const ContactCard = ({ method, index }: { method: ReturnType<typeof getContactMethods>[0], index: number }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   
@@ -117,26 +118,10 @@ const ContactCard = ({ method, index }: { method: typeof contactMethods[0], inde
 };
 
 export default function ContactHero() {
+  const { t } = useLanguage();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   
-  // Animated floating blobs
-  const Blob = ({ className, delay = 0 }: { className: string, delay?: number }) => (
-    <motion.div
-      className={`absolute rounded-full opacity-20 filter blur-3xl ${className}`}
-      animate={{
-        y: [0, 20, 0],
-        x: [0, 10, 0],
-        scale: [1, 1.1, 1],
-      }}
-      transition={{
-        duration: 10 + Math.random() * 10,
-        repeat: Infinity,
-        ease: 'easeInOut',
-        delay: delay,
-      }}
-    />
-  );
   
   return (
     <div className="relative bg-gradient-to-br from-blue-50 to-white overflow-hidden">
@@ -169,7 +154,7 @@ export default function ContactHero() {
                 transition: { delay: 0.2 }
               } : {}}
             >
-              Get in Touch
+              {t('contact.hero.getInTouch')}
             </motion.p>
             <motion.h1 
               className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
@@ -180,8 +165,8 @@ export default function ContactHero() {
                 transition: { delay: 0.3 }
               } : {}}
             >
-              Let's Talk About Your
-              <span className="block mt-2 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Business Needs</span>
+              {t('contact.hero.letsTalkAbout')}
+              <span className="block mt-2 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">{t('contact.hero.businessNeeds')}</span>
             </motion.h1>
             <motion.p 
               className="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -195,8 +180,7 @@ export default function ContactHero() {
                 }
               } : {}}
             >
-              Our team of financial experts is ready to help you navigate your business challenges. 
-              Reach out through any channel below or send us a message directly.
+              {t('contact.hero.description')}
             </motion.p>
           </motion.div>
         </div>
@@ -205,7 +189,7 @@ export default function ContactHero() {
           ref={ref} 
           className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto"
         >
-          {contactMethods.map((method, index) => (
+          {getContactMethods(t).map((method, index) => (
             <ContactCard key={method.title} method={method} index={index} />
           ))}
         </div>
@@ -223,7 +207,7 @@ export default function ContactHero() {
           } : {}}
         >
           <p className="text-lg text-gray-600 mb-8">
-            Or fill out our contact form and we'll get back to you within 24 hours.
+            {t('contact.hero.orFillOut')}
           </p>
           <motion.a
             href="#contact-form"
@@ -235,7 +219,7 @@ export default function ContactHero() {
             }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="relative z-10 drop-shadow-md">Send us a Message</span>
+            <span className="relative z-10 drop-shadow-md">{t('contact.hero.sendUsMessage')}</span>
             <MessageSquare className="ml-3 h-5 w-5 text-white transition-transform group-hover:translate-x-1 relative z-10" strokeWidth="2.5" />
             <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             <span className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
