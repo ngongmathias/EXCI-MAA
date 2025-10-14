@@ -45,7 +45,7 @@ const ConsultationForm: FC = () => {
   };
 
   return (
-    <form onSubmit={onSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <form id="consultation-form" onSubmit={onSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
         <label className="block text-sm font-medium text-gray-700">Full Name</label>
         <input
@@ -114,7 +114,7 @@ const ConsultationForm: FC = () => {
           required
         >
           {servicesData.map((s) => (
-            <option key={s.id} value={s.id}>{t(s.titleKey ?? s.name)}</option>
+            <option key={s.id} value={s.id}>{t(s.title)}</option>
           ))}
         </select>
       </div>

@@ -27,7 +27,7 @@
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy"
   },
-  "services": {
+  "serviceCategories": {
     "accounting": "Accounting Expertise",
     "legal": "Legal & Tax Audit",
     "managerial": "Managerial Advice",

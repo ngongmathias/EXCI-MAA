@@ -1,6 +1,7 @@
 import { FC, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { BarChart3, FileText, PieChart, Briefcase, Shield, Users, ArrowRight, CheckCircle, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { BarChart3, FileText, PieChart, Briefcase, Shield, Users, CheckCircle, ChevronDown, Calendar } from 'lucide-react';
 
 const DetailedServices: FC = () => {
   const services = [
@@ -15,7 +16,12 @@ const DetailedServices: FC = () => {
         'Accounts payable and receivable management',
         'Bank and credit card reconciliations',
         'Payroll processing and reporting',
-        'Financial reporting and analysis'
+        'Financial reporting and analysis',
+        'Chart of accounts setup and maintenance',
+        'Inventory tracking and valuation',
+        'Fixed asset management',
+        'Cash flow analysis and forecasting',
+        'Budget preparation and monitoring'
       ],
       color: 'from-blue-500 to-blue-600',
       bgColor: 'bg-blue-50',
@@ -32,7 +38,12 @@ const DetailedServices: FC = () => {
         'Internal control evaluations',
         'Compliance audits',
         'Operational audits',
-        'Special purpose audits'
+        'Special purpose audits',
+        'Risk assessment and management',
+        'Fraud detection and prevention',
+        'Regulatory compliance reviews',
+        'Due diligence services',
+        'Performance and efficiency audits'
       ],
       color: 'from-green-500 to-green-600',
       bgColor: 'bg-green-50',
@@ -49,7 +60,12 @@ const DetailedServices: FC = () => {
         'Corporate and individual tax returns',
         'Tax audit support',
         'International tax planning',
-        'Tax dispute resolution'
+        'Tax dispute resolution',
+        'Tax compliance and filing',
+        'Transfer pricing documentation',
+        'Tax optimization strategies',
+        'Estate and succession planning',
+        'Multi-jurisdictional tax coordination'
       ],
       color: 'from-purple-500 to-purple-600',
       bgColor: 'bg-purple-50',
@@ -66,7 +82,12 @@ const DetailedServices: FC = () => {
         'Financial modeling and forecasting',
         'Mergers and acquisitions',
         'Business valuation',
-        'Performance improvement'
+        'Performance improvement',
+        'Strategic planning and execution',
+        'Market analysis and competitive intelligence',
+        'Investment analysis and due diligence',
+        'Change management and transformation',
+        'Board advisory and governance'
       ],
       color: 'from-yellow-500 to-yellow-600',
       bgColor: 'bg-yellow-50',
@@ -83,7 +104,12 @@ const DetailedServices: FC = () => {
         'Internal audit services',
         'Fraud prevention and detection',
         'Compliance monitoring',
-        'Business continuity planning'
+        'Business continuity planning',
+        'Enterprise risk management',
+        'Operational risk evaluation',
+        'Financial risk assessment',
+        'Regulatory compliance frameworks',
+        'Crisis management and recovery'
       ],
       color: 'from-red-500 to-red-600',
       bgColor: 'bg-red-50',
@@ -100,7 +126,12 @@ const DetailedServices: FC = () => {
         'HR policy development',
         'Employee benefits administration',
         'Performance management',
-        'Compliance with labor laws'
+        'Compliance with labor laws',
+        'Employee onboarding and offboarding',
+        'Compensation and benefits analysis',
+        'HR technology implementation',
+        'Workforce planning and analytics',
+        'Employee relations and conflict resolution'
       ],
       color: 'from-indigo-500 to-indigo-600',
       bgColor: 'bg-indigo-50',
@@ -109,19 +140,21 @@ const DetailedServices: FC = () => {
   ];
 
   const [expandedId, setExpandedId] = useState<string | null>(null);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref as React.RefObject<Element>, { once: true, amount: 0.1 });
 
   const toggleService = (id: string) => {
     setExpandedId(expandedId === id ? null : id);
   };
 
   const ServiceCard = ({ service, index, isExpanded, onToggle }: { service: typeof services[0], index: number, isExpanded: boolean, onToggle: () => void }) => {
-    const cardRef = useRef(null);
-    const cardInView = useInView(cardRef, { once: true, amount: 0.1 });
+    const cardRef = useRef<HTMLDivElement>(null);
+    const cardInView = useInView(cardRef as React.RefObject<Element>, { once: true, amount: 0.1 });
+
+    const MotionDiv = motion.div as unknown as React.FC<React.HTMLAttributes<HTMLDivElement> & any>;
 
     return (
-      <motion.div
+      <MotionDiv
         ref={cardRef}
         initial={{ opacity: 0, y: 50 }}
         animate={cardInView ? { opacity: 1, y: 0 } : {}}
@@ -142,16 +175,16 @@ const DetailedServices: FC = () => {
                 <p className="mt-1 text-gray-600">{service.shortDesc}</p>
               </div>
             </div>
-            <motion.div
+            <MotionDiv
               animate={{ rotate: isExpanded ? 180 : 0 }}
               className="p-1 text-gray-400 hover:text-gray-600 transition-colors"
             >
               <ChevronDown className="h-5 w-5" />
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
         
-        <motion.div
+        <MotionDiv
           initial={false}
           animate={{
             height: isExpanded ? 'auto' : 0,
@@ -170,35 +203,47 @@ const DetailedServices: FC = () => {
                 </div>
               ))}
             </div>
-            <button className="mt-6 inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors">
-              Learn more <ArrowRight className="ml-1 h-4 w-4" />
-            </button>
+            <div className="mt-6 flex flex-col sm:flex-row gap-3">
+              <Link
+                to={'/consultation'}
+                className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+              >
+                <Calendar className="mr-2 h-4 w-4" />
+                Schedule Appointment
+              </Link>
+            </div>
           </div>
-        </motion.div>
-      </motion.div>
+        </MotionDiv>
+      </MotionDiv>
     );
   };
+
+  const MotionDiv = motion.div as unknown as React.FC<React.HTMLAttributes<HTMLDivElement> & any>;
 
   return (
     <section id="services" className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2 
+          <MotionDiv 
             className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Our <span className="text-blue-600">Comprehensive</span> Services
-          </motion.h2>
-          <motion.p 
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Our <span className="text-blue-600">Comprehensive</span> Services
+            </h2>
+          </MotionDiv>
+          <MotionDiv 
             className="mt-4 text-xl text-gray-600"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Tailored financial solutions to meet your unique business needs and drive sustainable growth.
-          </motion.p>
+            <p className="mt-4 text-xl text-gray-600">
+              Tailored financial solutions to meet your unique business needs and drive sustainable growth.
+            </p>
+          </MotionDiv>
         </div>
 
         <div ref={ref} className="grid grid-cols-1 gap-6 max-w-4xl mx-auto">
@@ -214,7 +259,7 @@ const DetailedServices: FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -228,7 +273,7 @@ const DetailedServices: FC = () => {
             >
               Get a Free Consultation
             </a>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

@@ -1,17 +1,7 @@
-import { FC, useRef } from 'react';
+import { FC } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, BarChart3, FileText, Users, Shield, Lightbulb, Briefcase, PieChart } from 'lucide-react';
 
 const ServicesHero: FC = () => {
-  const services = [
-    { name: 'Accounting & Bookkeeping', icon: <BarChart3 className="h-6 w-6" /> },
-    { name: 'Audit & Assurance', icon: <FileText className="h-6 w-6" /> },
-    { name: 'Tax Consulting', icon: <PieChart className="h-6 w-6" /> },
-    { name: 'Business Advisory', icon: <Briefcase className="h-6 w-6" /> },
-    { name: 'Risk Management', icon: <Shield className="h-6 w-6" /> },
-    { name: 'Financial Reporting', icon: <BarChart3 className="h-6 w-6" /> },
-  ];
-
   const AnimatedGradientText = ({ children }: { children: React.ReactNode }) => {
     return (
       <span className="animate-text-gradient bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-[200%_auto] bg-clip-text text-transparent">

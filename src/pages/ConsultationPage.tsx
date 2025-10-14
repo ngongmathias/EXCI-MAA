@@ -1,8 +1,20 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import ConsultationForm from '../components/pages/consultation/ConsultationForm';
 import MotionInView from '../components/enhanced/MotionInView';
 
 const ConsultationPage: FC = () => {
+  useEffect(() => {
+    // Scroll to the form when the page loads
+    const timer = setTimeout(() => {
+      const formElement = document.getElementById('consultation-form');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <section className="py-16 sm:py-24">

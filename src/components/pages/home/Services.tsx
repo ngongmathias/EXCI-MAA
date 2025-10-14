@@ -9,8 +9,10 @@ import {
   Shield, 
   Briefcase,
   FileCheck,
+  Calendar,
 } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
+import { ROUTES } from '../../../lib/constants/routes';
 import type { MouseEvent } from 'react';
 import MotionInView from '../../enhanced/MotionInView';
 
@@ -46,7 +48,12 @@ const Services: FC = () => {
         'Tax Preparation & Planning',
         'Payroll Processing',
         'Financial Reporting',
-        'Budgeting & Forecasting'
+        'Budgeting & Forecasting',
+        'Chart of accounts setup',
+        'Inventory tracking',
+        'Fixed asset management',
+        'Cash flow analysis',
+        'Budget monitoring'
       ]
     },
     {
@@ -62,7 +69,12 @@ const Services: FC = () => {
         'Internal Control Evaluation',
         'Compliance Audits',
         'Operational Audits',
-        'Special Purpose Audits'
+        'Special Purpose Audits',
+        'Risk assessment',
+        'Fraud detection',
+        'Regulatory compliance',
+        'Due diligence',
+        'Performance audits'
       ]
     },
     {
@@ -78,7 +90,12 @@ const Services: FC = () => {
         'Tax Return Preparation',
         'Tax Dispute Resolution',
         'International Tax Planning',
-        'Estate & Succession Planning'
+        'Estate & Succession Planning',
+        'Tax compliance',
+        'Transfer pricing',
+        'Tax optimization',
+        'Multi-jurisdictional coordination',
+        'Tax audit support'
       ]
     },
     {
@@ -94,7 +111,12 @@ const Services: FC = () => {
         'Financial Modeling',
         'Mergers & Acquisitions',
         'Business Valuation',
-        'Exit Planning'
+        'Exit Planning',
+        'Strategic planning',
+        'Market analysis',
+        'Investment analysis',
+        'Change management',
+        'Board advisory'
       ]
     },
     {
@@ -110,7 +132,12 @@ const Services: FC = () => {
         'Internal Controls',
         'Fraud Prevention',
         'Business Continuity Planning',
-        'Regulatory Compliance'
+        'Regulatory Compliance',
+        'Enterprise risk management',
+        'Operational risk evaluation',
+        'Financial risk assessment',
+        'Compliance frameworks',
+        'Crisis management'
       ]
     },
     {
@@ -126,7 +153,12 @@ const Services: FC = () => {
         'Management Reports',
         'KPI Dashboards',
         'Budget vs. Actual Analysis',
-        'Cash Flow Forecasting'
+        'Cash Flow Forecasting',
+        'Employee onboarding',
+        'Benefits analysis',
+        'HR technology',
+        'Workforce planning',
+        'Employee relations'
       ]
     }
   ];
@@ -202,13 +234,22 @@ const Services: FC = () => {
                     </li>
                   ))}
                 </ul>
-                <button
-                  onClick={() => setSelectedService(service)}
-                  className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors"
-                >
-                  {t('services.learnMore')}
-                  <ArrowRight className="w-4 h-4 ml-1" />
-                </button>
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <Link
+                    to={ROUTES.CONSULTATION}
+                    className="inline-flex items-center justify-center px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                  >
+                    <Calendar className="mr-1 h-3 w-3" />
+                    Schedule
+                  </Link>
+                  <button
+                    onClick={() => setSelectedService(service)}
+                    className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors text-sm"
+                  >
+                    {t('services.learnMore')}
+                    <ArrowRight className="w-3 h-3 ml-1" />
+                  </button>
+                </div>
               </div>
               </div>
             </MotionInView>

@@ -37,6 +37,7 @@ export default function ContactForm() {
       
       // if (!response.ok) throw new Error('Failed to send message');
       
+      console.log('Form submitted with data:', data); // Use the data parameter
       setIsSubmitted(true);
       reset();
     } catch (error) {
@@ -61,7 +62,7 @@ export default function ContactForm() {
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 100 } },
+    show: { opacity: 1, y: 0 },
   };
 
   if (isSubmitted) {
