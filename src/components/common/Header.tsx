@@ -10,6 +10,7 @@ const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useLanguage();
   const location = useLocation();
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   const navigation = [
     {name: t('nav.home'), href: '/', icon: <Home className="h-4 w-4" />},
@@ -40,7 +41,7 @@ const Header: FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
-              <div key={item.name} className="relative group">
+              <div key={item.name} className="relative group" onMouseLeave={() => setOpenMenu(null)}>
                 <Link
                   to={item.href}
                   className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
@@ -48,6 +49,12 @@ const Header: FC = () => {
                       ? 'text-blue-600 bg-blue-50'
                       : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                   }`}
+                  onClick={(e) => {
+                    if (item.children) {
+                      e.preventDefault();
+                      setOpenMenu(openMenu === item.name ? null : item.name);
+                    }
+                  }}
                 >
                   <span className={`transition-colors duration-200 ${
                     location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
@@ -59,10 +66,12 @@ const Header: FC = () => {
                   <span>{item.name}</span>
                 </Link>
                 {item.children && (
-                  <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black/5 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition">
+                  <div className={`absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black/5 transition ${
+                    openMenu === item.name ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto'
+                  }`}>
                     <div className="py-2">
                       {item.children.map((child: any) => (
-                        <Link key={child.href} to={child.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                        <Link key={child.href} to={child.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600" onClick={() => setOpenMenu(null)}>
                           {child.name}
                         </Link>
                       ))}
