@@ -77,17 +77,17 @@ const Partners: FC = () => {
         </div>
 
         {/* Partners Section */}
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             {t('partners.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t('partners.subtitle')}
           </p>
-        </div>
+        </div> */}
 
         {/* Partners Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
+        {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
           {partners.map((partner, index) => (
             <div key={index} className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-24 h-12 bg-gray-200 rounded flex items-center justify-center">
@@ -95,7 +95,7 @@ const Partners: FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Trust Indicators */}
         <div className="bg-white rounded-2xl p-8 shadow-lg">
