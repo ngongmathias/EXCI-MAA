@@ -27,7 +27,7 @@
     "termsOfService": "Enkola z'eby'okukola",
     "cookiePolicy": "Enkola y'amakulu"
   },
-  "services": {
+  "serviceCategories": {
     "accounting": "Obukulembeze bw'okukola",
     "legal": "Okukakasa n'okukulembeza",
     "managerial": "Amagezi g'okukulembeza",
@@ -35,17 +35,688 @@
     "consolidation": "Okukwatagana",
     "risk": "Obukulembeze bw'okukola",
     "it": "Obukulembeze bw'eby'okukola",
-    "financial": "Amakulu g'eby'okukola",
+    "financial": "Amakulu g'eby'okukola"
+  },
+  "hero": {
+    "title": "Eby'okukola by'omugaso &",
+    "titleHighlight": "Obukulembeze bw'omugaso",
+    "subtitle": "Eby'okukola by'omugaso, okukakasa, n'okukulembeza ebirina obukulembeze bw'ensi yonna. Tugabira ebisubizo by'omugaso okusobola okukola ebintu by'omugaso.",
+    "feature1": "Obukulembeze bw'ensi yonna n'okutegeera omuntu",
+    "feature2": "Eby'okukola by'omugaso by'okukakasa n'okukulembeza",
+    "feature3": "Okusobola okukola ebintu by'omugaso",
+    "cta1": "Okusura Eby'okukola",
+    "cta2": "Okufuna Okukulembeza"
+  },
+  "about": {
+    "title": "Ku bireetera Ffe",
+    "subtitle": "Manya ebisingawo ku kibuga kyaffe n'ebintu by'omugaso",
+    "feature1Title": "Obukulembeze bw'omugaso",
+    "feature1Desc": "Tukomeza obukulembeze bw'omugaso mu by'okukola byaffe byonna",
+    "feature2Title": "Obukulembeze bw'ensi yonna",
+    "feature2Desc": "Okusobola okukola abakiriya mu nsi nyingi n'amawanga",
+    "feature3Title": "Ekibiina ky'omugaso",
+    "feature3Desc": "Abantu baffe ab'omugaso bafuna obukulembeze batanga ebisubizo by'omugaso",
+    "heroTitle": "Ku bireetera EXCI-MAA",
+    "heroSubtitle": "Ekibuga ky'eby'okukola, okukakasa, n'okukulembeza ekirina obukulembeze bw'ensi yonna",
+    "historyTitle": "Ebyafaayo byaffe",
+    "historySubtitle": "Okukola kwizera ku bw'omugaso okuva twatangira",
+    "valuesTitle": "Ebintu by'omugaso byaffe",
+    "valuesSubtitle": "Enkola ezituyamba mu byonna tukola",
+    "teamTitle": "Ekibiina kyaffe",
+    "teamSubtitle": "Hangana n'abantu baffe ab'omugaso bafuna obukulembeze",
+    "testimonialsTitle": "Ebyemezo by'abakiriya",
+    "testimonialsSubtitle": "Ebyo abakiriya baffe bavuga ku ffe"
+  },
+  "services": {
     "title": "Eby'okukola byaffe",
     "subtitle": "Ebisubizo ebikwatagana n'ebyo weetaaga",
+    "heroTitle": "Eby'okukola by'omugaso",
+    "heroSubtitle": "Ebisubizo by'omugaso ebyashyizweho ku byo weetaaga",
+    "detailedTitle": "Ebyerekeye Eby'okukola",
+    "detailedSubtitle": "Amakulu g'omugaso ku byo tugabira",
+    "processTitle": "Enkola yaffe y'okukola",
+    "processSubtitle": "Enkola tugabira ebisubizo by'omugaso",
+    "faqTitle": "Ebibazo by'omugaso",
+    "faqSubtitle": "Ebibazo by'omugaso ku by'okukola byaffe",
+    "pricingTitle": "Omugatte",
+    "pricingSubtitle": "Omugatte gw'omugaso ku by'okukola byaffe byonna",
     "learnMore": "Manya ebisingawo",
     "viewAll": "Laba eby'okukola byonna",
+    "service1Title": "Obukulembeze bw'okukola",
+    "service1Desc": "Eby'okukola by'omugaso by'okukola ku bikoresho",
+    "service2Title": "Okukakasa n'okukulembeza",
+    "service2Desc": "Eby'okukola by'omugaso by'okukakasa n'okukulembeza",
+    "service3Title": "Amagezi g'okukulembeza",
+    "service3Desc": "Okukulembeza kw'omugaso ku bw'omugaso bw'okukola",
+    "service4Title": "Okukola n'okukulembeza kw'abantu",
+    "service4Desc": "Okukulembeza kw'omugaso kw'okukola n'okukulembeza kw'abantu",
+    "service5Title": "Okukwatagana",
+    "service5Desc": "Okukwatagana kw'okukola ku bikoresho bingi",
+    "service6Title": "Obukulembeze bw'okukola",
+    "service6Desc": "Okusuzuma n'okukulembeza kw'omugaso kw'okukola",
     "categories": {
       "all": "Eby'okukola byonna",
       "finance": "Eby'obuvunanyizibwa",
       "business": "Eby'obusuubuzi"
     }
+  },
+  "globalOffices": {
+    "heroTitle": "Amabiro ag'ensi yonna",
+    "heroSubtitle": "Obukulembeze bwaffe bw'ensi yonna n'obukulembeze bw'omuntu",
+    "mapTitle": "Ekarti y'omugaso",
+    "mapSubtitle": "Sura amabiro gaffe ku nsi yonna",
+    "listTitle": "Aho Amabiro Gali",
+    "listSubtitle": "Shakisha eri ly'amabiro eriri hafi yawe"
+  },
+  "insights": {
+    "heroTitle": "Okutegeera n'Amakulu",
+    "heroSubtitle": "Komeza obukulembeze n'okutegeera kw'okukola n'amakulu g'ekibuga",
+    "eventsTitle": "Ebikolwa",
+    "eventsSubtitle": "Ebikolwa ebijja n'ebyashize",
+    "blogTitle": "Blog",
+    "blogSubtitle": "Ebyandikiddwa by'omugaso n'okutegeera",
+    "promotionsTitle": "Okusimba",
+    "promotionsSubtitle": "Emyenyerezo y'omugaso n'amakulu"
+  },
+  "careers": {
+    "heroTitle": "Winjira mu Kibiina kyaffe",
+    "heroSubtitle": "Kubaka emirimu gyo na EXCI-MAA",
+    "jobsTitle": "Aho Emirimu Giri",
+    "jobsSubtitle": "Amahirwe g'emirimu g'omugaso",
+    "chartTitle": "Ekarti y'okukulembeza",
+    "chartSubtitle": "Obukulembeze bw'ekibuga kyaffe n'okukulembeza",
+    "benefitsTitle": "Amahirwe n'Emyenyerezo",
+    "benefitsSubtitle": "Ebyo tugabira ku bakazi baffe"
+  },
+  "contact": {
+    "title": "Okukwatagana",
+    "subtitle": "Okukwatagana n'ekibiina kyaffe",
+    "heroTitle": "Okukwatagana",
+    "heroSubtitle": "Tuli wano okusobola okukola ebintu by'omugaso",
+    "formTitle": "Tutangire Obubaka",
+    "formSubtitle": "Uzuze ekifaananyi ekyo wansi kandi tujja kuddamu",
+    "mapTitle": "Tushakashe",
+    "mapSubtitle": "Sura amabiro gaffe ku nsi yonna",
+    "infoTitle": "Amakulu g'okukwatagana",
+    "infoSubtitle": "Enkola z'okutushakashe",
+    "cta": "Okukwatagana Kati",
+    "hero": {
+      "getInTouch": "Okukwatagana",
+      "letsTalkAbout": "Tukwogere ku",
+      "businessNeeds": "Ebyetaaga by'ebikoresho byo",
+      "description": "Ekibiina kyaffe ky'abakulembeze b'eby'obusuubuzi kitegudde okukuyamba mu kukwata ebizibu by'ebikoresho byo. Kwatagana naffe ku nkola yonna eri wansi oba otutangire obubaka buhagije.",
+      "contactMethods": {
+        "emailUs": "Tutangire Email",
+        "emailDescription": "Ekibiina kyaffe kijja kuddamu mu ssaawa 24",
+        "emailValue": "info@exci-maa.com",
+        "callUs": "Tutangire",
+        "callDescription": "Olw'okubiri-Olw'okutaano okuva ku ssaawa 9 z'ekiro okutuuka ku ssaawa 5 z'ekiro",
+        "callValue": "+1 (555) 123-4567",
+        "visitUs": "Tusura",
+        "visitDescription": "Jja okusanga amabiro gaffe",
+        "visitValue": "123 Mukka gw'ebikoresho, Kibuga, Eggwanga",
+        "officeHours": "Essaawa z'amabiro",
+        "hoursDescription": "Essaawa zaffe z'okukola",
+        "hoursValue": "Olw'okubiri - Olw'okutaano: 9:00 - 18:00"
+      },
+      "orFillOut": "Oba uzuze ekifaananyi kyaffe ky'okukwatagana era tujja kuddamu mu ssaawa 24.",
+      "sendUsMessage": "Tutangire Obubaka"
+    },
+    "form": {
+      "getInTouch": "Okukwatagana",
+      "description": "Olina ebibuuzo oba otegedde okutandika obwoba bwo? Uzuze ekifaananyi ekyo wansi era ekibiina kyaffe kijja kuddamu vuba.",
+      "contactInformation": "Amakulu g'okukwatagana",
+      "contactDescription": "Uzuze ekifaananyi era ekibiina kyaffe kijja kuddamu mu ssaawa 24. Okufuna obuyambi obuhagije, nyamuneka otutangire buhagije.",
+      "callUs": "Tutangire",
+      "emailUs": "Tutangire email",
+      "visitUs": "Tusura",
+      "businessHours": "Essaawa z'amabiro",
+      "mondayFriday": "Olw'okubiri - Olw'okutaano: 9:00 AM - 6:00 PM",
+      "saturdaySunday": "Olw'okukaaga - Olw'okubiri: Bikuggiddwa",
+      "fullName": "Amannya agonna",
+      "emailAddress": "Endagiriro y'email",
+      "phoneNumber": "Namba y'essimu",
+      "subject": "Ekintu",
+      "message": "Obubaka",
+      "required": "*",
+      "placeholders": {
+        "fullName": "John Mukasa",
+        "email": "you@example.com",
+        "phone": "+256 70 123 4567",
+        "selectSubject": "Londa ekintu",
+        "message": "Tusobola okuyamba bweki?"
+      },
+      "subjects": {
+        "generalInquiry": "Okubuuzako obw'omugaso",
+        "accountingServices": "Eby'okukola by'eby'obusuubuzi",
+        "auditServices": "Eby'okukola by'okukakasa",
+        "taxConsultation": "Obunyangamugayo bw'omusolo",
+        "other": "Ebirala"
+      },
+      "validation": {
+        "nameRequired": "Amannya gikwetaagisa",
+        "emailRequired": "Email ekikwetaagisa",
+        "emailInvalid": "Endagiriro y'email etali nziza",
+        "subjectRequired": "Ekintu kikwetaagisa",
+        "messageRequired": "Obubaka bukwetaagisa",
+        "messageMinLength": "Obubaka bugomba kuba n'ebifaananyi 10 obusinga"
+      },
+      "sendMessage": "Tuma Obubaka",
+      "sending": "Biri mu kutuma...",
+      "successTitle": "Obubaka Bwatumiddwa Obulungi!",
+      "successDescription": "Webale okukwatagana. Twakiridde obubaka bwo era tujja kuddamu mu ssaawa 24.",
+      "sendAnotherMessage": "Tuma obubaka obulala",
+      "errorTitle": "Ekizibu",
+      "errorMessage": "Okutuma obubaka kukaluze. Nyamuneka ogezaako nanone.",
+      "privacyNote": "Tujja kuddamu mu ssaawa 24. Amakulu go galimu mu mutekano."
+    },
+    "map": {
+      "findOurOffice": "Shakisha Amabiro gaffe",
+      "description": "Sura mu mabiro gaffe agali mu kifo ekirungi. Tuli wano okukuyamba mu byo byonna okenna by'eby'obusuubuzi.",
+      "ourOffice": "Amabiro gaffe",
+      "address": "Endagiriro",
+      "phone": "Essimu",
+      "email": "Email",
+      "businessHours": "Essaawa z'amabiro",
+      "getDirections": "Shakisha enkola",
+      "needHelpFinding": "Okenna obuyambi bwo kushakisha?",
+      "helpDescription": "Amabiro gaffe galimu mu kati k'ekitundu ky'ebikoresho era kirungi okufuna enkola z'okutambula.",
+      "centerMap": "Shyira ekarti mu kifo kyaffe",
+      "officeLocation": {
+        "address": "123 Mukka gw'ebikoresho, Riyadh 12345, Arabiya Sawudite",
+        "phone": "+966 12 345 6789",
+        "email": "riyadh@exci-maa.com",
+        "hours": "Olw'okubiri - Olw'okutaano: 9:00 AM - 6:00 PM"
+      }
+    },
+    "faq": {
+      "title": "Ebibuuzo by'omugaso",
+      "description": "Shakisha ebisubizo ku bibuuzo by'omugaso ku by'okukola byaffe, enkola yaffe y'okukola, n'engeri tusobola okuyamba ebikoresho byo okukula.",
+      "questions": [
+        {
+          "question": "EXCI-MAA etanga ki eby'okukola?",
+          "answer": "Tutanga eby'okukola by'omugaso by'eby'obusuubuzi, okukakasa, omusolo, n'obunyangamugayo bw'ebikoresho ebyashyizibwawo ku byetaaga by'omugaso by'ebikoresho mu Arabiya Sawudite n'ebirala. Eby'okukola byaffe birimu amakulu g'eby'obusuubuzi, okutezimba omusolo, okukakasa kw'omunda, n'obunyangamugayo bw'ebikoresho."
+        },
+        {
+          "question": "Nsobola otya okutegula obunyangamugayo?",
+          "answer": "Osobola okutegula obunyangamugayo binyuze mu kutangira amabiro gaffe, okutangira email, oba okukozesa ekifaananyi ky'okukwatagana ku lupapula luno. Ekibiina kyaffe kijja kuddamu mu ssaawa 24 okukakasa olunaku lwo."
+        },
+        {
+          "question": "Mu ki eby'okukola mufuna obukulembeze?",
+          "answer": "Tufuna obukulembeze bw'omugaso mu kukola n'ebikoresho eby'enjawulo birimu obulwadde bw'abantu, okuzimba, okugulisa, eby'okukola, n'eby'okukola by'omugaso. Ekibiina kyaffe kifuna obukulembeze bwo kukola n'ebizibu by'eby'obusuubuzi by'omugaso by'ekikoresho kyonna."
+        },
+        {
+          "question": "Essaawa z'amabiro ganyu ziri ki?",
+          "answer": "Amabiro gaffe gafunguka okuva ku Sabbiiti okutuuka ku Lwakuna, 9:00 AM okutuuka 6:00 PM. Tugguddwa ku Lwakutaano na Lwakaaga wamu n'olunaku olukulu."
+        },
+        {
+          "question": "Mutanga eby'okukola by'omugaso oba by'omugaso?",
+          "answer": "Yee, tutanga obunyangamugayo bw'omugaso n'omugaso kugira ngo tukemere ebyetaaga by'abakiriya baffe. Ekibiina kyaffe kifuna ebikozesebwa by'omugaso by'omugaso byo kutanga eby'okukola by'omugaso ku bwoba."
+        },
+        {
+          "question": "Mukemera otya obukulembeze bw'amakulu n'obukulembeze?",
+          "answer": "Tutanga obukulembeze bw'amakulu ku bwoba. Amakulu gonna g'abakiriya gakolwa n'obukulembeze bw'omugaso era gakuma nga gakozesa enkola z'okukuma z'omugaso, okusobola okukuma n'enkola y'okukuma amakulu."
+        }
+      ],
+      "stillHaveQuestions": "Olina ebibuuzo?",
+      "stillHaveDescription": "Tosobola kushakisha ekisubizo oshakisha? Ekibiina kyaffe kiri wano okukuyamba. Kwatagana naffe era tujja kuddamu vuba.",
+      "chatWithUs": "Tukwogere",
+      "chatDescription": "Ekibiina kyaffe kiri wano okukuyamba",
+      "sendUsMessage": "Tutangire obubaka",
+      "callUs": "Tutangire",
+      "callDescription": "Olw'okubiri okutuuka ku Lwakutaano, ssaawa 9 z'ekiro okutuuka ssaawa 6 z'ekiro",
+      "emailUs": "Tutangire email",
+      "emailDescription": "Tujja kuddamu mu ssaawa 24",
+      "cantFindWhat": "Tosobola kushakisha ekyo oshakisha?",
+      "expertsDescription": "Ekibiina kyaffe ky'abakulembeze kiri wano okuddamu ebibuuzo byonna osobola okuba nabyo.",
+      "contactSupport": "Kwatagana Obuyambi"
+    }
+  },
+  "training": {
+    "title": "Emyenyerezo y'omugaso",
+    "subtitle": "Tugabira emyenyerezo y'omugaso n'obukulembeze"
+  },
+  "partners": {
+    "title": "Abakulembeze baffe",
+    "subtitle": "Amawanga gaffe ag'omugaso"
+  },
+  "offices": {
+    "title": "Obukulembeze bw'ensi yonna",
+    "subtitle": "Okusobola okukola abakiriya ku nsi yonna"
+  },
+  "admin": {
+    "dashboardTitle": "Ekibaho ky'okukulembeza",
+    "dashboardSubtitle": "Okukulembeza ebyandikiddwa n'okutegeera",
+    "contentTitle": "Okukulembeza Ebirimu",
+    "contentSubtitle": "Okukulembeza eby'okukola, ebikolwa, n'ebyandikiddwa by'omugaso",
+    "analyticsTitle": "Okutegeera",
+    "analyticsSubtitle": "Laba ebyerekeye obukulembeze n'okutegeera"
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Kyusa Ebikoresho byo n'",
+      "titleHighlight": "Ebisubizo by'eby'obusuubuzi by'obukulembeze",
+      "subtitle": "Manya engeri eby'okukola byaffe by'eby'obusuubuzi by'obukulembeze bishobola okutwala obukulembeze, okukakasa okukkirizibwa, era ne bongere obukulembeze bw'ebikoresho byo."
+    },
+    "detailedServices": {
+      "title": "Eby'okukola byaffe",
+      "titleHighlight": "by'obukulembeze",
+      "titleSuffix": "",
+      "subtitle": "Ebisubizo by'eby'obusuubuzi by'obukulembeze ebyashyizibwawo ku byetaaga by'ebikoresho byo eby'omugaso, era bitwala obukulembeze obukomeze.",
+      "services": {
+        "accounting": {
+          "title": "Okubala n'Okukola",
+          "shortDesc": "Okukola amakulu g'eby'obusuubuzi n'obukulembeze",
+          "description": "Ekibiina kyaffe ky'obukulembeze bw'okubala kitanga eby'okukola by'obukulembeze by'okukola amakulu g'eby'obusuubuzi go okukola obukulembeze n'obukulembeze. Tukola byonna okuva ku bikolwa by'olunaku ku lunaku okutuuka ku makulu g'eby'obusuubuzi ag'obukulembeze, tukakasa okukkirizibwa ku nkola zonna ez'omugaso.",
+          "features": [
+            "Okubala kw'omwezi n'amakulu g'eby'obusuubuzi",
+            "Okukulembeza amakulu g'eby'obusuubuzi n'obukulembeze",
+            "Okukwatagana amabanki n'amakalata g'obukulembeze",
+            "Okukola amakulu g'obukulembeze n'obukulembeze",
+            "Amakulu n'okutegeera kw'eby'obusuubuzi",
+            "Okuteekawo n'okukulembeza gahunda y'amakulu",
+            "Okukwata n'okupima ebintu",
+            "Okukulembeza ebintu eby'obukulembeze",
+            "Okutegeera n'okuteekawo obukulembeze bw'amafaranga",
+            "Okuteekawo n'okukulembeza gahunda y'obukulembeze"
+          ]
+        },
+        "audit": {
+          "title": "Okukakasa n'Obukulembeze",
+          "shortDesc": "Okukakasa amakulu g'eby'obusuubuzi n'obukulembeze",
+          "description": "Eby'okukola byaffe by'okukakasa bitanga okukakasa kw'obukulembeze kw'amakulu g'eby'obusuubuzi go, gikakasa obukulembeze n'okukkirizibwa ku nkola z'obukulembeze. Tuyamba okutegeera obukulembeze era ne tuleetawo obukulembeze bw'eby'obusuubuzi byo.",
+          "features": [
+            "Okukakasa amakulu g'eby'obusuubuzi",
+            "Okupima enkola z'omunda",
+            "Okukakasa okukkirizibwa",
+            "Okukakasa obukulembeze",
+            "Okukakasa obukulembeze bw'obukulembeze",
+            "Okupima n'okukulembeza obukulembeze",
+            "Okusanga n'okukuma obukulembeze",
+            "Okusuzuma okukkirizibwa kw'obukulembeze",
+            "Eby'okukola by'obukulembeze",
+            "Okukakasa obukulembeze n'obukulembeze"
+          ]
+        },
+        "tax": {
+          "title": "Obunyangamugayo bw'omusolo",
+          "shortDesc": "Okutezimba omusolo n'okukkirizibwa",
+          "description": "Abakulembeze baffe b'omusolo batanga eby'okukola by'obukulembeze by'obukulembeze bw'omusolo n'okukkirizibwa kugira ngo tulembeze omusolo gwo nga tukakasa okukkirizibwa kw'obukulembeze ku mategeko gonna g'omusolo n'obukulembeze.",
+          "features": [
+            "Okutezimba omusolo n'obukulembeze",
+            "Amakulu g'omusolo g'ebikoresho n'abantu",
+            "Okuyamba okukakasa kw'omusolo",
+            "Okutezimba omusolo w'ensi yonna",
+            "Okusubiza amakulu g'omusolo",
+            "Okukkirizibwa kw'omusolo n'obukulembeze",
+            "Okutanga amakulu g'obukulembeze",
+            "Enkola z'okukozesa omusolo",
+            "Okutezimba obukulembeze n'obukulembeze",
+            "Okukwatagana omusolo w'obukulembeze"
+          ]
+        },
+        "advisory": {
+          "title": "Obunyangamugayo bw'ebikoresho",
+          "shortDesc": "Obunyangamugayo bw'obukulembeze n'obukulembeze",
+          "description": "Eby'okukola byaffe by'obunyangamugayo bw'ebikoresho biyamba amashyira okukwata obukulembeze bw'ebikoresho obukulembeze, tuleetawo obukulembeze, era ne tufuna obukulembeze bw'ebikoresho okuyita mu bukulembeze n'obukulembeze.",
+          "features": [
+            "Okutezimba ebikoresho n'obukulembeze",
+            "Okukola amashusho g'eby'obusuubuzi n'obukulembeze",
+            "Okugatta n'obukulembeze",
+            "Okupima ebikoresho",
+            "Okuleetawo obukulembeze",
+            "Okutezimba n'obukulembeze",
+            "Okusuzuma soko n'obukulembeze",
+            "Okusuzuma obukulembeze n'obukulembeze",
+            "Okukulembeza obukulembeze n'obukulembeze",
+            "Obunyangamugayo bw'obukulembeze n'obukulembeze"
+          ]
+        },
+        "risk": {
+          "title": "Okukulembeza obukulembeze",
+          "shortDesc": "Okutegeera n'okukuma obukulembeze bw'ebikoresho",
+          "description": "Eby'okukola byaffe by'obukulembeze bw'obukulembeze biyamba amashyira okutegeera, okupima, n'okukuma obukulembeze obusobola okukwata ku ntego z'ebikoresho n'obukulembeze.",
+          "features": [
+            "Okupima n'okusuzuma obukulembeze",
+            "Eby'okukola by'okukakasa kw'omunda",
+            "Okukuma n'okusanga obukulembeze",
+            "Okukwata okukkirizibwa",
+            "Okutezimba obukulembeze bw'ebikoresho",
+            "Okukulembeza obukulembeze bw'ebikoresho",
+            "Okupima obukulembeze bw'obukulembeze",
+            "Okupima obukulembeze bw'eby'obusuubuzi",
+            "Amashyira g'okukkirizibwa kw'obukulembeze",
+            "Okukulembeza obukulembeze n'obukulembeze"
+          ]
+        },
+        "hr": {
+          "title": "Eby'okukola by'abantu n'obukulembeze",
+          "shortDesc": "Ebisubizo by'obukulembeze by'abantu n'obukulembeze",
+          "description": "Eby'okukola byaffe by'abantu n'obukulembeze biyamba amashyira okukulembeza ebintu byabwe eby'obukulembeze - abantu babo - nga tukakasa okukkirizibwa ku mategeko g'obukulembeze n'obukulembeze.",
+          "features": [
+            "Okukola amakulu g'obukulembeze",
+            "Okuleetawo amabwiriza g'abantu",
+            "Okukulembeza amahirwe g'abakazi",
+            "Okukulembeza obukulembeze",
+            "Okukkirizibwa ku mategeko g'obukulembeze",
+            "Okutandika n'okuggyako abakazi",
+            "Okusuzuma obukulembeze n'amahirwe",
+            "Okuteekawo obukulembeze bw'abantu",
+            "Okutezimba obukulembeze bw'abantu n'obukulembeze",
+            "Obukulembeze bw'abantu n'obukulembeze"
+          ]
+        }
+      },
+      "scheduleAppointment": "Tekawo olunaku",
+      "needCustomSolution": "Okenna isubizo ly'obukulembeze? Abakulembeze baffe bali wano okukuyamba.",
+      "getFreeConsultation": "Funa Obunyangamugayo bwa Mahirwe"
+    },
+    "process": {
+      "title": "Enkola yaffe",
+      "titleHighlight": "ey'obukulembeze",
+      "titleSuffix": "",
+      "subtitle": "Enkola ey'obukulembeze ey'okutanga eby'okukola by'eby'obusuubuzi by'obukulembeze ebyashyizibwawo ku byetaaga by'ebikoresho byo.",
+      "steps": [
+        {
+          "title": "Okusanga n'Okutegeera",
+          "description": "Tutandika no kutegeera byetaaga by'ebikoresho byo, obukulembeze, n'entegeka okuyita mu makulu n'okutegeera kw'obukulembeze.",
+          "duration": "Ssemana 1-2",
+          "keyPoints": [
+            "Obunyangamugayo bw'obukulembeze",
+            "Okupima ebikoresho",
+            "Okusoroma byetaaga",
+            "Okusobola obukulembeze"
+          ]
+        },
+        {
+          "title": "Okutanga n'Obukulembeze",
+          "description": "Tuleetawo gahunda y'obukulembeze y'obukulembeze n'entegeka ez'obukulembeze, amahitamo g'obukulembeze, n'ebyo tuteekawo ebyashyizibwawo ku byetaaga byo.",
+          "duration": "Nnaku 3-5",
+          "keyPoints": [
+            "Gahunda y'obukulembeze y'obukulembeze",
+            "Obukulembeze bw'obukulembeze",
+            "Kwemera amahitamo g'obukulembeze",
+            "Okutanga ekibiina"
+          ]
+        },
+        {
+          "title": "Okutandika Ekibiina",
+          "description": "Ekibiina kyaffe ky'obukulembeze kikuteekawo ku bwoba bwo, kikakasa obukulembeze n'obukulembeze bwo gukola ku byetaaga byo eby'obukulembeze.",
+          "duration": "Nnaku 2-3",
+          "keyPoints": [
+            "Omukulembeze w'amakulu w'obukulembeze",
+            "Okutangira ekibiina",
+            "Okwinjira mu bikozesebwa",
+            "Okuteekawo obukulembeze"
+          ]
+        },
+        {
+          "title": "Okukola",
+          "description": "Tukola eby'okukola by'obukulembeze n'obukulembeze, tukomeza obukulembeze ku buli kkubo lw'enkola.",
+          "duration": "Bikwawukana n'obwoba",
+          "keyPoints": [
+            "Amakulu g'obukulembeze g'obukulembeze",
+            "Okukakasa obukulembeze",
+            "Okusubiza ekibazo",
+            "Okusuzuma ebintu by'obukulembeze"
+          ]
+        },
+        {
+          "title": "Okusuzuma n'Obukulembeze",
+          "description": "Tutanga amakulu n'okutegeera kw'obukulembeze, tukakasa obukulembeze bw'obukulembeze n'okutegeera kw'ebisubizo.",
+          "duration": "Ssemana 1",
+          "keyPoints": [
+            "Obukulembeze bw'obukulembeze",
+            "Amakulu g'eby'obusuubuzi",
+            "Okusuzuma okukkirizibwa",
+            "Amabwiriza"
+          ]
+        },
+        {
+          "title": "Okuyamba ku Bwoba",
+          "description": "Obukulembeze bwaffe bukomeza n'obukulembeze bw'obukulembeze, okusuzuma by'obukulembeze, n'obunyangamugayo bw'obukulembeze bw'obukulembeze.",
+          "duration": "Ku Bwoba",
+          "keyPoints": [
+            "Okuyamba bw'obukulembeze",
+            "Okusuzuma by'obukulembeze",
+            "Amabwiriza g'obukulembeze",
+            "Okukozesa eby'okukola"
+          ]
+        }
+      ],
+      "readyToGetStarted": "Witegudde okutandika?",
+      "readyDescription": "Ekibiina kyaffe ky'abakulembeze kitegudde okukuyobola okuyita mu nkola yaffe era ne kitanga eby'okukola by'eby'obusuubuzi by'obukulembeze ku bikoresho byo.",
+      "getFreeConsultation": "Funa Obunyangamugayo bwa Mahirwe",
+      "exploreServices": "Sura Eby'okukola byaffe"
+    },
+    "pricing": {
+      "title": "Obukulembeze",
+      "titleHighlight": "bw'obukulembeze n'obukulembeze",
+      "titleSuffix": "",
+      "subtitle": "Londa gahunda y'obukulembeze ku byetaaga by'ebikoresho byo. Tewali mafaranga g'obukulembeze, kuraho olunaku lwa buli lwo.",
+      "monthlyBilling": "Okwishyura ku Kwezi",
+      "annualBilling": "Okwishyura ku Mwaka",
+      "saveUpTo": "(Bika kugeza 20%)",
+      "plans": {
+        "starter": {
+          "name": "Okutandika",
+          "description": "By'obukulembeze ku bikoresho bitono ebitandika",
+          "features": [
+            "Okubala kw'obukulembeze",
+            "Amakulu g'eby'obusuubuzi g'omwezi",
+            "Okupima omusolo kw'omwezi ogusatu",
+            "Okuyamba ku butumwa",
+            "Kugeza ku bikolwa 50/omwezi",
+            "Ekibaho ky'eby'obusuubuzi ky'obukulembeze"
+          ],
+          "notIncluded": [
+            "Okuyamba okukakasa",
+            "Omukulembeze w'amakulu w'obukulembeze",
+            "Amakulu g'obukulembeze",
+            "Okutanga omusolo",
+            "Okukulembeza ebintu"
+          ],
+          "buttonText": "Tandika"
+        },
+        "professional": {
+          "name": "Obukulembeze",
+          "description": "By'obukulembeze ku bikoresho ebikula",
+          "features": [
+            "Byonna mu Okutandika",
+            "Okubala kw'obukulembeze",
+            "Amakulu g'eby'obusuubuzi g'olunaku",
+            "Okupima omusolo kw'omwezi",
+            "Okuyamba bw'obukulembeze ku butumwa n'olugendo",
+            "Kugeza ku bikolwa 200/omwezi",
+            "Ekibaho ky'eby'obusuubuzi ky'obukulembeze",
+            "Okutanga omusolo kw'obukulembeze",
+            "Okukwata ebintu"
+          ],
+          "notIncluded": [
+            "Okuyamba okukakasa",
+            "Omukulembeze w'amakulu w'obukulembeze",
+            "Amakulu g'obukulembeze",
+            "Okutezimba omusolo kw'obukulembeze"
+          ],
+          "buttonText": "Tandika"
+        },
+        "enterprise": {
+          "name": "Obukulembeze",
+          "description": "Ku bikoresho eby'obukulembeze n'ebyo okenna by'obukulembeze",
+          "features": [
+            "Byonna mu Obukulembeze",
+            "Okubala kw'obukulembeze",
+            "Amakulu g'eby'obusuubuzi g'obukulembeze",
+            "Omukulembeze w'amakulu w'obukulembeze",
+            "Okuyamba bw'obukulembeze 24/7",
+            "Bikolwa by'obukulembeze",
+            "Okutezimba omusolo kw'obukulembeze",
+            "Okuyamba okukakasa",
+            "Okukwatagana by'obukulembeze",
+            "Okuteekawo inama y'obukulembeze",
+            "Eby'okukola by'obunyangamugayo bw'obukulembeze"
+          ],
+          "notIncluded": [],
+          "buttonText": "Kwatagana Obukulembeze"
+        }
+      },
+      "whatsIncluded": "Ebyo ebiri:",
+      "notIncluded": "Tebiri:",
+      "billedAnnually": "Bishyurwa ku mwaka",
+      "orBilledAnnually": "oba ${{annualPrice}} bishyurwa ku mwaka",
+      "save": "Bika {{percentage}}%",
+      "needCustomSolution": "Okenna isubizo ly'obukulembeze? Tugabira amapaki g'obukulembeze ku bikoresho n'ebyo okenna by'obukulembeze.",
+      "getCustomQuote": "Funa Ekikwata ky'obukulembeze",
+      "notSureWhichPlan": "Totamanyi gahunda y'obukulembeze yawe?",
+      "expertsHelp": "Abakulembeze baffe bali wano okukuyamba londa isubizo ly'obukulembeze ku byetaaga by'ebikoresho byo. Tekawo obunyangamugayo bwa mahirwe bwa minota 30 kugira ngo tusuzume ebyo okenna.",
+      "scheduleFreeConsultation": "Tekawo Obunyangamugayo bwa Mahirwe"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Ku bireetera EXCI-MAA",
+      "subtitle": "Omufatanyabikorwa wo ow'eby'obusuubuzi okwesigika",
+      "description": "N'emyaka esinga 27 y'obukulembeze mu by'okukola by'eby'obusuubuzi, EXCI-MAA yabadde omufatanyabikorwa okwesigika ku bikoresho mu nsi nyingi, etanga obukulembeze bw'omugaso mu kubala, okukakasa, n'okukulembeza.",
+      "getInTouch": "Okukwatagana",
+      "ourServices": "Eby'okukola byaffe",
+      "trustedByBusinesses": "Okwesigika n'ebikoresho ku nsi yonna",
+      "stats": {
+        "yearsExperience": "Emyaka y'obukulembeze",
+        "countriesServed": "Ensi Ezikoleddwa",
+        "teamMembers": "Abakulembeze b'ekibiina",
+        "clientSatisfaction": "Okukkirizibwa kw'abakiriya"
+      }
+    },
+    "mission": {
+      "title": "Eby'okukola byaffe",
+      "description1": "Eby'okukola byaffe by'okukola ni okuyamba n'okuyambako ebikoresho ebikola mu nsiko y'Abafirika okutuuka ku bukulembeze bw'eby'obusuubuzi. Tuganyulira okumanya okw'omugaso ku by'okukola by'omugaso n'ebitali by'omugaso, tutanga obukulembeze, okukakasa kw'amategeko, n'okukulembeza bwekukwatagana n'obukulembeze bw'ekigo kyonna.",
+      "description2": "Ebisubizo byaffe byateekebwawo okukola ku byetaaga by'ebikoresho ku lukalu lwonna lwa Afirika, okutanga serivisi yonna n'akamaro k'omugaso—ku mwenda gw'omugaso. Ekibiina kyaffe ekirina obukulembeze bw'omugaso n'ensi yonna kikakasa okuyamba bwekukwatagana, bwekukwatagana n'obukulembeze n'amaanyi g'ekikolwa kyo."
+    },
+    "story": {
+      "title": "Ebyafaayo byaffe",
+      "description1": "EXCI-MAA yatandikibwawo n'abakulembeze mu kukakasa, kubala, omusolo, obukulembeze bw'ebikoresho, sisitemu y'amakulu g'okukulembeza, n'amategeko. N'obukulembeze mu Kanada, Amereka, Bufalansa, Bungereza, n'Afirika yonna, tuleeta obukulembeze bw'ensi yonna bwekukwatagana n'obukulembeze bw'omuntu wonna.",
+      "description2": "Tukola ku lukalala lwonna lw'akamaro k'ebikolwa by'abakiriya baffe, tukakasa obukulembeze n'okukkirizibwa n'abafatanyabikorwa. Ekibuga kyaffe kiyambako amashyira mu nsi nyingi binyuze mu murongo ogw'amaanyi n'amatsinda ku ttaka, okutanga serivisi y'obukulembeze n'ebisubizo bwekukwatagana n'ebintu by'omugaso by'omuntu.",
+      "description3": "Leero, tukomeza okwongera obukulembeze bwaffe nga tukomeza okukkirizibwa ku ntego zaffe z'okukola: obukulembeze, okukkirizibwa, n'okukola. Okuva ku kukakasa kw'amategeko n'ebikwatagana okutuuka ku kukulembeza kw'okukola n'obukulembeze bwekukwatagana, amatsinda gaffe gatanga emirimu egikomeye n'ekola etanga ebisubizo ebikomeze.",
+      "whatWeDo": "Kye tukola",
+      "services": [
+        "Okuyamba ku bw'okukola, okugatta, okukola oba okukyusa",
+        "Okukakasa kw'amategeko oba kw'ebikwatagana",
+        "Obukulembeze bw'okubala",
+        "Okukakasa enkola n'okukulembeza kw'okukola",
+        "Okukakasa kw'omuwendo gw'amafuta",
+        "Obukulembeze bwekukwatagana ku bikoresho n'ebikoresho bitono n'ebikulu"
+      ]
+    },
+    "history": {
+      "title": "Olugendo lwaffe",
+      "subtitle": "Emyaka esinga 20 y'obukulembeze mu by'okukola by'eby'obusuubuzi",
+      "timeline": [
+        {
+          "year": "1996",
+          "title": "Okutandikibwa kwa EXCI-MAA",
+          "description": "Yatandikibwawo mu Yaoundé, Cameroon, n'entegeka y'okutanga serivisi z'omugaso z'okubala n'eby'obusuubuzi ku bikoresho by'omuntu."
+        },
+        {
+          "year": "2002",
+          "title": "Okwongera ku gace",
+          "description": "Serivisi zongeddwa okukola Afirika ey'omu, zashyirawo amabiro mu nkengero z'eby'obusuubuzi ez'omugaso ku gace."
+        },
+        {
+          "year": "2010",
+          "title": "Okukkirizibwa ku nsi yonna",
+          "description": "Bahabwa okukkirizibwa ku nsi yonna ku bukulembeze bw'omugaso mu by'okukola by'eby'obusuubuzi n'obukulembeze bw'okukkirizibwa."
+        },
+        {
+          "year": "2015",
+          "title": "Okukyusa eby'okukola",
+          "description": "Byashyizibwawo obukulembeze bw'eby'obusuubuzi bw'omugaso bwo kuyamba serivisi n'obukulembeze bw'abakiriya."
+        },
+        {
+          "year": "2020",
+          "title": "Obukulembeze bw'ensi yonna",
+          "description": "Byashyizibwawo obufatanyabikorwa n'amashyira g'ensi yonna, serivisi zongeddwa ku bakiriya mu nsi 6+."
+        },
+        {
+          "year": "2023",
+          "title": "Obukulembeze bw'ekibiina",
+          "description": "Ekibiina kyaffe kyongedde okutuuka ku bakulembeze 50+, kyongedde obukulembeze bwaffe nga ekibuga ky'omugaso ky'eby'obusuubuzi."
+        }
+      ],
+      "journeyContinues": "Olugendo lwaffe lulukomeze nga tukomeza obukulembeze mu serivisi yonna etulanga.",
+      "learnMoreStory": "Manya ebisingawo ku ebyafaayo byaffe"
+    },
+    "values": {
+      "title": "Eby'omugaso byaffe by'okukola",
+      "subtitle": "Enkola ezituyamba mu kazi kaffe era zitegeeza obukulembeze bwaffe",
+      "values": [
+        {
+          "name": "Obukulembeze",
+          "description": "Tukakasa okutanga serivisi z'omugaso z'omugaso, tukomeza obukulembeze bwaffe n'enkola z'okuyamba abakiriya."
+        },
+        {
+          "name": "Okukkirizibwa",
+          "description": "Tukakasa obukulembeze bw'omugaso bw'omugaso, tukakasa obukulembeze, okukkirizibwa, n'obukulembeze mu bikolwa byaffe byonna."
+        },
+        {
+          "name": "Obukulembeze",
+          "description": "Tukakasa eby'okukola ebipya n'ebisubizo by'omugaso okutanga serivisi z'omugaso ezisobola abakiriya baffe."
+        },
+        {
+          "name": "Okutekateeka ku mukiriya",
+          "description": "Tukakasa obukulembeze bw'omugaso bwo kutegeera ebyetaaga by'omugaso by'abakiriya baffe n'okutanga ebisubizo bwekukwatagana bitanga akamaro k'omugaso."
+        },
+        {
+          "name": "Obukulembeze",
+          "description": "Tukakasa obukulembeze bw'omugaso bw'obukulembeze, okukkirizibwa, n'obukulembeze mu byonna by'akazi kaffe."
+        },
+        {
+          "name": "Obufatanyabikorwa",
+          "description": "Tukakasa okukolagana hafi n'abakiriya baffe, tukola nga obukulembeze bw'ekibiina kyabwe okutuuka ku bukulembeze bw'omugaso."
+        }
+      ],
+      "learnMore": "Manya ebisingawo",
+      "learnMoreCulture": "Manya ebisingawo ku obukulembeze bwaffe"
+    },
+    "team": {
+      "title": "Hangana n'obukulembeze bwaffe",
+      "subtitle": "Ekibiina kyaffe ekirina obukulembeze kikakasa okutanga serivisi y'omugaso n'akamaro ku bakiriya baffe.",
+      "members": [
+        {
+          "name": "Pierre Kemeni",
+          "role": "Omutandisi & Omukulembeze Mukulu",
+          "bio": "MBA, CPA, DEC n'emyaka esinga 27 y'obukulembeze bw'ensi yonna mu kubala n'okukakasa.",
+          "expertise": [
+            "Kubala kw'ensi yonna",
+            "Okukakasa kw'eby'obusuubuzi",
+            "Enkola y'ebikoresho",
+            "Eby'obusuubuzi by'ebikoresho"
+          ]
+        },
+        {
+          "name": "Patrick Ngatcha",
+          "role": "Omukulembeze Mukulu",
+          "bio": "DEC, DSCG, Master CCA, MSTCF n'emyaka 13+ mu bukulembeze bw'ebikoresho n'obukulembeze bw'eby'obusuubuzi.",
+          "expertise": [
+            "Obukulembeze bw'ebikoresho",
+            "Obukulembeze bw'eby'obusuubuzi",
+            "Okutezimba omusolo",
+            "Enkola y'ebikoresho"
+          ]
+        },
+        {
+          "name": "Marie Laure Ngo Bikoi",
+          "role": "Omukulembeze Mukulu w'Okukakasa",
+          "bio": "HEC, DSCG n'emyaka 15+ y'obukulembeze mu kukakasa n'eby'okukola by'eby'obusuubuzi.",
+          "expertise": [
+            "Okukakasa kw'eby'obusuubuzi",
+            "Enkola z'omunda",
+            "Okukulembeza kw'okukola",
+            "Okukkirizibwa"
+          ]
+        }
+      ],
+      "expertise": "Obukulembeze",
+      "viewAllMembers": "Laba abakulembeze bonna b'ekibiina"
+    }
   }
 }
-
-

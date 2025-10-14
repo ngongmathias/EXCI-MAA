@@ -1,98 +1,71 @@
 import { FC, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Search, FileText, Users, CheckCircle, BarChart, MessageSquare, ArrowRight } from 'lucide-react';
 
 const ProcessSection: FC = () => {
+  const { t } = useTranslation();
+  
   const processSteps = [
     {
       id: 1,
-      title: 'Discovery & Analysis',
-      description: 'We begin by understanding your business needs, challenges, and goals through in-depth discussions and analysis.',
+      title: t('servicesPage.process.steps.0.title'),
+      description: t('servicesPage.process.steps.0.description'),
       icon: <Search className="h-6 w-6 text-white" />,
       color: 'bg-blue-600',
       borderColor: 'border-blue-600',
-      duration: '1-2 Weeks',
-      keyPoints: [
-        'Initial consultation',
-        'Business assessment',
-        'Requirement gathering',
-        'Scope definition'
-      ]
+      duration: t('servicesPage.process.steps.0.duration'),
+      keyPoints: t('servicesPage.process.steps.0.keyPoints', { returnObjects: true }) as string[]
     },
     {
       id: 2,
-      title: 'Proposal & Planning',
-      description: 'We develop a customized service plan with clear objectives, timelines, and deliverables tailored to your needs.',
+      title: t('servicesPage.process.steps.1.title'),
+      description: t('servicesPage.process.steps.1.description'),
       icon: <FileText className="h-6 w-6 text-white" />,
       color: 'bg-green-600',
       borderColor: 'border-green-600',
-      duration: '3-5 Days',
-      keyPoints: [
-        'Customized service plan',
-        'Pricing structure',
-        'Timeline agreement',
-        'Team assignment'
-      ]
+      duration: t('servicesPage.process.steps.1.duration'),
+      keyPoints: t('servicesPage.process.steps.1.keyPoints', { returnObjects: true }) as string[]
     },
     {
       id: 3,
-      title: 'Team Onboarding',
-      description: 'Our expert team is assigned to your project, ensuring the right skills and expertise for your specific requirements.',
+      title: t('servicesPage.process.steps.2.title'),
+      description: t('servicesPage.process.steps.2.description'),
       icon: <Users className="h-6 w-6 text-white" />,
       color: 'bg-purple-600',
       borderColor: 'border-purple-600',
-      duration: '2-3 Days',
-      keyPoints: [
-        'Dedicated account manager',
-        'Team introduction',
-        'Access to tools',
-        'Communication setup'
-      ]
+      duration: t('servicesPage.process.steps.2.duration'),
+      keyPoints: t('servicesPage.process.steps.2.keyPoints', { returnObjects: true }) as string[]
     },
     {
       id: 4,
-      title: 'Implementation',
-      description: 'We execute the agreed-upon services with precision, keeping you informed at every step of the process.',
+      title: t('servicesPage.process.steps.3.title'),
+      description: t('servicesPage.process.steps.3.description'),
       icon: <CheckCircle className="h-6 w-6 text-white" />,
       color: 'bg-yellow-500',
       borderColor: 'border-yellow-500',
-      duration: 'Varies by project',
-      keyPoints: [
-        'Regular progress updates',
-        'Quality assurance',
-        'Issue resolution',
-        'Milestone reviews'
-      ]
+      duration: t('servicesPage.process.steps.3.duration'),
+      keyPoints: t('servicesPage.process.steps.3.keyPoints', { returnObjects: true }) as string[]
     },
     {
       id: 5,
-      title: 'Review & Reporting',
-      description: 'We provide comprehensive reports and analysis, ensuring complete transparency and understanding of the results.',
+      title: t('servicesPage.process.steps.4.title'),
+      description: t('servicesPage.process.steps.4.description'),
       icon: <BarChart className="h-6 w-6 text-white" />,
       color: 'bg-red-600',
       borderColor: 'border-red-600',
-      duration: '1 Week',
-      keyPoints: [
-        'Performance metrics',
-        'Financial reporting',
-        'Compliance check',
-        'Recommendations'
-      ]
+      duration: t('servicesPage.process.steps.4.duration'),
+      keyPoints: t('servicesPage.process.steps.4.keyPoints', { returnObjects: true }) as string[]
     },
     {
       id: 6,
-      title: 'Ongoing Support',
-      description: 'Our relationship continues with ongoing support, regular reviews, and strategic guidance for continuous improvement.',
+      title: t('servicesPage.process.steps.5.title'),
+      description: t('servicesPage.process.steps.5.description'),
       icon: <MessageSquare className="h-6 w-6 text-white" />,
       color: 'bg-indigo-600',
       borderColor: 'border-indigo-600',
-      duration: 'Ongoing',
-      keyPoints: [
-        'Dedicated support',
-        'Regular check-ins',
-        'Strategic advice',
-        'Service optimization'
-      ]
+      duration: t('servicesPage.process.steps.5.duration'),
+      keyPoints: t('servicesPage.process.steps.5.keyPoints', { returnObjects: true }) as string[]
     }
   ];
 
@@ -171,7 +144,7 @@ const ProcessSection: FC = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Our <span className="text-blue-600">Proven</span> Process
+            {t('servicesPage.process.title')} <span className="text-blue-600">{t('servicesPage.process.titleHighlight')}</span> {t('servicesPage.process.titleSuffix')}
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-600"
@@ -179,7 +152,7 @@ const ProcessSection: FC = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            A structured approach to delivering exceptional financial services tailored to your business needs.
+            {t('servicesPage.process.subtitle')}
           </motion.p>
         </div>
 
@@ -207,22 +180,22 @@ const ProcessSection: FC = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-16 text-center"
           >
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Ready to get started?</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">{t('servicesPage.process.readyToGetStarted')}</h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Our team of experts is ready to guide you through our process and deliver exceptional financial services for your business.
+              {t('servicesPage.process.readyDescription')}
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
                 href="/consultation"
                 className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200"
               >
-                Get a Free Consultation
+                {t('servicesPage.process.getFreeConsultation')}
               </a>
               <a
                 href="#services"
                 className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-medium text-blue-600 shadow-sm border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200"
               >
-                Explore Our Services <ArrowRight className="ml-2 h-4 w-4" />
+                {t('servicesPage.process.exploreServices')} <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>
           </motion.div>

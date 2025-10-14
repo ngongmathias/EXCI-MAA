@@ -1,89 +1,52 @@
 import { FC, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ROUTES } from '../../../lib/constants/routes';
 import { Check, X, ArrowRight, Zap, BarChart3, Briefcase, Calendar, Building2 } from 'lucide-react';
 
 type BillingCycle = 'monthly' | 'annually';
 
 const PricingSection: FC = () => {
+  const { t } = useTranslation();
+  
   const pricingPlans = [
     {
       id: 'starter',
-      name: 'Starter',
-      description: 'Perfect for small businesses getting started',
+      name: t('servicesPage.pricing.plans.starter.name'),
+      description: t('servicesPage.pricing.plans.starter.description'),
       monthlyPrice: 299,
       annualPrice: 287,
-      features: [
-        'Basic bookkeeping',
-        'Monthly financial reports',
-        'Quarterly tax estimates',
-        'Email support',
-        'Up to 50 transactions/month',
-        'Basic financial dashboard'
-      ],
-      notIncluded: [
-        'Audit support',
-        'Dedicated account manager',
-        'Custom reporting',
-        'Tax filing',
-        'Inventory management'
-      ],
+      features: t('servicesPage.pricing.plans.starter.features', { returnObjects: true }) as string[],
+      notIncluded: t('servicesPage.pricing.plans.starter.notIncluded', { returnObjects: true }) as string[],
       popular: false,
-      buttonText: 'Get Started',
+      buttonText: t('servicesPage.pricing.plans.starter.buttonText'),
       color: 'from-blue-500 to-blue-600',
       icon: <BarChart3 className="h-6 w-6" />
     },
     {
       id: 'professional',
-      name: 'Professional',
-      description: 'Ideal for growing businesses',
+      name: t('servicesPage.pricing.plans.professional.name'),
+      description: t('servicesPage.pricing.plans.professional.description'),
       monthlyPrice: 699,
       annualPrice: 671,
-      features: [
-        'Everything in Starter',
-        'Advanced bookkeeping',
-        'Weekly financial reports',
-        'Monthly tax estimates',
-        'Priority email & phone support',
-        'Up to 200 transactions/month',
-        'Advanced financial dashboard',
-        'Basic tax filing',
-        'Inventory tracking'
-      ],
-      notIncluded: [
-        'Audit support',
-        'Dedicated account manager',
-        'Custom reporting',
-        'Advanced tax planning'
-      ],
+      features: t('servicesPage.pricing.plans.professional.features', { returnObjects: true }) as string[],
+      notIncluded: t('servicesPage.pricing.plans.professional.notIncluded', { returnObjects: true }) as string[],
       popular: true,
-      buttonText: 'Get Started',
+      buttonText: t('servicesPage.pricing.plans.professional.buttonText'),
       color: 'from-green-500 to-green-600',
       icon: <Briefcase className="h-6 w-6" />
     },
     {
       id: 'enterprise',
-      name: 'Enterprise',
-      description: 'For established businesses with complex needs',
+      name: t('servicesPage.pricing.plans.enterprise.name'),
+      description: t('servicesPage.pricing.plans.enterprise.description'),
       monthlyPrice: 1499,
       annualPrice: 1439,
-      features: [
-        'Everything in Professional',
-        'Full-service accounting',
-        'Custom financial reporting',
-        'Dedicated account manager',
-        '24/7 priority support',
-        'Unlimited transactions',
-        'Advanced tax planning',
-        'Audit support',
-        'Custom integrations',
-        'Board meeting preparation',
-        'CFO advisory services'
-      ],
-      notIncluded: [],
+      features: t('servicesPage.pricing.plans.enterprise.features', { returnObjects: true }) as string[],
+      notIncluded: t('servicesPage.pricing.plans.enterprise.notIncluded', { returnObjects: true }) as string[],
       popular: false,
-      buttonText: 'Contact Sales',
+      buttonText: t('servicesPage.pricing.plans.enterprise.buttonText'),
       color: 'from-purple-500 to-purple-600',
       icon: <Building2 className="h-6 w-6" />
     }
@@ -172,7 +135,7 @@ const PricingSection: FC = () => {
         </Link>
         
         <div className="mt-8 space-y-4">
-          <h4 className="text-sm font-medium text-gray-900">What's included:</h4>
+          <h4 className="text-sm font-medium text-gray-900">{t('servicesPage.pricing.whatsIncluded')}</h4>
           <ul className="space-y-3">
             {plan.features.map((feature, index) => (
               <li key={index} className="flex items-start">
@@ -184,7 +147,7 @@ const PricingSection: FC = () => {
           
           {plan.notIncluded.length > 0 && (
             <>
-              <h4 className="text-sm font-medium text-gray-900 mt-6">Not included:</h4>
+              <h4 className="text-sm font-medium text-gray-900 mt-6">{t('servicesPage.pricing.notIncluded')}</h4>
               <ul className="space-y-3">
                 {plan.notIncluded.map((item, index) => (
                   <li key={index} className="flex items-start text-gray-400">
@@ -216,7 +179,7 @@ const PricingSection: FC = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Simple, Transparent <span className="text-blue-600">Pricing</span></h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">{t('servicesPage.pricing.title')} <span className="text-blue-600">{t('servicesPage.pricing.titleHighlight')}</span> {t('servicesPage.pricing.titleSuffix')}</h2>
           </MotionDiv>
           <MotionDiv 
             className="text-xl text-gray-600"
@@ -224,7 +187,7 @@ const PricingSection: FC = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <p>Choose the perfect plan for your business needs. No hidden fees, cancel anytime.</p>
+            <p>{t('servicesPage.pricing.subtitle')}</p>
           </MotionDiv>
           
           <MotionDiv 
@@ -234,7 +197,7 @@ const PricingSection: FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <span className={`mr-4 text-sm font-medium ${billingCycle === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>
-              Monthly Billing
+              {t('servicesPage.pricing.monthlyBilling')}
             </span>
             <button
               type="button"
@@ -254,7 +217,7 @@ const PricingSection: FC = () => {
               />
             </button>
             <span className="ml-4 text-sm font-medium text-gray-900">
-              Annual Billing <span className="text-green-600">(Save up to 20%)</span>
+              {t('servicesPage.pricing.annualBilling')} <span className="text-green-600">{t('servicesPage.pricing.saveUpTo')}</span>
             </span>
           </MotionDiv>
         </div>
@@ -276,14 +239,14 @@ const PricingSection: FC = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-16 text-center"
         >
-          <p className="text-lg text-gray-600 mb-8">
-            Need a custom solution? We offer tailored packages for businesses with unique requirements.
-          </p>
+            <p className="text-lg text-gray-600 mb-8">
+              {t('servicesPage.pricing.needCustomSolution')}
+            </p>
         <Link
           to={ROUTES.CONSULTATION}
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md hover:shadow-lg transition-all duration-200"
           >
-            Get a Custom Quote
+            {t('servicesPage.pricing.getCustomQuote')}
             <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
         </MotionDiv>
@@ -293,10 +256,9 @@ const PricingSection: FC = () => {
             <div className="flex justify-center">
               <Zap className="h-8 w-8 text-yellow-500" />
             </div>
-            <h3 className="mt-4 text-xl font-bold text-gray-900">Not sure which plan is right for you?</h3>
+            <h3 className="mt-4 text-xl font-bold text-gray-900">{t('servicesPage.pricing.notSureWhichPlan')}</h3>
             <p className="mt-2 text-gray-600">
-              Our experts are here to help you choose the perfect solution for your business needs.
-              Schedule a free 30-minute consultation to discuss your requirements.
+              {t('servicesPage.pricing.expertsHelp')}
             </p>
             <div className="mt-6">
             <Link
@@ -304,7 +266,7 @@ const PricingSection: FC = () => {
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 shadow-sm"
               >
                 <Calendar className="mr-2 h-5 w-5" />
-                Schedule a Free Consultation
+                {t('servicesPage.pricing.scheduleFreeConsultation')}
             </Link>
             </div>
           </div>

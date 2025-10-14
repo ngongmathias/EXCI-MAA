@@ -27,7 +27,7 @@
     "termsOfService": "Conditions d'utilisation",
     "cookiePolicy": "Politique des cookies"
   },
-  "services": {
+  "serviceCategories": {
     "accounting": "Expertise Comptable",
     "legal": "Audit Légal et Fiscal",
     "managerial": "Conseil en Gestion",
@@ -35,17 +35,688 @@
     "consolidation": "Consolidation",
     "risk": "Conseil en Risque",
     "it": "Conseil IT",
-    "financial": "Rapports Financiers",
+    "financial": "Rapports Financiers"
+  },
+  "hero": {
+    "title": "Comptabilité Professionnelle &",
+    "titleHighlight": "Excellence en Conseil",
+    "subtitle": "Services complets de comptabilité, d'audit et de conseil avec présence internationale. Nous livrons des solutions expertes pour soutenir votre croissance commerciale.",
+    "feature1": "Expertise internationale avec compréhension locale",
+    "feature2": "Services complets d'audit et de conseil",
+    "feature3": "Support dédié pour votre succès commercial",
+    "cta1": "Explorer les Services",
+    "cta2": "Obtenir une Consultation"
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "En savoir plus sur notre entreprise et nos valeurs",
+    "feature1Title": "Excellence Professionnelle",
+    "feature1Desc": "Nous maintenons les plus hauts standards dans tous nos services",
+    "feature2Title": "Portée Mondiale",
+    "feature2Desc": "Servir les clients dans plusieurs pays et régions",
+    "feature3Title": "Équipe d'Experts",
+    "feature3Desc": "Nos professionnels expérimentés livrent des résultats exceptionnels",
+    "heroTitle": "À Propos d'EXCI-MAA",
+    "heroSubtitle": "Cabinet professionnel de comptabilité, d'audit et de conseil avec présence internationale",
+    "historyTitle": "Notre Histoire",
+    "historySubtitle": "Construire la confiance par l'excellence depuis notre fondation",
+    "valuesTitle": "Nos Valeurs",
+    "valuesSubtitle": "Les principes qui guident tout ce que nous faisons",
+    "teamTitle": "Notre Équipe",
+    "teamSubtitle": "Rencontrez les professionnels derrière notre succès",
+    "testimonialsTitle": "Témoignages Clients",
+    "testimonialsSubtitle": "Ce que nos clients disent de nous"
+  },
+  "services": {
     "title": "Nos Services",
-    "subtitle": "Solutions complètes pour vos besoins",
-    "learnMore": "En savoir plus",
-    "viewAll": "Voir tous les services",
+    "subtitle": "Solutions complètes pour vos besoins commerciaux",
+    "heroTitle": "Services Professionnels",
+    "heroSubtitle": "Solutions expertes adaptées à vos exigences commerciales",
+    "detailedTitle": "Détails des Services",
+    "detailedSubtitle": "Informations approfondies sur nos offres",
+    "processTitle": "Notre Processus",
+    "processSubtitle": "Comment nous livrons des résultats exceptionnels",
+    "faqTitle": "Questions Fréquemment Posées",
+    "faqSubtitle": "Questions communes sur nos services",
+    "pricingTitle": "Tarification",
+    "pricingSubtitle": "Tarification transparente pour tous nos services",
+    "learnMore": "En Savoir Plus",
+    "viewAll": "Voir Tous les Services",
+    "service1Title": "Expertise Comptable",
+    "service1Desc": "Services comptables complets pour les entreprises",
+    "service2Title": "Audit Légal et Fiscal",
+    "service2Desc": "Services professionnels d'audit et de conformité",
+    "service3Title": "Conseil en Gestion",
+    "service3Desc": "Conseil stratégique pour la croissance commerciale",
+    "service4Title": "Paie et Conseil Social",
+    "service4Desc": "Gestion complète de la paie et des RH",
+    "service5Title": "Consolidation",
+    "service5Desc": "Consolidation financière pour les organisations multi-entités",
+    "service6Title": "Conseil en Risque",
+    "service6Desc": "Évaluation et gestion complètes des risques",
     "categories": {
-      "all": "Tous les services",
-      "finance": "Services financiers",
-      "business": "Services aux entreprises"
+      "all": "Tous les Services",
+      "finance": "Services Financiers",
+      "business": "Services aux Entreprises"
+    }
+  },
+  "globalOffices": {
+    "heroTitle": "Bureaux Mondiaux",
+    "heroSubtitle": "Notre présence internationale et expertise locale",
+    "mapTitle": "Carte Interactive",
+    "mapSubtitle": "Explorez nos bureaux dans le monde entier",
+    "listTitle": "Emplacements des Bureaux",
+    "listSubtitle": "Trouvez le bureau le plus proche de vous"
+  },
+  "insights": {
+    "heroTitle": "Perspectives et Actualités",
+    "heroSubtitle": "Restez à jour avec les perspectives de l'industrie et les actualités de l'entreprise",
+    "eventsTitle": "Événements",
+    "eventsSubtitle": "Événements à venir et passés",
+    "blogTitle": "Blog",
+    "blogSubtitle": "Derniers articles et perspectives",
+    "promotionsTitle": "Promotions",
+    "promotionsSubtitle": "Offres spéciales et annonces"
+  },
+  "careers": {
+    "heroTitle": "Rejoignez Notre Équipe",
+    "heroSubtitle": "Construisez votre carrière avec EXCI-MAA",
+    "jobsTitle": "Postes Ouverts",
+    "jobsSubtitle": "Opportunités d'emploi actuelles",
+    "chartTitle": "Organigramme",
+    "chartSubtitle": "Notre structure d'entreprise et leadership",
+    "benefitsTitle": "Avantages et Privilèges",
+    "benefitsSubtitle": "Ce que nous offrons à nos employés"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Entrez en contact avec notre équipe",
+    "heroTitle": "Entrez en Contact",
+    "heroSubtitle": "Nous sommes là pour vous aider avec vos besoins commerciaux",
+    "formTitle": "Envoyez-nous un Message",
+    "formSubtitle": "Remplissez le formulaire ci-dessous et nous vous recontacterons",
+    "mapTitle": "Trouvez-Nous",
+    "mapSubtitle": "Visitez nos bureaux dans le monde entier",
+    "infoTitle": "Informations de Contact",
+    "infoSubtitle": "Plusieurs façons de nous joindre",
+    "cta": "Contactez-Nous Maintenant",
+    "hero": {
+      "getInTouch": "Entrez en Contact",
+      "letsTalkAbout": "Parlons de Vos",
+      "businessNeeds": "Besoins Commerciaux",
+      "description": "Notre équipe d'experts financiers est prête à vous aider à naviguer dans vos défis commerciaux. Contactez-nous par n'importe quel canal ci-dessous ou envoyez-nous un message directement.",
+      "contactMethods": {
+        "emailUs": "Envoyez-nous un Email",
+        "emailDescription": "Notre équipe vous recontactera dans les 24 heures",
+        "emailValue": "info@exci-maa.com",
+        "callUs": "Appelez-nous",
+        "callDescription": "Lun-Ven de 9h à 17h",
+        "callValue": "+1 (555) 123-4567",
+        "visitUs": "Visitez-nous",
+        "visitDescription": "Venez nous dire bonjour à notre bureau",
+        "visitValue": "123 Avenue des Affaires, Ville, Pays",
+        "officeHours": "Heures de Bureau",
+        "hoursDescription": "Nos heures de travail",
+        "hoursValue": "Lun - Ven: 9:00 - 18:00"
+      },
+      "orFillOut": "Ou remplissez notre formulaire de contact et nous vous recontacterons dans les 24 heures.",
+      "sendUsMessage": "Envoyez-nous un Message"
+    },
+    "form": {
+      "getInTouch": "Entrez en Contact",
+      "description": "Vous avez des questions ou êtes prêt à commencer votre projet ? Remplissez le formulaire ci-dessous et notre équipe vous recontactera dès que possible.",
+      "contactInformation": "Informations de Contact",
+      "contactDescription": "Remplissez le formulaire et notre équipe vous recontactera dans les 24 heures. Pour une assistance immédiate, veuillez nous appeler directement.",
+      "callUs": "Appelez-nous",
+      "emailUs": "Envoyez-nous un email",
+      "visitUs": "Visitez-nous",
+      "businessHours": "Heures de Bureau",
+      "mondayFriday": "Lundi - Vendredi: 9:00 AM - 6:00 PM",
+      "saturdaySunday": "Samedi - Dimanche: Fermé",
+      "fullName": "Nom Complet",
+      "emailAddress": "Adresse Email",
+      "phoneNumber": "Numéro de Téléphone",
+      "subject": "Sujet",
+      "message": "Message",
+      "required": "*",
+      "placeholders": {
+        "fullName": "Jean Dupont",
+        "email": "vous@exemple.com",
+        "phone": "+33 1 23 45 67 89",
+        "selectSubject": "Sélectionnez un sujet",
+        "message": "Comment pouvons-nous vous aider ?"
+      },
+      "subjects": {
+        "generalInquiry": "Demande Générale",
+        "accountingServices": "Services Comptables",
+        "auditServices": "Services d'Audit",
+        "taxConsultation": "Consultation Fiscale",
+        "other": "Autre"
+      },
+      "validation": {
+        "nameRequired": "Le nom est requis",
+        "emailRequired": "L'email est requis",
+        "emailInvalid": "Adresse email invalide",
+        "subjectRequired": "Le sujet est requis",
+        "messageRequired": "Le message est requis",
+        "messageMinLength": "Le message doit contenir au moins 10 caractères"
+      },
+      "sendMessage": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "successTitle": "Message Envoyé avec Succès !",
+      "successDescription": "Merci de nous avoir contactés. Nous avons reçu votre message et vous recontacterons dans les 24 heures.",
+      "sendAnotherMessage": "Envoyer un Autre Message",
+      "errorTitle": "Erreur",
+      "errorMessage": "Échec de l'envoi du message. Veuillez réessayer plus tard.",
+      "privacyNote": "Nous vous recontacterons dans les 24 heures. Vos informations sont sécurisées."
+    },
+    "map": {
+      "findOurOffice": "Trouvez Notre Bureau",
+      "description": "Visitez-nous dans notre bureau situé dans un endroit pratique. Nous sommes là pour vous assister dans tous vos besoins financiers.",
+      "ourOffice": "Notre Bureau",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "businessHours": "Heures de Bureau",
+      "getDirections": "Obtenir les Directions",
+      "needHelpFinding": "Besoin d'Aide pour Nous Trouver ?",
+      "helpDescription": "Notre bureau est situé au cœur du quartier des affaires avec un accès facile aux transports publics.",
+      "centerMap": "Centrer la Carte sur Notre Emplacement",
+      "officeLocation": {
+        "address": "123 Avenue des Affaires, Riyad 12345, Arabie Saoudite",
+        "phone": "+966 12 345 6789",
+        "email": "riyadh@exci-maa.com",
+        "hours": "Lundi - Vendredi: 9:00 AM - 6:00 PM"
+      }
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "description": "Trouvez des réponses aux questions courantes sur nos services, processus et comment nous pouvons aider votre entreprise à prospérer.",
+      "questions": [
+        {
+          "question": "Quels services EXCI-MAA fournit-il ?",
+          "answer": "Nous offrons une gamme complète de services de comptabilité, d'audit, de fiscalité et de conseil commercial adaptés aux besoins uniques des entreprises en Arabie Saoudite et au-delà. Nos services incluent les rapports financiers, la planification fiscale, l'audit interne et le conseil commercial."
+        },
+        {
+          "question": "Comment puis-je planifier une consultation ?",
+          "answer": "Vous pouvez planifier une consultation en appelant notre bureau, en nous envoyant un email, ou en utilisant le formulaire de contact sur cette page. Notre équipe vous recontactera dans les 24 heures pour confirmer votre rendez-vous."
+        },
+        {
+          "question": "Dans quelles industries vous spécialisez-vous ?",
+          "answer": "Nous avons une vaste expérience dans le travail avec diverses industries, y compris les soins de santé, la construction, la vente au détail, la technologie et les services professionnels. Notre équipe a l'expertise pour gérer les défis financiers uniques de chaque secteur."
+        },
+        {
+          "question": "Quelles sont vos heures de bureau ?",
+          "answer": "Notre bureau est ouvert du dimanche au jeudi, de 9h00 à 18h00. Nous sommes fermés les vendredis et samedis ainsi que les jours fériés."
+        },
+        {
+          "question": "Offrez-vous des services à distance ou virtuels ?",
+          "answer": "Oui, nous offrons des services de consultation en personne et virtuels pour répondre aux besoins de nos clients. Notre équipe est équipée d'outils de visioconférence sécurisés pour fournir le même niveau de service à distance."
+        },
+        {
+          "question": "Comment assurez-vous la sécurité et la confidentialité des données ?",
+          "answer": "Nous prenons la sécurité des données très au sérieux. Toutes les informations clients sont traitées avec la plus grande confidentialité et protégées en utilisant des mesures de sécurité standard de l'industrie, y compris le chiffrement et les systèmes de partage de fichiers sécurisés."
+        }
+      ],
+      "stillHaveQuestions": "Vous avez encore des questions ?",
+      "stillHaveDescription": "Vous ne trouvez pas la réponse que vous cherchez ? Notre équipe est là pour vous aider. Contactez-nous et nous vous recontacterons dès que possible.",
+      "chatWithUs": "Discutez avec nous",
+      "chatDescription": "Notre équipe est là pour vous aider",
+      "sendUsMessage": "Envoyez-nous un message",
+      "callUs": "Appelez-nous",
+      "callDescription": "Lundi au vendredi, 9h à 18h",
+      "emailUs": "Envoyez-nous un email",
+      "emailDescription": "Nous vous recontacterons dans les 24 heures",
+      "cantFindWhat": "Vous ne trouvez pas ce que vous cherchez ?",
+      "expertsDescription": "Notre équipe d'experts est là pour répondre à toutes vos questions.",
+      "contactSupport": "Contacter le Support"
+    }
+  },
+  "training": {
+    "title": "Programmes de Formation",
+    "subtitle": "Nous offrons des programmes de développement professionnel et de certification"
+  },
+  "partners": {
+    "title": "Nos Dirigeants",
+    "subtitle": "Organisations de confiance avec lesquelles nous travaillons"
+  },
+  "offices": {
+    "title": "Présence Mondiale",
+    "subtitle": "Servir les clients dans le monde entier"
+  },
+  "admin": {
+    "dashboardTitle": "Tableau de Bord Admin",
+    "dashboardSubtitle": "Gérez votre contenu et vos analyses",
+    "contentTitle": "Gestion de Contenu",
+    "contentSubtitle": "Gérez les services, événements et articles de blog",
+    "analyticsTitle": "Analyses",
+    "analyticsSubtitle": "Voir les métriques de performance et les perspectives"
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Transformez Votre Entreprise avec",
+      "titleHighlight": "des Solutions Financières Expertes",
+      "subtitle": "Découvrez comment nos services financiers complets peuvent stimuler la croissance, assurer la conformité et optimiser les performances de votre entreprise."
+    },
+    "detailedServices": {
+      "title": "Nos",
+      "titleHighlight": "Complets",
+      "titleSuffix": "Services",
+      "subtitle": "Solutions financières sur mesure pour répondre aux besoins uniques de votre entreprise et stimuler une croissance durable.",
+      "services": {
+        "accounting": {
+          "title": "Comptabilité et Tenue de Livres",
+          "shortDesc": "Tenue de registres financiers et rapports complets",
+          "description": "Notre équipe comptable experte fournit des services de tenue de livres complets pour maintenir vos registres financiers précis et à jour. Nous gérons tout, des transactions quotidiennes aux rapports financiers complexes, en assurant la conformité avec toutes les réglementations pertinentes.",
+          "features": [
+            "Tenue de livres mensuelle et états financiers",
+            "Gestion des comptes créditeurs et débiteurs",
+            "Rapprochements bancaires et cartes de crédit",
+            "Traitement de la paie et rapports",
+            "Rapports et analyse financiers",
+            "Configuration et maintenance du plan comptable",
+            "Suivi et évaluation des stocks",
+            "Gestion des actifs fixes",
+            "Analyse et prévision des flux de trésorerie",
+            "Préparation et suivi du budget"
+          ]
+        },
+        "audit": {
+          "title": "Audit et Assurance",
+          "shortDesc": "Vérification financière indépendante et conformité",
+          "description": "Nos services d'audit fournissent une vérification indépendante de vos états financiers, assurant l'exactitude et la conformité aux normes comptables. Nous aidons à identifier les risques et à améliorer vos processus financiers.",
+          "features": [
+            "Audits des états financiers",
+            "Évaluations des contrôles internes",
+            "Audits de conformité",
+            "Audits opérationnels",
+            "Audits à des fins spéciales",
+            "Évaluation et gestion des risques",
+            "Détection et prévention de la fraude",
+            "Examens de conformité réglementaire",
+            "Services de due diligence",
+            "Audits de performance et d'efficacité"
+          ]
+        },
+        "tax": {
+          "title": "Conseil Fiscal",
+          "shortDesc": "Planification fiscale stratégique et conformité",
+          "description": "Nos experts fiscaux fournissent des services complets de planification fiscale et de conformité pour minimiser votre responsabilité fiscale tout en assurant la conformité complète avec toutes les lois et réglementations fiscales.",
+          "features": [
+            "Planification et stratégie fiscales",
+            "Déclarations fiscales des entreprises et particuliers",
+            "Support d'audit fiscal",
+            "Planification fiscale internationale",
+            "Résolution de litiges fiscaux",
+            "Conformité et dépôt fiscal",
+            "Documentation des prix de transfert",
+            "Stratégies d'optimisation fiscale",
+            "Planification successorale et de succession",
+            "Coordination fiscale multi-juridictionnelle"
+          ]
+        },
+        "advisory": {
+          "title": "Conseil d'Entreprise",
+          "shortDesc": "Conseil et planification d'entreprise stratégiques",
+          "description": "Nos services de conseil d'entreprise aident les organisations à naviguer dans les défis commerciaux complexes, à améliorer les performances et à atteindre une croissance durable grâce à la planification et à la mise en œuvre stratégiques.",
+          "features": [
+            "Planification et stratégie d'entreprise",
+            "Modélisation et prévision financières",
+            "Fusions et acquisitions",
+            "Évaluation d'entreprise",
+            "Amélioration des performances",
+            "Planification et exécution stratégiques",
+            "Analyse de marché et intelligence concurrentielle",
+            "Analyse d'investissement et due diligence",
+            "Gestion du changement et transformation",
+            "Conseil de conseil d'administration et gouvernance"
+          ]
+        },
+        "risk": {
+          "title": "Gestion des Risques",
+          "shortDesc": "Identifier et atténuer les risques commerciaux",
+          "description": "Nos services de gestion des risques aident les organisations à identifier, évaluer et atténuer les risques qui pourraient affecter leurs objectifs et opérations commerciaux.",
+          "features": [
+            "Évaluation et analyse des risques",
+            "Services d'audit interne",
+            "Prévention et détection de la fraude",
+            "Surveillance de la conformité",
+            "Planification de la continuité des activités",
+            "Gestion des risques d'entreprise",
+            "Évaluation des risques opérationnels",
+            "Évaluation des risques financiers",
+            "Cadres de conformité réglementaire",
+            "Gestion de crise et récupération"
+          ]
+        },
+        "hr": {
+          "title": "Services RH et Paie",
+          "shortDesc": "Solutions complètes RH et paie",
+          "description": "Nos services RH et paie aident les organisations à gérer leur actif le plus précieux - leurs employés - tout en assurant la conformité avec les lois et réglementations du travail.",
+          "features": [
+            "Traitement de la paie",
+            "Développement de politiques RH",
+            "Administration des avantages sociaux",
+            "Gestion de la performance",
+            "Conformité aux lois du travail",
+            "Intégration et départ des employés",
+            "Analyse de la rémunération et des avantages",
+            "Mise en œuvre de technologies RH",
+            "Planification de la main-d'œuvre et analyses",
+            "Relations employés et résolution de conflits"
+          ]
+        }
+      },
+      "scheduleAppointment": "Planifier un Rendez-vous",
+      "needCustomSolution": "Besoin d'une solution personnalisée ? Nos experts sont là pour vous aider.",
+      "getFreeConsultation": "Obtenir une Consultation Gratuite"
+    },
+    "process": {
+      "title": "Notre",
+      "titleHighlight": "Prouvé",
+      "titleSuffix": "Processus",
+      "subtitle": "Une approche structurée pour fournir des services financiers exceptionnels adaptés aux besoins de votre entreprise.",
+      "steps": [
+        {
+          "title": "Découverte et Analyse",
+          "description": "Nous commençons par comprendre vos besoins, défis et objectifs commerciaux grâce à des discussions approfondies et des analyses.",
+          "duration": "1-2 Semaines",
+          "keyPoints": [
+            "Consultation initiale",
+            "Évaluation d'entreprise",
+            "Collecte des exigences",
+            "Définition de la portée"
+          ]
+        },
+        {
+          "title": "Proposition et Planification",
+          "description": "Nous développons un plan de service personnalisé avec des objectifs clairs, des délais et des livrables adaptés à vos besoins.",
+          "duration": "3-5 Jours",
+          "keyPoints": [
+            "Plan de service personnalisé",
+            "Structure de tarification",
+            "Accord sur les délais",
+            "Attribution d'équipe"
+          ]
+        },
+        {
+          "title": "Intégration d'Équipe",
+          "description": "Notre équipe experte est assignée à votre projet, assurant les bonnes compétences et expertise pour vos exigences spécifiques.",
+          "duration": "2-3 Jours",
+          "keyPoints": [
+            "Gestionnaire de compte dédié",
+            "Présentation de l'équipe",
+            "Accès aux outils",
+            "Configuration de la communication"
+          ]
+        },
+        {
+          "title": "Mise en Œuvre",
+          "description": "Nous exécutons les services convenus avec précision, vous tenant informé à chaque étape du processus.",
+          "duration": "Varie selon le projet",
+          "keyPoints": [
+            "Mises à jour de progrès régulières",
+            "Assurance qualité",
+            "Résolution de problèmes",
+            "Révisions de jalons"
+          ]
+        },
+        {
+          "title": "Révision et Rapports",
+          "description": "Nous fournissons des rapports et analyses complets, assurant une transparence complète et une compréhension des résultats.",
+          "duration": "1 Semaine",
+          "keyPoints": [
+            "Métriques de performance",
+            "Rapports financiers",
+            "Vérification de conformité",
+            "Recommandations"
+          ]
+        },
+        {
+          "title": "Support Continu",
+          "description": "Notre relation continue avec un support continu, des révisions régulières et des conseils stratégiques pour une amélioration continue.",
+          "duration": "Continu",
+          "keyPoints": [
+            "Support dédié",
+            "Vérifications régulières",
+            "Conseils stratégiques",
+            "Optimisation des services"
+          ]
+        }
+      ],
+      "readyToGetStarted": "Prêt à commencer ?",
+      "readyDescription": "Notre équipe d'experts est prête à vous guider à travers notre processus et fournir des services financiers exceptionnels pour votre entreprise.",
+      "getFreeConsultation": "Obtenir une Consultation Gratuite",
+      "exploreServices": "Explorer Nos Services"
+    },
+    "pricing": {
+      "title": "Tarification",
+      "titleHighlight": "Simple et Transparente",
+      "titleSuffix": "",
+      "subtitle": "Choisissez le plan parfait pour les besoins de votre entreprise. Aucuns frais cachés, annulez à tout moment.",
+      "monthlyBilling": "Facturation Mensuelle",
+      "annualBilling": "Facturation Annuelle",
+      "saveUpTo": "(Économisez jusqu'à 20%)",
+      "plans": {
+        "starter": {
+          "name": "Débutant",
+          "description": "Parfait pour les petites entreprises qui commencent",
+          "features": [
+            "Tenue de livres de base",
+            "Rapports financiers mensuels",
+            "Estimations fiscales trimestrielles",
+            "Support par email",
+            "Jusqu'à 50 transactions/mois",
+            "Tableau de bord financier de base"
+          ],
+          "notIncluded": [
+            "Support d'audit",
+            "Gestionnaire de compte dédié",
+            "Rapports personnalisés",
+            "Dépôt fiscal",
+            "Gestion des stocks"
+          ],
+          "buttonText": "Commencer"
+        },
+        "professional": {
+          "name": "Professionnel",
+          "description": "Idéal pour les entreprises en croissance",
+          "features": [
+            "Tout dans Débutant",
+            "Tenue de livres avancée",
+            "Rapports financiers hebdomadaires",
+            "Estimations fiscales mensuelles",
+            "Support prioritaire par email et téléphone",
+            "Jusqu'à 200 transactions/mois",
+            "Tableau de bord financier avancé",
+            "Dépôt fiscal de base",
+            "Suivi des stocks"
+          ],
+          "notIncluded": [
+            "Support d'audit",
+            "Gestionnaire de compte dédié",
+            "Rapports personnalisés",
+            "Planification fiscale avancée"
+          ],
+          "buttonText": "Commencer"
+        },
+        "enterprise": {
+          "name": "Entreprise",
+          "description": "Pour les entreprises établies avec des besoins complexes",
+          "features": [
+            "Tout dans Professionnel",
+            "Comptabilité service complet",
+            "Rapports financiers personnalisés",
+            "Gestionnaire de compte dédié",
+            "Support prioritaire 24/7",
+            "Transactions illimitées",
+            "Planification fiscale avancée",
+            "Support d'audit",
+            "Intégrations personnalisées",
+            "Préparation de réunions de conseil",
+            "Services de conseil CFO"
+          ],
+          "notIncluded": [],
+          "buttonText": "Contacter les Ventes"
+        }
+      },
+      "whatsIncluded": "Ce qui est inclus :",
+      "notIncluded": "Non inclus :",
+      "billedAnnually": "Facturé annuellement",
+      "orBilledAnnually": "ou ${{annualPrice}} facturé annuellement",
+      "save": "Économisez {{percentage}}%",
+      "needCustomSolution": "Besoin d'une solution personnalisée ? Nous offrons des forfaits sur mesure pour les entreprises avec des exigences uniques.",
+      "getCustomQuote": "Obtenir un Devis Personnalisé",
+      "notSureWhichPlan": "Pas sûr du plan qui vous convient ?",
+      "expertsHelp": "Nos experts sont là pour vous aider à choisir la solution parfaite pour les besoins de votre entreprise. Planifiez une consultation gratuite de 30 minutes pour discuter de vos exigences.",
+      "scheduleFreeConsultation": "Planifier une Consultation Gratuite"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "À Propos d'EXCI-MAA",
+      "subtitle": "Votre Partenaire Financier de Confiance",
+      "description": "Avec plus de 27 ans d'excellence dans les services financiers, EXCI-MAA a été un partenaire de confiance pour les entreprises dans plusieurs pays, fournissant des services experts en comptabilité, audit et conseil.",
+      "getInTouch": "Entrer en Contact",
+      "ourServices": "Nos Services",
+      "trustedByBusinesses": "Fait confiance par les entreprises du monde entier",
+      "stats": {
+        "yearsExperience": "Années d'Expérience",
+        "countriesServed": "Pays Desservis",
+        "teamMembers": "Membres de l'Équipe",
+        "clientSatisfaction": "Satisfaction Client"
+      }
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description1": "Notre mission principale est de soutenir et accompagner les entreprises opérant sur le marché africain vers l'excellence financière. En tirant parti d'une connaissance approfondie des secteurs à but lucratif et non lucratif, nous livrons des engagements de conseil, d'audit statutaire et de conseil adaptés à chaque taille d'organisation.",
+      "description2": "Nos solutions sont conçues pour répondre aux besoins spécifiques des entreprises à travers le continent africain, fournissant un service de bout en bout et une vraie valeur ajoutée—à un budget équitable. Notre équipe multidisciplinaire et multiculturelle assure un support sur mesure, adapté à l'échelle et aux capacités de votre structure."
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "description1": "EXCI-MAA a été fondée par des experts en audit, comptabilité, fiscalité, développement commercial, systèmes d'information de gestion et droit. Avec une présence au Canada, aux États-Unis, en France, au Royaume-Uni et à travers l'Afrique, nous apportons une expertise internationale adaptée à chaque contexte local.",
+      "description2": "Nous opérons à travers toute la chaîne de valeur des activités de nos clients, assurant la transparence et la conformité avec les parties prenantes. Notre cabinet accompagne les organisations dans plusieurs pays à travers un réseau solide et des équipes sur le terrain, offrant un service de proximité et des solutions adaptées aux réalités locales.",
+      "description3": "Aujourd'hui, nous continuons d'étendre notre empreinte tout en restant fidèles à nos principes fondateurs : excellence, intégrité et impact. Des audits statutaires et contractuels à la gestion des risques et au conseil personnalisé, nos équipes livrent des missions durables et efficaces qui génèrent des résultats durables.",
+      "whatWeDo": "Ce que nous faisons",
+      "services": [
+        "Support pour les projets de développement, fusion, création ou transformation",
+        "Audit statutaire ou contractuel",
+        "Expertise comptable",
+        "Analyse du contrôle interne et gestion des risques",
+        "Audit des coûts pétroliers",
+        "Conseil personnalisé pour les entreprises et PME"
+      ]
+    },
+    "history": {
+      "title": "Notre Parcours",
+      "subtitle": "Plus de deux décennies d'excellence dans les services financiers",
+      "timeline": [
+        {
+          "year": "1996",
+          "title": "Fondation d'EXCI-MAA",
+          "description": "Fondée à Yaoundé, Cameroun, avec une vision de fournir des services comptables et financiers exceptionnels aux entreprises locales."
+        },
+        {
+          "year": "2002",
+          "title": "Expansion Régionale",
+          "description": "Étendu les services pour couvrir l'Afrique centrale, établissant des bureaux dans les centres économiques clés de la région."
+        },
+        {
+          "year": "2010",
+          "title": "Reconnaissance Internationale",
+          "description": "Obtenu une reconnaissance internationale pour l'excellence dans les services financiers et les normes de conformité."
+        },
+        {
+          "year": "2015",
+          "title": "Transformation Numérique",
+          "description": "Implémenté des technologies financières de pointe pour améliorer la prestation de services et l'expérience client."
+        },
+        {
+          "year": "2020",
+          "title": "Portée Mondiale",
+          "description": "Établi des partenariats avec des firmes internationales, étendant nos services aux clients dans plus de 6 pays."
+        },
+        {
+          "year": "2023",
+          "title": "Croissance de l'Équipe",
+          "description": "Notre équipe a grandi à plus de 50 professionnels, consolidant notre position en tant que firme de services financiers leader."
+        }
+      ],
+      "journeyContinues": "Notre parcours continue alors que nous nous efforçons d'excellence dans chaque service que nous fournissons.",
+      "learnMoreStory": "En savoir plus sur notre histoire"
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "subtitle": "Les principes qui guident notre travail et définissent notre culture",
+      "values": [
+        {
+          "name": "Excellence",
+          "description": "Nous nous engageons à fournir les services de la plus haute qualité, améliorant continuellement nos compétences et processus pour dépasser les attentes des clients."
+        },
+        {
+          "name": "Intégrité",
+          "description": "Nous maintenons les plus hauts standards éthiques, assurant la transparence, l'honnêteté et le professionnalisme dans toutes nos interactions."
+        },
+        {
+          "name": "Innovation",
+          "description": "Nous adoptons les nouvelles technologies et solutions créatives pour fournir des services de pointe qui stimulent le succès de nos clients."
+        },
+        {
+          "name": "Focus Client",
+          "description": "Nous construisons des relations durables en comprenant les besoins uniques de nos clients et en livrant des solutions sur mesure qui créent une vraie valeur."
+        },
+        {
+          "name": "Professionnalisme",
+          "description": "Nous maintenons les plus hauts standards d'expertise, de fiabilité et de responsabilité dans tous les aspects de notre travail."
+        },
+        {
+          "name": "Partenariat",
+          "description": "Nous croyons en collaborer étroitement avec nos clients, travaillant comme une extension de leur équipe pour atteindre un succès partagé."
+        }
+      ],
+      "learnMore": "En savoir plus",
+      "learnMoreCulture": "En savoir plus sur notre culture"
+    },
+    "team": {
+      "title": "Rencontrez Notre Direction",
+      "subtitle": "Notre équipe expérimentée est dédiée à fournir un service et une valeur exceptionnels à nos clients.",
+      "members": [
+        {
+          "name": "Pierre Kemeni",
+          "role": "Fondateur et PDG",
+          "bio": "MBA, CPA, DEC avec plus de 27 ans d'expérience internationale en comptabilité et audit.",
+          "expertise": [
+            "Comptabilité Internationale",
+            "Audit Financier",
+            "Stratégie d'Entreprise",
+            "Finance d'Entreprise"
+          ]
+        },
+        {
+          "name": "Patrick Ngatcha",
+          "role": "Directeur Général",
+          "bio": "DEC, DSCG, Master CCA, MSTCF avec plus de 13 ans en développement commercial et conseil financier.",
+          "expertise": [
+            "Développement Commercial",
+            "Conseil Financier",
+            "Planification Fiscale",
+            "Stratégie d'Entreprise"
+          ]
+        },
+        {
+          "name": "Marie Laure Ngo Bikoi",
+          "role": "Directrice d'Audit Senior",
+          "bio": "HEC, DSCG avec plus de 15 ans d'expérience en audit et services de conseil financier.",
+          "expertise": [
+            "Audit Financier",
+            "Contrôles Internes",
+            "Gestion des Risques",
+            "Conformité"
+          ]
+        }
+      ],
+      "expertise": "Expertise",
+      "viewAllMembers": "Voir tous les membres de l'équipe"
     }
   }
 }
-
-

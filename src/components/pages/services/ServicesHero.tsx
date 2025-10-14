@@ -1,7 +1,10 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const ServicesHero: FC = () => {
+  const { t } = useTranslation();
+  
   const AnimatedGradientText = ({ children }: { children: React.ReactNode }) => {
     return (
       <span className="animate-text-gradient bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-[200%_auto] bg-clip-text text-transparent">
@@ -27,7 +30,7 @@ const ServicesHero: FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Transform Your Business with <AnimatedGradientText>Expert Financial Solutions</AnimatedGradientText>
+            {t('servicesPage.hero.title')} <AnimatedGradientText>{t('servicesPage.hero.titleHighlight')}</AnimatedGradientText>
           </motion.h1>
           
           <motion.p 
@@ -36,7 +39,7 @@ const ServicesHero: FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Discover how our comprehensive financial services can drive growth, ensure compliance, and optimize your business performance.
+            {t('servicesPage.hero.subtitle')}
           </motion.p>
         </div>
       </div>
