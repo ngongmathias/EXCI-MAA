@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Users, Briefcase, Mail, BookOpen } from 'lucide-react';
+import { Menu, X, Home, Users, Briefcase, Mail, BookOpen, Globe } from 'lucide-react';
+import { countries } from '../../data/countries';
 import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import AuthButton from './AuthButton';
@@ -14,6 +15,7 @@ const Header: FC = () => {
     {name: t('nav.home'), href: '/', icon: <Home className="h-4 w-4" />},
     {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
     {name: t('nav.services'), href: '/services', icon: <Briefcase className="h-4 w-4" />},
+    {name: t('nav.globalOffices') ?? 'Global Presence', href: '/global-offices', icon: <Globe className="h-4 w-4" />, children: countries.map(c => ({ name: c.name, href: `/global-offices/${c.slug}` }))},
     {name: t('nav.training'), href: '/training', icon: <BookOpen className="h-4 w-4" />},
     {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />},
   ];
@@ -38,24 +40,36 @@ const Header: FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
-              >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
-                  {item.icon}
-                </span>
-                <span>{item.name}</span>
-              </Link>
+              <div key={item.name} className="relative group">
+                <Link
+                  to={item.href}
+                  className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
+                >
+                  <span className={`transition-colors duration-200 ${
+                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                      ? 'text-blue-600'
+                      : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
+                    {item.icon}
+                  </span>
+                  <span>{item.name}</span>
+                </Link>
+                {item.children && (
+                  <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black/5 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition">
+                    <div className="py-2">
+                      {item.children.map((child: any) => (
+                        <Link key={child.href} to={child.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
 
@@ -85,25 +99,35 @@ const Header: FC = () => {
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
-                  {item.icon}
-                </span>
-                <span>{item.name}</span>
-              </Link>
+              <div key={item.name}>
+                <Link
+                  to={item.href}
+                  className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${
+                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className={`transition-colors duration-200 ${
+                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                      ? 'text-blue-600'
+                      : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
+                    {item.icon}
+                  </span>
+                  <span>{item.name}</span>
+                </Link>
+                {item.children && (
+                  <div className="pl-10">
+                    {item.children.map((child: any) => (
+                      <Link key={child.href} to={child.href} className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>
+                        {child.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
           <div className="pt-4 border-t border-gray-200">

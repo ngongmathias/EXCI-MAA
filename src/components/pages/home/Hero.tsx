@@ -1,7 +1,10 @@
 import { FC, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart2, Globe, Shield, Users } from 'lucide-react';
+import { ArrowRight, BarChart2, Globe, Shield, Users, ChevronDown } from 'lucide-react';
+import { countries } from '../../../data/countries';
+import { Link as RouterLink } from 'react-router-dom';
 import { useLanguage } from '../../../contexts/LanguageContext';
+import MotionInView from '../../enhanced/MotionInView';
 
 const features = (t: (k: string) => string) => [
   {
@@ -63,7 +66,8 @@ const Hero: FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 z-10">
-            <div className="space-y-6">
+            <MotionInView>
+              <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                 {t('offices.subtitle')}
               </div>
@@ -82,25 +86,29 @@ const Hero: FC = () => {
               <p className="text-lg text-gray-600 leading-relaxed">
                 We deliver innovative financial solutions and strategic guidance to help businesses and individuals navigate complex financial landscapes with confidence and clarity.
               </p>
-            </div>
+              </div>
+            </MotionInView>
 
             {/* Key Features Grid */}
             <div className="grid grid-cols-2 gap-4">
               {features(t).map((feature, index) => (
-                <div key={index} className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                  <div className="p-2 bg-blue-50 rounded-lg text-blue-600">
-                    {feature.icon}
+                <MotionInView key={index} delay={index * 0.05}>
+                  <div className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div className="p-2 bg-blue-50 rounded-lg text-blue-600">
+                      {feature.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900">{feature.title}</h3>
+                      <p className="text-sm text-gray-500">{feature.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">{feature.title}</h3>
-                    <p className="text-sm text-gray-500">{feature.description}</p>
-                  </div>
-                </div>
+                </MotionInView>
               ))}
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <MotionInView>
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
                 to="/contact"
                 className="btn-primary group inline-flex items-center justify-center space-x-2 px-6 py-3 text-base font-medium rounded-lg shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
@@ -114,7 +122,24 @@ const Hero: FC = () => {
               >
                 {t('services.viewAll')}
               </Link>
-            </div>
+              <div className="relative inline-block group">
+                <button className="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-200 text-gray-700 hover:text-blue-600 hover:border-blue-300">
+                  <Globe className="h-4 w-4" />
+                  <span>Global Presence</span>
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                <div className="absolute z-20 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg p-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition">
+                  <div className="grid grid-cols-1 gap-1 max-h-64 overflow-auto">
+                    {countries.map((c) => (
+                      <RouterLink key={c.slug} to={`/global-offices/${c.slug}`} className="px-3 py-2 rounded hover:bg-gray-50 text-sm text-gray-700 hover:text-blue-600">
+                        {c.name}
+                      </RouterLink>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              </div>
+            </MotionInView>
           </div>
 
           {/* Visual Element */}

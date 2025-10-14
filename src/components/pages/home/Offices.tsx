@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
+import MotionInView from '../../enhanced/MotionInView';
 
 const Offices: FC = () => {
   const offices = [
@@ -67,19 +68,22 @@ const Offices: FC = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            {t('globalOffices.heroTitle')}
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('globalOffices.heroSubtitle')}
-          </p>
-        </div>
+        <MotionInView>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              {t('globalOffices.heroTitle')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('globalOffices.heroSubtitle')}
+            </p>
+          </div>
+        </MotionInView>
 
         {/* Offices Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {offices.map((office, index) => (
-            <div key={index} className="card group hover:scale-105 transition-transform duration-300">
+            <MotionInView key={index} delay={index * 0.05}>
+              <div className="card group hover:scale-105 transition-transform duration-300">
               <div className="flex items-center mb-4">
                 <div className="text-3xl mr-3">{office.flag}</div>
                 <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
@@ -126,24 +130,27 @@ const Offices: FC = () => {
                   {t('globalOffices.mapTitle')}
                 </button>
               </div>
-            </div>
+              </div>
+            </MotionInView>
           ))}
         </div>
 
         {/* Map Section Placeholder */}
-        <div className="mt-16 bg-gray-100 rounded-2xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('globalOffices.mapTitle')}</h3>
-          <p className="text-gray-600 mb-6">{t('globalOffices.mapSubtitle')}</p>
-          <div className="bg-white rounded-lg p-8 shadow-inner">
-            <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-500">{t('globalOffices.mapTitle')}</p>
-                <p className="text-sm text-gray-400 mt-2">{t('globalOffices.mapSubtitle')}</p>
+        <MotionInView>
+          <div className="mt-16 bg-gray-100 rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('globalOffices.mapTitle')}</h3>
+            <p className="text-gray-600 mb-6">{t('globalOffices.mapSubtitle')}</p>
+            <div className="bg-white rounded-lg p-8 shadow-inner">
+              <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                  <p className="text-gray-500">{t('globalOffices.mapTitle')}</p>
+                  <p className="text-sm text-gray-400 mt-2">{t('globalOffices.mapSubtitle')}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </MotionInView>
       </div>
     </section>
   );

@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import type { MouseEvent } from 'react';
+import MotionInView from '../../enhanced/MotionInView';
 
 type Service = {
   id: string;
@@ -182,40 +183,35 @@ const Services: FC = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredServices.map((service) => (
-            <MotionDiv
-              key={service.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className={`h-2 ${service.color}`}></div>
-              <div className="p-6">
-                <div className={`w-12 h-12 ${service.color} bg-opacity-10 rounded-lg flex items-center justify-center mb-4`}>
-                  <service.icon className={`h-6 w-6 ${service.color.replace('bg-', 'text-')}`} />
+            <MotionInView key={service.id}>
+              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div className={`h-2 ${service.color}`}></div>
+                <div className="p-6">
+                  <div className={`w-12 h-12 ${service.color} bg-opacity-10 rounded-lg flex items-center justify-center mb-4`}>
+                    <service.icon className={`h-6 w-6 ${service.color.replace('bg-', 'text-')}`} />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{t(service.title)}</h3>
+                  <p className="text-gray-600 mb-4">{service.shortDesc}</p>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.slice(0, 3).map((feature, i) => (
+                      <li key={i} className="flex items-center text-gray-700">
+                        <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <button
+                    onClick={() => setSelectedService(service)}
+                    className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors"
+                  >
+                    {t('services.learnMore')}
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </button>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{t(service.title)}</h3>
-                <p className="text-gray-600 mb-4">{service.shortDesc}</p>
-                <ul className="space-y-2 mb-6">
-                  {service.features.slice(0, 3).map((feature, i) => (
-                    <li key={i} className="flex items-center text-gray-700">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  onClick={() => setSelectedService(service)}
-                  className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors"
-                >
-                  {t('services.learnMore')}
-                  <ArrowRight className="w-4 h-4 ml-1" />
-                </button>
               </div>
-            </MotionDiv>
+            </MotionInView>
           ))}
         </div>
       </div>
