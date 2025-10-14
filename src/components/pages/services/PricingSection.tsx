@@ -1,6 +1,8 @@
 import { FC, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Check, X, ArrowRight, Zap, BarChart3, Briefcase, DollarSign, MessageSquare, Phone, Mail, Calendar, User, Building2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../lib/constants/routes';
+import { Check, X, ArrowRight, Zap, BarChart3, Briefcase, Calendar, Building2 } from 'lucide-react';
 
 type BillingCycle = 'monthly' | 'annually';
 
@@ -88,34 +90,34 @@ const PricingSection: FC = () => {
   ];
 
   const [billingCycle, setBillingCycle] = useState<BillingCycle>('monthly');
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null!);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   
   const toggleBillingCycle = () => {
     setBillingCycle(prev => prev === 'monthly' ? 'annually' : 'monthly');
   };
 
+  const MotionDiv = motion.div as unknown as React.FC<React.HTMLAttributes<HTMLDivElement> & any>;
+
   const PricingCard = ({ 
-    plan, 
-    billingCycle,
+    plan,
     isAnnual,
     isPopular = false 
   }: { 
     plan: typeof pricingPlans[0], 
-    billingCycle: BillingCycle,
     isAnnual: boolean,
     isPopular?: boolean 
   }) => {
-    const cardRef = useRef(null);
+    const cardRef = useRef<HTMLDivElement>(null!);
     const cardInView = useInView(cardRef, { once: true, amount: 0.1 });
     const [isHovered, setIsHovered] = useState(false);
     
     const price = isAnnual ? plan.annualPrice : plan.monthlyPrice;
-    const priceText = isAnnual ? `$${price}/month` : `$${price}/month`;
+    // priceText not used; omit to satisfy linter
     const annualSavings = Math.round(((plan.monthlyPrice * 12 - plan.annualPrice * 12) / (plan.monthlyPrice * 12)) * 100);
 
     return (
-      <motion.div
+      <MotionDiv
         ref={cardRef}
         initial={{ opacity: 0, y: 50 }}
         animate={cardInView ? { opacity: 1, y: 0 } : {}}
@@ -161,13 +163,13 @@ const PricingSection: FC = () => {
           )}
         </div>
         
-        <a
-          href="#contact"
+        <Link
+          to={ROUTES.CONSULTATION}
           className={`w-full flex items-center justify-center px-6 py-3 border border-transparent rounded-md text-base font-medium text-white bg-gradient-to-r ${plan.color} hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg`}
         >
           {plan.buttonText}
           <ArrowRight className="ml-2 h-4 w-4" />
-        </a>
+        </Link>
         
         <div className="mt-8 space-y-4">
           <h4 className="text-sm font-medium text-gray-900">What's included:</h4>
@@ -195,12 +197,12 @@ const PricingSection: FC = () => {
           )}
         </div>
         
-        <motion.div 
+        <MotionDiv 
           className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: isHovered ? 1 : 0 }}
         />
-      </motion.div>
+      </MotionDiv>
     );
   };
 
@@ -208,24 +210,24 @@ const PricingSection: FC = () => {
     <section id="pricing" className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2 
+          <MotionDiv 
             className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Simple, Transparent <span className="text-blue-600">Pricing</span>
-          </motion.h2>
-          <motion.p 
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Simple, Transparent <span className="text-blue-600">Pricing</span></h2>
+          </MotionDiv>
+          <MotionDiv 
             className="text-xl text-gray-600"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Choose the perfect plan for your business needs. No hidden fees, cancel anytime.
-          </motion.p>
+            <p>Choose the perfect plan for your business needs. No hidden fees, cancel anytime.</p>
+          </MotionDiv>
           
-          <motion.div 
+          <MotionDiv 
             className="mt-8 flex items-center justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -254,7 +256,7 @@ const PricingSection: FC = () => {
             <span className="ml-4 text-sm font-medium text-gray-900">
               Annual Billing <span className="text-green-600">(Save up to 20%)</span>
             </span>
-          </motion.div>
+          </MotionDiv>
         </div>
         
         <div ref={ref} className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-8 max-w-6xl mx-auto">
@@ -262,14 +264,13 @@ const PricingSection: FC = () => {
             <PricingCard 
               key={plan.id}
               plan={plan}
-              billingCycle={billingCycle}
               isAnnual={billingCycle === 'annually'}
               isPopular={plan.popular}
             />
           ))}
         </div>
         
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -278,14 +279,14 @@ const PricingSection: FC = () => {
           <p className="text-lg text-gray-600 mb-8">
             Need a custom solution? We offer tailored packages for businesses with unique requirements.
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md hover:shadow-lg transition-all duration-200"
-          >
-            Get a Custom Quote
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </a>
-        </motion.div>
+        <Link
+          to={ROUTES.CONSULTATION}
+          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md hover:shadow-lg transition-all duration-200"
+        >
+          Get a Custom Quote
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+        </MotionDiv>
         
         <div className="mt-16 bg-blue-50 rounded-2xl p-8 text-center">
           <div className="max-w-2xl mx-auto">
@@ -298,13 +299,13 @@ const PricingSection: FC = () => {
               Schedule a free 30-minute consultation to discuss your requirements.
             </p>
             <div className="mt-6">
-              <a
-                href="#contact"
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 shadow-sm"
-              >
-                <Calendar className="mr-2 h-5 w-5" />
-                Schedule a Free Consultation
-              </a>
+            <Link
+              to={ROUTES.CONSULTATION}
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 shadow-sm"
+            >
+              <Calendar className="mr-2 h-5 w-5" />
+              Schedule a Free Consultation
+            </Link>
             </div>
           </div>
         </div>
