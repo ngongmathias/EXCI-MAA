@@ -41,6 +41,7 @@ const Hero: FC = () => {
   const [currentText, setCurrentText] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [presenceOpen, setPresenceOpen] = useState(false);
+  const [presencePinned, setPresencePinned] = useState(false);
   const presenceRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -59,15 +60,14 @@ const Hero: FC = () => {
     const handleClickOutside = (event: MouseEvent) => {
       if (presenceRef.current && !presenceRef.current.contains(event.target as Node)) {
         setPresenceOpen(false);
+        setPresencePinned(false);
       }
     };
-    if (presenceOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [presenceOpen]);
+  }, []);
 
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-16 lg:py-28">
@@ -122,7 +122,7 @@ const Hero: FC = () => {
               ))}
             </div>
 
-            {/* CTA Buttons */}
+              {/* CTA Buttons */}
             <MotionInView>
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
@@ -137,25 +137,31 @@ const Hero: FC = () => {
                 className="btn-secondary inline-flex items-center justify-center"
               >
                 {t('services.viewAll')}
-              </Link>
-              {/* <div className="relative inline-block" ref={presenceRef}>
-                <button className="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-200 text-gray-700 hover:text-blue-600 hover:border-blue-300" onClick={() => setPresenceOpen(prev => !prev)}>
-                  <Globe className="h-4 w-4" />
-                  <span>Global Presence</span>
-                  <ChevronDown className="h-4 w-4" />
-                </button>
-                {presenceOpen && (
-                  <div className="absolute z-20 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg p-2">
-                    <div className="grid grid-cols-1 gap-1 max-h-64 overflow-auto">
-                      {countries.map((c) => (
-                        <RouterLink key={c.slug} to={`/global-offices/${c.slug}`} className="px-3 py-2 rounded hover:bg-gray-50 text-sm text-gray-700 hover:text-blue-600">
-                          {c.name}
-                        </RouterLink>
-                      ))}
-                    </div>
+                  </Link>
+                  <div className="relative inline-block" ref={presenceRef} onMouseEnter={() => setPresenceOpen(true)} onMouseLeave={() => setPresenceOpen(presencePinned)}>
+                    <button
+                      className="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-200 text-gray-700 hover:text-blue-600 hover:border-blue-300"
+                      onClick={() => {
+                        setPresencePinned((p) => !p);
+                        setPresenceOpen(true);
+                      }}
+                    >
+                      <Globe className="h-4 w-4" />
+                      <span>Global Presence</span>
+                      <ChevronDown className="h-4 w-4" />
+                    </button>
+                    {(presenceOpen || presencePinned) && (
+                      <div className="absolute z-20 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg p-2">
+                        <div className="grid grid-cols-1 gap-1 max-h-64 overflow-auto">
+                          {countries.map((c) => (
+                            <RouterLink key={c.slug} to={`/global-offices/${c.slug}`} className="px-3 py-2 rounded hover:bg-gray-50 text-sm text-gray-700 hover:text-blue-600">
+                              {c.name}
+                            </RouterLink>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div> */}
               </div>
             </MotionInView>
           </div>

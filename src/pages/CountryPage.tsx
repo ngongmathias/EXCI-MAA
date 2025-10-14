@@ -37,7 +37,7 @@ const CountryPage: FC = () => {
           <div>
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">{country.name}</h1>
             <p className="text-gray-600 mb-6">Our office is located in the capital city of {country.capitalName}. Explore the map to see the exact location.</p>
-            <CountryMap center={country.capital} zoom={country.zoom ?? 6} label={`${country.name} — ${country.capitalName}`} mapId={country.slug} />
+            <CountryMap key={country.slug} center={country.capital} zoom={country.zoom ?? 6} label={`${country.name} — ${country.capitalName}`} mapId={country.slug} />
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">

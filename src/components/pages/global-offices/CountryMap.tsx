@@ -26,10 +26,11 @@ const CountryMap: FC<CountryMapProps> = ({ center, zoom = 6, label, mapId }) => 
     return () => setMounted(false);
   }, []);
 
+  const containerKey = mapId ?? `${center.lat},${center.lng},${zoom}`;
   return (
-    <div className="w-full h-[420px] rounded-xl overflow-hidden border border-gray-200">
+    <div key={`wrap-${containerKey}`} id={`wrap-${containerKey}`} className="w-full h-[420px] rounded-xl overflow-hidden border border-gray-200">
       {mounted && (
-        <MapContainer key={mapId ?? `${center.lat},${center.lng},${zoom}`} center={[center.lat, center.lng]} zoom={zoom} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
+        <MapContainer key={`map-${containerKey}`} center={[center.lat, center.lng]} zoom={zoom} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
