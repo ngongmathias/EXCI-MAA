@@ -274,7 +274,85 @@
   },
   "training": {
     "title": "Programmes de Formation",
-    "subtitle": "Nous offrons des programmes de développement professionnel et de certification"
+    "subtitle": "Nous offrons des programmes de développement professionnel et de certification",
+    "categories": {
+      "accounting": {
+        "title": "Comptabilité / Fiscalité / Social",
+        "courses": [
+          "Comment tenir et organiser les comptes d'entreprise",
+          "Comment créer ou préparer une déclaration fiscale et ses annexes",
+          "Règles de déductibilité et de déclaration de la TVA",
+          "Comment anticiper et gérer vos contrôles fiscaux",
+          "Le problème de la TVA au CONGO, CAMEROUN, RWANDA, BURUNDI, GABON",
+          "Établissez votre compte d'exploitation et plan de trésorerie en toute confiance",
+          "Techniques de détection de fraude dans les déclarations fiscales",
+          "Impact des déficits ARD et fiscaux sur le revenu imposable",
+          "Cadre entre la DAS, les déclarations et la DSF : Cas d'un contrôle CNSS",
+          "Création d'un manuel d'affectation comptable"
+        ],
+        "price": "$299",
+        "duration": "3 jours"
+      },
+      "audit": {
+        "title": "Audit légal / Contrôle de gestion",
+        "courses": [
+          "Pourquoi auditer vos comptes ?",
+          "Méthodologie d'audit comptable et financier",
+          "Quel est l'impact de l'audit sur la déclaration fiscale ?",
+          "Théorie et pratique de l'audit interne dans les PME, Banques et Assurances",
+          "Théorie et pratique du contrôle de gestion",
+          "Tableaux de bord et évaluation de la performance",
+          "Audit externe (Cabinet d'audit)",
+          "Audit Interne – Planification et Exécution",
+          "Audit légal",
+          "Gestion optimale de votre trésorerie, notamment votre découvert",
+          "Comprendre les attentes de trésorerie du point de vue de la filiale et du siège",
+          "Équilibrer vos paiements fournisseurs avec vos encaissements clients",
+          "Évaluation de votre système d'information – SI ICT",
+          "Comprendre les ERP, leurs processus et voir si votre entreprise peut en avoir besoin",
+          "Révision des concepts fondamentaux du contrôle interne",
+          "Révision des concepts fondamentaux de l'audit interne",
+          "Détecter et prévenir la fraude",
+          "Gestion des risques dans le secteur publicitaire"
+        ],
+        "price": "$399",
+        "duration": "5 jours"
+      },
+      "advice": {
+        "title": "Conseil",
+        "courses": [
+          "La pratique des comptes consolidés et le traitement des impôts différés",
+          "Comprendre les bases et les enjeux majeurs de la fiscalité internationale : Prix de transfert",
+          "Évaluation des entreprises dans la zone OHADA",
+          "Réévaluation du bilan : une nécessité pour toutes les entreprises",
+          "Pratique de la fusion, scission et liquidation dans la zone OHADA",
+          "Comment pratiquer la consolidation des comptes dans la zone OHADA",
+          "Rédaction d'un plan d'affaires bancable",
+          "Méthodologie de création d'entreprise",
+          "Fusions – Acquisitions",
+          "Audit légal, social et fiscal",
+          "Support pour la rédaction d'un manuel de procédures de contrôle interne"
+        ],
+        "price": "$349",
+        "duration": "4 jours"
+      },
+      "various": {
+        "title": "Thèmes divers",
+        "courses": [
+          "Comment gérer les clients difficiles",
+          "Libérez votre charisme et développez votre leadership dans les affaires et au-delà",
+          "Qualité au bureau / Entreprise",
+          "Comment devenir un Contrôleur Financier/Gestion ou CFO et techniques efficaces",
+          "Utiliser la comptabilité et le contrôle de gestion pour contrôler les risques bancaires",
+          "Droit des affaires OHADA",
+          "Fiscalité des entreprises",
+          "Maîtriser et auditer le contrôle bancaire permanent",
+          "Audit de conformité des systèmes réglementaires d'assurance"
+        ],
+        "price": "$199",
+        "duration": "2 jours"
+      }
+    }
   },
   "partners": {
     "title": "Nos Dirigeants",

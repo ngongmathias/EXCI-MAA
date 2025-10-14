@@ -274,7 +274,85 @@
   },
   "training": {
     "title": "Emyenyerezo y'omugaso",
-    "subtitle": "Tugabira emyenyerezo y'omugaso n'obukulembeze"
+    "subtitle": "Tugabira emyenyerezo y'omugaso n'obukulembeze",
+    "categories": {
+      "accounting": {
+        "title": "Okubala / Omusolo / Obukulembeze",
+        "courses": [
+          "Engeri y'okubala n'okukulembeza amakulu g'ebikoresho",
+          "Engeri y'okukola oba okuteekawo raporo y'omusolo n'ebirala",
+          "Enkola z'omusolo w'omusolo n'obukulembeze",
+          "Engeri y'okusuzuma n'okukulembeza obukulembeze bw'omusolo",
+          "Ekizibu ky'omusolo w'omusolo mu CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
+          "Tekawo konti yo y'ebikoresho n'ekikwate ky'amafaranga",
+          "Enkola z'okusanga obukulembeze mu raporo z'omusolo",
+          "Okukola kw'omusolo n'omusolo ku musolo",
+          "Obukulembeze wakati wa DAS, amakulu n'DSF: Ekizibu kya CNSS",
+          "Okukola obukulembeze bw'okubala"
+        ],
+        "price": "$299",
+        "duration": "nnaku 3"
+      },
+      "audit": {
+        "title": "Okukakasa kw'amategeko / Okukulembeza obukulembeze",
+        "courses": [
+          "Lwaki okakasa amakulu go?",
+          "Enkola y'okukakasa kw'ebikoresho n'amafaranga",
+          "Kiki ekikola ku raporo y'omusolo?",
+          "Obukulembeze n'obukulembeze bw'okukakasa kw'omunda mu bikoresho bitono, amabanki n'obukulembeze",
+          "Obukulembeze n'obukulembeze bw'okukulembeza obukulembeze",
+          "Amakulu n'okupima obukulembeze",
+          "Okukakasa kw'omugaso (ekibuga ky'okukakasa)",
+          "Okukakasa kw'omunda – Okuteekawo n'obukulembeze",
+          "Okukakasa kw'amategeko",
+          "Okukulembeza obulungi obukulembeze bw'amafaranga, okusinga obukulembeze",
+          "Okutegeera ebikwetaagisa by'amafaranga okuva ku bwoba n'obukulembeze",
+          "Okukwatagana kw'okwishyura n'abantu n'okukola n'abakiriya",
+          "Okupima sisitemu y'amakulu – ICT IS",
+          "Okutegeera ERP, obukulembeze bwabyo era laba n'ebikoresho byo bikyetaaga",
+          "Okusuzuma ebikwata ku bwoba bw'okukulembeza kw'omunda",
+          "Okusuzuma ebikwata ku bwoba bw'okukakasa kw'omunda",
+          "Okusanga n'okukuma obukulembeze",
+          "Okukulembeza obukulembeze mu bwoba bw'okukakasa"
+        ],
+        "price": "$399",
+        "duration": "nnaku 5"
+      },
+      "advice": {
+        "title": "Amagezi",
+        "courses": [
+          "Obukulembeze bw'okukola amakulu g'ebikoresho n'obukulembeze bw'omusolo",
+          "Okutegeera ebikwata ku bwoba n'ebikwetaagisa by'omusolo w'ensi yonna: Okuteekawo omugatte",
+          "Okupima ebikoresho mu gace ka OHADA",
+          "Okusubira okupima obukulembeze: ekikwetaagisa ku bikoresho byonna",
+          "Obukulembeze bw'okugatta, okutandukana n'okukoma mu gace ka OHADA",
+          "Engeri y'okukola obukulembeze bw'amakulu mu gace ka OHADA",
+          "Okwandika ekikwate ky'ebikoresho",
+          "Enkola y'okukola ebikoresho",
+          "Okugatta – Okupata",
+          "Okukakasa kw'amategeko, obukulembeze n'omusolo",
+          "Okuyamba mu kwandika obukulembeze bw'okukulembeza kw'omunda"
+        ],
+        "price": "$349",
+        "duration": "nnaku 4"
+      },
+      "various": {
+        "title": "Ebintu eby'enjawulo",
+        "courses": [
+          "Engeri y'okukola n'abakiriya ab'omugaso",
+          "Sobola obukulembeze bwo era ongere obukulembeze bwo mu bikoresho n'ebirala",
+          "Obukulembeze mu mabiro / Ekibuga",
+          "Engeri y'okufuna obukulembeze bw'amafaranga/Obukulembeze oba CFO n'enkola ez'omugaso",
+          "Okukozesa okubala n'okukulembeza obukulembeze okukuma obukulembeze bw'amabanki",
+          "Amategeko g'ebikoresho OHADA",
+          "Omusolo gw'ebikoresho",
+          "Okukozesa n'okukakasa obukulembeze bw'amabanki",
+          "Okukakasa kw'okukkirizibwa kw'ebikozesebwa by'obukulembeze"
+        ],
+        "price": "$199",
+        "duration": "nnaku 2"
+      }
+    }
   },
   "partners": {
     "title": "Abakulembeze baffe",

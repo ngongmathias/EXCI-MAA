@@ -6,7 +6,7 @@ export type SupportedLanguage = 'en' | 'fr' | 'ar' | 'rw' | 'ki' | 'zh' | 'lg';
 interface LanguageContextType {
   currentLanguage: SupportedLanguage;
   setLanguage: (language: SupportedLanguage) => void;
-  t: (key: string) => string;
+  t: (key: string, options?: any) => any;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -45,8 +45,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
   };
 
-  const t = (key: string): string => {
-    return i18n.t(key);
+  const t = (key: string, options?: any): any => {
+    return i18n.t(key, options);
   };
 
   const value: LanguageContextType = {

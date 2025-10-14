@@ -9,83 +9,31 @@ type CourseCategory = {
   items: string[];
 };
 
-const categories: CourseCategory[] = [
-  {
-    id: 'accounting',
-    title: 'Accounting / Taxation / Social',
-    items: [
-      'How to keep and organize business accounts',
-      'How to create or prepare a tax return and its annexes',
-      'VAT deductibility and reporting rules',
-      'How to anticipate and manage your tax audits',
-      'The VAT problem in CONGO, CAMEROON, RWANDA, BURUNDI, GABON',
-      "Establish your operating account and cash flow plan with confidence",
-      'Techniques for detecting fraud in tax returns',
-      'Impact of ARD and tax deficits on taxable income',
-      'Framework between the DAS, declarations and the DSF: Case of a CNSS control',
-      "Creation of an accounting allocation manual",
-    ],
-  },
-  {
-    id: 'audit',
-    title: 'Statutory audit / Management control',
-    items: [
-      'Why audit your accounts?',
-      'Accounting and Financial Audit Methodology',
-      "What is the impact of the audit on the tax return?",
-      'Theory and practice of internal auditing in SMEs, Banks and Insurance',
-      'Theory and practice of management control',
-      'Dashboards and performance evaluation',
-      'External audit (Audit firm)',
-      'Internal Audit – Planning and Execution',
-      'Statutory audit',
-      'Optimal management of your cash flow, particularly your overdraft',
-      'Understanding treasury expectations from subsidiary and head office perspective',
-      'Balance your supplier payments with your customer collections',
-      'Evaluation of your information system – ICT IS',
-      'Understand ERPs, their processes and see if your business may need them',
-      'Review of fundamental concepts in internal control',
-      'Review of fundamental concepts in internal auditing',
-      'Detect and prevent fraud',
-      'Risk management in the advertising sector',
-    ],
-  },
-  {
-    id: 'advice',
-    title: 'Advice',
-    items: [
-      'The practice of consolidated accounts and the treatment of deferred taxes',
-      'Understanding the basics and major issues of international taxation: Transfer pricing',
-      'Evaluation of companies in the OHADA area',
-      'Balance sheet revaluation: a necessity for all companies',
-      'Practice of merger, demerger and liquidation in the OHADA area',
-      'How to practice account consolidation in the OHADA area',
-      'Writing a bankable business plan',
-      'Business creation methodology',
-      'Mergers – Acquisitions',
-      'Legal, social and tax audit',
-      'Support for drafting an internal control procedures manual',
-    ],
-  },
-  {
-    id: 'various',
-    title: 'Various themes',
-    items: [
-      'How to handle difficult customers',
-      'Unleash your charisma and develop your leadership in business and beyond',
-      'Quality in the office / Company',
-      'How to become a Financial/Management Controller or CFO and effective techniques',
-      'Use accounting and management control to control banking risks',
-      'OHADA Business Law',
-      'Corporate taxation',
-      'Master and audit permanent banking control',
-      'Compliance audit of regulatory systems in insurance',
-    ],
-  },
-];
-
 export default function TrainingPage() {
   const { t } = useLanguage();
+  
+  const categories: CourseCategory[] = [
+    {
+      id: 'accounting',
+      title: t('training.categories.accounting.title'),
+      items: (t as any)('training.categories.accounting.courses', { returnObjects: true }) as string[],
+    },
+    {
+      id: 'audit',
+      title: t('training.categories.audit.title'),
+      items: (t as any)('training.categories.audit.courses', { returnObjects: true }) as string[],
+    },
+    {
+      id: 'advice',
+      title: t('training.categories.advice.title'),
+      items: (t as any)('training.categories.advice.courses', { returnObjects: true }) as string[],
+    },
+    {
+      id: 'various',
+      title: t('training.categories.various.title'),
+      items: (t as any)('training.categories.various.courses', { returnObjects: true }) as string[],
+    },
+  ];
   const [active, setActive] = useState<string>('accounting');
 
   // Typed alias to avoid TS prop inference issues with framer-motion generics
