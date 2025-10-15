@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import { motion } from 'framer-motion';
-import { Building2, Globe, Users, Award } from 'lucide-react';
+import { Globe, Users, Award } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 
 const AboutHero: FC = () => {

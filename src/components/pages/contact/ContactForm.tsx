@@ -1,10 +1,10 @@
 'use client';
 
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { insertItem } from '../../../services/supabaseCrud';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { CheckCircle2, Loader2, AlertCircle } from 'lucide-react';
-import { useLanguage } from '../../../contexts/LanguageContext';
 
 type FormData = {
   name: string;
@@ -18,7 +18,6 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState('');
-  const { t } = useLanguage();
   
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
@@ -27,24 +26,12 @@ export default function ContactForm() {
     setSubmitError('');
     
     try {
-      // Simulate API call - replace with actual API endpoint
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Here you would typically make an API call to your backend
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(data),
-      // });
-      
-      // if (!response.ok) throw new Error('Failed to send message');
-      
-      console.log('Form submitted with data:', data); // Use the data parameter
+      await insertItem('contact_submissions', data);
       setIsSubmitted(true);
       reset();
     } catch (error) {
       console.error('Error submitting form:', error);
-      setSubmitError(t('contact.form.errorMessage'));
+      setSubmitError('Failed to send message. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -79,15 +66,15 @@ export default function ContactForm() {
           <div className="mx-auto flex items-center justify-center h-24 w-24 rounded-full bg-green-100 mb-6">
             <CheckCircle2 className="h-12 w-12 text-green-600" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('contact.form.successTitle')}</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Message Sent Successfully!</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            {t('contact.form.successDescription')}
+            Thank you for reaching out. We've received your message and will get back to you within 24 hours.
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-exci-yellow-500 hover:bg-exci-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-exci-yellow-500 transition-colors duration-200"
           >
-            {t('contact.form.sendAnotherMessage')}
+            Send Another Message
           </button>
         </div>
       </motion.div>
@@ -109,10 +96,10 @@ export default function ContactForm() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {t('contact.formTitle')}
+            Get in Touch
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            {t('contact.formSubtitle')}
+            Have questions or ready to start your project? Fill out the form below and our team will get back to you as soon as possible.
           </p>
         </motion.div>
 
@@ -127,9 +114,10 @@ export default function ContactForm() {
             {/* Contact Information */}
             <div className="bg-exci-blue-900 px-8 py-12 sm:px-12 lg:py-16">
               <div className="max-w-lg mx-auto lg:mx-0 lg:max-w-none">
-                <h3 className="text-2xl font-bold text-white">{t('contact.form.contactInformation')}</h3>
+                <h3 className="text-2xl font-bold text-white">Contact Information</h3>
                 <p className="mt-4 text-exci-blue-100">
-                  {t('contact.form.contactDescription')}
+                  Fill out the form and our team will get back to you within 24 hours. 
+                  For immediate assistance, please call us directly.
                 </p>
                 
                 <div className="mt-10 space-y-6">
@@ -140,7 +128,7 @@ export default function ContactForm() {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <h4 className="text-base font-medium text-white">{t('contact.form.callUs')}</h4>
+                      <h4 className="text-base font-medium text-white">Call us</h4>
                       <p className="mt-1 text-exci-blue-100">+1 (555) 123-4567</p>
                     </div>
                   </div>
@@ -152,7 +140,7 @@ export default function ContactForm() {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <h4 className="text-base font-medium text-white">{t('contact.form.emailUs')}</h4>
+                      <h4 className="text-base font-medium text-white">Email us</h4>
                       <p className="mt-1 text-exci-blue-100">info@exci-maa.com</p>
                     </div>
                   </div>
@@ -165,16 +153,16 @@ export default function ContactForm() {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <h4 className="text-base font-medium text-white">{t('contact.form.visitUs')}</h4>
+                      <h4 className="text-base font-medium text-white">Visit us</h4>
                       <p className="mt-1 text-exci-blue-100">123 Business Ave, City, Country</p>
                     </div>
                   </div>
                 </div>
                 
                 <div className="mt-10 pt-6 border-t border-exci-blue-800">
-                  <h4 className="text-sm font-semibold text-exci-blue-200 uppercase tracking-wider">{t('contact.form.businessHours')}</h4>
-                  <p className="mt-2 text-exci-blue-100">{t('contact.form.mondayFriday')}</p>
-                  <p className="text-exci-blue-100">{t('contact.form.saturdaySunday')}</p>
+                  <h4 className="text-sm font-semibold text-exci-blue-200 uppercase tracking-wider">Business Hours</h4>
+                  <p className="mt-2 text-exci-blue-100">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p className="text-exci-blue-100">Saturday - Sunday: Closed</p>
                 </div>
               </div>
             </div>
@@ -191,17 +179,17 @@ export default function ContactForm() {
                 >
                   <motion.div variants={item} className="space-y-1">
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                      {t('contact.form.fullName')} <span className="text-red-500">*</span>
+                      Full Name <span className="text-red-500">*</span>
                     </label>
                     <div className="relative">
                       <input
                         type="text"
                         id="name"
-                        {...register('name', { required: t('contact.form.validation.nameRequired') })}
+                        {...register('name', { required: 'Name is required' })}
                         className={`block w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-exci-yellow-400 focus:border-exci-yellow-400 sm:text-sm p-3 border ${
                           errors.name ? 'border-red-300' : ''
                         }`}
-                        placeholder={t('contact.form.placeholders.fullName')}
+                        placeholder="John Doe"
                       />
                       {errors.name && (
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -218,23 +206,23 @@ export default function ContactForm() {
                   
                   <motion.div variants={item} className="space-y-1">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                      {t('contact.form.emailAddress')} <span className="text-red-500">*</span>
+                      Email Address <span className="text-red-500">*</span>
                     </label>
                     <div className="relative">
                       <input
                         type="email"
                         id="email"
                         {...register('email', {
-                          required: t('contact.form.validation.emailRequired'),
+                          required: 'Email is required',
                           pattern: {
                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                            message: t('contact.form.validation.emailInvalid'),
+                            message: 'Invalid email address',
                           },
                         })}
                         className={`block w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-exci-yellow-400 focus:border-exci-yellow-400 sm:text-sm p-3 border ${
                           errors.email ? 'border-red-300' : ''
                         }`}
-                        placeholder={t('contact.form.placeholders.email')}
+                        placeholder="you@example.com"
                       />
                       {errors.email && (
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -251,36 +239,36 @@ export default function ContactForm() {
                   
                   <motion.div variants={item} className="space-y-1">
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                      {t('contact.form.phoneNumber')}
+                      Phone Number
                     </label>
                     <input
                       type="tel"
                       id="phone"
                       {...register('phone')}
                       className="block w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-exci-yellow-400 focus:border-exci-yellow-400 sm:text-sm p-3 border"
-                      placeholder={t('contact.form.placeholders.phone')}
+                      placeholder="+1 (555) 123-4567"
                     />
                   </motion.div>
                   
                   <motion.div variants={item} className="space-y-1">
                     <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
-                      {t('contact.form.subject')} <span className="text-red-500">*</span>
+                      Subject <span className="text-red-500">*</span>
                     </label>
                     <div className="relative">
                       <select
                         id="subject"
-                        {...register('subject', { required: t('contact.form.validation.subjectRequired') })}
+                        {...register('subject', { required: 'Subject is required' })}
                         className={`block w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-exci-yellow-400 focus:border-exci-yellow-400 sm:text-sm p-3 border ${
                           errors.subject ? 'border-red-300' : ''
                         }`}
                         defaultValue=""
                       >
-                        <option value="" disabled>{t('contact.form.placeholders.selectSubject')}</option>
-                        <option value="General Inquiry">{t('contact.form.subjects.generalInquiry')}</option>
-                        <option value="Accounting Services">{t('contact.form.subjects.accountingServices')}</option>
-                        <option value="Audit Services">{t('contact.form.subjects.auditServices')}</option>
-                        <option value="Tax Consultation">{t('contact.form.subjects.taxConsultation')}</option>
-                        <option value="Other">{t('contact.form.subjects.other')}</option>
+                        <option value="" disabled>Select a subject</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Accounting Services">Accounting Services</option>
+                        <option value="Audit Services">Audit Services</option>
+                        <option value="Tax Consultation">Tax Consultation</option>
+                        <option value="Other">Other</option>
                       </select>
                       {errors.subject && (
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -297,20 +285,20 @@ export default function ContactForm() {
                   
                   <motion.div variants={item} className="space-y-1">
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                      {t('contact.form.message')} <span className="text-red-500">*</span>
+                      Message <span className="text-red-500">*</span>
                     </label>
                     <div className="relative">
                       <textarea
                         id="message"
                         rows={4}
                         {...register('message', { 
-                          required: t('contact.form.validation.messageRequired'),
-                          minLength: { value: 10, message: t('contact.form.validation.messageMinLength') }
+                          required: 'Message is required',
+                          minLength: { value: 10, message: 'Message must be at least 10 characters' }
                         })}
                         className={`block w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-exci-yellow-400 focus:border-exci-yellow-400 sm:text-sm p-3 border ${
                           errors.message ? 'border-red-300' : ''
                         }`}
-                        placeholder={t('contact.form.placeholders.message')}
+                        placeholder="How can we help you?"
                       />
                       {errors.message && (
                         <div className="absolute top-3 right-3">
@@ -336,7 +324,7 @@ export default function ContactForm() {
                           <AlertCircle className="h-5 w-5 text-red-400" aria-hidden="true" />
                         </div>
                         <div className="ml-3">
-                          <h3 className="text-sm font-medium text-red-800">{t('contact.form.errorTitle')}</h3>
+                          <h3 className="text-sm font-medium text-red-800">Error</h3>
                           <div className="mt-2 text-sm text-red-700">
                             <p>{submitError}</p>
                           </div>
@@ -356,10 +344,10 @@ export default function ContactForm() {
                       {isSubmitting ? (
                         <>
                           <Loader2 className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" />
-                          {t('contact.form.sending')}
+                          Sending...
                         </>
                       ) : (
-                        t('contact.form.sendMessage')
+                        'Send Message'
                       )}
                     </button>
                   </motion.div>
@@ -372,7 +360,7 @@ export default function ContactForm() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
                 >
-                  <p>{t('contact.form.privacyNote')}</p>
+                  <p>We'll get back to you within 24 hours. Your information is secure.</p>
                 </motion.div>
               </form>
             </div>

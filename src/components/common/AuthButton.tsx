@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
+import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react';
 import { User } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const AuthButton: React.FC = () => {
   const { t } = useLanguage();
-  const { isSignedIn } = useUser();
 
   return (
     <div className="flex items-center">

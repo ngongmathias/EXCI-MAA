@@ -25,9 +25,9 @@ const OFFICE_LOCATION = {
 export default function OfficeMap() {
   const { t } = useLanguage();
   const mapRef = useRef<HTMLDivElement>(null);
-  const [map, setMap] = useState<google.maps.Map | null>(null);
-  const [marker, setMarker] = useState<google.maps.Marker | null>(null);
-  const [infoWindow, setInfoWindow] = useState<google.maps.InfoWindow | null>(null);
+  const [map, setMap] = useState<any>(null);
+  const [marker, setMarker] = useState<any>(null);
+  const [infoWindow, setInfoWindow] = useState<any>(null);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
 
   useEffect(() => {
@@ -272,7 +272,7 @@ export default function OfficeMap() {
               <button
                 onClick={() => {
                   if (map && marker) {
-                    map.panTo(marker.getPosition() as google.maps.LatLng);
+                    map.panTo(marker.getPosition() as any);
                     map.setZoom(17);
                     if (infoWindow) {
                       infoWindow.open(map, marker);

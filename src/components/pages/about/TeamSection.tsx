@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Mail, Phone, Award, Briefcase, Globe } from 'lucide-react';
+import { Linkedin, Mail, Phone} from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 
 const TeamSection: FC = () => {

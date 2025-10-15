@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import { services as servicesData } from '../../../data/services';
 import { countries } from '../../../data/countries';
+import { insertItem } from '../../../services/supabaseCrud';
 
 type FormData = {
   fullName: string;
@@ -37,7 +38,15 @@ const ConsultationForm: FC = () => {
     e.preventDefault();
     setSubmitting(true);
     try {
-      // Here we could call an API; for now, just navigate to a thank-you or back
+      await insertItem('consultation_requests', {
+        full_name: form.fullName,
+        email: form.email,
+        phone: form.phone,
+        company: form.company,
+        country_slug: form.countrySlug,
+        service_id: form.serviceId,
+        message: form.message,
+      });
       navigate('/contact', { replace: true });
     } finally {
       setSubmitting(false);

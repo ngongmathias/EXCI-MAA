@@ -1,7 +1,7 @@
 import { FC, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
-import { Users, Globe, Award, Target, BarChart2, Shield, Lightbulb, UserPlus, Briefcase, ArrowRight } from 'lucide-react';
+import { Users, Globe, Award, Target, BarChart2, Shield, Lightbulb, UserPlus, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 
 const stats = [
