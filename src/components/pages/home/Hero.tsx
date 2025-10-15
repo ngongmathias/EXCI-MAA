@@ -100,7 +100,7 @@ const Hero: FC = () => {
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                We deliver innovative financial solutions and strategic guidance to help businesses and individuals navigate complex financial landscapes with confidence and clarity.
+                {t('hero.description')}
               </p>
               </div>
             </MotionInView>

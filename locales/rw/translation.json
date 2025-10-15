@@ -45,7 +45,8 @@
     "feature2": "Serivisi z'ubugenzuzi n'ubunyangamugayo",
     "feature3": "Gufasha ubwoba bw'ubucuruzi bwawe",
     "cta1": "Gusura Serivisi",
-    "cta2": "Gupata Ubunyangamugayo"
+    "cta2": "Gupata Ubunyangamugayo",
+    "description": "Dutanga ibisubizo bishya mu by'ubukungu n'inama z'ubuyobozi zifasha ibigo n'abantu kwiyobora mu isoko ry'ubukungu rigoye bafite icyizere n'ubusobanuro."
   },
   "about": {
     "title": "Ibyerekeye Twe",
@@ -492,6 +493,102 @@
           "rating": 4
         }
       ]
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Hindura Ubucuruzi Bwawe na",
+      "titleHighlight": "Ibisubizo by'Ubukungu by'Ubuhanga",
+      "subtitle": "Menya uko serivisi zacu z'ubukungu zisesuye zishobora guteza imbere ubucuruzi, zikanemeza ubuziranenge no kunoza imikorere y'ubucuruzi bwawe."
+    },
+    "detailedServices": {
+      "title": "Serivisi Zacu",
+      "titleHighlight": "Zisesuye",
+      "titleSuffix": "",
+      "subtitle": "Ibisubizo by'ubukungu byateguwe ku byo ukeneye byihariye kandi bituma habaho gukura kurambye.",
+      "services": {
+        "accounting": {
+          "title": "Ibaruramari n'Itabo",
+          "shortDesc": "Kubika no gutanga raporo z'imari zisesuye",
+          "description": "Itsinda ryacu ry'ababizi mu ibaruramari ritanga serivisi z'itabo zisesuye kugira ngo imicungire y'imari yawe ibe iy'ukuri kandi ihoraho.",
+          "features": [
+            "Itabo ry'ukwezi na raporo z'imari",
+            "Imicungire ya konti zishyuzwa n'izishyura",
+            "Kuhuza amabanki n'amakarita y'inguzanyo"
+          ]
+        },
+        "audit": {
+          "title": "Isuzuma n'Ubwishingizi",
+          "shortDesc": "Kwemeza imari yigenga no kubahiriza amategeko",
+          "description": "Serivisi zacu z'isuzuma zemeza ukuri kwa raporo zawe z'imari no kubahiriza amahame y'ibaruramari, kandi zifasha kunoza inzira zawe z'imari.",
+          "features": [
+            "Isuzuma rya raporo z'imari",
+            "Isuzuma ry'ubugenzuzi bw'imbere",
+            "Isuzuma ry'ubahirizwa ry'amategeko"
+          ]
+        },
+        "tax": {
+          "title": "Inama z'Imisoro",
+          "shortDesc": "Gahunda y'imisoro n'ubahirizwa bw'amategeko",
+          "description": "Abahanga bacu batanga igenamigambi ry'imisoro n'ubahirizwa bw'amategeko kugira ngo ugabanye umutwaro w'imisoro utabangamiye kubahiriza amategeko yose.",
+          "features": [
+            "Igenamigambi n'ingamba z'imisoro",
+            "Inyandikompesha z'imisoro z'ibigo n'abantu",
+            "Ubufasha mu isuzumwa ry'imisoro"
+          ]
+        },
+        "advisory": {
+          "title": "Inama z'Ubucuruzi",
+          "shortDesc": "Inama n'igenamigambi by'ubucuruzi",
+          "description": "Dufasha imiryango guhangana n'ibibazo by'ubucuruzi bigoye, kunoza imikorere no kugera ku gukura kurambye binyuze mu igenamigambi n'is实施.",
+          "features": [
+            "Igenamigambi ry'ubucuruzi",
+            "Imibare n'ubuhanura by'imari",
+            "Guhuzwa no kugurwa"
+          ]
+        },
+        "risk": {
+          "title": "Gucunga Ingaruka",
+          "shortDesc": "Kumenya no kugabanya ingaruka z'ubucuruzi",
+          "description": "Dufasha kumenya, gupima no kugabanya ingaruka zishobora kugira ingaruka ku ntego n'imikorere y'ubucuruzi bwawe.",
+          "features": [
+            "Isuzuma n'isesengura ry'ingaruka",
+            "Serivisi z'ubugenzuzi bw'imbere",
+            "Kwirinda no gutahura uburiganya"
+          ]
+        },
+        "hr": {
+          "title": "Abakozi n'Imishahara",
+          "shortDesc": "Ibisubizo byuzuye by'abakozi n'imishahara",
+          "description": "Dufasha gucunga umutungo w'ingenzi kurusha indi – abakozi – twubahiriza amategeko agenga umurimo.",
+          "features": [
+            "Gukora imishahara",
+            "Politiki z'abakozi",
+            "Imicungire y'inyungu z'abakozi"
+          ]
+        }
+      },
+      "scheduleAppointment": "Teganya Umubonano",
+      "needCustomSolution": "Ukeneye ibisubizo byihariye? Abahanga bacu barahari kugufasha.",
+      "getFreeConsultation": "Bona Inama Yubusa"
+    },
+    "process": {
+      "title": "Uburyo",
+      "titleHighlight": "Bwizewe",
+      "titleSuffix": "",
+      "subtitle": "Uburyo bunoze bwo gutanga serivisi z'imari z'ubwiza zikwiranye n'ibyo ukeneye.",
+      "steps": [
+        { "title": "Kumenya no Gusesengura", "description": "Dusobanukirwa ibyo ukeneye, ibibazo n'intego.", "duration": "Icyumweru 1-2", "keyPoints": ["Kuganira kwa mbere", "Isuzuma ry'ubucuruzi"] },
+        { "title": "Icyifuzo n'Igenamigambi", "description": "Dukora gahunda yihariye ifite intego n'igihe.", "duration": "Iminsi 3-5", "keyPoints": ["Gahunda yihariye", "Ibigenderwaho by'ibiciro"] },
+        { "title": "Kwinjiza Ikipe", "description": "Dushyiraho itsinda rikwiriye kuri projet yawe.", "duration": "Iminsi 2-3", "keyPoints": ["Umuyobozi w'ikiraka", "Itangazwa ry'itsinda"] },
+        { "title": "Is实施", "description": "Dushyira mu bikorwa twitondewe kandi tugutanga amakuru y'iterambere.", "duration": "Bihinduka bitewe na projet", "keyPoints": ["Amakuru y'iterambere", "Kugenzura ubuziranenge"] },
+        { "title": "Isuzuma n'Raporo", "description": "Dutanga raporo n'isesengura birambuye.", "duration": "Icyumweru 1", "keyPoints": ["Ibipimo by'imikorere", "Kugenzura kubahiriza"] },
+        { "title": "Inkunga ikomeza", "description": "Tukomeza kugufasha no gutanga inama z'igihe kirekire.", "duration": "Bikomeza", "keyPoints": ["Inkunga yihariye", "Igenamigambi ry'igihe kirekire"] }
+      ],
+      "readyToGetStarted": "Witeguye gutangira?",
+      "readyDescription": "Itsinda ryacu riteguye kukuyobora mu buryo bwacu no kuguha serivisi z'imari zidasanzwe.",
+      "getFreeConsultation": "Bona Inama Yubusa",
+      "exploreServices": "Reba Serivisi Zacu"
     }
   }
 }

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import AboutHero from '../components/pages/about/AboutHero';
 import HistorySection from '../components/pages/about/HistorySection';
-import ValuesSection from '../components/pages/about/ValuesSection';
+// import ValuesSection from '../components/pages/about/ValuesSection';
 // import TeamSection from '../components/pages/about/TeamSection';
 import MissionSection from '../components/pages/about/MissionSection';
 import StorySection from '../components/pages/about/StorySection';
@@ -15,7 +15,7 @@ const AboutPage: FC = () => {
       <StorySection />
       <HistorySection />
       <ClientsSection />
-      <ValuesSection />
+      {/* <ValuesSection /> */}
       {/* <TeamSection /> */}
     </div>
   );
