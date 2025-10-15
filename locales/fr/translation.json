@@ -67,6 +67,157 @@
     "testimonialsTitle": "Témoignages Clients",
     "testimonialsSubtitle": "Ce que nos clients disent de nous"
   },
+  "aboutPage": {
+    "hero": {
+      "title": "À Propos d'EXCI-MAA",
+      "subtitle": "Votre Partenaire Financier de Confiance",
+      "description": "Avec plus de 27 ans d'excellence dans les services financiers, EXCI-MAA a été un partenaire de confiance pour les entreprises dans plusieurs pays, fournissant des services experts de comptabilité, d'audit et de conseil.",
+      "getInTouch": "Nous Contacter",
+      "ourServices": "Nos Services",
+      "trustedByBusinesses": "Fait confiance par les entreprises du monde entier",
+      "stats": {
+        "yearsExperience": "Années d'Expérience",
+        "countriesServed": "Pays Desservis",
+        "teamMembers": "Membres de l'Équipe",
+        "clientSatisfaction": "Satisfaction Client"
+      }
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description1": "Notre mission principale est de soutenir et d'accompagner les entreprises opérant sur le marché africain vers l'excellence financière. En tirant parti d'une connaissance approfondie des secteurs à but lucratif et à but non lucratif, nous livrons des engagements de conseil, d'audit statutaire et de conseil adaptés à chaque taille d'organisation.",
+      "description2": "Nos solutions sont conçues pour répondre aux besoins spécifiques des entreprises à travers le continent africain, fournissant un service de bout en bout et une vraie valeur ajoutée—à un budget équitable. Notre équipe multidisciplinaire et multiculturelle assure un support sur mesure, adapté à l'échelle et aux capacités de votre structure."
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "description1": "EXCI-MAA a été fondée par des experts en audit, comptabilité, fiscalité, développement commercial, systèmes d'information de gestion et droit. Avec une présence au Canada, aux États-Unis, en France, au Royaume-Uni et à travers l'Afrique, nous apportons une expertise internationale adaptée à chaque contexte local.",
+      "description2": "Nous opérons à travers toute la chaîne de valeur des activités de nos clients, assurant la transparence et la conformité avec les parties prenantes. Notre cabinet accompagne les organisations dans plusieurs pays à travers un réseau solide et des équipes sur le terrain, offrant un service de proximité et des solutions adaptées aux réalités locales.",
+      "description3": "Aujourd'hui, nous continuons d'étendre notre empreinte tout en restant fidèles à nos principes fondateurs : excellence, intégrité et impact. Des audits statutaires et contractuels à la gestion des risques et au conseil personnalisé, nos équipes livrent des missions durables et efficaces qui génèrent des résultats durables.",
+      "whatWeDo": "Ce que nous faisons",
+      "services": [
+        "Support pour les projets de développement, fusion, création ou transformation",
+        "Audit statutaire ou contractuel",
+        "Expertise comptable",
+        "Analyse du contrôle interne et gestion des risques",
+        "Audit des coûts pétroliers",
+        "Conseil personnalisé pour les entreprises et PME"
+      ]
+    },
+    "history": {
+      "title": "Notre Parcours",
+      "subtitle": "Plus de deux décennies d'excellence dans les services financiers",
+      "timeline": [
+        {
+          "year": "1996",
+          "title": "Fondation d'EXCI-MAA",
+          "description": "Fondée à Yaoundé, Cameroun, avec une vision de fournir des services comptables et financiers exceptionnels aux entreprises locales."
+        },
+        {
+          "year": "2002",
+          "title": "Expansion Régionale",
+          "description": "Étendu les services pour couvrir l'Afrique centrale, établissant des bureaux dans les centres économiques clés de la région."
+        },
+        {
+          "year": "2010",
+          "title": "Reconnaissance Internationale",
+          "description": "Obtenu une reconnaissance internationale pour l'excellence dans les services financiers et les standards de conformité."
+        },
+        {
+          "year": "2015",
+          "title": "Transformation Numérique",
+          "description": "Implémenté des technologies financières de pointe pour améliorer la livraison de services et l'expérience client."
+        },
+        {
+          "year": "2020",
+          "title": "Portée Mondiale",
+          "description": "Établi des partenariats avec des firmes internationales, étendant nos services aux clients dans plus de 6 pays."
+        },
+        {
+          "year": "2023",
+          "title": "Croissance de l'Équipe",
+          "description": "Notre équipe a grandi à plus de 50 professionnels, consolidant notre position en tant que firme de services financiers de premier plan."
+        }
+      ],
+      "journeyContinues": "Notre parcours continue alors que nous nous efforçons d'excellence dans chaque service que nous fournissons.",
+      "learnMoreStory": "En savoir plus sur notre histoire"
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "subtitle": "Les principes qui guident notre travail et définissent notre culture",
+      "values": [
+        {
+          "name": "Excellence",
+          "description": "Nous nous engageons à livrer les services de la plus haute qualité, améliorant continuellement nos compétences et processus pour dépasser les attentes des clients."
+        },
+        {
+          "name": "Intégrité",
+          "description": "Nous maintenons les plus hauts standards éthiques, assurant la transparence, l'honnêteté et le professionnalisme dans toutes nos interactions."
+        },
+        {
+          "name": "Innovation",
+          "description": "Nous adoptons les nouvelles technologies et solutions créatives pour fournir des services de pointe qui stimulent le succès de nos clients."
+        },
+        {
+          "name": "Focus Client",
+          "description": "Nous construisons des relations durables en comprenant les besoins uniques de nos clients et en livrant des solutions sur mesure qui créent une vraie valeur."
+        },
+        {
+          "name": "Professionnalisme",
+          "description": "Nous maintenons les plus hauts standards d'expertise, de fiabilité et de responsabilité dans tous les aspects de notre travail."
+        },
+        {
+          "name": "Partenariat",
+          "description": "Nous croyons en la collaboration étroite avec nos clients, travaillant comme une extension de leur équipe pour atteindre un succès partagé."
+        }
+      ],
+      "learnMore": "En savoir plus",
+      "learnMoreCulture": "En savoir plus sur notre culture"
+    },
+    "team": {
+      "title": "Rencontrez Notre Direction",
+      "subtitle": "Notre équipe expérimentée est dédiée à livrer un service exceptionnel et de la valeur à nos clients.",
+      "members": [
+        {
+          "name": "Pierre Kemeni",
+          "role": "Fondateur & PDG",
+          "bio": "MBA, CPA, DEC avec plus de 27 ans d'expérience internationale en comptabilité et audit.",
+          "expertise": [
+            "Comptabilité Internationale",
+            "Audit Financier",
+            "Stratégie Commerciale",
+            "Finance d'Entreprise"
+          ]
+        },
+        {
+          "name": "Patrick Ngatcha",
+          "role": "Directeur Général",
+          "bio": "DEC, DSCG, Master CCA, MSTCF avec plus de 13 ans en développement commercial et conseil financier.",
+          "expertise": [
+            "Développement Commercial",
+            "Conseil Financier",
+            "Planification Fiscale",
+            "Stratégie d'Entreprise"
+          ]
+        },
+        {
+          "name": "Marie Laure Ngo Bikoi",
+          "role": "Directrice d'Audit Senior",
+          "bio": "HEC, DSCG avec plus de 15 ans d'expérience en audit et services de conseil financier.",
+          "expertise": [
+            "Audit Financier",
+            "Contrôles Internes",
+            "Gestion des Risques",
+            "Conformité"
+          ]
+        }
+      ],
+      "expertise": "Expertise",
+      "viewAllMembers": "Voir tous les membres de l'équipe"
+    },
+    "testimonials": {
+      "title": "Témoignages Clients",
+      "subtitle": "Ce que nos clients disent de nous"
+    }
+  },
   "services": {
     "title": "Nos Services",
     "subtitle": "Solutions complètes pour vos besoins commerciaux",

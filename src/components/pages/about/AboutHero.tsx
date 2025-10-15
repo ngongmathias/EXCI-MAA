@@ -1,13 +1,16 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
 import { Building2, Globe, Users, Award } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const AboutHero: FC = () => {
+  const { t } = useLanguage();
+  
   const stats = [
-    { id: 1, name: 'Years of Experience', value: '27+', icon: <Award className="h-8 w-8 text-white" /> },
-    { id: 2, name: 'Countries Served', value: '6+', icon: <Globe className="h-8 w-8 text-white" /> },
-    { id: 3, name: 'Team Members', value: '50+', icon: <Users className="h-8 w-8 text-white" /> },
-    { id: 4, name: 'Client Satisfaction', value: '98%', icon: <Award className="h-8 w-8 text-white" /> },
+    { id: 1, name: t('aboutPage.hero.stats.yearsExperience'), value: '27+', icon: <Award className="h-8 w-8 text-white" /> },
+    { id: 2, name: t('aboutPage.hero.stats.countriesServed'), value: '6+', icon: <Globe className="h-8 w-8 text-white" /> },
+    { id: 3, name: t('aboutPage.hero.stats.teamMembers'), value: '50+', icon: <Users className="h-8 w-8 text-white" /> },
+    { id: 4, name: t('aboutPage.hero.stats.clientSatisfaction'), value: '98%', icon: <Award className="h-8 w-8 text-white" /> },
   ];
 
   return (
@@ -24,11 +27,11 @@ const AboutHero: FC = () => {
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-16 lg:px-8 xl:mt-20">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block">About EXCI-MAA</span>
-                <span className="block text-blue-600">Your Trusted Financial Partner</span>
+                <span className="block">{t('aboutPage.hero.title')}</span>
+                <span className="block text-blue-600">{t('aboutPage.hero.subtitle')}</span>
               </h1>
               <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                With over 27 years of excellence in financial services, EXCI-MAA has been a trusted partner for businesses across multiple countries, providing expert accounting, auditing, and consulting services.
+                {t('aboutPage.hero.description')}
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -36,7 +39,7 @@ const AboutHero: FC = () => {
                     href="#contact"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                   >
-                    Get in Touch
+                    {t('aboutPage.hero.getInTouch')}
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -44,7 +47,7 @@ const AboutHero: FC = () => {
                     href="#services"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                   >
-                    Our Services
+                    {t('aboutPage.hero.ourServices')}
                   </a>
                 </div>
               </div>
@@ -57,7 +60,7 @@ const AboutHero: FC = () => {
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-8 lg:mb-0">
-            <span className="block">Trusted by businesses worldwide</span>
+            <span className="block">{t('aboutPage.hero.trustedByBusinesses')}</span>
           </h2>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {stats.map((stat) => (

@@ -795,6 +795,10 @@
       ],
       "expertise": "Obukulembeze",
       "viewAllMembers": "Laba abakulembeze bonna b'ekibiina"
+    },
+    "testimonials": {
+      "title": "Ebyemezo by'abakiriya",
+      "subtitle": "Ebyo abakiriya baffe bavuga ku ffe"
     }
   }
 }

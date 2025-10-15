@@ -795,6 +795,10 @@
       ],
       "expertise": "Expertise",
       "viewAllMembers": "View all team members"
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "subtitle": "What our clients say about us"
     }
   }
 }
