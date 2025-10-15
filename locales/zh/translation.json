@@ -216,6 +216,33 @@
     "testimonials": {
       "title": "客户推荐",
       "subtitle": "我们的客户对我们的评价"
+    },
+    "clients": {
+      "title": "客户评价",
+      "subtitle": "别只听我们说。以下是客户对我们服务的评价。",
+      "items": [
+        {
+          "name": "John Smith",
+          "role": "首席执行官",
+          "company": "ABC Corporation",
+          "quote": "EXCIMAA 在帮助我们优化财务运营方面发挥了关键作用。他们的专业能力无与伦比。",
+          "rating": 5
+        },
+        {
+          "name": "Sarah Johnson",
+          "role": "财务总监",
+          "company": "XYZ Ltd",
+          "quote": "专业、可靠，并且总是在我们需要时提供支持。强烈推荐！",
+          "rating": 5
+        },
+        {
+          "name": "Michael Brown",
+          "role": "企业主",
+          "company": "123 Industries",
+          "quote": "他们的团队在我们海外扩张期间提供了出色支持。真正的全球化专业能力。",
+          "rating": 4
+        }
+      ]
     }
   },
   "services": {

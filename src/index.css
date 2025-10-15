@@ -70,7 +70,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #fdfdfd;
   border-radius: 10px;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #111827; /* darker on hover */
+  background: #b1c6f5; /* darker on hover */
 }
 
 /* Animation delays */

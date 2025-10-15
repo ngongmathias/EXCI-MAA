@@ -5,6 +5,7 @@ import ValuesSection from '../components/pages/about/ValuesSection';
 import TeamSection from '../components/pages/about/TeamSection';
 import MissionSection from '../components/pages/about/MissionSection';
 import StorySection from '../components/pages/about/StorySection';
+import ClientsSection from '../components/pages/about/ClientsSection';
 
 const AboutPage: FC = () => {
   return (
@@ -13,6 +14,7 @@ const AboutPage: FC = () => {
       <MissionSection />
       <StorySection />
       <HistorySection />
+      <ClientsSection />
       <ValuesSection />
       <TeamSection />
     </div>

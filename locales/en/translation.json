@@ -799,6 +799,33 @@
     "testimonials": {
       "title": "Client Testimonials",
       "subtitle": "What our clients say about us"
+    },
+    "clients": {
+      "title": "What Our Clients Say",
+      "subtitle": "Don't just take our word for it. Here's what our clients have to say about our services.",
+      "items": [
+        {
+          "name": "John Smith",
+          "role": "CEO",
+          "company": "ABC Corporation",
+          "quote": "EXCIMAA has been instrumental in helping us streamline our financial operations. Their expertise is unmatched.",
+          "rating": 5
+        },
+        {
+          "name": "Sarah Johnson",
+          "role": "Finance Director",
+          "company": "XYZ Ltd",
+          "quote": "Professional, reliable, and always available when we need them. Highly recommended!",
+          "rating": 5
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Business Owner",
+          "company": "123 Industries",
+          "quote": "Their team provided excellent support during our international expansion. Truly global expertise.",
+          "rating": 4
+        }
+      ]
     }
   }
 }

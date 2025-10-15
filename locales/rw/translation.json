@@ -441,6 +441,33 @@
     "testimonials": {
       "title": "Ibyemezo by'abakiriya",
       "subtitle": "Ibyo abakiriya bacu bavuga ku twe"
+    },
+    "clients": {
+      "title": "Ibyo abakiriya bacu bavuga",
+      "subtitle": "Ntukemere amagambo yacu gusa. Dore ibyo abakiriya bacu bavuga ku serivisi zacu.",
+      "items": [
+        {
+          "name": "John Smith",
+          "role": "Umuyobozi Mukuru",
+          "company": "ABC Corporation",
+          "quote": "EXCIMAA yadufashije cyane kunoza imikorere yacu y'imari. Ubumenyi bwabo ntibugira uko bungana.",
+          "rating": 5
+        },
+        {
+          "name": "Sarah Johnson",
+          "role": "Umuyobozi w'Imari",
+          "company": "XYZ Ltd",
+          "quote": "Ababigize umwuga, b'inyangamugayo kandi bahora bahari mu gihe tubakeneye. Turabashima cyane!",
+          "rating": 5
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Nyir'ibikorwa",
+          "company": "123 Industries",
+          "quote": "Ikipe yabo yatugaragarije ubufasha buhebuje mu gihe twaguriraga ibikorwa hanze. Ubumenyi mpuzamahanga nyabwo.",
+          "rating": 4
+        }
+      ]
     }
   }
 }

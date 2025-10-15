@@ -799,6 +799,33 @@
     "testimonials": {
       "title": "Ebyemezo by'abakiriya",
       "subtitle": "Ebyo abakiriya baffe bavuga ku ffe"
+    },
+    "clients": {
+      "title": "Ebyo abakiriya baffe bagamba",
+      "subtitle": "Togumira ku kigambo kyaffe kyokka. Lano ebyo abakiriya baffe bagamba ku by'okukola byaffe.",
+      "items": [
+        {
+          "name": "John Smith",
+          "role": "Omukulembeze Omukulu",
+          "company": "ABC Corporation",
+          "quote": "EXCIMAA ayambye nnyo okutereeza enkola zaffe z'eby'amabanja. Obukulembeze bwabwe tebusobola kugerwako.",
+          "rating": 5
+        },
+        {
+          "name": "Sarah Johnson",
+          "role": "Omukulembeze w'eby'ensimbi",
+          "company": "XYZ Ltd",
+          "quote": "Bakugu, beesigika, era balimu buli lwe tubetaaga. Tukubiriza nnyo!",
+          "rating": 5
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Nannyini Kibiina",
+          "company": "123 Industries",
+          "quote": "Timu yaabwe yawadde obuyambi obw'enjawulo mu kukulira ebirala ebweru w'eggwanga. Obukulembeze obw'ensi yonna ddala.",
+          "rating": 4
+        }
+      ]
     }
   }
 }

@@ -216,6 +216,33 @@
     "testimonials": {
       "title": "Témoignages Clients",
       "subtitle": "Ce que nos clients disent de nous"
+    },
+    "clients": {
+      "title": "Ce que disent nos clients",
+      "subtitle": "Ne vous contentez pas de notre parole. Voici ce que nos clients pensent de nos services.",
+      "items": [
+        {
+          "name": "John Smith",
+          "role": "PDG",
+          "company": "ABC Corporation",
+          "quote": "EXCIMAA a joué un rôle clé pour optimiser nos opérations financières. Leur expertise est inégalée.",
+          "rating": 5
+        },
+        {
+          "name": "Sarah Johnson",
+          "role": "Directrice financière",
+          "company": "XYZ Ltd",
+          "quote": "Professionnels, fiables et toujours disponibles quand nous en avons besoin. Hautement recommandé !",
+          "rating": 5
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Propriétaire d'entreprise",
+          "company": "123 Industries",
+          "quote": "Leur équipe nous a apporté un excellent soutien lors de notre expansion internationale. Une véritable expertise globale.",
+          "rating": 4
+        }
+      ]
     }
   },
   "services": {
