@@ -5,10 +5,10 @@ import { Users, Globe, Award, Target, BarChart2, Shield, Lightbulb, UserPlus, Ar
 import { useLanguage } from '../../../contexts/LanguageContext';
 
 const stats = [
-  { icon: Users, value: '27+', label: 'Years Experience' },
-  { icon: Globe, value: '6+', label: 'Countries' },
-  { icon: Award, value: '500+', label: 'Clients Served' },
-  { icon: Target, value: '99%', label: 'Success Rate' },
+  { icon: Users, value: '27+', labelKey: 'aboutPage.hero.stats.yearsExperience' },
+  { icon: Globe, value: '6+', labelKey: 'aboutPage.hero.stats.countriesServed' },
+  { icon: Award, value: '500+', labelKey: 'aboutPage.hero.stats.clientsServed' },
+  { icon: Target, value: '99%', labelKey: 'aboutPage.hero.stats.successRate' },
 ];
 
 const coreValues = [
@@ -126,7 +126,7 @@ const About: FC = () => {
                   {stat.value}
                 </h3>
                 <div className="text-sm text-gray-600">
-                  {stat.label}
+                  {t(stat.labelKey as any)}
                 </div>
               </motion.div>
             ))}

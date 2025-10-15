@@ -357,7 +357,29 @@
   },
   "partners": {
     "title": "Our Leaders",
-    "subtitle": "Trusted organizations we work with"
+    "subtitle": "Trusted organizations we work with",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Chartered accountant and auditor with over 27 years of experience in international accounting and auditing.",
+        "specialties": [
+          "International Accounting",
+          "Auditing",
+          "Tax Consulting"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Chartered accountant and auditor with over 13 years of experience in business development and financial consulting.",
+        "specialties": [
+          "Business Development",
+          "Financial Consulting",
+          "Risk Management"
+        ]
+      }
+    }
   },
   "offices": {
     "title": "Global Presence",
@@ -662,7 +684,9 @@
         "yearsExperience": "Years of Experience",
         "countriesServed": "Countries Served",
         "teamMembers": "Team Members",
-        "clientSatisfaction": "Client Satisfaction"
+        "clientSatisfaction": "Client Satisfaction",
+        "clientsServed": "Clients Served",
+        "successRate": "Success Rate"
       }
     },
     "mission": {

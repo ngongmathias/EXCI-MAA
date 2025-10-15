@@ -6,19 +6,19 @@ const Partners: FC = () => {
   const { t } = useLanguage();
   const founders = [
     {
-      name: 'Pierre KEMENI',
-      title: 'MBA, CPA, DEC',
-      description: 'Chartered accountant and auditor with over 27 years of experience in international accounting and auditing.',
-      image: '/api/placeholder/200/200',
-      specialties: ['International Accounting', 'Auditing', 'Tax Consulting']
+      name: t('partners.founders.pierre.name'),
+      title: t('partners.founders.pierre.title'),
+      description: t('partners.founders.pierre.description'),
+      image: '/images/Pierre.PNG',
+      specialties: t('partners.founders.pierre.specialties', { returnObjects: true }) as string[],
     },
     {
-      name: 'Patrick NGATCHA',
-      title: 'DEC, DSCG, Master CCA, MSTCF',
-      description: 'Chartered accountant and auditor with over 13 years of experience in business development and financial consulting.',
-      image: '/api/placeholder/200/200',
-      specialties: ['Business Development', 'Financial Consulting', 'Risk Management']
-    }
+      name: t('partners.founders.patrick.name'),
+      title: t('partners.founders.patrick.title'),
+      description: t('partners.founders.patrick.description'),
+      image: '/images/Patrick Ngatcha.PNG',
+      specialties: t('partners.founders.patrick.specialties', { returnObjects: true }) as string[],
+    },
   ];
 
   // intentionally no partners grid for now
@@ -40,8 +40,13 @@ const Partners: FC = () => {
           {founders.map((founder, index) => (
             <div key={index} className="card">
               <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
-                <div className="w-32 h-32 bg-blue-100 rounded-full flex items-center justify-center mx-auto md:mx-0">
-                  <Award className="h-16 w-16 text-blue-600" />
+                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto md:mx-0 bg-white shadow">
+                  <img
+                    src={founder.image}
+                    alt={founder.name}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">

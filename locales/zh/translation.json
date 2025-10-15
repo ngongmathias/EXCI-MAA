@@ -79,7 +79,9 @@
         "yearsExperience": "经验年数",
         "countriesServed": "服务国家",
         "teamMembers": "团队成员",
-        "clientSatisfaction": "客户满意度"
+        "clientSatisfaction": "客户满意度",
+        "clientsServed": "服务客户",
+        "successRate": "成功率"
       }
     },
     "mission": {
@@ -534,7 +536,29 @@
   },
   "partners": {
     "title": "我们的领导者",
-    "subtitle": "我们合作的值得信赖的组织"
+    "subtitle": "我们合作的值得信赖的组织",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA、CPA、DEC",
+        "description": "拥有27年以上国际会计与审计经验的注册会计师与审计师。",
+        "specialties": [
+          "国际会计",
+          "审计",
+          "税务咨询"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC、DSCG、Master CCA、MSTCF",
+        "description": "拥有13年以上业务发展与财务咨询经验的注册会计师与审计师。",
+        "specialties": [
+          "业务发展",
+          "财务咨询",
+          "风险管理"
+        ]
+      }
+    }
   },
   "offices": {
     "title": "全球影响力",
@@ -841,7 +865,9 @@
         "yearsExperience": "年经验",
         "countriesServed": "服务国家",
         "teamMembers": "团队成员",
-        "clientSatisfaction": "客户满意度"
+        "clientSatisfaction": "客户满意度",
+        "clientsServed": "服务客户",
+        "successRate": "成功率"
       }
     },
     "mission": {

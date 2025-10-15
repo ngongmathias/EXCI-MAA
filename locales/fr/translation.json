@@ -79,7 +79,9 @@
         "yearsExperience": "Années d'Expérience",
         "countriesServed": "Pays Desservis",
         "teamMembers": "Membres de l'Équipe",
-        "clientSatisfaction": "Satisfaction Client"
+        "clientSatisfaction": "Satisfaction Client",
+        "clientsServed": "Clients Servis",
+        "successRate": "Taux de Réussite"
       }
     },
     "mission": {
@@ -534,7 +536,29 @@
   },
   "partners": {
     "title": "Nos Dirigeants",
-    "subtitle": "Organisations de confiance avec lesquelles nous travaillons"
+    "subtitle": "Organisations de confiance avec lesquelles nous travaillons",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Expert-comptable et commissaire aux comptes avec plus de 27 ans d'expérience en comptabilité et audit internationaux.",
+        "specialties": [
+          "Comptabilité Internationale",
+          "Audit",
+          "Conseil Fiscal"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Expert-comptable et commissaire aux comptes avec plus de 13 ans d'expérience en développement des affaires et conseil financier.",
+        "specialties": [
+          "Développement Commercial",
+          "Conseil Financier",
+          "Gestion des Risques"
+        ]
+      }
+    }
   },
   "offices": {
     "title": "Présence Mondiale",
@@ -840,7 +864,9 @@
         "yearsExperience": "Années d'Expérience",
         "countriesServed": "Pays Desservis",
         "teamMembers": "Membres de l'Équipe",
-        "clientSatisfaction": "Satisfaction Client"
+        "clientSatisfaction": "Satisfaction Client",
+        "clientsServed": "Clients Servis",
+        "successRate": "Taux de Réussite"
       }
     },
     "mission": {

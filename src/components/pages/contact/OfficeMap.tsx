@@ -212,7 +212,7 @@ export default function OfficeMap() {
                     <a 
                       href={`https://www.google.com/maps/dir/?api=1&destination=${OFFICE_LOCATION.lat},${OFFICE_LOCATION.lng}`}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer" 
                       className="inline-flex items-center mt-2 text-sm font-medium text-exci-yellow-600 hover:text-exci-yellow-700 group"
                     >
                       {t('contact.map.getDirections')}

@@ -22,16 +22,25 @@ export default function ContactForm() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
+    if (isSubmitting) return;
     setIsSubmitting(true);
     setSubmitError('');
     
     try {
+      // Basic runtime sanity checks for configuration
+      if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_ANON_KEY) {
+        throw new Error('Supabase environment variables are not configured');
+      }
+
+      console.log('[ContactForm] Submitting payload:', data);
       await insertItem('contact_submissions', data);
-      setIsSubmitted(true);
       reset();
+      setIsSubmitted(true);
+      console.log('[ContactForm] Submission successful');
     } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitError('Failed to send message. Please try again later.');
+      const message = (error as any)?.message ?? 'Failed to send message. Please try again later.';
+      console.error('[ContactForm] Error submitting form:', error);
+      setSubmitError(message);
     } finally {
       setIsSubmitting(false);
     }
@@ -91,8 +100,7 @@ export default function ContactForm() {
         <motion.div 
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -106,8 +114,7 @@ export default function ContactForm() {
         <motion.div 
           className="bg-white shadow-xl rounded-2xl overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -173,8 +180,7 @@ export default function ContactForm() {
                 <motion.div 
                   variants={container}
                   initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true }}
+                  animate="show"
                   className="space-y-6"
                 >
                   <motion.div variants={item} className="space-y-1">
@@ -337,14 +343,17 @@ export default function ContactForm() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className={`w-full flex justify-center items-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-exci-yellow-500 hover:bg-exci-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-exci-yellow-500 transition-colors duration-200 ${
-                        isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
+                      aria-disabled={isSubmitting}
+                      aria-busy={isSubmitting}
+                      className={`w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white duration-200 ${
+                        isSubmitting ? 'bg-blue-600 opacity-75 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 cursor-pointer'
                       }`}
                     >
                       {isSubmitting ? (
                         <>
-                          <Loader2 className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" />
-                          Sending...
+                          <Loader2 aria-hidden="true" className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" />
+                          <span className="sr-only">Sending</span>
+                          <span aria-live="polite">Sending...</span>
                         </>
                       ) : (
                         'Send Message'
@@ -356,8 +365,7 @@ export default function ContactForm() {
                 <motion.div 
                   className="text-center text-sm text-gray-500"
                   initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
                 >
                   <p>We'll get back to you within 24 hours. Your information is secure.</p>

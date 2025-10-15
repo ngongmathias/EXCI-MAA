@@ -356,7 +356,29 @@
   },
   "partners": {
     "title": "Abakulembeze baffe",
-    "subtitle": "Amawanga gaffe ag'omugaso"
+    "subtitle": "Amawanga gaffe ag'omugaso",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Mukugu mu kubala n'okukakasa, alina emyaka egisukka 27 mu bintu by'obukugu mu nsi yonna.",
+        "specialties": [
+          "Kubala kwa Mbadde mu Nsi yonna",
+          "Okukakasa",
+          "Obujjanjabi bw'Omusolo"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Mukugu mu kubala n'okukakasa alina emyaka egisukka 13 mu kukulaakulanya ebizimbe n'okumanya eby'ensimbi.",
+        "specialties": [
+          "Okukulaakulanya Ebizimbe",
+          "Obujjanjabi bw'EnsimbI",
+          "Okulamulira Obulabe"
+        ]
+      }
+    }
   },
   "offices": {
     "title": "Obukulembeze bw'ensi yonna",
@@ -659,10 +681,12 @@
       "ourServices": "Eby'okukola byaffe",
       "trustedByBusinesses": "Okwesigika n'ebikoresho ku nsi yonna",
       "stats": {
-        "yearsExperience": "Emyaka y'obukulembeze",
-        "countriesServed": "Ensi Ezikoleddwa",
+        "yearsExperience": "Emyaka gy'obumanyirivu",
+        "countriesServed": "Amawanga gaakoleddwa",
         "teamMembers": "Abakulembeze b'ekibiina",
-        "clientSatisfaction": "Okukkirizibwa kw'abakiriya"
+        "clientSatisfaction": "Okukkirizibwa kw'abakiriya",
+        "clientsServed": "Abakiriya abaweerezeddwa",
+        "successRate": "Omuwendo gw'obuwanguzi"
       }
     },
     "mission": {

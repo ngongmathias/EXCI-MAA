@@ -356,7 +356,29 @@
   },
   "partners": {
     "title": "Abayobozi bacu",
-    "subtitle": "Amashyira yacu y'ubwoba"
+    "subtitle": "Amashyira yacu y'ubwoba",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Umuhinga mu bikorwa vy'ubucungamari no kugenzura, afise imyaka irenga 27 y'uburambe mu bikorwa mpuzamakungu.",
+        "specialties": [
+          "Ubucungamari Mpuzamakungu",
+          "Audit",
+          "Inama z'Imisoro"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Umuhinga mu bucungamari no kugenzura afise imyaka irenga 13 mu guteza imbere ibikorwa n'ubujyanama mu mafaranga.",
+        "specialties": [
+          "Iterambere ry'Ubucuruzi",
+          "Ubumenyi mu By'Imari",
+          "Gucunga Ingaruka"
+        ]
+      }
+    }
   },
   "offices": {
     "title": "Ubwoba bw'isi",
@@ -659,10 +681,12 @@
       "ourServices": "Serivisi zacu",
       "trustedByBusinesses": "Wizewe n'ibikoresho ku isi yose",
       "stats": {
-        "yearsExperience": "Imyaka y'ubuhanga",
-        "countriesServed": "Amahanga Yashyizweho",
-        "teamMembers": "Abanyamuryango b'ikipe",
-        "clientSatisfaction": "Kwishima kw'abakiriya"
+        "yearsExperience": "Imyaka y'uburambe",
+        "countriesServed": "Ibihugu vyakorewe",
+        "teamMembers": "Abarongozi b'ikipe",
+        "clientSatisfaction": "Kunyurwa kw'abakiriya",
+        "clientsServed": "Abakiriya Bakorewe",
+        "successRate": "Urugero rw'intsinzi"
       }
     },
     "mission": {
