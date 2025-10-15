@@ -16,12 +16,12 @@
     "adminPanel": "Ikibaho cy'ubuyobozi"
   },
   "footer": {
-    "description": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite ubwoba bw'isi. Dutanga ubuhanga buhagije gufasha ibyo ukeneye.",
+    "description": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite amaofisi bw'isi. Dutanga ubuhanga buhagije gufasha ibyo ukeneye.",
     "quickLinks": "Amahuza yihuse",
     "ourServices": "Serivisi zacu",
     "contactInfo": "Amakuru y'ubwoba",
     "douala": "Douala, Kameruni",
-    "globalPresence": "Ubwoba bw'isi",
+    "globalPresence": "",
     "allRightsReserved": "Ubutaka bose burabagirwa.",
     "privacyPolicy": "Politiki y'ubwoba",
     "termsOfService": "Amabwiriza y'ubucuruzi",
@@ -53,12 +53,12 @@
     "subtitle": "Menya byinshi ku kigo cyacu n'ibyiringiro",
     "feature1Title": "Ubwoba bw'ubuhanga",
     "feature1Desc": "Dukomeza ubwoba bw'ubuhanga mu serivisi zacu zose",
-    "feature2Title": "Ubwoba bw'isi",
+    "feature2Title": "Ofisi dufite ku isi",
     "feature2Desc": "Gufasha abakiriya mu mahanga menshi n'amashyira",
     "feature3Title": "Ikipe y'ubuhanga",
     "feature3Desc": "Abahanga bacu bafite ubuhanga batanga ibisubizo by'ubwoba",
     "heroTitle": "Ibyerekeye EXCI-MAA",
-    "heroSubtitle": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite ubwoba bw'isi",
+    "heroSubtitle": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite amaofisi bw'isi",
     "historyTitle": "Amateka yacu",
     "historySubtitle": "Gushyiraho kwizera ku bwoba bw'ubuhanga kuva twatangira",
     "valuesTitle": "Ibyiringiro byacu",
@@ -382,7 +382,7 @@
     }
   },
   "offices": {
-    "title": "Ubwoba bw'isi",
+    "title": "Ofisi dufite ku isi",
     "subtitle": "Gufasha abakiriya ku isi yose"
   },
   "admin": {
@@ -693,7 +693,7 @@
     "mission": {
       "title": "Intego yacu",
       "description1": "Intego yacu nyamukuru ni ugufasha no kuyobora ibikoresho bikora mu isoko ry'Abanyafurika kugera ku bwoba bw'ubucuruzi. Dukoresha ubumenyi buhagije bw'ibice byose by'ubucuruzi n'ibitarabucuruzi, dutanga ubunyangamugayo, ubugenzuzi bw'amategeko, n'ubunyangamugayo bwashyizweho ku bwoba bw'ikigo cyose.",
-      "description2": "Ibisubizo byacu byashyizweho gukemura ibyifuza by'ibikoresho ku gace kose ka Afurika, dutanga serivisi yose n'akamaro k'ukuri—ku giciro cy'ubwoba. Ikipe yacu ifite ubuhanga bwinshi n'ubwoba bw'isi yose ihamya gufasha bwashyizweho, byashyizweho ku bwoba n'ubushobozi bw'ubwoba bwawe."
+      "description2": "Ibisubizo byacu byashyizweho gukemura ibyifuza by'ibikoresho ku gace kose ka Afurika, dutanga serivisi yose n'akamaro k'ukuri—ku giciro cy'ubwoba. Ikipe yacu ifite ubuhanga bwinshi n'amaofisi bw'isi yose ihamya gufasha bwashyizweho, byashyizweho ku bwoba n'ubushobozi bw'ubwoba bwawe."
     },
     "story": {
       "title": "Inkuru yacu",
@@ -736,7 +736,7 @@
         },
         {
           "year": "2020",
-          "title": "Ubwoba bw'isi yose",
+          "title": "Ofisi dufite ku isi yose",
           "description": "Byashyizweho ubufatanyabikorwa n'amashyira y'isi yose, serivisi zongerewe ku bakiriya mu mahanga 6+."
         },
         {

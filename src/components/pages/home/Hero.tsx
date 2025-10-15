@@ -1,8 +1,6 @@
-import { FC, useState, useEffect, useRef } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart2, Globe, Shield, Users, ChevronDown } from 'lucide-react';
-import { countries } from '../../../data/countries';
-import { Link as RouterLink } from 'react-router-dom';
+import { ArrowRight, BarChart2, Shield, Users, Globe } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import MotionInView from '../../enhanced/MotionInView';
 
@@ -40,9 +38,7 @@ const Hero: FC = () => {
   const { t } = useLanguage();
   const [currentText, setCurrentText] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const [presenceOpen, setPresenceOpen] = useState(false);
-  const [presencePinned, setPresencePinned] = useState(false);
-  const presenceRef = useRef<HTMLDivElement>(null);
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,18 +52,7 @@ const Hero: FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (presenceRef.current && !presenceRef.current.contains(event.target as Node)) {
-        setPresenceOpen(false);
-        setPresencePinned(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
+  
 
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-16 lg:py-28">
@@ -138,30 +123,7 @@ const Hero: FC = () => {
               >
                 {t('services.viewAll')}
                   </Link>
-                  <div className="relative inline-block" ref={presenceRef} onMouseEnter={() => setPresenceOpen(true)} onMouseLeave={() => setPresenceOpen(presencePinned)}>
-                    <button
-                      className="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-white shadow-sm border border-gray-200 text-gray-700 hover:text-blue-600 hover:border-blue-300"
-                      onClick={() => {
-                        setPresencePinned((p) => !p);
-                        setPresenceOpen(true);
-                      }}
-                    >
-                      <Globe className="h-4 w-4" />
-                      <span>{t('offices.title')}</span>
-                      <ChevronDown className="h-4 w-4" />
-                    </button>
-                    {(presenceOpen || presencePinned) && (
-                      <div className="absolute z-20 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg p-2">
-                        <div className="grid grid-cols-1 gap-1 max-h-64 overflow-auto">
-                          {countries.map((c) => (
-                            <RouterLink key={c.slug} to={`/global-offices/${c.slug}`} className="px-3 py-2 rounded hover:bg-gray-50 text-sm text-gray-700 hover:text-blue-600">
-                              {c.name}
-                            </RouterLink>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                  
               </div>
             </MotionInView>
           </div>
