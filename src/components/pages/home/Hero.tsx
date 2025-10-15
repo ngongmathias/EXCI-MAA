@@ -147,7 +147,7 @@ const Hero: FC = () => {
                       }}
                     >
                       <Globe className="h-4 w-4" />
-                      <span>Global Presence</span>
+                      <span>{t('offices.title')}</span>
                       <ChevronDown className="h-4 w-4" />
                     </button>
                     {(presenceOpen || presencePinned) && (
@@ -171,7 +171,7 @@ const Hero: FC = () => {
             <div className="bg-blue-600 rounded-2xl p-8 text-white">
               <div className="space-y-6">
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-4">Global Presence</h3>
+                  <h3 className="text-2xl font-bold mb-4">{t('offices.title')}</h3>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div className="bg-white/10 rounded-lg p-3">
                       <div className="font-semibold">Canada</div>
