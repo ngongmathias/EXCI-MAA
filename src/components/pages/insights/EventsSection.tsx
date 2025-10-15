@@ -67,6 +67,13 @@ const EventsSection: React.FC = () => {
       try {
         const evts = await fetchAll<EventItem>('events');
         setEvents(evts as any);
+      } catch (e: any) {
+        setError('Failed to load events');
+      } finally {
+        setLoading(false);
+      }
+      // Best-effort attendees load; do not surface schema errors to end-users
+      try {
         const atts = await fetchAll<{ event_id: string; name: string; email: string }>('event_attendees');
         const grouped: Record<string, Attendee[]> = {};
         atts.forEach(a => {
@@ -75,10 +82,8 @@ const EventsSection: React.FC = () => {
           grouped[k].push({ name: (a as any).name, email: (a as any).email });
         });
         setAttendeesByEvent(grouped);
-      } catch (e: any) {
-        setError(e.message || 'Failed to load events');
-      } finally {
-        setLoading(false);
+      } catch {
+        // silently ignore if table not present
       }
     };
     load();

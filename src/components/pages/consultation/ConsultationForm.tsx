@@ -47,7 +47,7 @@ const ConsultationForm: FC = () => {
         service_id: form.serviceId,
         message: form.message,
       });
-      navigate('/contact', { replace: true });
+      navigate('/', { replace: true });
     } finally {
       setSubmitting(false);
     }

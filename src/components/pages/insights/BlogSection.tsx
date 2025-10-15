@@ -31,6 +31,13 @@ const BlogSection: React.FC = () => {
       try {
         const p = await fetchAll<any>('posts');
         setPosts(p.map(x => ({ id: x.id, title: x.title, image: x.image_url, content: x.content, createdAt: x.created_at })));
+      } catch {
+        setError('Failed to load posts');
+      } finally {
+        setLoading(false);
+      }
+      // Best-effort auxiliary data; hide schema errors
+      try {
         const c = await fetchAll<any>('comments');
         const grouped: Record<string, Comment[]> = {};
         c.forEach((row) => {
@@ -39,15 +46,13 @@ const BlogSection: React.FC = () => {
           grouped[k].push({ name: row.name, message: row.message, createdAt: row.created_at });
         });
         setCommentsByPost(grouped);
+      } catch {}
+      try {
         const l = await fetchAll<any>('likes');
         const likeCounts: Record<string, number> = {};
         l.forEach(row => { likeCounts[row.post_id] = (likeCounts[row.post_id] || 0) + 1; });
         setLikes(likeCounts);
-      } catch (e: any) {
-        setError(e.message || 'Failed to load posts');
-      } finally {
-        setLoading(false);
-      }
+      } catch {}
     };
     load();
   }, []);
