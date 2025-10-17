@@ -160,7 +160,7 @@ const Hero: FC = () => {
                       <div className="text-blue-100">+1 502 299 247</div>
                     </div>
                     <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">Democratic Republic of Congo</div>
+                      <div className="font-semibold">Republic of Congo</div>
                       <div className="text-blue-100">+ 1(416) 624 2510 / +242 06 444 0729</div>
                     </div>
                   </div>

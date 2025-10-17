@@ -6,7 +6,7 @@ import MotionInView from '../../enhanced/MotionInView';
 const Offices: FC = () => {
   const offices = [
     {
-      country: 'Democratic Republic of Congo',
+      country: 'Republic of Congo',
       address: 'No. 1A - 1st Floor Maria Pharmacy Building, near CFAO BP: 4018 Pointe-Noire - Republic of Congo',
       phone: '+1(416) 624 2510 / +242 06 444 0729',
       email: 'pkemeni@excimaa.ca',

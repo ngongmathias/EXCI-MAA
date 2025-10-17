@@ -57,8 +57,8 @@ export const countries: CountryInfo[] = [
     phones: ['+1 502 299 247'],
   },
   {
-    slug: 'democratic-republic-of-congo',
-    name: 'Democratic Republic of Congo',
+    slug: 'republic-of-congo',
+    name: 'Republic of Congo',
     capitalName: 'Kinshasa',
     capital: { lat: -4.4419, lng: 15.2663 },
     zoom: 6,
