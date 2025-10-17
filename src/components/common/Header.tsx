@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Users, Briefcase, Mail, BookOpen, Globe } from 'lucide-react';
+import { Menu, X, Users, Briefcase, Mail, BookOpen, Globe } from 'lucide-react';
 import { countries } from '../../data/countries';
 import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
