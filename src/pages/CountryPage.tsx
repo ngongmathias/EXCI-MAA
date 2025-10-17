@@ -1,7 +1,5 @@
 import { FC } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import CountryMap from '../components/pages/global-offices/CountryMap';
-import ErrorBoundary from '../components/common/ErrorBoundary';
 import { countryBySlug } from '../data/countries';
 
 const CountryPage: FC = () => {
@@ -37,16 +35,28 @@ const CountryPage: FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">{country.name}</h1>
-            <p className="text-gray-600 mb-6">Our office is located in the capital city of {country.capitalName}. Explore the map to see the exact location.</p>
-            <ErrorBoundary>
-              <CountryMap 
-                key={`${country.slug}-${country.capital.lat}-${country.capital.lng}-${country.zoom ?? 6}`} 
-                center={country.capital} 
-                zoom={country.zoom ?? 6} 
-                label={`${country.name} — ${country.capitalName}`} 
-                mapId={country.slug} 
+            <p className="text-gray-600 mb-6">Our office is located in the capital city of {country.capitalName}. Explore the gallery to see highlights.</p>
+            <div className="relative overflow-hidden rounded-2xl shadow-sm border border-gray-200">
+              <img
+                key={country.slug}
+                src={
+                  ({
+                    'cameroon': '/images/Cities/Cameroon-Yaounde.jpg',
+                    'canada': '/images/Cities/Canada.jpg',
+                    'rwanda': '/images/Cities/rwanda.jpg',
+                    'france': '/images/Cities/France-paris.jpg',
+                    'burundi': '/images/Cities/Burundi.jpeg',
+                    'united-states': '/images/Cities/USA-washington.jpeg',
+                    'democratic-republic-of-congo': '/images/Cities/DRC.jpeg',
+                  } as Record<string, string>)[country.slug] ?? `/images/capitals/${country.slug}.jpg`
+                }
+                alt={`${country.capitalName}, ${country.name}`}
+                className="w-full h-auto object-cover fade-in-only"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/images/logos/logo-placeholder.svg';
+                }}
               />
-            </ErrorBoundary>
+            </div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">

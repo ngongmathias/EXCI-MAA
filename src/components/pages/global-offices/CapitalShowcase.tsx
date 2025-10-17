@@ -5,6 +5,16 @@ import { useLanguage } from '../../../contexts/LanguageContext';
 const CapitalShowcase: React.FC = () => {
   const { t } = useLanguage();
 
+  const cityImageBySlug: Record<string, string> = {
+    'cameroon': '/images/Cities/Cameroon-Yaounde.jpg',
+    'canada': '/images/Cities/Canada.jpg',
+    'rwanda': '/images/Cities/rwanda.jpg',
+    'france': '/images/Cities/France-paris.jpg',
+    'burundi': '/images/Cities/Burundi.jpeg',
+    'united-states': '/images/Cities/USA-washington.jpeg',
+    'democratic-republic-of-congo': '/images/Cities/DRC.jpeg',
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +32,7 @@ const CapitalShowcase: React.FC = () => {
             <figure key={c.slug} className="overflow-hidden rounded-xl shadow group bg-gray-50">
               <div className="aspect-[16/9] overflow-hidden bg-gray-200">
                 <img
-                  src={`/images/capitals/${c.slug}.jpg`}
+                  src={cityImageBySlug[c.slug] ?? `/images/capitals/${c.slug}.jpg`}
                   alt={`${c.capitalName}, ${c.name}`}
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   onError={(e) => {
