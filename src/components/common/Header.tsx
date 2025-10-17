@@ -13,7 +13,7 @@ const Header: FC = () => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   const navigation = [
-    {name: t('nav.home'), href: '/', icon: <Home className="h-4 w-4" />},
+    // {name: t('nav.home'), href: '/', icon: <Home className="h-4 w-4" />},
     {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
     {name: t('nav.services'), href: '/services', icon: <Briefcase className="h-4 w-4" />},
     {name: t('nav.insights') ?? 'Insights', href: '/insights', icon: <BookOpen className="h-4 w-4" />},
