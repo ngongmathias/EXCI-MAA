@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useMemo, useState } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import Modal from '../../../components/ui/Modal';
 import { motion } from 'framer-motion';
@@ -13,59 +13,82 @@ type OrgNode = {
   isCollateral?: boolean; // For connecting lines that aren't direct reports
 };
 
-// Group Organizational Chart structure based on the screenshot
-const orgTree: OrgNode = {
-  id: 'chairman',
-  title: 'Partner',
-  subtitle: 'Chairman of the Board of Directors\nDirector of development',
-  level: 'top',
-  description: 'Overall leadership and strategic direction of EXCI-MAA Group.',
-  children: [
-    {
-      id: 'admin-partner',
-      title: 'Partner, General Administration, Finance & HR',
-      level: 'partner',
-      description: 'Oversees administration, finance, and human resources.',
-      children: [
-        {
-          id: 'quality-compliance',
-          title: 'Partner',
-          subtitle: 'Quality & Compliance Officer',
-          level: 'specialist',
-          description: 'Ensures quality standards and compliance across the organization.'
-        }
-      ]
-    },
-    {
-      id: 'audit-partner',
-      title: 'Partner Audit & Consulting',
-      level: 'partner',
-      description: 'Leads audit and consulting operations.',
-      children: [
-        {
-          id: 'country-director',
-          title: 'Country Director accountants Senior and Junior Auditors',
-          level: 'operations',
-          description: 'Manages country operations with accounting and audit teams.'
-        },
-        {
-          id: 'specialists',
-          title: 'Specialists & External Consultants',
-          subtitle: '(Doctors, Engineers, Lawyers, Sociologists, Seniors, Juniors ... ETC)',
-          level: 'external',
-          description: 'Multidisciplinary team of external consultants and specialists.',
-          isCollateral: true
-        }
-      ]
-    },
-    {
-      id: 'management-partner',
-      title: 'Partner Management & Organization',
-      level: 'partner',
-      description: 'Handles management and organizational development.',
-      children: []
-    }
-  ]
+// Group Organizational Chart structure sourced from i18n
+const useOrgTree = (t: (key: string, options?: any) => any): OrgNode => {
+  const chairmanTitle = t('organizationalStructure.chairman.title');
+  const chairmanSubtitle = t('organizationalStructure.chairman.subtitle');
+  const chairmanDescription = t('organizationalStructure.chairman.description');
+
+  const adminTitle = t('organizationalStructure.adminPartner.title');
+  const adminDescription = t('organizationalStructure.adminPartner.description');
+  const qcTitle = t('organizationalStructure.qualityCompliance.title');
+  const qcSubtitle = t('organizationalStructure.qualityCompliance.subtitle');
+  const qcDescription = t('organizationalStructure.qualityCompliance.description');
+
+  const auditTitle = t('organizationalStructure.auditPartner.title');
+  const auditDescription = t('organizationalStructure.auditPartner.description');
+  const countryDirectorTitle = t('organizationalStructure.countryDirector.title');
+  const countryDirectorDescription = t('organizationalStructure.countryDirector.description');
+  const specialistsTitle = t('organizationalStructure.specialists.title');
+  const specialistsSubtitle = t('organizationalStructure.specialists.subtitle');
+  const specialistsDescription = t('organizationalStructure.specialists.description');
+
+  const managementTitle = t('organizationalStructure.managementPartner.title');
+  const managementDescription = t('organizationalStructure.managementPartner.description');
+
+  return {
+    id: 'chairman',
+    title: chairmanTitle,
+    subtitle: chairmanSubtitle,
+    level: 'top',
+    description: chairmanDescription,
+    children: [
+      {
+        id: 'admin-partner',
+        title: adminTitle,
+        level: 'partner',
+        description: adminDescription,
+        children: [
+          {
+            id: 'quality-compliance',
+            title: qcTitle,
+            subtitle: qcSubtitle,
+            level: 'specialist',
+            description: qcDescription
+          }
+        ]
+      },
+      {
+        id: 'audit-partner',
+        title: auditTitle,
+        level: 'partner',
+        description: auditDescription,
+        children: [
+          {
+            id: 'country-director',
+            title: countryDirectorTitle,
+            level: 'operations',
+            description: countryDirectorDescription
+          },
+          {
+            id: 'specialists',
+            title: specialistsTitle,
+            subtitle: specialistsSubtitle,
+            level: 'external',
+            description: specialistsDescription,
+            isCollateral: true
+          }
+        ]
+      },
+      {
+        id: 'management-partner',
+        title: managementTitle,
+        level: 'partner',
+        description: managementDescription,
+        children: []
+      }
+    ]
+  };
 };
 
 const NodeCard = ({ node, onClick, isRoot = false, isPartner = false }: { 
@@ -138,6 +161,7 @@ const ChildConnector = () => (
 const OrganizationalStructure: FC = () => {
   const { t } = useLanguage();
   const [selected, setSelected] = useState<OrgNode | null>(null);
+  const orgTree = useMemo(() => useOrgTree(t), [t]);
 
   return (
     <section className="bg-gray-50 py-16 pt-24">
@@ -149,14 +173,11 @@ const OrganizationalStructure: FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            GROUP ORGANIZATIONAL CHART
+            {t('organizationalStructure.title')}
           </h2>
           <div className="mt-3 w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
           <p className="mt-4 text-lg text-gray-700">
-            {t(
-              'aboutPage.organization.subtitle',
-              'EXCI-MAA Group Structure - Click any box to view details.'
-            )}
+            {t('organizationalStructure.subtitle')}
           </p>
         </motion.div>
 
@@ -239,14 +260,14 @@ const OrganizationalStructure: FC = () => {
             <div className="absolute top-1/2 left-3/4 right-0 h-1 bg-gray-600 transform -translate-y-1/2" />
             <div className="flex justify-end">
               <NodeCard 
-                node={orgTree.children?.[1]?.children?.[1] || { 
-                  id: 'specialists', 
-                  title: 'Specialists & External Consultants', 
-                  level: 'external', 
-                  description: 'External consultants', 
-                  subtitle: '(Doctors, Engineers, Lawyers, Sociologists, Seniors, Juniors ... ETC)' 
+                node={orgTree.children?.[1]?.children?.[1] || {
+                  id: 'specialists',
+                  title: t('organizationalStructure.specialists.title'),
+                  level: 'external',
+                  description: t('organizationalStructure.specialists.description'),
+                  subtitle: t('organizationalStructure.specialists.subtitle')
                 }}
-                onClick={setSelected} 
+                onClick={setSelected}
               />
             </div>
           </motion.div>

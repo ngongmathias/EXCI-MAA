@@ -147,10 +147,7 @@ const TrainingSection: FC = () => {
                       <selected.icon className={`h-6 w-6 ${selected.color.replace('bg-', 'text-')}`} />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900">{selected.title}</h3>
-                    <div className="mt-1 text-gray-600 flex gap-4 text-sm">
-                      <span className="inline-flex items-center gap-1"><Calendar className="h-4 w-4" />{selected.duration}</span>
-                      <span className="inline-flex items-center gap-1"><DollarSign className="h-4 w-4" /><span className="font-semibold text-blue-600">{selected.price}</span></span>
-                    </div>
+                   
                   </div>
                   <button onClick={() => setSelected(null)} className="text-gray-400 hover:text-gray-500">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
