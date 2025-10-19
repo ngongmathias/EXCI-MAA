@@ -78,3 +78,46 @@ CREATE TABLE public.services (
   created_at timestamp with time zone NOT NULL DEFAULT now(),
   CONSTRAINT services_pkey PRIMARY KEY (id)
 );
+
+-- Careers table for job postings
+CREATE TABLE IF NOT EXISTS public.careers (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  title text NOT NULL,
+  department text NOT NULL,
+  location text NOT NULL,
+  employment_type text,
+  salary_range text,
+  application_url text,
+  apply_email text,
+  posting_date date DEFAULT now(),
+  closing_date date,
+  description text NOT NULL,
+  requirements text,
+  responsibilities text,
+  status text DEFAULT 'open', -- open | closed | draft
+  created_at timestamptz NOT NULL DEFAULT now()
+);
+
+-- Indexes for common filters
+CREATE INDEX IF NOT EXISTS careers_status_idx ON public.careers (status);
+CREATE INDEX IF NOT EXISTS careers_department_idx ON public.careers (department);
+CREATE INDEX IF NOT EXISTS careers_location_idx ON public.careers (location);
+CREATE INDEX IF NOT EXISTS careers_posting_date_idx ON public.careers (posting_date);
+
+-- Row Level Security and policies (adjust roles as needed)
+ALTER TABLE public.careers ENABLE ROW LEVEL SECURITY;
+
+-- Allow anonymous read for public site listings
+DROP POLICY IF EXISTS careers_anonymous_read ON public.careers;
+CREATE POLICY careers_anonymous_read ON public.careers
+  FOR SELECT
+  TO anon
+  USING (status = 'open');
+
+-- Allow authenticated insert/update/delete for admin role via JWT claim (e.g., role = 'admin')
+DROP POLICY IF EXISTS careers_admin_write ON public.careers;
+CREATE POLICY careers_admin_write ON public.careers
+  FOR ALL
+  TO authenticated
+  USING ((auth.jwt() ->> 'role') = 'admin')
+  WITH CHECK ((auth.jwt() ->> 'role') = 'admin');

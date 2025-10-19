@@ -875,7 +875,29 @@
     "label": "OUR LOGOS",
     "title": "EXCI-MAA Group Logos",
     "subtitle": "Our professional identity and brand representation",
-    "note": "Our logos represent our expertise and commitment to excellence"
+    "note": "Our logos represent our expertise and commitment to excellence",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Chartered accountant and auditor with over 27 years of experience in international accounting and auditing.",
+        "specialties": [
+          "International Accounting",
+          "Auditing",
+          "Tax Consulting"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Chartered accountant and auditor with over 13 years of experience in business development and financial consulting.",
+        "specialties": [
+          "Business Development",
+          "Financial Consulting",
+          "Risk Management"
+        ]
+      }
+    }
   },
   "organizationalStructure": {
     "title": "Organizational Structure",

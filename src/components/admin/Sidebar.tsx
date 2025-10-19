@@ -38,6 +38,7 @@ type SidebarProps = {
 const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) => {
   const mainItems = [
     { key: 'dashboard', label: 'Dashboard', icon: <DashboardIcon /> },
+    { key: 'careers', label: 'Careers', icon: <ServicesIcon /> },
     { key: 'services', label: 'Services', icon: <ServicesIcon /> },
     { key: 'events', label: 'Events', icon: <EventsIcon /> },
     { key: 'posts', label: 'Blog Posts', icon: <PostsIcon /> },

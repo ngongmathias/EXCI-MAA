@@ -875,7 +875,29 @@
     "label": "AMASHUSHANYO GAFE",
     "title": "Amashushanyo g'Omukibiina gya EXCI-MAA",
     "subtitle": "Obukulembeze bwaffe bw'omugaso n'obukulembeze bw'ekimenyetso",
-    "note": "Amashushanyo gaffe gereka obukulembeze bwaffe n'okukkirizibwa kwaffe mu bwoba"
+    "note": "Amashushanyo gaffe gereka obukulembeze bwaffe n'okukkirizibwa kwaffe mu bwoba",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Mukugu mu kubala n'okukakasa, alina emyaka 27+ mu bintu by'obukugu mu nsi yonna.",
+        "specialties": [
+          "Kubala kwa Mbadde mu Nsi yonna",
+          "Okukakasa",
+          "Obujjanjabi bw'Omusolo"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Mukugu mu kubala n'okukakasa alina emyaka 13+ mu kukulaakulanya ebizimbe n'okumanya eby'ensimbi.",
+        "specialties": [
+          "Okukulaakulanya Ebizimbe",
+          "Obujjanjabi bw'EnsimbI",
+          "Okulamulira Obulabe"
+        ]
+      }
+    }
   },
   "organizationalStructure": {
     "title": "Enkola y'ekibuga",

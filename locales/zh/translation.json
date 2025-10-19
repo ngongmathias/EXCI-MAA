@@ -1025,7 +1025,29 @@
     "label": "我们的标志",
     "title": "EXCI-MAA集团标志",
     "subtitle": "我们的专业身份和品牌代表",
-    "note": "我们的标志代表我们的专业知识和对卓越的承诺"
+    "note": "我们的标志代表我们的专业知识和对卓越的承诺",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "拥有27年以上国际会计与审计经验的注册会计师与审计师。",
+        "specialties": [
+          "国际会计",
+          "审计",
+          "税务咨询"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "拥有13年以上业务发展与金融咨询经验的注册会计师与审计师。",
+        "specialties": [
+          "业务发展",
+          "金融咨询",
+          "风险管理"
+        ]
+      }
+    }
   },
   "organizationalStructure": {
     "title": "组织结构",

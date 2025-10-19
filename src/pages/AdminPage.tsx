@@ -3,6 +3,7 @@ import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 import Dashboard from '../components/admin/Dashboard';
 import ContentManager from '../components/admin/ContentManager';
 import Analytics from '../components/admin/Analytics';
+import CareersAdmin from '../components/admin/CareersAdmin';
 import ContactSubmissions from '../components/admin/ContactSubmissions';
 import ConsultationRequests from '../components/admin/ConsultationRequests';
 import AdminLayout from '../components/admin/AdminLayout';
@@ -15,6 +16,7 @@ const AdminPage: React.FC = () => {
           {(active) => (
             <>
               {active === 'dashboard' && <Dashboard />}
+              {active === 'careers' && <CareersAdmin />}
               {active === 'services' && <ContentManager />}
               {active === 'events' && <ContentManager />}
               {active === 'posts' && <ContentManager />}

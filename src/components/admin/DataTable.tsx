@@ -4,14 +4,11 @@ import {
   Paper,
   Typography,
   Button,
-  IconButton,
   Dialog,
   DialogTitle,
   DialogContent,
   DialogActions,
   TextField,
-  Grid,
-  Chip,
   Tooltip,
   Alert,
 } from '@mui/material';
@@ -26,7 +23,6 @@ import {
   Edit as EditIcon,
   Delete as DeleteIcon,
   Add as AddIcon,
-  Visibility as ViewIcon,
 } from '@mui/icons-material';
 
 interface DataTableProps {
@@ -37,15 +33,19 @@ interface DataTableProps {
     type?: 'text' | 'email' | 'number' | 'date' | 'textarea';
     required?: boolean;
   }>;
-  storageKey: string;
+  storageKey: string; // localStorage key OR Supabase table name
   initialData?: any[];
+  useSupabase?: boolean;
 }
+
+import { fetchAll, insertItem, updateItemById, deleteById } from '../../services/supabaseCrud';
 
 const DataTable: React.FC<DataTableProps> = ({ 
   title, 
   fields, 
   storageKey, 
-  initialData = [] 
+  initialData = [],
+  useSupabase = false,
 }) => {
   const [data, setData] = useState<any[]>(initialData);
   const [loading, setLoading] = useState(false);
@@ -54,24 +54,35 @@ const DataTable: React.FC<DataTableProps> = ({
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
 
-  // Load data from localStorage on component mount
+  // Load data on component mount
   useEffect(() => {
-    try {
-      const stored = localStorage.getItem(storageKey);
-      if (stored) {
-        const parsedData = JSON.parse(stored);
-        setData(parsedData);
+    (async () => {
+      try {
+        if (useSupabase) {
+          const rows = await fetchAll<any>(storageKey as any);
+          setData(rows);
+        } else {
+          const stored = localStorage.getItem(storageKey);
+          if (stored) {
+            const parsedData = JSON.parse(stored);
+            setData(parsedData);
+          } else if (initialData.length) {
+            setData(initialData);
+          }
+        }
+      } catch (err) {
+        console.error('Error loading data:', err);
+        setError('Failed to load data');
       }
-    } catch (err) {
-      console.error('Error loading data:', err);
-      setError('Failed to load data');
-    }
-  }, [storageKey]);
+    })();
+  }, [storageKey, useSupabase, initialData]);
 
   // Save data to localStorage
   const saveData = (newData: any[]) => {
     try {
-      localStorage.setItem(storageKey, JSON.stringify(newData));
+      if (!useSupabase) {
+        localStorage.setItem(storageKey, JSON.stringify(newData));
+      }
       setData(newData);
     } catch (err) {
       console.error('Error saving data:', err);
@@ -80,7 +91,7 @@ const DataTable: React.FC<DataTableProps> = ({
   };
 
   // Handle form submission
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     setLoading(true);
     setError(null);
 
@@ -96,25 +107,31 @@ const DataTable: React.FC<DataTableProps> = ({
         return;
       }
 
-      const newItem = {
-        id: editingId || crypto.randomUUID(),
-        ...formData,
-        created_at: editingId ? data.find(item => item.id === editingId)?.created_at : new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      };
-
-      let newData;
-      if (editingId) {
-        // Update existing item
-        newData = data.map(item => 
-          item.id === editingId ? newItem : item
-        );
+      if (useSupabase) {
+        if (editingId) {
+          const updated = await updateItemById<any>(storageKey as any, editingId, formData);
+          const newData = data.map(d => (d.id === editingId ? updated : d));
+          saveData(newData);
+        } else {
+          const created = await insertItem<any>(storageKey as any, formData);
+          const newData = [created, ...data];
+          saveData(newData);
+        }
       } else {
-        // Add new item
-        newData = [newItem, ...data];
+        const newItem = {
+          id: editingId || crypto.randomUUID(),
+          ...formData,
+          created_at: editingId ? data.find(item => item.id === editingId)?.created_at : new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        };
+        let newData;
+        if (editingId) {
+          newData = data.map(item => (item.id === editingId ? newItem : item));
+        } else {
+          newData = [newItem, ...data];
+        }
+        saveData(newData);
       }
-
-      saveData(newData);
       handleClose();
     } catch (err) {
       setError('Failed to save data');
@@ -138,10 +155,16 @@ const DataTable: React.FC<DataTableProps> = ({
   };
 
   // Handle delete
-  const handleDelete = (id: string) => {
-    if (window.confirm('Are you sure you want to delete this item?')) {
+  const handleDelete = async (id: string) => {
+    if (!window.confirm('Are you sure you want to delete this item?')) return;
+    try {
+      if (useSupabase) {
+        await deleteById(storageKey as any, id);
+      }
       const newData = data.filter(item => item.id !== id);
       saveData(newData);
+    } catch (err) {
+      setError('Failed to delete');
     }
   };
 
@@ -204,10 +227,9 @@ const DataTable: React.FC<DataTableProps> = ({
           onClick={() => handleEdit(params.id as string)}
         />,
         <GridActionsCellItem
-          icon={<DeleteIcon />}
+          icon={<DeleteIcon color="error" />}
           label="Delete"
           onClick={() => handleDelete(params.id as string)}
-          sx={{ color: 'error.main' }}
         />,
       ],
     },
@@ -279,9 +301,9 @@ const DataTable: React.FC<DataTableProps> = ({
           {editingId ? `Edit ${title.slice(0, -1)}` : `Add New ${title.slice(0, -1)}`}
         </DialogTitle>
         <DialogContent>
-          <Grid container spacing={2} sx={{ mt: 1 }}>
+          <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' }, gap: 2, mt: 1 }}>
             {fields.map(field => (
-              <Grid item xs={12} sm={field.type === 'textarea' ? 12 : 6} key={field.key}>
+              <Box key={field.key}>
                 <TextField
                   fullWidth
                   label={field.label}
@@ -293,9 +315,9 @@ const DataTable: React.FC<DataTableProps> = ({
                   required={field.required}
                   variant="outlined"
                 />
-              </Grid>
+              </Box>
             ))}
-          </Grid>
+          </Box>
         </DialogContent>
         <DialogActions sx={{ p: 3 }}>
           <Button onClick={handleClose} disabled={loading}>

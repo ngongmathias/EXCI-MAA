@@ -1024,7 +1024,29 @@
     "label": "NOS LOGOS",
     "title": "Logos du Groupe EXCI-MAA",
     "subtitle": "Notre identité professionnelle et représentation de marque",
-    "note": "Nos logos représentent notre expertise et notre engagement envers l'excellence"
+    "note": "Nos logos représentent notre expertise et notre engagement envers l'excellence",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Expert-comptable et commissaire aux comptes avec plus de 27 ans d'expérience en comptabilité et audit internationaux.",
+        "specialties": [
+          "Comptabilité Internationale",
+          "Audit",
+          "Conseil Fiscal"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Expert-comptable et commissaire aux comptes avec plus de 13 ans d'expérience en développement des affaires et conseil financier.",
+        "specialties": [
+          "Développement Commercial",
+          "Conseil Financier",
+          "Gestion des Risques"
+        ]
+      }
+    }
   },
   "organizationalStructure": {
     "title": "Structure Organisationnelle",

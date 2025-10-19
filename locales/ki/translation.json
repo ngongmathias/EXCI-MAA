@@ -875,7 +875,29 @@
     "label": "AMASHUSHANYO YACU",
     "title": "Amashushanyo y'Itsinda rya EXCI-MAA",
     "subtitle": "Ubwoba bwacu bw'ubuhanga n'ubwoba bw'ikimenyetso",
-    "note": "Amashushanyo yacu yerekana ubuhanga bwacu n'ukwizera kwacu mu bwoba"
+    "note": "Amashushanyo yacu yerekana ubuhanga bwacu n'ukwizera kwacu mu bwoba",
+    "founders": {
+      "pierre": {
+        "name": "Pierre KEMENI",
+        "title": "MBA, CPA, DEC",
+        "description": "Umuhinga mu bikorwa vy'ubucungamari no kugenzura, afise imyaka 27+ y'uburambe mu bikorwa mpuzamakungu.",
+        "specialties": [
+          "Ubucungamari Mpuzamakungu",
+          "Audit",
+          "Inama z'Imisoro"
+        ]
+      },
+      "patrick": {
+        "name": "Patrick NGATCHA",
+        "title": "DEC, DSCG, Master CCA, MSTCF",
+        "description": "Umuhinga mu bucungamari no kugenzura afise imyaka 13+ mu guteza imbere ibikorwa n'ubujyanama mu mafaranga.",
+        "specialties": [
+          "Iterambere ry'Ubucuruzi",
+          "Ubumenyi mu by'Imari",
+          "Gucunga Ingaruka"
+        ]
+      }
+    }
   },
   "organizationalStructure": {
     "title": "Imiterere y'ikigo",
