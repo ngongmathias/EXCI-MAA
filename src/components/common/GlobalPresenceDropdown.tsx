@@ -82,7 +82,7 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
       </div>
 
       {/* Map Container */}
-      <div className="mt-6 h-96 w-full rounded-lg overflow-hidden shadow-lg">
+      <div className="mt-6 h-96 w-[180vh] rounded-lg overflow-hidden shadow-lg">
         <MapContainer
           center={[centerLat, centerLng]}
           zoom={selectedOffice ? 10 : 2}

@@ -15,6 +15,206 @@
     "admin": "Omukulembeze",
     "adminPanel": "Ekibaho ky'okukulembeza"
   },
+    "teamMembers": {
+      "title": "Ttiimu Yaffe ey’Ensikirano Yonna",
+      "subtitle": "Wenyigire mu bannamawulire abakulembera okukola obulungi mu bitundu byaffe byonna",
+      "readMore": "Soma Ebisinga",
+      "showLess": "Laga Ebitono",
+      "specialties": "Obumanyirivu",
+      "noMembers": "Tewali bantu ba ttiimu basigadde mu ofiisi eno kati",
+      "members": {
+        "pierre-kemeni": {
+          "name": "Pierre KEMENI",
+          "title": "Omukulu w’Enkola & Sentebe",
+          "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
+          "bio": "Mufatanya, Omukulu w’Enkola mu EXCI-MAA Group. Mukugga w’ekibiina eya COSUMAF ey’okukola eby’okuwandiika ebitabo n’okukola eby’okuzza obukwakkulizo. Yawandiisibwa mu ICPAR, ONECCA, CPA Canada, Quebec, Ontario ne UK. Yali Omukulu w’Obukwakkulizo mu Deloitte Toronto. Omumanyirivu mu kulamula, SYSCOHADA, okuhindura ebitabo. Mukozi w’okugeraageranya ow’ensi yonna n’omuzigiriza.",
+          "specialties": [
+            "Okuwandiika Ebitabo By’ensi Yonna",
+            "Okukola Eby’okuzza Obukwakkulizo",
+            "Okugeraageranya mu Kulamula",
+            "Omumanyirivu wa SYSCOHADA",
+            "Okuhindura Ebitabo",
+            "Omumanyirivu mu Byenkonkola z’Abanki"
+          ]
+        },
+        "patrick-ngatcha": {
+          "name": "Patrick NGATCHA",
+          "title": "Mufatanya - Omukulu w’Enkola",
+          "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
+          "bio": "Mukugga w’ekibiina eyawandiisibwa mu Institute of Chartered Accountants e Paris Ile de France. Omukugu w’okukola eby’okuzza obukwakkulizo. Omumanyirivu mu misolo n’okukola eby’okuzza obukwakkulizo, okukola eby’okugulwa, okugatta (amateeka 99-02 / IFRS).",
+          "specialties": [
+            "Okukulaakulanya Ebyenkonkola",
+            "Okugeraageranya mu Byensimbi",
+            "Okuteekateeka Misolo",
+            "IFRS",
+            "Okugatta",
+            "Okukola Eby’okugulwa"
+          ]
+        },
+        "cloudin-ngong": {
+          "name": "Cloudin NGONG",
+          "title": "Omulabirizi - Ekibiina ky’Eby’okuwandiika Ebitabo",
+          "qualifications": ["MSc Accounting and Finance"],
+          "bio": "Omukugu w’ebyensimbi w’umumanyirivu mu misolo n’okukola eby’okuzza obukwakkulizo. Alabirira enkola z’ekibiina ky’eby’okuwandiika ebitabo.",
+          "specialties": [
+            "Okugeraageranya mu Byensimbi",
+            "Okukola Eby’okuzza Misolo",
+            "Okukola Eby’okuzza Obukwakkulizo",
+            "Okulabirira Ekibiina"
+          ]
+        },
+        "janot-hiag": {
+          "name": "Janot HIAG",
+          "title": "Omukugu w’Eby’okugeraageranya & Okukola Eby’okugulwa kwa Petiroli",
+          "qualifications": ["Actuarial Certification"],
+          "bio": "Omumanyirivu mu kukola eby’okugulwa kwa petiroli, obukuumi bw’ensimbi ez’okuyingira, okugeraageranya eby’okugulwa n’okuhindura obugagga, okukola eby’okuzza obukwakkulizo n’amateeka, n’okukola eby’okuzza obukwakkulizo.",
+          "specialties": [
+            "Okukola Eby’okugulwa kwa Petiroli",
+            "Obukuumi bw’Ensimbi ez’Okweyingira",
+            "Okuhindura Obugagga",
+            "Okukola Eby’okuzza Obukwakkulizo",
+            "Okukola Eby’amateeka"
+          ]
+        },
+        "eric-kabeza": {
+          "name": "Eric KABEZA",
+          "title": "Mufatanya Omukulu w’Emisolo - Rwanda",
+          "qualifications": ["Tax Expert"],
+          "bio": "Omumanyirivu mu misolo y’eggwanga n’ensi yonna n’emyaka egisukka mu 20 akola mu Rwanda Revenue Authority. Mukozi w’okugeraageranya/omujuliriza w’emisolo y’amasosiyete n’abantu ku bubwe. Omulabirizi w’okugondera emisolo n’omugeraageranya w’amateeka.",
+          "specialties": [
+            "Emisolo y’Eggwanga",
+            "Emisolo y’Ensi Yonna",
+            "Okugondera Emisolo",
+            "Okugeraageranya Amateeka",
+            "Emisolo y’Amasosiyete",
+            "Emisolo y’Abantu"
+          ]
+        },
+        "jean-nahimana": {
+          "name": "Jean Nepomuscene NAHIMANA",
+          "title": "Mufatanya - Okukola Eby’okuzza Obukwakkulizo n’Emisolo",
+          "qualifications": ["CPA", "FMVA®", "BIDA®"],
+          "bio": "Mukugga w’ekibiina, Omumyuka wa ICPAR. Okukola eby’okuzza obukwakkulizo n’emisolo. Omugeraageranya w’ekikugu mu bitabo n’omumanyirivu mu by’ensimbi n’uburambe mu kuteekateeka ebyensimbi n’okugeraageranya.",
+          "specialties": [
+            "Okukola Eby’okuzza Obukwakkulizo",
+            "Okukola Eby’okuzza Emisolo",
+            "Okuteekateeka Ebyensimbi",
+            "Okugeraageranya Ebitabo"
+          ]
+        },
+        "martin-nkwain": {
+          "name": "Marcel NKWAIN",
+          "title": "Omukulu w’Ebitundu - Afrika ey’Ebuvanjuba",
+          "qualifications": ["IPA(UA)", "IFA(UK)"],
+          "bio": "Omumanyirivu wa HARDCAT mu kulamula obugagga obutawera. Okukola eby’okuzza obukwakkulizo n’emisolo. Mukozi w’okugeraageranya ow’ensi yonna n’omuzigiriza akulembera enkola za EXCI-MAA mu Afrika ey’Ebuvanjuba.",
+          "specialties": [
+            "Okulamula Obugagga Obutawera",
+            "Okulamula Ebitundu",
+            "Okukola Eby’okuzza Obukwakkulizo",
+            "Okukola Eby’okuzza Emisolo",
+            "Okuzigiriza mu nsi Yonna"
+          ]
+        },
+        "paul-tchamake": {
+          "name": "Paul TCHAMAKE",
+          "title": "Mufatanya - Emisolo y’Ensi Yonna & Obugagga bw’Okugabana",
+          "qualifications": ["Ms", "CPA (USA, France)"],
+          "bio": "Mukugga w’ekibiina eyawandiisibwa (enkola za Amerika ne France). Omumanyirivu mu misolo y’ensi yonna, ASC 740 (Amateeka ya US GAAP). Emyaka egisukka mu 15 mu bitangaza ebyensimbi n’emisolo y’ensi yonna n’uburambe mu Big 4 mu KPMG ne PwC Amerika. Omumanyirivu mu bugagga bw’okugabana ne BEPS.",
+          "specialties": [
+            "Emisolo y’Ensi Yonna",
+            "Obugagga bw’Okugabana",
+            "BEPS",
+            "US GAAP",
+            "ASC 740",
+            "Emisolo ey’Okusomooza Ensi"
+          ]
+        },
+        "diane-dusabe": {
+          "name": "Diane DUSABE",
+          "title": "Omukulu w’Ofiisi - Burundi",
+          "qualifications": ["BBA", "Accounting"],
+          "bio": "Omukulu w’ofiisi ow’uburambe akulira enkola za EXCI-MAA mu Burundi. Omumanyirivu mu mibanire y’abakiriya n’okukulaakulanya ebyenkonkola mu bitundu.",
+          "specialties": [
+            "Okulamula Ofiisi",
+            "Mibanire y’Abakiriya",
+            "Okukulaakulanya Ebyenkonkola",
+            "Enkola z’Ekitundu"
+          ]
+        },
+        "onesphore-ofodji": {
+          "name": "Onesphore OFODJI",
+          "title": "Omugeraageranya Omukulu - Burundi",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "Omugeraageranya w’ebyenkonkola omukulu w’umumanyirivu mu kukulaakulanya amasoko g’ebitundu n’ebiragiriro by’ensimbi ku byenkonkola mu Burundi.",
+          "specialties": [
+            "Okugeraageranya mu Byenkonkola",
+            "Okugeraageranya mu Byensimbi",
+            "Okukulaakulanya Amasoko",
+            "Okuteekateeka Ebintu"
+          ]
+        },
+        "congo-director": {
+          "name": "Omukulu w’Ebitundu",
+          "title": "Omukulu - Enkola za DRC",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "Akulira enkola za EXCI-MAA mu Repubulika ya Demokarasi ya Kongo, agenderera ku biragiriro by’okukola eby’okuzza obukwakkulizo n’ebyenkonkola.",
+          "specialties": [
+            "Ebiragiriro by’Okukola Eby’okuzza",
+            "Okugeraageranya mu Byenkonkola",
+            "Enkola z’Ebitundu",
+            "Okugeraageranya mu Misolo"
+          ]
+        },
+        "gabon-manager": {
+          "name": "Omukulu w’Ebitundu",
+          "title": "Omukulu - Enkola za Gabon",
+          "qualifications": ["Expert Comptable", "CEMAC"],
+          "bio": "Okulamula ebiragiriro bya EXCI-MAA mu Gabon agenderera ku kukola eby’okuzza obukwakkulizo n’ebiragiriro by’amasosiyete ku bakiriya b’omu bitundu n’ensi yonna.",
+          "specialties": [
+            "Okukola Eby’okuzza Obukwakkulizo",
+            "Ebiragiriro by’Amasosiyete",
+            "Amateeka ya CEMAC",
+            "Okugondera Amateeka g’Ekitundu"
+          ]
+        },
+        "dubai-consultant": {
+          "name": "Omugeraageranya Omukulu",
+          "title": "Omugeraageranya w’Ebyenkonkola Omukulu - Dubai",
+          "qualifications": ["CPA", "ACCA"],
+          "bio": "Omumanyirivu mu kuteekateeka ebyenkonkola by’ensi yonna n’okuteekateeka emisolo ku masosiyete agenderera okwongera mu masoko g’eby’Abuvanjuba bwa Aziya.",
+          "specialties": [
+            "Okuteekateeka Ebyenkonkola",
+            "Okuteekateeka Emisolo",
+            "Okwongera mu Nsi Yonna",
+            "Amasoko g’eby’Abuvanjuba bwa Aziya"
+          ]
+        },
+        "france-partner": {
+          "name": "Mufatanya",
+          "title": "Mufatanya - Enkola za France",
+          "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
+          "bio": "Akulira enkola za mu Bulaaya n’obumanyirivu mu kugondera amateeka ga EU n’ebiragiriro by’okusomooza ensi.",
+          "specialties": [
+            "Okugondera Amateeka ga EU",
+            "Ebiragiriro by’Okweyongerera Ensi",
+            "Okuwandiika Ebitabo bya Bulaaya",
+            "Emisolo y’Ensi Yonna"
+          ]
+        },
+        "canada-consultant": {
+          "name": "Omugeraageranya Omukulu",
+          "title": "Omugeraageranya w’Abimukira & Emisolo",
+          "qualifications": ["CPA", "RCIC"],
+          "bio": "Omumanyirivu mu biragiriro by’okumukira mu Canada n’okuteekateeka emisolo y’ensi yonna ku baamukira abapya ne masosiyete.",
+          "specialties": [
+            "Ebiragiriro by’Okumukira",
+            "Emisolo y’Ensi Yonna",
+            "Okuteekateeka Ebyensimbi",
+            "Okumukira mu Byenkonkola"
+          ]
+        }
+      }
+    },
   "footer": {
     "description": "Ekibuga ky'eby'okukola, okukakasa, n'okukulembeza ekirina obukulembeze bw'ensi yonna. Tugabira obukulembeze obw'omugaso okusobola okukola ebintu by'omugaso.",
     "quickLinks": "Enkola z'omugaso",

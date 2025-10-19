@@ -555,6 +555,206 @@
       }
     }
   },
+    "teamMembers": {
+      "title": "Notre équipe mondiale",
+      "subtitle": "Rencontrez les professionnels qui favorisent l'excellence dans tous nos sites",
+      "readMore": "En savoir plus",
+      "showLess": "Afficher moins",
+      "specialties": "Spécialités",
+      "noMembers": "Aucun membre d'équipe actuellement assigné à ce bureau",
+      "members": {
+        "pierre-kemeni": {
+          "name": "Pierre KEMENI",
+          "title": "Directeur général et président",
+          "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
+          "bio": "Partenaire, Directeur général chez EXCI-MAA Group. Expert-comptable agréé par COSUMAF et auditeur statutaire. Inscrit à l'ICPAR, ONECCA, CPA Canada, Québec, Ontario et Royaume-Uni. Ancien directeur d'engagement chez Deloitte Toronto. Spécialiste en gestion, SYSCOHADA, conversion de comptes. Consultant international senior et formateur.",
+          "specialties": [
+            "Comptabilité internationale",
+            "Audit financier",
+            "Conseil en gestion",
+            "Spécialiste SYSCOHADA",
+            "Conversion de comptes",
+            "Spécialiste du secteur bancaire"
+          ]
+        },
+        "patrick-ngatcha": {
+          "name": "Patrick NGATCHA",
+          "title": "Partenaire - Directeur général",
+          "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
+          "bio": "Expert-comptable inscrit à l’Institut des experts-comptables de Paris Île-de-France. Auditeur statutaire. Expert en fiscalité et audit financier, audit d'acquisition, consolidation (règlement 99-02 / IFRS).",
+          "specialties": [
+            "Développement commercial",
+            "Conseil financier",
+            "Planification fiscale",
+            "IFRS",
+            "Consolidation",
+            "Audit d'acquisition"
+          ]
+        },
+        "cloudin-ngong": {
+          "name": "Cloudin NGONG",
+          "title": "Superviseur - Département d'expertise comptable",
+          "qualifications": ["MSc Accounting and Finance"],
+          "bio": "Analyste financier spécialisé en fiscalité et audit financier. Supervise les opérations du département d'expertise comptable.",
+          "specialties": [
+            "Analyse financière",
+            "Audit fiscal",
+            "Audit financier",
+            "Supervision de département"
+          ]
+        },
+        "janot-hiag": {
+          "name": "Janot HIAG",
+          "title": "Évaluateur actuariel et auditeur des coûts pétroliers",
+          "qualifications": ["Actuarial Certification"],
+          "bio": "Spécialiste en audit des coûts pétroliers, sécurité des revenus, inventaire et réévaluation des actifs, audit opérationnel et juridique, et audit statutaire.",
+          "specialties": [
+            "Audit des coûts pétroliers",
+            "Sécurité des revenus",
+            "Réévaluation des actifs",
+            "Audit opérationnel",
+            "Audit juridique"
+          ]
+        },
+        "eric-kabeza": {
+          "name": "Eric KABEZA",
+          "title": "Partenaire principal en fiscalité - Rwanda",
+          "qualifications": ["Tax Expert"],
+          "bio": "Expert en fiscalité locale et internationale avec plus de 20 ans d'expérience à l'Autorité fiscale rwandaise. Conseiller fiscal pour les entreprises et les particuliers. Responsable de la conformité fiscale et analyste des politiques.",
+          "specialties": [
+            "Fiscalité locale",
+            "Fiscalité internationale",
+            "Conformité fiscale",
+            "Analyse des politiques",
+            "Fiscalité des entreprises",
+            "Fiscalité des particuliers"
+          ]
+        },
+        "jean-nahimana": {
+          "name": "Jean Nepomuscene NAHIMANA",
+          "title": "Partenaire - Audit financier et fiscal",
+          "qualifications": ["CPA", "FMVA®", "BIDA®"],
+          "bio": "Expert-comptable, membre de l'ICPAR. Auditeur financier et fiscal. Analyste senior des comptes et modélisateur financier avec une vaste expérience en planification et analyse financières.",
+          "specialties": [
+            "Audit financier",
+            "Audit fiscal",
+            "Modélisation financière",
+            "Analyse des comptes"
+          ]
+        },
+        "martin-nkwain": {
+          "name": "Marcel NKWAIN",
+          "title": "Responsable régional - Afrique de l'Est",
+          "qualifications": ["IPA(UA)", "IFA(UK)"],
+          "bio": "Expert HARDCAT en gestion d'actifs fixes. Auditeur financier et fiscal. Consultant international et formateur dirigeant les opérations d'EXCI-MAA en Afrique de l'Est.",
+          "specialties": [
+            "Gestion des actifs fixes",
+            "Gestion régionale",
+            "Audit financier",
+            "Audit fiscal",
+            "Formation internationale"
+          ]
+        },
+        "paul-tchamake": {
+          "name": "Paul TCHAMAKE",
+          "title": "Partenaire - Fiscalité internationale et prix de transfert",
+          "qualifications": ["Ms", "CPA (USA, France)"],
+          "bio": "Expert-comptable certifié (régimes américain et français). Spécialiste en fiscalité internationale, ASC 740 (normes US GAAP). Plus de 15 ans d'expérience en reporting financier et fiscal international avec une expérience chez Big 4 à KPMG et PwC USA. Spécialiste en prix de transfert et BEPS.",
+          "specialties": [
+            "Fiscalité internationale",
+            "Prix de transfert",
+            "BEPS",
+            "US GAAP",
+            "ASC 740",
+            "Fiscalité transfrontalière"
+          ]
+        },
+        "diane-dusabe": {
+          "name": "Diane DUSABE",
+          "title": "Responsable de bureau - Burundi",
+          "qualifications": ["BBA", "Accounting"],
+          "bio": "Responsable de bureau expérimentée supervisant les opérations d'EXCI-MAA au Burundi. Spécialisée dans les relations avec les clients et le développement commercial local.",
+          "specialties": [
+            "Gestion de bureau",
+            "Relations avec les clients",
+            "Développement commercial",
+            "Opérations locales"
+          ]
+        },
+        "onesphore-ofodji": {
+          "name": "Onesphore OFODJI",
+          "title": "Consultant senior - Burundi",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "Consultant commercial senior spécialisé dans le développement des marchés régionaux et les services de conseil financier pour les entreprises au Burundi.",
+          "specialties": [
+            "Conseil commercial",
+            "Conseil financier",
+            "Développement de marché",
+            "Planification stratégique"
+          ]
+        },
+        "congo-director": {
+          "name": "Directeur régional",
+          "title": "Directeur - Opérations RDC",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "Dirige les opérations d'EXCI-MAA en République Démocratique du Congo, avec un focus sur les services d'audit et de conseil commercial.",
+          "specialties": [
+            "Services d'audit",
+            "Conseil commercial",
+            "Opérations régionales",
+            "Conseil fiscal"
+          ]
+        },
+        "gabon-manager": {
+          "name": "Responsable régional",
+          "title": "Responsable - Opérations Gabon",
+          "qualifications": ["Expert Comptable", "CEMAC"],
+          "bio": "Gère les services d'EXCI-MAA au Gabon avec un focus sur l'audit financier et le conseil aux entreprises pour les clients locaux et internationaux.",
+          "specialties": [
+            "Audit financier",
+            "Conseil aux entreprises",
+            "Réglementations CEMAC",
+            "Conformité locale"
+          ]
+        },
+        "dubai-consultant": {
+          "name": "Consultant senior",
+          "title": "Consultant commercial senior - Dubaï",
+          "qualifications": ["CPA", "ACCA"],
+          "bio": "Spécialisé dans la création d'entreprises internationales et la planification fiscale pour les entreprises qui se développent sur les marchés du Moyen-Orient.",
+          "specialties": [
+            "Création d'entreprise",
+            "Planification fiscale",
+            "Expansion internationale",
+            "Marchés du Moyen-Orient"
+          ]
+        },
+        "france-partner": {
+          "name": "Partenaire",
+          "title": "Partenaire - Opérations France",
+          "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
+          "bio": "Dirige les opérations européennes avec une expertise en conformité européenne et conseil transfrontalier.",
+          "specialties": [
+            "Conformité européenne",
+            "Conseil transfrontalier",
+            "Comptabilité européenne",
+            "Fiscalité internationale"
+          ]
+        },
+        "canada-consultant": {
+          "name": "Consultant senior",
+          "title": "Consultant en immigration et fiscalité",
+          "qualifications": ["CPA", "RCIC"],
+          "bio": "Spécialisé dans les services d'immigration au Canada et la planification fiscale internationale pour les nouveaux immigrants et les entreprises.",
+          "specialties": [
+            "Services d'immigration",
+            "Fiscalité internationale",
+            "Planification financière",
+            "Immigration d'affaires"
+          ]
+        }
+      }
+    },
   "partners": {
     "title": "Nos Dirigeants",
     "subtitle": "Organisations de confiance avec lesquelles nous travaillons",

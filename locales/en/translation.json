@@ -293,6 +293,206 @@
       "contactSupport": "Contact Support"
     }
   },
+  "teamMembers": {
+  "title": "Our Global Team",
+  "subtitle": "Meet the professionals driving excellence across all our locations",
+  "readMore": "Read More",
+  "showLess": "Show Less",
+  "specialties": "Specialties",
+  "noMembers": "No team members currently assigned to this office",
+  "members": {
+    "pierre-kemeni": {
+      "name": "Pierre KEMENI",
+      "title": "Managing Director & Chairman",
+      "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
+      "bio": "Partner, Managing Director at EXCI-MAA Group. COSUMAF Licensed Chartered Accountant & Statutory Auditor. Registered with ICPAR, ONECCA, CPA Canada, Quebec, Ontario & UK. Former Engagement Director at Deloitte Toronto. Specialist in Management, SYSCOHADA, Account Conversion. Senior International Consultant and Trainer.",
+      "specialties": [
+        "International Accounting",
+        "Financial Audit",
+        "Management Consulting",
+        "SYSCOHADA Specialist",
+        "Account Conversion",
+        "Banking Sector Specialist"
+      ]
+    },
+    "patrick-ngatcha": {
+      "name": "Patrick NGATCHA",
+      "title": "Partner - General Manager",
+      "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
+      "bio": "Chartered accountant registered with the Institute of Chartered Accountants of Paris Ile de France. Statutory Auditor. Expert in Tax and Financial Audit, Acquisition audit, Consolidation (regulation 99-02 / IFRS).",
+      "specialties": [
+        "Business Development",
+        "Financial Consulting",
+        "Tax Planning",
+        "IFRS",
+        "Consolidation",
+        "Acquisition Audit"
+      ]
+    },
+    "cloudin-ngong": {
+      "name": "Cloudin NGONG",
+      "title": "Supervisor - Chartered Accountancy Department",
+      "qualifications": ["MSc Accounting and Finance"],
+      "bio": "Financial Analyst with expertise in Tax and Financial Auditing. Supervises the Chartered Accountancy department operations.",
+      "specialties": [
+        "Financial Analysis",
+        "Tax Auditing",
+        "Financial Auditing",
+        "Department Supervision"
+      ]
+    },
+    "janot-hiag": {
+      "name": "Janot HIAG",
+      "title": "Actuarial Evaluator & Oil Cost Auditor",
+      "qualifications": ["Actuarial Certification"],
+      "bio": "Specialist in Oil Cost Auditing, Revenue Security, Asset Inventory and Revaluation, Operational and Legal Auditing, and Statutory Auditing.",
+      "specialties": [
+        "Oil Cost Auditing",
+        "Revenue Security",
+        "Asset Revaluation",
+        "Operational Audit",
+        "Legal Audit"
+      ]
+    },
+    "eric-kabeza": {
+      "name": "Eric KABEZA",
+      "title": "Tax Lead Partner - Rwanda",
+      "qualifications": ["Tax Expert"],
+      "bio": "Expert in local and international taxation with more than 20 years working at the Rwanda Revenue Authority. Tax Consultant/Advisor for Corporate and Personal taxes. Tax Compliance Officer and Policy Analyst.",
+      "specialties": [
+        "Local Taxation",
+        "International Tax",
+        "Tax Compliance",
+        "Policy Analysis",
+        "Corporate Tax",
+        "Personal Tax"
+      ]
+    },
+    "jean-nahimana": {
+      "name": "Jean Nepomuscene NAHIMANA",
+      "title": "Partner - Financial & Tax Audit",
+      "qualifications": ["CPA", "FMVA®", "BIDA®"],
+      "bio": "Chartered Accountant, Member of ICPAR. Financial and Tax Auditor. Senior Accounts Analyst and Financial Modelist with extensive experience in financial planning and analysis.",
+      "specialties": [
+        "Financial Audit",
+        "Tax Audit",
+        "Financial Modeling",
+        "Accounts Analysis"
+      ]
+    },
+    "martin-nkwain": {
+      "name": "Marcel NKWAIN",
+      "title": "Regional Manager - East Africa",
+      "qualifications": ["IPA(UA)", "IFA(UK)"],
+      "bio": "HARDCAT Expert in Fixed Asset Management. Financial and Tax Auditor. International Consultant and Trainer leading EXCI-MAA operations in East Africa.",
+      "specialties": [
+        "Fixed Asset Management",
+        "Regional Management",
+        "Financial Audit",
+        "Tax Audit",
+        "International Training"
+      ]
+    },
+    "paul-tchamake": {
+      "name": "Paul TCHAMAKE",
+      "title": "Partner - International Tax & Transfer Pricing",
+      "qualifications": ["Ms", "CPA (USA, France)"],
+      "bio": "Certified Chartered Accountant (American and French Regime). International Tax Specialist, ASC 740 (US GAAP Standards). Over 15 years of international financial and tax reporting practice with Big 4 experience at KPMG and PwC USA. Specialist in Transfer Pricing and BEPS.",
+      "specialties": [
+        "International Tax",
+        "Transfer Pricing",
+        "BEPS",
+        "US GAAP",
+        "ASC 740",
+        "Cross-border Taxation"
+      ]
+    },
+    "diane-dusabe": {
+      "name": "Diane DUSABE",
+      "title": "Office Manager - Burundi",
+      "qualifications": ["BBA", "Accounting"],
+      "bio": "Experienced office manager overseeing EXCI-MAA operations in Burundi. Specializes in client relations and local business development.",
+      "specialties": [
+        "Office Management",
+        "Client Relations",
+        "Business Development",
+        "Local Operations"
+      ]
+    },
+    "onesphore-ofodji": {
+      "name": "Onesphore OFODJI",
+      "title": "Senior Consultant - Burundi",
+      "qualifications": ["CPA", "MBA"],
+      "bio": "Senior business consultant specializing in regional market development and financial advisory services for businesses in Burundi.",
+      "specialties": [
+        "Business Consulting",
+        "Financial Advisory",
+        "Market Development",
+        "Strategic Planning"
+      ]
+    },
+    "congo-director": {
+      "name": "Regional Director",
+      "title": "Director - DRC Operations",
+      "qualifications": ["CPA", "MBA"],
+      "bio": "Leading EXCI-MAA operations in the Democratic Republic of Congo, focusing on audit services and business consulting.",
+      "specialties": [
+        "Audit Services",
+        "Business Consulting",
+        "Regional Operations",
+        "Tax Advisory"
+      ]
+    },
+    "gabon-manager": {
+      "name": "Regional Manager",
+      "title": "Manager - Gabon Operations",
+      "qualifications": ["Expert Comptable", "CEMAC"],
+      "bio": "Managing EXCI-MAA services in Gabon with focus on financial audit and corporate advisory for local and international clients.",
+      "specialties": [
+        "Financial Audit",
+        "Corporate Advisory",
+        "CEMAC Regulations",
+        "Local Compliance"
+      ]
+    },
+    "dubai-consultant": {
+      "name": "Senior Consultant",
+      "title": "Senior Business Consultant - Dubai",
+      "qualifications": ["CPA", "ACCA"],
+      "bio": "Specialized in international business setup and tax planning for companies expanding into Middle East markets.",
+      "specialties": [
+        "Business Setup",
+        "Tax Planning",
+        "International Expansion",
+        "Middle East Markets"
+      ]
+    },
+    "france-partner": {
+      "name": "Partner",
+      "title": "Partner - France Operations",
+      "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
+      "bio": "Leading European operations with expertise in EU compliance and cross-border consulting.",
+      "specialties": [
+        "EU Compliance",
+        "Cross-border Consulting",
+        "European Accounting",
+        "International Tax"
+      ]
+    },
+    "canada-consultant": {
+      "name": "Senior Consultant",
+      "title": "Immigration & Tax Consultant",
+      "qualifications": ["CPA", "RCIC"],
+      "bio": "Specializing in Canadian immigration services and international tax planning for new immigrants and businesses.",
+      "specialties": [
+        "Immigration Services",
+        "International Tax",
+        "Financial Planning",
+        "Business Immigration"
+      ]
+    }
+  }
+},
   "training": {
     "title": "Training Programs",
     "subtitle": "We offer Professional development and certification programs",

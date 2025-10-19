@@ -15,6 +15,206 @@
     "admin": "Umuyobozi",
     "adminPanel": "Ikibaho cy'ubuyobozi"
   },
+    "teamMembers": {
+      "title": "Itsinda Ryacu ry’Isi Yose",
+      "subtitle": "Amahitamo y’abahinga bo mu nzego zose zacu",
+      "readMore": "Soma Byinshi",
+      "showLess": "Garagaza Bike",
+      "specialties": "Ubumenyi bwihariye",
+      "noMembers": "Nta bantu bari mu itsinda basanzwe bashinzwe iyi biro",
+      "members": {
+        "pierre-kemeni": {
+          "name": "Pierre KEMENI",
+          "title": "Umuyobozi Mukuru & Umukuru w’Inteko",
+          "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
+          "bio": "Umufatanya, Umuyobozi Mukuru muri EXCI-MAA Group. Umucungamari wemewe na COSUMAF hamwe na Auditor wemewe n’amategeko. Yanditswe muri ICPAR, ONECCA, CPA Canada, Quebec, Ontario & UK. Mbere yari Umuyobozi w’Inshingano muri Deloitte Toronto. Umuhango mu buyobozi, SYSCOHADA, Ihinduka ry’Imikoreshereze. Umushiguzi w’Abahanga b’amahanga n’Umutoza.",
+          "specialties": [
+            "Imikoreshereze y’Amahanga",
+            "Isuzuma ry’Imari",
+            "Inama z’Ubuyobozi",
+            "Umuhango wa SYSCOHADA",
+            "Ihinduka ry’Imikoreshereze",
+            "Umuhango mu Bucuruzi bw’Abanki"
+          ]
+        },
+        "patrick-ngatcha": {
+          "name": "Patrick NGATCHA",
+          "title": "Umufatanya - Umuyobozi Mukuru",
+          "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
+          "bio": "Umucungamari wanditswe muri Institute of Chartered Accountants ya Paris Ile de France. Auditor wemewe n’amategeko. Umuhango mu misoro n’isuzuma ry’imari, isuzuma ry’ubuguzi, gufatanya (itegeko 99-02 / IFRS).",
+          "specialties": [
+            "Iterambere ry’Ubucuruzi",
+            "Inama z’Imari",
+            "Igenamigambi ry’Imisoro",
+            "IFRS",
+            "Gufatanya",
+            "Isuzuma ry’Ubuguzi"
+          ]
+        },
+        "cloudin-ngong": {
+          "name": "Cloudin NGONG",
+          "title": "Umunyamabanga - Ishami ry’Imicungamari",
+          "qualifications": ["MSc Accounting and Finance"],
+          "bio": "Umunyeshuri w’imari w’umuhango mu misoro n’isuzuma ry’imari. Yongera kuyobora ibikorwa by’ishami ry’Imicungamari.",
+          "specialties": [
+            "Ishungura ry’Imari",
+            "Isuzuma ry’Imisoro",
+            "Isuzuma ry’Imari",
+            "Kuyobora Ishami"
+          ]
+        },
+        "janot-hiag": {
+          "name": "Janot HIAG",
+          "title": "Umushikiranganji & Isuzuma ry’Igiciro cy’Ipétrole",
+          "qualifications": ["Actuarial Certification"],
+          "bio": "Umuhango mu isuzuma ry’igiciro cy’ipétrole, umutekano w’amafranga yinjira, urutonde rw’ibintu n’ihinduka ry’igiciro, isuzuma ry’ibikorwa n’amategeko, hamwe n’isuzuma ry’amategeko.",
+          "specialties": [
+            "Isuzuma ry’Igiciro cy’Ipétrole",
+            "Umutekano w’Amafranga Yinjira",
+            "Ihinduka ry’Igiciro cy’Ibintu",
+            "Isuzuma ry’Ibikorwa",
+            "Isuzuma ry’Amategeko"
+          ]
+        },
+        "eric-kabeza": {
+          "name": "Eric KABEZA",
+          "title": "Umufatanya Mukuru w’Imisoro - Rwanda",
+          "qualifications": ["Tax Expert"],
+          "bio": "Umuhango mu misoro y’igihugu n’amahanga hamwe n’imyaka isaga 20 akora muri Rwanda Revenue Authority. Umushiguzi/Umujyanama mu misoro y’amasosiyete n’abantu ku giti cyabo. Umunyamabanga w’ukurikiza imisoro n’umushungura w’amategeko.",
+          "specialties": [
+            "Imisoro y’Igihugu",
+            "Imisoro y’Amahanga",
+            "Ukurikiza Imisoro",
+            "Ishungura ry’Amategeko",
+            "Imisoro y’Amasosiyete",
+            "Imisoro y’Abantu"
+          ]
+        },
+        "jean-nahimana": {
+          "name": "Jean Nepomuscene NAHIMANA",
+          "title": "Umufatanya - Isuzuma ry’Imari n’Imisoro",
+          "qualifications": ["CPA", "FMVA®", "BIDA®"],
+          "bio": "Umucungamari, Umunyamuryango wa ICPAR. Isuzuma ry’imari n’imisoro. Umunyeshuri Mukuru w’imikoreshereze n’umwibutsa w’imari w’umuhango n’uburambe mu igenamigambi ry’imari n’ishungura.",
+          "specialties": [
+            "Isuzuma ry’Imari",
+            "Isuzuma ry’Imisoro",
+            "Imiburo y’Imari",
+            "Ishungura ry’Imikoreshereze"
+          ]
+        },
+        "martin-nkwain": {
+          "name": "Marcel NKWAIN",
+          "title": "Umuyobozi w’Intara - Afrika y’Iburasirazuba",
+          "qualifications": ["IPA(UA)", "IFA(UK)"],
+          "bio": "Umuhango wa HARDCAT mu kuyobora ibintu by’umutungo. Isuzuma ry’imari n’imisoro. Umushiguzi w’amahanga n’umutoza uyobora ibikorwa bya EXCI-MAA muri Afrika y’Iburasirazuba.",
+          "specialties": [
+            "Kuyobora Umutungo Utisubirwa",
+            "Kuyobora Intara",
+            "Isuzuma ry’Imari",
+            "Isuzuma ry’Imisoro",
+            "Amashuri y’Amahanga"
+          ]
+        },
+        "paul-tchamake": {
+          "name": "Paul TCHAMAKE",
+          "title": "Umufatanya - Imisoro y’Amahanga & Igiciro cy’Intara",
+          "qualifications": ["Ms", "CPA (USA, France)"],
+          "bio": "Umucungamari wemewe (Sisitemu y’Amerika na France). Umuhango mu misoro y’amahanga, ASC 740 (Amabwiriza ya US GAAP). Imyaka isaga 15 y’uburambe mu bitangaza imari n’imisoro y’amahanga hamwe n’uburambe muri Big 4 muri KPMG na PwC Amerika. Umuhango mu giciro cy’intara na BEPS.",
+          "specialties": [
+            "Imisoro y’Amahanga",
+            "Igiciro cy’Intara",
+            "BEPS",
+            "US GAAP",
+            "ASC 740",
+            "Imisoro Ihuzamahanga"
+          ]
+        },
+        "diane-dusabe": {
+          "name": "Diane DUSABE",
+          "title": "Umuyobozi w’Ibiro - Burundi",
+          "qualifications": ["BBA", "Accounting"],
+          "bio": "Umuyobozi w’ibiro w’uburambe uyobora ibikorwa bya EXCI-MAA muri Burundi. Umuhango mu mibanire y’abakiriya n’iterambere ry’ubucuruzi bw’ahandi.",
+          "specialties": [
+            "Kuyobora Ibiro",
+            "Mibanire y’Abakiriya",
+            "Iterambere ry’Ubucuruzi",
+            "Ibikorwa by’Ahantu"
+          ]
+        },
+        "onesphore-ofodji": {
+          "name": "Onesphore OFODJI",
+          "title": "Umushiguzi Mukuru - Burundi",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "Umushiguzi w’ubucuruzi w’umuhango mu iterambere ry’amasoko y’intara na serivisi z’inama z’imari ku bucuruzi muri Burundi.",
+          "specialties": [
+            "Inama z’Ubucuruzi",
+            "Inama z’Imari",
+            "Iterambere ry’Amasoko",
+            "Igenamigambi ry’Intambwe"
+          ]
+        },
+        "congo-director": {
+          "name": "Umuyobozi w’Intara",
+          "title": "Umuyobozi - Ibikorwa bya RDC",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "Uyobora ibikorwa bya EXCI-MAA muri Repubulika Iharanira Demokarasi ya Kongo, aganira ku bikorwa by’isuzuma na serivisi z’inama z’ubucuruzi.",
+          "specialties": [
+            "Serivisi z’Isuzuma",
+            "Inama z’Ubucuruzi",
+            "Ibikorwa by’Intara",
+            "Inama z’Imisoro"
+          ]
+        },
+        "gabon-manager": {
+          "name": "Umuyobozi w’Intara",
+          "title": "Umuyobozi - Ibikorwa bya Gabon",
+          "qualifications": ["Expert Comptable", "CEMAC"],
+          "bio": "Kuyobora serivisi za EXCI-MAA muri Gabon aganira ku isuzuma ry’imari na serivisi z’inama z’amasosiyete ku bakiriya b’ahandi n’amahanga.",
+          "specialties": [
+            "Isuzuma ry’Imari",
+            "Inama z’Amasosiyete",
+            "Amategeko ya CEMAC",
+            "Ukurikiza Amategeko y’Ahantu"
+          ]
+        },
+        "dubai-consultant": {
+          "name": "Umushiguzi Mukuru",
+          "title": "Umushiguzi w’Ubucuruzi Mukuru - Dubai",
+          "qualifications": ["CPA", "ACCA"],
+          "bio": "Umuhango mu gutangiza ubucuruzi bw’amahanga n’igenamigambi ry’imisoro ku masosiyete ashyiraho amasoko muri Aziya y’Uburasirazuba.",
+          "specialties": [
+            "Gutangiza Ubucuruzi",
+            "Igenamigambi ry’Imisoro",
+            "Ikwirakwiza ry’Amahanga",
+            "Amasoko y’Aziya y’Uburasirazuba"
+          ]
+        },
+        "france-partner": {
+          "name": "Umufatanya",
+          "title": "Umufatanya - Ibikorwa bya France",
+          "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
+          "bio": "Uyobora ibikorwa by’Uburaya n’ubuhanga mu kurikiza amategeko ya EU na serivisi z’inama z’ihuzamahanga.",
+          "specialties": [
+            "Ukurikiza Amategeko ya EU",
+            "Inama z’Ihuzamahanga",
+            "Imicungamari y’Uburaya",
+            "Imisoro y’Amahanga"
+          ]
+        },
+        "canada-consultant": {
+          "name": "Umushiguzi Mukuru",
+          "title": "Umushiguzi w’Abimukira & Imisoro",
+          "qualifications": ["CPA", "RCIC"],
+          "bio": "Umuhango mu serivisi z’ubumukira bwa Canada n’igenamigambi ry’imisoro y’amahanga ku bimukira bashya na masosiyete.",
+          "specialties": [
+            "Serivisi z’Ubumukira",
+            "Imisoro y’Amahanga",
+            "Igenamigambi ry’Imari",
+            "Ubumukira bw’Ubucuruzi"
+          ]
+        }
+      }
+    },
   "footer": {
     "description": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite amaofisi bw'isi. Dutanga ubuhanga buhagije gufasha ibyo ukeneye.",
     "quickLinks": "Amahuza yihuse",

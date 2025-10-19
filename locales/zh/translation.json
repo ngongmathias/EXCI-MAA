@@ -9,6 +9,207 @@
     "careers": "职业",
     "contact": "联系我们"
   },
+  
+    "teamMembers": {
+      "title": "我们的全球团队",
+      "subtitle": "认识在所有地点推动卓越表现的专业人士",
+      "readMore": "阅读更多",
+      "showLess": "显示更少",
+      "specialties": "专长",
+      "noMembers": "目前没有团队成员分配到这个办公室",
+      "members": {
+        "pierre-kemeni": {
+          "name": "皮埃尔·凯梅尼",
+          "title": "董事总经理兼主席",
+          "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
+          "bio": "EXCI-MAA集团的合伙人、董事总经理。COSUMAF许可的注册会计师和法定审计师。在ICPAR、ONECCA、加拿大CPA、魁北克、安大略及英国注册。前德勤多伦多业务主任。擅长管理、SYSCOHADA、账户转换。高级国际顾问和培训师。",
+          "specialties": [
+            "国际会计",
+            "财务审计",
+            "管理咨询",
+            "SYSCOHADA专家",
+            "账户转换",
+            "银行业专家"
+          ]
+        },
+        "patrick-ngatcha": {
+          "name": "帕特里克·恩加查",
+          "title": "合伙人 - 总经理",
+          "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
+          "bio": "在巴黎法兰西岛注册会计师协会注册的注册会计师。法定审计师。税务和财务审计、收购审计、合并（法规99-02 / IFRS）专家。",
+          "specialties": [
+            "业务发展",
+            "财务咨询",
+            "税务规划",
+            "IFRS",
+            "合并",
+            "收购审计"
+          ]
+        },
+        "cloudin-ngong": {
+          "name": "克劳丁·恩贡",
+          "title": "主管 - 注册会计部门",
+          "qualifications": ["MSc Accounting and Finance"],
+          "bio": "财务分析师，擅长税务和财务审计。负责监督注册会计部门的运营。",
+          "specialties": [
+            "财务分析",
+            "税务审计",
+            "财务审计",
+            "部门监督"
+          ]
+        },
+        "janot-hiag": {
+          "name": "贾诺·希亚格",
+          "title": "精算评估师及石油成本审计师",
+          "qualifications": ["Actuarial Certification"],
+          "bio": "石油成本审计、收入保障、资产盘点和重新评估、运营和法律审计以及法定审计专家。",
+          "specialties": [
+            "石油成本审计",
+            "收入保障",
+            "资产重新评估",
+            "运营审计",
+            "法律审计"
+          ]
+        },
+        "eric-kabeza": {
+          "name": "埃里克·卡贝扎",
+          "title": "税务首席合伙人 - 卢旺达",
+          "qualifications": ["Tax Expert"],
+          "bio": "在卢旺达税务局工作超过20年的本地和国际税务专家。企业和个人税务顾问/咨询师。税务合规官和政策分析师。",
+          "specialties": [
+            "本地税务",
+            "国际税务",
+            "税务合规",
+            "政策分析",
+            "企业税务",
+            "个人税务"
+          ]
+        },
+        "jean-nahimana": {
+          "name": "让·内波穆塞内·纳希马纳",
+          "title": "合伙人 - 财务与税务审计",
+          "qualifications": ["CPA", "FMVA®", "BIDA®"],
+          "bio": "注册会计师，ICPAR成员。财务和税务审计师。高级账户分析师和财务建模师，拥有丰富的财务规划和分析经验。",
+          "specialties": [
+            "财务审计",
+            "税务审计",
+            "财务建模",
+            "账户分析"
+          ]
+        },
+        "martin-nkwain": {
+          "name": "马塞尔·恩克温",
+          "title": "区域经理 - 东非",
+          "qualifications": ["IPA(UA)", "IFA(UK)"],
+          "bio": "固定资产管理HARDCAT专家。财务和税务审计师。领导EXCI-MAA在东非的运营的国际顾问和培训师。",
+          "specialties": [
+            "固定资产管理",
+            "区域管理",
+            "财务审计",
+            "税务审计",
+            "国际培训"
+          ]
+        },
+        "paul-tchamake": {
+          "name": "保罗·查马凯",
+          "title": "合伙人 - 国际税务与转让定价",
+          "qualifications": ["Ms", "CPA (USA, France)"],
+          "bio": "认证注册会计师（美国和法国制度）。国际税务专家，ASC 740（美国GAAP标准）。在KPMG和普华永道美国拥有超过15年的国际财务和税务报告经验。转让定价和BEPS专家。",
+          "specialties": [
+            "国际税务",
+            "转让定价",
+            "BEPS",
+            "美国GAAP",
+            "ASC 740",
+            "跨境税务"
+          ]
+        },
+        "diane-dusabe": {
+          "name": "黛安·杜萨贝",
+          "title": "办公室经理 - 布隆迪",
+          "qualifications": ["BBA", "Accounting"],
+          "bio": "经验丰富的办公室经理，负责监督EXCI-MAA在布隆迪的运营。擅长客户关系和本地业务发展。",
+          "specialties": [
+            "办公室管理",
+            "客户关系",
+            "业务发展",
+            "本地运营"
+          ]
+        },
+        "onesphore-ofodji": {
+          "name": "奥内斯福尔·奥福吉",
+          "title": "高级顾问 - 布隆迪",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "高级业务顾问，专注于布隆迪的区域市场开发和财务咨询服务。",
+          "specialties": [
+            "业务咨询",
+            "财务咨询",
+            "市场开发",
+            "战略规划"
+          ]
+        },
+        "congo-director": {
+          "name": "区域总监",
+          "title": "总监 - 刚果民主共和国运营",
+          "qualifications": ["CPA", "MBA"],
+          "bio": "领导EXCI-MAA在刚果民主共和国的运营，专注于审计服务和业务咨询。",
+          "specialties": [
+            "审计服务",
+            "业务咨询",
+            "区域运营",
+            "税务咨询"
+          ]
+        },
+        "gabon-manager": {
+          "name": "区域经理",
+          "title": "经理 - 加蓬运营",
+          "qualifications": ["Expert Comptable", "CEMAC"],
+          "bio": "管理EXCI-MAA在加蓬的服务，专注于本地和国际客户的财务审计和企业咨询。",
+          "specialties": [
+            "财务审计",
+            "企业咨询",
+            "CEMAC法规",
+            "本地合规"
+          ]
+        },
+        "dubai-consultant": {
+          "name": "高级顾问",
+          "title": "高级业务顾问 - 迪拜",
+          "qualifications": ["CPA", "ACCA"],
+          "bio": "专注于国际业务设立和税务规划，服务于扩展到中东市场的公司。",
+          "specialties": [
+            "业务设立",
+            "税务规划",
+            "国际扩展",
+            "中东市场"
+          ]
+        },
+        "france-partner": {
+          "name": "合伙人",
+          "title": "合伙人 - 法国运营",
+          "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
+          "bio": "领导欧洲运营，擅长欧盟合规和跨境咨询。",
+          "specialties": [
+            "欧盟合规",
+            "跨境咨询",
+            "欧洲会计",
+            "国际税务"
+          ]
+        },
+        "canada-consultant": {
+          "name": "高级顾问",
+          "title": "移民与税务顾问",
+          "qualifications": ["CPA", "RCIC"],
+          "bio": "专注于加拿大移民服务和新移民及企业的国际税务规划。",
+          "specialties": [
+            "移民服务",
+            "国际税务",
+            "财务规划",
+            "业务移民"
+          ]
+        }
+      }
+    },
   "auth": {
     "signIn": "登录",
     "signOut": "退出",
