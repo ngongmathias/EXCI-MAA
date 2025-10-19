@@ -1,17 +1,20 @@
-import { FC } from 'react';
-import { Link } from 'react-router-dom';
+import { FC, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { ROUTES } from '../../lib/constants/routes';
 
 const Footer: FC = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
   const quickLinks = [
-    {name: t('nav.about'), href: '/about'},
-    {name: t('nav.services'), href: '/services'},
-    {name: t('nav.contact'), href: '/contact'},
-    {name: 'Blog', href: '/blog'},
-    {name: t('footer.privacyPolicy'), href: '/privacy'},
-    {name: t('footer.termsOfService'), href: '/terms'},
+    {name: t('nav.about'), href: ROUTES.ABOUT},
+    {name: t('nav.services'), href: ROUTES.SERVICES},
+    {name: t('nav.careers') ?? 'Careers', href: ROUTES.CAREERS},
+    {name: t('nav.insights') ?? 'Insights', href: ROUTES.INSIGHTS},
+    {name: t('nav.globalOffices') ?? 'Global Offices', href: ROUTES.GLOBAL_OFFICES},
+    {name: t('nav.contact'), href: ROUTES.CONTACT},
   ];
 
   const socialLinks = [
@@ -79,6 +82,38 @@ const Footer: FC = () => {
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
+                   (+237) 233 427 940
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-300 text-sm">
+                  +(237) 698 835 251
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-300 text-sm">
+                  +1 (416) 624 2510
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-300 text-sm">
+                  (+250) 787 779 965
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-300 text-sm">
                     +1 (555) 123-4567
                   </p>
                 </div>
@@ -87,7 +122,7 @@ const Footer: FC = () => {
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
-                    info@excimaa.com
+                  contactcam@excimaa.ca
                   </p>
                 </div>
               </div>
@@ -95,8 +130,7 @@ const Footer: FC = () => {
                 <MapPin className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
-                    123 Business Ave, Suite 100<br />
-                    New York, NY 10001
+                  Douala, Cameroon
                   </p>
                 </div>
               </div>
@@ -111,10 +145,20 @@ const Footer: FC = () => {
               <p className="text-gray-300 mb-6">
                 {t('partners.subtitle')}
               </p>
-            <form className="space-y-4">
+            <form
+              className="space-y-4"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const query = email ? `?email=${encodeURIComponent(email)}` : '';
+                navigate(`${ROUTES.CONSULTATION}${query}`);
+              }}
+            >
               <input
                 type="email"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 className="w-full px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
               <button

@@ -1,5 +1,5 @@
-import { FC, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { FC, useEffect, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import { services as servicesData } from '../../../data/services';
 import { countries } from '../../../data/countries';
@@ -18,6 +18,7 @@ type FormData = {
 const ConsultationForm: FC = () => {
   const { t } = useLanguage();
   const navigate = useNavigate();
+  const location = useLocation();
   const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState<FormData>({
     fullName: '',
@@ -33,6 +34,14 @@ const ConsultationForm: FC = () => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const emailParam = params.get('email');
+    if (emailParam) {
+      setForm((prev) => ({ ...prev, email: emailParam }));
+    }
+  }, [location.search]);
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
