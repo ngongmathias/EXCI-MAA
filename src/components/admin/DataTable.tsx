@@ -30,7 +30,7 @@ interface DataTableProps {
   fields: Array<{
     key: string;
     label: string;
-    type?: 'text' | 'email' | 'number' | 'date' | 'textarea';
+    type?: 'text' | 'email' | 'number' | 'date' | 'textarea' | 'url' | 'tel';
     required?: boolean;
   }>;
   storageKey: string; // localStorage key OR Supabase table name
@@ -108,25 +108,63 @@ const DataTable: React.FC<DataTableProps> = ({
     }
   };
 
+  // Validate form data
+  const validateForm = (): string | null => {
+    // Check required fields
+    const missingFields = fields
+      .filter(field => field.required && !formData[field.key])
+      .map(field => field.label);
+
+    if (missingFields.length > 0) {
+      return `Please fill in: ${missingFields.join(', ')}`;
+    }
+
+    // Validate email fields
+    const emailFields = fields.filter(field => field.type === 'email');
+    for (const field of emailFields) {
+      const value = formData[field.key];
+      if (value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        return `Please enter a valid email address for ${field.label}`;
+      }
+    }
+
+    // Validate URL fields
+    const urlFields = fields.filter(field => field.type === 'url');
+    for (const field of urlFields) {
+      const value = formData[field.key];
+      if (value && !/^https?:\/\/.+/.test(value)) {
+        return `Please enter a valid URL for ${field.label} (must start with http:// or https://)`;
+      }
+    }
+
+    // Validate number fields
+    const numberFields = fields.filter(field => field.type === 'number');
+    for (const field of numberFields) {
+      const value = formData[field.key];
+      if (value && isNaN(Number(value))) {
+        return `Please enter a valid number for ${field.label}`;
+      }
+    }
+
+    return null;
+  };
+
   // Handle form submission
   const handleSubmit = async () => {
     setLoading(true);
     setError(null);
 
     try {
-      // Validate required fields
-      const missingFields = fields
-        .filter(field => field.required && !formData[field.key])
-        .map(field => field.label);
-
-      if (missingFields.length > 0) {
-        setError(`Please fill in: ${missingFields.join(', ')}`);
+      // Validate form
+      const validationError = validateForm();
+      if (validationError) {
+        setError(validationError);
         setLoading(false);
         return;
       }
 
       // Process form data for date fields
-      const processedData = { ...formData };
+      const processedData: Record<string, any> = { ...formData };
       fields.forEach(field => {
         if (field.type === 'date' && processedData[field.key]) {
           // Convert date string to ISO format for database
@@ -134,6 +172,10 @@ const DataTable: React.FC<DataTableProps> = ({
           if (!isNaN(date.getTime())) {
             processedData[field.key] = date.toISOString().split('T')[0]; // YYYY-MM-DD format
           }
+        }
+        // Convert number fields to proper numbers
+        if (field.type === 'number' && processedData[field.key]) {
+          processedData[field.key] = Number(processedData[field.key]);
         }
       });
 
@@ -389,11 +431,19 @@ VITE_SUPABASE_ANON_KEY=your-supabase-anon-key-here
                   label={field.label}
                   value={formData[field.key] || ''}
                   onChange={(e) => setFormData(prev => ({ ...prev, [field.key]: e.target.value }))}
-                  type={field.type === 'number' ? 'number' : field.type === 'email' ? 'email' : 'text'}
+                  type={field.type === 'number' ? 'number' : 
+                        field.type === 'email' ? 'email' : 
+                        field.type === 'url' ? 'url' : 
+                        field.type === 'tel' ? 'tel' : 
+                        field.type === 'date' ? 'date' : 'text'}
                   multiline={field.type === 'textarea'}
                   rows={field.type === 'textarea' ? 3 : 1}
                   required={field.required}
                   variant="outlined"
+                  inputProps={{
+                    min: field.type === 'number' ? 0 : undefined,
+                    step: field.type === 'number' ? '0.01' : undefined,
+                  }}
                 />
               </Box>
             ))}

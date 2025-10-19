@@ -6,7 +6,7 @@ const ContactSubmissions: React.FC = () => {
   const fields = [
     { key: 'name', label: 'Full Name', required: true },
     { key: 'email', label: 'Email', type: 'email' as const, required: true },
-    { key: 'phone', label: 'Phone' },
+    { key: 'phone', label: 'Phone', type: 'tel' as const },
     { key: 'subject', label: 'Subject', required: true },
     { key: 'message', label: 'Message', type: 'textarea' as const, required: true },
   ];

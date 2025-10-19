@@ -6,7 +6,7 @@ const ConsultationRequests: React.FC = () => {
   const fields = [
     { key: 'full_name', label: 'Full Name', required: true },
     { key: 'email', label: 'Email', type: 'email' as const, required: true },
-    { key: 'phone', label: 'Phone', required: true },
+    { key: 'phone', label: 'Phone', type: 'tel' as const, required: true },
     { key: 'company', label: 'Company' },
     { key: 'country_slug', label: 'Country Slug', required: true },
     { key: 'service_id', label: 'Service ID', required: true },
