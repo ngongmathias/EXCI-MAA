@@ -1019,5 +1019,199 @@
       "expertise": "Expertise",
       "viewAllMembers": "Voir tous les membres de l'équipe"
     }
+  },
+  "partners": {
+    "label": "NOS LOGOS",
+    "title": "Logos du Groupe EXCI-MAA",
+    "subtitle": "Notre identité professionnelle et représentation de marque",
+    "note": "Nos logos représentent notre expertise et notre engagement envers l'excellence"
+  },
+  "organizationalStructure": {
+    "title": "Structure Organisationnelle",
+    "subtitle": "Notre leadership et structure d'équipe",
+    "chairman": {
+      "title": "Associé",
+      "subtitle": "Président du Conseil d'Administration\nDirecteur du développement",
+      "description": "Leadership global et direction stratégique du Groupe EXCI-MAA."
+    },
+    "adminPartner": {
+      "title": "Associé, Administration Générale, Finance & RH",
+      "description": "Supervise l'administration, les finances et les ressources humaines."
+    },
+    "auditPartner": {
+      "title": "Associé Audit & Conseil",
+      "description": "Dirige les opérations d'audit et de conseil."
+    },
+    "managementPartner": {
+      "title": "Associé Management & Organisation",
+      "description": "Gère le management et le développement organisationnel."
+    },
+    "qualityCompliance": {
+      "title": "Associé",
+      "subtitle": "Responsable Qualité & Conformité",
+      "description": "Assure les standards de qualité et la conformité dans toute l'organisation."
+    },
+    "countryDirector": {
+      "title": "Directeur Pays comptables Senior et Junior Auditeurs",
+      "description": "Gère les opérations du pays avec les équipes comptables et d'audit."
+    },
+    "specialists": {
+      "title": "Spécialistes & Consultants Externes",
+      "subtitle": "(Médecins, Ingénieurs, Avocats, Sociologues, Seniors, Juniors ... ETC)",
+      "description": "Équipe multidisciplinaire de consultants et spécialistes externes."
+    }
+  },
+  "typicalOfficeOrganigram": {
+    "title": "ORGANIGRAMME TYPE D'UN BUREAU",
+    "subtitle": "Structure organisationnelle standard pour les services professionnels",
+    "officeManager": {
+      "title": "DIRECTEUR / GESTIONNAIRE DE BUREAU",
+      "description": "Gestion globale et direction stratégique"
+    },
+    "audit": {
+      "title": "AUDIT",
+      "legal": {
+        "title": "LEGAL",
+        "services": [
+          "Audits statutaires",
+          "Audit des comptes d'entreprise, comptes combinés et consolidés",
+          "Scissions, fusions etc"
+        ]
+      },
+      "contractual": {
+        "title": "CONTRACTUEL",
+        "services": [
+          "Audit de projets ONG",
+          "Comptes prévisionnels",
+          "Audit des coûts pétroliers",
+          "Contrôle interne"
+        ]
+      }
+    },
+    "advisory": {
+      "title": "CONSEIL",
+      "taxSocial": {
+        "title": "FISCAL & SOCIAL",
+        "services": [
+          "Conseil juridique: Constitution, Mise à jour OHADA, Audit, Secrétariat Juridique",
+          "Droit Fiscal: Due diligence, Conseil Fiscal & Conformité Fiscale, Audit",
+          "Droit Social: Recrutement, Contrat de Travail, Fiche de Paie, Déclarations, Audit"
+        ]
+      },
+      "training": {
+        "title": "FORMATION",
+        "services": [
+          "Formations",
+          "Choix de Thèmes dans notre panel annuel"
+        ]
+      },
+      "finance": {
+        "title": "FINANCE",
+        "services": [
+          "Plan d'affaires",
+          "Analyse de Portefeuille de Crédit",
+          "Rating",
+          "Évaluations"
+        ]
+      }
+    },
+    "management": {
+      "title": "GESTION",
+      "accounting": {
+        "title": "ASSISTANCE COMPTABLE ET FISCALE",
+        "services": [
+          "États financiers annuels ou prévisionnels",
+          "Mise en place d'une organisation comptable",
+          "Logiciel de Gestion",
+          "Tenue de livres",
+          "Déclaration d'impôts"
+        ]
+      },
+      "facility": {
+        "title": "GESTION D'INSTALLATIONS & MYCODEBAR",
+        "services": [
+          "Gestion d'Installations",
+          "Gestion électronique des stocks et actifs par codes-barres"
+        ]
+      }
+    }
+  },
+  "trainingCategories": {
+    "accounting": {
+      "title": "Comptabilité / Fiscal / Gestion",
+      "courses": [
+        "Méthodes de comptabilité et suivi des informations d'entreprise",
+        "Méthodes de travail ou préparation de rapports fiscaux et autres",
+        "Directives de droit fiscal et de gestion",
+        "Méthodes d'audit et de gestion de la gestion fiscale",
+        "Problèmes de droit fiscal en CONGO, CAMEROUN, RWANDA, BURUNDI, GABON",
+        "Configurez votre compte d'entreprise et gestion financière",
+        "Méthodes de trouver la gestion dans les rapports fiscaux",
+        "Impact fiscal et fiscal sur la fiscalité",
+        "Gestion entre DAS, informations et DSF: Problème CNSS",
+        "Gestion comptable de travail"
+      ],
+      "price": "$299",
+      "duration": "3 jours"
+    },
+    "audit": {
+      "title": "Audit Légal / Gestion de Gestion",
+      "courses": [
+        "Pourquoi auditer vos informations?",
+        "Méthodes d'audit d'entreprise et financier",
+        "Quel est l'impact de l'audit sur les rapports fiscaux?",
+        "Gestion et gestion de l'audit interne dans les petites entreprises, banques et gestion",
+        "Gestion et gestion de la gestion de gestion",
+        "Informations et gestion de gestion",
+        "Audit interne (centre d'audit)",
+        "Audit interne – Développement et gestion",
+        "Audit légal",
+        "Gérer correctement la gestion financière, surtout la gestion",
+        "Comprendre les besoins financiers de la gestion et de la gestion",
+        "Gestion financière entre personnes et entreprise avec clients",
+        "Mesurer le système d'information – ICT IS",
+        "Comprendre ERP, sa gestion et voir si votre entreprise en a besoin",
+        "Auditer la gestion de gestion interne",
+        "Auditer la gestion d'audit interne",
+        "Trouver et prévenir la gestion",
+        "Gérer la gestion dans la gestion d'audit"
+      ],
+      "price": "$399",
+      "duration": "5 jours"
+    },
+    "advice": {
+      "title": "Conseil",
+      "courses": [
+        "Gestion des informations d'entreprise de travail et gestion fiscale",
+        "Comprendre les besoins et exigences fiscales mondiales: Tarification",
+        "Mesurer les entreprises dans la zone OHADA",
+        "Réévaluer la gestion: besoins pour toutes les entreprises",
+        "Gestion de fusion, séparation et arrêt dans la zone OHADA",
+        "Méthodes de travail de gestion d'informations dans la zone OHADA",
+        "Rédaction de gestion d'entreprise",
+        "Méthodes de travail d'entreprise",
+        "Fusion – Acquisition",
+        "Audit légal, gestion et fiscal",
+        "Aider à rédiger la gestion de gestion interne"
+      ],
+      "price": "$349",
+      "duration": "4 jours"
+    },
+    "various": {
+      "title": "Divers",
+      "courses": [
+        "Méthodes de travail avec les clients de gestion",
+        "Sortez de votre gestion et augmentez votre gestion en entreprise et autres",
+        "Gestion dans les bureaux / Centre",
+        "Méthodes d'être un Gestionnaire Financier/Gestion ou CFO et gestion",
+        "Utiliser la gestion d'entreprise et de gestion pour prévenir la gestion bancaire",
+        "Droit des affaires OHADA",
+        "Taxe d'entreprise",
+        "Utiliser et auditer la gestion bancaire",
+        "Auditer la gestion de gestion de gestion"
+      ],
+      "price": "$199",
+      "duration": "2 jours"
+    }
   }
 }

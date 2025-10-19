@@ -870,5 +870,199 @@
         }
       ]
     }
+  },
+  "partners": {
+    "label": "AMASHUSHANYO YACU",
+    "title": "Amashushanyo y'Itsinda rya EXCI-MAA",
+    "subtitle": "Ubwoba bwacu bw'ubuhanga n'ubwoba bw'ikimenyetso",
+    "note": "Amashushanyo yacu yerekana ubuhanga bwacu n'ukwizera kwacu mu bwoba"
+  },
+  "organizationalStructure": {
+    "title": "Imiterere y'ikigo",
+    "subtitle": "Ubuyobozi bwacu n'imiterere y'ikipe",
+    "chairman": {
+      "title": "Umufatanyabikorwa",
+      "subtitle": "Umuyobozi w'Inama y'Abayobozi\nUmuyobozi w'iterambere",
+      "description": "Ubuyobozi bwose n'uyobora bw'ubwoba bw'Itsinda rya EXCI-MAA."
+    },
+    "adminPartner": {
+      "title": "Umufatanyabikorwa, Ubuyobozi bwose, Imari & Abantu",
+      "description": "Yobora ubuyobozi, imari, n'ubwoba bw'abantu."
+    },
+    "auditPartner": {
+      "title": "Umufatanyabikorwa w'Ubwoba n'Ubunyangamugayo",
+      "description": "Yobora ibikorwa by'ubwoba n'ubunyangamugayo."
+    },
+    "managementPartner": {
+      "title": "Umufatanyabikorwa w'Ubuyobozi n'Ikigo",
+      "description": "Yobora ubuyobozi n'iterambere ry'ikigo."
+    },
+    "qualityCompliance": {
+      "title": "Umufatanyabikorwa",
+      "subtitle": "Umuyobozi w'Ubwoba n'Ukwemera",
+      "description": "Yemeza ubwoba bw'ubwoba n'ukwemera mu kigo cyose."
+    },
+    "countryDirector": {
+      "title": "Umuyobozi w'Igihugu abacuruzi ba Senior na Junior Auditors",
+      "description": "Yobora ibikorwa by'igihugu hamwe n'ikipe y'abacuruzi n'ubwoba."
+    },
+    "specialists": {
+      "title": "Abahanga n'Abunyangamugayo b'hanze",
+      "subtitle": "(Abaganga, Abanyamwuga, Abavoka, Abahanga mu by'ubuzima, Abakuru, Abato ... ETC)",
+      "description": "Ikipe y'abahanga b'ubwoba bw'ubunyangamugayo n'abahanga b'hanze."
+    }
+  },
+  "typicalOfficeOrganigram": {
+    "title": "ORGANIGRAMME Y'UBWOBE BW'AMABIRO",
+    "subtitle": "Imiterere y'ubwoba y'ubwoba y'ubwoba bw'ubwoba",
+    "officeManager": {
+      "title": "UMUYOBOZI W'AMABIRO / UMUYOBOZI",
+      "description": "Ubuyobozi bwose n'uyobora bw'ubwoba"
+    },
+    "audit": {
+      "title": "UBWOBE",
+      "legal": {
+        "title": "UBWOBE",
+        "services": [
+          "Ubwoba bw'amategeko",
+          "Ubwoba bw'amafaranga y'ikigo, amafaranga y'ubwoba n'ubwoba",
+          "Gutandukana, guhuza n'ibindi"
+        ]
+      },
+      "contractual": {
+        "title": "UBWOBE",
+        "services": [
+          "Ubwoba bw'amashyira y'ubwoba",
+          "Amafaranga y'ubwoba",
+          "Ubwoba bw'amafaranga y'amavuta",
+          "Ubwoba bw'ubwoba"
+        ]
+      }
+    },
+    "advisory": {
+      "title": "UBUNYANGAMUGAYO",
+      "taxSocial": {
+        "title": "UMUSORO & UBWOBE",
+        "services": [
+          "Ubunyangamugayo bw'ubwoba: Ubwoba, Gushyiraho OHADA, Ubwoba, Ubwoba bw'ubwoba",
+          "Amategeko y'umusoro: Ubwoba bw'ubwoba, Ubunyangamugayo bw'umusoro & Ukwemera kw'umusoro, Ubwoba",
+          "Amategeko y'ubwoba: Gushakisha, Ishyirwa ry'ubwoba, Gushyiraho amafaranga, Amakuru, Ubwoba"
+        ]
+      },
+      "training": {
+        "title": "AMAHUGURWA",
+        "services": [
+          "Amahugurwa",
+          "Guhitamo ibyerekeye mu bwoba bwacu bw'umwaka"
+        ]
+      },
+      "finance": {
+        "title": "IMARI",
+        "services": [
+          "Gahunda y'ubwoba",
+          "Gusuzuma ubwoba bw'amafaranga",
+          "Gupima",
+          "Gupima"
+        ]
+      }
+    },
+    "management": {
+      "title": "UBUYOBOZI",
+      "accounting": {
+        "title": "UBUFASHA BW'UBUCURUZI N'UMUSORO",
+        "services": [
+          "Amakuru y'amafaranga y'umwaka cyangwa y'ubwoba",
+          "Gushyiraho ikigo cy'ubucuruzi",
+          "Porogaramu y'ubuyobozi",
+          "Gucunga amafaranga",
+          "Gusuzuma umusoro"
+        ]
+      },
+      "facility": {
+        "title": "UBUYOBOZI BW'AMABIRO & MYCODEBAR",
+        "services": [
+          "Ubuyobozi bw'amabiro",
+          "Ubuyobozi bw'amafaranga bw'amafaranga n'amafaranga n'amashushanyo y'amashushanyo"
+        ]
+      }
+    }
+  },
+  "trainingCategories": {
+    "accounting": {
+      "title": "Ubucuruzi / Umusoro / Ubuyobozi",
+      "courses": [
+        "Uburyo bwo kubara no gukurikirana amakuru y'ubucuruzi",
+        "Uburyo bwo gukora cyangwa gutegura raporo y'umusoro n'ibindi",
+        "Amabwiriza y'umusoro w'umusoro n'ubwoba",
+        "Uburyo bwo gusuzuma no gukora ubugenzuzi bw'umusoro",
+        "Ikibazo cy'umusoro w'umusoro mu CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
+        "Shyiraho konti yawe y'ubucuruzi n'ubwoba bw'amafaranga",
+        "Uburyo bwo gusanga ubwoba mu raporo z'umusoro",
+        "Ingaruka y'umusoro n'umusoro ku musoro",
+        "Ubwoba hagati ya DAS, amakuru n'DSF: Ikibazo cya CNSS",
+        "Gukora ubwoba bwo kubara"
+      ],
+      "price": "$299",
+      "duration": "iminsi 3"
+    },
+    "audit": {
+      "title": "Ubugenzuzi bw'amategeko / Gucunga ubwoba",
+      "courses": [
+        "Ni ikihe gituma ukora ubugenzuzi bw'amakuru yawe?",
+        "Uburyo bwo gukora ubugenzuzi bw'ubucuruzi n'ubucuruzi",
+        "Ni ikihe ingaruka y'ubugenzuzi ku raporo y'umusoro?",
+        "Ubwoba n'ubwoba bwo gukora ubugenzuzi bw'ubwoba mu bikoresho bito, amabanki n'ubwoba",
+        "Ubwoba n'ubwoba bwo gukora ubwoba",
+        "Amakuru n'ubwoba bw'ubwoba",
+        "Ubugenzuzi bw'ubwoba (ikigo cy'ubugenzuzi)",
+        "Ubugenzuzi bw'ubwoba – Gutezimbere n'ubwoba",
+        "Ubugenzuzi bw'amategeko",
+        "Gucunga neza ubwoba bw'amafaranga, cyane cyane ubwoba",
+        "Gusobanukirwa ibyifuza by'amafaranga kuva ku bwoba n'ubwoba",
+        "Guhuza ubwoba bw'abantu n'ubwoba bw'abakiriya",
+        "Gupima sisitemu y'amakuru – ICT IS",
+        "Gusobanukirwa ERP, ubwoba bwabyo kandi urebe niba ubucuruzi bwawe bubakeneye",
+        "Gusuzuma ibyerekeye ubwoba bw'ubwoba",
+        "Gusuzuma ibyerekeye ubwoba bw'ubugenzuzi bw'ubwoba",
+        "Gusanga no gukumira ubwoba",
+        "Gucunga ingorane mu bwoba bw'ubwoba"
+      ],
+      "price": "$399",
+      "duration": "iminsi 5"
+    },
+    "advice": {
+      "title": "Inama",
+      "courses": [
+        "Ubwoba bwo gukora amakuru y'ubwoba n'ubwoba bw'umusoro",
+        "Gusobanukirwa ibyerekeye n'ibyifuza by'umusoro w'isi yose: Igiciro cy'ubwoba",
+        "Gupima ibikoresho mu gace ka OHADA",
+        "Gusubira gupima ubwoba: ubwoba ku bikoresho byose",
+        "Ubwoba bwo guhuza, gutandukana n'guhagarika mu gace ka OHADA",
+        "Uburyo bwo gukora ubwoba bw'amakuru mu gace ka OHADA",
+        "Kwandika ubwoba bw'ubucuruzi",
+        "Uburyo bwo gukora ubucuruzi",
+        "Guhuza – Gupata",
+        "Ubugenzuzi bw'amategeko, ubwoba n'umusoro",
+        "Gufasha mu kwandika ubwoba bwo gukora ubwoba"
+      ],
+      "price": "$349",
+      "duration": "iminsi 4"
+    },
+    "various": {
+      "title": "Ibintu bitandukanye",
+      "courses": [
+        "Uburyo bwo gukora n'abakiriya b'ubwoba",
+        "Sohora ubwoba bwawe kandi uongere ubuyobozi bwawe mu bucuruzi n'ibindi",
+        "Ubwoba mu mabiro / Ikigo",
+        "Uburyo bwo kuba Umucunga w'amafaranga/Ubwoba cyangwa CFO n'ubwoba",
+        "Gukoresha ubucuruzi n'ubwoba bwo gukora ingorane z'amabanki",
+        "Amategeko y'ubucuruzi OHADA",
+        "Umusoro w'ibikoresho",
+        "Gukoresha no gukora ubugenzuzi bw'amabanki",
+        "Ubugenzuzi bw'ukwemera kw'ubwoba bw'ubwoba"
+      ],
+      "price": "$199",
+      "duration": "iminsi 2"
+    }
   }
 }

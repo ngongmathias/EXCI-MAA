@@ -4,20 +4,25 @@ import { useLanguage } from '../../../contexts/LanguageContext';
 
 const Partners: FC = () => {
   const { t } = useLanguage();
+  const toArray = (value: unknown): string[] => {
+    if (Array.isArray(value)) return value as string[];
+    if (typeof value === 'string' && value.trim().length > 0) return [value];
+    return [];
+  };
   const founders = [
     {
       name: t('partners.founders.pierre.name'),
       title: t('partners.founders.pierre.title'),
       description: t('partners.founders.pierre.description'),
       image: '/images/Pierre.PNG',
-      specialties: t('partners.founders.pierre.specialties', { returnObjects: true }) as string[],
+      specialties: toArray(t('partners.founders.pierre.specialties', { returnObjects: true })),
     },
     {
       name: t('partners.founders.patrick.name'),
       title: t('partners.founders.patrick.title'),
       description: t('partners.founders.patrick.description'),
       image: '/images/Patrick Ngatcha.PNG',
-      specialties: t('partners.founders.patrick.specialties', { returnObjects: true }) as string[],
+      specialties: toArray(t('partners.founders.patrick.specialties', { returnObjects: true })),
     },
   ];
 
@@ -59,7 +64,7 @@ const Partners: FC = () => {
                     {founder.description}
                   </p>
                   <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                    {founder.specialties.map((specialty, specIndex) => (
+                    {(Array.isArray(founder.specialties) ? founder.specialties : []).map((specialty, specIndex) => (
                       <span
                         key={specIndex}
                         className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full"

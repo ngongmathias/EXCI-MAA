@@ -1,6 +1,6 @@
 import { supabase } from '../lib/supabaseClient';
 
-export type TableName = 'services' | 'events' | 'posts' | 'comments' | 'likes' | 'event_attendees' | 'contact_submissions' | 'consultation_requests';
+export type TableName = 'services' | 'events' | 'posts' | 'comments' | 'likes' | 'event_attendees' | 'contact_submissions' | 'consultation_requests' | 'careers';
 
 export async function fetchAll<T>(table: TableName): Promise<T[]> {
   const { data, error } = await supabase.from(table).select('*').order('created_at', { ascending: false });

@@ -870,5 +870,199 @@
         }
       ]
     }
+  },
+  "partners": {
+    "label": "AMASHUSHANYO GAFE",
+    "title": "Amashushanyo g'Omukibiina gya EXCI-MAA",
+    "subtitle": "Obukulembeze bwaffe bw'omugaso n'obukulembeze bw'ekimenyetso",
+    "note": "Amashushanyo gaffe gereka obukulembeze bwaffe n'okukkirizibwa kwaffe mu bwoba"
+  },
+  "organizationalStructure": {
+    "title": "Enkola y'ekibuga",
+    "subtitle": "Obukulembeze bwaffe n'enkola y'ekibiina",
+    "chairman": {
+      "title": "Omufatanyabikorwa",
+      "subtitle": "Omukulembeze w'Olukiiko lw'Abakulembeze\nOmukulembeze w'okukulaakulanya",
+      "description": "Obukulembeze bwonna n'okuyobola bw'obukulembeze bw'Omukibiina gwa EXCI-MAA."
+    },
+    "adminPartner": {
+      "title": "Omufatanyabikorwa, Obukulembeze bwonna, Eby'ensimbi & Abantu",
+      "description": "Yobola obukulembeze, eby'ensimbi, n'obukulembeze bw'abantu."
+    },
+    "auditPartner": {
+      "title": "Omufatanyabikorwa w'Obukulembeze n'Obunyangamugayo",
+      "description": "Yobola ebikolwa by'obukulembeze n'obunyangamugayo."
+    },
+    "managementPartner": {
+      "title": "Omufatanyabikorwa w'Obukulembeze n'Ekibuga",
+      "description": "Yobola obukulembeze n'okukulaakulanya kw'ekibuga."
+    },
+    "qualityCompliance": {
+      "title": "Omufatanyabikorwa",
+      "subtitle": "Omukulembeze w'Obukulembeze n'Okukkirizibwa",
+      "description": "Yakiriza obukulembeze bw'obukulembeze n'okukkirizibwa mu kibuga kyonna."
+    },
+    "countryDirector": {
+      "title": "Omukulembeze w'eggwanga abacuruzi ba Senior na Junior Auditors",
+      "description": "Yobola ebikolwa by'eggwanga hamwe n'ekibiina ky'abacuruzi n'obukulembeze."
+    },
+    "specialists": {
+      "title": "Abakulembeze n'Abunyangamugayo b'ebweru",
+      "subtitle": "(Abaganga, Abanyamwuga, Abavoka, Abakulembeze mu by'okukola, Abakulu, Abato ... ETC)",
+      "description": "Ekibiina ky'abakulembeze b'obukulembeze bw'obunyangamugayo n'abakulembeze b'ebweru."
+    }
+  },
+  "typicalOfficeOrganigram": {
+    "title": "ORGANIGRAMME Y'OBUKULEMBEZE BW'AMABIRO",
+    "subtitle": "Enkola y'obukulembeze y'obukulembeze y'obukulembeze bw'obukulembeze",
+    "officeManager": {
+      "title": "OMUKULEMBEZE W'AMABIRO / OMUKULEMBEZE",
+      "description": "Obukulembeze bwonna n'okuyobola bw'obukulembeze"
+    },
+    "audit": {
+      "title": "OBUKULEMBEZE",
+      "legal": {
+        "title": "OBUKULEMBEZE",
+        "services": [
+          "Obukulembeze bw'amategeko",
+          "Obukulembeze bw'eby'ensimbi by'ekibuga, eby'ensimbi by'obukulembeze n'obukulembeze",
+          "Okutandukana, okugatta n'ebirala"
+        ]
+      },
+      "contractual": {
+        "title": "OBUKULEMBEZE",
+        "services": [
+          "Obukulembeze bw'amashyira y'obukulembeze",
+          "Eby'ensimbi by'obukulembeze",
+          "Obukulembeze bw'eby'ensimbi by'amafuta",
+          "Obukulembeze bw'obukulembeze"
+        ]
+      }
+    },
+    "advisory": {
+      "title": "OBUNYANGAMUGAYO",
+      "taxSocial": {
+        "title": "OMUSOLO & OBUKULEMBEZE",
+        "services": [
+          "Obunyangamugayo bw'obukulembeze: Obukulembeze, Okuteekawo OHADA, Obukulembeze, Obukulembeze bw'obukulembeze",
+          "Amategeko g'omusolo: Obukulembeze bw'obukulembeze, Obunyangamugayo bw'omusolo & Okukkirizibwa kw'omusolo, Obukulembeze",
+          "Amategeko g'obukulembeze: Okusaba, Okuteekawo obukulembeze, Okuteekawo eby'ensimbi, Amakulu, Obukulembeze"
+        ]
+      },
+      "training": {
+        "title": "EMYENYEREZO",
+        "services": [
+          "Emyenyerezo",
+          "Okulonda ebintu mu bwoba bwaffe bw'omwaka"
+        ]
+      },
+      "finance": {
+        "title": "EBY'ENSIMBI",
+        "services": [
+          "Gahunda y'obukulembeze",
+          "Okusuzuma obukulembeze bw'eby'ensimbi",
+          "Okupima",
+          "Okupima"
+        ]
+      }
+    },
+    "management": {
+      "title": "OBUKULEMBEZE",
+      "accounting": {
+        "title": "OBUFASHA BW'EBY'OKUKOLA N'OMUSOLO",
+        "services": [
+          "Amakulu g'eby'ensimbi g'omwaka oba g'obukulembeze",
+          "Okuteekawo ekibuga ky'ebikoresho",
+          "Porogaramu y'obukulembeze",
+          "Okucunga eby'ensimbi",
+          "Okusuzuma omusolo"
+        ]
+      },
+      "facility": {
+        "title": "OBUKULEMBEZE BW'AMABIRO & MYCODEBAR",
+        "services": [
+          "Obukulembeze bw'amabiro",
+          "Obukulembeze bw'eby'ensimbi bw'eby'ensimbi n'eby'ensimbi n'amashushanyo g'amashushanyo"
+        ]
+      }
+    }
+  },
+  "trainingCategories": {
+    "accounting": {
+      "title": "Ebikoresho / Omusolo / Obukulembeze",
+      "courses": [
+        "Enkola z'okubala n'okukwata amakulu g'ebikoresho",
+        "Enkola z'okukola oba okuteekawo amakulu g'omusolo n'ebirala",
+        "Amabwiriza g'omusolo w'omusolo n'obukulembeze",
+        "Enkola z'okusuzuma n'okukulembeza obukulembeze bw'omusolo",
+        "Ekizibu ky'omusolo w'omusolo mu CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
+        "Tekawo konti yo y'ebikoresho n'obukulembeze bw'eby'ensimbi",
+        "Enkola z'okusanga obukulembeze mu amakulu g'omusolo",
+        "Okukola kw'omusolo n'omusolo ku musolo",
+        "Obukulembeze wakati wa DAS, amakulu n'DSF: Ekizibu kya CNSS",
+        "Okukola obukulembeze bw'okubala"
+      ],
+      "price": "$299",
+      "duration": "nnaku 3"
+    },
+    "audit": {
+      "title": "Obukulembeze bw'amategeko / Okukulembeza obukulembeze",
+      "courses": [
+        "Lwaki okakasa amakulu go?",
+        "Enkola y'okukakasa kw'ebikoresho n'eby'ensimbi",
+        "Kiki ekikola ku amakulu g'omusolo?",
+        "Obukulembeze n'obukulembeze bw'okukakasa kw'omunda mu bikoresho bitono, amabanki n'obukulembeze",
+        "Obukulembeze n'obukulembeze bw'okukulembeza obukulembeze",
+        "Amakulu n'okupima obukulembeze",
+        "Okukakasa kw'omugaso (ekibuga ky'okukakasa)",
+        "Okukakasa kw'omunda – Okuteekawo n'obukulembeze",
+        "Okukakasa kw'amategeko",
+        "Okukulembeza obulungi obukulembeze bw'eby'ensimbi, okusinga obukulembeze",
+        "Okutegeera ebikwetaagisa by'eby'ensimbi okuva ku bwoba n'obukulembeze",
+        "Okukwatagana kw'okwishyura n'abantu n'okukola n'abakiriya",
+        "Okupima sisitemu y'amakulu – ICT IS",
+        "Okutegeera ERP, obukulembeze bwabyo era laba n'ebikoresho byo bikyetaaga",
+        "Okusuzuma ebikwata ku bwoba bw'okukulembeza kw'omunda",
+        "Okusuzuma ebikwata ku bwoba bw'okukakasa kw'omunda",
+        "Okusanga n'okukuma obukulembeze",
+        "Okukulembeza obukulembeze mu bwoba bw'okukakasa"
+      ],
+      "price": "$399",
+      "duration": "nnaku 5"
+    },
+    "advice": {
+      "title": "Amagezi",
+      "courses": [
+        "Obukulembeze bw'okukola amakulu g'ebikoresho n'obukulembeze bw'omusolo",
+        "Okutegeera ebikwata ku bwoba n'ebikwetaagisa by'omusolo w'ensi yonna: Okuteekawo omugatte",
+        "Okupima ebikoresho mu gace ka OHADA",
+        "Okusubira okupima obukulembeze: ekikwetaagisa ku bikoresho byonna",
+        "Obukulembeze bw'okugatta, okutandukana n'okukoma mu gace ka OHADA",
+        "Enkola y'okukola obukulembeze bw'amakulu mu gace ka OHADA",
+        "Okwandika ekikwate ky'ebikoresho",
+        "Enkola y'okukola ebikoresho",
+        "Okugatta – Okupata",
+        "Okukakasa kw'amategeko, obukulembeze n'omusolo",
+        "Okuyamba mu kwandika obukulembeze bw'okukulembeza kw'omunda"
+      ],
+      "price": "$349",
+      "duration": "nnaku 4"
+    },
+    "various": {
+      "title": "Ebintu eby'enjawulo",
+      "courses": [
+        "Enkola y'okukola n'abakiriya ab'obukulembeze",
+        "Sobola obukulembeze bwo era ongere obukulembeze bwo mu bikoresho n'ebirala",
+        "Obukulembeze mu mabiro / Ekibuga",
+        "Enkola y'okufuna obukulembeze bw'eby'ensimbi/Obukulembeze oba CFO n'enkola ez'omugaso",
+        "Okukozesa okubala n'okukulembeza obukulembeze okukuma obukulembeze bw'amabanki",
+        "Amategeko g'ebikoresho OHADA",
+        "Omusolo gw'ebikoresho",
+        "Okukozesa n'okukakasa obukulembeze bw'amabanki",
+        "Okukakasa kw'okukkirizibwa kw'ebikozesebwa by'obukulembeze"
+      ],
+      "price": "$199",
+      "duration": "nnaku 2"
+    }
   }
 }

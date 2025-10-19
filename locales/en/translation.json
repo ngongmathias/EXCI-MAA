@@ -870,5 +870,199 @@
         }
       ]
     }
+  },
+  "partners": {
+    "label": "OUR LOGOS",
+    "title": "EXCI-MAA Group Logos",
+    "subtitle": "Our professional identity and brand representation",
+    "note": "Our logos represent our expertise and commitment to excellence"
+  },
+  "organizationalStructure": {
+    "title": "Organizational Structure",
+    "subtitle": "Our leadership and team structure",
+    "chairman": {
+      "title": "Partner",
+      "subtitle": "Chairman of the Board of Directors\nDirector of development",
+      "description": "Overall leadership and strategic direction of EXCI-MAA Group."
+    },
+    "adminPartner": {
+      "title": "Partner, General Administration, Finance & HR",
+      "description": "Oversees administration, finance, and human resources."
+    },
+    "auditPartner": {
+      "title": "Partner Audit & Consulting",
+      "description": "Leads audit and consulting operations."
+    },
+    "managementPartner": {
+      "title": "Partner Management & Organization",
+      "description": "Handles management and organizational development."
+    },
+    "qualityCompliance": {
+      "title": "Partner",
+      "subtitle": "Quality & Compliance Officer",
+      "description": "Ensures quality standards and compliance across the organization."
+    },
+    "countryDirector": {
+      "title": "Country Director accountants Senior and Junior Auditors",
+      "description": "Manages country operations with accounting and audit teams."
+    },
+    "specialists": {
+      "title": "Specialists & External Consultants",
+      "subtitle": "(Doctors, Engineers, Lawyers, Sociologists, Seniors, Juniors ... ETC)",
+      "description": "Multidisciplinary team of external consultants and specialists."
+    }
+  },
+  "typicalOfficeOrganigram": {
+    "title": "TYPICAL ORGANIGRAM OF AN OFFICE",
+    "subtitle": "Standard organizational structure for professional services",
+    "officeManager": {
+      "title": "OFFICE MANAGER / DIRECTOR",
+      "description": "Overall management and strategic direction"
+    },
+    "audit": {
+      "title": "AUDIT",
+      "legal": {
+        "title": "LEGAL",
+        "services": [
+          "Statutory audits",
+          "Audit of company accounts, combined and consolidated accounts",
+          "Splits, mergers etc"
+        ]
+      },
+      "contractual": {
+        "title": "CONTRACTUAL",
+        "services": [
+          "Audit of NGO projects",
+          "Forecast accounts",
+          "Audit of oil costs",
+          "Internal control"
+        ]
+      }
+    },
+    "advisory": {
+      "title": "ADVISORY",
+      "taxSocial": {
+        "title": "TAX & SOCIAL",
+        "services": [
+          "Legal advice: Constitution, OHADA Update, Audit, Legal Secretariat",
+          "Fiscal Law: Due diligence, Tax Advice & Tax Compliance, Audit",
+          "Social Law: Recruitment, Employment Contract, Paycheck, Declarations, Audit"
+        ]
+      },
+      "training": {
+        "title": "TRAINING",
+        "services": [
+          "Trainings",
+          "Choice of Themes in our annual panel"
+        ]
+      },
+      "finance": {
+        "title": "FINANCE",
+        "services": [
+          "Business plan",
+          "Credit Portfolio Analysis",
+          "Rating",
+          "Evaluations"
+        ]
+      }
+    },
+    "management": {
+      "title": "MANAGEMENT",
+      "accounting": {
+        "title": "ACCOUNTING AND TAX ASSISTANCE",
+        "services": [
+          "Annual or projected financial statements",
+          "Setting up an accounting organization",
+          "Management Software",
+          "Bookkeeping",
+          "Declaration of taxes"
+        ]
+      },
+      "facility": {
+        "title": "FACILITY MANAGEMENT & MYCODEBAR",
+        "services": [
+          "Facilities Management",
+          "Electronic management of stock and assets by bar codes"
+        ]
+      }
+    }
+  },
+  "trainingCategories": {
+    "accounting": {
+      "title": "Accounting / Tax / Management",
+      "courses": [
+        "Methods of accounting and tracking business information",
+        "Methods of working or preparing tax reports and others",
+        "Tax law and management guidelines",
+        "Methods of auditing and managing tax management",
+        "Tax law issues in CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
+        "Set up your business account and financial management",
+        "Methods of finding management in tax reports",
+        "Tax and tax impact on tax",
+        "Management between DAS, information and DSF: CNSS issue",
+        "Working accounting management"
+      ],
+      "price": "$299",
+      "duration": "3 days"
+    },
+    "audit": {
+      "title": "Legal Audit / Management Management",
+      "courses": [
+        "Why audit your information?",
+        "Methods of auditing business and financial",
+        "What is the impact of auditing on tax reports?",
+        "Management and management of internal auditing in small businesses, banks and management",
+        "Management and management of management management",
+        "Information and management management",
+        "Internal auditing (auditing center)",
+        "Internal auditing – Development and management",
+        "Legal auditing",
+        "Properly managing financial management, especially management",
+        "Understanding financial needs from management and management",
+        "Financial management between people and business with customers",
+        "Measuring information system – ICT IS",
+        "Understanding ERP, its management and see if your business needs it",
+        "Auditing internal management management",
+        "Auditing internal auditing management",
+        "Finding and preventing management",
+        "Managing management in auditing management"
+      ],
+      "price": "$399",
+      "duration": "5 days"
+    },
+    "advice": {
+      "title": "Advice",
+      "courses": [
+        "Management of working business information and tax management",
+        "Understanding global tax needs and requirements: Pricing",
+        "Measuring businesses in OHADA area",
+        "Re-evaluating management: needs for all businesses",
+        "Management of merging, separating and stopping in OHADA area",
+        "Methods of working information management in OHADA area",
+        "Writing business management",
+        "Methods of working business",
+        "Merging – Acquisition",
+        "Legal auditing, management and tax",
+        "Helping in writing internal management management"
+      ],
+      "price": "$349",
+      "duration": "4 days"
+    },
+    "various": {
+      "title": "Various",
+      "courses": [
+        "Methods of working with management customers",
+        "Get out of your management and increase your management in business and others",
+        "Management in offices / Center",
+        "Methods of being a Financial Manager/Management or CFO and management",
+        "Using business and management management to prevent banking management",
+        "OHADA business law",
+        "Business tax",
+        "Using and auditing banking management",
+        "Auditing management management management"
+      ],
+      "price": "$199",
+      "duration": "2 days"
+    }
   }
 }
