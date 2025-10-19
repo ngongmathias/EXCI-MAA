@@ -122,7 +122,23 @@ const Footer: FC = () => {
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
+                  pngatcha@excimaa.ca
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-300 text-sm">
                   contactcam@excimaa.ca
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-300 text-sm">
+                  pkemeni@excimaa.ca
                   </p>
                 </div>
               </div>
