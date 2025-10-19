@@ -14,38 +14,72 @@ const PartnersSection: FC = () => {
   const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Partner logos data - replace with actual partner logos when available
+  // Partner logos data using actual logos from public/images/logos
   const partners: PartnerLogo[] = [
+    {
+      id: 'exci-maa-main',
+      name: 'Eximaa Partners ',
+      description: 'Steuerberatungkammer Rhineland-Pfalz',
+      logo: '/Logos/steuerberatungkammer-min.jpg',
+      // website: 'https://www.exci-maa.com'
+    },
+    {
+      id: 'exci-maa-main',
+      name: 'INTEGRA INTERNATIONAL ',
+      description: 'Integra International Asscociation',
+      logo: '/Logos/blank-avatar-white.jpg',
+      // website: 'https://www.exci-maa.com'
+    },
+    {
+      id: 'exci-maa-alt',
+      name: 'ICPAR',
+      description: 'Institute of Certified Public Accountants of Rwanda',
+      logo: '/Logos/ICPAR-Logo.jpg',
+      //website: 'https://www.exci-maa.com'
+    },
+    {
+      id: 'exci-maa-alt',
+      name: 'NEC-CO',
+      description: 'Onec Congo',
+      logo: '/Logos/logo-pres.jpg',
+      //website: 'https://www.exci-maa.com'
+    },
+    {
+      id: 'exci-maa-placeholder',
+      name: 'CPA CANADA',
+      description: 'Comptable Professionnel Agréé Canada',
+      logo: '/Logos/images.png',
+      //website: 'https://www.exci-maa.com'
+    },
+    {
+      id: 'onecca',
+      name: 'ONECCA',
+      description: 'ordre national des experts comptables et comptables agréés du Senegal',
+      logo: '/Logos/images (1).png',
+      //website: 'https://www.exci-maa.com'
+    },
+    {
+      id: 'Conta',
+      name: 'ODEC',
+      description: 'Ordre Des Experts Comptables',
+      logo: '/Logos/Logo_de_l_ordre_des_experts_comptables.jpg',
+      //website: 'https://www.exci-maa.com'
+    },
     {
       id: 'onec',
       name: 'ONEC',
       description: 'Ordre National des Experts Comptables du Gabon',
-      logo: '/images/logos/logo-placeholder.svg'
+      logo: '/Logos/ONEC-LOGO-1.jph.webp',
+      //website: 'https://www.exci-maa.com'
     },
     {
       id: 'onecca',
       name: 'ONECCA',
       description: 'Ordre National des Experts Comptables du Cameroun',
-      logo: '/images/logos/logo-placeholder.svg'
+      logo: '/Logos/download.png',
+      //website: 'https://www.exci-maa.com'
+
     },
-    {
-      id: 'ordrec',
-      name: 'ORDRE DES EXPERTS-COMPTABLES',
-      description: 'Ordre des Experts-Comptables',
-      logo: '/images/logos/logo-placeholder.svg'
-    },
-    {
-      id: 'icpar',
-      name: 'ICPAR',
-      description: 'Institute of Certified Public Accountants of Rwanda',
-      logo: '/images/logos/logo-placeholder.svg'
-    },
-    {
-      id: 'cpa-canada',
-      name: 'CPA Canada',
-      description: 'Chartered Professional Accountants of Canada',
-      logo: '/images/logos/logo-placeholder.svg'
-    }
   ];
 
   // Auto-advance slideshow every 5 seconds
@@ -67,13 +101,13 @@ const PartnersSection: FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-2">
-            {t('aboutPage.partners.label', 'PARTENAIRES EXCI-MAA')}
+            {t('aboutPage.partners.label', 'NOS LOGOS')}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {t('aboutPage.partners.title', 'Nos partenaires')}
+            {t('aboutPage.partners.title', 'EXCI-MAA Group')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t('aboutPage.partners.subtitle', 'Ils nous font confiance')}
+            {t('aboutPage.partners.subtitle', 'Découvrez nos différentes identités visuelles')}
           </p>
         </div>
 
@@ -86,7 +120,7 @@ const PartnersSection: FC = () => {
                 initial={{ opacity: 0, x: 300 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -300 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 0.9, ease: "easeInOut" }}
                 className="p-8 md:p-12"
               >
                 <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
@@ -168,7 +202,7 @@ const PartnersSection: FC = () => {
         {/* Additional Info */}
         <div className="text-center mt-12">
           <p className="text-sm text-gray-500">
-            {t('aboutPage.partners.note', 'Nos partenaires nous accompagnent dans notre mission d\'excellence')}
+            {t('aboutPage.partners.note', '')}
           </p>
         </div>
       </div>
