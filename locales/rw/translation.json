@@ -15,6 +15,10 @@
     "admin": "Umuyobozi",
     "adminPanel": "Ikibaho cy'ubuyobozi"
   },
+    "globalOffices": {
+      "title": "Ibikorwa by’Isi Yose by’Inyamburano",
+      "subtitle": "Shaka ibiro byacu by’isi yose, umenye serivisi tuzirikura mu buri mwanya"
+    },
     "teamMembers": {
       "title": "Itsinda Ryacu ry’Isi Yose",
       "subtitle": "Menya abahanga bakurikirana ubuhanga mu ma ofisi yacu yose",

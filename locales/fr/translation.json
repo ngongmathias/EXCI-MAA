@@ -555,6 +555,10 @@
       }
     }
   },
+  "globalOffices": {
+  "title": "Présence Mondiale Interactive",
+  "subtitle": "Explorez nos bureaux dans le monde entier et découvrez les services que nous offrons dans chaque emplacement"
+},
     "teamMembers": {
       "title": "Notre équipe mondiale",
       "subtitle": "Rencontrez les professionnels qui favorisent l'excellence dans tous nos sites",

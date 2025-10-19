@@ -15,6 +15,10 @@
     "admin": "Omukulembeze",
     "adminPanel": "Ekibaho ky'okukulembeza"
   },
+    "globalOffices": {
+      "title": "Ebyenkonkola By’Ensi Yonna Eby’okuyingiramunda",
+      "subtitle": "Kebera ofiisi zaffe ez’ensi yonna, omanye ebiragiriro bye tukuwa mu kifo kyonka"
+    },
     "teamMembers": {
       "title": "Ttiimu Yaffe ey’Ensikirano Yonna",
       "subtitle": "Wenyigire mu bannamawulire abakulembera okukola obulungi mu bitundu byaffe byonna",

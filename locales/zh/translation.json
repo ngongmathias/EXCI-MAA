@@ -9,7 +9,10 @@
     "careers": "职业",
     "contact": "联系我们"
   },
-  
+  "globalOffices": {
+  "title": "互动式全球业务",
+  "subtitle": "探索我们在全球的办事处，了解我们在每个地点提供的服务"
+},
     "teamMembers": {
       "title": "我们的全球团队",
       "subtitle": "认识在所有地点推动卓越表现的专业人士",

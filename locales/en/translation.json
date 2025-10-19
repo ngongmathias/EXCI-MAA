@@ -493,6 +493,10 @@
     }
   }
 },
+"globalOffices": {
+  "title": "Interactive Global Presence",
+  "subtitle": "Explore our offices around the world and discover the services we offer in each location"
+},
   "training": {
     "title": "Training Programs",
     "subtitle": "We offer Professional development and certification programs",
