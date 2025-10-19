@@ -111,7 +111,8 @@
     "mapTitle": "Interactive Map",
     "mapSubtitle": "Explore our offices around the world",
     "listTitle": "Office Locations",
-    "listSubtitle": "Find the office nearest to you"
+    "selectOffice": "Select an office",
+    "viewAllOffices": "View All Offices"
   },
   "insights": {
     "heroTitle": "Insights & News",

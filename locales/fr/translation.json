@@ -290,7 +290,9 @@
     "mapTitle": "Carte Interactive",
     "mapSubtitle": "Explorez nos bureaux dans le monde entier",
     "listTitle": "Emplacements des Bureaux",
-    "listSubtitle": "Trouvez le bureau le plus proche de vous"
+    "listSubtitle": "Trouvez le bureau le plus proche de vous",
+    "selectOffice": "Sélectionner un bureau",
+    "viewAllOffices": "Voir Tous les Bureaux"
   },
   "insights": {
     "heroTitle": "Perspectives et Actualités",

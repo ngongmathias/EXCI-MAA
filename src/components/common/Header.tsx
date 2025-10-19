@@ -1,7 +1,6 @@
 import { FC, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Users, Briefcase, Mail, BookOpen, Globe } from 'lucide-react';
-import { countries } from '../../data/countries';
 import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import AuthButton from './AuthButton';
@@ -10,20 +9,17 @@ const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useLanguage();
   const location = useLocation();
-  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   const navigation = [
-    // {name: t('nav.home'), href: '/', icon: <Home className="h-4 w-4" />},
     {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
     {name: t('nav.services'), href: '/services', icon: <Briefcase className="h-4 w-4" />},
-    {name: t('nav.careers') ?? 'Careers', href: '/careers', icon: <Briefcase className="h-4 w-4" />},
-    {name: t('nav.insights') ?? 'Insights', href: '/insights', icon: <BookOpen className="h-4 w-4" />},
-    {name: t('nav.globalOffices') ?? 'Global Presence', href: '/global-offices', icon: <Globe className="h-4 w-4" />, children: countries.map(c => ({ name: c.name, href: `/global-offices/${c.slug}` }))},
-    {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />},
+    {name: t('nav.globalOffices'), href: '/global-offices', icon: <Globe className="h-4 w-4" />},
+    {name: t('nav.insights'), href: '/insights', icon: <BookOpen className="h-4 w-4" />},
+    {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />}
   ];
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -42,44 +38,24 @@ const Header: FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
-              <div key={item.name} className="relative group" onMouseLeave={() => setOpenMenu(null)}>
-                <Link
-                  to={item.href}
-                  className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                  }`}
-                  onClick={(e) => {
-                    if (item.children) {
-                      e.preventDefault();
-                      setOpenMenu(openMenu === item.name ? null : item.name);
-                    }
-                  }}
-                >
-                  <span className={`transition-colors duration-200 ${
-                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                      ? 'text-blue-600'
-                      : 'text-gray-500 group-hover:text-blue-600'
-                  }`}>
-                    {item.icon}
-                  </span>
-                  <span>{item.name}</span>
-                </Link>
-                {item.children && (
-                  <div className={`absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black/5 transition ${
-                    openMenu === item.name ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto'
-                  }`}>
-                    <div className="py-2">
-                      {item.children.map((child: any) => (
-                        <Link key={child.href} to={child.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600" onClick={() => setOpenMenu(null)}>
-                          {child.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                <span className={`transition-colors duration-200 ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600'
+                    : 'text-gray-500 group-hover:text-blue-600'
+                }`}>
+                  {item.icon}
+                </span>
+                <span>{item.name}</span>
+              </Link>
             ))}
           </nav>
 
@@ -109,35 +85,25 @@ const Header: FC = () => {
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navigation.map((item) => (
-              <div key={item.name}>
-                <Link
-                  to={item.href}
-                  className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${
-                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <span className={`transition-colors duration-200 ${
-                    location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                      ? 'text-blue-600'
-                      : 'text-gray-500 group-hover:text-blue-600'
-                  }`}>
-                    {item.icon}
-                  </span>
-                  <span>{item.name}</span>
-                </Link>
-                {item.children && (
-                  <div className="pl-10">
-                    {item.children.map((child: any) => (
-                      <Link key={child.href} to={child.href} className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>
-                        {child.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <span className={`transition-colors duration-200 ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600'
+                    : 'text-gray-500 group-hover:text-blue-600'
+                }`}>
+                  {item.icon}
+                </span>
+                <span>{item.name}</span>
+              </Link>
             ))}
           </div>
           <div className="pt-4 border-t border-gray-200">

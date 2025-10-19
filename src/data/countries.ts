@@ -1,18 +1,18 @@
-export type CountryInfo = {
+export interface Country {
   slug: string;
   name: string;
   capitalName: string;
   capital: { lat: number; lng: number };
-  zoom?: number;
-  phones?: string[];
-};
+  zoom: number;
+  phones: string[];
+}
 
-export const countries: CountryInfo[] = [
+export const countries: Country[] = [
   {
     slug: 'cameroon',
     name: 'Cameroon',
     capitalName: 'Yaoundé',
-    capital: { lat: 3.848, lng: 11.5021 },
+    capital: { lat: 3.8480, lng: 11.5021 },
     zoom: 6,
     phones: ['+237 698 835 251'],
   },
@@ -29,7 +29,7 @@ export const countries: CountryInfo[] = [
     name: 'Rwanda',
     capitalName: 'Kigali',
     capital: { lat: -1.9441, lng: 30.0619 },
-    zoom: 7,
+    zoom: 10,
     phones: ['+250 787 779 965'],
   },
   {
@@ -57,16 +57,31 @@ export const countries: CountryInfo[] = [
     phones: ['+1 502 299 247'],
   },
   {
-    slug: 'republic-of-congo',
-    name: 'Republic of Congo',
+    slug: 'democratic-republic-of-congo',
+    name: 'Democratic Republic of Congo',
     capitalName: 'Kinshasa',
-    capital: { lat: -4.4419, lng: 15.2663 },
+    capital: { lat: -4.3276, lng: 15.3136 },
     zoom: 6,
-    phones: ['+1 (416) 624 2510', '+242 06 444 0729'],
+    phones: ['+243 970 284 006'],
+  },
+  {
+    slug: 'gabon',
+    name: 'Gabon',
+    capitalName: 'Libreville',
+    capital: { lat: 0.4162, lng: 9.4673 },
+    zoom: 8,
+    phones: ['+241 11 76 82 23'],
+  },
+  {
+    slug: 'united-arab-emirates',
+    name: 'United Arab Emirates',
+    capitalName: 'Dubai',
+    capital: { lat: 25.2048, lng: 55.2708 },
+    zoom: 10,
+    phones: ['+971 50 123 4567'],
   },
 ];
 
-export const countryBySlug = (slug: string): CountryInfo | undefined =>
-  countries.find(c => c.slug.toLowerCase() === slug.toLowerCase());
-
-
+export const countryBySlug = (slug: string): Country | undefined => {
+  return countries.find(c => c.slug === slug);
+};

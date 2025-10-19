@@ -48,7 +48,7 @@ function App() {
                       <Route path="about" element={<AboutPage />} />
                     <Route path="services" element={<ServicesPage />} />
                     <Route path="consultation" element={<ConsultationPage />} />
-                    <Route path="global-offices" element={<GlobalOfficesPage />} />
+                    <Route path="/global-offices" element={<GlobalOfficesPage />} />
                       <Route path="global-offices/:slug" element={<CountryPage />} />
                       <Route path="insights" element={<InsightsPage />} />
                       <Route path="careers" element={<CareersPage />} />
