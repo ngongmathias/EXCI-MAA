@@ -6,6 +6,8 @@ import HistorySection from '../components/pages/about/HistorySection';
 import MissionSection from '../components/pages/about/MissionSection';
 import StorySection from '../components/pages/about/StorySection';
 import ClientsSection from '../components/pages/about/ClientsSection';
+import OrganizationalStructure from '../components/pages/about/OrganizationalStructure';
+import TypicalOfficeOrganigram from '../components/pages/about/TypicalOfficeOrganigram';
 
 const AboutPage: FC = () => {
   return (
@@ -13,7 +15,9 @@ const AboutPage: FC = () => {
       <AboutHero />
       <MissionSection />
       <StorySection />
+      <OrganizationalStructure />
       <HistorySection />
+      <TypicalOfficeOrganigram />
       <ClientsSection />
       {/* <ValuesSection /> */}
       {/* <TeamSection /> */}
