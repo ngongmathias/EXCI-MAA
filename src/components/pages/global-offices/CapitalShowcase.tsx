@@ -12,8 +12,8 @@ const CapitalShowcase: React.FC = () => {
     'france': '/images/Cities/France-paris.jpg',
     'burundi': '/images/Cities/Burundi.jpeg',
     'united-states': '/images/Cities/USA-washington.jpeg',
-    'democratic-republic-of-congo': 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80', // Kinshasa skyline
-    'gabon': 'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&q=80', // Libreville
+    'democratic-republic-of-congo': 'images/Cities/DRC.jpeg', // Kinshasa skyline
+    'gabon': 'images/Cities/Libreville-1.jpg', // Libreville
     'united-arab-emirates': 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80', // Dubai
   };
 

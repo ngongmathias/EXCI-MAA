@@ -54,26 +54,7 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
     <div className={`relative ${className}`}>
       {/* Dropdown Button */}
       <div className="relative">
-        <button
-          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm hover:bg-gray-50 transition-colors duration-200"
-        >
-          <div className="flex items-center justify-between">
-            <span className="text-gray-700 font-medium">
-              {selectedOffice ? selectedOffice.name : t('globalOffices.selectOffice')}
-            </span>
-            <svg
-              className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${
-                isDropdownOpen ? 'rotate-180' : ''
-              }`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
-        </button>
+       
 
         {/* Dropdown Menu */}
         {isDropdownOpen && (
