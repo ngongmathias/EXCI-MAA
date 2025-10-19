@@ -1,5 +1,6 @@
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 // Define types for the organigram nodes
 type OrgNode = {
@@ -10,113 +11,100 @@ type OrgNode = {
   children?: OrgNode[];
 };
 
-// Data structure for the organigram, matching the image exactly
-const typicalOrganigramData: OrgNode = {
-  id: 'office-manager',
-  title: 'Office Manager / Director',
-  level: 'root',
-  children: [
-    {
-      id: 'audit',
-      title: 'AUDIT',
-      level: 'division',
-      children: [
-        {
-          id: 'audit-legal',
-          title: 'Legal',
-          level: 'subdivision',
-          services: [
-            '- Statutory audits',
-            '- Audit of company accounts, combined and consolidated accounts',
-            '- splits, mergers etc',
-          ],
-        },
-        {
-          id: 'audit-contractual',
-          title: 'Contractual',
-          level: 'subdivision',
-          services: [
-            '- Audit of NGO projects',
-            '- Forecast accounts',
-            '- Audit of oil costs',
-            '- Internal control',
-          ],
-        },
-      ],
-    },
-    {
-      id: 'advisory',
-      title: 'ADVISORY',
-      level: 'division',
-      children: [
-        {
-          id: 'advisory-tax-social',
-          title: 'Tax & Social',
-          level: 'subdivision',
-          services: [
-            'Legal advice::',
-            'Constitution, OHADA Update, Audit, Legal Secretariat ...',
-            'Fiscal Law:',
-            'Due diligence',
-            'Tax Advice & Tax Compliance, Audit',
-            'Social Law:',
-            'Recruitment,',
-            'Employment Contract',
-            'Paycheck',
-            'Declarations, Audit',
-          ],
-        },
-        {
-          id: 'advisory-trainings',
-          title: 'TrainingS',
-          level: 'subdivision',
-          services: [
-            '- Trainings',
-            '- Choice of Themes in our annual panel',
-          ],
-        },
-        {
-          id: 'advisory-finance',
-          title: 'Finance',
-          level: 'subdivision',
-          services: [
-            '- Business plan',
-            '- Credit Portfolio Analysis',
-            '- Rating',
-            '- Evaluations',
-          ],
-        },
-      ],
-    },
-    {
-      id: 'management',
-      title: 'MANAGEMENT',
-      level: 'division',
-      children: [
-        {
-          id: 'management-accounting-tax',
-          title: 'Accounting and Tax assistance',
-          level: 'subdivision',
-          services: [
-            '- Annual or projected financial statements',
-            '- Setting up an accounting organization',
-            '- Management Software',
-            'Bookkeeping',
-            '- Declaration of taxes',
-          ],
-        },
-        {
-          id: 'management-facility-mycodebar',
-          title: 'Facility Management & Mycodebar',
-          level: 'subdivision',
-          services: [
-            '- Facilities Management',
-            '- Electronic management of stock and assets by bar codes',
-          ],
-        },
-      ],
-    },
-  ],
+// Build organigram data from i18n keys
+const buildTypicalOrganigramData = (t: (key: string, options?: any) => any): OrgNode => {
+  const officeManagerTitle = t('typicalOfficeOrganigram.officeManager.title');
+
+  const auditTitle = t('typicalOfficeOrganigram.audit.title');
+  const auditLegalTitle = t('typicalOfficeOrganigram.audit.legal.title');
+  const auditLegalServices: string[] = t('typicalOfficeOrganigram.audit.legal.services', { returnObjects: true });
+  const auditContractualTitle = t('typicalOfficeOrganigram.audit.contractual.title');
+  const auditContractualServices: string[] = t('typicalOfficeOrganigram.audit.contractual.services', { returnObjects: true });
+
+  const advisoryTitle = t('typicalOfficeOrganigram.advisory.title');
+  const taxSocialTitle = t('typicalOfficeOrganigram.advisory.taxSocial.title');
+  const taxSocialServices: string[] = t('typicalOfficeOrganigram.advisory.taxSocial.services', { returnObjects: true });
+  const trainingTitle = t('typicalOfficeOrganigram.advisory.training.title');
+  const trainingServices: string[] = t('typicalOfficeOrganigram.advisory.training.services', { returnObjects: true });
+  const financeTitle = t('typicalOfficeOrganigram.advisory.finance.title');
+  const financeServices: string[] = t('typicalOfficeOrganigram.advisory.finance.services', { returnObjects: true });
+
+  const managementTitle = t('typicalOfficeOrganigram.management.title');
+  const accountingTitle = t('typicalOfficeOrganigram.management.accounting.title');
+  const accountingServices: string[] = t('typicalOfficeOrganigram.management.accounting.services', { returnObjects: true });
+  const facilityTitle = t('typicalOfficeOrganigram.management.facility.title');
+  const facilityServices: string[] = t('typicalOfficeOrganigram.management.facility.services', { returnObjects: true });
+
+  return {
+    id: 'office-manager',
+    title: officeManagerTitle,
+    level: 'root',
+    children: [
+      {
+        id: 'audit',
+        title: auditTitle,
+        level: 'division',
+        children: [
+          {
+            id: 'audit-legal',
+            title: auditLegalTitle,
+            level: 'subdivision',
+            services: auditLegalServices.map((s) => `${s}`),
+          },
+          {
+            id: 'audit-contractual',
+            title: auditContractualTitle,
+            level: 'subdivision',
+            services: auditContractualServices.map((s) => `${s}`),
+          },
+        ],
+      },
+      {
+        id: 'advisory',
+        title: advisoryTitle,
+        level: 'division',
+        children: [
+          {
+            id: 'advisory-tax-social',
+            title: taxSocialTitle,
+            level: 'subdivision',
+            services: taxSocialServices.map((s) => `${s}`),
+          },
+          {
+            id: 'advisory-trainings',
+            title: trainingTitle,
+            level: 'subdivision',
+            services: trainingServices.map((s) => `${s}`),
+          },
+          {
+            id: 'advisory-finance',
+            title: financeTitle,
+            level: 'subdivision',
+            services: financeServices.map((s) => `${s}`),
+          },
+        ],
+      },
+      {
+        id: 'management',
+        title: managementTitle,
+        level: 'division',
+        children: [
+          {
+            id: 'management-accounting-tax',
+            title: accountingTitle,
+            level: 'subdivision',
+            services: accountingServices.map((s) => `${s}`),
+          },
+          {
+            id: 'management-facility-mycodebar',
+            title: facilityTitle,
+            level: 'subdivision',
+            services: facilityServices.map((s) => `${s}`),
+          },
+        ],
+      },
+    ],
+  };
 };
 
 // Helper component for the main blue boxes
@@ -166,6 +154,8 @@ const HorizontalLine: FC = () => (
 );
 
 const TypicalOfficeOrganigram: FC = () => {
+  const { t } = useLanguage();
+  const typicalOrganigramData = useMemo(() => buildTypicalOrganigramData(t), [t]);
   return (
     <section className="bg-gray-50 py-16 pt-24 pb-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -176,7 +166,7 @@ const TypicalOfficeOrganigram: FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            TYPICAL ORGANIGRAM OF AN OFFICE
+            {t('typicalOfficeOrganigram.title')}
           </h2>
           <div className="mt-3 w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
         </motion.div>
