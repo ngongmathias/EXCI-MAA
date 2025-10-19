@@ -1,81 +1,61 @@
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 
-// Create a custom Material-UI theme
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2',
-      light: '#42a5f5',
-      dark: '#1565c0',
+      main: '#2563eb',
+      light: '#60a5fa',
+      dark: '#1e40af',
     },
     secondary: {
-      main: '#dc004e',
-      light: '#ff5983',
-      dark: '#9a0036',
+      main: '#f59e0b',
+      light: '#fbbf24',
+      dark: '#d97706',
     },
     background: {
-      default: '#f5f5f5',
+      default: '#f9fafb',
       paper: '#ffffff',
-    },
-    text: {
-      primary: '#212121',
-      secondary: '#757575',
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: [
+      'Inter',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+    ].join(','),
     h1: {
-      fontWeight: 600,
+      fontSize: '2.5rem',
+      fontWeight: 700,
     },
     h2: {
+      fontSize: '2rem',
       fontWeight: 600,
     },
     h3: {
+      fontSize: '1.75rem',
       fontWeight: 600,
     },
-    h4: {
-      fontWeight: 600,
-    },
-    h5: {
-      fontWeight: 600,
-    },
-    h6: {
-      fontWeight: 600,
-    },
-  },
-  shape: {
-    borderRadius: 8,
   },
   components: {
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-          '&:hover': {
-            boxShadow: '0 4px 16px rgba(0,0,0,0.15)',
-          },
-        },
-      },
-    },
     MuiButton: {
       styleOverrides: {
         root: {
           textTransform: 'none',
-          fontWeight: 500,
+          borderRadius: '8px',
+          padding: '10px 24px',
         },
       },
     },
-    MuiDataGrid: {
+    MuiCard: {
       styleOverrides: {
         root: {
-          border: 'none',
-          '& .MuiDataGrid-cell': {
-            borderBottom: '1px solid #e0e0e0',
-          },
-          '& .MuiDataGrid-columnHeaders': {
-            backgroundColor: '#fafafa',
-            borderBottom: '2px solid #e0e0e0',
-          },
+          borderRadius: '12px',
+          boxShadow: '0 1px 3px 0 rgb(0 0 0 / 0.1)',
         },
       },
     },

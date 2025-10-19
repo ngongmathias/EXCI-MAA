@@ -8,9 +8,7 @@ import {
   ListItemIcon,
   ListItemText,
   Typography,
-  Divider,
   Paper,
-  Chip,
   Avatar,
 } from '@mui/material';
 import {
@@ -21,7 +19,6 @@ import {
   Comment as CommentsIcon,
   ContactMail as ContactIcon,
   SupportAgent as ConsultationIcon,
-  Insights as InsightsIcon,
   Star as StarIcon,
   Security as SecurityIcon,
   Assessment as ReportsIcon,

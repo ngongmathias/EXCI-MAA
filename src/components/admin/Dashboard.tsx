@@ -6,10 +6,8 @@ import {
   Event as EventIcon,
   Article as ArticleIcon,
 } from '@mui/icons-material';
-import { useLanguage } from '../../contexts/LanguageContext';
 
 const Dashboard: React.FC = () => {
-  const { t } = useLanguage();
 
   const stats = [
     {

@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calculator, FileCheck, Briefcase, Layers, Calendar, DollarSign } from 'lucide-react';
+import { Calculator, FileCheck, Briefcase, Layers, Calendar } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import { ROUTES } from '../../../lib/constants/routes';
 import MotionInView from '../../enhanced/MotionInView';
