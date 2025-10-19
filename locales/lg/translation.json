@@ -17,7 +17,14 @@
   },
     "globalOffices": {
       "title": "Ebyenkonkola By’Ensi Yonna Eby’okuyingiramunda",
-      "subtitle": "Kebera ofiisi zaffe ez’ensi yonna, omanye ebiragiriro bye tukuwa mu kifo kyonka"
+      "subtitle": "Kebera ofiisi zaffe ez’ensi yonna, omanye ebiragiriro bye tukuwa mu kifo kyonka",
+      "heroTitle": "Ofiisi z’Ensi Yonna",
+    "heroSubtitle": "Obuwereere bwaffe mu Nsi Yonna n’Obumanyirivu bw’Abakiriya",
+    "mapTitle": "Enkulaata y’Obuwereere",
+    "mapSubtitle": "Laba Ofiisi Zaffe mu Nsi Yonna",
+    "listTitle": "Aho Ofiisi Ziriko",
+    "listSubtitle": "Shakira Ofiisi Eririmu Ku Lubono Lwo"
+      
     },
     "teamMembers": {
       "title": "Ttiimu Yaffe ey’Ensikirano Yonna",

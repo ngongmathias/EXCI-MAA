@@ -556,8 +556,14 @@
     }
   },
   "globalOffices": {
-  "title": "Présence Mondiale Interactive",
-  "subtitle": "Explorez nos bureaux dans le monde entier et découvrez les services que nous offrons dans chaque emplacement"
+  "title": "Présence mondiale interactive",
+  "subtitle": "Explorez nos bureaux à travers le monde et découvrez les services que nous proposons dans chaque lieu",
+  "heroTitle": "Bureaux mondiaux",
+    "heroSubtitle": "Notre présence mondiale et expertise client",
+    "mapTitle": "Carte de présence",
+    "mapSubtitle": "Découvrez nos bureaux dans le monde entier",
+    "listTitle": "Emplacements des bureaux",
+    "listSubtitle": "Trouvez le bureau le plus proche de vous"
 },
     "teamMembers": {
       "title": "Notre équipe mondiale",

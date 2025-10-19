@@ -16,8 +16,15 @@
     "adminPanel": "Ikibaho cy'ubuyobozi"
   },
     "globalOffices": {
-      "title": "Ibikorwa by’Isi Yose by’Inyamburano",
-      "subtitle": "Shaka ibiro byacu by’isi yose, umenye serivisi tuzirikura mu buri mwanya"
+        "title": "Ubwoba Bw’Isi Yose Bw’Inyamburano",
+        "subtitle": "Shaka amabiro yacu mu isi yose umenye serivisi tuzirikura mu buri mwanya",
+        "heroTitle": "Amabiro y'Isi Yose",
+    "heroSubtitle": "Ubwoba Bwacu Bw'Isi Yose n'Ubuhanga Bw'Abakiriya",
+    "mapTitle": "Ikarti y'Ubwoba",
+    "mapSubtitle": "Menya Amabiro Yacu mu Isi Yose",
+    "listTitle": "Aho Amabiro Ari",
+    "listSubtitle": "Shaka Ibiro Birihafi Yawe"
+
     },
     "teamMembers": {
       "title": "Itsinda Ryacu ry’Isi Yose",

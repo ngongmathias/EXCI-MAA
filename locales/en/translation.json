@@ -495,7 +495,13 @@
 },
 "globalOffices": {
   "title": "Interactive Global Presence",
-  "subtitle": "Explore our offices around the world and discover the services we offer in each location"
+  "subtitle": "Explore our offices around the world and discover the services we offer in each location",
+  "heroTitle": "Global Offices",
+    "heroSubtitle": "Our global presence and client expertise",
+    "mapTitle": "Presence Map",
+    "mapSubtitle": "View our offices worldwide",
+    "listTitle": "Where Offices Are",
+    "listSubtitle": "Discover the office nearest to you"
 },
   "training": {
     "title": "Training Programs",

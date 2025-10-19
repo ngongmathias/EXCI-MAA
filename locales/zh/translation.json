@@ -10,8 +10,14 @@
     "contact": "联系我们"
   },
   "globalOffices": {
-  "title": "互动式全球业务",
-  "subtitle": "探索我们在全球的办事处，了解我们在每个地点提供的服务"
+      "title": "互动全球存在",
+      "subtitle": "探索我们全球的办公室，了解我们在每个地点提供的服务",
+  "heroTitle": "全球办公室",
+    "heroSubtitle": "我们的全球存在和客户专长",
+    "mapTitle": "存在地图",
+    "mapSubtitle": "查看我们全球的办公室",
+    "listTitle": "办公室所在地",
+    "listSubtitle": "发现离你最近的办公室"
 },
     "teamMembers": {
       "title": "我们的全球团队",
