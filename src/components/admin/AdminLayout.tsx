@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
-import { Box, AppBar, Toolbar, IconButton, Typography } from '@mui/material';
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { Box, AppBar, Toolbar, IconButton, Typography, Button } from '@mui/material';
+import { Menu as MenuIcon, Logout as LogoutIcon } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
 
 const AdminLayout: React.FC<{ children: (active: string) => React.ReactNode }> = ({ children }) => {
   const [active, setActive] = useState('dashboard');
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
   // const theme = useTheme();
   // const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+
+  const handleLogout = () => {
+    navigate('/');
   };
 
   return (
@@ -60,9 +66,26 @@ const AdminLayout: React.FC<{ children: (active: string) => React.ReactNode }> =
             <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
               Admin Dashboard
             </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            <Typography variant="body2" sx={{ color: 'text.secondary', mr: 2 }}>
               Manage your content and analytics
             </Typography>
+            <Button
+              variant="outlined"
+              startIcon={<LogoutIcon />}
+              onClick={handleLogout}
+              sx={{ 
+                borderRadius: 2,
+                textTransform: 'none',
+                borderColor: 'primary.main',
+                color: 'primary.main',
+                '&:hover': {
+                  borderColor: 'primary.dark',
+                  backgroundColor: 'primary.50',
+                }
+              }}
+            >
+              Logout
+            </Button>
           </Toolbar>
         </AppBar>
 
@@ -73,6 +96,9 @@ const AdminLayout: React.FC<{ children: (active: string) => React.ReactNode }> =
             mt: '64px', // Account for AppBar height
             p: 3,
             minHeight: 'calc(100vh - 64px)',
+            overflow: 'hidden',
+            position: 'relative',
+            zIndex: 0,
           }}
         >
           {children(active)}

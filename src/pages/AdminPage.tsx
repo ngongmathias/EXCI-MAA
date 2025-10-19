@@ -17,10 +17,10 @@ const AdminPage: React.FC = () => {
             <>
               {active === 'dashboard' && <Dashboard />}
               {active === 'careers' && <CareersAdmin />}
-              {active === 'services' && <ContentManager />}
-              {active === 'events' && <ContentManager />}
-              {active === 'posts' && <ContentManager />}
-              {active === 'comments' && <ContentManager />}
+              {active === 'services' && <ContentManager active="services" />}
+              {active === 'events' && <ContentManager active="events" />}
+              {active === 'posts' && <ContentManager active="posts" />}
+              {active === 'comments' && <ContentManager active="comments" />}
               {active === 'contact' && <ContactSubmissions />}
               {active === 'consultation' && <ConsultationRequests />}
               {active === 'insights' && <Analytics />}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   Box,
   Paper,
@@ -67,6 +67,11 @@ const DataTable: React.FC<DataTableProps> = ({
   // Supabase realtime hook (called unconditionally to satisfy React Rules of Hooks)
   const supa = useSupabaseTable<any>(storageKey as any, useSupabase);
 
+  // Check for missing Supabase configuration
+  const hasSupabaseConfig = useMemo(() => {
+    return Boolean((import.meta as any).env?.VITE_SUPABASE_URL) && Boolean((import.meta as any).env?.VITE_SUPABASE_ANON_KEY);
+  }, []);
+
   // Load data on component mount (local mode only)
   useEffect(() => {
     if (useSupabase) return; // handled by hook
@@ -120,17 +125,29 @@ const DataTable: React.FC<DataTableProps> = ({
         return;
       }
 
+      // Process form data for date fields
+      const processedData = { ...formData };
+      fields.forEach(field => {
+        if (field.type === 'date' && processedData[field.key]) {
+          // Convert date string to ISO format for database
+          const date = new Date(processedData[field.key]);
+          if (!isNaN(date.getTime())) {
+            processedData[field.key] = date.toISOString().split('T')[0]; // YYYY-MM-DD format
+          }
+        }
+      });
+
       if (useSupabase) {
         if (editingId) {
-          await updateItemById<any>(storageKey as any, editingId, formData);
+          await updateItemById<any>(storageKey as any, editingId, processedData);
         } else {
-          await insertItem<any>(storageKey as any, formData);
+          await insertItem<any>(storageKey as any, processedData);
         }
         await supa?.refresh();
       } else {
         const newItem = {
           id: editingId || crypto.randomUUID(),
-          ...formData,
+          ...processedData,
           created_at: editingId ? data.find(item => item.id === editingId)?.created_at : new Date().toISOString(),
           updated_at: new Date().toISOString(),
         };
@@ -157,7 +174,16 @@ const DataTable: React.FC<DataTableProps> = ({
     if (item) {
       const formData: Record<string, string> = {};
       fields.forEach(field => {
-        formData[field.key] = item[field.key] || '';
+        let value = item[field.key] || '';
+        // Handle date fields for form display
+        if (field.type === 'date' && value) {
+          // Convert date to YYYY-MM-DD format for date input
+          const date = new Date(value);
+          if (!isNaN(date.getTime())) {
+            value = date.toISOString().split('T')[0];
+          }
+        }
+        formData[field.key] = value;
       });
       setFormData(formData);
       setEditingId(id);
@@ -272,8 +298,39 @@ const DataTable: React.FC<DataTableProps> = ({
         </Alert>
       )}
 
+      {/* Supabase Configuration Error */}
+      {useSupabase && !hasSupabaseConfig && (
+        <Alert severity="warning" sx={{ mb: 2 }}>
+          <Typography variant="h6" sx={{ mb: 1 }}>
+            Supabase Configuration Missing
+          </Typography>
+          <Typography variant="body2" sx={{ mb: 2 }}>
+            To use Supabase features, please configure your environment variables:
+          </Typography>
+          <Box component="pre" sx={{ 
+            bgcolor: 'grey.100', 
+            p: 2, 
+            borderRadius: 1, 
+            fontSize: '0.875rem',
+            overflow: 'auto'
+          }}>
+            {`# Create a .env file in your project root with:
+VITE_SUPABASE_URL=https://your-project-id.supabase.co
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key-here
+
+# Get these values from: https://supabase.com/dashboard`}
+          </Box>
+        </Alert>
+      )}
+
       {/* Data Table */}
-      <Paper sx={{ height: 600, width: '100%' }}>
+      <Paper sx={{ 
+        height: 600, 
+        width: '100%', 
+        overflow: 'hidden',
+        position: 'relative',
+        zIndex: 1
+      }}>
         <DataGrid
           rows={useSupabase ? (supa?.rows || []) : data}
           columns={columns}
@@ -305,7 +362,15 @@ const DataTable: React.FC<DataTableProps> = ({
               borderBottom: '2px solid',
               borderColor: 'divider',
             },
-            height: 700,
+            '& .MuiDataGrid-footerContainer': {
+              position: 'relative',
+              zIndex: 2,
+              backgroundColor: 'white',
+              borderTop: '1px solid',
+              borderColor: 'divider',
+            },
+            height: 600,
+            maxHeight: 600,
           }}
         />
       </Paper>

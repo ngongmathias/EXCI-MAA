@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-import { Box, Typography, Paper, Grid, Card, CardContent } from '@mui/material';
-import { useLanguage } from '../../contexts/LanguageContext';
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 import DataTable from './DataTable';
 
-const ContentManager: React.FC = () => {
-  const { t } = useLanguage();
-  const [active, setActive] = useState<'services' | 'events' | 'posts' | 'comments'>('services');
+type ContentType = 'services' | 'events' | 'posts' | 'comments';
 
+interface ContentManagerProps {
+  active: ContentType;
+}
+
+const ContentManager: React.FC<ContentManagerProps> = ({ active }) => {
   const servicesFields = [
     { key: 'name', label: 'Service Name', required: true },
     { key: 'description', label: 'Description', type: 'textarea' as const, required: true },
@@ -29,7 +31,7 @@ const ContentManager: React.FC = () => {
   ];
 
   const commentsFields = [
-    { key: 'post_id', label: 'Post ID', required: true },
+    { key: 'post_id', label: 'Post ID (UUID)', required: true },
     { key: 'name', label: 'Commenter Name', required: true },
     { key: 'message', label: 'Message', type: 'textarea' as const, required: true },
   ];
@@ -69,58 +71,15 @@ const ContentManager: React.FC = () => {
       <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 4, color: 'text.primary' }}>
         Content Management
       </Typography>
-      
-      <Grid container spacing={3}>
-        {/* Content Type Selector */}
-        <Grid item xs={12} md={3}>
-          <Paper sx={{ p: 2, height: 'fit-content' }}>
-            <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
-              Content Types
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              {[
-                { key: 'services', label: 'Services', count: 0 },
-                { key: 'events', label: 'Events', count: 0 },
-                { key: 'posts', label: 'Blog Posts', count: 0 },
-                { key: 'comments', label: 'Comments', count: 0 },
-              ].map((item) => (
-                <Card
-                  key={item.key}
-                  sx={{
-                    cursor: 'pointer',
-                    border: active === item.key ? '2px solid' : '1px solid',
-                    borderColor: active === item.key ? 'primary.main' : 'divider',
-                    bgcolor: active === item.key ? 'primary.50' : 'background.paper',
-                    '&:hover': {
-                      bgcolor: active === item.key ? 'primary.100' : 'action.hover',
-                    },
-                  }}
-                  onClick={() => setActive(item.key as any)}
-                >
-                  <CardContent sx={{ p: 2, '&:last-child': { pb: 2 } }}>
-                    <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
-                      {item.label}
-                    </Typography>
-                    <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-                      {item.count} items
-                    </Typography>
-                  </CardContent>
-                </Card>
-              ))}
-            </Box>
-          </Paper>
-        </Grid>
-
-        {/* Data Table */}
-        <Grid item xs={12} md={9}>
-          <DataTable
-            title={getTitleForActive()}
-            fields={getFieldsForActive()}
-            storageKey={getStorageKeyForActive()}
-            useSupabase
-          />
-        </Grid>
-      </Grid>
+      {/* Data Table */}
+      <Box>
+        <DataTable
+          title={getTitleForActive()}
+          fields={getFieldsForActive()}
+          storageKey={getStorageKeyForActive()}
+          useSupabase
+        />
+      </Box>
     </Box>
   );
 };

@@ -1,6 +1,24 @@
 -- WARNING: This schema is for context only and is not meant to be run.
 -- Table order and constraints may not be valid for execution.
 
+CREATE TABLE public.careers (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  title text NOT NULL,
+  department text NOT NULL,
+  location text NOT NULL,
+  employment_type text,
+  salary_range text,
+  application_url text,
+  apply_email text,
+  posting_date date DEFAULT now(),
+  closing_date date,
+  description text NOT NULL,
+  requirements text,
+  responsibilities text,
+  status text DEFAULT 'open'::text,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT careers_pkey PRIMARY KEY (id)
+);
 CREATE TABLE public.comments (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   post_id uuid,
