@@ -18,7 +18,6 @@ const Header: FC = () => {
     {name: t('nav.services'), href: '/services', icon: <Briefcase className="h-4 w-4" />},
     {name: t('nav.insights') ?? 'Insights', href: '/insights', icon: <BookOpen className="h-4 w-4" />},
     {name: t('nav.globalOffices') ?? 'Global Presence', href: '/global-offices', icon: <Globe className="h-4 w-4" />, children: countries.map(c => ({ name: c.name, href: `/global-offices/${c.slug}` }))},
-    {name: t('nav.training'), href: '/training', icon: <BookOpen className="h-4 w-4" />},
     {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />},
   ];
 

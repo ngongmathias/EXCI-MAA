@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { motion } from 'framer-motion';
 
 // Define types for the organigram nodes
@@ -167,7 +167,7 @@ const HorizontalLine: FC = () => (
 
 const TypicalOfficeOrganigram: FC = () => {
   return (
-    <section className="bg-gray-50 py-16 pt-24">
+    <section className="bg-gray-50 py-16 pt-24 pb-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12"
@@ -188,31 +188,23 @@ const TypicalOfficeOrganigram: FC = () => {
         </div>
 
         {/* Second Level: Divisions (AUDIT, ADVISORY, MANAGEMENT) */}
-        <div className="relative flex justify-center w-full">
+        <div className="relative flex justify-center w-full mb-24">
           <HorizontalLine /> {/* Horizontal line connecting divisions */}
           <div className="absolute top-0 flex justify-around w-full max-w-6xl px-4">
-            {typicalOrganigramData.children?.map((division, index) => (
+            {typicalOrganigramData.children?.map((division) => (
               <div key={division.id} className="flex flex-col items-center mx-4">
                 <VerticalLine height="h-4" /> {/* Short vertical line up to horizontal */}
                 <OrgBox node={division} />
                 <VerticalLine /> {/* Vertical line down to subdivisions */}
 
                 {/* Third Level: Sub-divisions and Services */}
-                <div className="relative flex justify-center w-full mt-4">
-                  {division.children && division.children.length > 1 && (
-                    <HorizontalLine /> // Horizontal line for multiple subdivisions
-                  )}
-                  <div className={`absolute top-0 flex ${division.children && division.children.length > 1 ? 'justify-around' : 'justify-center'} w-full px-2`}>
-                    {division.children?.map((subdivision, subIndex) => (
-                      <div key={subdivision.id} className="flex flex-col items-center mx-2">
-                        {division.children && division.children.length > 1 && (
-                          <VerticalLine height="h-4" /> // Short vertical line up to horizontal
-                        )}
-                        <OrgBox node={subdivision} />
-                        {subdivision.services && <ServiceBox services={subdivision.services} />}
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex flex-col items-center w-full mt-4 space-y-4">
+                  {division.children?.map((subdivision) => (
+                    <div key={subdivision.id} className="flex flex-col items-center">
+                      <OrgBox node={subdivision} />
+                      {subdivision.services && <ServiceBox services={subdivision.services} />}
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

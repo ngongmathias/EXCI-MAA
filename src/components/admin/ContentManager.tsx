@@ -1,101 +1,133 @@
 import React, { useState } from 'react';
+import { Box, Typography, Paper, Grid, Card, CardContent } from '@mui/material';
 import { useLanguage } from '../../contexts/LanguageContext';
+import DataTable from './DataTable';
 
 const ContentManager: React.FC = () => {
   const { t } = useLanguage();
   const [active, setActive] = useState<'services' | 'events' | 'posts' | 'comments'>('services');
 
-  return (
-    <section className="py-10 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <aside className="md:col-span-1">
-            <div className="sticky top-20 space-y-2">
-              <button onClick={() => setActive('services')} className={`w-full text-left px-3 py-2 rounded-md border ${active==='services'?'bg-blue-600 text-white border-blue-600':'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}`}>Services</button>
-              <button onClick={() => setActive('events')} className={`w-full text-left px-3 py-2 rounded-md border ${active==='events'?'bg-blue-600 text-white border-blue-600':'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}`}>Events</button>
-              <button onClick={() => setActive('posts')} className={`w-full text-left px-3 py-2 rounded-md border ${active==='posts'?'bg-blue-600 text-white border-blue-600':'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}`}>Blog Posts</button>
-              <button onClick={() => setActive('comments')} className={`w-full text-left px-3 py-2 rounded-md border ${active==='comments'?'bg-blue-600 text-white border-blue-600':'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}`}>Comments</button>
-            </div>
-          </aside>
-          <main className="md:col-span-3">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t('admin.contentTitle')}</h2>
-            {active === 'services' && <CrudStub title="Services" fields={["name","description","price"]} storageKey="admin_services" />}
-            {active === 'events' && <CrudStub title="Events" fields={["title","description","location","start","end"]} storageKey="admin_events" />}
-            {active === 'posts' && <CrudStub title="Blog Posts" fields={["title","image","content"]} storageKey="admin_posts" />}
-            {active === 'comments' && <CrudStub title="Comments" fields={["postId","name","message"]} storageKey="admin_comments" />}
-          </main>
-        </div>
-      </div>
-    </section>
-  );
-};
+  const servicesFields = [
+    { key: 'name', label: 'Service Name', required: true },
+    { key: 'description', label: 'Description', type: 'textarea' as const, required: true },
+    { key: 'price', label: 'Price', type: 'number' as const },
+    { key: 'category', label: 'Category' },
+    { key: 'duration', label: 'Duration (hours)' },
+  ];
 
-type CrudStubProps = { title: string; fields: string[]; storageKey: string };
+  const eventsFields = [
+    { key: 'title', label: 'Event Title', required: true },
+    { key: 'description', label: 'Description', type: 'textarea' as const, required: true },
+    { key: 'location', label: 'Location', required: true },
+    { key: 'start', label: 'Start Date', type: 'date' as const, required: true },
+    { key: 'end', label: 'End Date', type: 'date' as const, required: true },
+    { key: 'capacity', label: 'Capacity', type: 'number' as const },
+  ];
 
-const CrudStub: React.FC<CrudStubProps> = ({ title, fields, storageKey }) => {
-  const [items, setItems] = useState<any[]>(() => {
-    try { const raw = localStorage.getItem(storageKey); return raw ? JSON.parse(raw) : []; } catch { return []; }
-  });
-  const [form, setForm] = useState<Record<string, string>>({});
-  const [editingIndex, setEditingIndex] = useState<number | null>(null);
+  const postsFields = [
+    { key: 'title', label: 'Post Title', required: true },
+    { key: 'content', label: 'Content', type: 'textarea' as const, required: true },
+    { key: 'author', label: 'Author', required: true },
+    { key: 'category', label: 'Category' },
+    { key: 'tags', label: 'Tags' },
+    { key: 'featured', label: 'Featured' },
+  ];
 
-  function persist(next: any[]) {
-    setItems(next);
-    localStorage.setItem(storageKey, JSON.stringify(next));
-  }
+  const commentsFields = [
+    { key: 'postId', label: 'Post ID', required: true },
+    { key: 'name', label: 'Commenter Name', required: true },
+    { key: 'email', label: 'Email', type: 'email' as const, required: true },
+    { key: 'message', label: 'Message', type: 'textarea' as const, required: true },
+    { key: 'status', label: 'Status' },
+  ];
 
-  function submit() {
-    const payload = fields.reduce((acc, f) => ({ ...acc, [f]: form[f] || '' }), {} as Record<string, string>);
-    if (editingIndex !== null) {
-      const next = items.slice();
-      next[editingIndex] = { ...next[editingIndex], ...payload };
-      persist(next);
-      setEditingIndex(null);
-    } else {
-      persist([{ id: crypto.randomUUID(), ...payload }, ...items]);
+  const getFieldsForActive = () => {
+    switch (active) {
+      case 'services': return servicesFields;
+      case 'events': return eventsFields;
+      case 'posts': return postsFields;
+      case 'comments': return commentsFields;
+      default: return servicesFields;
     }
-    setForm({});
-  }
+  };
 
-  function edit(idx: number) {
-    setEditingIndex(idx);
-    const item = items[idx];
-    const prefill: Record<string, string> = {};
-    fields.forEach(f => prefill[f] = item[f] || '');
-    setForm(prefill);
-  }
+  const getTitleForActive = () => {
+    switch (active) {
+      case 'services': return 'Services';
+      case 'events': return 'Events';
+      case 'posts': return 'Blog Posts';
+      case 'comments': return 'Comments';
+      default: return 'Services';
+    }
+  };
 
-  function remove(idx: number) {
-    const next = items.filter((_, i) => i !== idx);
-    persist(next);
-  }
+  const getStorageKeyForActive = () => {
+    switch (active) {
+      case 'services': return 'admin_services';
+      case 'events': return 'admin_events';
+      case 'posts': return 'admin_posts';
+      case 'comments': return 'admin_comments';
+      default: return 'admin_services';
+    }
+  };
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-      <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-      <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        {fields.map(f => (
-          <input key={f} placeholder={f} value={form[f] || ''} onChange={e => setForm(s => ({ ...s, [f]: e.target.value }))} className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
-        ))}
-      </div>
-      <div className="mt-3 flex items-center gap-2">
-        <button onClick={submit} className="px-3 py-1.5 text-sm rounded-md bg-blue-600 text-white hover:bg-blue-700">{editingIndex !== null ? 'Update' : 'Create'}</button>
-        {editingIndex !== null && (
-          <button onClick={() => { setEditingIndex(null); setForm({}); }} className="px-3 py-1.5 text-sm rounded-md bg-white border border-gray-200 text-gray-700 hover:bg-gray-50">Cancel</button>
-        )}
-      </div>
-      <ul className="mt-4 divide-y divide-gray-200">
-        {items.map((item, idx) => (
-          <li key={item.id || idx} className="py-3 flex items-start justify-between gap-4">
-            <div className="text-sm text-gray-700 break-words">{JSON.stringify(item)}</div>
-            <div className="shrink-0 flex items-center gap-2">
-              <button onClick={() => edit(idx)} className="px-2 py-1 text-sm rounded-md bg-white border border-gray-200 text-gray-700 hover:bg-gray-50">Edit</button>
-              <button onClick={() => remove(idx)} className="px-2 py-1 text-sm rounded-md bg-red-600 text-white hover:bg-red-700">Delete</button>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Box>
+      <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 4, color: 'text.primary' }}>
+        Content Management
+      </Typography>
+      
+      <Grid container spacing={3}>
+        {/* Content Type Selector */}
+        <Grid item xs={12} md={3}>
+          <Paper sx={{ p: 2, height: 'fit-content' }}>
+            <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
+              Content Types
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+              {[
+                { key: 'services', label: 'Services', count: 0 },
+                { key: 'events', label: 'Events', count: 0 },
+                { key: 'posts', label: 'Blog Posts', count: 0 },
+                { key: 'comments', label: 'Comments', count: 0 },
+              ].map((item) => (
+                <Card
+                  key={item.key}
+                  sx={{
+                    cursor: 'pointer',
+                    border: active === item.key ? '2px solid' : '1px solid',
+                    borderColor: active === item.key ? 'primary.main' : 'divider',
+                    bgcolor: active === item.key ? 'primary.50' : 'background.paper',
+                    '&:hover': {
+                      bgcolor: active === item.key ? 'primary.100' : 'action.hover',
+                    },
+                  }}
+                  onClick={() => setActive(item.key as any)}
+                >
+                  <CardContent sx={{ p: 2, '&:last-child': { pb: 2 } }}>
+                    <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+                      {item.label}
+                    </Typography>
+                    <Typography variant="caption" sx={{ color: 'text.secondary' }}>
+                      {item.count} items
+                    </Typography>
+                  </CardContent>
+                </Card>
+              ))}
+            </Box>
+          </Paper>
+        </Grid>
+
+        {/* Data Table */}
+        <Grid item xs={12} md={9}>
+          <DataTable
+            title={getTitleForActive()}
+            fields={getFieldsForActive()}
+            storageKey={getStorageKeyForActive()}
+          />
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 

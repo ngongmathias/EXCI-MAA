@@ -18,7 +18,7 @@ const AboutPage: FC = () => {
       <OrganizationalStructure />
       <HistorySection />
       <TypicalOfficeOrganigram />
-      <ClientsSection />
+      <ClientsSection/>
       {/* <ValuesSection /> */}
       {/* <TeamSection /> */}
     </div>
