@@ -45,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) =>
     { key: 'comments', label: 'Comments', icon: <CommentsIcon /> },
     { key: 'contact', label: 'Contact Submissions', icon: <ContactIcon /> },
     { key: 'consultation', label: 'Consultation Requests', icon: <ConsultationIcon /> },
-    { key: 'insights', label: 'Insights', icon: <InsightsIcon /> },
+    // { key: 'insights', label: 'Insights', icon: <InsightsIcon /> },
   ];
 
   const whatsNewItems = [
@@ -73,16 +73,6 @@ const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) =>
             </Typography>
           </Box>
         </Box>
-        <Chip 
-          label="Free" 
-          size="small" 
-          sx={{ 
-            mt: 1, 
-            bgcolor: 'grey.100', 
-            color: 'text.secondary',
-            fontSize: '0.75rem'
-          }} 
-        />
       </Box>
 
       {/* Getting Started Section */}

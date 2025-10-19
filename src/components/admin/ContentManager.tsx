@@ -11,34 +11,27 @@ const ContentManager: React.FC = () => {
     { key: 'name', label: 'Service Name', required: true },
     { key: 'description', label: 'Description', type: 'textarea' as const, required: true },
     { key: 'price', label: 'Price', type: 'number' as const },
-    { key: 'category', label: 'Category' },
-    { key: 'duration', label: 'Duration (hours)' },
   ];
 
   const eventsFields = [
     { key: 'title', label: 'Event Title', required: true },
     { key: 'description', label: 'Description', type: 'textarea' as const, required: true },
     { key: 'location', label: 'Location', required: true },
-    { key: 'start', label: 'Start Date', type: 'date' as const, required: true },
-    { key: 'end', label: 'End Date', type: 'date' as const, required: true },
-    { key: 'capacity', label: 'Capacity', type: 'number' as const },
+    { key: 'start_at', label: 'Start Date', type: 'date' as const, required: true },
+    { key: 'end_at', label: 'End Date', type: 'date' as const, required: true },
+    { key: 'image_url', label: 'Image URL' },
   ];
 
   const postsFields = [
     { key: 'title', label: 'Post Title', required: true },
     { key: 'content', label: 'Content', type: 'textarea' as const, required: true },
-    { key: 'author', label: 'Author', required: true },
-    { key: 'category', label: 'Category' },
-    { key: 'tags', label: 'Tags' },
-    { key: 'featured', label: 'Featured' },
+    { key: 'image_url', label: 'Image URL' },
   ];
 
   const commentsFields = [
-    { key: 'postId', label: 'Post ID', required: true },
+    { key: 'post_id', label: 'Post ID', required: true },
     { key: 'name', label: 'Commenter Name', required: true },
-    { key: 'email', label: 'Email', type: 'email' as const, required: true },
     { key: 'message', label: 'Message', type: 'textarea' as const, required: true },
-    { key: 'status', label: 'Status' },
   ];
 
   const getFieldsForActive = () => {
@@ -63,11 +56,11 @@ const ContentManager: React.FC = () => {
 
   const getStorageKeyForActive = () => {
     switch (active) {
-      case 'services': return 'admin_services';
-      case 'events': return 'admin_events';
-      case 'posts': return 'admin_posts';
-      case 'comments': return 'admin_comments';
-      default: return 'admin_services';
+      case 'services': return 'services';
+      case 'events': return 'events';
+      case 'posts': return 'posts';
+      case 'comments': return 'comments';
+      default: return 'services';
     }
   };
 
@@ -124,6 +117,7 @@ const ContentManager: React.FC = () => {
             title={getTitleForActive()}
             fields={getFieldsForActive()}
             storageKey={getStorageKeyForActive()}
+            useSupabase
           />
         </Grid>
       </Grid>

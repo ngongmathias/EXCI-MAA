@@ -38,7 +38,8 @@ interface DataTableProps {
   useSupabase?: boolean;
 }
 
-import { fetchAll, insertItem, updateItemById, deleteById } from '../../services/supabaseCrud';
+import { insertItem, updateItemById, deleteById } from '../../services/supabaseCrud';
+import { useSupabaseTable } from '../../hooks/useSupabaseTable';
 
 const DataTable: React.FC<DataTableProps> = ({ 
   title, 
@@ -54,25 +55,37 @@ const DataTable: React.FC<DataTableProps> = ({
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
 
-  // Load data on component mount
+  const formatError = (err: unknown): string => {
+    if (err instanceof Error) return err.message;
+    try {
+      return JSON.stringify(err);
+    } catch (_) {
+      return String(err);
+    }
+  };
+
+  // Supabase realtime hook (called unconditionally to satisfy React Rules of Hooks)
+  const supa = useSupabaseTable<any>(storageKey as any, useSupabase);
+
+  // Load data on component mount (local mode only)
   useEffect(() => {
+    if (useSupabase) return; // handled by hook
     (async () => {
+      setLoading(true);
+      setError(null);
       try {
-        if (useSupabase) {
-          const rows = await fetchAll<any>(storageKey as any);
-          setData(rows);
-        } else {
-          const stored = localStorage.getItem(storageKey);
-          if (stored) {
-            const parsedData = JSON.parse(stored);
-            setData(parsedData);
-          } else if (initialData.length) {
-            setData(initialData);
-          }
+        const stored = localStorage.getItem(storageKey);
+        if (stored) {
+          const parsedData = JSON.parse(stored);
+          setData(parsedData);
+        } else if (initialData.length) {
+          setData(initialData);
         }
       } catch (err) {
         console.error('Error loading data:', err);
-        setError('Failed to load data');
+        setError(`Failed to load data: ${formatError(err)}`);
+      } finally {
+        setLoading(false);
       }
     })();
   }, [storageKey, useSupabase, initialData]);
@@ -109,14 +122,11 @@ const DataTable: React.FC<DataTableProps> = ({
 
       if (useSupabase) {
         if (editingId) {
-          const updated = await updateItemById<any>(storageKey as any, editingId, formData);
-          const newData = data.map(d => (d.id === editingId ? updated : d));
-          saveData(newData);
+          await updateItemById<any>(storageKey as any, editingId, formData);
         } else {
-          const created = await insertItem<any>(storageKey as any, formData);
-          const newData = [created, ...data];
-          saveData(newData);
+          await insertItem<any>(storageKey as any, formData);
         }
+        await supa?.refresh();
       } else {
         const newItem = {
           id: editingId || crypto.randomUUID(),
@@ -134,7 +144,7 @@ const DataTable: React.FC<DataTableProps> = ({
       }
       handleClose();
     } catch (err) {
-      setError('Failed to save data');
+      setError(`Failed to save data: ${formatError(err)}`);
     } finally {
       setLoading(false);
     }
@@ -142,7 +152,8 @@ const DataTable: React.FC<DataTableProps> = ({
 
   // Handle edit
   const handleEdit = (id: string) => {
-    const item = data.find(item => item.id === id);
+    const sourceRows = useSupabase ? (supa?.rows || []) : data;
+    const item = sourceRows.find((item: any) => item.id === id);
     if (item) {
       const formData: Record<string, string> = {};
       fields.forEach(field => {
@@ -160,11 +171,13 @@ const DataTable: React.FC<DataTableProps> = ({
     try {
       if (useSupabase) {
         await deleteById(storageKey as any, id);
+        await supa?.refresh();
+      } else {
+        const newData = data.filter(item => item.id !== id);
+        saveData(newData);
       }
-      const newData = data.filter(item => item.id !== id);
-      saveData(newData);
     } catch (err) {
-      setError('Failed to delete');
+      setError(`Failed to delete: ${formatError(err)}`);
     }
   };
 
@@ -253,16 +266,16 @@ const DataTable: React.FC<DataTableProps> = ({
       </Box>
 
       {/* Error Alert */}
-      {error && (
+      {(error || supa?.error) && (
         <Alert severity="error" sx={{ mb: 2 }} onClose={() => setError(null)}>
-          {error}
+          {error || supa?.error}
         </Alert>
       )}
 
       {/* Data Table */}
       <Paper sx={{ height: 600, width: '100%' }}>
         <DataGrid
-          rows={data}
+          rows={useSupabase ? (supa?.rows || []) : data}
           columns={columns}
           pageSizeOptions={[5, 10, 25, 50]}
           initialState={{
@@ -279,6 +292,7 @@ const DataTable: React.FC<DataTableProps> = ({
               quickFilterProps: { debounceMs: 500 },
             },
           }}
+          loading={loading || Boolean(supa?.loading)}
           disableRowSelectionOnClick
           sx={{
             border: 'none',
@@ -291,6 +305,7 @@ const DataTable: React.FC<DataTableProps> = ({
               borderBottom: '2px solid',
               borderColor: 'divider',
             },
+            height: 700,
           }}
         />
       </Paper>
