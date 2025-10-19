@@ -12,11 +12,13 @@ export const createSupabaseClient = (getToken: () => Promise<string | null>) => 
       autoRefreshToken: false,
     },
     global: {
-      headers: {
-        // Add Clerk token to all requests
-        get Authorization() {
-          return getToken().then(token => token ? `Bearer ${token}` : '');
-        },
+      fetch: async (url, options = {}) => {
+        const token = await getToken();
+        const headers = new Headers(options.headers);
+        if (token) {
+          headers.set('Authorization', `Bearer ${token}`);
+        }
+        return fetch(url, { ...options, headers });
       },
     },
   });

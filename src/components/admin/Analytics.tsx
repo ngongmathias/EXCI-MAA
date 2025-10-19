@@ -1,15 +1,14 @@
 import React from 'react';
-import { Box, Typography, Grid, Card, CardContent, Paper, LinearProgress } from '@mui/material';
+import { Box, Typography, Card, CardContent, Paper, LinearProgress } from '@mui/material';
+import { Grid } from '@mui/material';
 import {
   TrendingUp as TrendingUpIcon,
   TrendingDown as TrendingDownIcon,
   People as PeopleIcon,
   Visibility as VisibilityIcon,
 } from '@mui/icons-material';
-import { useLanguage } from '../../contexts/LanguageContext';
 
 const Analytics: React.FC = () => {
-  const { t } = useLanguage();
 
   const metrics = [
     {
@@ -64,8 +63,8 @@ const Analytics: React.FC = () => {
 
       {/* Metrics Cards */}
       <Grid container spacing={3} sx={{ mb: 4 }}>
-        {metrics.map((metric, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
+        {metrics.map((metric) => (
+          <Grid >
             <Card
               sx={{
                 height: '100%',
@@ -117,7 +116,7 @@ const Analytics: React.FC = () => {
       {/* Charts and Data */}
       <Grid container spacing={3}>
         {/* Top Pages */}
-        <Grid item xs={12} md={6}>
+        <Grid >
           <Paper sx={{ p: 3, borderRadius: 3, height: '100%' }}>
             <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 3 }}>
               Top Pages
@@ -153,7 +152,7 @@ const Analytics: React.FC = () => {
         </Grid>
 
         {/* Traffic Sources */}
-        <Grid item xs={12} md={6}>
+        <Grid>
           <Paper sx={{ p: 3, borderRadius: 3, height: '100%' }}>
             <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 3 }}>
               Traffic Sources
