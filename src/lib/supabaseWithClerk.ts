@@ -12,7 +12,7 @@ export const createSupabaseClient = (getToken: () => Promise<string | null>) => 
       autoRefreshToken: false,
     },
     global: {
-      fetch: async (url, options = {}) => {
+      fetch: async (url, options: RequestInit = {}) => {
         const token = await getToken();
         const headers = new Headers(options.headers);
         if (token) {

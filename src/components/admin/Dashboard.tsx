@@ -1,166 +1,110 @@
 import React from 'react';
-import { Box, Typography, Grid, Card, CardContent, Paper } from '@mui/material';
-import {
-  TrendingUp as TrendingUpIcon,
-  People as PeopleIcon,
-  Event as EventIcon,
-  Article as ArticleIcon,
-} from '@mui/icons-material';
+import { TrendingUp, Users, FileText, DollarSign } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
-
   const stats = [
     {
-      title: 'Total Services',
-      value: '12',
-      icon: <TrendingUpIcon sx={{ fontSize: 40, color: 'primary.main' }} />,
-      color: 'primary.main',
+      title: 'Total Clients',
+      value: '342',
+      icon: <Users className="h-8 w-8" />,
+      change: '+12.5%',
+      color: '#3b82f6'
     },
     {
-      title: 'Active Events',
-      value: '8',
-      icon: <EventIcon sx={{ fontSize: 40, color: 'success.main' }} />,
-      color: 'success.main',
+      title: 'Active Projects',
+      value: '127',
+      icon: <FileText className="h-8 w-8" />,
+      change: '+8.2%',
+      color: '#10b981'
     },
     {
-      title: 'Blog Posts',
-      value: '24',
-      icon: <ArticleIcon sx={{ fontSize: 40, color: 'info.main' }} />,
-      color: 'info.main',
+      title: 'Revenue',
+      value: '$124,500',
+      icon: <DollarSign className="h-8 w-8" />,
+      change: '+23.1%',
+      color: '#f59e0b'
     },
     {
-      title: 'Comments',
-      value: '156',
-      icon: <PeopleIcon sx={{ fontSize: 40, color: 'warning.main' }} />,
-      color: 'warning.main',
+      title: 'Growth Rate',
+      value: '18.5%',
+      icon: <TrendingUp className="h-8 w-8" />,
+      change: '+4.3%',
+      color: '#8b5cf6'
     },
   ];
 
+  const recentActivities = [
+    { title: 'New client registered', time: '2 hours ago' },
+    { title: 'Project completed', time: '5 hours ago' },
+    { title: 'Invoice sent', time: '1 day ago' },
+    { title: 'Meeting scheduled', time: '2 days ago' },
+  ];
+
   return (
-    <Box>
-      {/* Welcome Section */}
-      <Box sx={{ mb: 4 }}>
-        <Typography variant="h3" sx={{ fontWeight: 'bold', color: 'text.primary', mb: 1 }}>
-          Welcome to Admin Dashboard
-        </Typography>
-        <Typography variant="h6" sx={{ color: 'text.secondary' }}>
-          Manage your content and analytics
-        </Typography>
-      </Box>
+    <div className="p-6">
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">
+        Dashboard Overview
+      </h1>
 
-      {/* Stats Cards */}
-      <Grid container spacing={3} sx={{ mb: 4 }}>
+      {/* Stats Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         {stats.map((stat, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
-            <Card
-              sx={{
-                height: '100%',
-                borderRadius: 3,
-                boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
-                border: '1px solid',
-                borderColor: 'divider',
-                '&:hover': {
-                  boxShadow: '0 8px 30px rgba(0,0,0,0.12)',
-                  transform: 'translateY(-2px)',
-                  transition: 'all 0.3s ease',
-                },
-              }}
-            >
-              <CardContent sx={{ p: 3 }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <Box>
-                    <Typography variant="h4" sx={{ fontWeight: 'bold', color: stat.color, mb: 1 }}>
-                      {stat.value}
-                    </Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                      {stat.title}
-                    </Typography>
-                  </Box>
-                  <Box sx={{ opacity: 0.8 }}>
-                    {stat.icon}
-                  </Box>
-                </Box>
-              </CardContent>
-            </Card>
-          </Grid>
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-gray-500 text-sm mb-2">{stat.title}</p>
+                <h3 className="text-3xl font-bold" style={{ color: stat.color }}>
+                  {stat.value}
+                </h3>
+                <p className="text-sm mt-2" style={{ color: stat.color }}>
+                  {stat.change}
+                </p>
+              </div>
+              <div style={{ color: stat.color }}>
+                {stat.icon}
+              </div>
+            </div>
+          </div>
         ))}
-      </Grid>
+      </div>
 
-      {/* Quick Actions */}
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 3, borderRadius: 3, height: '100%' }}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
-              Quick Actions
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-              {[
-                { label: 'Add New Service', action: 'services' },
-                { label: 'Create Event', action: 'events' },
-                { label: 'Write Blog Post', action: 'posts' },
-                { label: 'View Analytics', action: 'insights' },
-              ].map((item, index) => (
-                <Box
-                  key={index}
-                  sx={{
-                    p: 2,
-                    borderRadius: 2,
-                    border: '1px solid',
-                    borderColor: 'divider',
-                    cursor: 'pointer',
-                    '&:hover': {
-                      bgcolor: 'action.hover',
-                      borderColor: 'primary.main',
-                    },
-                  }}
-                >
-                  <Typography variant="body1" sx={{ fontWeight: 'medium' }}>
-                    {item.label}
-                  </Typography>
-                </Box>
-              ))}
-            </Box>
-          </Paper>
-        </Grid>
+      {/* Content Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Recent Activity */}
+        <div className="bg-white rounded-xl shadow-md p-6">
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+            Recent Activity
+          </h2>
+          <div className="space-y-3">
+            {recentActivities.map((activity, index) => (
+              <div
+                key={index}
+                className="flex flex-col py-3 border-b border-gray-200 last:border-0"
+              >
+                <p className="text-gray-900 font-medium">{activity.title}</p>
+                <p className="text-gray-500 text-sm mt-1">{activity.time}</p>
+              </div>
+            ))}
+          </div>
+        </div>
 
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 3, borderRadius: 3, height: '100%' }}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
-              Recent Activity
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-              {[
-                { label: 'New consultation request received', time: '2 hours ago' },
-                { label: 'Blog post published', time: '4 hours ago' },
-                { label: 'Event registration completed', time: '6 hours ago' },
-                { label: 'Service updated', time: '1 day ago' },
-              ].map((item, index) => (
-                <Box
-                  key={index}
-                  sx={{
-                    p: 2,
-                    borderRadius: 2,
-                    bgcolor: 'grey.50',
-                    border: '1px solid',
-                    borderColor: 'divider',
-                  }}
-                >
-                  <Typography variant="body2" sx={{ fontWeight: 'medium', mb: 0.5 }}>
-                    {item.label}
-                  </Typography>
-                  <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-                    {item.time}
-                  </Typography>
-                </Box>
-              ))}
-            </Box>
-          </Paper>
-        </Grid>
-      </Grid>
-    </Box>
+        {/* Quick Stats */}
+        <div className="bg-white rounded-xl shadow-md p-6 h-80">
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+            Quick Stats
+          </h2>
+          <div className="flex items-center justify-center h-64">
+            <p className="text-gray-400 text-center">
+              Statistics visualization would go here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
 export default Dashboard;
-
-
