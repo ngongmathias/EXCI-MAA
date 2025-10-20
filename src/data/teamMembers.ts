@@ -85,22 +85,22 @@ export interface TeamMember {
       ]
     },
   
-    // {
-    //   id: 'jean-nahimana',
-    //   name: 'Jean Berchmas',
-    //   title: 'Partner - Financial & Tax Audit',
-    //   qualifications: ['CPA', 'FMVA®', 'BIDA®'],
-    //   bio: 'Chartered Accountant, Member of ICPAR. Financial and Tax Auditor. Senior Accounts Analyst and Financial Modelist with extensive experience in financial planning and analysis.',
-    //   image: '/team/jean-berchmas.jpg',
-    //   officeId: '3', // Kigali
-    //   email: 'jnahimana@excimaa.ca',
-    //   specialties: [
-    //     'Financial Audit',
-    //     'Tax Audit',
-    //     'Financial Modeling',
-    //     'Accounts Analysis'
-    //   ]
-    // },
+    {
+      id: 'jean-nahimana',
+      name: 'Jean Berchmas',
+      title: 'Partner - Financial & Tax Audit',
+      qualifications: ['CPA', 'FMVA®', 'BIDA®'],
+      bio: 'Chartered Accountant, Member of ICPAR. Financial and Tax Auditor. Senior Accounts Analyst and Financial Modelist with extensive experience in financial planning and analysis.',
+      image: 'images/team/jean-berchmas.jpg',
+      officeId: '3', // Kigali
+      email: 'jnahimana@excimaa.ca',
+      specialties: [
+        'Financial Audit',
+        'Tax Audit',
+        'Financial Modeling',
+        'Accounts Analysis'
+      ]
+    },
     {
       id: 'martin-nkwain',
       name: 'Marcel NKWAIN',
@@ -127,7 +127,7 @@ export interface TeamMember {
       title: 'Partner - International Tax & Transfer Pricing',
       qualifications: ['Ms', 'CPA (USA, France)'],
       bio: 'Certified Chartered Accountant (American and French Regime). International Tax Specialist, ASC 740 (US GAAP Standards). Over 15 years of international financial and tax reporting practice with Big 4 experience at KPMG and PwC USA. Specialist in Transfer Pricing and BEPS.',
-      image: '/images/team/patrick-ngatcha.jpg',
+      image: '/images/team/olivier-fodji.jpg',
       officeId: '4', // Washington DC
       email: 'ptchamake@excimaa.ca',
       specialties: [
