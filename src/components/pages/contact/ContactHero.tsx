@@ -25,16 +25,6 @@ const getContactMethods = (t: (key: string) => string) => [
     hoverColor: 'hover:bg-green-100'
   },
   {
-    icon: <MapPin className="h-6 w-6 text-red-600" />,
-    title: t('contact.hero.contactMethods.visitUs'),
-    description: t('contact.hero.contactMethods.visitDescription'),
-    value: '123 Business Ave, City, Country',
-    href: 'https://maps.google.com',
-    color: 'bg-red-50',
-    hoverColor: 'hover:bg-red-100',
-    target: '_blank'
-  },
-  {
     icon: <Clock className="h-6 w-6 text-yellow-600" />,
     title: t('contact.hero.contactMethods.officeHours'),
     description: t('contact.hero.contactMethods.hoursDescription'),
@@ -102,8 +92,7 @@ const ContactCard = ({ method, index }: { method: ReturnType<typeof getContactMe
       {method.href ? (
         <a 
           href={method.href} 
-          target={method.target || '_self'} 
-          rel={method.target === '_blank' ? 'noopener noreferrer' : ''}
+          target="_blank"
           className="block h-full"
         >
           {content}
@@ -187,7 +176,7 @@ export default function ContactHero() {
         
         <div 
           ref={ref} 
-          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto"
+          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto"
         >
           {getContactMethods(t).map((method, index) => (
             <ContactCard key={method.title} method={method} index={index} />

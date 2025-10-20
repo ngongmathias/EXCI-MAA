@@ -4,7 +4,7 @@ import { TrendingUp, Users, FileText, DollarSign } from 'lucide-react';
 const Dashboard: React.FC = () => {
   const stats = [
     {
-      title: 'Total Clients',
+      title: 'Total Users',
       value: '342',
       icon: <Users className="h-8 w-8" />,
       change: '+12.5%',
