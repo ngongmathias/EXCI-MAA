@@ -36,7 +36,7 @@ const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) =>
   const mainItems = [
     { key: 'dashboard', label: 'Dashboard', icon: <DashboardIcon /> },
     { key: 'careers', label: 'Careers', icon: <ServicesIcon /> },
-    { key: 'services', label: 'Services', icon: <ServicesIcon /> },
+    // { key: 'services', label: 'Services', icon: <ServicesIcon /> },
     { key: 'events', label: 'Events', icon: <EventsIcon /> },
     { key: 'posts', label: 'Blog Posts', icon: <PostsIcon /> },
     { key: 'comments', label: 'Comments', icon: <CommentsIcon /> },
@@ -127,66 +127,6 @@ const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) =>
         ))}
       </List>
 
-      {/* What's New Section */}
-      <Box sx={{ p: 2, mt: 'auto' }}>
-        <Paper 
-          elevation={0} 
-          sx={{ 
-            p: 2, 
-            bgcolor: 'primary.50', 
-            border: '1px solid',
-            borderColor: 'primary.200',
-            borderRadius: 2
-          }}
-        >
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
-            <StarIcon sx={{ color: 'primary.main', fontSize: '1.2rem' }} />
-            <Typography variant="subtitle2" sx={{ fontWeight: 'bold', color: 'primary.main' }}>
-              What's New
-            </Typography>
-          </Box>
-          <List dense sx={{ p: 0 }}>
-            {whatsNewItems.map((item, index) => (
-              <ListItem key={index} disablePadding sx={{ mb: 0.5 }}>
-                <ListItemButton
-                  sx={{
-                    borderRadius: 1,
-                    py: 0.5,
-                    px: 1,
-                    '&:hover': {
-                      bgcolor: 'primary.100',
-                    },
-                  }}
-                >
-                  <ListItemIcon sx={{ minWidth: 32 }}>
-                    {item.icon}
-                  </ListItemIcon>
-                  <ListItemText 
-                    primary={item.label}
-                    primaryTypographyProps={{
-                      fontSize: '0.8rem',
-                      color: 'text.secondary',
-                    }}
-                  />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-        </Paper>
-        
-        {/* Version Info */}
-        <Typography 
-          variant="caption" 
-          sx={{ 
-            color: 'text.disabled', 
-            mt: 2, 
-            display: 'block',
-            textAlign: 'center'
-          }}
-        >
-          version: 0d5ba1d5
-        </Typography>
-      </Box>
     </Box>
   );
 
