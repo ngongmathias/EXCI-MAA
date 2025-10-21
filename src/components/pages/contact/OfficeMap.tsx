@@ -148,51 +148,24 @@ export default function OfficeMap() {
       <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {t('contact.map.findOurOffice')}
-          </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            {t('contact.map.description')}
-          </p>
-        </motion.div>
+        
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-10 lg:space-y-0">
+
           {/* Map Container */}
-          <motion.div 
+          <motion.div
             className="h-96 lg:h-[32rem] rounded-2xl overflow-hidden shadow-xl relative"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <div 
-              ref={mapRef} 
-              className="w-full h-full"
-              style={{ opacity: isMapLoaded ? 1 : 0.7, transition: 'opacity 0.5s ease-in-out' }}
-            />
-            {!isMapLoaded && (
-              <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="animate-pulse">
-                    <div className="h-8 w-8 bg-exci-yellow-400 rounded-full mx-auto mb-4"></div>
-                    <div className="h-4 bg-gray-300 rounded w-3/4 mx-auto mb-2"></div>
-                    <div className="h-4 bg-gray-200 rounded w-1/2 mx-auto"></div>
-                  </div>
-                </div>
-              </div>
-            )}
+
           </motion.div>
 
           {/* Office Information */}
           <motion.div 
-            className="space-y-6"
+            className="flex space-y-6 "
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -209,15 +182,6 @@ export default function OfficeMap() {
                   <div className="ml-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('contact.map.address')}</h4>
                     <p className="mt-1 text-sm text-gray-600">{OFFICE_LOCATION.address}</p>
-                    <a 
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${OFFICE_LOCATION.lat},${OFFICE_LOCATION.lng}`}
-                      target="_blank"
-                      rel="noopener noreferrer" 
-                      className="inline-flex items-center mt-2 text-sm font-medium text-exci-yellow-600 hover:text-exci-yellow-700 group"
-                    >
-                      {t('contact.map.getDirections')}
-                      <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </a>
                   </div>
                 </div>
 
