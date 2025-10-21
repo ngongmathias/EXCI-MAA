@@ -26,10 +26,10 @@ const buildTypicalOrganigramData = (t: (key: string, options?: any) => any): Org
   const taxSocialServices: string[] = t('typicalOfficeOrganigram.advisory.taxSocial.services', { returnObjects: true });
   const trainingTitle = t('typicalOfficeOrganigram.advisory.training.title');
   const trainingServices: string[] = t('typicalOfficeOrganigram.advisory.training.services', { returnObjects: true });
+  
+  const managementTitle = t('typicalOfficeOrganigram.management.title');
   const financeTitle = t('typicalOfficeOrganigram.advisory.finance.title');
   const financeServices: string[] = t('typicalOfficeOrganigram.advisory.finance.services', { returnObjects: true });
-
-  const managementTitle = t('typicalOfficeOrganigram.management.title');
   const accountingTitle = t('typicalOfficeOrganigram.management.accounting.title');
   const accountingServices: string[] = t('typicalOfficeOrganigram.management.accounting.services', { returnObjects: true });
   const facilityTitle = t('typicalOfficeOrganigram.management.facility.title');
@@ -76,12 +76,6 @@ const buildTypicalOrganigramData = (t: (key: string, options?: any) => any): Org
             level: 'subdivision',
             services: trainingServices.map((s) => `${s}`),
           },
-          {
-            id: 'advisory-finance',
-            title: financeTitle,
-            level: 'subdivision',
-            services: financeServices.map((s) => `${s}`),
-          },
         ],
       },
       {
@@ -89,6 +83,12 @@ const buildTypicalOrganigramData = (t: (key: string, options?: any) => any): Org
         title: managementTitle,
         level: 'division',
         children: [
+          {
+            id: 'management-finance',
+            title: financeTitle,
+            level: 'subdivision',
+            services: financeServices.map((s) => `${s}`),
+          },
           {
             id: 'management-accounting-tax',
             title: accountingTitle,
@@ -133,10 +133,11 @@ const ServiceBox: FC<{ services: string[] }> = ({ services }) => (
     initial={{ opacity: 0, scale: 0.95 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5, delay: 0.2 }}
+    style={{ width: '100%' }}
   >
-    <ul className="list-disc list-inside space-y-1">
+    <ul className="list-inside space-y-1">
       {services.map((service, index) => (
-        <li key={index}>{service}</li>
+        <li key={index} className="text-left">{service}</li>
       ))}
     </ul>
   </motion.div>
@@ -145,54 +146,64 @@ const ServiceBox: FC<{ services: string[] }> = ({ services }) => (
 // Connector lines
 const VerticalLine: FC<{ height?: string }> = ({ height = 'h-8' }) => (
   <div className="flex justify-center">
-    <div className={`w-0.5 bg-gray-400 ${height}`} />
+    <div className={`w-0.5 bg-gray-500 ${height}`} />
   </div>
 );
 
 const HorizontalLine: FC = () => (
-  <div className="w-full h-0.5 bg-gray-400" />
+  <div className="w-full h-0.5 bg-gray-500" />
 );
 
 const TypicalOfficeOrganigram: FC = () => {
   const { t } = useLanguage();
   const typicalOrganigramData = useMemo(() => buildTypicalOrganigramData(t), [t]);
+  
   return (
-    <section className="bg-gray-50 py-16 pt-24 pb-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            {t('typicalOfficeOrganigram.title')}
-          </h2>
-          <div className="mt-3 w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
-        </motion.div>
+    <section className="bg-white py-8 pt-12 pb-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header with logos and title */}
+        <div className="flex justify-between items-center mb-8">
+          <div className="bg-blue-600 text-white py-2 px-6 text-center font-bold text-xl rounded-md shadow-md mx-2 flex-grow">
+            TYPICAL ORGANIGRAM OF AN OFFICE
+          </div>
+        </div>
 
         {/* Root: Office Manager / Director */}
-        <div className="flex flex-col items-center mb-8">
-          <OrgBox node={typicalOrganigramData} />
-          <VerticalLine />
+        <div className="flex flex-col items-center mb-6">
+          <div className="bg-blue-600 text-white p-2 px-6 text-center font-semibold rounded-md border-2 border-blue-700 shadow-md mb-2" style={{ width: '240px' }}>
+            Office Manager / Director
+          </div>
+          <VerticalLine height="h-6" />
         </div>
 
         {/* Second Level: Divisions (AUDIT, ADVISORY, MANAGEMENT) */}
-        <div className="relative flex justify-center w-full mb-24">
+        <div className="relative flex justify-center w-full mb-12">
           <HorizontalLine /> {/* Horizontal line connecting divisions */}
-          <div className="absolute top-0 flex justify-around w-full max-w-6xl px-4">
-            {typicalOrganigramData.children?.map((division) => (
-              <div key={division.id} className="flex flex-col items-center mx-4">
+          <div className="absolute top-0 flex justify-between w-full px-4">
+            {typicalOrganigramData.children?.map((division, index) => (
+              <div key={division.id} className="flex flex-col items-center" style={{ width: '30%' }}>
                 <VerticalLine height="h-4" /> {/* Short vertical line up to horizontal */}
-                <OrgBox node={division} />
-                <VerticalLine /> {/* Vertical line down to subdivisions */}
+                <div className="bg-blue-600 text-white p-2 px-4 text-center font-semibold rounded-md border-2 border-blue-700 shadow-md mb-4 w-full">
+                  {division.title}
+                </div>
+                <VerticalLine height="h-6" /> {/* Vertical line down to subdivisions */}
 
                 {/* Third Level: Sub-divisions and Services */}
-                <div className="flex flex-col items-center w-full mt-4 space-y-4">
+                <div className="grid grid-cols-1 gap-y-6 mt-2 w-full">
                   {division.children?.map((subdivision) => (
-                    <div key={subdivision.id} className="flex flex-col items-center">
-                      <OrgBox node={subdivision} />
-                      {subdivision.services && <ServiceBox services={subdivision.services} />}
+                    <div key={subdivision.id} className="flex flex-col items-center w-full">
+                      <div className="bg-blue-500 text-white p-2 text-center font-semibold rounded-md border-2 border-blue-600 shadow-md w-full mb-1">
+                        {subdivision.title}
+                      </div>
+                      {subdivision.services && (
+                        <div className="bg-blue-50 border-2 border-blue-200 p-3 rounded-md text-xs w-full shadow-sm">
+                          {subdivision.services.map((service, idx) => (
+                            <div key={idx} className="mb-2 text-left" style={{ lineHeight: '1.2' }}>
+                              {service.startsWith('-') ? service : `- ${service}`}
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>

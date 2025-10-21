@@ -60,7 +60,7 @@ const Header: FC = () => {
             ))}
           </nav>
 
-          {/* Desktop Actions */}
+          { /* Desktop Actions */ }
           <div className="hidden md:flex items-center space-x-4">
             <LanguageSwitcher />
             <AuthButton />
