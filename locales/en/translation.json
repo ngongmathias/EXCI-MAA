@@ -160,7 +160,7 @@
         "callValue": "+1 (555) 123-4567",
         "visitUs": "Visit Us",
         "visitDescription": "Come say hello at our office",
-        "visitValue": "123 Business Ave, City, Country",
+        "visitValue": "BP 2606 Boulevard de la république – Douala (Cameroun)",
         "officeHours": "Office Hours",
         "hoursDescription": "Our working hours",
         "hoursValue": "Mon - Fri: 9:00 - 18:00"
@@ -244,7 +244,7 @@
       "helpDescription": "Our office is conveniently located in the heart of the business district with easy access to public transportation.",
       "centerMap": "Center Map on Our Location",
       "officeLocation": {
-        "address": "123 Business Avenue, Riyadh 12345, Saudi Arabia",
+        "address": "BP 2606 Boulevard de la république – Douala (Cameroun)",
         "phone": "+966 12 345 6789",
         "email": "riyadh@exci-maa.com",
         "hours": "Monday - Friday: 9:00 AM - 6:00 PM"
