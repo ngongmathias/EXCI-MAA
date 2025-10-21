@@ -1260,7 +1260,7 @@
     }
   },
   "organizationalStructure": {
-    "title": "组织结构",
+    "title": "集团组织结构图",
     "subtitle": "我们的领导层和团队结构",
     "chairman": {
       "title": "合伙人",
@@ -1285,7 +1285,7 @@
       "description": "确保整个组织的质量标准和合规性。"
     },
     "countryDirector": {
-      "title": "国家总监会计师高级和初级审计师",
+      "title": "国家总监会计师\n高级和初级审计师",
       "description": "管理国家业务，配备会计和审计团队。"
     },
     "specialists": {

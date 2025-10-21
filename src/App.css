@@ -106,3 +106,294 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.org-chart-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.chart-title {
+  background-color: #3182ce;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px 10px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Level 1 - Board of Directors */
+.level-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.board-section {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.box {
+  background-color: #3182ce;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #4a69bd;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.chairman {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Level 2 - Partners */
+.level-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.partner-section {
+  text-align: center;
+}
+
+.partner-general {
+  min-height: 80px;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Level 3 - Specialized Partners */
+.level-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+  gap: 40px;
+}
+
+.specialized-partners {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.partner-quality,
+.partner-audit,
+.partner-management {
+  min-height: 90px;
+  min-width: 140px;
+  padding: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Level 4 - Subordinates */
+.level-4 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.subordinates-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.subordinate-group {
+  text-align: center;
+}
+
+.country-director,
+.senior-junior-auditors,
+.specialists {
+  min-height: 80px;
+  min-width: 160px;
+  padding: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+}
+
+.specialists {
+  min-width: 200px;
+  font-size: 16px;
+}
+
+/* Connection Lines - Vertical */
+.level-1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 110px;
+  background: #4a69bd;
+  z-index: -1;
+}
+
+.level-2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 125px;
+  background: #4a69bd;
+  z-index: -1;
+}
+
+/* Per-box vertical lines for level 3 to 4 */
+.partner-quality::before,
+.partner-audit::before,
+.partner-management::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 125px;
+  background: #4a69bd;
+  z-index: -1;
+}
+
+/* Horizontal connections using ::after on left and middle boxes */
+.partner-quality::after,
+.partner-audit::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background: #4a69bd;
+  z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .org-chart-container {
+    padding: 10px;
+  }
+  
+  .chart-title {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  
+  .board-section,
+  .specialized-partners,
+  .subordinates-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .level-1,
+  .level-2,
+  .level-3,
+  .level-4 {
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    min-width: 200px;
+    font-size: 16px;
+  }
+  
+  .partner-general {
+    max-width: none;
+  }
+  
+  .specialists {
+    min-width: 180px;
+    font-size: 16px;
+  }
+
+  /* Hide horizontal and adjust vertical in mobile */
+  .partner-quality::after,
+  .partner-audit::after {
+    display: none;
+  }
+
+  .level-1::before,
+  .level-2::before {
+    height: 20px;
+    top: 100%;
+  }
+
+  .partner-quality::before,
+  .partner-audit::before,
+  .partner-management::before {
+    height: 20px;
+    top: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    min-width: 150px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  
+  .specialized-partners {
+    gap: 15px;
+  }
+  
+  .subordinates-section {
+    gap: 20px;
+  }
+}

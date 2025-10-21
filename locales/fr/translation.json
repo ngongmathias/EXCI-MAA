@@ -1261,7 +1261,7 @@
     }
   },
   "organizationalStructure": {
-    "title": "Structure Organisationnelle",
+    "title": "ORGANIGRAMME DU GROUPE",
     "subtitle": "Notre leadership et structure d'équipe",
     "chairman": {
       "title": "Associé",
@@ -1286,7 +1286,7 @@
       "description": "Assure les standards de qualité et la conformité dans toute l'organisation."
     },
     "countryDirector": {
-      "title": "Directeur Pays comptables Senior et Junior Auditeurs",
+      "title": "Directeur Pays comptables\nSenior et Junior Auditeurs",
       "description": "Gère les opérations du pays avec les équipes comptables et d'audit."
     },
     "specialists": {

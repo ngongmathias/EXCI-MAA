@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import {fetchAll, insertItem } from '../../../services/supabaseCrud';
+import Pagination from '../../ui/Pagination';
 
 type Post = {
   id: string;
@@ -23,6 +24,10 @@ const BlogSection: React.FC = () => {
   const [commentsByPost, setCommentsByPost] = useState<Record<string, Comment[]>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 20;
 
   useEffect(() => {
     const load = async () => {
@@ -75,6 +80,12 @@ const BlogSection: React.FC = () => {
     }
   }
 
+  // Calculate pagination values
+  const totalPages = Math.ceil(posts.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, posts.length);
+  const paginatedPosts = posts.slice(startIndex, endIndex);
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,8 +100,12 @@ const BlogSection: React.FC = () => {
 
         {loading && <div className="mt-8 text-sm text-gray-600 text-center">Loading posts...</div>}
         {error && <div className="mt-4 text-sm text-red-700 bg-red-50 rounded-md px-3 py-2 text-center">{error}</div>}
+        {!loading && posts.length === 0 && (
+          <div className="mt-8 text-sm text-gray-600 text-center">No blog posts found.</div>
+        )}
+        
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map(post => {
+          {paginatedPosts.map(post => {
             const postLikes = likes[post.id] || 0;
             const comments = commentsByPost[post.id] || [];
             return (
@@ -124,6 +139,20 @@ const BlogSection: React.FC = () => {
             );
           })}
         </div>
+        
+        {/* Pagination */}
+        {posts.length > ITEMS_PER_PAGE && (
+          <div className="mt-8 flex flex-col items-center">
+            <p className="text-sm text-gray-600 mb-2">
+              Showing {startIndex + 1} to {endIndex} of {posts.length} posts
+            </p>
+            <Pagination 
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={setCurrentPage}
+            />
+          </div>
+        )}
       </div>
     </section>
   );

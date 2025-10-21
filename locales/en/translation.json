@@ -1111,7 +1111,7 @@
     }
   },
   "organizationalStructure": {
-    "title": "Organizational Structure",
+    "title": "GROUP ORGANIZATIONAL CHART",
     "subtitle": "Our leadership and team structure",
     "chairman": {
       "title": "Partner",
@@ -1136,7 +1136,7 @@
       "description": "Ensures quality standards and compliance across the organization."
     },
     "countryDirector": {
-      "title": "Country Director accountants Senior and Junior Auditors",
+      "title": "Country Director accountants\nSenior and Junior Auditors",
       "description": "Manages country operations with accounting and audit teams."
     },
     "specialists": {

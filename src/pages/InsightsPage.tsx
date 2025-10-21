@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import InsightsHero from '../components/pages/insights/InsightsHero';
 import EventsSection from '../components/pages/insights/EventsSection';
 import BlogSection from '../components/pages/insights/BlogSection';
@@ -6,6 +6,16 @@ import PromotionsSection from '../components/pages/insights/PromotionsSection';
 
 const InsightsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'events' | 'blog'>('events');
+  
+  // Reference to the events and blog sections for resetting pagination
+  const eventsRef = useRef<HTMLDivElement>(null);
+  const blogRef = useRef<HTMLDivElement>(null);
+  
+  // Add a scroll to top effect when switching tabs
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activeTab]);
+  
   return (
     <div className="min-h-screen">
       <InsightsHero />
@@ -35,7 +45,12 @@ const InsightsPage: React.FC = () => {
           </div>
         </div>
       </section>
-      {activeTab === 'events' ? <EventsSection /> : <BlogSection />}
+      <div ref={eventsRef}>
+        {activeTab === 'events' && <EventsSection />}
+      </div>
+      <div ref={blogRef}>
+        {activeTab === 'blog' && <BlogSection />}
+      </div>
       <PromotionsSection />
     </div>
   );

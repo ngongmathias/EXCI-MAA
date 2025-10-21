@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import { fetchAll, insertItem } from '../../../services/supabaseCrud';
+import Pagination from '../../ui/Pagination';
 
 type EventItem = {
   id: string;
@@ -59,6 +60,10 @@ const EventsSection: React.FC = () => {
   const [attendeesByEvent, setAttendeesByEvent] = useState<Record<string, Attendee[]>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 10;
 
   useEffect(() => {
     const load = async () => {
@@ -96,7 +101,18 @@ const EventsSection: React.FC = () => {
     return { upcoming, past };
   }, [now, events]);
 
-  const list = filter === 'upcoming' ? upcoming : past;
+  const filteredList = filter === 'upcoming' ? upcoming : past;
+  
+  // Reset to first page when filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
+  
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredList.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, filteredList.length);
+  const list = filteredList.slice(startIndex, endIndex);
 
   async function addAttendee(eventId: string, attendee: Attendee) {
     try {
@@ -135,6 +151,9 @@ const EventsSection: React.FC = () => {
 
         {loading && <div className="mt-8 text-sm text-gray-600 text-center">Loading events...</div>}
         {error && <div className="mt-4 text-sm text-red-700 bg-red-50 rounded-md px-3 py-2 text-center">{error}</div>}
+        {!loading && filteredList.length === 0 && (
+          <div className="mt-8 text-sm text-gray-600 text-center">No events found.</div>
+        )}
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((evt) => {
             const attendees = attendeesByEvent[evt.id] || [];
@@ -186,6 +205,20 @@ const EventsSection: React.FC = () => {
               setRsvpOpenFor(null);
             }}
           />
+        )}
+        
+        {/* Pagination */}
+        {filteredList.length > ITEMS_PER_PAGE && (
+          <div className="mt-8 flex flex-col items-center">
+            <p className="text-sm text-gray-600 mb-2">
+              Showing {startIndex + 1} to {endIndex} of {filteredList.length} events
+            </p>
+            <Pagination 
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={setCurrentPage}
+            />
+          </div>
         )}
       </div>
     </section>
