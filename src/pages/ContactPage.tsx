@@ -5,12 +5,12 @@ import FAQSection from '../components/pages/contact/FAQSection';
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen">
+    <>
       <ContactHero />
       <ContactForm />
       <OfficeMap />
       <FAQSection />
-    </div>
+    </>
   );
 }
 

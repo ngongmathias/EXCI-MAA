@@ -77,8 +77,10 @@
     "detailedSubtitle": "In-depth information about our offerings",
     "processTitle": "Our Process",
     "processSubtitle": "How we deliver exceptional results",
-    "faqTitle": "Frequently Asked Questions",
-    "faqSubtitle": "Common questions about our services",
+    "services": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqSubtitle": "Common questions about our services"
+    },
     "pricingTitle": "Pricing",
     "pricingSubtitle": "Transparent pricing for all our services",
       "schedule": "Schedule",
@@ -146,6 +148,48 @@
     "infoTitle": "Contact Information",
     "infoSubtitle": "Multiple ways to reach us",
     "cta": "Contact Us Now",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our services and company",
+      "questions": [
+        {
+          "question": "What services does EXCI-MAA provide?",
+          "answer": "We offer a comprehensive range of accounting, auditing, tax, and business advisory services tailored to meet the unique needs of businesses in Saudi Arabia and beyond. Our services include financial reporting, tax planning, internal auditing, and business consulting."
+        },
+        {
+          "question": "How can I schedule a consultation?",
+          "answer": "You can schedule a consultation by calling our office, sending us an email, or using the contact form on this page. Our team will get back to you within 24 hours to confirm your appointment."
+        },
+        {
+          "question": "What industries do you specialize in?",
+          "answer": "We have extensive experience working with various industries including healthcare, construction, retail, technology, and professional services. Our team has the expertise to handle the unique financial challenges of each sector."
+        },
+        {
+          "question": "What are your business hours?",
+          "answer": "Our office is open from Sunday to Thursday, 9:00 AM to 6:00 PM. We are closed on Fridays and Saturdays as well as on public holidays."
+        },
+        {
+          "question": "Do you offer remote or virtual services?",
+          "answer": "Yes, we offer both in-person and virtual consultation services to accommodate our clients' needs. Our team is equipped with secure video conferencing tools to provide the same level of service remotely."
+        },
+        {
+          "question": "How do you ensure data security and confidentiality?",
+          "answer": "We take data security very seriously. All client information is handled with the utmost confidentiality and protected using industry-standard security measures, including encryption and secure file sharing systems."
+        }
+      ],
+      "stillHaveQuestions": "Still Have Questions?",
+      "stillHaveDescription": "Can't find the answer you're looking for? Please contact our friendly team.",
+      "chatWithUs": "Chat With Us",
+      "chatDescription": "Our friendly team is here to help.",
+      "sendUsMessage": "Send us a message",
+      "callUs": "Call Us",
+      "callDescription": "Mon-Fri from 9am to 6pm.",
+      "emailUs": "Email Us",
+      "emailDescription": "We'll respond within 24 hours.",
+      "cantFindWhat": "Can't find what you need?",
+      "expertsDescription": "Contact our experts for personalized assistance with your specific needs.",
+      "contactSupport": "Contact Support"
+    },
     "hero": {
       "getInTouch": "Get in Touch",
       "letsTalkAbout": "Let's Talk About Your",
@@ -154,7 +198,7 @@
       "contactMethods": {
         "emailUs": "Email Us",
         "emailDescription": "Our team will get back to you within 24 hours",
-        "emailValue": "info@exci-maa.com",
+        "emailValue": "contactcam@excimaa.ca",
         "callUs": "Call Us",
         "callDescription": "Mon-Fri from 9am to 5pm",
         "callValue": "+1 (555) 123-4567",

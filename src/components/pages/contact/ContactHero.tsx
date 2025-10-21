@@ -10,8 +10,8 @@ const getContactMethods = (t: (key: string) => string) => [
     icon: <Mail className="h-6 w-6 text-exci-blue-600" />,
     title: t('contact.hero.contactMethods.emailUs'),
     description: t('contact.hero.contactMethods.emailDescription'),
-    value: 'info@exci-maa.com',
-    href: 'mailto:info@exci-maa.com',
+    value: 'contactcam@excimaa.ca',
+    href: 'mailto:contactcam@excimaa.ca',
     color: 'bg-blue-50',
     hoverColor: 'hover:bg-blue-100'
   },
@@ -176,7 +176,7 @@ export default function ContactHero() {
         
         <div 
           ref={ref} 
-          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto"
+          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 w-[200vh] mx-auto"
         >
           {getContactMethods(t).map((method, index) => (
             <ContactCard key={method.title} method={method} index={index} />
