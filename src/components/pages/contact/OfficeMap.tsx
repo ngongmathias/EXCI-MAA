@@ -16,9 +16,9 @@ declare global {
 const OFFICE_LOCATION = {
   lat: 24.7136,  // Default to Dubai coordinates
   lng: 46.6753,
-  address: '123 Business Avenue, Riyadh 12345, Saudi Arabia',
-  phone: '+966 12 345 6789',
-  email: 'riyadh@exci-maa.com',
+  address: 'BP 2606 Boulevard de la république – Douala (Cameroun)',
+  phone: ' +237 233 42 79 40 && +237 698 835 251',
+  email: 'contactcam@excimaa.ca',
   hours: 'Monday - Friday: 9:00 AM - 6:00 PM',
 };
 
