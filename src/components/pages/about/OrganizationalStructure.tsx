@@ -59,7 +59,7 @@ const OrganizationalChart = () => {
       </div>
 
       {/* Fourth Level: Subordinates */}
-      <div className="level-4">
+      <div className="level-4 ml-36">
         <div className="subordinates-section">
           {/* Under Quality & Compliance */}
           <div className="subordinate-group quality-group">
