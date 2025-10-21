@@ -96,3 +96,29 @@ CREATE TABLE public.services (
   created_at timestamp with time zone NOT NULL DEFAULT now(),
   CONSTRAINT services_pkey PRIMARY KEY (id)
 );
+CREATE TABLE public.event_images (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  event_id uuid NOT NULL,
+  image_url text NOT NULL,
+  display_order integer DEFAULT 0,
+  caption text,
+  is_primary boolean DEFAULT false,
+  uploaded_by uuid,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT event_images_pkey PRIMARY KEY (id),
+  CONSTRAINT event_images_event_id_fkey FOREIGN KEY (event_id) REFERENCES public.events(id) ON DELETE CASCADE
+);
+CREATE TABLE public.post_images (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  post_id uuid NOT NULL,
+  image_url text NOT NULL,
+  display_order integer DEFAULT 0,
+  caption text,
+  is_primary boolean DEFAULT false,
+  uploaded_by uuid,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT post_images_pkey PRIMARY KEY (id),
+  CONSTRAINT post_images_post_id_fkey FOREIGN KEY (post_id) REFERENCES public.posts(id) ON DELETE CASCADE
+);

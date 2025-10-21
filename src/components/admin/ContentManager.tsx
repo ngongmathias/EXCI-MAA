@@ -21,13 +21,11 @@ const ContentManager: React.FC<ContentManagerProps> = ({ active }) => {
     { key: 'location', label: 'Location', required: true },
     { key: 'start_at', label: 'Start Date', type: 'date' as const, required: true },
     { key: 'end_at', label: 'End Date', type: 'date' as const, required: true },
-    { key: 'image_url', label: 'Image URL' },
   ];
 
   const postsFields = [
     { key: 'title', label: 'Post Title', required: true },
     { key: 'content', label: 'Content', type: 'textarea' as const, required: true },
-    { key: 'image_url', label: 'Image URL' },
   ];
 
   const commentsFields = [
@@ -78,6 +76,7 @@ const ContentManager: React.FC<ContentManagerProps> = ({ active }) => {
           fields={getFieldsForActive()}
           storageKey={getStorageKeyForActive()}
           useSupabase
+          supportsImageUpload={active === 'events' || active === 'posts'}
         />
       </Box>
     </Box>

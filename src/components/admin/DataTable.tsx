@@ -11,6 +11,9 @@ import {
   TextField,
   Tooltip,
   Alert,
+  Tabs,
+  Tab,
+  IconButton,
 } from '@mui/material';
 import {
   DataGrid,
@@ -23,7 +26,12 @@ import {
   Edit as EditIcon,
   Delete as DeleteIcon,
   Add as AddIcon,
+  Image as ImageIcon,
+  CloudUpload as UploadIcon,
+  Close as CloseIcon,
 } from '@mui/icons-material';
+import ImageUploadManager from './ImageUploadManager';
+import { uploadMultipleImages, addEventImages, addPostImages } from '../../services/imageUpload';
 
 interface DataTableProps {
   title: string;
@@ -36,6 +44,7 @@ interface DataTableProps {
   storageKey: string; // localStorage key OR Supabase table name
   initialData?: any[];
   useSupabase?: boolean;
+  supportsImageUpload?: boolean; // New prop to enable image upload
 }
 
 import { insertItem, updateItemById, deleteById } from '../../services/supabaseCrud';
@@ -47,6 +56,7 @@ const DataTable: React.FC<DataTableProps> = ({
   storageKey, 
   initialData = [],
   useSupabase = false,
+  supportsImageUpload = false,
 }) => {
   const [data, setData] = useState<any[]>(initialData);
   const [loading, setLoading] = useState(false);
@@ -54,6 +64,9 @@ const DataTable: React.FC<DataTableProps> = ({
   const [editingId, setEditingId] = useState<string | null>(null);
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState(0); // 0 = Details, 1 = Images
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [previewUrls, setPreviewUrls] = useState<string[]>([]);
 
   const formatError = (err: unknown): string => {
     if (err instanceof Error) return err.message;
@@ -179,12 +192,39 @@ const DataTable: React.FC<DataTableProps> = ({
         }
       });
 
+      let savedItemId = editingId;
+
       if (useSupabase) {
         if (editingId) {
           await updateItemById<any>(storageKey as any, editingId, processedData);
         } else {
-          await insertItem<any>(storageKey as any, processedData);
+          const newItem = await insertItem<any>(storageKey as any, processedData);
+          savedItemId = newItem.id;
         }
+
+        // Upload images if any were selected and this is an event or post
+        if (supportsImageUpload && selectedFiles.length > 0 && savedItemId) {
+          try {
+            const bucketName = storageKey === 'events' ? 'event-images' : 'post-images';
+            const uploadResults = await uploadMultipleImages(selectedFiles, bucketName, savedItemId);
+            
+            const images = uploadResults.map((result, index) => ({
+              url: result.url,
+              displayOrder: index,
+              isPrimary: index === 0
+            }));
+
+            if (storageKey === 'events') {
+              await addEventImages(savedItemId, images);
+            } else if (storageKey === 'posts') {
+              await addPostImages(savedItemId, images);
+            }
+          } catch (imgErr) {
+            console.error('Image upload error:', imgErr);
+            setError('Item saved but image upload failed. You can add images later by editing the item.');
+          }
+        }
+
         await supa?.refresh();
       } else {
         const newItem = {
@@ -251,17 +291,69 @@ const DataTable: React.FC<DataTableProps> = ({
 
   // Handle close dialog
   const handleClose = () => {
+    // Cleanup preview URLs
+    previewUrls.forEach(url => URL.revokeObjectURL(url));
+    
     setOpen(false);
     setEditingId(null);
     setFormData({});
     setError(null);
+    setActiveTab(0); // Reset to first tab
+    setSelectedFiles([]);
+    setPreviewUrls([]);
   };
 
   // Handle add new
   const handleAdd = () => {
     setFormData({});
     setEditingId(null);
+    setActiveTab(0); // Start with details tab
+    setSelectedFiles([]);
+    setPreviewUrls([]);
     setOpen(true);
+  };
+
+  // Handle file selection
+  const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const files = event.target.files;
+    if (!files) return;
+
+    const fileArray = Array.from(files);
+    
+    // Validate files
+    const validFiles = fileArray.filter(file => {
+      if (!file.type.startsWith('image/')) {
+        setError('Please select only image files');
+        return false;
+      }
+      if (file.size > 5 * 1024 * 1024) {
+        setError('File size must be less than 5MB');
+        return false;
+      }
+      return true;
+    });
+
+    if (validFiles.length > 0) {
+      setSelectedFiles(validFiles);
+      // Create preview URLs
+      const urls = validFiles.map(file => URL.createObjectURL(file));
+      setPreviewUrls(urls);
+      setError(null);
+    }
+  };
+
+  // Clear selected files
+  const clearSelectedFiles = () => {
+    previewUrls.forEach(url => URL.revokeObjectURL(url));
+    setSelectedFiles([]);
+    setPreviewUrls([]);
+  };
+
+  // Remove individual file
+  const removeFile = (index: number) => {
+    URL.revokeObjectURL(previewUrls[index]);
+    setSelectedFiles(files => files.filter((_, i) => i !== index));
+    setPreviewUrls(urls => urls.filter((_, i) => i !== index));
   };
 
   // Define columns for DataGrid
@@ -423,44 +515,179 @@ VITE_SUPABASE_ANON_KEY=your-supabase-anon-key-here
           {editingId ? `Edit ${title.slice(0, -1)}` : `Add New ${title.slice(0, -1)}`}
         </DialogTitle>
         <DialogContent>
-          <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' }, gap: 2, mt: 1 }}>
-            {fields.map(field => (
-              <Box key={field.key}>
-                <TextField
-                  fullWidth
-                  label={field.label}
-                  value={formData[field.key] || ''}
-                  onChange={(e) => setFormData(prev => ({ ...prev, [field.key]: e.target.value }))}
-                  type={field.type === 'number' ? 'number' : 
-                        field.type === 'email' ? 'email' : 
-                        field.type === 'url' ? 'url' : 
-                        field.type === 'tel' ? 'tel' : 
-                        field.type === 'date' ? 'date' : 'text'}
-                  multiline={field.type === 'textarea'}
-                  rows={field.type === 'textarea' ? 3 : 1}
-                  required={field.required}
-                  variant="outlined"
-                  inputProps={{
-                    min: field.type === 'number' ? 0 : undefined,
-                    step: field.type === 'number' ? '0.01' : undefined,
-                  }}
-                />
+          {/* Tabs for Details and Images (only show for editing) */}
+          {supportsImageUpload && editingId && (
+            <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 2 }}>
+              <Tabs value={activeTab} onChange={(_, newValue) => setActiveTab(newValue)}>
+                <Tab label="Details" />
+                <Tab label="Manage Images" icon={<ImageIcon />} iconPosition="start" />
+              </Tabs>
+            </Box>
+          )}
+
+          {/* Details Tab */}
+          {(!supportsImageUpload || !editingId || activeTab === 0) && (
+            <Box>
+              {/* Form Fields */}
+              <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' }, gap: 2, mt: 1 }}>
+                {fields.map(field => (
+                  <Box key={field.key}>
+                    <TextField
+                      fullWidth
+                      label={field.label}
+                      value={formData[field.key] || ''}
+                      onChange={(e) => setFormData(prev => ({ ...prev, [field.key]: e.target.value }))}
+                      type={field.type === 'number' ? 'number' : 
+                            field.type === 'email' ? 'email' : 
+                            field.type === 'url' ? 'url' : 
+                            field.type === 'tel' ? 'tel' : 
+                            field.type === 'date' ? 'date' : 'text'}
+                      multiline={field.type === 'textarea'}
+                      rows={field.type === 'textarea' ? 3 : 1}
+                      required={field.required}
+                      variant="outlined"
+                      inputProps={{
+                        min: field.type === 'number' ? 0 : undefined,
+                        step: field.type === 'number' ? '0.01' : undefined,
+                      }}
+                    />
+                  </Box>
+                ))}
               </Box>
-            ))}
-          </Box>
+
+              {/* Image Upload Section (only for create mode with events/posts) */}
+              {supportsImageUpload && !editingId && (
+                <Box sx={{ mt: 3, p: 2, border: '2px dashed', borderColor: 'divider', borderRadius: 2 }}>
+                  <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 600, display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <ImageIcon /> Upload Images (Optional)
+                  </Typography>
+                  
+                  <input
+                    accept="image/*"
+                    style={{ display: 'none' }}
+                    id="file-upload-input"
+                    type="file"
+                    multiple
+                    onChange={handleFileSelect}
+                  />
+                  <label htmlFor="file-upload-input">
+                    <Button
+                      variant="outlined"
+                      component="span"
+                      startIcon={<UploadIcon />}
+                      fullWidth
+                      sx={{ mb: 2 }}
+                    >
+                      Select Images (Max 5MB each)
+                    </Button>
+                  </label>
+
+                  {/* Preview Selected Files */}
+                  {previewUrls.length > 0 && (
+                    <Box>
+                      <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: 2 }}>
+                        {previewUrls.map((url, index) => (
+                          <Box
+                            key={index}
+                            sx={{
+                              position: 'relative',
+                              width: 100,
+                              height: 100,
+                              borderRadius: 1,
+                              overflow: 'hidden',
+                              border: '1px solid',
+                              borderColor: 'divider',
+                            }}
+                          >
+                            <img
+                              src={url}
+                              alt={`Preview ${index + 1}`}
+                              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                            <IconButton
+                              size="small"
+                              onClick={() => removeFile(index)}
+                              sx={{
+                                position: 'absolute',
+                                top: 2,
+                                right: 2,
+                                bgcolor: 'rgba(0,0,0,0.6)',
+                                color: 'white',
+                                '&:hover': { bgcolor: 'rgba(0,0,0,0.8)' },
+                                padding: '4px',
+                              }}
+                            >
+                              <CloseIcon fontSize="small" />
+                            </IconButton>
+                            {index === 0 && (
+                              <Box
+                                sx={{
+                                  position: 'absolute',
+                                  bottom: 0,
+                                  left: 0,
+                                  right: 0,
+                                  bgcolor: 'primary.main',
+                                  color: 'white',
+                                  fontSize: '10px',
+                                  textAlign: 'center',
+                                  py: 0.5,
+                                }}
+                              >
+                                Primary
+                              </Box>
+                            )}
+                          </Box>
+                        ))}
+                      </Box>
+                      <Typography variant="caption" color="text.secondary">
+                        {selectedFiles.length} image(s) selected. First image will be set as primary.
+                      </Typography>
+                      <Button
+                        size="small"
+                        onClick={clearSelectedFiles}
+                        sx={{ ml: 2 }}
+                      >
+                        Clear All
+                      </Button>
+                    </Box>
+                  )}
+                </Box>
+              )}
+            </Box>
+          )}
+
+          {/* Images Tab (only for editing) */}
+          {supportsImageUpload && editingId && activeTab === 1 && (
+            <ImageUploadManager
+              entityId={editingId}
+              entityType={storageKey === 'events' ? 'event' : 'post'}
+              onImagesChange={() => supa?.refresh()}
+            />
+          )}
         </DialogContent>
         <DialogActions sx={{ p: 3 }}>
           <Button onClick={handleClose} disabled={loading}>
             Cancel
           </Button>
-          <Button 
-            onClick={handleSubmit} 
-            variant="contained" 
-            disabled={loading}
-            sx={{ borderRadius: 2 }}
-          >
-            {loading ? 'Saving...' : (editingId ? 'Update' : 'Create')}
-          </Button>
+          {activeTab === 0 && (
+            <Button 
+              onClick={handleSubmit} 
+              variant="contained" 
+              disabled={loading}
+              sx={{ borderRadius: 2 }}
+            >
+              {loading ? 'Saving...' : (editingId ? 'Update' : 'Create')}
+            </Button>
+          )}
+          {activeTab === 1 && (
+            <Button 
+              onClick={handleClose} 
+              variant="contained" 
+              sx={{ borderRadius: 2 }}
+            >
+              Done
+            </Button>
+          )}
         </DialogActions>
       </Dialog>
     </Box>

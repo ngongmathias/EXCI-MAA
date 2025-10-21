@@ -1,6 +1,17 @@
 import { supabase } from '../lib/supabaseClient';
 
-export type TableName = 'services' | 'events' | 'posts' | 'comments' | 'likes' | 'event_attendees' | 'contact_submissions' | 'consultation_requests' | 'careers';
+export type TableName = 
+  | 'services' 
+  | 'events' 
+  | 'posts' 
+  | 'comments' 
+  | 'likes' 
+  | 'event_attendees' 
+  | 'contact_submissions' 
+  | 'consultation_requests' 
+  | 'careers'
+  | 'event_images'
+  | 'post_images';
 
 export async function fetchAll<T>(table: TableName): Promise<T[]> {
   const { data, error, status, statusText } = await supabase

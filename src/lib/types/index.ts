@@ -41,6 +41,18 @@ export interface Event {
   maxAttendees?: number;
 }
 
+export interface EventImage {
+  id: string;
+  event_id: string;
+  image_url: string;
+  display_order: number;
+  caption?: string;
+  is_primary: boolean;
+  uploaded_by?: string;
+  created_at: string;
+  updated_at?: string;
+}
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -51,7 +63,20 @@ export interface BlogPost {
   image?: string;
   likes: number;
   comments: number;
+  category: string;
   tags: string[];
+}
+
+export interface PostImage {
+  id: string;
+  post_id: string;
+  image_url: string;
+  display_order: number;
+  caption?: string;
+  is_primary: boolean;
+  uploaded_by?: string;
+  created_at: string;
+  updated_at?: string;
 }
 
 

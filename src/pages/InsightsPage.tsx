@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import InsightsHero from '../components/pages/insights/InsightsHero';
 import EventsSection from '../components/pages/insights/EventsSection';
 import BlogSection from '../components/pages/insights/BlogSection';
-import PromotionsSection from '../components/pages/insights/PromotionsSection';
+// import PromotionsSection from '../components/pages/insights/PromotionsSection';
 
 const InsightsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'events' | 'blog'>('events');
@@ -51,7 +51,7 @@ const InsightsPage: React.FC = () => {
       <div ref={blogRef}>
         {activeTab === 'blog' && <BlogSection />}
       </div>
-      <PromotionsSection />
+      {/* <PromotionsSection /> */}
     </div>
   );
 };
