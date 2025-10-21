@@ -30,10 +30,6 @@ export default function OfficeMap() {
   const [infoWindow, setInfoWindow] = useState<any>(null);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
 
-
-
- 
-
   return (
     <div className="relative bg-white py-16 sm:py-24 overflow-hidden">
       {/* Decorative elements */}

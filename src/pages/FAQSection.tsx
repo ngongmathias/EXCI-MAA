@@ -160,7 +160,7 @@ export default function FAQSection() {
                       href="tel:+966123456789"
                       className="mt-2 inline-block text-sm font-medium text-exci-yellow-400 hover:text-exci-yellow-300"
                     >
-                      +966 12 345 6789
+                      +237233427940 && +237698835251
                     </a>
                   </div>
                 </div>
@@ -175,10 +175,10 @@ export default function FAQSection() {
                       {t('contact.faq.emailDescription')}
                     </p>
                     <a 
-                      href="mailto:info@exci-maa.com"
+                      href="mailto:contactcam@excimaa.ca"
                       className="mt-2 inline-block text-sm font-medium text-exci-yellow-400 hover:text-exci-yellow-300 break-all"
                     >
-                      info@exci-maa.com
+                      contactcam@excimaa.ca
                     </a>
                   </div>
                 </div>

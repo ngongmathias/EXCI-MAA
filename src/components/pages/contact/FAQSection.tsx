@@ -137,13 +137,6 @@ export default function FAQSection() {
                     <p className="mt-1 text-sm text-exci-blue-100">
                       {t('contact.faq.chatDescription')}
                     </p>
-                    <a 
-                      href="#contact-form"
-                      className="mt-2 inline-flex items-center text-sm font-medium text-exci-yellow-400 hover:text-exci-yellow-300 group"
-                    >
-                      {t('contact.faq.sendUsMessage')}
-                      <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </a>
                   </div>
                 </div>
 
@@ -160,7 +153,7 @@ export default function FAQSection() {
                       href="tel:+966123456789"
                       className="mt-2 inline-block text-sm font-medium text-exci-yellow-400 hover:text-exci-yellow-300"
                     >
-                      +966 12 345 6789
+                      +237233427940 && +237698835251
                     </a>
                   </div>
                 </div>
@@ -175,10 +168,10 @@ export default function FAQSection() {
                       {t('contact.faq.emailDescription')}
                     </p>
                     <a 
-                      href="mailto:info@exci-maa.com"
+                      href="mailto:contactcam@excimaa.ca"
                       className="mt-2 inline-block text-sm font-medium text-exci-yellow-400 hover:text-exci-yellow-300 break-all"
                     >
-                      info@exci-maa.com
+                      contactcam@excimaa.ca
                     </a>
                   </div>
                 </div>
