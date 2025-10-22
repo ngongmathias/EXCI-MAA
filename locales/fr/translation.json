@@ -1,1451 +1,1297 @@
 {
-  "nav": {
-    "home": "Accueil",
-    "about": "À propos",
-    "services": "Services",
-    "training": "Formations",
-    "globalOffices": "Bureaux Mondiaux",
-    "insights": "Perspectives",
-    "careers": "Carrières",
-    "contact": "Contact"
-  },
-  "auth": {
-    "signIn": "Se connecter",
-    "signOut": "Se déconnecter",
-    "admin": "Admin",
-    "adminPanel": "Panneau d'administration"
-  },
-  "footer": {
-    "description": "Cabinet professionnel de comptabilité, d'audit et de conseil avec une présence internationale. Nous offrons une expertise complète pour soutenir vos besoins commerciaux.",
-    "quickLinks": "Liens rapides",
-    "ourServices": "Nos Services",
-    "contactInfo": "Informations de contact",
-    "douala": "Douala, Cameroun",
-    "globalPresence": "Présence mondiale",
-    "allRightsReserved": "Tous droits réservés.",
-    "privacyPolicy": "Politique de confidentialité",
-    "termsOfService": "Conditions d'utilisation",
-    "cookiePolicy": "Politique des cookies"
-  },
-  "serviceCategories": {
-    "accounting": "Expertise Comptable",
-    "legal": "Audit Légal et Fiscal",
-    "managerial": "Conseil en Gestion",
-    "payroll": "Paie et Conseil Social",
-    "consolidation": "Consolidation",
-    "risk": "Conseil en Risque",
-    "it": "Conseil IT",
-    "financial": "Rapports Financiers"
-  },
-  "hero": {
-    "title": "Comptabilité Professionnelle &",
-    "titleHighlight": "Excellence en Conseil",
-    "subtitle": "Services complets de comptabilité, d'audit et de conseil avec présence internationale. Nous livrons des solutions expertes pour soutenir votre croissance commerciale.",
-    "feature1": "Expertise internationale avec compréhension locale",
-    "feature2": "Services complets d'audit et de conseil",
-    "feature3": "Support dédié pour votre succès commercial",
-    "cta1": "Explorer les Services",
-    "cta2": "Obtenir une Consultation",
-    "description": "Nous offrons des solutions financières innovantes et des conseils stratégiques pour aider les entreprises et les particuliers à naviguer des environnements financiers complexes avec confiance et clarté."
-  },
-  "about": {
-    "title": "À Propos de Nous",
-    "subtitle": "En savoir plus sur notre entreprise et nos valeurs",
-    "feature1Title": "Excellence Professionnelle",
-    "feature1Desc": "Nous maintenons les plus hauts standards dans tous nos services",
-    "feature2Title": "Portée Mondiale",
-    "feature2Desc": "Servir les clients dans plusieurs pays et régions",
-    "feature3Title": "Équipe d'Experts",
-    "feature3Desc": "Nos professionnels expérimentés livrent des résultats exceptionnels",
-    "heroTitle": "À Propos d'EXCI-MAA",
-    "heroSubtitle": "Cabinet professionnel de comptabilité, d'audit et de conseil avec présence internationale",
-    "historyTitle": "Notre Histoire",
-    "historySubtitle": "Construire la confiance par l'excellence depuis notre fondation",
-    "valuesTitle": "Nos Valeurs",
-    "valuesSubtitle": "Les principes qui guident tout ce que nous faisons",
-    "teamTitle": "Notre Équipe",
-    "teamSubtitle": "Rencontrez les professionnels derrière notre succès",
-    "testimonialsTitle": "Témoignages Clients",
-    "testimonialsSubtitle": "Ce que nos clients disent de nous"
-  },
-  "aboutPage": {
-    "hero": {
-      "title": "À Propos d'EXCI-MAA",
-      "subtitle": "Votre Partenaire Financier de Confiance",
-      "description": "Avec plus de 27 ans d'excellence dans les services financiers, EXCI-MAA a été un partenaire de confiance pour les entreprises dans plusieurs pays, fournissant des services experts de comptabilité, d'audit et de conseil.",
-      "getInTouch": "Nous Contacter",
-      "ourServices": "Nos Services",
-      "trustedByBusinesses": "Fait confiance par les entreprises du monde entier",
-      "stats": {
-        "yearsExperience": "Années d'Expérience",
-        "countriesServed": "Pays Desservis",
-        "teamMembers": "Membres de l'Équipe",
-        "clientSatisfaction": "Satisfaction Client",
-        "clientsServed": "Clients Servis",
-        "successRate": "Taux de Réussite"
-      }
-    },
-    "mission": {
-      "title": "Notre Mission",
-      "description1": "Notre mission principale est de soutenir et d'accompagner les entreprises opérant sur le marché africain vers l'excellence financière. En tirant parti d'une connaissance approfondie des secteurs à but lucratif et à but non lucratif, nous livrons des engagements de conseil, d'audit statutaire et de conseil adaptés à chaque taille d'organisation.",
-      "description2": "Nos solutions sont conçues pour répondre aux besoins spécifiques des entreprises à travers le continent africain, fournissant un service de bout en bout et une vraie valeur ajoutée—à un budget équitable. Notre équipe multidisciplinaire et multiculturelle assure un support sur mesure, adapté à l'échelle et aux capacités de votre structure."
-    },
-    "story": {
-      "title": "Notre Histoire",
-      "description1": "EXCI-MAA a été fondée par des experts en audit, comptabilité, fiscalité, développement commercial, systèmes d'information de gestion et droit. Avec une présence au Canada, aux États-Unis, en France, au Royaume-Uni et à travers l'Afrique, nous apportons une expertise internationale adaptée à chaque contexte local.",
-      "description2": "Nous opérons à travers toute la chaîne de valeur des activités de nos clients, assurant la transparence et la conformité avec les parties prenantes. Notre cabinet accompagne les organisations dans plusieurs pays à travers un réseau solide et des équipes sur le terrain, offrant un service de proximité et des solutions adaptées aux réalités locales.",
-      "description3": "Aujourd'hui, nous continuons d'étendre notre empreinte tout en restant fidèles à nos principes fondateurs : excellence, intégrité et impact. Des audits statutaires et contractuels à la gestion des risques et au conseil personnalisé, nos équipes livrent des missions durables et efficaces qui génèrent des résultats durables.",
-      "whatWeDo": "Ce que nous faisons",
-      "services": [
-        "Support pour les projets de développement, fusion, création ou transformation",
-        "Audit statutaire ou contractuel",
-        "Expertise comptable",
-        "Analyse du contrôle interne et gestion des risques",
-        "Audit des coûts pétroliers",
-        "Conseil personnalisé pour les entreprises et PME"
-      ]
-    },
-    "history": {
-      "title": "Notre Parcours",
-      "subtitle": "Plus de deux décennies d'excellence dans les services financiers",
-      "timeline": [
-        {
-          "year": "1996",
-          "title": "Fondation d'EXCI-MAA",
-          "description": "Fondée à Yaoundé, Cameroun, avec une vision de fournir des services comptables et financiers exceptionnels aux entreprises locales."
-        },
-        {
-          "year": "2002",
-          "title": "Expansion Régionale",
-          "description": "Étendu les services pour couvrir l'Afrique centrale, établissant des bureaux dans les centres économiques clés de la région."
-        },
-        {
-          "year": "2010",
-          "title": "Reconnaissance Internationale",
-          "description": "Obtenu une reconnaissance internationale pour l'excellence dans les services financiers et les standards de conformité."
-        },
-        {
-          "year": "2015",
-          "title": "Transformation Numérique",
-          "description": "Implémenté des technologies financières de pointe pour améliorer la livraison de services et l'expérience client."
-        },
-        {
-          "year": "2020",
-          "title": "Portée Mondiale",
-          "description": "Établi des partenariats avec des firmes internationales, étendant nos services aux clients dans plus de 6 pays."
-        },
-        {
-          "year": "2023",
-          "title": "Croissance de l'Équipe",
-          "description": "Notre équipe a grandi à plus de 50 professionnels, consolidant notre position en tant que firme de services financiers de premier plan."
-        }
-      ],
-      "journeyContinues": "Notre parcours continue alors que nous nous efforçons d'excellence dans chaque service que nous fournissons.",
-      "learnMoreStory": "En savoir plus sur notre histoire"
-    },
-    "values": {
-      "title": "Nos Valeurs Fondamentales",
-      "subtitle": "Les principes qui guident notre travail et définissent notre culture",
-      "values": [
-        {
-          "name": "Excellence",
-          "description": "Nous nous engageons à livrer les services de la plus haute qualité, améliorant continuellement nos compétences et processus pour dépasser les attentes des clients."
-        },
-        {
-          "name": "Intégrité",
-          "description": "Nous maintenons les plus hauts standards éthiques, assurant la transparence, l'honnêteté et le professionnalisme dans toutes nos interactions."
-        },
-        {
-          "name": "Innovation",
-          "description": "Nous adoptons les nouvelles technologies et solutions créatives pour fournir des services de pointe qui stimulent le succès de nos clients."
-        },
-        {
-          "name": "Focus Client",
-          "description": "Nous construisons des relations durables en comprenant les besoins uniques de nos clients et en livrant des solutions sur mesure qui créent une vraie valeur."
-        },
-        {
-          "name": "Professionnalisme",
-          "description": "Nous maintenons les plus hauts standards d'expertise, de fiabilité et de responsabilité dans tous les aspects de notre travail."
-        },
-        {
-          "name": "Partenariat",
-          "description": "Nous croyons en la collaboration étroite avec nos clients, travaillant comme une extension de leur équipe pour atteindre un succès partagé."
-        }
-      ],
-      "learnMore": "En savoir plus",
-      "learnMoreCulture": "En savoir plus sur notre culture"
-    },
-    "team": {
-      "title": "Rencontrez Notre Direction",
-      "subtitle": "Notre équipe expérimentée est dédiée à livrer un service exceptionnel et de la valeur à nos clients.",
-      "members": [
-        {
-          "name": "Pierre Kemeni",
-          "role": "Fondateur & PDG",
-          "bio": "MBA, CPA, DEC avec plus de 27 ans d'expérience internationale en comptabilité et audit.",
-          "expertise": [
-            "Comptabilité Internationale",
-            "Audit Financier",
-            "Stratégie Commerciale",
-            "Finance d'Entreprise"
-          ]
-        },
-        {
-          "name": "Patrick Ngatcha",
-          "role": "Directeur Général",
-          "bio": "DEC, DSCG, Master CCA, MSTCF avec plus de 13 ans en développement commercial et conseil financier.",
-          "expertise": [
-            "Développement Commercial",
-            "Conseil Financier",
-            "Planification Fiscale",
-            "Stratégie d'Entreprise"
-          ]
-        },
-        {
-          "name": "Marie Laure Ngo Bikoi",
-          "role": "Directrice d'Audit Senior",
-          "bio": "HEC, DSCG avec plus de 15 ans d'expérience en audit et services de conseil financier.",
-          "expertise": [
-            "Audit Financier",
-            "Contrôles Internes",
-            "Gestion des Risques",
-            "Conformité"
-          ]
-        }
-      ],
-      "expertise": "Expertise",
-      "viewAllMembers": "Voir tous les membres de l'équipe"
-    },
-    "testimonials": {
-      "title": "Témoignages Clients",
-      "subtitle": "Ce que nos clients disent de nous"
-    },
-    "clients": {
-      "title": "Ce que disent nos clients",
-      "subtitle": "Ne vous contentez pas de notre parole. Voici ce que nos clients pensent de nos services.",
-      "items": [
-        {
-          "name": "John Smith",
-          "role": "PDG",
-          "company": "ABC Corporation",
-          "quote": "EXCIMAA a joué un rôle clé pour optimiser nos opérations financières. Leur expertise est inégalée.",
-          "rating": 5
-        },
-        {
-          "name": "Sarah Johnson",
-          "role": "Directrice financière",
-          "company": "XYZ Ltd",
-          "quote": "Professionnels, fiables et toujours disponibles quand nous en avons besoin. Hautement recommandé !",
-          "rating": 5
-        },
-        {
-          "name": "Michael Brown",
-          "role": "Propriétaire d'entreprise",
-          "company": "123 Industries",
-          "quote": "Leur équipe nous a apporté un excellent soutien lors de notre expansion internationale. Une véritable expertise globale.",
-          "rating": 4
-        }
-      ]
-    }
-  },
-  "services": {
-    "title": "Nos Services",
-    "subtitle": "Solutions complètes pour vos besoins commerciaux",
-    "heroTitle": "Services Professionnels",
-    "heroSubtitle": "Solutions expertes adaptées à vos exigences commerciales",
-    "detailedTitle": "Détails des Services",
-    "detailedSubtitle": "Informations approfondies sur nos offres",
-    "processTitle": "Notre Processus",
-    "processSubtitle": "Comment nous livrons des résultats exceptionnels",
-    "faqTitle": "Questions Fréquemment Posées",
-    "faqSubtitle": "Questions communes sur nos services",
-    "pricingTitle": "Tarification",
-    "pricingSubtitle": "Tarification transparente pour tous nos services",
-    "schedule": "Planifier",
-    "getStarted": "Commencer",
-    "keyFeatures": "Points clés",
-    "learnMore": "En Savoir Plus",
-    "viewAll": "Voir Tous les Services",
-    "service1Title": "Expertise Comptable",
-    "service1Desc": "Services comptables complets pour les entreprises",
-    "service2Title": "Audit Légal et Fiscal",
-    "service2Desc": "Services professionnels d'audit et de conformité",
-    "service3Title": "Conseil en Gestion",
-    "service3Desc": "Conseil stratégique pour la croissance commerciale",
-    "service4Title": "Paie et Conseil Social",
-    "service4Desc": "Gestion complète de la paie et des RH",
-    "service5Title": "Consolidation",
-    "service5Desc": "Consolidation financière pour les organisations multi-entités",
-    "service6Title": "Conseil en Risque",
-    "service6Desc": "Évaluation et gestion complètes des risques",
-    "categories": {
-      "all": "Tous les Services",
-      "finance": "Services Financiers",
-      "business": "Services aux Entreprises"
-    }
-  },
-  "globalOffices": {
-    "heroTitle": "Bureaux Mondiaux",
-    "heroSubtitle": "Notre présence internationale et expertise locale",
-    "mapTitle": "Carte Interactive",
-    "mapSubtitle": "Explorez nos bureaux dans le monde entier",
-    "listTitle": "Emplacements des Bureaux",
-    "listSubtitle": "Trouvez le bureau le plus proche de vous",
-    "selectOffice": "Sélectionner un bureau",
-    "viewAllOffices": "Voir Tous les Bureaux"
-  },
-  "insights": {
-    "heroTitle": "Perspectives et Actualités",
-    "heroSubtitle": "Restez à jour avec les perspectives de l'industrie et les actualités de l'entreprise",
-    "eventsTitle": "Événements",
-    "eventsSubtitle": "Événements à venir et passés",
-    "blogTitle": "Blog",
-    "blogSubtitle": "Derniers articles et perspectives",
-    "promotionsTitle": "Promotions",
-    "promotionsSubtitle": "Offres spéciales et annonces"
-  },
-  "careers": {
-    "heroTitle": "Rejoignez Notre Équipe",
-    "heroSubtitle": "Construisez votre carrière avec EXCI-MAA",
-    "jobsTitle": "Postes Ouverts",
-    "jobsSubtitle": "Opportunités d'emploi actuelles",
-    "chartTitle": "Organigramme",
-    "chartSubtitle": "Notre structure d'entreprise et leadership",
-    "benefitsTitle": "Avantages et Privilèges",
-    "benefitsSubtitle": "Ce que nous offrons à nos employés"
-  },
-  "contact": {
-    "title": "Contactez-Nous",
-    "subtitle": "Entrez en contact avec notre équipe",
-    "heroTitle": "Entrez en Contact",
-    "heroSubtitle": "Nous sommes là pour vous aider avec vos besoins commerciaux",
-    "formTitle": "Envoyez-nous un Message",
-    "formSubtitle": "Remplissez le formulaire ci-dessous et nous vous recontacterons",
-    "mapTitle": "Trouvez-Nous",
-    "mapSubtitle": "Visitez nos bureaux dans le monde entier",
-    "infoTitle": "Informations de Contact",
-    "infoSubtitle": "Plusieurs façons de nous joindre",
-    "cta": "Contactez-Nous Maintenant",
-    "hero": {
-      "getInTouch": "Entrez en Contact",
-      "letsTalkAbout": "Parlons de Vos",
-      "businessNeeds": "Besoins Commerciaux",
-      "description": "Notre équipe d'experts financiers est prête à vous aider à naviguer dans vos défis commerciaux. Contactez-nous par n'importe quel canal ci-dessous ou envoyez-nous un message directement.",
-      "contactMethods": {
-        "emailUs": "Envoyez-nous un Email",
-        "emailDescription": "Notre équipe vous recontactera dans les 24 heures",
-        "emailValue": "contactcam@excimaa.ca",
-        "callUs": "Appelez-nous",
-        "callDescription": "Lun-Ven de 9h à 17h",
-        "callValue": "+1 (555) 123-4567",
-        "visitUs": "Visitez-nous",
-        "visitDescription": "Venez nous dire bonjour à notre bureau",
-        "visitValue": "123 Avenue des Affaires, Ville, Pays",
-        "officeHours": "Heures de Bureau",
-        "hoursDescription": "Nos heures de travail",
-        "hoursValue": "Lun - Ven: 9:00 - 18:00"
-      },
-      "orFillOut": "Ou remplissez notre formulaire de contact et nous vous recontacterons dans les 24 heures.",
-      "sendUsMessage": "Envoyez-nous un Message"
-    },
-    "form": {
-      "title": "Entrez en Contact",
-      "subtitle": "Vous avez des questions ou êtes prêt à commencer votre projet ? Remplissez le formulaire ci-dessous et notre équipe vous recontactera dès que possible.",
-      "getInTouch": "Entrez en Contact",
-      "description": "Vous avez des questions ou êtes prêt à commencer votre projet ? Remplissez le formulaire ci-dessous et notre équipe vous recontactera dès que possible.",
-      "contactInformation": "Informations de Contact",
-      "contactDescription": "Remplissez le formulaire et notre équipe vous recontactera dans les 24 heures. Pour une assistance immédiate, veuillez nous appeler directement.",
-      "callUs": "Appelez-nous",
-      "emailUs": "Envoyez-nous un email",
-      "visitUs": "Visitez-nous",
-      "businessHours": "Heures de Bureau",
-      "mondayFriday": "Lundi - Vendredi: 9:00 AM - 6:00 PM",
-      "saturdaySunday": "Samedi - Dimanche: Fermé",
-      "name": "Nom",
-      "name_placeholder": "Jean Dupont",
-      "email": "Email",
-      "email_placeholder": "jean@exemple.com",
-      "phone": "Téléphone",
-      "phone_placeholder": "+33 1 23 45 67 89",
-      "subject": "Sujet",
-      "select_subject": "Sélectionnez un sujet",
-      "other": "Autre",
-      "message": "Message",
-      "message_placeholder": "Dites-nous en plus...",
-      "submit": "Envoyer le Message",
-      "submitting": "Envoi en cours...",
-      "success": "Merci ! Votre message a été envoyé.",
-      "error": "Impossible d'envoyer. Veuillez réessayer.",
-      "fullName": "Nom Complet",
-      "emailAddress": "Adresse Email",
-      "phoneNumber": "Numéro de Téléphone",
-      "required": "*",
-      "placeholders": {
-        "fullName": "Jean Dupont",
-        "email": "vous@exemple.com",
-        "phone": "+33 1 23 45 67 89",
-        "selectSubject": "Sélectionnez un sujet",
-        "message": "Comment pouvons-nous vous aider ?"
-      },
-      "subjects": {
-        "generalInquiry": "Demande Générale",
-        "accountingServices": "Services Comptables",
-        "auditServices": "Services d'Audit",
-        "taxConsultation": "Consultation Fiscale",
-        "other": "Autre"
-      },
-      "validation": {
-        "nameRequired": "Le nom est requis",
-        "emailRequired": "L'email est requis",
-        "emailInvalid": "Adresse email invalide",
-        "subjectRequired": "Le sujet est requis",
-        "messageRequired": "Le message est requis",
-        "messageMinLength": "Le message doit contenir au moins 10 caractères"
-      },
-      "sendMessage": "Envoyer le Message",
-      "sending": "Envoi en cours...",
-      "successTitle": "Message Envoyé avec Succès !",
-      "successDescription": "Merci de nous avoir contactés. Nous avons reçu votre message et vous recontacterons dans les 24 heures.",
-      "sendAnotherMessage": "Envoyer un Autre Message",
-      "errorTitle": "Erreur",
-      "errorMessage": "Échec de l'envoi du message. Veuillez réessayer plus tard.",
-      "privacyNote": "Nous vous recontacterons dans les 24 heures. Vos informations sont sécurisées."
-    },
-    "map": {
-      "findOurOffice": "Trouvez Notre Bureau",
-      "description": "Visitez-nous dans notre bureau situé dans un endroit pratique. Nous sommes là pour vous assister dans tous vos besoins financiers.",
-      "ourOffice": "Notre Bureau",
-      "address": "Adresse",
-      "phone": "Téléphone",
-      "email": "Email",
-      "businessHours": "Heures de Bureau",
-      "getDirections": "Obtenir les Directions",
-      "needHelpFinding": "Besoin d'Aide pour Nous Trouver ?",
-      "helpDescription": "Notre bureau est situé au cœur du quartier des affaires avec un accès facile aux transports publics.",
-      "centerMap": "Centrer la Carte sur Notre Emplacement",
-      "officeLocation": {
-        "address": "123 Avenue des Affaires, Riyad 12345, Arabie Saoudite",
-        "phone": "+237233427940 && +237698835251",
-        "email": "riyadh@exci-maa.com",
-        "hours": "Lundi - Vendredi: 9:00 AM - 6:00 PM"
-      }
-    },
-    "faq": {
-      "title": "Questions Fréquemment Posées",
-      "description": "Trouvez des réponses aux questions courantes sur nos services, processus et comment nous pouvons aider votre entreprise à prospérer.",
-      "questions": [
-        {
-          "question": "Quels services EXCI-MAA fournit-il ?",
-          "answer": "Nous offrons une gamme complète de services de comptabilité, d'audit, de fiscalité et de conseil commercial adaptés aux besoins uniques des entreprises en Arabie Saoudite et au-delà. Nos services incluent les rapports financiers, la planification fiscale, l'audit interne et le conseil commercial."
-        },
-        {
-          "question": "Comment puis-je planifier une consultation ?",
-          "answer": "Vous pouvez planifier une consultation en appelant notre bureau, en nous envoyant un email, ou en utilisant le formulaire de contact sur cette page. Notre équipe vous recontactera dans les 24 heures pour confirmer votre rendez-vous."
-        },
-        {
-          "question": "Dans quelles industries vous spécialisez-vous ?",
-          "answer": "Nous avons une vaste expérience dans le travail avec diverses industries, y compris les soins de santé, la construction, la vente au détail, la technologie et les services professionnels. Notre équipe a l'expertise pour gérer les défis financiers uniques de chaque secteur."
-        },
-        {
-          "question": "Quelles sont vos heures de bureau ?",
-          "answer": "Notre bureau est ouvert du dimanche au jeudi, de 9h00 à 18h00. Nous sommes fermés les vendredis et samedis ainsi que les jours fériés."
-        },
-        {
-          "question": "Offrez-vous des services à distance ou virtuels ?",
-          "answer": "Oui, nous offrons des services de consultation en personne et virtuels pour répondre aux besoins de nos clients. Notre équipe est équipée d'outils de visioconférence sécurisés pour fournir le même niveau de service à distance."
-        },
-        {
-          "question": "Comment assurez-vous la sécurité et la confidentialité des données ?",
-          "answer": "Nous prenons la sécurité des données très au sérieux. Toutes les informations clients sont traitées avec la plus grande confidentialité et protégées en utilisant des mesures de sécurité standard de l'industrie, y compris le chiffrement et les systèmes de partage de fichiers sécurisés."
-        }
-      ],
-      "stillHaveQuestions": "Vous avez encore des questions ?",
-      "stillHaveDescription": "Vous ne trouvez pas la réponse que vous cherchez ? Notre équipe est là pour vous aider. Contactez-nous et nous vous recontacterons dès que possible.",
-      "chatWithUs": "Discutez avec nous",
-      "chatDescription": "Notre équipe est là pour vous aider",
-      "sendUsMessage": "Envoyez-nous un message",
-      "callUs": "Appelez-nous",
-      "callDescription": "Lundi au vendredi, 9h à 18h",
-      "emailUs": "Envoyez-nous un email",
-      "emailDescription": "Nous vous recontacterons dans les 24 heures",
-      "cantFindWhat": "Vous ne trouvez pas ce que vous cherchez ?",
-      "expertsDescription": "Notre équipe d'experts est là pour répondre à toutes vos questions.",
-      "contactSupport": "Contacter le Support"
-    }
-  },
-  "training": {
-    "title": "Programmes de Formation",
-    "subtitle": "Nous offrons des programmes de développement professionnel et de certification",
-    "categories": {
-      "accounting": {
-        "title": "Comptabilité / Fiscalité / Social",
-        "courses": [
-          "Comment tenir et organiser les comptes d'entreprise",
-          "Comment créer ou préparer une déclaration fiscale et ses annexes",
-          "Règles de déductibilité et de déclaration de la TVA",
-          "Comment anticiper et gérer vos contrôles fiscaux",
-          "Le problème de la TVA au CONGO, CAMEROUN, RWANDA, BURUNDI, GABON",
-          "Établissez votre compte d'exploitation et plan de trésorerie en toute confiance",
-          "Techniques de détection de fraude dans les déclarations fiscales",
-          "Impact des déficits ARD et fiscaux sur le revenu imposable",
-          "Cadre entre la DAS, les déclarations et la DSF : Cas d'un contrôle CNSS",
-          "Création d'un manuel d'affectation comptable"
-        ],
-        "price": "$299",
-        "duration": "3 jours"
-      },
-      "audit": {
-        "title": "Audit légal / Contrôle de gestion",
-        "courses": [
-          "Pourquoi auditer vos comptes ?",
-          "Méthodologie d'audit comptable et financier",
-          "Quel est l'impact de l'audit sur la déclaration fiscale ?",
-          "Théorie et pratique de l'audit interne dans les PME, Banques et Assurances",
-          "Théorie et pratique du contrôle de gestion",
-          "Tableaux de bord et évaluation de la performance",
-          "Audit externe (Cabinet d'audit)",
-          "Audit Interne – Planification et Exécution",
-          "Audit légal",
-          "Gestion optimale de votre trésorerie, notamment votre découvert",
-          "Comprendre les attentes de trésorerie du point de vue de la filiale et du siège",
-          "Équilibrer vos paiements fournisseurs avec vos encaissements clients",
-          "Évaluation de votre système d'information – SI ICT",
-          "Comprendre les ERP, leurs processus et voir si votre entreprise peut en avoir besoin",
-          "Révision des concepts fondamentaux du contrôle interne",
-          "Révision des concepts fondamentaux de l'audit interne",
-          "Détecter et prévenir la fraude",
-          "Gestion des risques dans le secteur publicitaire"
-        ],
-        "price": "$399",
-        "duration": "5 jours"
-      },
-      "advice": {
-        "title": "Conseil",
-        "courses": [
-          "La pratique des comptes consolidés et le traitement des impôts différés",
-          "Comprendre les bases et les enjeux majeurs de la fiscalité internationale : Prix de transfert",
-          "Évaluation des entreprises dans la zone OHADA",
-          "Réévaluation du bilan : une nécessité pour toutes les entreprises",
-          "Pratique de la fusion, scission et liquidation dans la zone OHADA",
-          "Comment pratiquer la consolidation des comptes dans la zone OHADA",
-          "Rédaction d'un plan d'affaires bancable",
-          "Méthodologie de création d'entreprise",
-          "Fusions – Acquisitions",
-          "Audit légal, social et fiscal",
-          "Support pour la rédaction d'un manuel de procédures de contrôle interne"
-        ],
-        "price": "$349",
-        "duration": "4 jours"
-      },
-      "various": {
-        "title": "Thèmes divers",
-        "courses": [
-          "Comment gérer les clients difficiles",
-          "Libérez votre charisme et développez votre leadership dans les affaires et au-delà",
-          "Qualité au bureau / Entreprise",
-          "Comment devenir un Contrôleur Financier/Gestion ou CFO et techniques efficaces",
-          "Utiliser la comptabilité et le contrôle de gestion pour contrôler les risques bancaires",
-          "Droit des affaires OHADA",
-          "Fiscalité des entreprises",
-          "Maîtriser et auditer le contrôle bancaire permanent",
-          "Audit de conformité des systèmes réglementaires d'assurance"
-        ],
-        "price": "$199",
-        "duration": "2 jours"
-      }
-    }
-  },
-  "globalOffices": {
-  "title": "Présence mondiale interactive",
-  "subtitle": "Explorez nos bureaux à travers le monde et découvrez les services que nous proposons dans chaque lieu",
-  "heroTitle": "Bureaux mondiaux",
-    "heroSubtitle": "Notre présence mondiale et expertise client",
-    "mapTitle": "Carte de présence",
-    "mapSubtitle": "Découvrez nos bureaux dans le monde entier",
-    "listTitle": "Emplacements des bureaux",
-    "listSubtitle": "Trouvez le bureau le plus proche de vous"
-},
-    "teamMembers": {
-      "title": "Notre équipe mondiale",
-      "subtitle": "Rencontrez les professionnels qui favorisent l'excellence dans tous nos sites",
-      "readMore": "En savoir plus",
-      "showLess": "Afficher moins",
-      "specialties": "Spécialités",
-      "noMembers": "Aucun membre d'équipe actuellement assigné à ce bureau",
-      "members": {
-        "pierre-kemeni": {
-          "name": "Pierre KEMENI",
-          "title": "Directeur général et président",
-          "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
-          "bio": "Partenaire, Directeur général chez EXCI-MAA Group. Expert-comptable agréé par COSUMAF et auditeur statutaire. Inscrit à l'ICPAR, ONECCA, CPA Canada, Québec, Ontario et Royaume-Uni. Ancien directeur d'engagement chez Deloitte Toronto. Spécialiste en gestion, SYSCOHADA, conversion de comptes. Consultant international senior et formateur.",
-          "specialties": [
-            "Comptabilité internationale",
-            "Audit financier",
-            "Conseil en gestion",
-            "Spécialiste SYSCOHADA",
-            "Conversion de comptes",
-            "Spécialiste du secteur bancaire"
-          ]
-        },
-        "patrick-ngatcha": {
-          "name": "Patrick NGATCHA",
-          "title": "Partenaire - Directeur général",
-          "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
-          "bio": "Expert-comptable inscrit à l’Institut des experts-comptables de Paris Île-de-France. Auditeur statutaire. Expert en fiscalité et audit financier, audit d'acquisition, consolidation (règlement 99-02 / IFRS).",
-          "specialties": [
-            "Développement commercial",
-            "Conseil financier",
-            "Planification fiscale",
-            "IFRS",
-            "Consolidation",
-            "Audit d'acquisition"
-          ]
-        },
-        "cloudin-ngong": {
-          "name": "Cloudin NGONG",
-          "title": "Superviseur - Département d'expertise comptable",
-          "qualifications": ["MSc Accounting and Finance"],
-          "bio": "Analyste financier spécialisé en fiscalité et audit financier. Supervise les opérations du département d'expertise comptable.",
-          "specialties": [
-            "Analyse financière",
-            "Audit fiscal",
-            "Audit financier",
-            "Supervision de département"
-          ]
-        },
-        "janot-hiag": {
-          "name": "Janot HIAG",
-          "title": "Évaluateur actuariel et auditeur des coûts pétroliers",
-          "qualifications": ["Actuarial Certification"],
-          "bio": "Spécialiste en audit des coûts pétroliers, sécurité des revenus, inventaire et réévaluation des actifs, audit opérationnel et juridique, et audit statutaire.",
-          "specialties": [
-            "Audit des coûts pétroliers",
-            "Sécurité des revenus",
-            "Réévaluation des actifs",
-            "Audit opérationnel",
-            "Audit juridique"
-          ]
-        },
-        "eric-kabeza": {
-          "name": "Eric KABEZA",
-          "title": "Partenaire principal en fiscalité - Rwanda",
-          "qualifications": ["Tax Expert"],
-          "bio": "Expert en fiscalité locale et internationale avec plus de 20 ans d'expérience à l'Autorité fiscale rwandaise. Conseiller fiscal pour les entreprises et les particuliers. Responsable de la conformité fiscale et analyste des politiques.",
-          "specialties": [
-            "Fiscalité locale",
-            "Fiscalité internationale",
-            "Conformité fiscale",
-            "Analyse des politiques",
-            "Fiscalité des entreprises",
-            "Fiscalité des particuliers"
-          ]
-        },
-        "jean-nahimana": {
-          "name": "Jean Berchmas",
-          "title": "Partenaire - Audit financier et fiscal",
-          "qualifications": ["CPA", "FMVA®", "BIDA®"],
-          "bio": "Expert-comptable, membre de l'ICPAR. Auditeur financier et fiscal. Analyste senior des comptes et modélisateur financier avec une vaste expérience en planification et analyse financières.",
-          "specialties": [
-            "Audit financier",
-            "Audit fiscal",
-            "Modélisation financière",
-            "Analyse des comptes"
-          ]
-        },
-        "martin-nkwain": {
-          "name": "Marcel NKWAIN",
-          "title": "Responsable régional - Afrique de l'Est",
-          "qualifications": ["IPA(UA)", "IFA(UK)"],
-          "bio": "Expert HARDCAT en gestion d'actifs fixes. Auditeur financier et fiscal. Consultant international et formateur dirigeant les opérations d'EXCI-MAA en Afrique de l'Est.",
-          "specialties": [
-            "Gestion des actifs fixes",
-            "Gestion régionale",
-            "Audit financier",
-            "Audit fiscal",
-            "Formation internationale"
-          ]
-        },
-        "paul-tchamake": {
-          "name": "Olivier Fodji",
-          "title": "Partenaire - Fiscalité internationale et prix de transfert",
-          "qualifications": ["Ms", "CPA (USA, France)"],
-          "bio": "Expert-comptable certifié (régimes américain et français). Spécialiste en fiscalité internationale, ASC 740 (normes US GAAP). Plus de 15 ans d'expérience en reporting financier et fiscal international avec une expérience chez Big 4 à KPMG et PwC USA. Spécialiste en prix de transfert et BEPS.",
-          "specialties": [
-            "Fiscalité internationale",
-            "Prix de transfert",
-            "BEPS",
-            "US GAAP",
-            "ASC 740",
-            "Fiscalité transfrontalière"
-          ]
-        },
-        "diane-dusabe": {
-          "name": "Diane DUSABE",
-          "title": "Responsable de bureau - Burundi",
-          "qualifications": ["BBA", "Accounting"],
-          "bio": "Responsable de bureau expérimentée supervisant les opérations d'EXCI-MAA au Burundi. Spécialisée dans les relations avec les clients et le développement commercial local.",
-          "specialties": [
-            "Gestion de bureau",
-            "Relations avec les clients",
-            "Développement commercial",
-            "Opérations locales"
-          ]
-        },
-        "onesphore-ofodji": {
-          "name": "Onesphore OFODJI",
-          "title": "Consultant senior - Burundi",
-          "qualifications": ["CPA", "MBA"],
-          "bio": "Consultant commercial senior spécialisé dans le développement des marchés régionaux et les services de conseil financier pour les entreprises au Burundi.",
-          "specialties": [
-            "Conseil commercial",
-            "Conseil financier",
-            "Développement de marché",
-            "Planification stratégique"
-          ]
-        },
-        "congo-director": {
-          "name": "Directeur régional",
-          "title": "Directeur - Opérations RDC",
-          "qualifications": ["CPA", "MBA"],
-          "bio": "Dirige les opérations d'EXCI-MAA en République Démocratique du Congo, avec un focus sur les services d'audit et de conseil commercial.",
-          "specialties": [
-            "Services d'audit",
-            "Conseil commercial",
-            "Opérations régionales",
-            "Conseil fiscal"
-          ]
-        },
-        "gabon-manager": {
-          "name": "Responsable régional",
-          "title": "Responsable - Opérations Gabon",
-          "qualifications": ["Expert Comptable", "CEMAC"],
-          "bio": "Gère les services d'EXCI-MAA au Gabon avec un focus sur l'audit financier et le conseil aux entreprises pour les clients locaux et internationaux.",
-          "specialties": [
-            "Audit financier",
-            "Conseil aux entreprises",
-            "Réglementations CEMAC",
-            "Conformité locale"
-          ]
-        },
-        "dubai-consultant": {
-          "name": "Consultant senior",
-          "title": "Consultant commercial senior - Dubaï",
-          "qualifications": ["CPA", "ACCA"],
-          "bio": "Spécialisé dans la création d'entreprises internationales et la planification fiscale pour les entreprises qui se développent sur les marchés du Moyen-Orient.",
-          "specialties": [
-            "Création d'entreprise",
-            "Planification fiscale",
-            "Expansion internationale",
-            "Marchés du Moyen-Orient"
-          ]
-        },
-        "france-partner": {
-          "name": "Partenaire",
-          "title": "Partenaire - Opérations France",
-          "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
-          "bio": "Dirige les opérations européennes avec une expertise en conformité européenne et conseil transfrontalier.",
-          "specialties": [
-            "Conformité européenne",
-            "Conseil transfrontalier",
-            "Comptabilité européenne",
-            "Fiscalité internationale"
-          ]
-        },
-        "canada-consultant": {
-          "name": "Consultant senior",
-          "title": "Consultant en immigration et fiscalité",
-          "qualifications": ["CPA", "RCIC"],
-          "bio": "Spécialisé dans les services d'immigration au Canada et la planification fiscale internationale pour les nouveaux immigrants et les entreprises.",
-          "specialties": [
-            "Services d'immigration",
-            "Fiscalité internationale",
-            "Planification financière",
-            "Immigration d'affaires"
-          ]
-        }
-      }
-    },
-  "partners": {
-    "title": "Nos Dirigeants",
-    "subtitle": "Organisations de confiance avec lesquelles nous travaillons",
-    "founders": {
-      "pierre": {
-        "name": "Pierre KEMENI",
-        "title": "MBA, CPA, DEC",
-        "description": "Expert-comptable et commissaire aux comptes avec plus de 27 ans d'expérience en comptabilité et audit internationaux.",
-        "specialties": [
-          "Comptabilité Internationale",
-          "Audit",
-          "Conseil Fiscal"
-        ]
-      },
-      "patrick": {
-        "name": "Patrick NGATCHA",
-        "title": "DEC, DSCG, Master CCA, MSTCF",
-        "description": "Expert-comptable et commissaire aux comptes avec plus de 13 ans d'expérience en développement des affaires et conseil financier.",
-        "specialties": [
-          "Développement Commercial",
-          "Conseil Financier",
-          "Gestion des Risques"
-        ]
-      }
-    }
-  },
-  "offices": {
-    "title": "Présence Mondiale",
-    "subtitle": "Servir les clients dans le monde entier"
-  },
-  "admin": {
-    "dashboardTitle": "Tableau de Bord Admin",
-    "dashboardSubtitle": "Gérez votre contenu et vos analyses",
-    "contentTitle": "Gestion de Contenu",
-    "contentSubtitle": "Gérez les services, événements et articles de blog",
-    "analyticsTitle": "Analyses",
-    "analyticsSubtitle": "Voir les métriques de performance et les perspectives"
-  },
-  "servicesPage": {
-    "hero": {
-      "title": "Transformez Votre Entreprise avec",
-      "titleHighlight": "des Solutions Financières Expertes",
-      "subtitle": "Découvrez comment nos services financiers complets peuvent stimuler la croissance, assurer la conformité et optimiser les performances de votre entreprise."
-    },
-    "detailedServices": {
-      "title": "Nos",
-      "titleHighlight": "Complets",
-      "titleSuffix": "Services",
-      "subtitle": "Solutions financières sur mesure pour répondre aux besoins uniques de votre entreprise et stimuler une croissance durable.",
-      "services": {
-        "accounting": {
-          "title": "Comptabilité et Tenue de Livres",
-          "shortDesc": "Tenue de registres financiers et rapports complets",
-          "description": "Notre équipe comptable experte fournit des services de tenue de livres complets pour maintenir vos registres financiers précis et à jour. Nous gérons tout, des transactions quotidiennes aux rapports financiers complexes, en assurant la conformité avec toutes les réglementations pertinentes.",
-          "features": [
-            "Tenue de livres mensuelle et états financiers",
-            "Gestion des comptes créditeurs et débiteurs",
-            "Rapprochements bancaires et cartes de crédit",
-            "Traitement de la paie et rapports",
-            "Rapports et analyse financiers",
-            "Configuration et maintenance du plan comptable",
-            "Suivi et évaluation des stocks",
-            "Gestion des actifs fixes",
-            "Analyse et prévision des flux de trésorerie",
-            "Préparation et suivi du budget"
-          ]
-        },
-        "audit": {
-          "title": "Audit et Assurance",
-          "shortDesc": "Vérification financière indépendante et conformité",
-          "description": "Nos services d'audit fournissent une vérification indépendante de vos états financiers, assurant l'exactitude et la conformité aux normes comptables. Nous aidons à identifier les risques et à améliorer vos processus financiers.",
-          "features": [
-            "Audits des états financiers",
-            "Évaluations des contrôles internes",
-            "Audits de conformité",
-            "Audits opérationnels",
-            "Audits à des fins spéciales",
-            "Évaluation et gestion des risques",
-            "Détection et prévention de la fraude",
-            "Examens de conformité réglementaire",
-            "Services de due diligence",
-            "Audits de performance et d'efficacité"
-          ]
-        },
-        "tax": {
-          "title": "Conseil Fiscal",
-          "shortDesc": "Planification fiscale stratégique et conformité",
-          "description": "Nos experts fiscaux fournissent des services complets de planification fiscale et de conformité pour minimiser votre responsabilité fiscale tout en assurant la conformité complète avec toutes les lois et réglementations fiscales.",
-          "features": [
-            "Planification et stratégie fiscales",
-            "Déclarations fiscales des entreprises et particuliers",
-            "Support d'audit fiscal",
-            "Planification fiscale internationale",
-            "Résolution de litiges fiscaux",
-            "Conformité et dépôt fiscal",
-            "Documentation des prix de transfert",
-            "Stratégies d'optimisation fiscale",
-            "Planification successorale et de succession",
-            "Coordination fiscale multi-juridictionnelle"
-          ]
-        },
-        "advisory": {
-          "title": "Conseil d'Entreprise",
-          "shortDesc": "Conseil et planification d'entreprise stratégiques",
-          "description": "Nos services de conseil d'entreprise aident les organisations à naviguer dans les défis commerciaux complexes, à améliorer les performances et à atteindre une croissance durable grâce à la planification et à la mise en œuvre stratégiques.",
-          "features": [
-            "Planification et stratégie d'entreprise",
-            "Modélisation et prévision financières",
-            "Fusions et acquisitions",
-            "Évaluation d'entreprise",
-            "Amélioration des performances",
-            "Planification et exécution stratégiques",
-            "Analyse de marché et intelligence concurrentielle",
-            "Analyse d'investissement et due diligence",
-            "Gestion du changement et transformation",
-            "Conseil de conseil d'administration et gouvernance"
-          ]
-        },
-        "risk": {
-          "title": "Gestion des Risques",
-          "shortDesc": "Identifier et atténuer les risques commerciaux",
-          "description": "Nos services de gestion des risques aident les organisations à identifier, évaluer et atténuer les risques qui pourraient affecter leurs objectifs et opérations commerciaux.",
-          "features": [
-            "Évaluation et analyse des risques",
-            "Services d'audit interne",
-            "Prévention et détection de la fraude",
-            "Surveillance de la conformité",
-            "Planification de la continuité des activités",
-            "Gestion des risques d'entreprise",
-            "Évaluation des risques opérationnels",
-            "Évaluation des risques financiers",
-            "Cadres de conformité réglementaire",
-            "Gestion de crise et récupération"
-          ]
-        },
-        "hr": {
-          "title": "Services RH et Paie",
-          "shortDesc": "Solutions complètes RH et paie",
-          "description": "Nos services RH et paie aident les organisations à gérer leur actif le plus précieux - leurs employés - tout en assurant la conformité avec les lois et réglementations du travail.",
-          "features": [
-            "Traitement de la paie",
-            "Développement de politiques RH",
-            "Administration des avantages sociaux",
-            "Gestion de la performance",
-            "Conformité aux lois du travail",
-            "Intégration et départ des employés",
-            "Analyse de la rémunération et des avantages",
-            "Mise en œuvre de technologies RH",
-            "Planification de la main-d'œuvre et analyses",
-            "Relations employés et résolution de conflits"
-          ]
-        }
-      },
-      "scheduleAppointment": "Planifier un Rendez-vous",
-      "needCustomSolution": "Besoin d'une solution personnalisée ? Nos experts sont là pour vous aider.",
-      "getFreeConsultation": "Obtenir une Consultation Gratuite"
-    },
-    "process": {
-      "title": "Notre",
-      "titleHighlight": "Prouvé",
-      "titleSuffix": "Processus",
-      "subtitle": "Une approche structurée pour fournir des services financiers exceptionnels adaptés aux besoins de votre entreprise.",
-      "steps": [
-        {
-          "title": "Découverte et Analyse",
-          "description": "Nous commençons par comprendre vos besoins, défis et objectifs commerciaux grâce à des discussions approfondies et des analyses.",
-          "duration": "1-2 Semaines",
-          "keyPoints": [
-            "Consultation initiale",
-            "Évaluation d'entreprise",
-            "Collecte des exigences",
-            "Définition de la portée"
-          ]
-        },
-        {
-          "title": "Proposition et Planification",
-          "description": "Nous développons un plan de service personnalisé avec des objectifs clairs, des délais et des livrables adaptés à vos besoins.",
-          "duration": "3-5 Jours",
-          "keyPoints": [
-            "Plan de service personnalisé",
-            "Structure de tarification",
-            "Accord sur les délais",
-            "Attribution d'équipe"
-          ]
-        },
-        {
-          "title": "Intégration d'Équipe",
-          "description": "Notre équipe experte est assignée à votre projet, assurant les bonnes compétences et expertise pour vos exigences spécifiques.",
-          "duration": "2-3 Jours",
-          "keyPoints": [
-            "Gestionnaire de compte dédié",
-            "Présentation de l'équipe",
-            "Accès aux outils",
-            "Configuration de la communication"
-          ]
-        },
-        {
-          "title": "Mise en Œuvre",
-          "description": "Nous exécutons les services convenus avec précision, vous tenant informé à chaque étape du processus.",
-          "duration": "Varie selon le projet",
-          "keyPoints": [
-            "Mises à jour de progrès régulières",
-            "Assurance qualité",
-            "Résolution de problèmes",
-            "Révisions de jalons"
-          ]
-        },
-        {
-          "title": "Révision et Rapports",
-          "description": "Nous fournissons des rapports et analyses complets, assurant une transparence complète et une compréhension des résultats.",
-          "duration": "1 Semaine",
-          "keyPoints": [
-            "Métriques de performance",
-            "Rapports financiers",
-            "Vérification de conformité",
-            "Recommandations"
-          ]
-        },
-        {
-          "title": "Support Continu",
-          "description": "Notre relation continue avec un support continu, des révisions régulières et des conseils stratégiques pour une amélioration continue.",
-          "duration": "Continu",
-          "keyPoints": [
-            "Support dédié",
-            "Vérifications régulières",
-            "Conseils stratégiques",
-            "Optimisation des services"
-          ]
-        }
-      ],
-      "readyToGetStarted": "Prêt à commencer ?",
-      "readyDescription": "Notre équipe d'experts est prête à vous guider à travers notre processus et fournir des services financiers exceptionnels pour votre entreprise.",
-      "getFreeConsultation": "Obtenir une Consultation Gratuite",
-      "exploreServices": "Explorer Nos Services"
-    },
-    "pricing": {
-      "title": "Tarification",
-      "titleHighlight": "Simple et Transparente",
-      "titleSuffix": "",
-      "subtitle": "Choisissez le plan parfait pour les besoins de votre entreprise. Aucuns frais cachés, annulez à tout moment.",
-      "monthlyBilling": "Facturation Mensuelle",
-      "annualBilling": "Facturation Annuelle",
-      "saveUpTo": "(Économisez jusqu'à 20%)",
-      "plans": {
-        "starter": {
-          "name": "Débutant",
-          "description": "Parfait pour les petites entreprises qui commencent",
-          "features": [
-            "Tenue de livres de base",
-            "Rapports financiers mensuels",
-            "Estimations fiscales trimestrielles",
-            "Support par email",
-            "Jusqu'à 50 transactions/mois",
-            "Tableau de bord financier de base"
-          ],
-          "notIncluded": [
-            "Support d'audit",
-            "Gestionnaire de compte dédié",
-            "Rapports personnalisés",
-            "Dépôt fiscal",
-            "Gestion des stocks"
-          ],
-          "buttonText": "Commencer"
-        },
-        "professional": {
-          "name": "Professionnel",
-          "description": "Idéal pour les entreprises en croissance",
-          "features": [
-            "Tout dans Débutant",
-            "Tenue de livres avancée",
-            "Rapports financiers hebdomadaires",
-            "Estimations fiscales mensuelles",
-            "Support prioritaire par email et téléphone",
-            "Jusqu'à 200 transactions/mois",
-            "Tableau de bord financier avancé",
-            "Dépôt fiscal de base",
-            "Suivi des stocks"
-          ],
-          "notIncluded": [
-            "Support d'audit",
-            "Gestionnaire de compte dédié",
-            "Rapports personnalisés",
-            "Planification fiscale avancée"
-          ],
-          "buttonText": "Commencer"
-        },
-        "enterprise": {
-          "name": "Entreprise",
-          "description": "Pour les entreprises établies avec des besoins complexes",
-          "features": [
-            "Tout dans Professionnel",
-            "Comptabilité service complet",
-            "Rapports financiers personnalisés",
-            "Gestionnaire de compte dédié",
-            "Support prioritaire 24/7",
-            "Transactions illimitées",
-            "Planification fiscale avancée",
-            "Support d'audit",
-            "Intégrations personnalisées",
-            "Préparation de réunions de conseil",
-            "Services de conseil CFO"
-          ],
-          "notIncluded": [],
-          "buttonText": "Contacter les Ventes"
-        }
-      },
-      "whatsIncluded": "Ce qui est inclus :",
-      "notIncluded": "Non inclus :",
-      "billedAnnually": "Facturé annuellement",
-      "orBilledAnnually": "ou ${{annualPrice}} facturé annuellement",
-      "save": "Économisez {{percentage}}%",
-      "needCustomSolution": "Besoin d'une solution personnalisée ? Nous offrons des forfaits sur mesure pour les entreprises avec des exigences uniques.",
-      "getCustomQuote": "Obtenir un Devis Personnalisé",
-      "notSureWhichPlan": "Pas sûr du plan qui vous convient ?",
-      "expertsHelp": "Nos experts sont là pour vous aider à choisir la solution parfaite pour les besoins de votre entreprise. Planifiez une consultation gratuite de 30 minutes pour discuter de vos exigences.",
-      "scheduleFreeConsultation": "Planifier une Consultation Gratuite"
-    }
-  },
-  "aboutPage": {
-    "hero": {
-      "title": "À Propos d'EXCI-MAA",
-      "subtitle": "Votre Partenaire Financier de Confiance",
-      "description": "Avec plus de 27 ans d'excellence dans les services financiers, EXCI-MAA a été un partenaire de confiance pour les entreprises dans plusieurs pays, fournissant des services experts en comptabilité, audit et conseil.",
-      "getInTouch": "Entrer en Contact",
-      "ourServices": "Nos Services",
-      "trustedByBusinesses": "Fait confiance par les entreprises du monde entier",
-      "stats": {
-        "yearsExperience": "Années d'Expérience",
-        "countriesServed": "Pays Desservis",
-        "teamMembers": "Membres de l'Équipe",
-        "clientSatisfaction": "Satisfaction Client",
-        "clientsServed": "Clients Servis",
-        "successRate": "Taux de Réussite"
-      }
-    },
-    "mission": {
-      "title": "Notre Mission",
-      "description1": "Notre mission principale est de soutenir et accompagner les entreprises opérant sur le marché africain vers l'excellence financière. En tirant parti d'une connaissance approfondie des secteurs à but lucratif et non lucratif, nous livrons des engagements de conseil, d'audit statutaire et de conseil adaptés à chaque taille d'organisation.",
-      "description2": "Nos solutions sont conçues pour répondre aux besoins spécifiques des entreprises à travers le continent africain, fournissant un service de bout en bout et une vraie valeur ajoutée—à un budget équitable. Notre équipe multidisciplinaire et multiculturelle assure un support sur mesure, adapté à l'échelle et aux capacités de votre structure."
-    },
-    "story": {
-      "title": "Notre Histoire",
-      "description1": "EXCI-MAA a été fondée par des experts en audit, comptabilité, fiscalité, développement commercial, systèmes d'information de gestion et droit. Avec une présence au Canada, aux États-Unis, en France, au Royaume-Uni et à travers l'Afrique, nous apportons une expertise internationale adaptée à chaque contexte local.",
-      "description2": "Nous opérons à travers toute la chaîne de valeur des activités de nos clients, assurant la transparence et la conformité avec les parties prenantes. Notre cabinet accompagne les organisations dans plusieurs pays à travers un réseau solide et des équipes sur le terrain, offrant un service de proximité et des solutions adaptées aux réalités locales.",
-      "description3": "Aujourd'hui, nous continuons d'étendre notre empreinte tout en restant fidèles à nos principes fondateurs : excellence, intégrité et impact. Des audits statutaires et contractuels à la gestion des risques et au conseil personnalisé, nos équipes livrent des missions durables et efficaces qui génèrent des résultats durables.",
-      "whatWeDo": "Ce que nous faisons",
-      "services": [
-        "Support pour les projets de développement, fusion, création ou transformation",
-        "Audit statutaire ou contractuel",
-        "Expertise comptable",
-        "Analyse du contrôle interne et gestion des risques",
-        "Audit des coûts pétroliers",
-        "Conseil personnalisé pour les entreprises et PME"
-      ]
-    },
-    "history": {
-      "title": "Notre Parcours",
-      "subtitle": "Plus de deux décennies d'excellence dans les services financiers",
-      "timeline": [
-        {
-          "year": "1996",
-          "title": "Fondation d'EXCI-MAA",
-          "description": "Fondée à Yaoundé, Cameroun, avec une vision de fournir des services comptables et financiers exceptionnels aux entreprises locales."
-        },
-        {
-          "year": "2002",
-          "title": "Expansion Régionale",
-          "description": "Étendu les services pour couvrir l'Afrique centrale, établissant des bureaux dans les centres économiques clés de la région."
-        },
-        {
-          "year": "2010",
-          "title": "Reconnaissance Internationale",
-          "description": "Obtenu une reconnaissance internationale pour l'excellence dans les services financiers et les normes de conformité."
-        },
-        {
-          "year": "2015",
-          "title": "Transformation Numérique",
-          "description": "Implémenté des technologies financières de pointe pour améliorer la prestation de services et l'expérience client."
-        },
-        {
-          "year": "2020",
-          "title": "Portée Mondiale",
-          "description": "Établi des partenariats avec des firmes internationales, étendant nos services aux clients dans plus de 6 pays."
-        },
-        {
-          "year": "2023",
-          "title": "Croissance de l'Équipe",
-          "description": "Notre équipe a grandi à plus de 50 professionnels, consolidant notre position en tant que firme de services financiers leader."
-        }
-      ],
-      "journeyContinues": "Notre parcours continue alors que nous nous efforçons d'excellence dans chaque service que nous fournissons.",
-      "learnMoreStory": "En savoir plus sur notre histoire"
-    },
-    "values": {
-      "title": "Nos Valeurs Fondamentales",
-      "subtitle": "Les principes qui guident notre travail et définissent notre culture",
-      "values": [
-        {
-          "name": "Excellence",
-          "description": "Nous nous engageons à fournir les services de la plus haute qualité, améliorant continuellement nos compétences et processus pour dépasser les attentes des clients."
-        },
-        {
-          "name": "Intégrité",
-          "description": "Nous maintenons les plus hauts standards éthiques, assurant la transparence, l'honnêteté et le professionnalisme dans toutes nos interactions."
-        },
-        {
-          "name": "Innovation",
-          "description": "Nous adoptons les nouvelles technologies et solutions créatives pour fournir des services de pointe qui stimulent le succès de nos clients."
-        },
-        {
-          "name": "Focus Client",
-          "description": "Nous construisons des relations durables en comprenant les besoins uniques de nos clients et en livrant des solutions sur mesure qui créent une vraie valeur."
-        },
-        {
-          "name": "Professionnalisme",
-          "description": "Nous maintenons les plus hauts standards d'expertise, de fiabilité et de responsabilité dans tous les aspects de notre travail."
-        },
-        {
-          "name": "Partenariat",
-          "description": "Nous croyons en collaborer étroitement avec nos clients, travaillant comme une extension de leur équipe pour atteindre un succès partagé."
-        }
-      ],
-      "learnMore": "En savoir plus",
-      "learnMoreCulture": "En savoir plus sur notre culture"
-    },
-    "team": {
-      "title": "Rencontrez Notre Direction",
-      "subtitle": "Notre équipe expérimentée est dédiée à fournir un service et une valeur exceptionnels à nos clients.",
-      "members": [
-        {
-          "name": "Pierre Kemeni",
-          "role": "Fondateur et PDG",
-          "bio": "MBA, CPA, DEC avec plus de 27 ans d'expérience internationale en comptabilité et audit.",
-          "expertise": [
-            "Comptabilité Internationale",
-            "Audit Financier",
-            "Stratégie d'Entreprise",
-            "Finance d'Entreprise"
-          ]
-        },
-        {
-          "name": "Patrick Ngatcha",
-          "role": "Directeur Général",
-          "bio": "DEC, DSCG, Master CCA, MSTCF avec plus de 13 ans en développement commercial et conseil financier.",
-          "expertise": [
-            "Développement Commercial",
-            "Conseil Financier",
-            "Planification Fiscale",
-            "Stratégie d'Entreprise"
-          ]
-        },
-        {
-          "name": "Marie Laure Ngo Bikoi",
-          "role": "Directrice d'Audit Senior",
-          "bio": "HEC, DSCG avec plus de 15 ans d'expérience en audit et services de conseil financier.",
-          "expertise": [
-            "Audit Financier",
-            "Contrôles Internes",
-            "Gestion des Risques",
-            "Conformité"
-          ]
-        }
-      ],
-      "expertise": "Expertise",
-      "viewAllMembers": "Voir tous les membres de l'équipe"
-    }
-  },
-  "partners": {
-    "label": "NOS LOGOS",
-    "title": "Logos du Groupe EXCI-MAA",
-    "subtitle": "Notre identité professionnelle et représentation de marque",
-    "note": "Nos logos représentent notre expertise et notre engagement envers l'excellence",
-    "founders": {
-      "pierre": {
-        "name": "Pierre KEMENI",
-        "title": "MBA, CPA, DEC",
-        "description": "Expert-comptable et commissaire aux comptes avec plus de 27 ans d'expérience en comptabilité et audit internationaux.",
-        "specialties": [
-          "Comptabilité Internationale",
-          "Audit",
-          "Conseil Fiscal"
-        ]
-      },
-      "patrick": {
-        "name": "Patrick NGATCHA",
-        "title": "DEC, DSCG, Master CCA, MSTCF",
-        "description": "Expert-comptable et commissaire aux comptes avec plus de 13 ans d'expérience en développement des affaires et conseil financier.",
-        "specialties": [
-          "Développement Commercial",
-          "Conseil Financier",
-          "Gestion des Risques"
-        ]
-      }
-    }
-  },
-  "organizationalStructure": {
-    "title": "ORGANIGRAMME DU GROUPE",
-    "subtitle": "Notre leadership et structure d'équipe",
-    "chairman": {
-      "title": "Associé",
-      "subtitle": "Président du Conseil d'Administration\nDirecteur du développement",
-      "description": "Leadership global et direction stratégique du Groupe EXCI-MAA."
-    },
-    "adminPartner": {
-      "title": "Associé, Administration Générale, Finance & RH",
-      "description": "Supervise l'administration, les finances et les ressources humaines."
-    },
-    "auditPartner": {
-      "title": "Associé Audit & Conseil",
-      "description": "Dirige les opérations d'audit et de conseil."
-    },
-    "managementPartner": {
-      "title": "Associé Management & Organisation",
-      "description": "Gère le management et le développement organisationnel."
-    },
-    "qualityCompliance": {
-      "title": "Associé",
-      "subtitle": "Responsable Qualité & Conformité",
-      "description": "Assure les standards de qualité et la conformité dans toute l'organisation."
-    },
-    "countryDirector": {
-      "title": "Directeur Pays comptables\nSenior et Junior Auditeurs",
-      "description": "Gère les opérations du pays avec les équipes comptables et d'audit."
-    },
-    "specialists": {
-      "title": "Spécialistes & Consultants Externes",
-      "subtitle": "(Médecins, Ingénieurs, Avocats, Sociologues, Seniors, Juniors ... ETC)",
-      "description": "Équipe multidisciplinaire de consultants et spécialistes externes."
-    }
-  },
-  "typicalOfficeOrganigram": {
-    "title": "ORGANIGRAMME TYPE D'UN BUREAU",
-    "subtitle": "Structure organisationnelle standard pour les services professionnels",
-    "officeManager": {
-      "title": "DIRECTEUR / GESTIONNAIRE DE BUREAU",
-      "description": "Gestion globale et direction stratégique"
-    },
-    "audit": {
-      "title": "AUDIT",
-      "legal": {
-        "title": "LEGAL",
-        "services": [
-          "Audits statutaires",
-          "Audit des comptes d'entreprise, comptes combinés et consolidés",
-          "Scissions, fusions etc"
-        ]
-      },
-      "contractual": {
-        "title": "CONTRACTUEL",
-        "services": [
-          "Audit de projets ONG",
-          "Comptes prévisionnels",
-          "Audit des coûts pétroliers",
-          "Contrôle interne"
-        ]
-      }
-    },
-    "advisory": {
-      "title": "CONSEIL",
-      "taxSocial": {
-        "title": "FISCAL & SOCIAL",
-        "services": [
-          "Conseil juridique: Constitution, Mise à jour OHADA, Audit, Secrétariat Juridique",
-          "Droit Fiscal: Due diligence, Conseil Fiscal & Conformité Fiscale, Audit",
-          "Droit Social: Recrutement, Contrat de Travail, Fiche de Paie, Déclarations, Audit"
-        ]
-      },
-      "training": {
-        "title": "FORMATION",
-        "services": [
-          "Formations",
-          "Choix de Thèmes dans notre panel annuel"
-        ]
-      },
-      "finance": {
-        "title": "FINANCE",
-        "services": [
-          "Plan d'affaires",
-          "Analyse de Portefeuille de Crédit",
-          "Rating",
-          "Évaluations"
-        ]
-      }
-    },
-    "management": {
-      "title": "GESTION",
-      "accounting": {
-        "title": "ASSISTANCE COMPTABLE ET FISCALE",
-        "services": [
-          "États financiers annuels ou prévisionnels",
-          "Mise en place d'une organisation comptable",
-          "Logiciel de Gestion",
-          "Tenue de livres",
-          "Déclaration d'impôts"
-        ]
-      },
-      "facility": {
-        "title": "GESTION D'INSTALLATIONS & MYCODEBAR",
-        "services": [
-          "Gestion d'Installations",
-          "Gestion électronique des stocks et actifs par codes-barres"
-        ]
-      }
-    }
-  },
-  "trainingCategories": {
-    "accounting": {
-      "title": "Comptabilité / Fiscal / Gestion",
-      "courses": [
-        "Méthodes de comptabilité et suivi des informations d'entreprise",
-        "Méthodes de travail ou préparation de rapports fiscaux et autres",
-        "Directives de droit fiscal et de gestion",
-        "Méthodes d'audit et de gestion de la gestion fiscale",
-        "Problèmes de droit fiscal en CONGO, CAMEROUN, RWANDA, BURUNDI, GABON",
-        "Configurez votre compte d'entreprise et gestion financière",
-        "Méthodes de trouver la gestion dans les rapports fiscaux",
-        "Impact fiscal et fiscal sur la fiscalité",
-        "Gestion entre DAS, informations et DSF: Problème CNSS",
-        "Gestion comptable de travail"
-      ],
-      "price": "$299",
-      "duration": "3 jours"
-    },
-    "audit": {
-      "title": "Audit Légal / Gestion de Gestion",
-      "courses": [
-        "Pourquoi auditer vos informations?",
-        "Méthodes d'audit d'entreprise et financier",
-        "Quel est l'impact de l'audit sur les rapports fiscaux?",
-        "Gestion et gestion de l'audit interne dans les petites entreprises, banques et gestion",
-        "Gestion et gestion de la gestion de gestion",
-        "Informations et gestion de gestion",
-        "Audit interne (centre d'audit)",
-        "Audit interne – Développement et gestion",
-        "Audit légal",
-        "Gérer correctement la gestion financière, surtout la gestion",
-        "Comprendre les besoins financiers de la gestion et de la gestion",
-        "Gestion financière entre personnes et entreprise avec clients",
-        "Mesurer le système d'information – ICT IS",
-        "Comprendre ERP, sa gestion et voir si votre entreprise en a besoin",
-        "Auditer la gestion de gestion interne",
-        "Auditer la gestion d'audit interne",
-        "Trouver et prévenir la gestion",
-        "Gérer la gestion dans la gestion d'audit"
-      ],
-      "price": "$399",
-      "duration": "5 jours"
-    },
-    "advice": {
-      "title": "Conseil",
-      "courses": [
-        "Gestion des informations d'entreprise de travail et gestion fiscale",
-        "Comprendre les besoins et exigences fiscales mondiales: Tarification",
-        "Mesurer les entreprises dans la zone OHADA",
-        "Réévaluer la gestion: besoins pour toutes les entreprises",
-        "Gestion de fusion, séparation et arrêt dans la zone OHADA",
-        "Méthodes de travail de gestion d'informations dans la zone OHADA",
-        "Rédaction de gestion d'entreprise",
-        "Méthodes de travail d'entreprise",
-        "Fusion – Acquisition",
-        "Audit légal, gestion et fiscal",
-        "Aider à rédiger la gestion de gestion interne"
-      ],
-      "price": "$349",
-      "duration": "4 jours"
-    },
-    "various": {
-      "title": "Divers",
-      "courses": [
-        "Méthodes de travail avec les clients de gestion",
-        "Sortez de votre gestion et augmentez votre gestion en entreprise et autres",
-        "Gestion dans les bureaux / Centre",
-        "Méthodes d'être un Gestionnaire Financier/Gestion ou CFO et gestion",
-        "Utiliser la gestion d'entreprise et de gestion pour prévenir la gestion bancaire",
-        "Droit des affaires OHADA",
-        "Taxe d'entreprise",
-        "Utiliser et auditer la gestion bancaire",
-        "Auditer la gestion de gestion de gestion"
-      ],
-      "price": "$199",
-      "duration": "2 jours"
-    }
-  }
+    "nav":  {
+                "home":  "Accueil",
+                "about":  "À propos",
+                "services":  "Services",
+                "training":  "Formations",
+                "globalOffices":  "Bureaux Mondiaux",
+                "insights":  "Perspectives",
+                "careers":  "Carrières",
+                "contact":  "Contact"
+            },
+    "auth":  {
+                 "signIn":  "Se connecter",
+                 "signOut":  "Se déconnecter",
+                 "admin":  "Admin",
+                 "adminPanel":  "Panneau d\u0027administration"
+             },
+    "footer":  {
+                   "description":  "Cabinet professionnel de comptabilité, d\u0027audit et de conseil avec une présence internationale. Nous offrons une expertise complète pour soutenir vos besoins commerciaux.",
+                   "quickLinks":  "Liens rapides",
+                   "ourServices":  "Nos Services",
+                   "contactInfo":  "Informations de contact",
+                   "douala":  "Douala, Cameroun",
+                   "globalPresence":  "Présence mondiale",
+                   "allRightsReserved":  "Tous droits réservés.",
+                   "privacyPolicy":  "Politique de confidentialité",
+                   "termsOfService":  "Conditions d\u0027utilisation",
+                   "cookiePolicy":  "Politique des cookies"
+               },
+    "serviceCategories":  {
+                              "accounting":  "Expertise Comptable",
+                              "legal":  "Audit Légal et Fiscal",
+                              "managerial":  "Conseil en Gestion",
+                              "payroll":  "Paie et Conseil Social",
+                              "consolidation":  "Consolidation",
+                              "risk":  "Conseil en Risque",
+                              "it":  "Conseil IT",
+                              "financial":  "Rapports Financiers"
+                          },
+    "hero":  {
+                 "title":  "Comptabilité Professionnelle \u0026",
+                 "titleHighlight":  "Excellence en Conseil",
+                 "subtitle":  "Services complets de comptabilité, d\u0027audit et de conseil avec présence internationale. Nous livrons des solutions expertes pour soutenir votre croissance commerciale.",
+                 "feature1":  "Expertise internationale avec compréhension locale",
+                 "feature2":  "Services complets d\u0027audit et de conseil",
+                 "feature3":  "Support dédié pour votre succès commercial",
+                 "cta1":  "Explorer les Services",
+                 "cta2":  "Obtenir une Consultation",
+                 "description":  "Nous offrons des solutions financières innovantes et des conseils stratégiques pour aider les entreprises et les particuliers à naviguer des environnements financiers complexes avec confiance et clarté."
+             },
+    "about":  {
+                  "title":  "À Propos de Nous",
+                  "subtitle":  "En savoir plus sur notre entreprise et nos valeurs",
+                  "feature1Title":  "Excellence Professionnelle",
+                  "feature1Desc":  "Nous maintenons les plus hauts standards dans tous nos services",
+                  "feature2Title":  "Portée Mondiale",
+                  "feature2Desc":  "Servir les clients dans plusieurs pays et régions",
+                  "feature3Title":  "Équipe d\u0027Experts",
+                  "feature3Desc":  "Nos professionnels expérimentés livrent des résultats exceptionnels",
+                  "heroTitle":  "À Propos d\u0027EXCI-MAA",
+                  "heroSubtitle":  "Cabinet professionnel de comptabilité, d\u0027audit et de conseil avec présence internationale",
+                  "historyTitle":  "Notre Histoire",
+                  "historySubtitle":  "Construire la confiance par l\u0027excellence depuis notre fondation",
+                  "valuesTitle":  "Nos Valeurs",
+                  "valuesSubtitle":  "Les principes qui guident tout ce que nous faisons",
+                  "teamTitle":  "Notre Équipe",
+                  "teamSubtitle":  "Rencontrez les professionnels derrière notre succès",
+                  "testimonialsTitle":  "Témoignages Clients",
+                  "testimonialsSubtitle":  "Ce que nos clients disent de nous"
+              },
+    "aboutPage":  {
+                      "hero":  {
+                                   "title":  "À Propos d\u0027EXCI-MAA",
+                                   "subtitle":  "Votre Partenaire Financier de Confiance",
+                                   "description":  "Avec plus de 27 ans d\u0027excellence dans les services financiers, EXCI-MAA a été un partenaire de confiance pour les entreprises dans plusieurs pays, fournissant des services experts en comptabilité, audit et conseil.",
+                                   "getInTouch":  "Entrer en Contact",
+                                   "ourServices":  "Nos Services",
+                                   "trustedByBusinesses":  "Fait confiance par les entreprises du monde entier",
+                                   "stats":  {
+                                                 "yearsExperience":  "Années d\u0027Expérience",
+                                                 "countriesServed":  "Pays Desservis",
+                                                 "teamMembers":  "Membres de l\u0027Équipe",
+                                                 "clientSatisfaction":  "Satisfaction Client",
+                                                 "clientsServed":  "Clients Servis",
+                                                 "successRate":  "Taux de Réussite"
+                                             }
+                               },
+                      "mission":  {
+                                      "title":  "Notre Mission",
+                                      "description1":  "Notre mission principale est de soutenir et accompagner les entreprises opérant sur le marché africain vers l\u0027excellence financière. En tirant parti d\u0027une connaissance approfondie des secteurs à but lucratif et non lucratif, nous livrons des engagements de conseil, d\u0027audit statutaire et de conseil adaptés à chaque taille d\u0027organisation.",
+                                      "description2":  "Nos solutions sont conçues pour répondre aux besoins spécifiques des entreprises à travers le continent africain, fournissant un service de bout en bout et une vraie valeur ajoutée—à un budget équitable. Notre équipe multidisciplinaire et multiculturelle assure un support sur mesure, adapté à l\u0027échelle et aux capacités de votre structure."
+                                  },
+                      "story":  {
+                                    "title":  "Notre Histoire",
+                                    "description1":  "EXCI-MAA a été fondée par des experts en audit, comptabilité, fiscalité, développement commercial, systèmes d\u0027information de gestion et droit. Avec une présence au Canada, aux États-Unis, en France, au Royaume-Uni et à travers l\u0027Afrique, nous apportons une expertise internationale adaptée à chaque contexte local.",
+                                    "description2":  "Nous opérons à travers toute la chaîne de valeur des activités de nos clients, assurant la transparence et la conformité avec les parties prenantes. Notre cabinet accompagne les organisations dans plusieurs pays à travers un réseau solide et des équipes sur le terrain, offrant un service de proximité et des solutions adaptées aux réalités locales.",
+                                    "description3":  "Aujourd\u0027hui, nous continuons d\u0027étendre notre empreinte tout en restant fidèles à nos principes fondateurs : excellence, intégrité et impact. Des audits statutaires et contractuels à la gestion des risques et au conseil personnalisé, nos équipes livrent des missions durables et efficaces qui génèrent des résultats durables.",
+                                    "whatWeDo":  "Ce que nous faisons",
+                                    "services":  [
+                                                     "Support pour les projets de développement, fusion, création ou transformation",
+                                                     "Audit statutaire ou contractuel",
+                                                     "Expertise comptable",
+                                                     "Analyse du contrôle interne et gestion des risques",
+                                                     "Audit des coûts pétroliers",
+                                                     "Conseil personnalisé pour les entreprises et PME"
+                                                 ]
+                                },
+                      "history":  {
+                                      "title":  "Notre Parcours",
+                                      "subtitle":  "Plus de deux décennies d\u0027excellence dans les services financiers",
+                                      "timeline":  [
+                                                       {
+                                                           "year":  "1996",
+                                                           "title":  "Fondation d\u0027EXCI-MAA",
+                                                           "description":  "Fondée à Yaoundé, Cameroun, avec une vision de fournir des services comptables et financiers exceptionnels aux entreprises locales."
+                                                       },
+                                                       {
+                                                           "year":  "2002",
+                                                           "title":  "Expansion Régionale",
+                                                           "description":  "Étendu les services pour couvrir l\u0027Afrique centrale, établissant des bureaux dans les centres économiques clés de la région."
+                                                       },
+                                                       {
+                                                           "year":  "2010",
+                                                           "title":  "Reconnaissance Internationale",
+                                                           "description":  "Obtenu une reconnaissance internationale pour l\u0027excellence dans les services financiers et les normes de conformité."
+                                                       },
+                                                       {
+                                                           "year":  "2015",
+                                                           "title":  "Transformation Numérique",
+                                                           "description":  "Implémenté des technologies financières de pointe pour améliorer la prestation de services et l\u0027expérience client."
+                                                       },
+                                                       {
+                                                           "year":  "2020",
+                                                           "title":  "Portée Mondiale",
+                                                           "description":  "Établi des partenariats avec des firmes internationales, étendant nos services aux clients dans plus de 6 pays."
+                                                       },
+                                                       {
+                                                           "year":  "2023",
+                                                           "title":  "Croissance de l\u0027Équipe",
+                                                           "description":  "Notre équipe a grandi à plus de 50 professionnels, consolidant notre position en tant que firme de services financiers leader."
+                                                       }
+                                                   ],
+                                      "journeyContinues":  "Notre parcours continue alors que nous nous efforçons d\u0027excellence dans chaque service que nous fournissons.",
+                                      "learnMoreStory":  "En savoir plus sur notre histoire"
+                                  },
+                      "values":  {
+                                     "title":  "Nos Valeurs Fondamentales",
+                                     "subtitle":  "Les principes qui guident notre travail et définissent notre culture",
+                                     "values":  [
+                                                    {
+                                                        "name":  "Excellence",
+                                                        "description":  "Nous nous engageons à fournir les services de la plus haute qualité, améliorant continuellement nos compétences et processus pour dépasser les attentes des clients."
+                                                    },
+                                                    {
+                                                        "name":  "Intégrité",
+                                                        "description":  "Nous maintenons les plus hauts standards éthiques, assurant la transparence, l\u0027honnêteté et le professionnalisme dans toutes nos interactions."
+                                                    },
+                                                    {
+                                                        "name":  "Innovation",
+                                                        "description":  "Nous adoptons les nouvelles technologies et solutions créatives pour fournir des services de pointe qui stimulent le succès de nos clients."
+                                                    },
+                                                    {
+                                                        "name":  "Focus Client",
+                                                        "description":  "Nous construisons des relations durables en comprenant les besoins uniques de nos clients et en livrant des solutions sur mesure qui créent une vraie valeur."
+                                                    },
+                                                    {
+                                                        "name":  "Professionnalisme",
+                                                        "description":  "Nous maintenons les plus hauts standards d\u0027expertise, de fiabilité et de responsabilité dans tous les aspects de notre travail."
+                                                    },
+                                                    {
+                                                        "name":  "Partenariat",
+                                                        "description":  "Nous croyons en collaborer étroitement avec nos clients, travaillant comme une extension de leur équipe pour atteindre un succès partagé."
+                                                    }
+                                                ],
+                                     "learnMore":  "En savoir plus",
+                                     "learnMoreCulture":  "En savoir plus sur notre culture"
+                                 },
+                      "team":  {
+                                   "title":  "Rencontrez Notre Direction",
+                                   "subtitle":  "Notre équipe expérimentée est dédiée à fournir un service et une valeur exceptionnels à nos clients.",
+                                   "members":  [
+                                                   {
+                                                       "name":  "Pierre Kemeni",
+                                                       "role":  "Fondateur et PDG",
+                                                       "bio":  "MBA, CPA, DEC avec plus de 27 ans d\u0027expérience internationale en comptabilité et audit.",
+                                                       "expertise":  [
+                                                                         "Comptabilité Internationale",
+                                                                         "Audit Financier",
+                                                                         "Stratégie d\u0027Entreprise",
+                                                                         "Finance d\u0027Entreprise"
+                                                                     ]
+                                                   },
+                                                   {
+                                                       "name":  "Patrick Ngatcha",
+                                                       "role":  "Directeur Général",
+                                                       "bio":  "DEC, DSCG, Master CCA, MSTCF avec plus de 13 ans en développement commercial et conseil financier.",
+                                                       "expertise":  [
+                                                                         "Développement Commercial",
+                                                                         "Conseil Financier",
+                                                                         "Planification Fiscale",
+                                                                         "Stratégie d\u0027Entreprise"
+                                                                     ]
+                                                   },
+                                                   {
+                                                       "name":  "Marie Laure Ngo Bikoi",
+                                                       "role":  "Directrice d\u0027Audit Senior",
+                                                       "bio":  "HEC, DSCG avec plus de 15 ans d\u0027expérience en audit et services de conseil financier.",
+                                                       "expertise":  [
+                                                                         "Audit Financier",
+                                                                         "Contrôles Internes",
+                                                                         "Gestion des Risques",
+                                                                         "Conformité"
+                                                                     ]
+                                                   }
+                                               ],
+                                   "expertise":  "Expertise",
+                                   "viewAllMembers":  "Voir tous les membres de l\u0027équipe"
+                               }
+                  },
+    "services":  {
+                     "title":  "Nos Services",
+                     "subtitle":  "Solutions complètes pour vos besoins commerciaux",
+                     "heroTitle":  "Services Professionnels",
+                     "heroSubtitle":  "Solutions expertes adaptées à vos exigences commerciales",
+                     "detailedTitle":  "Détails des Services",
+                     "detailedSubtitle":  "Informations approfondies sur nos offres",
+                     "processTitle":  "Notre Processus",
+                     "processSubtitle":  "Comment nous livrons des résultats exceptionnels",
+                     "faqTitle":  "Questions Fréquemment Posées",
+                     "faqSubtitle":  "Questions communes sur nos services",
+                     "pricingTitle":  "Tarification",
+                     "pricingSubtitle":  "Tarification transparente pour tous nos services",
+                     "schedule":  "Planifier",
+                     "getStarted":  "Commencer",
+                     "keyFeatures":  "Points clés",
+                     "learnMore":  "En Savoir Plus",
+                     "viewAll":  "Voir Tous les Services",
+                     "service1Title":  "Expertise Comptable",
+                     "service1Desc":  "Services comptables complets pour les entreprises",
+                     "service2Title":  "Audit Légal et Fiscal",
+                     "service2Desc":  "Services professionnels d\u0027audit et de conformité",
+                     "service3Title":  "Conseil en Gestion",
+                     "service3Desc":  "Conseil stratégique pour la croissance commerciale",
+                     "service4Title":  "Paie et Conseil Social",
+                     "service4Desc":  "Gestion complète de la paie et des RH",
+                     "service5Title":  "Consolidation",
+                     "service5Desc":  "Consolidation financière pour les organisations multi-entités",
+                     "service6Title":  "Conseil en Risque",
+                     "service6Desc":  "Évaluation et gestion complètes des risques",
+                     "categories":  {
+                                        "all":  "Tous les Services",
+                                        "finance":  "Services Financiers",
+                                        "business":  "Services aux Entreprises"
+                                    }
+                 },
+    "globalOffices":  {
+                          "title":  "Présence mondiale interactive",
+                          "subtitle":  "Explorez nos bureaux à travers le monde et découvrez les services que nous proposons dans chaque lieu",
+                          "heroTitle":  "Bureaux mondiaux",
+                          "heroSubtitle":  "Notre présence mondiale et expertise client",
+                          "mapTitle":  "Carte de présence",
+                          "mapSubtitle":  "Découvrez nos bureaux dans le monde entier",
+                          "listTitle":  "Emplacements des bureaux",
+                          "listSubtitle":  "Trouvez le bureau le plus proche de vous"
+                      },
+    "insights":  {
+                     "heroTitle":  "Perspectives et Actualités",
+                     "heroSubtitle":  "Restez à jour avec les perspectives de l\u0027industrie et les actualités de l\u0027entreprise",
+                     "eventsTitle":  "Événements",
+                     "eventsSubtitle":  "Événements à venir et passés",
+                     "blogTitle":  "Blog",
+                     "blogSubtitle":  "Derniers articles et perspectives",
+                     "promotionsTitle":  "Promotions",
+                     "promotionsSubtitle":  "Offres spéciales et annonces"
+                 },
+    "careers":  {
+                    "heroTitle":  "Rejoignez Notre Équipe",
+                    "heroSubtitle":  "Construisez votre carrière avec EXCI-MAA",
+                    "jobsTitle":  "Postes Ouverts",
+                    "jobsSubtitle":  "Opportunités d\u0027emploi actuelles",
+                    "chartTitle":  "Organigramme",
+                    "chartSubtitle":  "Notre structure d\u0027entreprise et leadership",
+                    "benefitsTitle":  "Avantages et Privilèges",
+                    "benefitsSubtitle":  "Ce que nous offrons à nos employés"
+                },
+    "contact":  {
+                    "title":  "Contactez-Nous",
+                    "subtitle":  "Entrez en contact avec notre équipe",
+                    "heroTitle":  "Entrez en Contact",
+                    "heroSubtitle":  "Nous sommes là pour vous aider avec vos besoins commerciaux",
+                    "formTitle":  "Envoyez-nous un Message",
+                    "formSubtitle":  "Remplissez le formulaire ci-dessous et nous vous recontacterons",
+                    "mapTitle":  "Trouvez-Nous",
+                    "mapSubtitle":  "Visitez nos bureaux dans le monde entier",
+                    "infoTitle":  "Informations de Contact",
+                    "infoSubtitle":  "Plusieurs façons de nous joindre",
+                    "cta":  "Contactez-Nous Maintenant",
+                    "hero":  {
+                                 "getInTouch":  "Entrez en Contact",
+                                 "letsTalkAbout":  "Parlons de Vos",
+                                 "businessNeeds":  "Besoins Commerciaux",
+                                 "description":  "Notre équipe d\u0027experts financiers est prête à vous aider à naviguer dans vos défis commerciaux. Contactez-nous par n\u0027importe quel canal ci-dessous ou envoyez-nous un message directement.",
+                                 "contactMethods":  {
+                                                        "emailUs":  "Envoyez-nous un Email",
+                                                        "emailDescription":  "Notre équipe vous recontactera dans les 24 heures",
+                                                        "emailValue":  "contactcam@excimaa.ca",
+                                                        "callUs":  "Appelez-nous",
+                                                        "callDescription":  "Lun-Ven de 9h à 17h",
+                                                        "callValue":  "+1 (555) 123-4567",
+                                                        "visitUs":  "Visitez-nous",
+                                                        "visitDescription":  "Venez nous dire bonjour à notre bureau",
+                                                        "visitValue":  "123 Avenue des Affaires, Ville, Pays",
+                                                        "officeHours":  "Heures de Bureau",
+                                                        "hoursDescription":  "Nos heures de travail",
+                                                        "hoursValue":  "Lun - Ven: 9:00 - 18:00"
+                                                    },
+                                 "orFillOut":  "Ou remplissez notre formulaire de contact et nous vous recontacterons dans les 24 heures.",
+                                 "sendUsMessage":  "Envoyez-nous un Message"
+                             },
+                    "form":  {
+                                 "title":  "Entrez en Contact",
+                                 "subtitle":  "Vous avez des questions ou êtes prêt à commencer votre projet ? Remplissez le formulaire ci-dessous et notre équipe vous recontactera dès que possible.",
+                                 "getInTouch":  "Entrez en Contact",
+                                 "description":  "Vous avez des questions ou êtes prêt à commencer votre projet ? Remplissez le formulaire ci-dessous et notre équipe vous recontactera dès que possible.",
+                                 "contactInformation":  "Informations de Contact",
+                                 "contactDescription":  "Remplissez le formulaire et notre équipe vous recontactera dans les 24 heures. Pour une assistance immédiate, veuillez nous appeler directement.",
+                                 "callUs":  "Appelez-nous",
+                                 "emailUs":  "Envoyez-nous un email",
+                                 "visitUs":  "Visitez-nous",
+                                 "businessHours":  "Heures de Bureau",
+                                 "mondayFriday":  "Lundi - Vendredi: 9:00 AM - 6:00 PM",
+                                 "saturdaySunday":  "Samedi - Dimanche: Fermé",
+                                 "name":  "Nom",
+                                 "name_placeholder":  "Jean Dupont",
+                                 "email":  "Email",
+                                 "email_placeholder":  "jean@exemple.com",
+                                 "phone":  "Téléphone",
+                                 "phone_placeholder":  "+33 1 23 45 67 89",
+                                 "subject":  "Sujet",
+                                 "select_subject":  "Sélectionnez un sujet",
+                                 "other":  "Autre",
+                                 "message":  "Message",
+                                 "message_placeholder":  "Dites-nous en plus...",
+                                 "submit":  "Envoyer le Message",
+                                 "submitting":  "Envoi en cours...",
+                                 "success":  "Merci ! Votre message a été envoyé.",
+                                 "error":  "Impossible d\u0027envoyer. Veuillez réessayer.",
+                                 "fullName":  "Nom Complet",
+                                 "emailAddress":  "Adresse Email",
+                                 "phoneNumber":  "Numéro de Téléphone",
+                                 "required":  "*",
+                                 "placeholders":  {
+                                                      "fullName":  "Jean Dupont",
+                                                      "email":  "vous@exemple.com",
+                                                      "phone":  "+33 1 23 45 67 89",
+                                                      "selectSubject":  "Sélectionnez un sujet",
+                                                      "message":  "Comment pouvons-nous vous aider ?"
+                                                  },
+                                 "subjects":  {
+                                                  "generalInquiry":  "Demande Générale",
+                                                  "accountingServices":  "Services Comptables",
+                                                  "auditServices":  "Services d\u0027Audit",
+                                                  "taxConsultation":  "Consultation Fiscale",
+                                                  "other":  "Autre"
+                                              },
+                                 "validation":  {
+                                                    "nameRequired":  "Le nom est requis",
+                                                    "emailRequired":  "L\u0027email est requis",
+                                                    "emailInvalid":  "Adresse email invalide",
+                                                    "subjectRequired":  "Le sujet est requis",
+                                                    "messageRequired":  "Le message est requis",
+                                                    "messageMinLength":  "Le message doit contenir au moins 10 caractères"
+                                                },
+                                 "sendMessage":  "Envoyer le Message",
+                                 "sending":  "Envoi en cours...",
+                                 "successTitle":  "Message Envoyé avec Succès !",
+                                 "successDescription":  "Merci de nous avoir contactés. Nous avons reçu votre message et vous recontacterons dans les 24 heures.",
+                                 "sendAnotherMessage":  "Envoyer un Autre Message",
+                                 "errorTitle":  "Erreur",
+                                 "errorMessage":  "Échec de l\u0027envoi du message. Veuillez réessayer plus tard.",
+                                 "privacyNote":  "Nous vous recontacterons dans les 24 heures. Vos informations sont sécurisées."
+                             },
+                    "map":  {
+                                "findOurOffice":  "Trouvez Notre Bureau",
+                                "description":  "Visitez-nous dans notre bureau situé dans un endroit pratique. Nous sommes là pour vous assister dans tous vos besoins financiers.",
+                                "ourOffice":  "Notre Bureau",
+                                "address":  "Adresse",
+                                "phone":  "Téléphone",
+                                "email":  "Email",
+                                "businessHours":  "Heures de Bureau",
+                                "getDirections":  "Obtenir les Directions",
+                                "needHelpFinding":  "Besoin d\u0027Aide pour Nous Trouver ?",
+                                "helpDescription":  "Notre bureau est situé au cœur du quartier des affaires avec un accès facile aux transports publics.",
+                                "centerMap":  "Centrer la Carte sur Notre Emplacement",
+                                "officeLocation":  {
+                                                       "address":  "123 Avenue des Affaires, Riyad 12345, Arabie Saoudite",
+                                                       "phone":  "+237233427940 \u0026\u0026 +237698835251",
+                                                       "email":  "riyadh@exci-maa.com",
+                                                       "hours":  "Lundi - Vendredi: 9:00 AM - 6:00 PM"
+                                                   }
+                            },
+                    "faq":  {
+                                "title":  "Questions Fréquemment Posées",
+                                "description":  "Trouvez des réponses aux questions courantes sur nos services, processus et comment nous pouvons aider votre entreprise à prospérer.",
+                                "questions":  [
+                                                  {
+                                                      "question":  "Quels services EXCI-MAA fournit-il ?",
+                                                      "answer":  "Nous offrons une gamme complète de services de comptabilité, d\u0027audit, de fiscalité et de conseil commercial adaptés aux besoins uniques des entreprises en Arabie Saoudite et au-delà. Nos services incluent les rapports financiers, la planification fiscale, l\u0027audit interne et le conseil commercial."
+                                                  },
+                                                  {
+                                                      "question":  "Comment puis-je planifier une consultation ?",
+                                                      "answer":  "Vous pouvez planifier une consultation en appelant notre bureau, en nous envoyant un email, ou en utilisant le formulaire de contact sur cette page. Notre équipe vous recontactera dans les 24 heures pour confirmer votre rendez-vous."
+                                                  },
+                                                  {
+                                                      "question":  "Dans quelles industries vous spécialisez-vous ?",
+                                                      "answer":  "Nous avons une vaste expérience dans le travail avec diverses industries, y compris les soins de santé, la construction, la vente au détail, la technologie et les services professionnels. Notre équipe a l\u0027expertise pour gérer les défis financiers uniques de chaque secteur."
+                                                  },
+                                                  {
+                                                      "question":  "Quelles sont vos heures de bureau ?",
+                                                      "answer":  "Notre bureau est ouvert du dimanche au jeudi, de 9h00 à 18h00. Nous sommes fermés les vendredis et samedis ainsi que les jours fériés."
+                                                  },
+                                                  {
+                                                      "question":  "Offrez-vous des services à distance ou virtuels ?",
+                                                      "answer":  "Oui, nous offrons des services de consultation en personne et virtuels pour répondre aux besoins de nos clients. Notre équipe est équipée d\u0027outils de visioconférence sécurisés pour fournir le même niveau de service à distance."
+                                                  },
+                                                  {
+                                                      "question":  "Comment assurez-vous la sécurité et la confidentialité des données ?",
+                                                      "answer":  "Nous prenons la sécurité des données très au sérieux. Toutes les informations clients sont traitées avec la plus grande confidentialité et protégées en utilisant des mesures de sécurité standard de l\u0027industrie, y compris le chiffrement et les systèmes de partage de fichiers sécurisés."
+                                                  }
+                                              ],
+                                "stillHaveQuestions":  "Vous avez encore des questions ?",
+                                "stillHaveDescription":  "Vous ne trouvez pas la réponse que vous cherchez ? Notre équipe est là pour vous aider. Contactez-nous et nous vous recontacterons dès que possible.",
+                                "chatWithUs":  "Discutez avec nous",
+                                "chatDescription":  "Notre équipe est là pour vous aider",
+                                "sendUsMessage":  "Envoyez-nous un message",
+                                "callUs":  "Appelez-nous",
+                                "callDescription":  "Lundi au vendredi, 9h à 18h",
+                                "emailUs":  "Envoyez-nous un email",
+                                "emailDescription":  "Nous vous recontacterons dans les 24 heures",
+                                "cantFindWhat":  "Vous ne trouvez pas ce que vous cherchez ?",
+                                "expertsDescription":  "Notre équipe d\u0027experts est là pour répondre à toutes vos questions.",
+                                "contactSupport":  "Contacter le Support"
+                            }
+                },
+    "training":  {
+                     "title":  "Programmes de Formation",
+                     "subtitle":  "Nous offrons des programmes de développement professionnel et de certification",
+                     "categories":  {
+                                        "accounting":  {
+                                                           "title":  "Comptabilité / Fiscalité / Social",
+                                                           "courses":  [
+                                                                           "Comment tenir et organiser les comptes d\u0027entreprise",
+                                                                           "Comment créer ou préparer une déclaration fiscale et ses annexes",
+                                                                           "Règles de déductibilité et de déclaration de la TVA",
+                                                                           "Comment anticiper et gérer vos contrôles fiscaux",
+                                                                           "Le problème de la TVA au CONGO, CAMEROUN, RWANDA, BURUNDI, GABON",
+                                                                           "Établissez votre compte d\u0027exploitation et plan de trésorerie en toute confiance",
+                                                                           "Techniques de détection de fraude dans les déclarations fiscales",
+                                                                           "Impact des déficits ARD et fiscaux sur le revenu imposable",
+                                                                           "Cadre entre la DAS, les déclarations et la DSF : Cas d\u0027un contrôle CNSS",
+                                                                           "Création d\u0027un manuel d\u0027affectation comptable"
+                                                                       ],
+                                                           "price":  "$299",
+                                                           "duration":  "3 jours"
+                                                       },
+                                        "audit":  {
+                                                      "title":  "Audit légal / Contrôle de gestion",
+                                                      "courses":  [
+                                                                      "Pourquoi auditer vos comptes ?",
+                                                                      "Méthodologie d\u0027audit comptable et financier",
+                                                                      "Quel est l\u0027impact de l\u0027audit sur la déclaration fiscale ?",
+                                                                      "Théorie et pratique de l\u0027audit interne dans les PME, Banques et Assurances",
+                                                                      "Théorie et pratique du contrôle de gestion",
+                                                                      "Tableaux de bord et évaluation de la performance",
+                                                                      "Audit externe (Cabinet d\u0027audit)",
+                                                                      "Audit Interne – Planification et Exécution",
+                                                                      "Audit légal",
+                                                                      "Gestion optimale de votre trésorerie, notamment votre découvert",
+                                                                      "Comprendre les attentes de trésorerie du point de vue de la filiale et du siège",
+                                                                      "Équilibrer vos paiements fournisseurs avec vos encaissements clients",
+                                                                      "Évaluation de votre système d\u0027information – SI ICT",
+                                                                      "Comprendre les ERP, leurs processus et voir si votre entreprise peut en avoir besoin",
+                                                                      "Révision des concepts fondamentaux du contrôle interne",
+                                                                      "Révision des concepts fondamentaux de l\u0027audit interne",
+                                                                      "Détecter et prévenir la fraude",
+                                                                      "Gestion des risques dans le secteur publicitaire"
+                                                                  ],
+                                                      "price":  "$399",
+                                                      "duration":  "5 jours"
+                                                  },
+                                        "advice":  {
+                                                       "title":  "Conseil",
+                                                       "courses":  [
+                                                                       "La pratique des comptes consolidés et le traitement des impôts différés",
+                                                                       "Comprendre les bases et les enjeux majeurs de la fiscalité internationale : Prix de transfert",
+                                                                       "Évaluation des entreprises dans la zone OHADA",
+                                                                       "Réévaluation du bilan : une nécessité pour toutes les entreprises",
+                                                                       "Pratique de la fusion, scission et liquidation dans la zone OHADA",
+                                                                       "Comment pratiquer la consolidation des comptes dans la zone OHADA",
+                                                                       "Rédaction d\u0027un plan d\u0027affaires bancable",
+                                                                       "Méthodologie de création d\u0027entreprise",
+                                                                       "Fusions – Acquisitions",
+                                                                       "Audit légal, social et fiscal",
+                                                                       "Support pour la rédaction d\u0027un manuel de procédures de contrôle interne"
+                                                                   ],
+                                                       "price":  "$349",
+                                                       "duration":  "4 jours"
+                                                   },
+                                        "various":  {
+                                                        "title":  "Thèmes divers",
+                                                        "courses":  [
+                                                                        "Comment gérer les clients difficiles",
+                                                                        "Libérez votre charisme et développez votre leadership dans les affaires et au-delà",
+                                                                        "Qualité au bureau / Entreprise",
+                                                                        "Comment devenir un Contrôleur Financier/Gestion ou CFO et techniques efficaces",
+                                                                        "Utiliser la comptabilité et le contrôle de gestion pour contrôler les risques bancaires",
+                                                                        "Droit des affaires OHADA",
+                                                                        "Fiscalité des entreprises",
+                                                                        "Maîtriser et auditer le contrôle bancaire permanent",
+                                                                        "Audit de conformité des systèmes réglementaires d\u0027assurance"
+                                                                    ],
+                                                        "price":  "$199",
+                                                        "duration":  "2 jours"
+                                                    }
+                                    }
+                 },
+    "teamMembers":  {
+                        "title":  "Notre équipe mondiale",
+                        "subtitle":  "Rencontrez les professionnels qui favorisent l\u0027excellence dans tous nos sites",
+                        "readMore":  "En savoir plus",
+                        "showLess":  "Afficher moins",
+                        "specialties":  "Spécialités",
+                        "noMembers":  "Aucun membre d\u0027équipe actuellement assigné à ce bureau",
+                        "members":  {
+                                        "pierre-kemeni":  {
+                                                              "name":  "Pierre KEMENI",
+                                                              "title":  "Directeur général et président",
+                                                              "qualifications":  [
+                                                                                     "MBA",
+                                                                                     "CPA",
+                                                                                     "CGA",
+                                                                                     "FCAA",
+                                                                                     "DEC"
+                                                                                 ],
+                                                              "bio":  "Partenaire, Directeur général chez EXCI-MAA Group. Expert-comptable agréé par COSUMAF et auditeur statutaire. Inscrit à l\u0027ICPAR, ONECCA, CPA Canada, Québec, Ontario et Royaume-Uni. Ancien directeur d\u0027engagement chez Deloitte Toronto. Spécialiste en gestion, SYSCOHADA, conversion de comptes. Consultant international senior et formateur.",
+                                                              "specialties":  [
+                                                                                  "Comptabilité internationale",
+                                                                                  "Audit financier",
+                                                                                  "Conseil en gestion",
+                                                                                  "Spécialiste SYSCOHADA",
+                                                                                  "Conversion de comptes",
+                                                                                  "Spécialiste du secteur bancaire"
+                                                                              ]
+                                                          },
+                                        "patrick-ngatcha":  {
+                                                                "name":  "Patrick NGATCHA",
+                                                                "title":  "Partenaire - Directeur général",
+                                                                "qualifications":  [
+                                                                                       "DEC",
+                                                                                       "DSCG",
+                                                                                       "Master CCA",
+                                                                                       "MSTCF"
+                                                                                   ],
+                                                                "bio":  "Expert-comptable inscrit à l’Institut des experts-comptables de Paris Île-de-France. Auditeur statutaire. Expert en fiscalité et audit financier, audit d\u0027acquisition, consolidation (règlement 99-02 / IFRS).",
+                                                                "specialties":  [
+                                                                                    "Développement commercial",
+                                                                                    "Conseil financier",
+                                                                                    "Planification fiscale",
+                                                                                    "IFRS",
+                                                                                    "Consolidation",
+                                                                                    "Audit d\u0027acquisition"
+                                                                                ]
+                                                            },
+                                        "cloudin-ngong":  {
+                                                              "name":  "Cloudin NGONG",
+                                                              "title":  "Superviseur - Département d\u0027expertise comptable",
+                                                              "qualifications":  [
+                                                                                     "MSc Accounting and Finance"
+                                                                                 ],
+                                                              "bio":  "Analyste financier spécialisé en fiscalité et audit financier. Supervise les opérations du département d\u0027expertise comptable.",
+                                                              "specialties":  [
+                                                                                  "Analyse financière",
+                                                                                  "Audit fiscal",
+                                                                                  "Audit financier",
+                                                                                  "Supervision de département"
+                                                                              ]
+                                                          },
+                                        "janot-hiag":  {
+                                                           "name":  "Janot HIAG",
+                                                           "title":  "Évaluateur actuariel et auditeur des coûts pétroliers",
+                                                           "qualifications":  [
+                                                                                  "Actuarial Certification"
+                                                                              ],
+                                                           "bio":  "Spécialiste en audit des coûts pétroliers, sécurité des revenus, inventaire et réévaluation des actifs, audit opérationnel et juridique, et audit statutaire.",
+                                                           "specialties":  [
+                                                                               "Audit des coûts pétroliers",
+                                                                               "Sécurité des revenus",
+                                                                               "Réévaluation des actifs",
+                                                                               "Audit opérationnel",
+                                                                               "Audit juridique"
+                                                                           ]
+                                                       },
+                                        "eric-kabeza":  {
+                                                            "name":  "Eric KABEZA",
+                                                            "title":  "Partenaire principal en fiscalité - Rwanda",
+                                                            "qualifications":  [
+                                                                                   "Tax Expert"
+                                                                               ],
+                                                            "bio":  "Expert en fiscalité locale et internationale avec plus de 20 ans d\u0027expérience à l\u0027Autorité fiscale rwandaise. Conseiller fiscal pour les entreprises et les particuliers. Responsable de la conformité fiscale et analyste des politiques.",
+                                                            "specialties":  [
+                                                                                "Fiscalité locale",
+                                                                                "Fiscalité internationale",
+                                                                                "Conformité fiscale",
+                                                                                "Analyse des politiques",
+                                                                                "Fiscalité des entreprises",
+                                                                                "Fiscalité des particuliers"
+                                                                            ]
+                                                        },
+                                        "jean-nahimana":  {
+                                                              "name":  "Jean Berchmas",
+                                                              "title":  "Partenaire - Audit financier et fiscal",
+                                                              "qualifications":  [
+                                                                                     "CPA",
+                                                                                     "FMVA®",
+                                                                                     "BIDA®"
+                                                                                 ],
+                                                              "bio":  "Expert-comptable, membre de l\u0027ICPAR. Auditeur financier et fiscal. Analyste senior des comptes et modélisateur financier avec une vaste expérience en planification et analyse financières.",
+                                                              "specialties":  [
+                                                                                  "Audit financier",
+                                                                                  "Audit fiscal",
+                                                                                  "Modélisation financière",
+                                                                                  "Analyse des comptes"
+                                                                              ]
+                                                          },
+                                        "martin-nkwain":  {
+                                                              "name":  "Marcel NKWAIN",
+                                                              "title":  "Responsable régional - Afrique de l\u0027Est",
+                                                              "qualifications":  [
+                                                                                     "IPA(UA)",
+                                                                                     "IFA(UK)"
+                                                                                 ],
+                                                              "bio":  "Expert HARDCAT en gestion d\u0027actifs fixes. Auditeur financier et fiscal. Consultant international et formateur dirigeant les opérations d\u0027EXCI-MAA en Afrique de l\u0027Est.",
+                                                              "specialties":  [
+                                                                                  "Gestion des actifs fixes",
+                                                                                  "Gestion régionale",
+                                                                                  "Audit financier",
+                                                                                  "Audit fiscal",
+                                                                                  "Formation internationale"
+                                                                              ]
+                                                          },
+                                        "paul-tchamake":  {
+                                                              "name":  "Olivier Fodji",
+                                                              "title":  "Partenaire - Fiscalité internationale et prix de transfert",
+                                                              "qualifications":  [
+                                                                                     "Ms",
+                                                                                     "CPA (USA, France)"
+                                                                                 ],
+                                                              "bio":  "Expert-comptable certifié (régimes américain et français). Spécialiste en fiscalité internationale, ASC 740 (normes US GAAP). Plus de 15 ans d\u0027expérience en reporting financier et fiscal international avec une expérience chez Big 4 à KPMG et PwC USA. Spécialiste en prix de transfert et BEPS.",
+                                                              "specialties":  [
+                                                                                  "Fiscalité internationale",
+                                                                                  "Prix de transfert",
+                                                                                  "BEPS",
+                                                                                  "US GAAP",
+                                                                                  "ASC 740",
+                                                                                  "Fiscalité transfrontalière"
+                                                                              ]
+                                                          },
+                                        "diane-dusabe":  {
+                                                             "name":  "Diane DUSABE",
+                                                             "title":  "Responsable de bureau - Burundi",
+                                                             "qualifications":  [
+                                                                                    "BBA",
+                                                                                    "Accounting"
+                                                                                ],
+                                                             "bio":  "Responsable de bureau expérimentée supervisant les opérations d\u0027EXCI-MAA au Burundi. Spécialisée dans les relations avec les clients et le développement commercial local.",
+                                                             "specialties":  [
+                                                                                 "Gestion de bureau",
+                                                                                 "Relations avec les clients",
+                                                                                 "Développement commercial",
+                                                                                 "Opérations locales"
+                                                                             ]
+                                                         },
+                                        "onesphore-ofodji":  {
+                                                                 "name":  "Onesphore OFODJI",
+                                                                 "title":  "Consultant senior - Burundi",
+                                                                 "qualifications":  [
+                                                                                        "CPA",
+                                                                                        "MBA"
+                                                                                    ],
+                                                                 "bio":  "Consultant commercial senior spécialisé dans le développement des marchés régionaux et les services de conseil financier pour les entreprises au Burundi.",
+                                                                 "specialties":  [
+                                                                                     "Conseil commercial",
+                                                                                     "Conseil financier",
+                                                                                     "Développement de marché",
+                                                                                     "Planification stratégique"
+                                                                                 ]
+                                                             },
+                                        "congo-director":  {
+                                                               "name":  "Directeur régional",
+                                                               "title":  "Directeur - Opérations RDC",
+                                                               "qualifications":  [
+                                                                                      "CPA",
+                                                                                      "MBA"
+                                                                                  ],
+                                                               "bio":  "Dirige les opérations d\u0027EXCI-MAA en République Démocratique du Congo, avec un focus sur les services d\u0027audit et de conseil commercial.",
+                                                               "specialties":  [
+                                                                                   "Services d\u0027audit",
+                                                                                   "Conseil commercial",
+                                                                                   "Opérations régionales",
+                                                                                   "Conseil fiscal"
+                                                                               ]
+                                                           },
+                                        "gabon-manager":  {
+                                                              "name":  "Responsable régional",
+                                                              "title":  "Responsable - Opérations Gabon",
+                                                              "qualifications":  [
+                                                                                     "Expert Comptable",
+                                                                                     "CEMAC"
+                                                                                 ],
+                                                              "bio":  "Gère les services d\u0027EXCI-MAA au Gabon avec un focus sur l\u0027audit financier et le conseil aux entreprises pour les clients locaux et internationaux.",
+                                                              "specialties":  [
+                                                                                  "Audit financier",
+                                                                                  "Conseil aux entreprises",
+                                                                                  "Réglementations CEMAC",
+                                                                                  "Conformité locale"
+                                                                              ]
+                                                          },
+                                        "dubai-consultant":  {
+                                                                 "name":  "Consultant senior",
+                                                                 "title":  "Consultant commercial senior - Dubaï",
+                                                                 "qualifications":  [
+                                                                                        "CPA",
+                                                                                        "ACCA"
+                                                                                    ],
+                                                                 "bio":  "Spécialisé dans la création d\u0027entreprises internationales et la planification fiscale pour les entreprises qui se développent sur les marchés du Moyen-Orient.",
+                                                                 "specialties":  [
+                                                                                     "Création d\u0027entreprise",
+                                                                                     "Planification fiscale",
+                                                                                     "Expansion internationale",
+                                                                                     "Marchés du Moyen-Orient"
+                                                                                 ]
+                                                             },
+                                        "france-partner":  {
+                                                               "name":  "Partenaire",
+                                                               "title":  "Partenaire - Opérations France",
+                                                               "qualifications":  [
+                                                                                      "Expert Comptable",
+                                                                                      "Commissaire aux Comptes"
+                                                                                  ],
+                                                               "bio":  "Dirige les opérations européennes avec une expertise en conformité européenne et conseil transfrontalier.",
+                                                               "specialties":  [
+                                                                                   "Conformité européenne",
+                                                                                   "Conseil transfrontalier",
+                                                                                   "Comptabilité européenne",
+                                                                                   "Fiscalité internationale"
+                                                                               ]
+                                                           },
+                                        "canada-consultant":  {
+                                                                  "name":  "Consultant senior",
+                                                                  "title":  "Consultant en immigration et fiscalité",
+                                                                  "qualifications":  [
+                                                                                         "CPA",
+                                                                                         "RCIC"
+                                                                                     ],
+                                                                  "bio":  "Spécialisé dans les services d\u0027immigration au Canada et la planification fiscale internationale pour les nouveaux immigrants et les entreprises.",
+                                                                  "specialties":  [
+                                                                                      "Services d\u0027immigration",
+                                                                                      "Fiscalité internationale",
+                                                                                      "Planification financière",
+                                                                                      "Immigration d\u0027affaires"
+                                                                                  ]
+                                                              }
+                                    }
+                    },
+    "partners":  {
+                     "label":  "NOS LOGOS",
+                     "title":  "Logos du Groupe EXCI-MAA",
+                     "subtitle":  "Notre identité professionnelle et représentation de marque",
+                     "note":  "Nos logos représentent notre expertise et notre engagement envers l\u0027excellence",
+                     "founders":  {
+                                      "pierre":  {
+                                                     "name":  "Pierre KEMENI",
+                                                     "title":  "MBA, CPA, DEC",
+                                                     "description":  "Expert-comptable et commissaire aux comptes avec plus de 27 ans d\u0027expérience en comptabilité et audit internationaux.",
+                                                     "specialties":  [
+                                                                         "Comptabilité Internationale",
+                                                                         "Audit",
+                                                                         "Conseil Fiscal"
+                                                                     ]
+                                                 },
+                                      "patrick":  {
+                                                      "name":  "Patrick NGATCHA",
+                                                      "title":  "DEC, DSCG, Master CCA, MSTCF",
+                                                      "description":  "Expert-comptable et commissaire aux comptes avec plus de 13 ans d\u0027expérience en développement des affaires et conseil financier.",
+                                                      "specialties":  [
+                                                                          "Développement Commercial",
+                                                                          "Conseil Financier",
+                                                                          "Gestion des Risques"
+                                                                      ]
+                                                  }
+                                  }
+                 },
+    "offices":  {
+                    "title":  "Présence Mondiale",
+                    "subtitle":  "Servir les clients dans le monde entier"
+                },
+    "admin":  {
+                  "dashboardTitle":  "Tableau de Bord Admin",
+                  "dashboardSubtitle":  "Gérez votre contenu et vos analyses",
+                  "contentTitle":  "Gestion de Contenu",
+                  "contentSubtitle":  "Gérez les services, événements et articles de blog",
+                  "analyticsTitle":  "Analyses",
+                  "analyticsSubtitle":  "Voir les métriques de performance et les perspectives"
+              },
+    "servicesPage":  {
+                         "hero":  {
+                                      "title":  "Transformez Votre Entreprise avec",
+                                      "titleHighlight":  "des Solutions Financières Expertes",
+                                      "subtitle":  "Découvrez comment nos services financiers complets peuvent stimuler la croissance, assurer la conformité et optimiser les performances de votre entreprise."
+                                  },
+                         "detailedServices":  {
+                                                  "title":  "Nos",
+                                                  "titleHighlight":  "Complets",
+                                                  "titleSuffix":  "Services",
+                                                  "subtitle":  "Solutions financières sur mesure pour répondre aux besoins uniques de votre entreprise et stimuler une croissance durable.",
+                                                  "services":  {
+                                                                   "accounting":  {
+                                                                                      "title":  "Comptabilité et Tenue de Livres",
+                                                                                      "shortDesc":  "Tenue de registres financiers et rapports complets",
+                                                                                      "description":  "Notre équipe comptable experte fournit des services de tenue de livres complets pour maintenir vos registres financiers précis et à jour. Nous gérons tout, des transactions quotidiennes aux rapports financiers complexes, en assurant la conformité avec toutes les réglementations pertinentes.",
+                                                                                      "features":  [
+                                                                                                       "Tenue de livres mensuelle et états financiers",
+                                                                                                       "Gestion des comptes créditeurs et débiteurs",
+                                                                                                       "Rapprochements bancaires et cartes de crédit",
+                                                                                                       "Traitement de la paie et rapports",
+                                                                                                       "Rapports et analyse financiers",
+                                                                                                       "Configuration et maintenance du plan comptable",
+                                                                                                       "Suivi et évaluation des stocks",
+                                                                                                       "Gestion des actifs fixes",
+                                                                                                       "Analyse et prévision des flux de trésorerie",
+                                                                                                       "Préparation et suivi du budget"
+                                                                                                   ]
+                                                                                  },
+                                                                   "audit":  {
+                                                                                 "title":  "Audit et Assurance",
+                                                                                 "shortDesc":  "Vérification financière indépendante et conformité",
+                                                                                 "description":  "Nos services d\u0027audit fournissent une vérification indépendante de vos états financiers, assurant l\u0027exactitude et la conformité aux normes comptables. Nous aidons à identifier les risques et à améliorer vos processus financiers.",
+                                                                                 "features":  [
+                                                                                                  "Audits des états financiers",
+                                                                                                  "Évaluations des contrôles internes",
+                                                                                                  "Audits de conformité",
+                                                                                                  "Audits opérationnels",
+                                                                                                  "Audits à des fins spéciales",
+                                                                                                  "Évaluation et gestion des risques",
+                                                                                                  "Détection et prévention de la fraude",
+                                                                                                  "Examens de conformité réglementaire",
+                                                                                                  "Services de due diligence",
+                                                                                                  "Audits de performance et d\u0027efficacité"
+                                                                                              ]
+                                                                             },
+                                                                   "tax":  {
+                                                                               "title":  "Conseil Fiscal",
+                                                                               "shortDesc":  "Planification fiscale stratégique et conformité",
+                                                                               "description":  "Nos experts fiscaux fournissent des services complets de planification fiscale et de conformité pour minimiser votre responsabilité fiscale tout en assurant la conformité complète avec toutes les lois et réglementations fiscales.",
+                                                                               "features":  [
+                                                                                                "Planification et stratégie fiscales",
+                                                                                                "Déclarations fiscales des entreprises et particuliers",
+                                                                                                "Support d\u0027audit fiscal",
+                                                                                                "Planification fiscale internationale",
+                                                                                                "Résolution de litiges fiscaux",
+                                                                                                "Conformité et dépôt fiscal",
+                                                                                                "Documentation des prix de transfert",
+                                                                                                "Stratégies d\u0027optimisation fiscale",
+                                                                                                "Planification successorale et de succession",
+                                                                                                "Coordination fiscale multi-juridictionnelle"
+                                                                                            ]
+                                                                           },
+                                                                   "advisory":  {
+                                                                                    "title":  "Conseil d\u0027Entreprise",
+                                                                                    "shortDesc":  "Conseil et planification d\u0027entreprise stratégiques",
+                                                                                    "description":  "Nos services de conseil d\u0027entreprise aident les organisations à naviguer dans les défis commerciaux complexes, à améliorer les performances et à atteindre une croissance durable grâce à la planification et à la mise en œuvre stratégiques.",
+                                                                                    "features":  [
+                                                                                                     "Planification et stratégie d\u0027entreprise",
+                                                                                                     "Modélisation et prévision financières",
+                                                                                                     "Fusions et acquisitions",
+                                                                                                     "Évaluation d\u0027entreprise",
+                                                                                                     "Amélioration des performances",
+                                                                                                     "Planification et exécution stratégiques",
+                                                                                                     "Analyse de marché et intelligence concurrentielle",
+                                                                                                     "Analyse d\u0027investissement et due diligence",
+                                                                                                     "Gestion du changement et transformation",
+                                                                                                     "Conseil de conseil d\u0027administration et gouvernance"
+                                                                                                 ]
+                                                                                },
+                                                                   "risk":  {
+                                                                                "title":  "Gestion des Risques",
+                                                                                "shortDesc":  "Identifier et atténuer les risques commerciaux",
+                                                                                "description":  "Nos services de gestion des risques aident les organisations à identifier, évaluer et atténuer les risques qui pourraient affecter leurs objectifs et opérations commerciaux.",
+                                                                                "features":  [
+                                                                                                 "Évaluation et analyse des risques",
+                                                                                                 "Services d\u0027audit interne",
+                                                                                                 "Prévention et détection de la fraude",
+                                                                                                 "Surveillance de la conformité",
+                                                                                                 "Planification de la continuité des activités",
+                                                                                                 "Gestion des risques d\u0027entreprise",
+                                                                                                 "Évaluation des risques opérationnels",
+                                                                                                 "Évaluation des risques financiers",
+                                                                                                 "Cadres de conformité réglementaire",
+                                                                                                 "Gestion de crise et récupération"
+                                                                                             ]
+                                                                            },
+                                                                   "hr":  {
+                                                                              "title":  "Services RH et Paie",
+                                                                              "shortDesc":  "Solutions complètes RH et paie",
+                                                                              "description":  "Nos services RH et paie aident les organisations à gérer leur actif le plus précieux - leurs employés - tout en assurant la conformité avec les lois et réglementations du travail.",
+                                                                              "features":  [
+                                                                                               "Traitement de la paie",
+                                                                                               "Développement de politiques RH",
+                                                                                               "Administration des avantages sociaux",
+                                                                                               "Gestion de la performance",
+                                                                                               "Conformité aux lois du travail",
+                                                                                               "Intégration et départ des employés",
+                                                                                               "Analyse de la rémunération et des avantages",
+                                                                                               "Mise en œuvre de technologies RH",
+                                                                                               "Planification de la main-d\u0027œuvre et analyses",
+                                                                                               "Relations employés et résolution de conflits"
+                                                                                           ]
+                                                                          }
+                                                               },
+                                                  "scheduleAppointment":  "Planifier un Rendez-vous",
+                                                  "needCustomSolution":  "Besoin d\u0027une solution personnalisée ? Nos experts sont là pour vous aider.",
+                                                  "getFreeConsultation":  "Obtenir une Consultation Gratuite"
+                                              },
+                         "process":  {
+                                         "title":  "Notre",
+                                         "titleHighlight":  "Prouvé",
+                                         "titleSuffix":  "Processus",
+                                         "subtitle":  "Une approche structurée pour fournir des services financiers exceptionnels adaptés aux besoins de votre entreprise.",
+                                         "steps":  [
+                                                       {
+                                                           "title":  "Découverte et Analyse",
+                                                           "description":  "Nous commençons par comprendre vos besoins, défis et objectifs commerciaux grâce à des discussions approfondies et des analyses.",
+                                                           "duration":  "1-2 Semaines",
+                                                           "keyPoints":  [
+                                                                             "Consultation initiale",
+                                                                             "Évaluation d\u0027entreprise",
+                                                                             "Collecte des exigences",
+                                                                             "Définition de la portée"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Proposition et Planification",
+                                                           "description":  "Nous développons un plan de service personnalisé avec des objectifs clairs, des délais et des livrables adaptés à vos besoins.",
+                                                           "duration":  "3-5 Jours",
+                                                           "keyPoints":  [
+                                                                             "Plan de service personnalisé",
+                                                                             "Structure de tarification",
+                                                                             "Accord sur les délais",
+                                                                             "Attribution d\u0027équipe"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Intégration d\u0027Équipe",
+                                                           "description":  "Notre équipe experte est assignée à votre projet, assurant les bonnes compétences et expertise pour vos exigences spécifiques.",
+                                                           "duration":  "2-3 Jours",
+                                                           "keyPoints":  [
+                                                                             "Gestionnaire de compte dédié",
+                                                                             "Présentation de l\u0027équipe",
+                                                                             "Accès aux outils",
+                                                                             "Configuration de la communication"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Mise en Œuvre",
+                                                           "description":  "Nous exécutons les services convenus avec précision, vous tenant informé à chaque étape du processus.",
+                                                           "duration":  "Varie selon le projet",
+                                                           "keyPoints":  [
+                                                                             "Mises à jour de progrès régulières",
+                                                                             "Assurance qualité",
+                                                                             "Résolution de problèmes",
+                                                                             "Révisions de jalons"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Révision et Rapports",
+                                                           "description":  "Nous fournissons des rapports et analyses complets, assurant une transparence complète et une compréhension des résultats.",
+                                                           "duration":  "1 Semaine",
+                                                           "keyPoints":  [
+                                                                             "Métriques de performance",
+                                                                             "Rapports financiers",
+                                                                             "Vérification de conformité",
+                                                                             "Recommandations"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Support Continu",
+                                                           "description":  "Notre relation continue avec un support continu, des révisions régulières et des conseils stratégiques pour une amélioration continue.",
+                                                           "duration":  "Continu",
+                                                           "keyPoints":  [
+                                                                             "Support dédié",
+                                                                             "Vérifications régulières",
+                                                                             "Conseils stratégiques",
+                                                                             "Optimisation des services"
+                                                                         ]
+                                                       }
+                                                   ],
+                                         "readyToGetStarted":  "Prêt à commencer ?",
+                                         "readyDescription":  "Notre équipe d\u0027experts est prête à vous guider à travers notre processus et fournir des services financiers exceptionnels pour votre entreprise.",
+                                         "getFreeConsultation":  "Obtenir une Consultation Gratuite",
+                                         "exploreServices":  "Explorer Nos Services"
+                                     },
+                         "pricing":  {
+                                         "title":  "Tarification",
+                                         "titleHighlight":  "Simple et Transparente",
+                                         "titleSuffix":  "",
+                                         "subtitle":  "Choisissez le plan parfait pour les besoins de votre entreprise. Aucuns frais cachés, annulez à tout moment.",
+                                         "monthlyBilling":  "Facturation Mensuelle",
+                                         "annualBilling":  "Facturation Annuelle",
+                                         "saveUpTo":  "(Économisez jusqu\u0027à 20%)",
+                                         "plans":  {
+                                                       "starter":  {
+                                                                       "name":  "Débutant",
+                                                                       "description":  "Parfait pour les petites entreprises qui commencent",
+                                                                       "features":  [
+                                                                                        "Tenue de livres de base",
+                                                                                        "Rapports financiers mensuels",
+                                                                                        "Estimations fiscales trimestrielles",
+                                                                                        "Support par email",
+                                                                                        "Jusqu\u0027à 50 transactions/mois",
+                                                                                        "Tableau de bord financier de base"
+                                                                                    ],
+                                                                       "notIncluded":  [
+                                                                                           "Support d\u0027audit",
+                                                                                           "Gestionnaire de compte dédié",
+                                                                                           "Rapports personnalisés",
+                                                                                           "Dépôt fiscal",
+                                                                                           "Gestion des stocks"
+                                                                                       ],
+                                                                       "buttonText":  "Commencer"
+                                                                   },
+                                                       "professional":  {
+                                                                            "name":  "Professionnel",
+                                                                            "description":  "Idéal pour les entreprises en croissance",
+                                                                            "features":  [
+                                                                                             "Tout dans Débutant",
+                                                                                             "Tenue de livres avancée",
+                                                                                             "Rapports financiers hebdomadaires",
+                                                                                             "Estimations fiscales mensuelles",
+                                                                                             "Support prioritaire par email et téléphone",
+                                                                                             "Jusqu\u0027à 200 transactions/mois",
+                                                                                             "Tableau de bord financier avancé",
+                                                                                             "Dépôt fiscal de base",
+                                                                                             "Suivi des stocks"
+                                                                                         ],
+                                                                            "notIncluded":  [
+                                                                                                "Support d\u0027audit",
+                                                                                                "Gestionnaire de compte dédié",
+                                                                                                "Rapports personnalisés",
+                                                                                                "Planification fiscale avancée"
+                                                                                            ],
+                                                                            "buttonText":  "Commencer"
+                                                                        },
+                                                       "enterprise":  {
+                                                                          "name":  "Entreprise",
+                                                                          "description":  "Pour les entreprises établies avec des besoins complexes",
+                                                                          "features":  [
+                                                                                           "Tout dans Professionnel",
+                                                                                           "Comptabilité service complet",
+                                                                                           "Rapports financiers personnalisés",
+                                                                                           "Gestionnaire de compte dédié",
+                                                                                           "Support prioritaire 24/7",
+                                                                                           "Transactions illimitées",
+                                                                                           "Planification fiscale avancée",
+                                                                                           "Support d\u0027audit",
+                                                                                           "Intégrations personnalisées",
+                                                                                           "Préparation de réunions de conseil",
+                                                                                           "Services de conseil CFO"
+                                                                                       ],
+                                                                          "notIncluded":  [
+
+                                                                                          ],
+                                                                          "buttonText":  "Contacter les Ventes"
+                                                                      }
+                                                   },
+                                         "whatsIncluded":  "Ce qui est inclus :",
+                                         "notIncluded":  "Non inclus :",
+                                         "billedAnnually":  "Facturé annuellement",
+                                         "orBilledAnnually":  "ou ${{annualPrice}} facturé annuellement",
+                                         "save":  "Économisez {{percentage}}%",
+                                         "needCustomSolution":  "Besoin d\u0027une solution personnalisée ? Nous offrons des forfaits sur mesure pour les entreprises avec des exigences uniques.",
+                                         "getCustomQuote":  "Obtenir un Devis Personnalisé",
+                                         "notSureWhichPlan":  "Pas sûr du plan qui vous convient ?",
+                                         "expertsHelp":  "Nos experts sont là pour vous aider à choisir la solution parfaite pour les besoins de votre entreprise. Planifiez une consultation gratuite de 30 minutes pour discuter de vos exigences.",
+                                         "scheduleFreeConsultation":  "Planifier une Consultation Gratuite"
+                                     }
+                     },
+    "organizationalStructure":  {
+                                    "title":  "ORGANIGRAMME DU GROUPE",
+                                    "subtitle":  "Notre leadership et structure d\u0027équipe",
+                                    "chairman":  {
+                                                     "title":  "Associé",
+                                                     "subtitle":  "Président du Conseil d\u0027Administration\nDirecteur du développement",
+                                                     "description":  "Leadership global et direction stratégique du Groupe EXCI-MAA."
+                                                 },
+                                    "adminPartner":  {
+                                                         "title":  "Associé, Administration Générale, Finance \u0026 RH",
+                                                         "description":  "Supervise l\u0027administration, les finances et les ressources humaines."
+                                                     },
+                                    "auditPartner":  {
+                                                         "title":  "Associé Audit \u0026 Conseil",
+                                                         "description":  "Dirige les opérations d\u0027audit et de conseil."
+                                                     },
+                                    "managementPartner":  {
+                                                              "title":  "Associé Management \u0026 Organisation",
+                                                              "description":  "Gère le management et le développement organisationnel."
+                                                          },
+                                    "qualityCompliance":  {
+                                                              "title":  "Associé",
+                                                              "subtitle":  "Responsable Qualité \u0026 Conformité",
+                                                              "description":  "Assure les standards de qualité et la conformité dans toute l\u0027organisation."
+                                                          },
+                                    "countryDirector":  {
+                                                            "title":  "Directeur Pays comptables\nSenior et Junior Auditeurs",
+                                                            "description":  "Gère les opérations du pays avec les équipes comptables et d\u0027audit."
+                                                        },
+                                    "specialists":  {
+                                                        "title":  "Spécialistes \u0026 Consultants Externes",
+                                                        "subtitle":  "(Médecins, Ingénieurs, Avocats, Sociologues, Seniors, Juniors ... ETC)",
+                                                        "description":  "Équipe multidisciplinaire de consultants et spécialistes externes."
+                                                    }
+                                },
+    "typicalOfficeOrganigram":  {
+                                    "title":  "ORGANIGRAMME TYPE D\u0027UN BUREAU",
+                                    "subtitle":  "Structure organisationnelle standard pour les services professionnels",
+                                    "officeManager":  {
+                                                          "title":  "DIRECTEUR / GESTIONNAIRE DE BUREAU",
+                                                          "description":  "Gestion globale et direction stratégique"
+                                                      },
+                                    "audit":  {
+                                                  "title":  "AUDIT",
+                                                  "legal":  {
+                                                                "title":  "LEGAL",
+                                                                "services":  [
+                                                                                 "Audits statutaires",
+                                                                                 "Audit des comptes d\u0027entreprise, comptes combinés et consolidés",
+                                                                                 "Scissions, fusions etc"
+                                                                             ]
+                                                            },
+                                                  "contractual":  {
+                                                                      "title":  "CONTRACTUEL",
+                                                                      "services":  [
+                                                                                       "Audit de projets ONG",
+                                                                                       "Comptes prévisionnels",
+                                                                                       "Audit des coûts pétroliers",
+                                                                                       "Contrôle interne"
+                                                                                   ]
+                                                                  }
+                                              },
+                                    "advisory":  {
+                                                     "title":  "CONSEIL",
+                                                     "taxSocial":  {
+                                                                       "title":  "FISCAL \u0026 SOCIAL",
+                                                                       "services":  [
+                                                                                        "Conseil juridique: Constitution, Mise à jour OHADA, Audit, Secrétariat Juridique",
+                                                                                        "Droit Fiscal: Due diligence, Conseil Fiscal \u0026 Conformité Fiscale, Audit",
+                                                                                        "Droit Social: Recrutement, Contrat de Travail, Fiche de Paie, Déclarations, Audit"
+                                                                                    ]
+                                                                   },
+                                                     "training":  {
+                                                                      "title":  "FORMATION",
+                                                                      "services":  [
+                                                                                       "Formations",
+                                                                                       "Choix de Thèmes dans notre panel annuel"
+                                                                                   ]
+                                                                  },
+                                                     "finance":  {
+                                                                     "title":  "FINANCE",
+                                                                     "services":  [
+                                                                                      "Plan d\u0027affaires",
+                                                                                      "Analyse de Portefeuille de Crédit",
+                                                                                      "Rating",
+                                                                                      "Évaluations"
+                                                                                  ]
+                                                                 }
+                                                 },
+                                    "management":  {
+                                                       "title":  "GESTION",
+                                                       "accounting":  {
+                                                                          "title":  "ASSISTANCE COMPTABLE ET FISCALE",
+                                                                          "services":  [
+                                                                                           "États financiers annuels ou prévisionnels",
+                                                                                           "Mise en place d\u0027une organisation comptable",
+                                                                                           "Logiciel de Gestion",
+                                                                                           "Tenue de livres",
+                                                                                           "Déclaration d\u0027impôts"
+                                                                                       ]
+                                                                      },
+                                                       "facility":  {
+                                                                        "title":  "GESTION D\u0027INSTALLATIONS \u0026 MYCODEBAR",
+                                                                        "services":  [
+                                                                                         "Gestion d\u0027Installations",
+                                                                                         "Gestion électronique des stocks et actifs par codes-barres"
+                                                                                     ]
+                                                                    }
+                                                   }
+                                },
+    "trainingCategories":  {
+                               "accounting":  {
+                                                  "title":  "Comptabilité / Fiscal / Gestion",
+                                                  "courses":  [
+                                                                  "Méthodes de comptabilité et suivi des informations d\u0027entreprise",
+                                                                  "Méthodes de travail ou préparation de rapports fiscaux et autres",
+                                                                  "Directives de droit fiscal et de gestion",
+                                                                  "Méthodes d\u0027audit et de gestion de la gestion fiscale",
+                                                                  "Problèmes de droit fiscal en CONGO, CAMEROUN, RWANDA, BURUNDI, GABON",
+                                                                  "Configurez votre compte d\u0027entreprise et gestion financière",
+                                                                  "Méthodes de trouver la gestion dans les rapports fiscaux",
+                                                                  "Impact fiscal et fiscal sur la fiscalité",
+                                                                  "Gestion entre DAS, informations et DSF: Problème CNSS",
+                                                                  "Gestion comptable de travail"
+                                                              ],
+                                                  "price":  "$299",
+                                                  "duration":  "3 jours"
+                                              },
+                               "audit":  {
+                                             "title":  "Audit Légal / Gestion de Gestion",
+                                             "courses":  [
+                                                             "Pourquoi auditer vos informations?",
+                                                             "Méthodes d\u0027audit d\u0027entreprise et financier",
+                                                             "Quel est l\u0027impact de l\u0027audit sur les rapports fiscaux?",
+                                                             "Gestion et gestion de l\u0027audit interne dans les petites entreprises, banques et gestion",
+                                                             "Gestion et gestion de la gestion de gestion",
+                                                             "Informations et gestion de gestion",
+                                                             "Audit interne (centre d\u0027audit)",
+                                                             "Audit interne – Développement et gestion",
+                                                             "Audit légal",
+                                                             "Gérer correctement la gestion financière, surtout la gestion",
+                                                             "Comprendre les besoins financiers de la gestion et de la gestion",
+                                                             "Gestion financière entre personnes et entreprise avec clients",
+                                                             "Mesurer le système d\u0027information – ICT IS",
+                                                             "Comprendre ERP, sa gestion et voir si votre entreprise en a besoin",
+                                                             "Auditer la gestion de gestion interne",
+                                                             "Auditer la gestion d\u0027audit interne",
+                                                             "Trouver et prévenir la gestion",
+                                                             "Gérer la gestion dans la gestion d\u0027audit"
+                                                         ],
+                                             "price":  "$399",
+                                             "duration":  "5 jours"
+                                         },
+                               "advice":  {
+                                              "title":  "Conseil",
+                                              "courses":  [
+                                                              "Gestion des informations d\u0027entreprise de travail et gestion fiscale",
+                                                              "Comprendre les besoins et exigences fiscales mondiales: Tarification",
+                                                              "Mesurer les entreprises dans la zone OHADA",
+                                                              "Réévaluer la gestion: besoins pour toutes les entreprises",
+                                                              "Gestion de fusion, séparation et arrêt dans la zone OHADA",
+                                                              "Méthodes de travail de gestion d\u0027informations dans la zone OHADA",
+                                                              "Rédaction de gestion d\u0027entreprise",
+                                                              "Méthodes de travail d\u0027entreprise",
+                                                              "Fusion – Acquisition",
+                                                              "Audit légal, gestion et fiscal",
+                                                              "Aider à rédiger la gestion de gestion interne"
+                                                          ],
+                                              "price":  "$349",
+                                              "duration":  "4 jours"
+                                          },
+                               "various":  {
+                                               "title":  "Divers",
+                                               "courses":  [
+                                                               "Méthodes de travail avec les clients de gestion",
+                                                               "Sortez de votre gestion et augmentez votre gestion en entreprise et autres",
+                                                               "Gestion dans les bureaux / Centre",
+                                                               "Méthodes d\u0027être un Gestionnaire Financier/Gestion ou CFO et gestion",
+                                                               "Utiliser la gestion d\u0027entreprise et de gestion pour prévenir la gestion bancaire",
+                                                               "Droit des affaires OHADA",
+                                                               "Taxe d\u0027entreprise",
+                                                               "Utiliser et auditer la gestion bancaire",
+                                                               "Auditer la gestion de gestion de gestion"
+                                                           ],
+                                               "price":  "$199",
+                                               "duration":  "2 jours"
+                                           }
+                           },
+    "organizationalChart":  {
+                                "specialistsDetails":  "(M�decins, Ing�nieurs, Avocats, Sociologues, Seniors, Juniors ... ETC)",
+                                "partnerGeneral":  "Associ�, Administration G�n�rale, Finance et RH",
+                                "partnerAudit":  "Associ� Audit et Conseil",
+                                "partnerQuality":  "Associ� Qualit� et Conformit�",
+                                "seniorJuniorAuditors":  "Auditeurs Seniors et Juniors",
+                                "specialists":  "Sp�cialistes et Consultants Externes",
+                                "chairman":  "Pr�sident du Conseil d\u0027Administration",
+                                "title":  "ORGANIGRAMME DU GROUPE",
+                                "partnerManagement":  "Associ� Gestion et Organisation",
+                                "countryDirector":  "Directeur National comptables"
+                            }
 }

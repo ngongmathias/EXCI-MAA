@@ -7,15 +7,15 @@ const OrganizationalChart = () => {
   return (
     <div className="org-chart-container">
       {/* Title */}
-      <div className="chart-title">
-        GROUP ORGANIZATIONAL CHART
+      <div className="chart-title" >
+        {t('organizationalChart.title')}
       </div>
 
       {/* Top Level: Board of Directors */}
       <div className="level-1">
         <div className="board-section">
           <div className="box chairman">
-            Chairman of the Board of Directors
+            {t('organizationalChart.chairman')}
           </div>
         </div>
       </div>
@@ -24,9 +24,7 @@ const OrganizationalChart = () => {
       <div className="level-2">
         <div className="partner-section">
           <div className="box partner-general" style={{fontSize: '16px'}}>
-            Partner, General Administration,
-            <br />
-            Finance & HR
+            {t('organizationalChart.partnerGeneral')}
           </div>
         </div>
       </div>
@@ -35,25 +33,15 @@ const OrganizationalChart = () => {
       <div className="level-3">
         <div className="specialized-partners">
           <div className="box partner-quality">
-            Partner
-            <br />
-            Quality & Compliance
-            <br />
-            Officer
+            {t('organizationalChart.partnerQuality')}
           </div>
           
           <div className="box partner-audit">
-            Partner
-            <br />
-            Audit & Consulting
+            {t('organizationalChart.partnerAudit')}
           </div>
           
           <div className="box partner-management">
-            Partner
-            <br />
-            Management &
-            <br />
-            Organization
+            {t('organizationalChart.partnerManagement')}
           </div>
         </div>
       </div>
@@ -64,27 +52,23 @@ const OrganizationalChart = () => {
           {/* Under Quality & Compliance */}
           <div className="subordinate-group quality-group">
             <div className="box country-director">
-              Country Director
-              <br />
-              accountants
+              {t('organizationalChart.countryDirector')}
             </div>
           </div>
           
           {/* Under Audit & Consulting */}
           <div className="subordinate-group audit-group">
             <div className="box senior-junior-auditors">
-              Senior and Junior Auditors
+              {t('organizationalChart.seniorJuniorAuditors')}
             </div>
           </div>
           
           {/* Under Management & Organization */}
           <div className="subordinate-group management-group">
             <div className="box specialists">
-              Specialists & External Consultants
+              {t('organizationalChart.specialists')}
               <br />
-              (Doctors, Engineers, Lawyers, Sociologists,
-              <br />
-              Seniors, Juniors ... ETC)
+              {t('organizationalChart.specialistsDetails')}
             </div>
           </div>
         </div>

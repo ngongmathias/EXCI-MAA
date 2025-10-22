@@ -1341,5 +1341,17 @@
       "price": "$199",
       "duration": "2 days"
     }
+  },
+  "organizationalChart": {
+    "title": "GROUP ORGANIZATIONAL CHART",
+    "chairman": "Chairman of the Board of Directors",
+    "partnerGeneral": "Partner, General Administration, Finance & HR",
+    "partnerQuality": "Partner Quality & Compliance Officer",
+    "partnerAudit": "Partner Audit & Consulting",
+    "partnerManagement": "Partner Management & Organization",
+    "countryDirector": "Country Director accountants",
+    "seniorJuniorAuditors": "Senior and Junior Auditors",
+    "specialists": "Specialists & External Consultants",
+    "specialistsDetails": "(Doctors, Engineers, Lawyers, Sociologists, Seniors, Juniors ... ETC)"
   }
 }

@@ -1,1297 +1,1328 @@
 {
-  "nav": {
-    "home": "Ubutangazamakuru",
-    "about": "Ibyerekeye",
-    "services": "Serivisi",
-    "training": "Amahugurwa",
-    "globalOffices": "Amabiro y'isi",
-    "insights": "Ubushakashatsi",
-    "careers": "Akazi",
-    "contact": "Kwandikira"
-  },
-  "auth": {
-    "signIn": "Kwiyandikisha",
-    "signOut": "Gusohoka",
-    "admin": "Umuyobozi",
-    "adminPanel": "Ikibaho cy'ubuyobozi"
-  },
-    "globalOffices": {
-      "title": "Ibikorwa by’Isi Yose by’Inyamburano",
-      "subtitle": "Shaka ibiro byacu by’isi yose, umenye serivisi tuzirikura mu buri mwanya"
-    
-    },
-    "teamMembers": {
-      "title": "Itsinda Ryacu ry’Isi Yose",
-      "subtitle": "Amahitamo y’abahinga bo mu nzego zose zacu",
-      "readMore": "Soma Byinshi",
-      "showLess": "Garagaza Bike",
-      "specialties": "Ubumenyi bwihariye",
-      "noMembers": "Nta bantu bari mu itsinda basanzwe bashinzwe iyi biro",
-      "members": {
-        "pierre-kemeni": {
-          "name": "Pierre KEMENI",
-          "title": "Umuyobozi Mukuru & Umukuru w’Inteko",
-          "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
-          "bio": "Umufatanya, Umuyobozi Mukuru muri EXCI-MAA Group. Umucungamari wemewe na COSUMAF hamwe na Auditor wemewe n’amategeko. Yanditswe muri ICPAR, ONECCA, CPA Canada, Quebec, Ontario & UK. Mbere yari Umuyobozi w’Inshingano muri Deloitte Toronto. Umuhango mu buyobozi, SYSCOHADA, Ihinduka ry’Imikoreshereze. Umushiguzi w’Abahanga b’amahanga n’Umutoza.",
-          "specialties": [
-            "Imikoreshereze y’Amahanga",
-            "Isuzuma ry’Imari",
-            "Inama z’Ubuyobozi",
-            "Umuhango wa SYSCOHADA",
-            "Ihinduka ry’Imikoreshereze",
-            "Umuhango mu Bucuruzi bw’Abanki"
-          ]
-        },
-        "patrick-ngatcha": {
-          "name": "Patrick NGATCHA",
-          "title": "Umufatanya - Umuyobozi Mukuru",
-          "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
-          "bio": "Umucungamari wanditswe muri Institute of Chartered Accountants ya Paris Ile de France. Auditor wemewe n’amategeko. Umuhango mu misoro n’isuzuma ry’imari, isuzuma ry’ubuguzi, gufatanya (itegeko 99-02 / IFRS).",
-          "specialties": [
-            "Iterambere ry’Ubucuruzi",
-            "Inama z’Imari",
-            "Igenamigambi ry’Imisoro",
-            "IFRS",
-            "Gufatanya",
-            "Isuzuma ry’Ubuguzi"
-          ]
-        },
-        "cloudin-ngong": {
-          "name": "Cloudin NGONG",
-          "title": "Umunyamabanga - Ishami ry’Imicungamari",
-          "qualifications": ["MSc Accounting and Finance"],
-          "bio": "Umunyeshuri w’imari w’umuhango mu misoro n’isuzuma ry’imari. Yongera kuyobora ibikorwa by’ishami ry’Imicungamari.",
-          "specialties": [
-            "Ishungura ry’Imari",
-            "Isuzuma ry’Imisoro",
-            "Isuzuma ry’Imari",
-            "Kuyobora Ishami"
-          ]
-        },
-        "janot-hiag": {
-          "name": "Janot HIAG",
-          "title": "Umushikiranganji & Isuzuma ry’Igiciro cy’Ipétrole",
-          "qualifications": ["Actuarial Certification"],
-          "bio": "Umuhango mu isuzuma ry’igiciro cy’ipétrole, umutekano w’amafranga yinjira, urutonde rw’ibintu n’ihinduka ry’igiciro, isuzuma ry’ibikorwa n’amategeko, hamwe n’isuzuma ry’amategeko.",
-          "specialties": [
-            "Isuzuma ry’Igiciro cy’Ipétrole",
-            "Umutekano w’Amafranga Yinjira",
-            "Ihinduka ry’Igiciro cy’Ibintu",
-            "Isuzuma ry’Ibikorwa",
-            "Isuzuma ry’Amategeko"
-          ]
-        },
-        "eric-kabeza": {
-          "name": "Eric KABEZA",
-          "title": "Umufatanya Mukuru w’Imisoro - Rwanda",
-          "qualifications": ["Tax Expert"],
-          "bio": "Umuhango mu misoro y’igihugu n’amahanga hamwe n’imyaka isaga 20 akora muri Rwanda Revenue Authority. Umushiguzi/Umujyanama mu misoro y’amasosiyete n’abantu ku giti cyabo. Umunyamabanga w’ukurikiza imisoro n’umushungura w’amategeko.",
-          "specialties": [
-            "Imisoro y’Igihugu",
-            "Imisoro y’Amahanga",
-            "Ukurikiza Imisoro",
-            "Ishungura ry’Amategeko",
-            "Imisoro y’Amasosiyete",
-            "Imisoro y’Abantu"
-          ]
-        },
-        "jean-nahimana": {
-          "name": "Jean Berchmas",
-          "title": "Umufatanya - Isuzuma ry’Imari n’Imisoro",
-          "qualifications": ["CPA", "FMVA®", "BIDA®"],
-          "bio": "Umucungamari, Umunyamuryango wa ICPAR. Isuzuma ry’imari n’imisoro. Umunyeshuri Mukuru w’imikoreshereze n’umwibutsa w’imari w’umuhango n’uburambe mu igenamigambi ry’imari n’ishungura.",
-          "specialties": [
-            "Isuzuma ry’Imari",
-            "Isuzuma ry’Imisoro",
-            "Imiburo y’Imari",
-            "Ishungura ry’Imikoreshereze"
-          ]
-        },
-        "martin-nkwain": {
-          "name": "Marcel NKWAIN",
-          "title": "Umuyobozi w’Intara - Afrika y’Iburasirazuba",
-          "qualifications": ["IPA(UA)", "IFA(UK)"],
-          "bio": "Umuhango wa HARDCAT mu kuyobora ibintu by’umutungo. Isuzuma ry’imari n’imisoro. Umushiguzi w’amahanga n’umutoza uyobora ibikorwa bya EXCI-MAA muri Afrika y’Iburasirazuba.",
-          "specialties": [
-            "Kuyobora Umutungo Utisubirwa",
-            "Kuyobora Intara",
-            "Isuzuma ry’Imari",
-            "Isuzuma ry’Imisoro",
-            "Amashuri y’Amahanga"
-          ]
-        },
-        "paul-tchamake": {
-          "name": "Olivier Fodji",
-          "title": "Umufatanya - Imisoro y’Amahanga & Igiciro cy’Intara",
-          "qualifications": ["Ms", "CPA (USA, France)"],
-          "bio": "Umucungamari wemewe (Sisitemu y’Amerika na France). Umuhango mu misoro y’amahanga, ASC 740 (Amabwiriza ya US GAAP). Imyaka isaga 15 y’uburambe mu bitangaza imari n’imisoro y’amahanga hamwe n’uburambe muri Big 4 muri KPMG na PwC Amerika. Umuhango mu giciro cy’intara na BEPS.",
-          "specialties": [
-            "Imisoro y’Amahanga",
-            "Igiciro cy’Intara",
-            "BEPS",
-            "US GAAP",
-            "ASC 740",
-            "Imisoro Ihuzamahanga"
-          ]
-        },
-        "diane-dusabe": {
-          "name": "Diane DUSABE",
-          "title": "Umuyobozi w’Ibiro - Burundi",
-          "qualifications": ["BBA", "Accounting"],
-          "bio": "Umuyobozi w’ibiro w’uburambe uyobora ibikorwa bya EXCI-MAA muri Burundi. Umuhango mu mibanire y’abakiriya n’iterambere ry’ubucuruzi bw’ahandi.",
-          "specialties": [
-            "Kuyobora Ibiro",
-            "Mibanire y’Abakiriya",
-            "Iterambere ry’Ubucuruzi",
-            "Ibikorwa by’Ahantu"
-          ]
-        },
-        "onesphore-ofodji": {
-          "name": "Onesphore OFODJI",
-          "title": "Umushiguzi Mukuru - Burundi",
-          "qualifications": ["CPA", "MBA"],
-          "bio": "Umushiguzi w’ubucuruzi w’umuhango mu iterambere ry’amasoko y’intara na serivisi z’inama z’imari ku bucuruzi muri Burundi.",
-          "specialties": [
-            "Inama z’Ubucuruzi",
-            "Inama z’Imari",
-            "Iterambere ry’Amasoko",
-            "Igenamigambi ry’Intambwe"
-          ]
-        },
-        "congo-director": {
-          "name": "Umuyobozi w’Intara",
-          "title": "Umuyobozi - Ibikorwa bya RDC",
-          "qualifications": ["CPA", "MBA"],
-          "bio": "Uyobora ibikorwa bya EXCI-MAA muri Repubulika Iharanira Demokarasi ya Kongo, aganira ku bikorwa by’isuzuma na serivisi z’inama z’ubucuruzi.",
-          "specialties": [
-            "Serivisi z’Isuzuma",
-            "Inama z’Ubucuruzi",
-            "Ibikorwa by’Intara",
-            "Inama z’Imisoro"
-          ]
-        },
-        "gabon-manager": {
-          "name": "Umuyobozi w’Intara",
-          "title": "Umuyobozi - Ibikorwa bya Gabon",
-          "qualifications": ["Expert Comptable", "CEMAC"],
-          "bio": "Kuyobora serivisi za EXCI-MAA muri Gabon aganira ku isuzuma ry’imari na serivisi z’inama z’amasosiyete ku bakiriya b’ahandi n’amahanga.",
-          "specialties": [
-            "Isuzuma ry’Imari",
-            "Inama z’Amasosiyete",
-            "Amategeko ya CEMAC",
-            "Ukurikiza Amategeko y’Ahantu"
-          ]
-        },
-        "dubai-consultant": {
-          "name": "Umushiguzi Mukuru",
-          "title": "Umushiguzi w’Ubucuruzi Mukuru - Dubai",
-          "qualifications": ["CPA", "ACCA"],
-          "bio": "Umuhango mu gutangiza ubucuruzi bw’amahanga n’igenamigambi ry’imisoro ku masosiyete ashyiraho amasoko muri Aziya y’Uburasirazuba.",
-          "specialties": [
-            "Gutangiza Ubucuruzi",
-            "Igenamigambi ry’Imisoro",
-            "Ikwirakwiza ry’Amahanga",
-            "Amasoko y’Aziya y’Uburasirazuba"
-          ]
-        },
-        "france-partner": {
-          "name": "Umufatanya",
-          "title": "Umufatanya - Ibikorwa bya France",
-          "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
-          "bio": "Uyobora ibikorwa by’Uburaya n’ubuhanga mu kurikiza amategeko ya EU na serivisi z’inama z’ihuzamahanga.",
-          "specialties": [
-            "Ukurikiza Amategeko ya EU",
-            "Inama z’Ihuzamahanga",
-            "Imicungamari y’Uburaya",
-            "Imisoro y’Amahanga"
-          ]
-        },
-        "canada-consultant": {
-          "name": "Umushiguzi Mukuru",
-          "title": "Umushiguzi w’Abimukira & Imisoro",
-          "qualifications": ["CPA", "RCIC"],
-          "bio": "Umuhango mu serivisi z’ubumukira bwa Canada n’igenamigambi ry’imisoro y’amahanga ku bimukira bashya na masosiyete.",
-          "specialties": [
-            "Serivisi z’Ubumukira",
-            "Imisoro y’Amahanga",
-            "Igenamigambi ry’Imari",
-            "Ubumukira bw’Ubucuruzi"
-          ]
-        }
-      }
-    },
-  "footer": {
-    "description": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite amaofisi bw'isi. Dutanga ubuhanga buhagije gufasha ibyo ukeneye.",
-    "quickLinks": "Amahuza yihuse",
-    "ourServices": "Serivisi zacu",
-    "contactInfo": "Amakuru y'ubwoba",
-    "douala": "Douala, Kameruni",
-    "globalPresence": "",
-    "allRightsReserved": "Ubutaka bose burabagirwa.",
-    "privacyPolicy": "Politiki y'ubwoba",
-    "termsOfService": "Amabwiriza y'ubucuruzi",
-    "cookiePolicy": "Politiki y'amakuru"
-  },
-  "serviceCategories": {
-    "accounting": "Ubuhanga bwo kubara",
-    "legal": "Gukuraho n'impamvu z'umutekano",
-    "managerial": "Inama z'ubuyobozi",
-    "payroll": "Kwishyura n'ubuyobozi bw'abantu",
-    "consolidation": "Guhuza",
-    "risk": "Ubunyangamugayo bw'ingorane",
-    "it": "Ubunyangamugayo bw'ikoranabuhanga",
-    "financial": "Raporo z'ubucuruzi"
-  },
-  "hero": {
-    "title": "Ubucuruzi bw'ubuhanga &",
-    "titleHighlight": "Ubwoba bw'ubunyangamugayo",
-    "subtitle": "Serivisi z'ubucuruzi, ubugenzuzi, n'ubunyangamugayo zifite ubwoba bw'isi. Dutanga ibisubizo by'ubuhanga gufasha ubwoba bw'ubucuruzi bwawe.",
-    "feature1": "Ubuhanga bw'isi hamwe n'ukumenya umuturage",
-    "feature2": "Serivisi z'ubugenzuzi n'ubunyangamugayo",
-    "feature3": "Gufasha ubwoba bw'ubucuruzi bwawe",
-    "cta1": "Gusura Serivisi",
-    "cta2": "Gupata Ubunyangamugayo",
-    "description": "Dutanga ibisubizo bishasha mu vy'umutungo n'imburi y'ubuyobozi kugira dufashe amashirahamwe n'abantu kugendera mu bice vy'umutungo bigoye n'uko vyoshe, bafise ukwizigira n'ukusobanukirwa."
-  },
-  "about": {
-    "title": "Ibyerekeye Twe",
-    "subtitle": "Menya byinshi ku kigo cyacu n'ibyiringiro",
-    "feature1Title": "Ubwoba bw'ubuhanga",
-    "feature1Desc": "Dukomeza ubwoba bw'ubuhanga mu serivisi zacu zose",
-    "feature2Title": "Ofisi dufite ku isi",
-    "feature2Desc": "Gufasha abakiriya mu mahanga menshi n'amashyira",
-    "feature3Title": "Ikipe y'ubuhanga",
-    "feature3Desc": "Abahanga bacu bafite ubuhanga batanga ibisubizo by'ubwoba",
-    "heroTitle": "Ibyerekeye EXCI-MAA",
-    "heroSubtitle": "Ikigo cy'ubucuruzi, cy'ubugenzuzi, n'ubunyangamugayo cyifite amaofisi bw'isi",
-    "historyTitle": "Amateka yacu",
-    "historySubtitle": "Gushyiraho kwizera ku bwoba bw'ubuhanga kuva twatangira",
-    "valuesTitle": "Ibyiringiro byacu",
-    "valuesSubtitle": "Amabwiriza atuyobora mu byose dukora",
-    "teamTitle": "Ikipe yacu",
-    "teamSubtitle": "Hangana n'abahanga bacu bafite ubuhanga",
-    "testimonialsTitle": "Ibyemezo by'abakiriya",
-    "testimonialsSubtitle": "Ibyo abakiriya bacu bavuga ku twe"
-  },
-  "services": {
-    "title": "Serivisi zacu",
-    "subtitle": "Ibisubizo birambuye ku byo ukeneye",
-    "heroTitle": "Serivisi z'ubuhanga",
-    "heroSubtitle": "Ibisubizo by'ubuhanga byashyizweho ku byo ukeneye",
-    "detailedTitle": "Ibyerekeye Serivisi",
-    "detailedSubtitle": "Amakuru y'ubuhanga ku byo dutanga",
-    "processTitle": "Uburyo bwo gukora",
-    "processSubtitle": "Uburyo dutanga ibisubizo by'ubwoba",
-    "faqTitle": "Ibibazo by'ubwoba",
-    "faqSubtitle": "Ibibazo by'ubwoba ku serivisi zacu",
-    "pricingTitle": "Igiciro",
-    "pricingSubtitle": "Igiciro cy'ubwoba ku serivisi zacu zose",
-    "schedule": "Tegura",
-    "getStarted": "Tangira",
-    "keyFeatures": "Ivyo nyamukuru",
-    "learnMore": "Menya vyinshi",
-    "viewAll": "Raba serivisi zose",
-    "service1Title": "Ubuhanga bwo kubara",
-    "service1Desc": "Serivisi z'ubucuruzi z'ubuhanga ku bikoresho",
-    "service2Title": "Gukuraho n'impamvu z'umutekano",
-    "service2Desc": "Serivisi z'ubugenzuzi n'ubwoba",
-    "service3Title": "Inama z'ubuyobozi",
-    "service3Desc": "Ubunyangamugayo bw'ubwoba ku bwoba bw'ubucuruzi",
-    "service4Title": "Kwishyura n'ubuyobozi bw'abantu",
-    "service4Desc": "Gucunga ubwoba bw'ubucuruzi n'ubuyobozi bw'abantu",
-    "service5Title": "Guhuza",
-    "service5Desc": "Guhuza ubucuruzi ku bikoresho byinshi",
-    "service6Title": "Ubunyangamugayo bw'ingorane",
-    "service6Desc": "Gusuzuma n'ubuyobozi bw'ubwoba bw'ingorane",
-    "categories": {
-      "all": "Serivisi zose",
-      "finance": "Serivisi z'ubutunzi",
-      "business": "Serivisi z'ubudandaji"
-    }
-  },
-  "globalOffices": {
-    "title": "Ubwoba Bw’Isi Yose Bw’Inyamburano",
-    "subtitle": "Shaka amabiro yacu mu isi yose umenye serivisi tuzirikura mu buri mwanya",
-    "heroTitle": "Amabiro y'isi",
-    "heroSubtitle": "Ubwoba bwacu bw'isi n'ubuhanga bw'umuturage",
-    "mapTitle": "Ikarti y'ubwoba",
-    "mapSubtitle": "Sura amabiro yacu ku isi yose",
-    "listTitle": "Aho Amabiro Ari",
-    "listSubtitle": "Shakisha iro ry'umubiro riri hafi yawe"
-  },
-  "insights": {
-    "heroTitle": "Ubushakashatsi n'Amakuru",
-    "heroSubtitle": "Komeza ubwoba n'ubushakashatsi bw'ubucuruzi n'amakuru y'ikigo",
-    "eventsTitle": "Ibikorwa",
-    "eventsSubtitle": "Ibikorwa bizaza n'ibyashize",
-    "blogTitle": "Blog",
-    "blogSubtitle": "Inyandiko z'ubwoba n'ubushakashatsi",
-    "promotionsTitle": "Gushimangira",
-    "promotionsSubtitle": "Amahugurwa y'ubwoba n'amakuru"
-  },
-  "careers": {
-    "heroTitle": "Winjire mu Kipe yacu",
-    "heroSubtitle": "Kubaka akazi kawe na EXCI-MAA",
-    "jobsTitle": "Aho Akazi Ari",
-    "jobsSubtitle": "Amahirwe y'akazi y'ubwoba",
-    "chartTitle": "Ikarti y'ubuyobozi",
-    "chartSubtitle": "Ubwoba bw'ikigo cyacu n'ubuyobozi",
-    "benefitsTitle": "Amahirwe n'Amahugurwa",
-    "benefitsSubtitle": "Ibyo dutanga ku bakazi bacu"
-  },
-  "contact": {
-    "title": "Kwandikira",
-    "subtitle": "Kwandikira n'ikipe yacu",
-    "heroTitle": "Kwandikira",
-    "heroSubtitle": "Turimo gufasha ibyo ukeneye",
-    "formTitle": "Dutangire Ubutumwa",
-    "formSubtitle": "Uzuza urupapuro rwo hepfo kandi tuzagaruka",
-    "mapTitle": "Dushakashe",
-    "mapSubtitle": "Sura amabiro yacu ku isi yose",
-    "infoTitle": "Amakuru y'ubwoba",
-    "infoSubtitle": "Uburyo bwo kudushakashe",
-    "cta": "Kwandikira Ubu",
-    "hero": {
-      "getInTouch": "Kwandikira",
-      "letsTalkAbout": "Dusuzume iby'",
-      "businessNeeds": "Ubwoba bw'ubucuruzi bwawe",
-      "description": "Ikipe yacu y'abahanga b'ubucuruzi iteguye gufasha mu kuyobora ingorane z'ubucuruzi bwawe. Kwandikira binyuze mu nzira icyo ari cyo cyose cyo hepfo cyangwa dutangire ubutumwa buhagije.",
-      "contactMethods": {
-        "emailUs": "Dutangire Imeyili",
-        "emailDescription": "Ikipe yacu izagaruka mu masaha 24",
-        "emailValue": "contactcam@excimaa.ca",
-        "callUs": "Dutangire",
-        "callDescription": "Ku wa Mbere-Ku wa Gatanu kuva saa saba n'ijoro kugeza saa tatu n'ijoro",
-        "callValue": "+1 (555) 123-4567",
-        "visitUs": "Dusura",
-        "visitDescription": "Naza gusanga amabiro yacu",
-        "visitValue": "123 Umuhanda w'ubucuruzi, Umudugudu, Igihugu",
-        "officeHours": "Amasaha y'amabiro",
-        "hoursDescription": "Amasaha yacu y'akazi",
-        "hoursValue": "Ku wa Mbere - Ku wa Gatanu: 9:00 - 18:00"
-      },
-      "orFillOut": "Cyangwa uzuze urupapuro rwacu rw'ubwoba kandi tuzagaruka mu masaha 24.",
-      "sendUsMessage": "Dutangire Ubutumwa"
-    },
-    "form": {
-      "title": "Kwandikira",
-      "subtitle": "Ufite ibibazo cyangwa witeguye gutangira ubwoba bwawe? Uzuza urupapuro rwo hepfo kandi ikipe yacu izagaruka vuba.",
-      "getInTouch": "Kwandikira",
-      "description": "Ufite ibibazo cyangwa witeguye gutangira ubwoba bwawe? Uzuza urupapuro rwo hepfo kandi ikipe yacu izagaruka vuba.",
-      "contactInformation": "Amakuru y'ubwoba",
-      "contactDescription": "Uzuza urupapuro kandi ikipe yacu izagaruka mu masaha 24. Kugira ngo uhabwe ubufasha buhagije, nyamuneka dutangire buhagije.",
-      "callUs": "Dutangire",
-      "emailUs": "Dutangire imeyili",
-      "visitUs": "Dusura",
-      "businessHours": "Amasaha y'amabiro",
-      "mondayFriday": "Ku wa Mbere - Ku wa Gatanu: 9:00 AM - 6:00 PM",
-      "saturdaySunday": "Ku wa Gatandatu - Ku cyumweru: Birafungiye",
-      "name": "Izina",
-      "name_placeholder": "Jean Mukamana",
-      "email": "Ineyili",
-      "email_placeholder": "jean@example.com",
-      "phone": "Itumanaho",
-      "phone_placeholder": "+250 78 123 4567",
-      "subject": "Icyo ukeneye",
-      "select_subject": "Hitamo icyo ukeneye",
-      "other": "Ibindi",
-      "message": "Ubutumwa",
-      "message_placeholder": "Dutangire ibindi...",
-      "submit": "Ohereza Ubutumwa",
-      "submitting": "Biri mu kohereza...",
-      "success": "Murakoze! Ubutumwa bwawe buhagije.",
-      "error": "Ntibishoboka gutanga. Nyamuneka ugerageze nanone.",
-      "fullName": "Amazina yose",
-      "emailAddress": "Aderesi y'imeyili",
-      "phoneNumber": "Numero y'amashini",
-      "required": "*",
-      "placeholders": {
-        "fullName": "Jean Mukamana",
-        "email": "you@example.com",
-        "phone": "+250 78 123 4567",
-        "selectSubject": "Hitamo icyo ukeneye",
-        "message": "Dushobora gufasha gute?"
-      },
-      "subjects": {
-        "generalInquiry": "Gusuzuma rusange",
-        "accountingServices": "Serivisi z'ubucuruzi",
-        "auditServices": "Serivisi z'ubugenzuzi",
-        "taxConsultation": "Ubunyangamugayo bw'umusoro",
-        "other": "Ibindi"
-      },
-      "validation": {
-        "nameRequired": "Amazina akenewe",
-        "emailRequired": "Ineyili ikenewe",
-        "emailInvalid": "Aderesi y'imeyili itari nziza",
-        "subjectRequired": "Icyo ukeneye kikenewe",
-        "messageRequired": "Ubutumwa bukenewe",
-        "messageMinLength": "Ubutumwa bugomba kugira inyuguti 10 byibuze"
-      },
-      "sendMessage": "Ohereza Ubutumwa",
-      "sending": "Biri mu kohereza...",
-      "successTitle": "Ubutumwa Bwoherejwe neza!",
-      "successDescription": "Murakoze kwandikira. Twakiriye ubutumwa bwawe kandi tuzagaruka mu masaha 24.",
-      "sendAnotherMessage": "Ohereza ubutumwa bundi",
-      "errorTitle": "Ikosa",
-      "errorMessage": "Kohereza ubutumwa byanze. Nyamuneka ugerageze nanone.",
-      "privacyNote": "Tuzagaruka mu masaha 24. Amakuru yawe ari mu mutekano."
-    },
-    "map": {
-      "findOurOffice": "Shakisha Amabiro yacu",
-      "description": "Dusura mu mabiro yacu yahagaze neza. Turimo gufasha mu byo ukeneye byose by'ubucuruzi.",
-      "ourOffice": "Amabiro yacu",
-      "address": "Aderesi",
-      "phone": "Amashini",
-      "email": "Ineyili",
-      "businessHours": "Amasaha y'amabiro",
-      "getDirections": "Shakisha uburyo",
-      "needHelpFinding": "Ukeneye ubufasha bwo gushakisha?",
-      "helpDescription": "Amabiro yacu yahagaze mu gace k'ubucuruzi kandi yoroshye kugera ku nzira z'ubucuruzi.",
-      "centerMap": "Shyira ikarti mu gace kacu",
-      "officeLocation": {
-        "address": "123 Umuhanda w'ubucuruzi, Riyadh 12345, Arabiya Sawudite",
-        "phone": "+237233427940 && +237698835251",
-        "email": "riyadh@exci-maa.com",
-        "hours": "Ku wa Mbere - Ku wa Gatanu: 9:00 AM - 6:00 PM"
-      }
-    },
-    "faq": {
-      "title": "Ibibazo by'ubwoba",
-      "description": "Shakisha ibisubizo ku bibazo by'ubwoba ku serivisi zacu, uburyo bwo gukora, n'uburyo dushobora gufasha ubucuruzi bwawe gukura.",
-      "questions": [
-        {
-          "question": "Ni ikihe serivisi EXCI-MAA itanga?",
-          "answer": "Tutanga serivisi z'ubwoba z'ubucuruzi, ubugenzuzi, umusoro, n'ubunyangamugayo bw'ubucuruzi zashyizweho ku byo ukeneye by'ubwoba by'ibikoresho mu Arabiya Sawudite n'ibindi. Serivisi zacu zirimo raporo z'ubucuruzi, gutezimbere umusoro, ubugenzuzi bw'ubwoba, n'ubunyangamugayo bw'ubucuruzi."
-        },
-        {
-          "question": "Nshobora gute gutegura ubunyangamugayo?",
-          "answer": "Urashobora gutegura ubunyangamugayo binyuze mu gutangira amabiro yacu, kutangira imeyili, cyangwa gukoresha urupapuro rw'ubwoba ku rupapuro rwacu. Ikipe yacu izagaruka mu masaha 24 kugira ngo ikemeze umunsi wawe."
-        },
-        {
-          "question": "Ni ikihe gikoresho mufite ubuhanga?",
-          "answer": "Dufite ubuhanga bw'ubwoba mu gukorana n'ibikoresho bitandukanye birimo ubwoba bw'abantu, ubwoba, kugurisha, ikoranabuhanga, n'ubunyangamugayo bw'ubwoba. Ikipe yacu ifite ubuhanga bwo gukora n'ingorane z'ubucuruzi z'ubwoba z'ubwoba."
-        },
-        {
-          "question": "Ni ikihe amasaha y'amabiro yanyu?",
-          "answer": "Amabiro yacu yafunguye kuva ku cyumweru kugeza ku wa Kane, 9:00 AM kugeza 6:00 PM. Turafungiye ku wa Gatanu na Gatandatu hamwe n'umunsi mukuru."
-        },
-        {
-          "question": "Mutanga serivisi z'ubwoba cyangwa z'ubwoba?",
-          "answer": "Yego, tutanga ubunyangamugayo bw'ubwoba n'ubwoba kugira ngo dukemere ibyo abakiriya bacu bakeneye. Ikipe yacu ifite ibikoresho by'ubwoba by'ubwoba byo gutanga serivisi y'ubwoba ku bwoba."
-        },
-        {
-          "question": "Mukemera gute ubwoba bw'amakuru n'ubwoba?",
-          "answer": "Dutanga ubwoba bw'amakuru ku bwoba. Amakuru yose y'abakiriya akorwa n'ubwoba bw'ubwoba kandi akurinda gukoresha uburyo bwo gukurinda bwo gukoresha, harimo ubwoba n'uburyo bwo gukurinda amakuru."
-        }
-      ],
-      "stillHaveQuestions": "Ufite ibibazo?",
-      "stillHaveDescription": "Ntushobora gushakisha igisubizo ushakisha? Ikipe yacu irimo gufasha. Kwandikira kandi tuzagaruka vuba.",
-      "chatWithUs": "Dusuzume",
-      "chatDescription": "Ikipe yacu irimo gufasha",
-      "sendUsMessage": "Dutangire ubutumwa",
-      "callUs": "Dutangire",
-      "callDescription": "Ku wa Mbere kugeza ku wa Gatanu, saa saba n'ijoro kugeza saa tatu n'ijoro",
-      "emailUs": "Dutangire imeyili",
-      "emailDescription": "Tuzagaruka mu masaha 24",
-      "cantFindWhat": "Ntushobora gushakisha icyo ushakisha?",
-      "expertsDescription": "Ikipe yacu y'abahanga irimo gusubiza ibibazo icyo ari cyo cyose ushobora kugira.",
-      "contactSupport": "Kwandikira Ubufasha"
-    }
-  },
-  "training": {
-    "title": "Amahugurwa y'ubwoba",
-    "subtitle": "Dutanga amahugurwa y'ubwoba n'ubuhanga",
-    "categories": {
-      "accounting": {
-        "title": "Kubara / Umusoro / Ubwoba",
-        "courses": [
-          "Uburyo bwo kubara no gukurikirana amakuru y'ubucuruzi",
-          "Uburyo bwo gukora cyangwa gutegura raporo y'umusoro n'ibindi",
-          "Amabwiriza y'umusoro w'umusoro n'ubwoba",
-          "Uburyo bwo gusuzuma no gukora ubugenzuzi bw'umusoro",
-          "Ikibazo cy'umusoro w'umusoro mu CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
-          "Shyiraho konti yawe y'ubucuruzi n'ubwoba bw'amafaranga",
-          "Uburyo bwo gusanga ubwoba mu raporo z'umusoro",
-          "Ingaruka y'umusoro n'umusoro ku musoro",
-          "Ubwoba hagati ya DAS, amakuru n'DSF: Ikibazo cya CNSS",
-          "Gukora ubwoba bwo kubara"
-        ],
-        "price": "$299",
-        "duration": "iminsi 3"
-      },
-      "audit": {
-        "title": "Ubugenzuzi bw'amategeko / Gucunga ubwoba",
-        "courses": [
-          "Ni ikihe gituma ukora ubugenzuzi bw'amakuru yawe?",
-          "Uburyo bwo gukora ubugenzuzi bw'ubucuruzi n'ubucuruzi",
-          "Ni ikihe ingaruka y'ubugenzuzi ku raporo y'umusoro?",
-          "Ubwoba n'ubwoba bwo gukora ubugenzuzi bw'ubwoba mu bikoresho bito, amabanki n'ubwoba",
-          "Ubwoba n'ubwoba bwo gukora ubwoba",
-          "Amakuru n'ubwoba bw'ubwoba",
-          "Ubugenzuzi bw'ubwoba (ikigo cy'ubugenzuzi)",
-          "Ubugenzuzi bw'ubwoba – Gutezimbere n'ubwoba",
-          "Ubugenzuzi bw'amategeko",
-          "Gucunga neza ubwoba bw'amafaranga, cyane cyane ubwoba",
-          "Gusobanukirwa ibyifuza by'amafaranga kuva ku bwoba n'ubwoba",
-          "Guhuza ubwoba bw'abantu n'ubwoba bw'abakiriya",
-          "Gupima sisitemu y'amakuru – ICT IS",
-          "Gusobanukirwa ERP, ubwoba bwabyo kandi urebe niba ubucuruzi bwawe bubakeneye",
-          "Gusuzuma ibyerekeye ubwoba bw'ubwoba",
-          "Gusuzuma ibyerekeye ubwoba bw'ubugenzuzi bw'ubwoba",
-          "Gusanga no gukumira ubwoba",
-          "Gucunga ingorane mu bwoba bw'ubwoba"
-        ],
-        "price": "$399",
-        "duration": "iminsi 5"
-      },
-      "advice": {
-        "title": "Inama",
-        "courses": [
-          "Ubwoba bwo gukora amakuru y'ubwoba n'ubwoba bw'umusoro",
-          "Gusobanukirwa ibyerekeye n'ibyifuza by'umusoro w'isi yose: Igiciro cy'ubwoba",
-          "Gupima ibikoresho mu gace ka OHADA",
-          "Gusubira gupima ubwoba: ubwoba ku bikoresho byose",
-          "Ubwoba bwo guhuza, gutandukana n'guhagarika mu gace ka OHADA",
-          "Uburyo bwo gukora ubwoba bw'amakuru mu gace ka OHADA",
-          "Kwandika ubwoba bw'ubucuruzi",
-          "Uburyo bwo gukora ubucuruzi",
-          "Guhuza – Gupata",
-          "Ubugenzuzi bw'amategeko, ubwoba n'umusoro",
-          "Gufasha mu kwandika ubwoba bwo gukora ubwoba"
-        ],
-        "price": "$349",
-        "duration": "iminsi 4"
-      },
-      "various": {
-        "title": "Ibintu bitandukanye",
-        "courses": [
-          "Uburyo bwo gukora n'abakiriya b'ubwoba",
-          "Sohora ubwoba bwawe kandi uongere ubuyobozi bwawe mu bucuruzi n'ibindi",
-          "Ubwoba mu mabiro / Ikigo",
-          "Uburyo bwo kuba Umucunga w'amafaranga/Ubwoba cyangwa CFO n'ubwoba",
-          "Gukoresha ubucuruzi n'ubwoba bwo gukora ingorane z'amabanki",
-          "Amategeko y'ubucuruzi OHADA",
-          "Umusoro w'ibikoresho",
-          "Gukoresha no gukora ubugenzuzi bw'amabanki",
-          "Ubugenzuzi bw'ukwemera kw'ubwoba bw'ubwoba"
-        ],
-        "price": "$199",
-        "duration": "iminsi 2"
-      }
-    }
-  },
-  "partners": {
-    "title": "Abayobozi bacu",
-    "subtitle": "Amashyira yacu y'ubwoba",
-    "founders": {
-      "pierre": {
-        "name": "Pierre KEMENI",
-        "title": "MBA, CPA, DEC",
-        "description": "Umuhinga mu bikorwa vy'ubucungamari no kugenzura, afise imyaka irenga 27 y'uburambe mu bikorwa mpuzamakungu.",
-        "specialties": [
-          "Ubucungamari Mpuzamakungu",
-          "Audit",
-          "Inama z'Imisoro"
-        ]
-      },
-      "patrick": {
-        "name": "Patrick NGATCHA",
-        "title": "DEC, DSCG, Master CCA, MSTCF",
-        "description": "Umuhinga mu bucungamari no kugenzura afise imyaka irenga 13 mu guteza imbere ibikorwa n'ubujyanama mu mafaranga.",
-        "specialties": [
-          "Iterambere ry'Ubucuruzi",
-          "Ubumenyi mu By'Imari",
-          "Gucunga Ingaruka"
-        ]
-      }
-    }
-  },
-  "offices": {
-    "title": "Ofisi dufite ku isi",
-    "subtitle": "Gufasha abakiriya ku isi yose"
-  },
-  "admin": {
-    "dashboardTitle": "Ikibaho cy'ubuyobozi",
-    "dashboardSubtitle": "Gucunga ibyanditswe n'ubushakashatsi",
-    "contentTitle": "Gucunga Ibirimo",
-    "contentSubtitle": "Gucunga serivisi, ibikorwa, n'inyandiko z'ubwoba",
-    "analyticsTitle": "Ubushakashatsi",
-    "analyticsSubtitle": "Reba ibyerekeye ubwoba n'ubushakashatsi"
-  },
-  "servicesPage": {
-    "hero": {
-      "title": "Guhindura Ubucuruzi bwawe hamwe na",
-      "titleHighlight": "Ibisubizo by'ubucuruzi by'ubuhanga",
-      "subtitle": "Menya uburyo serivisi zacu z'ubucuruzi z'ubwoba zishobora gutuma ubwoba bw'ubucuruzi bukura, zikemeza ukwemera, kandi zongere ubwoba bw'ubucuruzi bwawe."
-    },
-    "detailedServices": {
-      "title": "Serivisi zacu",
-      "titleHighlight": "z'ubwoba",
-      "titleSuffix": "",
-      "subtitle": "Ibisubizo by'ubucuruzi byashyizweho ku byo ukeneye by'ubwoba, kandi bituma ubwoba bw'ubucuruzi bukura.",
-      "services": {
-        "accounting": {
-          "title": "Kubara n'ubwoba",
-          "shortDesc": "Gucunga amakuru y'ubucuruzi n'ubwoba",
-          "description": "Ikipe yacu y'ubuhanga bwo kubara itanga serivisi z'ubwoba z'ubwoba zo gukomeza amakuru y'ubucuruzi y'ubwoba n'ubwoba. Dukora ibintu byose kuva ku bikorwa by'umunsi ku munsi kugeza ku raporo z'ubucuruzi z'ubwoba, dukemeza ukwemera ku ntego zose z'ubwoba.",
-          "features": [
-            "Kubara kw'amezi n'amakuru y'ubucuruzi",
-            "Gucunga amakuru y'ubucuruzi n'ubwoba",
-            "Guhuza amabanki n'amakarita y'ubwoba",
-            "Gukora amakuru y'ubwoba n'ubwoba",
-            "Raporo n'ubushakashatsi bw'ubucuruzi",
-            "Gushyiraho no gukomeza gahunda y'amakuru",
-            "Gukurikirana no gupima ibintu",
-            "Gucunga ibintu by'ubwoba",
-            "Gusuzuma no gupima ubwoba bw'amafaranga",
-            "Gutegura no gucunga gahunda y'ubwoba"
-          ]
-        },
-        "audit": {
-          "title": "Ubugenzuzi n'ubwoba",
-          "shortDesc": "Gukemura amakuru y'ubucuruzi n'ubwoba",
-          "description": "Serivisi zacu z'ubugenzuzi zitanga ukwemera kw'ubwoba kw'amakuru y'ubucuruzi yawe, zikemeza ukwemera n'ukwemera ku ntego z'ubwoba. Dufasha gusobanukirwa ingorane kandi dongere ubwoba bw'ubucuruzi bwawe.",
-          "features": [
-            "Ubugenzuzi bw'amakuru y'ubucuruzi",
-            "Gupima uko bikorwa",
-            "Ubugenzuzi bw'ukwemera",
-            "Ubugenzuzi bw'ubwoba",
-            "Ubugenzuzi bw'ubwoba bw'ubwoba",
-            "Gusuzuma no gucunga ingorane",
-            "Gusanga no gukumira ubwoba",
-            "Gusuzuma ukwemera kw'ubwoba",
-            "Serivisi z'ubwoba",
-            "Ubugenzuzi bw'ubwoba n'ubwoba"
-          ]
-        },
-        "tax": {
-          "title": "Ubunyangamugayo bw'umusoro",
-          "shortDesc": "Gutezimbere umusoro n'ukwemera",
-          "description": "Abahanga bacu b'umusoro batanga serivisi z'ubwoba z'ubwoba z'umusoro n'ukwemera kugira ngo dukemere umusoro wawe mugihe dukemeza ukwemera kw'ubwoba ku mategeko yose y'umusoro n'ubwoba.",
-          "features": [
-            "Gutezimbere umusoro n'ubwoba",
-            "Amakuru y'umusoro y'ubucuruzi n'abantu",
-            "Gufasha ubugenzuzi bw'umusoro",
-            "Gutezimbere umusoro w'isi yose",
-            "Gusubiza amakuru y'umusoro",
-            "Ukwemera kw'umusoro n'ubwoba",
-            "Gutanga amakuru y'ubwoba",
-            "Uburyo bwo gukoresha umusoro",
-            "Gutezimbere ubwoba n'ubwoba",
-            "Guhuza umusoro w'ubwoba"
-          ]
-        },
-        "advisory": {
-          "title": "Ubunyangamugayo bw'ubucuruzi",
-          "shortDesc": "Ubunyangamugayo bw'ubwoba n'ubwoba",
-          "description": "Serivisi zacu z'ubunyangamugayo bw'ubucuruzi zifasha amashyira gukurikirana ingorane z'ubwoba z'ubucuruzi, zongere ubwoba, kandi zigeze ku bwoba bw'ubucuruzi binyuze mu bwoba n'ubwoba.",
-          "features": [
-            "Gutezimbere ubucuruzi n'ubwoba",
-            "Gukora amashusho y'ubucuruzi n'ubwoba",
-            "Guhuza n'ubwoba",
-            "Gupima ubucuruzi",
-            "Gongera ubwoba",
-            "Gutezimbere n'ubwoba",
-            "Gusuzuma isoko n'ubwoba",
-            "Gusuzuma ubwoba n'ubwoba",
-            "Gucunga ubwoba n'ubwoba",
-            "Ubunyangamugayo bw'ubwoba n'ubwoba"
-          ]
-        },
-        "risk": {
-          "title": "Gucunga ingorane",
-          "shortDesc": "Gusobanukirwa no gukumira ingorane z'ubucuruzi",
-          "description": "Serivisi zacu z'ubwoba z'ingorane zifasha amashyira gusobanukirwa, gupima, no gukumira ingorane zishobora gukangiza intego z'ubucuruzi n'ubwoba.",
-          "features": [
-            "Gupima no gusuzuma ingorane",
-            "Serivisi z'ubugenzuzi bw'ubwoba",
-            "Gukumira no gusanga ubwoba",
-            "Gukurikirana ukwemera",
-            "Gutezimbere ubwoba bw'ubucuruzi",
-            "Gucunga ingorane z'ubwoba",
-            "Gupima ingorane z'ubwoba",
-            "Gupima ingorane z'ubucuruzi",
-            "Amashyira y'ukwemera kw'ubwoba",
-            "Gucunga ingorane n'ubwoba"
-          ]
-        },
-        "hr": {
-          "title": "Serivisi z'ubwoba n'ubwoba",
-          "shortDesc": "Ibisubizo by'ubwoba z'ubwoba n'ubwoba",
-          "description": "Serivisi zacu z'ubwoba n'ubwoba zifasha amashyira gucunga ibintu by'ubwoba byabo - abantu babo - mugihe dukemeza ukwemera ku mategeko y'ubwoba n'ubwoba.",
-          "features": [
-            "Gukora amakuru y'ubwoba",
-            "Gutezimbere amabwiriza y'ubwoba",
-            "Gucunga amahirwe y'abakazi",
-            "Gucunga ubwoba",
-            "Ukwemera ku mategeko y'ubwoba",
-            "Gutangira no gusohoka kw'abakazi",
-            "Gusuzuma ubwoba n'amahirwe",
-            "Gushyiraho ubwoba bw'ubwoba",
-            "Gutezimbere ubwoba n'ubushakashatsi",
-            "Ubwoba bw'abakazi n'ubwoba"
-          ]
-        }
-      },
-      "scheduleAppointment": "Gutegura umunsi",
-      "needCustomSolution": "Ukeneye isubizo ry'ubwoba? Abahanga bacu barimo gufasha.",
-      "getFreeConsultation": "Gupata Ubunyangamugayo bwa Mahirwe"
-    },
-    "process": {
-      "title": "Uburyo bwacu",
-      "titleHighlight": "bw'ubwoba",
-      "titleSuffix": "",
-      "subtitle": "Uburyo bwo gukora bwo gutanga serivisi z'ubucuruzi z'ubwoba zashyizweho ku byo ukeneye by'ubwoba.",
-      "steps": [
-        {
-          "title": "Gusanga n'Ubushakashatsi",
-          "description": "Dutangira no gusobanukirwa ibyo ukeneye by'ubucuruzi, ingorane, n'intego binyuze mu makuru n'ubushakashatsi bw'ubwoba.",
-          "duration": "Icyumweru 1-2",
-          "keyPoints": [
-            "Ubunyangamugayo bw'ubwoba",
-            "Gupima ubucuruzi",
-            "Gusoroma ibyo ukeneye",
-            "Gusobanura ubwoba"
-          ]
-        },
-        {
-          "title": "Gutanga n'Ubwoba",
-          "description": "Dutezimbere gahunda y'ubwoba y'ubwoba n'intego z'ubwoba, amahitamo y'igihe, n'ibyo dushyiraho byashyizweho ku byo ukeneye.",
-          "duration": "Iminsi 3-5",
-          "keyPoints": [
-            "Gahunda y'ubwoba y'ubwoba",
-            "Ubwoba bw'ubwoba",
-            "Kwemera amahitamo y'igihe",
-            "Gutanga ikipe"
-          ]
-        },
-        {
-          "title": "Gutangira Ikipe",
-          "description": "Ikipe yacu y'ubuhanga itangwa ku bwoba bwawe, ikemeza ubuhanga n'ubuhanga bwo gukora ku byo ukeneye by'ubwoba.",
-          "duration": "Iminsi 2-3",
-          "keyPoints": [
-            "Umucunga w'amakuru w'ubwoba",
-            "Gutangira ikipe",
-            "Kwinjira mu bikoresho",
-            "Gushyiraho ubwoba"
-          ]
-        },
-        {
-          "title": "Gukora",
-          "description": "Dukora serivisi zemewe n'ubwoba, dukomeza ubwoba ku buryo bwo gukora.",
-          "duration": "Bishimishijwe n'ubwoba",
-          "keyPoints": [
-            "Amakuru y'ubwoba y'ubwoba",
-            "Kwemeza ubwoba",
-            "Gusubiza ikibazo",
-            "Gusuzuma ibintu by'ubwoba"
-          ]
-        },
-        {
-          "title": "Gusuzuma n'Ubwoba",
-          "description": "Dutanga raporo n'ubushakashatsi bw'ubwoba, dukemeza ubwoba bw'ubwoba n'ukwemera kw'ibisubizo.",
-          "duration": "Icyumweru 1",
-          "keyPoints": [
-            "Ibipimo by'ubwoba",
-            "Raporo z'ubucuruzi",
-            "Gusuzuma ukwemera",
-            "Amabwiriza"
-          ]
-        },
-        {
-          "title": "Gufasha ku Bwoba",
-          "description": "Ubwoba bwacu bukomeza hamwe n'ubwoba bw'ubwoba, gusuzuma by'ubwoba, n'ubunyangamugayo bw'ubwoba bw'ubwoba.",
-          "duration": "Ku Bwoba",
-          "keyPoints": [
-            "Gufasha bw'ubwoba",
-            "Gusuzuma by'ubwoba",
-            "Amabwiriza y'ubwoba",
-            "Gukoresha serivisi"
-          ]
-        }
-      ],
-      "readyToGetStarted": "Witeguye gutangira?",
-      "readyDescription": "Ikipe yacu y'abahanga iteguye kuyobora binyuze mu buryo bwacu kandi gutanga serivisi z'ubucuruzi z'ubwoba ku bwoba bwawe.",
-      "getFreeConsultation": "Gupata Ubunyangamugayo bwa Mahirwe",
-      "exploreServices": "Gusura Serivisi zacu"
-    },
-    "pricing": {
-      "title": "Ubwoba",
-      "titleHighlight": "bw'ubwoba n'ubwoba",
-      "titleSuffix": "",
-      "subtitle": "Hitamo gahunda y'ubwoba ku byo ukeneye by'ubwoba. Nta mafaranga y'ubwoba, kuraho igihe icyo ari cyo cyose.",
-      "monthlyBilling": "Kwishyura ku Kwezi",
-      "annualBilling": "Kwishyura ku Mwaka",
-      "saveUpTo": "(Bika kugeza 20%)",
-      "plans": {
-        "starter": {
-          "name": "Gutangira",
-          "description": "By'ubwoba ku bikoresho bito bitangira",
-          "features": [
-            "Kubara kw'ubwoba",
-            "Raporo z'ubucuruzi z'amezi",
-            "Gupima umusoro kw'amezi atatu",
-            "Gufasha ku butumwa",
-            "Kugeza ku bikorwa 50/ukwezi",
-            "Ikibaho cy'ubucuruzi cy'ubwoba"
-          ],
-          "notIncluded": [
-            "Gufasha ubugenzuzi",
-            "Umucunga w'amakuru w'ubwoba",
-            "Raporo z'ubwoba",
-            "Gutanga umusoro",
-            "Gucunga ibintu"
-          ],
-          "buttonText": "Tangira"
-        },
-        "professional": {
-          "name": "Ubuhanga",
-          "description": "By'ubwoba ku bikoresho bikura",
-          "features": [
-            "Ibyose mu Gutangira",
-            "Kubara kw'ubwoba",
-            "Raporo z'ubucuruzi z'ibyumweru",
-            "Gupima umusoro kw'amezi",
-            "Gufasha bw'ubwoba ku butumwa n'urugendo",
-            "Kugeza ku bikorwa 200/ukwezi",
-            "Ikibaho cy'ubucuruzi cy'ubwoba",
-            "Gutanga umusoro kw'ubwoba",
-            "Gukurikirana ibintu"
-          ],
-          "notIncluded": [
-            "Gufasha ubugenzuzi",
-            "Umucunga w'amakuru w'ubwoba",
-            "Raporo z'ubwoba",
-            "Gutezimbere umusoro kw'ubwoba"
-          ],
-          "buttonText": "Tangira"
-        },
-        "enterprise": {
-          "name": "Ubwoba",
-          "description": "Ku bikoresho by'ubwoba n'ibyo ukeneye by'ubwoba",
-          "features": [
-            "Ibyose mu Ubuhanga",
-            "Kubara kw'ubwoba",
-            "Raporo z'ubucuruzi z'ubwoba",
-            "Umucunga w'amakuru w'ubwoba",
-            "Gufasha bw'ubwoba 24/7",
-            "Bikorwa by'ubwoba",
-            "Gutezimbere umusoro kw'ubwoba",
-            "Gufasha ubugenzuzi",
-            "Guhuza by'ubwoba",
-            "Gutegura inama y'ubwoba",
-            "Serivisi z'ubunyangamugayo bw'ubwoba"
-          ],
-          "notIncluded": [],
-          "buttonText": "Kwandikira Ubwoba"
-        }
-      },
-      "whatsIncluded": "Ibyo bihari:",
-      "notIncluded": "Ntibihari:",
-      "billedAnnually": "Bishyurwa ku mwaka",
-      "orBilledAnnually": "cyangwa ${{annualPrice}} bishyurwa ku mwaka",
-      "save": "Bika {{percentage}}%",
-      "needCustomSolution": "Ukeneye isubizo ry'ubwoba? Dutanga amapaki y'ubwoba ku bikoresho n'ibyo ukeneye by'ubwoba.",
-      "getCustomQuote": "Gupata Icyemezo cy'ubwoba",
-      "notSureWhichPlan": "Ntutazi gahunda y'ubwoba yawe?",
-      "expertsHelp": "Abahanga bacu barimo gufasha hitamo isubizo ry'ubwoba ku byo ukeneye by'ubwoba. Gutegura ubunyangamugayo bwa mahirwe bwa minota 30 kugira ngo dusuzume ibyo ukeneye.",
-      "scheduleFreeConsultation": "Gutegura Ubunyangamugayo bwa Mahirwe"
-    }
-  },
-  "aboutPage": {
-    "hero": {
-      "title": "Ibyerekeye EXCI-MAA",
-      "subtitle": "Umufatanyabikorwa wawe w'ubucuruzi wizewe",
-      "description": "Hamwe n'imyaka irenga 27 y'ubwoba mu serivisi z'ubucuruzi, EXCI-MAA yabaye umufatanyabikorwa wizewe ku bikoresho mu mahanga menshi, itanga serivisi z'ubuhanga mu kubara, ubugenzuzi, n'ubunyangamugayo.",
-      "getInTouch": "Kwandikira",
-      "ourServices": "Serivisi zacu",
-      "trustedByBusinesses": "Wizewe n'ibikoresho ku isi yose",
-      "stats": {
-        "yearsExperience": "Imyaka y'uburambe",
-        "countriesServed": "Ibihugu vyakorewe",
-        "teamMembers": "Abarongozi b'ikipe",
-        "clientSatisfaction": "Kunyurwa kw'abakiriya",
-        "clientsServed": "Abakiriya Bakorewe",
-        "successRate": "Urugero rw'intsinzi"
-      }
-    },
-    "mission": {
-      "title": "Intego yacu",
-      "description1": "Intego yacu nyamukuru ni ugufasha no kuyobora ibikoresho bikora mu isoko ry'Abanyafurika kugera ku bwoba bw'ubucuruzi. Dukoresha ubumenyi buhagije bw'ibice byose by'ubucuruzi n'ibitarabucuruzi, dutanga ubunyangamugayo, ubugenzuzi bw'amategeko, n'ubunyangamugayo bwashyizweho ku bwoba bw'ikigo cyose.",
-      "description2": "Ibisubizo byacu byashyizweho gukemura ibyifuza by'ibikoresho ku gace kose ka Afurika, dutanga serivisi yose n'akamaro k'ukuri—ku giciro cy'ubwoba. Ikipe yacu ifite ubuhanga bwinshi n'amaofisi bw'isi yose ihamya gufasha bwashyizweho, byashyizweho ku bwoba n'ubushobozi bw'ubwoba bwawe."
-    },
-    "story": {
-      "title": "Inkuru yacu",
-      "description1": "EXCI-MAA yashinzwe n'abahanga mu bugenzuzi, kubara, umusoro, ubwoba bw'ubucuruzi, sisitemu y'amakuru y'ubuyobozi, n'amategeko. Hamwe n'ubwoba mu Kanada, Leta Zunze Ubumwe z'Amerika, Ubufaransa, Ubwongereza, n'Afurika yose, duhana ubuhanga bw'isi bwashyizweho ku bwoba bw'umuturage wose.",
-      "description2": "Dukora ku murongo wose w'akamaro k'ibikorwa by'abakiriya bacu, dukomeza ubwoba n'ukwemera n'abafatanyabikorwa. Ikigo cyacu kiyobora amashyira mu mahanga menshi binyuze mu murongo ukomeye n'amatsinda ku butaka, atanga serivisi y'ubwoba n'ibisubizo byashyizweho ku nyacyo z'umuturage.",
-      "description3": "Uyu munsi, dukomeza kwongera ubwoba bwacu mugihe dukomeza kwizera ku ntego zacu z'ubwoba: ubwoba, kwemera, n'ingaruka. Kuva ku bugenzuzi bw'amategeko n'ibyemezo kugeza ku kuyobora ingorane n'ubunyangamugayo bwashyizweho, amatsinda yacu atanga imirimo ikomeye n'ikora itanga ibisubizo bikomeye.",
-      "whatWeDo": "Icyo dukora",
-      "services": [
-        "Gufasha ku bwoba bw'ubwoba, guhuza, gukora cyangwa guhindura",
-        "Ubugenzuzi bw'amategeko cyangwa bw'ibyemezo",
-        "Ubuhanga bwo kubara",
-        "Gusuzuma uko bikorwa n'ukuyobora ingorane",
-        "Ubugenzuzi bw'umutungo w'amavuta",
-        "Ubunyangamugayo bwashyizweho ku bikoresho n'ibikoresho bito n'ibyagutse"
-      ]
-    },
-    "history": {
-      "title": "Urugendo rwacu",
-      "subtitle": "Imyaka irenga 20 y'ubwoba mu serivisi z'ubucuruzi",
-      "timeline": [
-        {
-          "year": "1996",
-          "title": "Gushyiraho EXCI-MAA",
-          "description": "Yashyizweho mu Yaoundé, Kameruni, hamwe n'intego yo gutanga serivisi z'ubwoba z'ubucuruzi n'ubucuruzi ku bikoresho by'umuturage."
-        },
-        {
-          "year": "2002",
-          "title": "Kwongera ku gace",
-          "description": "Serivisi zongerewe gufasha Afurika yo hagati, zashyiraho amabiro mu nkengero z'ubucuruzi z'ingenzi ku gace."
-        },
-        {
-          "year": "2010",
-          "title": "Kwemera ku isi yose",
-          "description": "Bahabwe kwemera ku isi yose ku bwoba bw'ubwoba mu serivisi z'ubucuruzi n'ubwoba bw'ukwemera."
-        },
-        {
-          "year": "2015",
-          "title": "Guhindura ikoranabuhanga",
-          "description": "Byashyizweho ubuhanga bw'ubucuruzi bw'ubwoba bwo gufasha serivisi n'ubwoba bw'abakiriya."
-        },
-        {
-          "year": "2020",
-          "title": "Ofisi dufite ku isi yose",
-          "description": "Byashyizweho ubufatanyabikorwa n'amashyira y'isi yose, serivisi zongerewe ku bakiriya mu mahanga 6+."
-        },
-        {
-          "year": "2023",
-          "title": "Ubwoba bw'ikipe",
-          "description": "Ikipe yacu yongereye kugeza ku bahanga 50+, byongereye ubwoba bwacu nk'ikigo cy'ubwoba cy'ubucuruzi."
-        }
-      ],
-      "journeyContinues": "Urugendo rwacu rukomeza mugihe dukomeza ubwoba mu serivisi yose dutanga.",
-      "learnMoreStory": "Menya vyinshi ku inkuru yacu"
-    },
-    "values": {
-      "title": "Ibyiringiro byacu by'ingenzi",
-      "subtitle": "Amabwiriza atuyobora mu kazi kacu kandi atanga umuco wacu",
-      "values": [
-        {
-          "name": "Ubwoba",
-          "description": "Dukomeza gutanga serivisi z'ubwoba bw'ubwoba, dukomeza ubwoba bwacu n'uburyo bwo gufasha abakiriya."
-        },
-        {
-          "name": "Kwemera",
-          "description": "Dukomeza ubwoba bw'ubwoba bw'ubwoba, dukomeza ubwoba, kwemera, n'ubwoba mu bikorwa byacu byose."
-        },
-        {
-          "name": "Ubwoba",
-          "description": "Dukomeza ikoranabuhanga gishya n'ibisubizo by'ubwoba gutanga serivisi z'ubwoba zifasha abakiriya bacu."
-        },
-        {
-          "name": "Gutekereza ku mukiriya",
-          "description": "Dukomeza ubwoba bw'ubwoba bwo gusobanukirwa ibyifuza by'ubwoba by'abakiriya bacu no gutanga ibisubizo bwashyizweho bitanga akamaro k'ukuri."
-        },
-        {
-          "name": "Ubwoba",
-          "description": "Dukomeza ubwoba bw'ubwoba bw'ubuhanga, kwemera, n'ubwoba mu byose by'akazi kacu."
-        },
-        {
-          "name": "Ubufatanyabikorwa",
-          "description": "Dukomeza gukorana hafi n'abakiriya bacu, dukora nk'ubwoba bw'ikipe yabo kugera ku bwoba bw'ubwoba."
-        }
-      ],
-      "learnMore": "Menya vyinshi",
-      "learnMoreCulture": "Menya vyinshi ku muco wacu"
-    },
-    "team": {
-      "title": "Hangana n'ubuyobozi bwacu",
-      "subtitle": "Ikipe yacu ifite ubuhanga ihamye gutanga serivisi y'ubwoba n'akamaro ku bakiriya bacu.",
-      "members": [
-        {
-          "name": "Pierre Kemeni",
-          "role": "Umushyizwe & Umuyobozi Mukuru",
-          "bio": "MBA, CPA, DEC hamwe n'imyaka irenga 27 y'ubuhanga bw'isi mu kubara n'ubugenzuzi.",
-          "expertise": [
-            "Kubara kw'isi yose",
-            "Ubugenzuzi bw'ubucuruzi",
-            "Uburyo bw'ubucuruzi",
-            "Ubucuruzi bw'ubucuruzi"
-          ]
-        },
-        {
-          "name": "Patrick Ngatcha",
-          "role": "Umuyobozi Mukuru",
-          "bio": "DEC, DSCG, Master CCA, MSTCF hamwe n'imyaka 13+ mu bwoba bw'ubucuruzi n'ubunyangamugayo bw'ubucuruzi.",
-          "expertise": [
-            "Ubwoba bw'ubucuruzi",
-            "Ubunyangamugayo bw'ubucuruzi",
-            "Gutezimbere umusoro",
-            "Uburyo bw'ubucuruzi"
-          ]
-        },
-        {
-          "name": "Marie Laure Ngo Bikoi",
-          "role": "Umuyobozi Mukuru w'Ubugenzuzi",
-          "bio": "HEC, DSCG hamwe n'imyaka 15+ y'ubuhanga mu bugenzuzi n'ubunyangamugayo bw'ubucuruzi.",
-          "expertise": [
-            "Ubugenzuzi bw'ubucuruzi",
-            "Uko bikorwa",
-            "Kuyobora ingorane",
-            "Kwemera"
-          ]
-        }
-      ],
-      "expertise": "Ubuhanga",
-      "viewAllMembers": "Raba abanyamuryango bose b'ikipe"
-    },
-    "testimonials": {
-      "title": "Ibyemezo by'abakiriya",
-      "subtitle": "Ibyo abakiriya bacu bavuga ku twe"
-    },
-    "clients": {
-      "title": "Ibyo abakiriya bacu bavuga",
-      "subtitle": "Ntukemere amagambo yacu gusa. Dore ibyo abakiriya bacu bavuga ku serivisi zacu.",
-      "items": [
-        {
-          "name": "John Smith",
-          "role": "Umuyobozi Mukuru",
-          "company": "ABC Corporation",
-          "quote": "EXCIMAA yadufashije cyane kunoza imikorere yacu y'imari. Ubumenyi bwabo ntibugira uko bungana.",
-          "rating": 5
-        },
-        {
-          "name": "Sarah Johnson",
-          "role": "Umuyobozi w'Imari",
-          "company": "XYZ Ltd",
-          "quote": "Ababigize umwuga, b'inyangamugayo kandi bahora bahari mu gihe tubakeneye. Turabashima cyane!",
-          "rating": 5
-        },
-        {
-          "name": "Michael Brown",
-          "role": "Nyir'ibikorwa",
-          "company": "123 Industries",
-          "quote": "Ikipe yabo yatugaragarije ubufasha buhebuje mu gihe twaguriraga ibikorwa hanze. Ubumenyi mpuzamahanga nyabwo.",
-          "rating": 4
-        }
-      ]
-    }
-  },
-  "partners": {
-    "label": "AMASHUSHANYO YACU",
-    "title": "Amashushanyo y'Itsinda rya EXCI-MAA",
-    "subtitle": "Ubwoba bwacu bw'ubuhanga n'ubwoba bw'ikimenyetso",
-    "note": "Amashushanyo yacu yerekana ubuhanga bwacu n'ukwizera kwacu mu bwoba",
-    "founders": {
-      "pierre": {
-        "name": "Pierre KEMENI",
-        "title": "MBA, CPA, DEC",
-        "description": "Umuhinga mu bikorwa vy'ubucungamari no kugenzura, afise imyaka 27+ y'uburambe mu bikorwa mpuzamakungu.",
-        "specialties": [
-          "Ubucungamari Mpuzamakungu",
-          "Audit",
-          "Inama z'Imisoro"
-        ]
-      },
-      "patrick": {
-        "name": "Patrick NGATCHA",
-        "title": "DEC, DSCG, Master CCA, MSTCF",
-        "description": "Umuhinga mu bucungamari no kugenzura afise imyaka 13+ mu guteza imbere ibikorwa n'ubujyanama mu mafaranga.",
-        "specialties": [
-          "Iterambere ry'Ubucuruzi",
-          "Ubumenyi mu by'Imari",
-          "Gucunga Ingaruka"
-        ]
-      }
-    }
-  },
-  "organizationalStructure": {
-    "title": "IGISHUSHANYO C'UMUTERERERE W'ISHIRAHAMWE",
-    "subtitle": "Ubuyobozi bwacu n'imiterere y'ikipe",
-    "chairman": {
-      "title": "Umufatanyabikorwa",
-      "subtitle": "Umuyobozi w'Inama y'Abayobozi\nUmuyobozi w'iterambere",
-      "description": "Ubuyobozi bwose n'uyobora bw'ubwoba bw'Itsinda rya EXCI-MAA."
-    },
-    "adminPartner": {
-      "title": "Umufatanyabikorwa, Ubuyobozi bwose, Imari & Abantu",
-      "description": "Yobora ubuyobozi, imari, n'ubwoba bw'abantu."
-    },
-    "auditPartner": {
-      "title": "Umufatanyabikorwa w'Ubwoba n'Ubunyangamugayo",
-      "description": "Yobora ibikorwa by'ubwoba n'ubunyangamugayo."
-    },
-    "managementPartner": {
-      "title": "Umufatanyabikorwa w'Ubuyobozi n'Ikigo",
-      "description": "Yobora ubuyobozi n'iterambere ry'ikigo."
-    },
-    "qualityCompliance": {
-      "title": "Umufatanyabikorwa",
-      "subtitle": "Umuyobozi w'Ubwoba n'Ukwemera",
-      "description": "Yemeza ubwoba bw'ubwoba n'ukwemera mu kigo cyose."
-    },
-    "countryDirector": {
-      "title": "Umuyobozi w'Igihugu abacuruzi\nba Senior na Junior Auditors",
-      "description": "Yobora ibikorwa by'igihugu hamwe n'ikipe y'abacuruzi n'ubwoba."
-    },
-    "specialists": {
-      "title": "Abahanga n'Abunyangamugayo b'hanze",
-      "subtitle": "(Abaganga, Abanyamwuga, Abavoka, Abahanga mu by'ubuzima, Abakuru, Abato ... ETC)",
-      "description": "Ikipe y'abahanga b'ubwoba bw'ubunyangamugayo n'abahanga b'hanze."
-    }
-  },
-  "typicalOfficeOrganigram": {
-    "title": "ORGANIGRAMME Y'UBWOBE BW'AMABIRO",
-    "subtitle": "Imiterere y'ubwoba y'ubwoba y'ubwoba bw'ubwoba",
-    "officeManager": {
-      "title": "UMUYOBOZI W'AMABIRO / UMUYOBOZI",
-      "description": "Ubuyobozi bwose n'uyobora bw'ubwoba"
-    },
-    "audit": {
-      "title": "UBWOBE",
-      "legal": {
-        "title": "UBWOBE",
-        "services": [
-          "Ubwoba bw'amategeko",
-          "Ubwoba bw'amafaranga y'ikigo, amafaranga y'ubwoba n'ubwoba",
-          "Gutandukana, guhuza n'ibindi"
-        ]
-      },
-      "contractual": {
-        "title": "UBWOBE",
-        "services": [
-          "Ubwoba bw'amashyira y'ubwoba",
-          "Amafaranga y'ubwoba",
-          "Ubwoba bw'amafaranga y'amavuta",
-          "Ubwoba bw'ubwoba"
-        ]
-      }
-    },
-    "advisory": {
-      "title": "UBUNYANGAMUGAYO",
-      "taxSocial": {
-        "title": "UMUSORO & UBWOBE",
-        "services": [
-          "Ubunyangamugayo bw'ubwoba: Ubwoba, Gushyiraho OHADA, Ubwoba, Ubwoba bw'ubwoba",
-          "Amategeko y'umusoro: Ubwoba bw'ubwoba, Ubunyangamugayo bw'umusoro & Ukwemera kw'umusoro, Ubwoba",
-          "Amategeko y'ubwoba: Gushakisha, Ishyirwa ry'ubwoba, Gushyiraho amafaranga, Amakuru, Ubwoba"
-        ]
-      },
-      "training": {
-        "title": "AMAHUGURWA",
-        "services": [
-          "Amahugurwa",
-          "Guhitamo ibyerekeye mu bwoba bwacu bw'umwaka"
-        ]
-      },
-      "finance": {
-        "title": "IMARI",
-        "services": [
-          "Gahunda y'ubwoba",
-          "Gusuzuma ubwoba bw'amafaranga",
-          "Gupima",
-          "Gupima"
-        ]
-      }
-    },
-    "management": {
-      "title": "UBUYOBOZI",
-      "accounting": {
-        "title": "UBUFASHA BW'UBUCURUZI N'UMUSORO",
-        "services": [
-          "Amakuru y'amafaranga y'umwaka cyangwa y'ubwoba",
-          "Gushyiraho ikigo cy'ubucuruzi",
-          "Porogaramu y'ubuyobozi",
-          "Gucunga amafaranga",
-          "Gusuzuma umusoro"
-        ]
-      },
-      "facility": {
-        "title": "UBUYOBOZI BW'AMABIRO & MYCODEBAR",
-        "services": [
-          "Ubuyobozi bw'amabiro",
-          "Ubuyobozi bw'amafaranga bw'amafaranga n'amafaranga n'amashushanyo y'amashushanyo"
-        ]
-      }
-    }
-  },
-  "trainingCategories": {
-    "accounting": {
-      "title": "Ubucuruzi / Umusoro / Ubuyobozi",
-      "courses": [
-        "Uburyo bwo kubara no gukurikirana amakuru y'ubucuruzi",
-        "Uburyo bwo gukora cyangwa gutegura raporo y'umusoro n'ibindi",
-        "Amabwiriza y'umusoro w'umusoro n'ubwoba",
-        "Uburyo bwo gusuzuma no gukora ubugenzuzi bw'umusoro",
-        "Ikibazo cy'umusoro w'umusoro mu CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
-        "Shyiraho konti yawe y'ubucuruzi n'ubwoba bw'amafaranga",
-        "Uburyo bwo gusanga ubwoba mu raporo z'umusoro",
-        "Ingaruka y'umusoro n'umusoro ku musoro",
-        "Ubwoba hagati ya DAS, amakuru n'DSF: Ikibazo cya CNSS",
-        "Gukora ubwoba bwo kubara"
-      ],
-      "price": "$299",
-      "duration": "iminsi 3"
-    },
-    "audit": {
-      "title": "Ubugenzuzi bw'amategeko / Gucunga ubwoba",
-      "courses": [
-        "Ni ikihe gituma ukora ubugenzuzi bw'amakuru yawe?",
-        "Uburyo bwo gukora ubugenzuzi bw'ubucuruzi n'ubucuruzi",
-        "Ni ikihe ingaruka y'ubugenzuzi ku raporo y'umusoro?",
-        "Ubwoba n'ubwoba bwo gukora ubugenzuzi bw'ubwoba mu bikoresho bito, amabanki n'ubwoba",
-        "Ubwoba n'ubwoba bwo gukora ubwoba",
-        "Amakuru n'ubwoba bw'ubwoba",
-        "Ubugenzuzi bw'ubwoba (ikigo cy'ubugenzuzi)",
-        "Ubugenzuzi bw'ubwoba – Gutezimbere n'ubwoba",
-        "Ubugenzuzi bw'amategeko",
-        "Gucunga neza ubwoba bw'amafaranga, cyane cyane ubwoba",
-        "Gusobanukirwa ibyifuza by'amafaranga kuva ku bwoba n'ubwoba",
-        "Guhuza ubwoba bw'abantu n'ubwoba bw'abakiriya",
-        "Gupima sisitemu y'amakuru – ICT IS",
-        "Gusobanukirwa ERP, ubwoba bwabyo kandi urebe niba ubucuruzi bwawe bubakeneye",
-        "Gusuzuma ibyerekeye ubwoba bw'ubwoba",
-        "Gusuzuma ibyerekeye ubwoba bw'ubugenzuzi bw'ubwoba",
-        "Gusanga no gukumira ubwoba",
-        "Gucunga ingorane mu bwoba bw'ubwoba"
-      ],
-      "price": "$399",
-      "duration": "iminsi 5"
-    },
-    "advice": {
-      "title": "Inama",
-      "courses": [
-        "Ubwoba bwo gukora amakuru y'ubwoba n'ubwoba bw'umusoro",
-        "Gusobanukirwa ibyerekeye n'ibyifuza by'umusoro w'isi yose: Igiciro cy'ubwoba",
-        "Gupima ibikoresho mu gace ka OHADA",
-        "Gusubira gupima ubwoba: ubwoba ku bikoresho byose",
-        "Ubwoba bwo guhuza, gutandukana n'guhagarika mu gace ka OHADA",
-        "Uburyo bwo gukora ubwoba bw'amakuru mu gace ka OHADA",
-        "Kwandika ubwoba bw'ubucuruzi",
-        "Uburyo bwo gukora ubucuruzi",
-        "Guhuza – Gupata",
-        "Ubugenzuzi bw'amategeko, ubwoba n'umusoro",
-        "Gufasha mu kwandika ubwoba bwo gukora ubwoba"
-      ],
-      "price": "$349",
-      "duration": "iminsi 4"
-    },
-    "various": {
-      "title": "Ibintu bitandukanye",
-      "courses": [
-        "Uburyo bwo gukora n'abakiriya b'ubwoba",
-        "Sohora ubwoba bwawe kandi uongere ubuyobozi bwawe mu bucuruzi n'ibindi",
-        "Ubwoba mu mabiro / Ikigo",
-        "Uburyo bwo kuba Umucunga w'amafaranga/Ubwoba cyangwa CFO n'ubwoba",
-        "Gukoresha ubucuruzi n'ubwoba bwo gukora ingorane z'amabanki",
-        "Amategeko y'ubucuruzi OHADA",
-        "Umusoro w'ibikoresho",
-        "Gukoresha no gukora ubugenzuzi bw'amabanki",
-        "Ubugenzuzi bw'ukwemera kw'ubwoba bw'ubwoba"
-      ],
-      "price": "$199",
-      "duration": "iminsi 2"
-    }
-  }
+    "nav":  {
+                "home":  "Ubutangazamakuru",
+                "about":  "Ibyerekeye",
+                "services":  "Serivisi",
+                "training":  "Amahugurwa",
+                "globalOffices":  "Amabiro y\u0027isi",
+                "insights":  "Ubushakashatsi",
+                "careers":  "Akazi",
+                "contact":  "Kwandikira"
+            },
+    "auth":  {
+                 "signIn":  "Kwiyandikisha",
+                 "signOut":  "Gusohoka",
+                 "admin":  "Umuyobozi",
+                 "adminPanel":  "Ikibaho cy\u0027ubuyobozi"
+             },
+    "globalOffices":  {
+                          "title":  "Ubwoba Bw’Isi Yose Bw’Inyamburano",
+                          "subtitle":  "Shaka amabiro yacu mu isi yose umenye serivisi tuzirikura mu buri mwanya",
+                          "heroTitle":  "Amabiro y\u0027isi",
+                          "heroSubtitle":  "Ubwoba bwacu bw\u0027isi n\u0027ubuhanga bw\u0027umuturage",
+                          "mapTitle":  "Ikarti y\u0027ubwoba",
+                          "mapSubtitle":  "Sura amabiro yacu ku isi yose",
+                          "listTitle":  "Aho Amabiro Ari",
+                          "listSubtitle":  "Shakisha iro ry\u0027umubiro riri hafi yawe"
+                      },
+    "teamMembers":  {
+                        "title":  "Itsinda Ryacu ry’Isi Yose",
+                        "subtitle":  "Amahitamo y’abahinga bo mu nzego zose zacu",
+                        "readMore":  "Soma Byinshi",
+                        "showLess":  "Garagaza Bike",
+                        "specialties":  "Ubumenyi bwihariye",
+                        "noMembers":  "Nta bantu bari mu itsinda basanzwe bashinzwe iyi biro",
+                        "members":  {
+                                        "pierre-kemeni":  {
+                                                              "name":  "Pierre KEMENI",
+                                                              "title":  "Umuyobozi Mukuru \u0026 Umukuru w’Inteko",
+                                                              "qualifications":  [
+                                                                                     "MBA",
+                                                                                     "CPA",
+                                                                                     "CGA",
+                                                                                     "FCAA",
+                                                                                     "DEC"
+                                                                                 ],
+                                                              "bio":  "Umufatanya, Umuyobozi Mukuru muri EXCI-MAA Group. Umucungamari wemewe na COSUMAF hamwe na Auditor wemewe n’amategeko. Yanditswe muri ICPAR, ONECCA, CPA Canada, Quebec, Ontario \u0026 UK. Mbere yari Umuyobozi w’Inshingano muri Deloitte Toronto. Umuhango mu buyobozi, SYSCOHADA, Ihinduka ry’Imikoreshereze. Umushiguzi w’Abahanga b’amahanga n’Umutoza.",
+                                                              "specialties":  [
+                                                                                  "Imikoreshereze y’Amahanga",
+                                                                                  "Isuzuma ry’Imari",
+                                                                                  "Inama z’Ubuyobozi",
+                                                                                  "Umuhango wa SYSCOHADA",
+                                                                                  "Ihinduka ry’Imikoreshereze",
+                                                                                  "Umuhango mu Bucuruzi bw’Abanki"
+                                                                              ]
+                                                          },
+                                        "patrick-ngatcha":  {
+                                                                "name":  "Patrick NGATCHA",
+                                                                "title":  "Umufatanya - Umuyobozi Mukuru",
+                                                                "qualifications":  [
+                                                                                       "DEC",
+                                                                                       "DSCG",
+                                                                                       "Master CCA",
+                                                                                       "MSTCF"
+                                                                                   ],
+                                                                "bio":  "Umucungamari wanditswe muri Institute of Chartered Accountants ya Paris Ile de France. Auditor wemewe n’amategeko. Umuhango mu misoro n’isuzuma ry’imari, isuzuma ry’ubuguzi, gufatanya (itegeko 99-02 / IFRS).",
+                                                                "specialties":  [
+                                                                                    "Iterambere ry’Ubucuruzi",
+                                                                                    "Inama z’Imari",
+                                                                                    "Igenamigambi ry’Imisoro",
+                                                                                    "IFRS",
+                                                                                    "Gufatanya",
+                                                                                    "Isuzuma ry’Ubuguzi"
+                                                                                ]
+                                                            },
+                                        "cloudin-ngong":  {
+                                                              "name":  "Cloudin NGONG",
+                                                              "title":  "Umunyamabanga - Ishami ry’Imicungamari",
+                                                              "qualifications":  [
+                                                                                     "MSc Accounting and Finance"
+                                                                                 ],
+                                                              "bio":  "Umunyeshuri w’imari w’umuhango mu misoro n’isuzuma ry’imari. Yongera kuyobora ibikorwa by’ishami ry’Imicungamari.",
+                                                              "specialties":  [
+                                                                                  "Ishungura ry’Imari",
+                                                                                  "Isuzuma ry’Imisoro",
+                                                                                  "Isuzuma ry’Imari",
+                                                                                  "Kuyobora Ishami"
+                                                                              ]
+                                                          },
+                                        "janot-hiag":  {
+                                                           "name":  "Janot HIAG",
+                                                           "title":  "Umushikiranganji \u0026 Isuzuma ry’Igiciro cy’Ipétrole",
+                                                           "qualifications":  [
+                                                                                  "Actuarial Certification"
+                                                                              ],
+                                                           "bio":  "Umuhango mu isuzuma ry’igiciro cy’ipétrole, umutekano w’amafranga yinjira, urutonde rw’ibintu n’ihinduka ry’igiciro, isuzuma ry’ibikorwa n’amategeko, hamwe n’isuzuma ry’amategeko.",
+                                                           "specialties":  [
+                                                                               "Isuzuma ry’Igiciro cy’Ipétrole",
+                                                                               "Umutekano w’Amafranga Yinjira",
+                                                                               "Ihinduka ry’Igiciro cy’Ibintu",
+                                                                               "Isuzuma ry’Ibikorwa",
+                                                                               "Isuzuma ry’Amategeko"
+                                                                           ]
+                                                       },
+                                        "eric-kabeza":  {
+                                                            "name":  "Eric KABEZA",
+                                                            "title":  "Umufatanya Mukuru w’Imisoro - Rwanda",
+                                                            "qualifications":  [
+                                                                                   "Tax Expert"
+                                                                               ],
+                                                            "bio":  "Umuhango mu misoro y’igihugu n’amahanga hamwe n’imyaka isaga 20 akora muri Rwanda Revenue Authority. Umushiguzi/Umujyanama mu misoro y’amasosiyete n’abantu ku giti cyabo. Umunyamabanga w’ukurikiza imisoro n’umushungura w’amategeko.",
+                                                            "specialties":  [
+                                                                                "Imisoro y’Igihugu",
+                                                                                "Imisoro y’Amahanga",
+                                                                                "Ukurikiza Imisoro",
+                                                                                "Ishungura ry’Amategeko",
+                                                                                "Imisoro y’Amasosiyete",
+                                                                                "Imisoro y’Abantu"
+                                                                            ]
+                                                        },
+                                        "jean-nahimana":  {
+                                                              "name":  "Jean Berchmas",
+                                                              "title":  "Umufatanya - Isuzuma ry’Imari n’Imisoro",
+                                                              "qualifications":  [
+                                                                                     "CPA",
+                                                                                     "FMVA®",
+                                                                                     "BIDA®"
+                                                                                 ],
+                                                              "bio":  "Umucungamari, Umunyamuryango wa ICPAR. Isuzuma ry’imari n’imisoro. Umunyeshuri Mukuru w’imikoreshereze n’umwibutsa w’imari w’umuhango n’uburambe mu igenamigambi ry’imari n’ishungura.",
+                                                              "specialties":  [
+                                                                                  "Isuzuma ry’Imari",
+                                                                                  "Isuzuma ry’Imisoro",
+                                                                                  "Imiburo y’Imari",
+                                                                                  "Ishungura ry’Imikoreshereze"
+                                                                              ]
+                                                          },
+                                        "martin-nkwain":  {
+                                                              "name":  "Marcel NKWAIN",
+                                                              "title":  "Umuyobozi w’Intara - Afrika y’Iburasirazuba",
+                                                              "qualifications":  [
+                                                                                     "IPA(UA)",
+                                                                                     "IFA(UK)"
+                                                                                 ],
+                                                              "bio":  "Umuhango wa HARDCAT mu kuyobora ibintu by’umutungo. Isuzuma ry’imari n’imisoro. Umushiguzi w’amahanga n’umutoza uyobora ibikorwa bya EXCI-MAA muri Afrika y’Iburasirazuba.",
+                                                              "specialties":  [
+                                                                                  "Kuyobora Umutungo Utisubirwa",
+                                                                                  "Kuyobora Intara",
+                                                                                  "Isuzuma ry’Imari",
+                                                                                  "Isuzuma ry’Imisoro",
+                                                                                  "Amashuri y’Amahanga"
+                                                                              ]
+                                                          },
+                                        "paul-tchamake":  {
+                                                              "name":  "Olivier Fodji",
+                                                              "title":  "Umufatanya - Imisoro y’Amahanga \u0026 Igiciro cy’Intara",
+                                                              "qualifications":  [
+                                                                                     "Ms",
+                                                                                     "CPA (USA, France)"
+                                                                                 ],
+                                                              "bio":  "Umucungamari wemewe (Sisitemu y’Amerika na France). Umuhango mu misoro y’amahanga, ASC 740 (Amabwiriza ya US GAAP). Imyaka isaga 15 y’uburambe mu bitangaza imari n’imisoro y’amahanga hamwe n’uburambe muri Big 4 muri KPMG na PwC Amerika. Umuhango mu giciro cy’intara na BEPS.",
+                                                              "specialties":  [
+                                                                                  "Imisoro y’Amahanga",
+                                                                                  "Igiciro cy’Intara",
+                                                                                  "BEPS",
+                                                                                  "US GAAP",
+                                                                                  "ASC 740",
+                                                                                  "Imisoro Ihuzamahanga"
+                                                                              ]
+                                                          },
+                                        "diane-dusabe":  {
+                                                             "name":  "Diane DUSABE",
+                                                             "title":  "Umuyobozi w’Ibiro - Burundi",
+                                                             "qualifications":  [
+                                                                                    "BBA",
+                                                                                    "Accounting"
+                                                                                ],
+                                                             "bio":  "Umuyobozi w’ibiro w’uburambe uyobora ibikorwa bya EXCI-MAA muri Burundi. Umuhango mu mibanire y’abakiriya n’iterambere ry’ubucuruzi bw’ahandi.",
+                                                             "specialties":  [
+                                                                                 "Kuyobora Ibiro",
+                                                                                 "Mibanire y’Abakiriya",
+                                                                                 "Iterambere ry’Ubucuruzi",
+                                                                                 "Ibikorwa by’Ahantu"
+                                                                             ]
+                                                         },
+                                        "onesphore-ofodji":  {
+                                                                 "name":  "Onesphore OFODJI",
+                                                                 "title":  "Umushiguzi Mukuru - Burundi",
+                                                                 "qualifications":  [
+                                                                                        "CPA",
+                                                                                        "MBA"
+                                                                                    ],
+                                                                 "bio":  "Umushiguzi w’ubucuruzi w’umuhango mu iterambere ry’amasoko y’intara na serivisi z’inama z’imari ku bucuruzi muri Burundi.",
+                                                                 "specialties":  [
+                                                                                     "Inama z’Ubucuruzi",
+                                                                                     "Inama z’Imari",
+                                                                                     "Iterambere ry’Amasoko",
+                                                                                     "Igenamigambi ry’Intambwe"
+                                                                                 ]
+                                                             },
+                                        "congo-director":  {
+                                                               "name":  "Umuyobozi w’Intara",
+                                                               "title":  "Umuyobozi - Ibikorwa bya RDC",
+                                                               "qualifications":  [
+                                                                                      "CPA",
+                                                                                      "MBA"
+                                                                                  ],
+                                                               "bio":  "Uyobora ibikorwa bya EXCI-MAA muri Repubulika Iharanira Demokarasi ya Kongo, aganira ku bikorwa by’isuzuma na serivisi z’inama z’ubucuruzi.",
+                                                               "specialties":  [
+                                                                                   "Serivisi z’Isuzuma",
+                                                                                   "Inama z’Ubucuruzi",
+                                                                                   "Ibikorwa by’Intara",
+                                                                                   "Inama z’Imisoro"
+                                                                               ]
+                                                           },
+                                        "gabon-manager":  {
+                                                              "name":  "Umuyobozi w’Intara",
+                                                              "title":  "Umuyobozi - Ibikorwa bya Gabon",
+                                                              "qualifications":  [
+                                                                                     "Expert Comptable",
+                                                                                     "CEMAC"
+                                                                                 ],
+                                                              "bio":  "Kuyobora serivisi za EXCI-MAA muri Gabon aganira ku isuzuma ry’imari na serivisi z’inama z’amasosiyete ku bakiriya b’ahandi n’amahanga.",
+                                                              "specialties":  [
+                                                                                  "Isuzuma ry’Imari",
+                                                                                  "Inama z’Amasosiyete",
+                                                                                  "Amategeko ya CEMAC",
+                                                                                  "Ukurikiza Amategeko y’Ahantu"
+                                                                              ]
+                                                          },
+                                        "dubai-consultant":  {
+                                                                 "name":  "Umushiguzi Mukuru",
+                                                                 "title":  "Umushiguzi w’Ubucuruzi Mukuru - Dubai",
+                                                                 "qualifications":  [
+                                                                                        "CPA",
+                                                                                        "ACCA"
+                                                                                    ],
+                                                                 "bio":  "Umuhango mu gutangiza ubucuruzi bw’amahanga n’igenamigambi ry’imisoro ku masosiyete ashyiraho amasoko muri Aziya y’Uburasirazuba.",
+                                                                 "specialties":  [
+                                                                                     "Gutangiza Ubucuruzi",
+                                                                                     "Igenamigambi ry’Imisoro",
+                                                                                     "Ikwirakwiza ry’Amahanga",
+                                                                                     "Amasoko y’Aziya y’Uburasirazuba"
+                                                                                 ]
+                                                             },
+                                        "france-partner":  {
+                                                               "name":  "Umufatanya",
+                                                               "title":  "Umufatanya - Ibikorwa bya France",
+                                                               "qualifications":  [
+                                                                                      "Expert Comptable",
+                                                                                      "Commissaire aux Comptes"
+                                                                                  ],
+                                                               "bio":  "Uyobora ibikorwa by’Uburaya n’ubuhanga mu kurikiza amategeko ya EU na serivisi z’inama z’ihuzamahanga.",
+                                                               "specialties":  [
+                                                                                   "Ukurikiza Amategeko ya EU",
+                                                                                   "Inama z’Ihuzamahanga",
+                                                                                   "Imicungamari y’Uburaya",
+                                                                                   "Imisoro y’Amahanga"
+                                                                               ]
+                                                           },
+                                        "canada-consultant":  {
+                                                                  "name":  "Umushiguzi Mukuru",
+                                                                  "title":  "Umushiguzi w’Abimukira \u0026 Imisoro",
+                                                                  "qualifications":  [
+                                                                                         "CPA",
+                                                                                         "RCIC"
+                                                                                     ],
+                                                                  "bio":  "Umuhango mu serivisi z’ubumukira bwa Canada n’igenamigambi ry’imisoro y’amahanga ku bimukira bashya na masosiyete.",
+                                                                  "specialties":  [
+                                                                                      "Serivisi z’Ubumukira",
+                                                                                      "Imisoro y’Amahanga",
+                                                                                      "Igenamigambi ry’Imari",
+                                                                                      "Ubumukira bw’Ubucuruzi"
+                                                                                  ]
+                                                              }
+                                    }
+                    },
+    "footer":  {
+                   "description":  "Ikigo cy\u0027ubucuruzi, cy\u0027ubugenzuzi, n\u0027ubunyangamugayo cyifite amaofisi bw\u0027isi. Dutanga ubuhanga buhagije gufasha ibyo ukeneye.",
+                   "quickLinks":  "Amahuza yihuse",
+                   "ourServices":  "Serivisi zacu",
+                   "contactInfo":  "Amakuru y\u0027ubwoba",
+                   "douala":  "Douala, Kameruni",
+                   "globalPresence":  "",
+                   "allRightsReserved":  "Ubutaka bose burabagirwa.",
+                   "privacyPolicy":  "Politiki y\u0027ubwoba",
+                   "termsOfService":  "Amabwiriza y\u0027ubucuruzi",
+                   "cookiePolicy":  "Politiki y\u0027amakuru"
+               },
+    "serviceCategories":  {
+                              "accounting":  "Ubuhanga bwo kubara",
+                              "legal":  "Gukuraho n\u0027impamvu z\u0027umutekano",
+                              "managerial":  "Inama z\u0027ubuyobozi",
+                              "payroll":  "Kwishyura n\u0027ubuyobozi bw\u0027abantu",
+                              "consolidation":  "Guhuza",
+                              "risk":  "Ubunyangamugayo bw\u0027ingorane",
+                              "it":  "Ubunyangamugayo bw\u0027ikoranabuhanga",
+                              "financial":  "Raporo z\u0027ubucuruzi"
+                          },
+    "hero":  {
+                 "title":  "Ubucuruzi bw\u0027ubuhanga \u0026",
+                 "titleHighlight":  "Ubwoba bw\u0027ubunyangamugayo",
+                 "subtitle":  "Serivisi z\u0027ubucuruzi, ubugenzuzi, n\u0027ubunyangamugayo zifite ubwoba bw\u0027isi. Dutanga ibisubizo by\u0027ubuhanga gufasha ubwoba bw\u0027ubucuruzi bwawe.",
+                 "feature1":  "Ubuhanga bw\u0027isi hamwe n\u0027ukumenya umuturage",
+                 "feature2":  "Serivisi z\u0027ubugenzuzi n\u0027ubunyangamugayo",
+                 "feature3":  "Gufasha ubwoba bw\u0027ubucuruzi bwawe",
+                 "cta1":  "Gusura Serivisi",
+                 "cta2":  "Gupata Ubunyangamugayo",
+                 "description":  "Dutanga ibisubizo bishasha mu vy\u0027umutungo n\u0027imburi y\u0027ubuyobozi kugira dufashe amashirahamwe n\u0027abantu kugendera mu bice vy\u0027umutungo bigoye n\u0027uko vyoshe, bafise ukwizigira n\u0027ukusobanukirwa."
+             },
+    "about":  {
+                  "title":  "Ibyerekeye Twe",
+                  "subtitle":  "Menya byinshi ku kigo cyacu n\u0027ibyiringiro",
+                  "feature1Title":  "Ubwoba bw\u0027ubuhanga",
+                  "feature1Desc":  "Dukomeza ubwoba bw\u0027ubuhanga mu serivisi zacu zose",
+                  "feature2Title":  "Ofisi dufite ku isi",
+                  "feature2Desc":  "Gufasha abakiriya mu mahanga menshi n\u0027amashyira",
+                  "feature3Title":  "Ikipe y\u0027ubuhanga",
+                  "feature3Desc":  "Abahanga bacu bafite ubuhanga batanga ibisubizo by\u0027ubwoba",
+                  "heroTitle":  "Ibyerekeye EXCI-MAA",
+                  "heroSubtitle":  "Ikigo cy\u0027ubucuruzi, cy\u0027ubugenzuzi, n\u0027ubunyangamugayo cyifite amaofisi bw\u0027isi",
+                  "historyTitle":  "Amateka yacu",
+                  "historySubtitle":  "Gushyiraho kwizera ku bwoba bw\u0027ubuhanga kuva twatangira",
+                  "valuesTitle":  "Ibyiringiro byacu",
+                  "valuesSubtitle":  "Amabwiriza atuyobora mu byose dukora",
+                  "teamTitle":  "Ikipe yacu",
+                  "teamSubtitle":  "Hangana n\u0027abahanga bacu bafite ubuhanga",
+                  "testimonialsTitle":  "Ibyemezo by\u0027abakiriya",
+                  "testimonialsSubtitle":  "Ibyo abakiriya bacu bavuga ku twe"
+              },
+    "services":  {
+                     "title":  "Serivisi zacu",
+                     "subtitle":  "Ibisubizo birambuye ku byo ukeneye",
+                     "heroTitle":  "Serivisi z\u0027ubuhanga",
+                     "heroSubtitle":  "Ibisubizo by\u0027ubuhanga byashyizweho ku byo ukeneye",
+                     "detailedTitle":  "Ibyerekeye Serivisi",
+                     "detailedSubtitle":  "Amakuru y\u0027ubuhanga ku byo dutanga",
+                     "processTitle":  "Uburyo bwo gukora",
+                     "processSubtitle":  "Uburyo dutanga ibisubizo by\u0027ubwoba",
+                     "faqTitle":  "Ibibazo by\u0027ubwoba",
+                     "faqSubtitle":  "Ibibazo by\u0027ubwoba ku serivisi zacu",
+                     "pricingTitle":  "Igiciro",
+                     "pricingSubtitle":  "Igiciro cy\u0027ubwoba ku serivisi zacu zose",
+                     "schedule":  "Tegura",
+                     "getStarted":  "Tangira",
+                     "keyFeatures":  "Ivyo nyamukuru",
+                     "learnMore":  "Menya vyinshi",
+                     "viewAll":  "Raba serivisi zose",
+                     "service1Title":  "Ubuhanga bwo kubara",
+                     "service1Desc":  "Serivisi z\u0027ubucuruzi z\u0027ubuhanga ku bikoresho",
+                     "service2Title":  "Gukuraho n\u0027impamvu z\u0027umutekano",
+                     "service2Desc":  "Serivisi z\u0027ubugenzuzi n\u0027ubwoba",
+                     "service3Title":  "Inama z\u0027ubuyobozi",
+                     "service3Desc":  "Ubunyangamugayo bw\u0027ubwoba ku bwoba bw\u0027ubucuruzi",
+                     "service4Title":  "Kwishyura n\u0027ubuyobozi bw\u0027abantu",
+                     "service4Desc":  "Gucunga ubwoba bw\u0027ubucuruzi n\u0027ubuyobozi bw\u0027abantu",
+                     "service5Title":  "Guhuza",
+                     "service5Desc":  "Guhuza ubucuruzi ku bikoresho byinshi",
+                     "service6Title":  "Ubunyangamugayo bw\u0027ingorane",
+                     "service6Desc":  "Gusuzuma n\u0027ubuyobozi bw\u0027ubwoba bw\u0027ingorane",
+                     "categories":  {
+                                        "all":  "Serivisi zose",
+                                        "finance":  "Serivisi z\u0027ubutunzi",
+                                        "business":  "Serivisi z\u0027ubudandaji"
+                                    }
+                 },
+    "insights":  {
+                     "heroTitle":  "Ubushakashatsi n\u0027Amakuru",
+                     "heroSubtitle":  "Komeza ubwoba n\u0027ubushakashatsi bw\u0027ubucuruzi n\u0027amakuru y\u0027ikigo",
+                     "eventsTitle":  "Ibikorwa",
+                     "eventsSubtitle":  "Ibikorwa bizaza n\u0027ibyashize",
+                     "blogTitle":  "Blog",
+                     "blogSubtitle":  "Inyandiko z\u0027ubwoba n\u0027ubushakashatsi",
+                     "promotionsTitle":  "Gushimangira",
+                     "promotionsSubtitle":  "Amahugurwa y\u0027ubwoba n\u0027amakuru"
+                 },
+    "careers":  {
+                    "heroTitle":  "Winjire mu Kipe yacu",
+                    "heroSubtitle":  "Kubaka akazi kawe na EXCI-MAA",
+                    "jobsTitle":  "Aho Akazi Ari",
+                    "jobsSubtitle":  "Amahirwe y\u0027akazi y\u0027ubwoba",
+                    "chartTitle":  "Ikarti y\u0027ubuyobozi",
+                    "chartSubtitle":  "Ubwoba bw\u0027ikigo cyacu n\u0027ubuyobozi",
+                    "benefitsTitle":  "Amahirwe n\u0027Amahugurwa",
+                    "benefitsSubtitle":  "Ibyo dutanga ku bakazi bacu"
+                },
+    "contact":  {
+                    "title":  "Kwandikira",
+                    "subtitle":  "Kwandikira n\u0027ikipe yacu",
+                    "heroTitle":  "Kwandikira",
+                    "heroSubtitle":  "Turimo gufasha ibyo ukeneye",
+                    "formTitle":  "Dutangire Ubutumwa",
+                    "formSubtitle":  "Uzuza urupapuro rwo hepfo kandi tuzagaruka",
+                    "mapTitle":  "Dushakashe",
+                    "mapSubtitle":  "Sura amabiro yacu ku isi yose",
+                    "infoTitle":  "Amakuru y\u0027ubwoba",
+                    "infoSubtitle":  "Uburyo bwo kudushakashe",
+                    "cta":  "Kwandikira Ubu",
+                    "hero":  {
+                                 "getInTouch":  "Kwandikira",
+                                 "letsTalkAbout":  "Dusuzume iby\u0027",
+                                 "businessNeeds":  "Ubwoba bw\u0027ubucuruzi bwawe",
+                                 "description":  "Ikipe yacu y\u0027abahanga b\u0027ubucuruzi iteguye gufasha mu kuyobora ingorane z\u0027ubucuruzi bwawe. Kwandikira binyuze mu nzira icyo ari cyo cyose cyo hepfo cyangwa dutangire ubutumwa buhagije.",
+                                 "contactMethods":  {
+                                                        "emailUs":  "Dutangire Imeyili",
+                                                        "emailDescription":  "Ikipe yacu izagaruka mu masaha 24",
+                                                        "emailValue":  "contactcam@excimaa.ca",
+                                                        "callUs":  "Dutangire",
+                                                        "callDescription":  "Ku wa Mbere-Ku wa Gatanu kuva saa saba n\u0027ijoro kugeza saa tatu n\u0027ijoro",
+                                                        "callValue":  "+1 (555) 123-4567",
+                                                        "visitUs":  "Dusura",
+                                                        "visitDescription":  "Naza gusanga amabiro yacu",
+                                                        "visitValue":  "123 Umuhanda w\u0027ubucuruzi, Umudugudu, Igihugu",
+                                                        "officeHours":  "Amasaha y\u0027amabiro",
+                                                        "hoursDescription":  "Amasaha yacu y\u0027akazi",
+                                                        "hoursValue":  "Ku wa Mbere - Ku wa Gatanu: 9:00 - 18:00"
+                                                    },
+                                 "orFillOut":  "Cyangwa uzuze urupapuro rwacu rw\u0027ubwoba kandi tuzagaruka mu masaha 24.",
+                                 "sendUsMessage":  "Dutangire Ubutumwa"
+                             },
+                    "form":  {
+                                 "title":  "Kwandikira",
+                                 "subtitle":  "Ufite ibibazo cyangwa witeguye gutangira ubwoba bwawe? Uzuza urupapuro rwo hepfo kandi ikipe yacu izagaruka vuba.",
+                                 "getInTouch":  "Kwandikira",
+                                 "description":  "Ufite ibibazo cyangwa witeguye gutangira ubwoba bwawe? Uzuza urupapuro rwo hepfo kandi ikipe yacu izagaruka vuba.",
+                                 "contactInformation":  "Amakuru y\u0027ubwoba",
+                                 "contactDescription":  "Uzuza urupapuro kandi ikipe yacu izagaruka mu masaha 24. Kugira ngo uhabwe ubufasha buhagije, nyamuneka dutangire buhagije.",
+                                 "callUs":  "Dutangire",
+                                 "emailUs":  "Dutangire imeyili",
+                                 "visitUs":  "Dusura",
+                                 "businessHours":  "Amasaha y\u0027amabiro",
+                                 "mondayFriday":  "Ku wa Mbere - Ku wa Gatanu: 9:00 AM - 6:00 PM",
+                                 "saturdaySunday":  "Ku wa Gatandatu - Ku cyumweru: Birafungiye",
+                                 "name":  "Izina",
+                                 "name_placeholder":  "Jean Mukamana",
+                                 "email":  "Ineyili",
+                                 "email_placeholder":  "jean@example.com",
+                                 "phone":  "Itumanaho",
+                                 "phone_placeholder":  "+250 78 123 4567",
+                                 "subject":  "Icyo ukeneye",
+                                 "select_subject":  "Hitamo icyo ukeneye",
+                                 "other":  "Ibindi",
+                                 "message":  "Ubutumwa",
+                                 "message_placeholder":  "Dutangire ibindi...",
+                                 "submit":  "Ohereza Ubutumwa",
+                                 "submitting":  "Biri mu kohereza...",
+                                 "success":  "Murakoze! Ubutumwa bwawe buhagije.",
+                                 "error":  "Ntibishoboka gutanga. Nyamuneka ugerageze nanone.",
+                                 "fullName":  "Amazina yose",
+                                 "emailAddress":  "Aderesi y\u0027imeyili",
+                                 "phoneNumber":  "Numero y\u0027amashini",
+                                 "required":  "*",
+                                 "placeholders":  {
+                                                      "fullName":  "Jean Mukamana",
+                                                      "email":  "you@example.com",
+                                                      "phone":  "+250 78 123 4567",
+                                                      "selectSubject":  "Hitamo icyo ukeneye",
+                                                      "message":  "Dushobora gufasha gute?"
+                                                  },
+                                 "subjects":  {
+                                                  "generalInquiry":  "Gusuzuma rusange",
+                                                  "accountingServices":  "Serivisi z\u0027ubucuruzi",
+                                                  "auditServices":  "Serivisi z\u0027ubugenzuzi",
+                                                  "taxConsultation":  "Ubunyangamugayo bw\u0027umusoro",
+                                                  "other":  "Ibindi"
+                                              },
+                                 "validation":  {
+                                                    "nameRequired":  "Amazina akenewe",
+                                                    "emailRequired":  "Ineyili ikenewe",
+                                                    "emailInvalid":  "Aderesi y\u0027imeyili itari nziza",
+                                                    "subjectRequired":  "Icyo ukeneye kikenewe",
+                                                    "messageRequired":  "Ubutumwa bukenewe",
+                                                    "messageMinLength":  "Ubutumwa bugomba kugira inyuguti 10 byibuze"
+                                                },
+                                 "sendMessage":  "Ohereza Ubutumwa",
+                                 "sending":  "Biri mu kohereza...",
+                                 "successTitle":  "Ubutumwa Bwoherejwe neza!",
+                                 "successDescription":  "Murakoze kwandikira. Twakiriye ubutumwa bwawe kandi tuzagaruka mu masaha 24.",
+                                 "sendAnotherMessage":  "Ohereza ubutumwa bundi",
+                                 "errorTitle":  "Ikosa",
+                                 "errorMessage":  "Kohereza ubutumwa byanze. Nyamuneka ugerageze nanone.",
+                                 "privacyNote":  "Tuzagaruka mu masaha 24. Amakuru yawe ari mu mutekano."
+                             },
+                    "map":  {
+                                "findOurOffice":  "Shakisha Amabiro yacu",
+                                "description":  "Dusura mu mabiro yacu yahagaze neza. Turimo gufasha mu byo ukeneye byose by\u0027ubucuruzi.",
+                                "ourOffice":  "Amabiro yacu",
+                                "address":  "Aderesi",
+                                "phone":  "Amashini",
+                                "email":  "Ineyili",
+                                "businessHours":  "Amasaha y\u0027amabiro",
+                                "getDirections":  "Shakisha uburyo",
+                                "needHelpFinding":  "Ukeneye ubufasha bwo gushakisha?",
+                                "helpDescription":  "Amabiro yacu yahagaze mu gace k\u0027ubucuruzi kandi yoroshye kugera ku nzira z\u0027ubucuruzi.",
+                                "centerMap":  "Shyira ikarti mu gace kacu",
+                                "officeLocation":  {
+                                                       "address":  "123 Umuhanda w\u0027ubucuruzi, Riyadh 12345, Arabiya Sawudite",
+                                                       "phone":  "+237233427940 \u0026\u0026 +237698835251",
+                                                       "email":  "riyadh@exci-maa.com",
+                                                       "hours":  "Ku wa Mbere - Ku wa Gatanu: 9:00 AM - 6:00 PM"
+                                                   }
+                            },
+                    "faq":  {
+                                "title":  "Ibibazo by\u0027ubwoba",
+                                "description":  "Shakisha ibisubizo ku bibazo by\u0027ubwoba ku serivisi zacu, uburyo bwo gukora, n\u0027uburyo dushobora gufasha ubucuruzi bwawe gukura.",
+                                "questions":  [
+                                                  {
+                                                      "question":  "Ni ikihe serivisi EXCI-MAA itanga?",
+                                                      "answer":  "Tutanga serivisi z\u0027ubwoba z\u0027ubucuruzi, ubugenzuzi, umusoro, n\u0027ubunyangamugayo bw\u0027ubucuruzi zashyizweho ku byo ukeneye by\u0027ubwoba by\u0027ibikoresho mu Arabiya Sawudite n\u0027ibindi. Serivisi zacu zirimo raporo z\u0027ubucuruzi, gutezimbere umusoro, ubugenzuzi bw\u0027ubwoba, n\u0027ubunyangamugayo bw\u0027ubucuruzi."
+                                                  },
+                                                  {
+                                                      "question":  "Nshobora gute gutegura ubunyangamugayo?",
+                                                      "answer":  "Urashobora gutegura ubunyangamugayo binyuze mu gutangira amabiro yacu, kutangira imeyili, cyangwa gukoresha urupapuro rw\u0027ubwoba ku rupapuro rwacu. Ikipe yacu izagaruka mu masaha 24 kugira ngo ikemeze umunsi wawe."
+                                                  },
+                                                  {
+                                                      "question":  "Ni ikihe gikoresho mufite ubuhanga?",
+                                                      "answer":  "Dufite ubuhanga bw\u0027ubwoba mu gukorana n\u0027ibikoresho bitandukanye birimo ubwoba bw\u0027abantu, ubwoba, kugurisha, ikoranabuhanga, n\u0027ubunyangamugayo bw\u0027ubwoba. Ikipe yacu ifite ubuhanga bwo gukora n\u0027ingorane z\u0027ubucuruzi z\u0027ubwoba z\u0027ubwoba."
+                                                  },
+                                                  {
+                                                      "question":  "Ni ikihe amasaha y\u0027amabiro yanyu?",
+                                                      "answer":  "Amabiro yacu yafunguye kuva ku cyumweru kugeza ku wa Kane, 9:00 AM kugeza 6:00 PM. Turafungiye ku wa Gatanu na Gatandatu hamwe n\u0027umunsi mukuru."
+                                                  },
+                                                  {
+                                                      "question":  "Mutanga serivisi z\u0027ubwoba cyangwa z\u0027ubwoba?",
+                                                      "answer":  "Yego, tutanga ubunyangamugayo bw\u0027ubwoba n\u0027ubwoba kugira ngo dukemere ibyo abakiriya bacu bakeneye. Ikipe yacu ifite ibikoresho by\u0027ubwoba by\u0027ubwoba byo gutanga serivisi y\u0027ubwoba ku bwoba."
+                                                  },
+                                                  {
+                                                      "question":  "Mukemera gute ubwoba bw\u0027amakuru n\u0027ubwoba?",
+                                                      "answer":  "Dutanga ubwoba bw\u0027amakuru ku bwoba. Amakuru yose y\u0027abakiriya akorwa n\u0027ubwoba bw\u0027ubwoba kandi akurinda gukoresha uburyo bwo gukurinda bwo gukoresha, harimo ubwoba n\u0027uburyo bwo gukurinda amakuru."
+                                                  }
+                                              ],
+                                "stillHaveQuestions":  "Ufite ibibazo?",
+                                "stillHaveDescription":  "Ntushobora gushakisha igisubizo ushakisha? Ikipe yacu irimo gufasha. Kwandikira kandi tuzagaruka vuba.",
+                                "chatWithUs":  "Dusuzume",
+                                "chatDescription":  "Ikipe yacu irimo gufasha",
+                                "sendUsMessage":  "Dutangire ubutumwa",
+                                "callUs":  "Dutangire",
+                                "callDescription":  "Ku wa Mbere kugeza ku wa Gatanu, saa saba n\u0027ijoro kugeza saa tatu n\u0027ijoro",
+                                "emailUs":  "Dutangire imeyili",
+                                "emailDescription":  "Tuzagaruka mu masaha 24",
+                                "cantFindWhat":  "Ntushobora gushakisha icyo ushakisha?",
+                                "expertsDescription":  "Ikipe yacu y\u0027abahanga irimo gusubiza ibibazo icyo ari cyo cyose ushobora kugira.",
+                                "contactSupport":  "Kwandikira Ubufasha"
+                            }
+                },
+    "training":  {
+                     "title":  "Amahugurwa y\u0027ubwoba",
+                     "subtitle":  "Dutanga amahugurwa y\u0027ubwoba n\u0027ubuhanga",
+                     "categories":  {
+                                        "accounting":  {
+                                                           "title":  "Kubara / Umusoro / Ubwoba",
+                                                           "courses":  [
+                                                                           "Uburyo bwo kubara no gukurikirana amakuru y\u0027ubucuruzi",
+                                                                           "Uburyo bwo gukora cyangwa gutegura raporo y\u0027umusoro n\u0027ibindi",
+                                                                           "Amabwiriza y\u0027umusoro w\u0027umusoro n\u0027ubwoba",
+                                                                           "Uburyo bwo gusuzuma no gukora ubugenzuzi bw\u0027umusoro",
+                                                                           "Ikibazo cy\u0027umusoro w\u0027umusoro mu CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
+                                                                           "Shyiraho konti yawe y\u0027ubucuruzi n\u0027ubwoba bw\u0027amafaranga",
+                                                                           "Uburyo bwo gusanga ubwoba mu raporo z\u0027umusoro",
+                                                                           "Ingaruka y\u0027umusoro n\u0027umusoro ku musoro",
+                                                                           "Ubwoba hagati ya DAS, amakuru n\u0027DSF: Ikibazo cya CNSS",
+                                                                           "Gukora ubwoba bwo kubara"
+                                                                       ],
+                                                           "price":  "$299",
+                                                           "duration":  "iminsi 3"
+                                                       },
+                                        "audit":  {
+                                                      "title":  "Ubugenzuzi bw\u0027amategeko / Gucunga ubwoba",
+                                                      "courses":  [
+                                                                      "Ni ikihe gituma ukora ubugenzuzi bw\u0027amakuru yawe?",
+                                                                      "Uburyo bwo gukora ubugenzuzi bw\u0027ubucuruzi n\u0027ubucuruzi",
+                                                                      "Ni ikihe ingaruka y\u0027ubugenzuzi ku raporo y\u0027umusoro?",
+                                                                      "Ubwoba n\u0027ubwoba bwo gukora ubugenzuzi bw\u0027ubwoba mu bikoresho bito, amabanki n\u0027ubwoba",
+                                                                      "Ubwoba n\u0027ubwoba bwo gukora ubwoba",
+                                                                      "Amakuru n\u0027ubwoba bw\u0027ubwoba",
+                                                                      "Ubugenzuzi bw\u0027ubwoba (ikigo cy\u0027ubugenzuzi)",
+                                                                      "Ubugenzuzi bw\u0027ubwoba – Gutezimbere n\u0027ubwoba",
+                                                                      "Ubugenzuzi bw\u0027amategeko",
+                                                                      "Gucunga neza ubwoba bw\u0027amafaranga, cyane cyane ubwoba",
+                                                                      "Gusobanukirwa ibyifuza by\u0027amafaranga kuva ku bwoba n\u0027ubwoba",
+                                                                      "Guhuza ubwoba bw\u0027abantu n\u0027ubwoba bw\u0027abakiriya",
+                                                                      "Gupima sisitemu y\u0027amakuru – ICT IS",
+                                                                      "Gusobanukirwa ERP, ubwoba bwabyo kandi urebe niba ubucuruzi bwawe bubakeneye",
+                                                                      "Gusuzuma ibyerekeye ubwoba bw\u0027ubwoba",
+                                                                      "Gusuzuma ibyerekeye ubwoba bw\u0027ubugenzuzi bw\u0027ubwoba",
+                                                                      "Gusanga no gukumira ubwoba",
+                                                                      "Gucunga ingorane mu bwoba bw\u0027ubwoba"
+                                                                  ],
+                                                      "price":  "$399",
+                                                      "duration":  "iminsi 5"
+                                                  },
+                                        "advice":  {
+                                                       "title":  "Inama",
+                                                       "courses":  [
+                                                                       "Ubwoba bwo gukora amakuru y\u0027ubwoba n\u0027ubwoba bw\u0027umusoro",
+                                                                       "Gusobanukirwa ibyerekeye n\u0027ibyifuza by\u0027umusoro w\u0027isi yose: Igiciro cy\u0027ubwoba",
+                                                                       "Gupima ibikoresho mu gace ka OHADA",
+                                                                       "Gusubira gupima ubwoba: ubwoba ku bikoresho byose",
+                                                                       "Ubwoba bwo guhuza, gutandukana n\u0027guhagarika mu gace ka OHADA",
+                                                                       "Uburyo bwo gukora ubwoba bw\u0027amakuru mu gace ka OHADA",
+                                                                       "Kwandika ubwoba bw\u0027ubucuruzi",
+                                                                       "Uburyo bwo gukora ubucuruzi",
+                                                                       "Guhuza – Gupata",
+                                                                       "Ubugenzuzi bw\u0027amategeko, ubwoba n\u0027umusoro",
+                                                                       "Gufasha mu kwandika ubwoba bwo gukora ubwoba"
+                                                                   ],
+                                                       "price":  "$349",
+                                                       "duration":  "iminsi 4"
+                                                   },
+                                        "various":  {
+                                                        "title":  "Ibintu bitandukanye",
+                                                        "courses":  [
+                                                                        "Uburyo bwo gukora n\u0027abakiriya b\u0027ubwoba",
+                                                                        "Sohora ubwoba bwawe kandi uongere ubuyobozi bwawe mu bucuruzi n\u0027ibindi",
+                                                                        "Ubwoba mu mabiro / Ikigo",
+                                                                        "Uburyo bwo kuba Umucunga w\u0027amafaranga/Ubwoba cyangwa CFO n\u0027ubwoba",
+                                                                        "Gukoresha ubucuruzi n\u0027ubwoba bwo gukora ingorane z\u0027amabanki",
+                                                                        "Amategeko y\u0027ubucuruzi OHADA",
+                                                                        "Umusoro w\u0027ibikoresho",
+                                                                        "Gukoresha no gukora ubugenzuzi bw\u0027amabanki",
+                                                                        "Ubugenzuzi bw\u0027ukwemera kw\u0027ubwoba bw\u0027ubwoba"
+                                                                    ],
+                                                        "price":  "$199",
+                                                        "duration":  "iminsi 2"
+                                                    }
+                                    }
+                 },
+    "partners":  {
+                     "label":  "AMASHUSHANYO YACU",
+                     "title":  "Amashushanyo y\u0027Itsinda rya EXCI-MAA",
+                     "subtitle":  "Ubwoba bwacu bw\u0027ubuhanga n\u0027ubwoba bw\u0027ikimenyetso",
+                     "note":  "Amashushanyo yacu yerekana ubuhanga bwacu n\u0027ukwizera kwacu mu bwoba",
+                     "founders":  {
+                                      "pierre":  {
+                                                     "name":  "Pierre KEMENI",
+                                                     "title":  "MBA, CPA, DEC",
+                                                     "description":  "Umuhinga mu bikorwa vy\u0027ubucungamari no kugenzura, afise imyaka 27+ y\u0027uburambe mu bikorwa mpuzamakungu.",
+                                                     "specialties":  [
+                                                                         "Ubucungamari Mpuzamakungu",
+                                                                         "Audit",
+                                                                         "Inama z\u0027Imisoro"
+                                                                     ]
+                                                 },
+                                      "patrick":  {
+                                                      "name":  "Patrick NGATCHA",
+                                                      "title":  "DEC, DSCG, Master CCA, MSTCF",
+                                                      "description":  "Umuhinga mu bucungamari no kugenzura afise imyaka 13+ mu guteza imbere ibikorwa n\u0027ubujyanama mu mafaranga.",
+                                                      "specialties":  [
+                                                                          "Iterambere ry\u0027Ubucuruzi",
+                                                                          "Ubumenyi mu by\u0027Imari",
+                                                                          "Gucunga Ingaruka"
+                                                                      ]
+                                                  }
+                                  }
+                 },
+    "offices":  {
+                    "title":  "Ofisi dufite ku isi",
+                    "subtitle":  "Gufasha abakiriya ku isi yose"
+                },
+    "admin":  {
+                  "dashboardTitle":  "Ikibaho cy\u0027ubuyobozi",
+                  "dashboardSubtitle":  "Gucunga ibyanditswe n\u0027ubushakashatsi",
+                  "contentTitle":  "Gucunga Ibirimo",
+                  "contentSubtitle":  "Gucunga serivisi, ibikorwa, n\u0027inyandiko z\u0027ubwoba",
+                  "analyticsTitle":  "Ubushakashatsi",
+                  "analyticsSubtitle":  "Reba ibyerekeye ubwoba n\u0027ubushakashatsi"
+              },
+    "servicesPage":  {
+                         "hero":  {
+                                      "title":  "Guhindura Ubucuruzi bwawe hamwe na",
+                                      "titleHighlight":  "Ibisubizo by\u0027ubucuruzi by\u0027ubuhanga",
+                                      "subtitle":  "Menya uburyo serivisi zacu z\u0027ubucuruzi z\u0027ubwoba zishobora gutuma ubwoba bw\u0027ubucuruzi bukura, zikemeza ukwemera, kandi zongere ubwoba bw\u0027ubucuruzi bwawe."
+                                  },
+                         "detailedServices":  {
+                                                  "title":  "Serivisi zacu",
+                                                  "titleHighlight":  "z\u0027ubwoba",
+                                                  "titleSuffix":  "",
+                                                  "subtitle":  "Ibisubizo by\u0027ubucuruzi byashyizweho ku byo ukeneye by\u0027ubwoba, kandi bituma ubwoba bw\u0027ubucuruzi bukura.",
+                                                  "services":  {
+                                                                   "accounting":  {
+                                                                                      "title":  "Kubara n\u0027ubwoba",
+                                                                                      "shortDesc":  "Gucunga amakuru y\u0027ubucuruzi n\u0027ubwoba",
+                                                                                      "description":  "Ikipe yacu y\u0027ubuhanga bwo kubara itanga serivisi z\u0027ubwoba z\u0027ubwoba zo gukomeza amakuru y\u0027ubucuruzi y\u0027ubwoba n\u0027ubwoba. Dukora ibintu byose kuva ku bikorwa by\u0027umunsi ku munsi kugeza ku raporo z\u0027ubucuruzi z\u0027ubwoba, dukemeza ukwemera ku ntego zose z\u0027ubwoba.",
+                                                                                      "features":  [
+                                                                                                       "Kubara kw\u0027amezi n\u0027amakuru y\u0027ubucuruzi",
+                                                                                                       "Gucunga amakuru y\u0027ubucuruzi n\u0027ubwoba",
+                                                                                                       "Guhuza amabanki n\u0027amakarita y\u0027ubwoba",
+                                                                                                       "Gukora amakuru y\u0027ubwoba n\u0027ubwoba",
+                                                                                                       "Raporo n\u0027ubushakashatsi bw\u0027ubucuruzi",
+                                                                                                       "Gushyiraho no gukomeza gahunda y\u0027amakuru",
+                                                                                                       "Gukurikirana no gupima ibintu",
+                                                                                                       "Gucunga ibintu by\u0027ubwoba",
+                                                                                                       "Gusuzuma no gupima ubwoba bw\u0027amafaranga",
+                                                                                                       "Gutegura no gucunga gahunda y\u0027ubwoba"
+                                                                                                   ]
+                                                                                  },
+                                                                   "audit":  {
+                                                                                 "title":  "Ubugenzuzi n\u0027ubwoba",
+                                                                                 "shortDesc":  "Gukemura amakuru y\u0027ubucuruzi n\u0027ubwoba",
+                                                                                 "description":  "Serivisi zacu z\u0027ubugenzuzi zitanga ukwemera kw\u0027ubwoba kw\u0027amakuru y\u0027ubucuruzi yawe, zikemeza ukwemera n\u0027ukwemera ku ntego z\u0027ubwoba. Dufasha gusobanukirwa ingorane kandi dongere ubwoba bw\u0027ubucuruzi bwawe.",
+                                                                                 "features":  [
+                                                                                                  "Ubugenzuzi bw\u0027amakuru y\u0027ubucuruzi",
+                                                                                                  "Gupima uko bikorwa",
+                                                                                                  "Ubugenzuzi bw\u0027ukwemera",
+                                                                                                  "Ubugenzuzi bw\u0027ubwoba",
+                                                                                                  "Ubugenzuzi bw\u0027ubwoba bw\u0027ubwoba",
+                                                                                                  "Gusuzuma no gucunga ingorane",
+                                                                                                  "Gusanga no gukumira ubwoba",
+                                                                                                  "Gusuzuma ukwemera kw\u0027ubwoba",
+                                                                                                  "Serivisi z\u0027ubwoba",
+                                                                                                  "Ubugenzuzi bw\u0027ubwoba n\u0027ubwoba"
+                                                                                              ]
+                                                                             },
+                                                                   "tax":  {
+                                                                               "title":  "Ubunyangamugayo bw\u0027umusoro",
+                                                                               "shortDesc":  "Gutezimbere umusoro n\u0027ukwemera",
+                                                                               "description":  "Abahanga bacu b\u0027umusoro batanga serivisi z\u0027ubwoba z\u0027ubwoba z\u0027umusoro n\u0027ukwemera kugira ngo dukemere umusoro wawe mugihe dukemeza ukwemera kw\u0027ubwoba ku mategeko yose y\u0027umusoro n\u0027ubwoba.",
+                                                                               "features":  [
+                                                                                                "Gutezimbere umusoro n\u0027ubwoba",
+                                                                                                "Amakuru y\u0027umusoro y\u0027ubucuruzi n\u0027abantu",
+                                                                                                "Gufasha ubugenzuzi bw\u0027umusoro",
+                                                                                                "Gutezimbere umusoro w\u0027isi yose",
+                                                                                                "Gusubiza amakuru y\u0027umusoro",
+                                                                                                "Ukwemera kw\u0027umusoro n\u0027ubwoba",
+                                                                                                "Gutanga amakuru y\u0027ubwoba",
+                                                                                                "Uburyo bwo gukoresha umusoro",
+                                                                                                "Gutezimbere ubwoba n\u0027ubwoba",
+                                                                                                "Guhuza umusoro w\u0027ubwoba"
+                                                                                            ]
+                                                                           },
+                                                                   "advisory":  {
+                                                                                    "title":  "Ubunyangamugayo bw\u0027ubucuruzi",
+                                                                                    "shortDesc":  "Ubunyangamugayo bw\u0027ubwoba n\u0027ubwoba",
+                                                                                    "description":  "Serivisi zacu z\u0027ubunyangamugayo bw\u0027ubucuruzi zifasha amashyira gukurikirana ingorane z\u0027ubwoba z\u0027ubucuruzi, zongere ubwoba, kandi zigeze ku bwoba bw\u0027ubucuruzi binyuze mu bwoba n\u0027ubwoba.",
+                                                                                    "features":  [
+                                                                                                     "Gutezimbere ubucuruzi n\u0027ubwoba",
+                                                                                                     "Gukora amashusho y\u0027ubucuruzi n\u0027ubwoba",
+                                                                                                     "Guhuza n\u0027ubwoba",
+                                                                                                     "Gupima ubucuruzi",
+                                                                                                     "Gongera ubwoba",
+                                                                                                     "Gutezimbere n\u0027ubwoba",
+                                                                                                     "Gusuzuma isoko n\u0027ubwoba",
+                                                                                                     "Gusuzuma ubwoba n\u0027ubwoba",
+                                                                                                     "Gucunga ubwoba n\u0027ubwoba",
+                                                                                                     "Ubunyangamugayo bw\u0027ubwoba n\u0027ubwoba"
+                                                                                                 ]
+                                                                                },
+                                                                   "risk":  {
+                                                                                "title":  "Gucunga ingorane",
+                                                                                "shortDesc":  "Gusobanukirwa no gukumira ingorane z\u0027ubucuruzi",
+                                                                                "description":  "Serivisi zacu z\u0027ubwoba z\u0027ingorane zifasha amashyira gusobanukirwa, gupima, no gukumira ingorane zishobora gukangiza intego z\u0027ubucuruzi n\u0027ubwoba.",
+                                                                                "features":  [
+                                                                                                 "Gupima no gusuzuma ingorane",
+                                                                                                 "Serivisi z\u0027ubugenzuzi bw\u0027ubwoba",
+                                                                                                 "Gukumira no gusanga ubwoba",
+                                                                                                 "Gukurikirana ukwemera",
+                                                                                                 "Gutezimbere ubwoba bw\u0027ubucuruzi",
+                                                                                                 "Gucunga ingorane z\u0027ubwoba",
+                                                                                                 "Gupima ingorane z\u0027ubwoba",
+                                                                                                 "Gupima ingorane z\u0027ubucuruzi",
+                                                                                                 "Amashyira y\u0027ukwemera kw\u0027ubwoba",
+                                                                                                 "Gucunga ingorane n\u0027ubwoba"
+                                                                                             ]
+                                                                            },
+                                                                   "hr":  {
+                                                                              "title":  "Serivisi z\u0027ubwoba n\u0027ubwoba",
+                                                                              "shortDesc":  "Ibisubizo by\u0027ubwoba z\u0027ubwoba n\u0027ubwoba",
+                                                                              "description":  "Serivisi zacu z\u0027ubwoba n\u0027ubwoba zifasha amashyira gucunga ibintu by\u0027ubwoba byabo - abantu babo - mugihe dukemeza ukwemera ku mategeko y\u0027ubwoba n\u0027ubwoba.",
+                                                                              "features":  [
+                                                                                               "Gukora amakuru y\u0027ubwoba",
+                                                                                               "Gutezimbere amabwiriza y\u0027ubwoba",
+                                                                                               "Gucunga amahirwe y\u0027abakazi",
+                                                                                               "Gucunga ubwoba",
+                                                                                               "Ukwemera ku mategeko y\u0027ubwoba",
+                                                                                               "Gutangira no gusohoka kw\u0027abakazi",
+                                                                                               "Gusuzuma ubwoba n\u0027amahirwe",
+                                                                                               "Gushyiraho ubwoba bw\u0027ubwoba",
+                                                                                               "Gutezimbere ubwoba n\u0027ubushakashatsi",
+                                                                                               "Ubwoba bw\u0027abakazi n\u0027ubwoba"
+                                                                                           ]
+                                                                          }
+                                                               },
+                                                  "scheduleAppointment":  "Gutegura umunsi",
+                                                  "needCustomSolution":  "Ukeneye isubizo ry\u0027ubwoba? Abahanga bacu barimo gufasha.",
+                                                  "getFreeConsultation":  "Gupata Ubunyangamugayo bwa Mahirwe"
+                                              },
+                         "process":  {
+                                         "title":  "Uburyo bwacu",
+                                         "titleHighlight":  "bw\u0027ubwoba",
+                                         "titleSuffix":  "",
+                                         "subtitle":  "Uburyo bwo gukora bwo gutanga serivisi z\u0027ubucuruzi z\u0027ubwoba zashyizweho ku byo ukeneye by\u0027ubwoba.",
+                                         "steps":  [
+                                                       {
+                                                           "title":  "Gusanga n\u0027Ubushakashatsi",
+                                                           "description":  "Dutangira no gusobanukirwa ibyo ukeneye by\u0027ubucuruzi, ingorane, n\u0027intego binyuze mu makuru n\u0027ubushakashatsi bw\u0027ubwoba.",
+                                                           "duration":  "Icyumweru 1-2",
+                                                           "keyPoints":  [
+                                                                             "Ubunyangamugayo bw\u0027ubwoba",
+                                                                             "Gupima ubucuruzi",
+                                                                             "Gusoroma ibyo ukeneye",
+                                                                             "Gusobanura ubwoba"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Gutanga n\u0027Ubwoba",
+                                                           "description":  "Dutezimbere gahunda y\u0027ubwoba y\u0027ubwoba n\u0027intego z\u0027ubwoba, amahitamo y\u0027igihe, n\u0027ibyo dushyiraho byashyizweho ku byo ukeneye.",
+                                                           "duration":  "Iminsi 3-5",
+                                                           "keyPoints":  [
+                                                                             "Gahunda y\u0027ubwoba y\u0027ubwoba",
+                                                                             "Ubwoba bw\u0027ubwoba",
+                                                                             "Kwemera amahitamo y\u0027igihe",
+                                                                             "Gutanga ikipe"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Gutangira Ikipe",
+                                                           "description":  "Ikipe yacu y\u0027ubuhanga itangwa ku bwoba bwawe, ikemeza ubuhanga n\u0027ubuhanga bwo gukora ku byo ukeneye by\u0027ubwoba.",
+                                                           "duration":  "Iminsi 2-3",
+                                                           "keyPoints":  [
+                                                                             "Umucunga w\u0027amakuru w\u0027ubwoba",
+                                                                             "Gutangira ikipe",
+                                                                             "Kwinjira mu bikoresho",
+                                                                             "Gushyiraho ubwoba"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Gukora",
+                                                           "description":  "Dukora serivisi zemewe n\u0027ubwoba, dukomeza ubwoba ku buryo bwo gukora.",
+                                                           "duration":  "Bishimishijwe n\u0027ubwoba",
+                                                           "keyPoints":  [
+                                                                             "Amakuru y\u0027ubwoba y\u0027ubwoba",
+                                                                             "Kwemeza ubwoba",
+                                                                             "Gusubiza ikibazo",
+                                                                             "Gusuzuma ibintu by\u0027ubwoba"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Gusuzuma n\u0027Ubwoba",
+                                                           "description":  "Dutanga raporo n\u0027ubushakashatsi bw\u0027ubwoba, dukemeza ubwoba bw\u0027ubwoba n\u0027ukwemera kw\u0027ibisubizo.",
+                                                           "duration":  "Icyumweru 1",
+                                                           "keyPoints":  [
+                                                                             "Ibipimo by\u0027ubwoba",
+                                                                             "Raporo z\u0027ubucuruzi",
+                                                                             "Gusuzuma ukwemera",
+                                                                             "Amabwiriza"
+                                                                         ]
+                                                       },
+                                                       {
+                                                           "title":  "Gufasha ku Bwoba",
+                                                           "description":  "Ubwoba bwacu bukomeza hamwe n\u0027ubwoba bw\u0027ubwoba, gusuzuma by\u0027ubwoba, n\u0027ubunyangamugayo bw\u0027ubwoba bw\u0027ubwoba.",
+                                                           "duration":  "Ku Bwoba",
+                                                           "keyPoints":  [
+                                                                             "Gufasha bw\u0027ubwoba",
+                                                                             "Gusuzuma by\u0027ubwoba",
+                                                                             "Amabwiriza y\u0027ubwoba",
+                                                                             "Gukoresha serivisi"
+                                                                         ]
+                                                       }
+                                                   ],
+                                         "readyToGetStarted":  "Witeguye gutangira?",
+                                         "readyDescription":  "Ikipe yacu y\u0027abahanga iteguye kuyobora binyuze mu buryo bwacu kandi gutanga serivisi z\u0027ubucuruzi z\u0027ubwoba ku bwoba bwawe.",
+                                         "getFreeConsultation":  "Gupata Ubunyangamugayo bwa Mahirwe",
+                                         "exploreServices":  "Gusura Serivisi zacu"
+                                     },
+                         "pricing":  {
+                                         "title":  "Ubwoba",
+                                         "titleHighlight":  "bw\u0027ubwoba n\u0027ubwoba",
+                                         "titleSuffix":  "",
+                                         "subtitle":  "Hitamo gahunda y\u0027ubwoba ku byo ukeneye by\u0027ubwoba. Nta mafaranga y\u0027ubwoba, kuraho igihe icyo ari cyo cyose.",
+                                         "monthlyBilling":  "Kwishyura ku Kwezi",
+                                         "annualBilling":  "Kwishyura ku Mwaka",
+                                         "saveUpTo":  "(Bika kugeza 20%)",
+                                         "plans":  {
+                                                       "starter":  {
+                                                                       "name":  "Gutangira",
+                                                                       "description":  "By\u0027ubwoba ku bikoresho bito bitangira",
+                                                                       "features":  [
+                                                                                        "Kubara kw\u0027ubwoba",
+                                                                                        "Raporo z\u0027ubucuruzi z\u0027amezi",
+                                                                                        "Gupima umusoro kw\u0027amezi atatu",
+                                                                                        "Gufasha ku butumwa",
+                                                                                        "Kugeza ku bikorwa 50/ukwezi",
+                                                                                        "Ikibaho cy\u0027ubucuruzi cy\u0027ubwoba"
+                                                                                    ],
+                                                                       "notIncluded":  [
+                                                                                           "Gufasha ubugenzuzi",
+                                                                                           "Umucunga w\u0027amakuru w\u0027ubwoba",
+                                                                                           "Raporo z\u0027ubwoba",
+                                                                                           "Gutanga umusoro",
+                                                                                           "Gucunga ibintu"
+                                                                                       ],
+                                                                       "buttonText":  "Tangira"
+                                                                   },
+                                                       "professional":  {
+                                                                            "name":  "Ubuhanga",
+                                                                            "description":  "By\u0027ubwoba ku bikoresho bikura",
+                                                                            "features":  [
+                                                                                             "Ibyose mu Gutangira",
+                                                                                             "Kubara kw\u0027ubwoba",
+                                                                                             "Raporo z\u0027ubucuruzi z\u0027ibyumweru",
+                                                                                             "Gupima umusoro kw\u0027amezi",
+                                                                                             "Gufasha bw\u0027ubwoba ku butumwa n\u0027urugendo",
+                                                                                             "Kugeza ku bikorwa 200/ukwezi",
+                                                                                             "Ikibaho cy\u0027ubucuruzi cy\u0027ubwoba",
+                                                                                             "Gutanga umusoro kw\u0027ubwoba",
+                                                                                             "Gukurikirana ibintu"
+                                                                                         ],
+                                                                            "notIncluded":  [
+                                                                                                "Gufasha ubugenzuzi",
+                                                                                                "Umucunga w\u0027amakuru w\u0027ubwoba",
+                                                                                                "Raporo z\u0027ubwoba",
+                                                                                                "Gutezimbere umusoro kw\u0027ubwoba"
+                                                                                            ],
+                                                                            "buttonText":  "Tangira"
+                                                                        },
+                                                       "enterprise":  {
+                                                                          "name":  "Ubwoba",
+                                                                          "description":  "Ku bikoresho by\u0027ubwoba n\u0027ibyo ukeneye by\u0027ubwoba",
+                                                                          "features":  [
+                                                                                           "Ibyose mu Ubuhanga",
+                                                                                           "Kubara kw\u0027ubwoba",
+                                                                                           "Raporo z\u0027ubucuruzi z\u0027ubwoba",
+                                                                                           "Umucunga w\u0027amakuru w\u0027ubwoba",
+                                                                                           "Gufasha bw\u0027ubwoba 24/7",
+                                                                                           "Bikorwa by\u0027ubwoba",
+                                                                                           "Gutezimbere umusoro kw\u0027ubwoba",
+                                                                                           "Gufasha ubugenzuzi",
+                                                                                           "Guhuza by\u0027ubwoba",
+                                                                                           "Gutegura inama y\u0027ubwoba",
+                                                                                           "Serivisi z\u0027ubunyangamugayo bw\u0027ubwoba"
+                                                                                       ],
+                                                                          "notIncluded":  [
+
+                                                                                          ],
+                                                                          "buttonText":  "Kwandikira Ubwoba"
+                                                                      }
+                                                   },
+                                         "whatsIncluded":  "Ibyo bihari:",
+                                         "notIncluded":  "Ntibihari:",
+                                         "billedAnnually":  "Bishyurwa ku mwaka",
+                                         "orBilledAnnually":  "cyangwa ${{annualPrice}} bishyurwa ku mwaka",
+                                         "save":  "Bika {{percentage}}%",
+                                         "needCustomSolution":  "Ukeneye isubizo ry\u0027ubwoba? Dutanga amapaki y\u0027ubwoba ku bikoresho n\u0027ibyo ukeneye by\u0027ubwoba.",
+                                         "getCustomQuote":  "Gupata Icyemezo cy\u0027ubwoba",
+                                         "notSureWhichPlan":  "Ntutazi gahunda y\u0027ubwoba yawe?",
+                                         "expertsHelp":  "Abahanga bacu barimo gufasha hitamo isubizo ry\u0027ubwoba ku byo ukeneye by\u0027ubwoba. Gutegura ubunyangamugayo bwa mahirwe bwa minota 30 kugira ngo dusuzume ibyo ukeneye.",
+                                         "scheduleFreeConsultation":  "Gutegura Ubunyangamugayo bwa Mahirwe"
+                                     }
+                     },
+    "aboutPage":  {
+                      "hero":  {
+                                   "title":  "Ibyerekeye EXCI-MAA",
+                                   "subtitle":  "Umufatanyabikorwa wawe w\u0027ubucuruzi wizewe",
+                                   "description":  "Hamwe n\u0027imyaka irenga 27 y\u0027ubwoba mu serivisi z\u0027ubucuruzi, EXCI-MAA yabaye umufatanyabikorwa wizewe ku bikoresho mu mahanga menshi, itanga serivisi z\u0027ubuhanga mu kubara, ubugenzuzi, n\u0027ubunyangamugayo.",
+                                   "getInTouch":  "Kwandikira",
+                                   "ourServices":  "Serivisi zacu",
+                                   "trustedByBusinesses":  "Wizewe n\u0027ibikoresho ku isi yose",
+                                   "stats":  {
+                                                 "yearsExperience":  "Imyaka y\u0027uburambe",
+                                                 "countriesServed":  "Ibihugu vyakorewe",
+                                                 "teamMembers":  "Abarongozi b\u0027ikipe",
+                                                 "clientSatisfaction":  "Kunyurwa kw\u0027abakiriya",
+                                                 "clientsServed":  "Abakiriya Bakorewe",
+                                                 "successRate":  "Urugero rw\u0027intsinzi"
+                                             }
+                               },
+                      "mission":  {
+                                      "title":  "Intego yacu",
+                                      "description1":  "Intego yacu nyamukuru ni ugufasha no kuyobora ibikoresho bikora mu isoko ry\u0027Abanyafurika kugera ku bwoba bw\u0027ubucuruzi. Dukoresha ubumenyi buhagije bw\u0027ibice byose by\u0027ubucuruzi n\u0027ibitarabucuruzi, dutanga ubunyangamugayo, ubugenzuzi bw\u0027amategeko, n\u0027ubunyangamugayo bwashyizweho ku bwoba bw\u0027ikigo cyose.",
+                                      "description2":  "Ibisubizo byacu byashyizweho gukemura ibyifuza by\u0027ibikoresho ku gace kose ka Afurika, dutanga serivisi yose n\u0027akamaro k\u0027ukuri—ku giciro cy\u0027ubwoba. Ikipe yacu ifite ubuhanga bwinshi n\u0027amaofisi bw\u0027isi yose ihamya gufasha bwashyizweho, byashyizweho ku bwoba n\u0027ubushobozi bw\u0027ubwoba bwawe."
+                                  },
+                      "story":  {
+                                    "title":  "Inkuru yacu",
+                                    "description1":  "EXCI-MAA yashinzwe n\u0027abahanga mu bugenzuzi, kubara, umusoro, ubwoba bw\u0027ubucuruzi, sisitemu y\u0027amakuru y\u0027ubuyobozi, n\u0027amategeko. Hamwe n\u0027ubwoba mu Kanada, Leta Zunze Ubumwe z\u0027Amerika, Ubufaransa, Ubwongereza, n\u0027Afurika yose, duhana ubuhanga bw\u0027isi bwashyizweho ku bwoba bw\u0027umuturage wose.",
+                                    "description2":  "Dukora ku murongo wose w\u0027akamaro k\u0027ibikorwa by\u0027abakiriya bacu, dukomeza ubwoba n\u0027ukwemera n\u0027abafatanyabikorwa. Ikigo cyacu kiyobora amashyira mu mahanga menshi binyuze mu murongo ukomeye n\u0027amatsinda ku butaka, atanga serivisi y\u0027ubwoba n\u0027ibisubizo byashyizweho ku nyacyo z\u0027umuturage.",
+                                    "description3":  "Uyu munsi, dukomeza kwongera ubwoba bwacu mugihe dukomeza kwizera ku ntego zacu z\u0027ubwoba: ubwoba, kwemera, n\u0027ingaruka. Kuva ku bugenzuzi bw\u0027amategeko n\u0027ibyemezo kugeza ku kuyobora ingorane n\u0027ubunyangamugayo bwashyizweho, amatsinda yacu atanga imirimo ikomeye n\u0027ikora itanga ibisubizo bikomeye.",
+                                    "whatWeDo":  "Icyo dukora",
+                                    "services":  [
+                                                     "Gufasha ku bwoba bw\u0027ubwoba, guhuza, gukora cyangwa guhindura",
+                                                     "Ubugenzuzi bw\u0027amategeko cyangwa bw\u0027ibyemezo",
+                                                     "Ubuhanga bwo kubara",
+                                                     "Gusuzuma uko bikorwa n\u0027ukuyobora ingorane",
+                                                     "Ubugenzuzi bw\u0027umutungo w\u0027amavuta",
+                                                     "Ubunyangamugayo bwashyizweho ku bikoresho n\u0027ibikoresho bito n\u0027ibyagutse"
+                                                 ]
+                                },
+                      "history":  {
+                                      "title":  "Urugendo rwacu",
+                                      "subtitle":  "Imyaka irenga 20 y\u0027ubwoba mu serivisi z\u0027ubucuruzi",
+                                      "timeline":  [
+                                                       {
+                                                           "year":  "1996",
+                                                           "title":  "Gushyiraho EXCI-MAA",
+                                                           "description":  "Yashyizweho mu Yaoundé, Kameruni, hamwe n\u0027intego yo gutanga serivisi z\u0027ubwoba z\u0027ubucuruzi n\u0027ubucuruzi ku bikoresho by\u0027umuturage."
+                                                       },
+                                                       {
+                                                           "year":  "2002",
+                                                           "title":  "Kwongera ku gace",
+                                                           "description":  "Serivisi zongerewe gufasha Afurika yo hagati, zashyiraho amabiro mu nkengero z\u0027ubucuruzi z\u0027ingenzi ku gace."
+                                                       },
+                                                       {
+                                                           "year":  "2010",
+                                                           "title":  "Kwemera ku isi yose",
+                                                           "description":  "Bahabwe kwemera ku isi yose ku bwoba bw\u0027ubwoba mu serivisi z\u0027ubucuruzi n\u0027ubwoba bw\u0027ukwemera."
+                                                       },
+                                                       {
+                                                           "year":  "2015",
+                                                           "title":  "Guhindura ikoranabuhanga",
+                                                           "description":  "Byashyizweho ubuhanga bw\u0027ubucuruzi bw\u0027ubwoba bwo gufasha serivisi n\u0027ubwoba bw\u0027abakiriya."
+                                                       },
+                                                       {
+                                                           "year":  "2020",
+                                                           "title":  "Ofisi dufite ku isi yose",
+                                                           "description":  "Byashyizweho ubufatanyabikorwa n\u0027amashyira y\u0027isi yose, serivisi zongerewe ku bakiriya mu mahanga 6+."
+                                                       },
+                                                       {
+                                                           "year":  "2023",
+                                                           "title":  "Ubwoba bw\u0027ikipe",
+                                                           "description":  "Ikipe yacu yongereye kugeza ku bahanga 50+, byongereye ubwoba bwacu nk\u0027ikigo cy\u0027ubwoba cy\u0027ubucuruzi."
+                                                       }
+                                                   ],
+                                      "journeyContinues":  "Urugendo rwacu rukomeza mugihe dukomeza ubwoba mu serivisi yose dutanga.",
+                                      "learnMoreStory":  "Menya vyinshi ku inkuru yacu"
+                                  },
+                      "values":  {
+                                     "title":  "Ibyiringiro byacu by\u0027ingenzi",
+                                     "subtitle":  "Amabwiriza atuyobora mu kazi kacu kandi atanga umuco wacu",
+                                     "values":  [
+                                                    {
+                                                        "name":  "Ubwoba",
+                                                        "description":  "Dukomeza gutanga serivisi z\u0027ubwoba bw\u0027ubwoba, dukomeza ubwoba bwacu n\u0027uburyo bwo gufasha abakiriya."
+                                                    },
+                                                    {
+                                                        "name":  "Kwemera",
+                                                        "description":  "Dukomeza ubwoba bw\u0027ubwoba bw\u0027ubwoba, dukomeza ubwoba, kwemera, n\u0027ubwoba mu bikorwa byacu byose."
+                                                    },
+                                                    {
+                                                        "name":  "Ubwoba",
+                                                        "description":  "Dukomeza ikoranabuhanga gishya n\u0027ibisubizo by\u0027ubwoba gutanga serivisi z\u0027ubwoba zifasha abakiriya bacu."
+                                                    },
+                                                    {
+                                                        "name":  "Gutekereza ku mukiriya",
+                                                        "description":  "Dukomeza ubwoba bw\u0027ubwoba bwo gusobanukirwa ibyifuza by\u0027ubwoba by\u0027abakiriya bacu no gutanga ibisubizo bwashyizweho bitanga akamaro k\u0027ukuri."
+                                                    },
+                                                    {
+                                                        "name":  "Ubwoba",
+                                                        "description":  "Dukomeza ubwoba bw\u0027ubwoba bw\u0027ubuhanga, kwemera, n\u0027ubwoba mu byose by\u0027akazi kacu."
+                                                    },
+                                                    {
+                                                        "name":  "Ubufatanyabikorwa",
+                                                        "description":  "Dukomeza gukorana hafi n\u0027abakiriya bacu, dukora nk\u0027ubwoba bw\u0027ikipe yabo kugera ku bwoba bw\u0027ubwoba."
+                                                    }
+                                                ],
+                                     "learnMore":  "Menya vyinshi",
+                                     "learnMoreCulture":  "Menya vyinshi ku muco wacu"
+                                 },
+                      "team":  {
+                                   "title":  "Hangana n\u0027ubuyobozi bwacu",
+                                   "subtitle":  "Ikipe yacu ifite ubuhanga ihamye gutanga serivisi y\u0027ubwoba n\u0027akamaro ku bakiriya bacu.",
+                                   "members":  [
+                                                   {
+                                                       "name":  "Pierre Kemeni",
+                                                       "role":  "Umushyizwe \u0026 Umuyobozi Mukuru",
+                                                       "bio":  "MBA, CPA, DEC hamwe n\u0027imyaka irenga 27 y\u0027ubuhanga bw\u0027isi mu kubara n\u0027ubugenzuzi.",
+                                                       "expertise":  [
+                                                                         "Kubara kw\u0027isi yose",
+                                                                         "Ubugenzuzi bw\u0027ubucuruzi",
+                                                                         "Uburyo bw\u0027ubucuruzi",
+                                                                         "Ubucuruzi bw\u0027ubucuruzi"
+                                                                     ]
+                                                   },
+                                                   {
+                                                       "name":  "Patrick Ngatcha",
+                                                       "role":  "Umuyobozi Mukuru",
+                                                       "bio":  "DEC, DSCG, Master CCA, MSTCF hamwe n\u0027imyaka 13+ mu bwoba bw\u0027ubucuruzi n\u0027ubunyangamugayo bw\u0027ubucuruzi.",
+                                                       "expertise":  [
+                                                                         "Ubwoba bw\u0027ubucuruzi",
+                                                                         "Ubunyangamugayo bw\u0027ubucuruzi",
+                                                                         "Gutezimbere umusoro",
+                                                                         "Uburyo bw\u0027ubucuruzi"
+                                                                     ]
+                                                   },
+                                                   {
+                                                       "name":  "Marie Laure Ngo Bikoi",
+                                                       "role":  "Umuyobozi Mukuru w\u0027Ubugenzuzi",
+                                                       "bio":  "HEC, DSCG hamwe n\u0027imyaka 15+ y\u0027ubuhanga mu bugenzuzi n\u0027ubunyangamugayo bw\u0027ubucuruzi.",
+                                                       "expertise":  [
+                                                                         "Ubugenzuzi bw\u0027ubucuruzi",
+                                                                         "Uko bikorwa",
+                                                                         "Kuyobora ingorane",
+                                                                         "Kwemera"
+                                                                     ]
+                                                   }
+                                               ],
+                                   "expertise":  "Ubuhanga",
+                                   "viewAllMembers":  "Raba abanyamuryango bose b\u0027ikipe"
+                               },
+                      "testimonials":  {
+                                           "title":  "Ibyemezo by\u0027abakiriya",
+                                           "subtitle":  "Ibyo abakiriya bacu bavuga ku twe"
+                                       },
+                      "clients":  {
+                                      "title":  "Ibyo abakiriya bacu bavuga",
+                                      "subtitle":  "Ntukemere amagambo yacu gusa. Dore ibyo abakiriya bacu bavuga ku serivisi zacu.",
+                                      "items":  [
+                                                    {
+                                                        "name":  "John Smith",
+                                                        "role":  "Umuyobozi Mukuru",
+                                                        "company":  "ABC Corporation",
+                                                        "quote":  "EXCIMAA yadufashije cyane kunoza imikorere yacu y\u0027imari. Ubumenyi bwabo ntibugira uko bungana.",
+                                                        "rating":  5
+                                                    },
+                                                    {
+                                                        "name":  "Sarah Johnson",
+                                                        "role":  "Umuyobozi w\u0027Imari",
+                                                        "company":  "XYZ Ltd",
+                                                        "quote":  "Ababigize umwuga, b\u0027inyangamugayo kandi bahora bahari mu gihe tubakeneye. Turabashima cyane!",
+                                                        "rating":  5
+                                                    },
+                                                    {
+                                                        "name":  "Michael Brown",
+                                                        "role":  "Nyir\u0027ibikorwa",
+                                                        "company":  "123 Industries",
+                                                        "quote":  "Ikipe yabo yatugaragarije ubufasha buhebuje mu gihe twaguriraga ibikorwa hanze. Ubumenyi mpuzamahanga nyabwo.",
+                                                        "rating":  4
+                                                    }
+                                                ]
+                                  }
+                  },
+    "organizationalStructure":  {
+                                    "title":  "IGISHUSHANYO C\u0027UMUTERERERE W\u0027ISHIRAHAMWE",
+                                    "subtitle":  "Ubuyobozi bwacu n\u0027imiterere y\u0027ikipe",
+                                    "chairman":  {
+                                                     "title":  "Umufatanyabikorwa",
+                                                     "subtitle":  "Umuyobozi w\u0027Inama y\u0027Abayobozi\nUmuyobozi w\u0027iterambere",
+                                                     "description":  "Ubuyobozi bwose n\u0027uyobora bw\u0027ubwoba bw\u0027Itsinda rya EXCI-MAA."
+                                                 },
+                                    "adminPartner":  {
+                                                         "title":  "Umufatanyabikorwa, Ubuyobozi bwose, Imari \u0026 Abantu",
+                                                         "description":  "Yobora ubuyobozi, imari, n\u0027ubwoba bw\u0027abantu."
+                                                     },
+                                    "auditPartner":  {
+                                                         "title":  "Umufatanyabikorwa w\u0027Ubwoba n\u0027Ubunyangamugayo",
+                                                         "description":  "Yobora ibikorwa by\u0027ubwoba n\u0027ubunyangamugayo."
+                                                     },
+                                    "managementPartner":  {
+                                                              "title":  "Umufatanyabikorwa w\u0027Ubuyobozi n\u0027Ikigo",
+                                                              "description":  "Yobora ubuyobozi n\u0027iterambere ry\u0027ikigo."
+                                                          },
+                                    "qualityCompliance":  {
+                                                              "title":  "Umufatanyabikorwa",
+                                                              "subtitle":  "Umuyobozi w\u0027Ubwoba n\u0027Ukwemera",
+                                                              "description":  "Yemeza ubwoba bw\u0027ubwoba n\u0027ukwemera mu kigo cyose."
+                                                          },
+                                    "countryDirector":  {
+                                                            "title":  "Umuyobozi w\u0027Igihugu abacuruzi\nba Senior na Junior Auditors",
+                                                            "description":  "Yobora ibikorwa by\u0027igihugu hamwe n\u0027ikipe y\u0027abacuruzi n\u0027ubwoba."
+                                                        },
+                                    "specialists":  {
+                                                        "title":  "Abahanga n\u0027Abunyangamugayo b\u0027hanze",
+                                                        "subtitle":  "(Abaganga, Abanyamwuga, Abavoka, Abahanga mu by\u0027ubuzima, Abakuru, Abato ... ETC)",
+                                                        "description":  "Ikipe y\u0027abahanga b\u0027ubwoba bw\u0027ubunyangamugayo n\u0027abahanga b\u0027hanze."
+                                                    }
+                                },
+    "typicalOfficeOrganigram":  {
+                                    "title":  "ORGANIGRAMME Y\u0027UBWOBE BW\u0027AMABIRO",
+                                    "subtitle":  "Imiterere y\u0027ubwoba y\u0027ubwoba y\u0027ubwoba bw\u0027ubwoba",
+                                    "officeManager":  {
+                                                          "title":  "UMUYOBOZI W\u0027AMABIRO / UMUYOBOZI",
+                                                          "description":  "Ubuyobozi bwose n\u0027uyobora bw\u0027ubwoba"
+                                                      },
+                                    "audit":  {
+                                                  "title":  "UBWOBE",
+                                                  "legal":  {
+                                                                "title":  "UBWOBE",
+                                                                "services":  [
+                                                                                 "Ubwoba bw\u0027amategeko",
+                                                                                 "Ubwoba bw\u0027amafaranga y\u0027ikigo, amafaranga y\u0027ubwoba n\u0027ubwoba",
+                                                                                 "Gutandukana, guhuza n\u0027ibindi"
+                                                                             ]
+                                                            },
+                                                  "contractual":  {
+                                                                      "title":  "UBWOBE",
+                                                                      "services":  [
+                                                                                       "Ubwoba bw\u0027amashyira y\u0027ubwoba",
+                                                                                       "Amafaranga y\u0027ubwoba",
+                                                                                       "Ubwoba bw\u0027amafaranga y\u0027amavuta",
+                                                                                       "Ubwoba bw\u0027ubwoba"
+                                                                                   ]
+                                                                  }
+                                              },
+                                    "advisory":  {
+                                                     "title":  "UBUNYANGAMUGAYO",
+                                                     "taxSocial":  {
+                                                                       "title":  "UMUSORO \u0026 UBWOBE",
+                                                                       "services":  [
+                                                                                        "Ubunyangamugayo bw\u0027ubwoba: Ubwoba, Gushyiraho OHADA, Ubwoba, Ubwoba bw\u0027ubwoba",
+                                                                                        "Amategeko y\u0027umusoro: Ubwoba bw\u0027ubwoba, Ubunyangamugayo bw\u0027umusoro \u0026 Ukwemera kw\u0027umusoro, Ubwoba",
+                                                                                        "Amategeko y\u0027ubwoba: Gushakisha, Ishyirwa ry\u0027ubwoba, Gushyiraho amafaranga, Amakuru, Ubwoba"
+                                                                                    ]
+                                                                   },
+                                                     "training":  {
+                                                                      "title":  "AMAHUGURWA",
+                                                                      "services":  [
+                                                                                       "Amahugurwa",
+                                                                                       "Guhitamo ibyerekeye mu bwoba bwacu bw\u0027umwaka"
+                                                                                   ]
+                                                                  },
+                                                     "finance":  {
+                                                                     "title":  "IMARI",
+                                                                     "services":  [
+                                                                                      "Gahunda y\u0027ubwoba",
+                                                                                      "Gusuzuma ubwoba bw\u0027amafaranga",
+                                                                                      "Gupima",
+                                                                                      "Gupima"
+                                                                                  ]
+                                                                 }
+                                                 },
+                                    "management":  {
+                                                       "title":  "UBUYOBOZI",
+                                                       "accounting":  {
+                                                                          "title":  "UBUFASHA BW\u0027UBUCURUZI N\u0027UMUSORO",
+                                                                          "services":  [
+                                                                                           "Amakuru y\u0027amafaranga y\u0027umwaka cyangwa y\u0027ubwoba",
+                                                                                           "Gushyiraho ikigo cy\u0027ubucuruzi",
+                                                                                           "Porogaramu y\u0027ubuyobozi",
+                                                                                           "Gucunga amafaranga",
+                                                                                           "Gusuzuma umusoro"
+                                                                                       ]
+                                                                      },
+                                                       "facility":  {
+                                                                        "title":  "UBUYOBOZI BW\u0027AMABIRO \u0026 MYCODEBAR",
+                                                                        "services":  [
+                                                                                         "Ubuyobozi bw\u0027amabiro",
+                                                                                         "Ubuyobozi bw\u0027amafaranga bw\u0027amafaranga n\u0027amafaranga n\u0027amashushanyo y\u0027amashushanyo"
+                                                                                     ]
+                                                                    }
+                                                   }
+                                },
+    "trainingCategories":  {
+                               "accounting":  {
+                                                  "title":  "Ubucuruzi / Umusoro / Ubuyobozi",
+                                                  "courses":  [
+                                                                  "Uburyo bwo kubara no gukurikirana amakuru y\u0027ubucuruzi",
+                                                                  "Uburyo bwo gukora cyangwa gutegura raporo y\u0027umusoro n\u0027ibindi",
+                                                                  "Amabwiriza y\u0027umusoro w\u0027umusoro n\u0027ubwoba",
+                                                                  "Uburyo bwo gusuzuma no gukora ubugenzuzi bw\u0027umusoro",
+                                                                  "Ikibazo cy\u0027umusoro w\u0027umusoro mu CONGO, CAMEROON, RWANDA, BURUNDI, GABON",
+                                                                  "Shyiraho konti yawe y\u0027ubucuruzi n\u0027ubwoba bw\u0027amafaranga",
+                                                                  "Uburyo bwo gusanga ubwoba mu raporo z\u0027umusoro",
+                                                                  "Ingaruka y\u0027umusoro n\u0027umusoro ku musoro",
+                                                                  "Ubwoba hagati ya DAS, amakuru n\u0027DSF: Ikibazo cya CNSS",
+                                                                  "Gukora ubwoba bwo kubara"
+                                                              ],
+                                                  "price":  "$299",
+                                                  "duration":  "iminsi 3"
+                                              },
+                               "audit":  {
+                                             "title":  "Ubugenzuzi bw\u0027amategeko / Gucunga ubwoba",
+                                             "courses":  [
+                                                             "Ni ikihe gituma ukora ubugenzuzi bw\u0027amakuru yawe?",
+                                                             "Uburyo bwo gukora ubugenzuzi bw\u0027ubucuruzi n\u0027ubucuruzi",
+                                                             "Ni ikihe ingaruka y\u0027ubugenzuzi ku raporo y\u0027umusoro?",
+                                                             "Ubwoba n\u0027ubwoba bwo gukora ubugenzuzi bw\u0027ubwoba mu bikoresho bito, amabanki n\u0027ubwoba",
+                                                             "Ubwoba n\u0027ubwoba bwo gukora ubwoba",
+                                                             "Amakuru n\u0027ubwoba bw\u0027ubwoba",
+                                                             "Ubugenzuzi bw\u0027ubwoba (ikigo cy\u0027ubugenzuzi)",
+                                                             "Ubugenzuzi bw\u0027ubwoba – Gutezimbere n\u0027ubwoba",
+                                                             "Ubugenzuzi bw\u0027amategeko",
+                                                             "Gucunga neza ubwoba bw\u0027amafaranga, cyane cyane ubwoba",
+                                                             "Gusobanukirwa ibyifuza by\u0027amafaranga kuva ku bwoba n\u0027ubwoba",
+                                                             "Guhuza ubwoba bw\u0027abantu n\u0027ubwoba bw\u0027abakiriya",
+                                                             "Gupima sisitemu y\u0027amakuru – ICT IS",
+                                                             "Gusobanukirwa ERP, ubwoba bwabyo kandi urebe niba ubucuruzi bwawe bubakeneye",
+                                                             "Gusuzuma ibyerekeye ubwoba bw\u0027ubwoba",
+                                                             "Gusuzuma ibyerekeye ubwoba bw\u0027ubugenzuzi bw\u0027ubwoba",
+                                                             "Gusanga no gukumira ubwoba",
+                                                             "Gucunga ingorane mu bwoba bw\u0027ubwoba"
+                                                         ],
+                                             "price":  "$399",
+                                             "duration":  "iminsi 5"
+                                         },
+                               "advice":  {
+                                              "title":  "Inama",
+                                              "courses":  [
+                                                              "Ubwoba bwo gukora amakuru y\u0027ubwoba n\u0027ubwoba bw\u0027umusoro",
+                                                              "Gusobanukirwa ibyerekeye n\u0027ibyifuza by\u0027umusoro w\u0027isi yose: Igiciro cy\u0027ubwoba",
+                                                              "Gupima ibikoresho mu gace ka OHADA",
+                                                              "Gusubira gupima ubwoba: ubwoba ku bikoresho byose",
+                                                              "Ubwoba bwo guhuza, gutandukana n\u0027guhagarika mu gace ka OHADA",
+                                                              "Uburyo bwo gukora ubwoba bw\u0027amakuru mu gace ka OHADA",
+                                                              "Kwandika ubwoba bw\u0027ubucuruzi",
+                                                              "Uburyo bwo gukora ubucuruzi",
+                                                              "Guhuza – Gupata",
+                                                              "Ubugenzuzi bw\u0027amategeko, ubwoba n\u0027umusoro",
+                                                              "Gufasha mu kwandika ubwoba bwo gukora ubwoba"
+                                                          ],
+                                              "price":  "$349",
+                                              "duration":  "iminsi 4"
+                                          },
+                               "various":  {
+                                               "title":  "Ibintu bitandukanye",
+                                               "courses":  [
+                                                               "Uburyo bwo gukora n\u0027abakiriya b\u0027ubwoba",
+                                                               "Sohora ubwoba bwawe kandi uongere ubuyobozi bwawe mu bucuruzi n\u0027ibindi",
+                                                               "Ubwoba mu mabiro / Ikigo",
+                                                               "Uburyo bwo kuba Umucunga w\u0027amafaranga/Ubwoba cyangwa CFO n\u0027ubwoba",
+                                                               "Gukoresha ubucuruzi n\u0027ubwoba bwo gukora ingorane z\u0027amabanki",
+                                                               "Amategeko y\u0027ubucuruzi OHADA",
+                                                               "Umusoro w\u0027ibikoresho",
+                                                               "Gukoresha no gukora ubugenzuzi bw\u0027amabanki",
+                                                               "Ubugenzuzi bw\u0027ukwemera kw\u0027ubwoba bw\u0027ubwoba"
+                                                           ],
+                                               "price":  "$199",
+                                               "duration":  "iminsi 2"
+                                           }
+                           },
+    "organizationalChart":  {
+                                "specialistsDetails":  "(Abaganga, Injeniyeri, Abavoka, Abahanga mu mibereho, Abakuru, Abato ... IZD)",
+                                "partnerGeneral":  "Umufatanyabikorwa, Ubuyobozi Rusange, Imari na HR",
+                                "partnerAudit":  "Umufatanyabikorwa Igenzura n\u0027Ubujyanama",
+                                "partnerQuality":  "Umufatanyabikorwa Ubwiza n\u0027Ubwishingizi",
+                                "seniorJuniorAuditors":  "Abagenzuzi Bakuru n\u0027Abato",
+                                "specialists":  "Impuguke n\u0027Abajyanama bo Hanze",
+                                "chairman":  "Umuyobozi w\u0027Inama y\u0027Ubuyobozi",
+                                "title":  "ISHUSHO Y\u0027IMITERERE Y\u0027ITSINDA",
+                                "partnerManagement":  "Umufatanyabikorwa Ubuyobozi n\u0027Imiterere",
+                                "countryDirector":  "Umuyobozi w\u0027Igihugu ababaruzi"
+                            }
 }
