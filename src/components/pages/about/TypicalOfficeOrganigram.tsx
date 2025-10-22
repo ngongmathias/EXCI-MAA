@@ -109,8 +109,8 @@ const buildTypicalOrganigramData = (t: (key: string, options?: any) => any): Org
 
 // Helper component for the main blue boxes
 const OrgBox: FC<{ node: OrgNode }> = ({ node }) => {
-  let bgColor = 'bg-blue-600'; // Default for root
-  if (node.level === 'division') bgColor = 'bg-blue-500';
+  let bgColor = 'bg-blue-400'; // Default for root
+  if (node.level === 'division') bgColor = 'bg-blue-400';
   if (node.level === 'subdivision') bgColor = 'bg-blue-400';
 
   return (
@@ -163,15 +163,15 @@ const TypicalOfficeOrganigram: FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with logos and title */}
         <div className="flex justify-between items-center mb-8">
-          <div className="bg-blue-600 text-white py-2 px-6 text-center font-bold text-xl rounded-md shadow-md mx-2 flex-grow">
-            TYPICAL ORGANIGRAM OF AN OFFICE
+          <div className="bg-blue-400 text-white py-2 px-6 text-center font-bold text-xl rounded-md shadow-md mx-2 flex-grow">
+            {t('typicalOfficeOrganigram.title')}
           </div>
         </div>
 
         {/* Root: Office Manager / Director */}
         <div className="flex flex-col items-center mb-6">
-          <div className="bg-blue-600 text-white p-2 px-6 text-center font-semibold rounded-md border-2 border-blue-700 shadow-md mb-2" style={{ width: '240px' }}>
-            Office Manager / Director
+          <div className="bg-blue-400 text-white p-2 px-6 text-center font-semibold rounded-md border-2 border-blue-700 shadow-md mb-2" style={{ width: '240px' }}>
+            {typicalOrganigramData.title}
           </div>
           <VerticalLine height="h-6" />
         </div>
@@ -183,7 +183,7 @@ const TypicalOfficeOrganigram: FC = () => {
             {typicalOrganigramData.children?.map((division, index) => (
               <div key={division.id} className="flex flex-col items-center" style={{ width: '30%' }}>
                 <VerticalLine height="h-4" /> {/* Short vertical line up to horizontal */}
-                <div className="bg-blue-600 text-white p-2 px-4 text-center font-semibold rounded-md border-2 border-blue-700 shadow-md mb-4 w-full">
+                <div className="bg-blue-400 text-white p-2 px-4 text-center font-semibold rounded-md border-2 border-blue-400 shadow-md mb-4 w-full">
                   {division.title}
                 </div>
                 <VerticalLine height="h-6" /> {/* Vertical line down to subdivisions */}
@@ -192,7 +192,7 @@ const TypicalOfficeOrganigram: FC = () => {
                 <div className="grid grid-cols-1 gap-y-6 mt-2 w-full">
                   {division.children?.map((subdivision) => (
                     <div key={subdivision.id} className="flex flex-col items-center w-full">
-                      <div className="bg-blue-500 text-white p-2 text-center font-semibold rounded-md border-2 border-blue-600 shadow-md w-full mb-1">
+                      <div className="bg-blue-400 text-white p-2 text-center font-semibold rounded-md border-2 border-blue-400 shadow-md w-full mb-1">
                         {subdivision.title}
                       </div>
                       {subdivision.services && (
