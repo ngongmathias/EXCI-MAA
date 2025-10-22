@@ -6,6 +6,7 @@ import Analytics from '../components/admin/Analytics';
 import CareersAdmin from '../components/admin/CareersAdmin';
 import ContactSubmissions from '../components/admin/ContactSubmissions';
 import ConsultationRequests from '../components/admin/ConsultationRequests';
+import BackgroundImageManager from '../components/admin/BackgroundImageManager';
 import AdminLayout from '../components/admin/AdminLayout';
 
 const AdminPage: React.FC = () => {
@@ -17,6 +18,7 @@ const AdminPage: React.FC = () => {
             <>
               {active === 'dashboard' && <Dashboard />}
               {active === 'careers' && <CareersAdmin />}
+              {active === 'backgrounds' && <BackgroundImageManager />}
               {active === 'services' && <ContentManager active="services" />}
               {active === 'events' && <ContentManager active="events" />}
               {active === 'posts' && <ContentManager active="posts" />}

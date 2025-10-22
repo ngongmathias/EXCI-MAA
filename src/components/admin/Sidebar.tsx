@@ -23,6 +23,7 @@ import {
   Security as SecurityIcon,
   Assessment as ReportsIcon,
   TrendingUp as TrendingIcon,
+  Wallpaper as BackgroundIcon,
 } from '@mui/icons-material';
 
 type SidebarProps = {
@@ -36,6 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) =>
   const mainItems = [
     { key: 'dashboard', label: 'Dashboard', icon: <DashboardIcon /> },
     { key: 'careers', label: 'Careers', icon: <ServicesIcon /> },
+    { key: 'backgrounds', label: 'Background Images', icon: <BackgroundIcon /> },
     // { key: 'services', label: 'Services', icon: <ServicesIcon /> },
     { key: 'events', label: 'Events', icon: <EventsIcon /> },
     { key: 'posts', label: 'Blog Posts', icon: <PostsIcon /> },

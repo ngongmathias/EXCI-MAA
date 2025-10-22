@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart2, Shield, Users, Globe } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import MotionInView from '../../enhanced/MotionInView';
+import BackgroundSlideshow from '../../common/BackgroundSlideshow';
 
 const features = (t: (k: string) => string) => [
   {
@@ -55,13 +56,14 @@ const Hero: FC = () => {
   
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-white py-16 lg:py-28">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-20 right-20 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-      </div>
+    <BackgroundSlideshow className="min-h-[90vh]">
+      <section className="relative py-16 lg:py-28">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/10 rounded-full mix-blend-overlay filter blur-xl animate-blob"></div>
+          <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-20 right-20 w-64 h-64 bg-white/10 rounded-full mix-blend-overlay filter blur-xl animate-blob animation-delay-4000"></div>
+        </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -69,22 +71,22 @@ const Hero: FC = () => {
           <div className="space-y-8 z-10">
             <MotionInView>
               <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+              <div className="inline-block px-4 py-2 bg-white/90 backdrop-blur-sm text-blue-800 rounded-full text-sm font-medium shadow-lg">
                 {t('offices.subtitle')}
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-2xl">
                 <span className="block">{t('hero.title')}</span>
-                <span className={`inline-block mt-2 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
+                <span className={`inline-block mt-2 bg-gradient-to-r from-blue-200 to-blue-100 bg-clip-text text-transparent transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
                   {heroTexts(t)[currentText]}
                 </span>
               </h1>
               
-              <p className="text-xl text-blue-600 font-semibold">
+              <p className="text-xl text-blue-100 font-semibold drop-shadow-lg">
                 {t('hero.subtitle')}
               </p>
               
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed drop-shadow-lg">
                 {t('hero.description')}
               </p>
               </div>
@@ -94,7 +96,7 @@ const Hero: FC = () => {
             <div className="grid grid-cols-2 gap-4">
               {features(t).map((feature, index) => (
                 <MotionInView key={index} delay={index * 0.05}>
-                  <div className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-start space-x-3 p-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                     <div className="p-2 bg-blue-50 rounded-lg text-blue-600">
                       {feature.icon}
                     </div>
@@ -112,14 +114,14 @@ const Hero: FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
                 to="/contact"
-                className="btn-primary group inline-flex items-center justify-center space-x-2 px-6 py-3 text-base font-medium rounded-lg shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+                className="btn-primary group inline-flex items-center justify-center space-x-2 px-6 py-3 text-base font-medium rounded-lg shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 hover:shadow-xl"
               >
                 <span>{t('hero.cta2')}</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/services"
-                className="btn-secondary inline-flex items-center justify-center"
+                className="btn-secondary inline-flex items-center justify-center bg-white/90 backdrop-blur-sm text-blue-600 hover:bg-white shadow-lg hover:shadow-xl"
               >
                 {t('services.viewAll')}
                   </Link>
@@ -184,9 +186,10 @@ const Hero: FC = () => {
       </div>
 
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+      <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
     </section>
+    </BackgroundSlideshow>
   );
 };
 
