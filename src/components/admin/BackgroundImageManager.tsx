@@ -11,25 +11,23 @@ import {
   DialogActions,
   TextField,
   Switch,
-  FormControlLabel,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
   Alert,
-  Grid,
-  Card,
-  CardMedia,
-  CardContent,
-  CardActions,
-  Tooltip,
   Chip,
+  Avatar,
 } from '@mui/material';
 import {
   CloudUpload as UploadIcon,
   Delete as DeleteIcon,
   Edit as EditIcon,
-  Visibility as ViewIcon,
-  VisibilityOff as VisibilityOffIcon,
-  Image as ImageIcon,
+  ArrowUpward as ArrowUpIcon,
+  ArrowDownward as ArrowDownIcon,
   Add as AddIcon,
-  Close as CloseIcon,
 } from '@mui/icons-material';
 import {
   getBackgroundImages,
@@ -40,34 +38,42 @@ import {
   toggleBackgroundImageStatus,
 } from '../../services/backgroundImageService';
 
+interface BackgroundImage {
+  id: string;
+  image_url: string;
+  title: string | null;
+  description: string | null;
+  display_order: number;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
 const BackgroundImageManager = () => {
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState<BackgroundImage[]>([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(null);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
   
   // Dialog states
   const [uploadDialogOpen, setUploadDialogOpen] = useState(false);
-  const [editDialogOpen, setEditDialogOpen] = useState(false);
-  const [viewDialogOpen, setViewDialogOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
   
   // Form states
-  const [selectedFiles, setSelectedFiles] = useState([]);
-  const [previewUrls, setPreviewUrls] = useState([]);
-  const [formData, setFormData] = useState({
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [previewUrls, setPreviewUrls] = useState<string[]>([]);
+  const [uploadFormData, setUploadFormData] = useState({
     title: '',
     description: '',
-    displayOrder: 0,
-    isActive: true,
   });
 
-  // Load images on mount
+  // Inline edit states
+  const [editValues, setEditValues] = useState<{[key: string]: {title: string, description: string}}>({});
+
   useEffect(() => {
     loadImages();
   }, []);
 
-  // Cleanup preview URLs
   useEffect(() => {
     return () => {
       previewUrls.forEach(url => URL.revokeObjectURL(url));
@@ -78,8 +84,18 @@ const BackgroundImageManager = () => {
     setLoading(true);
     setError(null);
     try {
-      const data = await getBackgroundImages(false); // Get all images
+      const data = await getBackgroundImages(false);
       setImages(data);
+      
+      // Initialize edit values
+      const initialEditValues: {[key: string]: {title: string, description: string}} = {};
+      data.forEach((img: BackgroundImage) => {
+        initialEditValues[img.id] = {
+          title: img.title || '',
+          description: img.description || ''
+        };
+      });
+      setEditValues(initialEditValues);
     } catch (err) {
       setError('Failed to load background images');
       console.error(err);
@@ -94,7 +110,6 @@ const BackgroundImageManager = () => {
 
     const fileArray = Array.from(files);
     
-    // Validate files
     const validFiles = fileArray.filter((file: File) => {
       if (!file.type.startsWith('image/')) {
         setError('Please select only image files');
@@ -109,7 +124,6 @@ const BackgroundImageManager = () => {
 
     if (validFiles.length > 0) {
       setSelectedFiles(validFiles);
-      // Create preview URLs
       const urls = validFiles.map((file: File) => URL.createObjectURL(file));
       setPreviewUrls(urls);
       setError(null);
@@ -126,18 +140,16 @@ const BackgroundImageManager = () => {
     setError(null);
 
     try {
-      // Upload files to storage
       const uploadResults = await uploadBackgroundImages(selectedFiles);
       
-      // Add each image to database
       await Promise.all(
         uploadResults.map((result, index) =>
           addBackgroundImage({
             url: result.url,
-            title: formData.title || `Background ${images.length + index + 1}`,
-            description: formData.description,
+            title: uploadFormData.title || `Background ${images.length + index + 1}`,
+            description: uploadFormData.description,
             displayOrder: images.length + index,
-            isActive: formData.isActive,
+            isActive: true,
             createdBy: 'admin',
           })
         )
@@ -146,7 +158,7 @@ const BackgroundImageManager = () => {
       setSuccess(`Successfully uploaded ${uploadResults.length} image(s)`);
       handleCloseUploadDialog();
       loadImages();
-    } catch (err) {
+    } catch (err: any) {
       setError('Failed to upload images: ' + err.message);
       console.error(err);
     } finally {
@@ -154,35 +166,24 @@ const BackgroundImageManager = () => {
     }
   };
 
-  const handleEdit = (image) => {
-    setSelectedImage(image);
-    setFormData({
-      title: image.title || '',
-      description: image.description || '',
-      displayOrder: image.display_order || 0,
-      isActive: image.is_active,
-    });
-    setEditDialogOpen(true);
+  const handleStartEdit = (imageId: string) => {
+    setEditingId(imageId);
   };
 
-  const handleUpdate = async () => {
-    if (!selectedImage) return;
-
+  const handleSaveEdit = async (image: BackgroundImage) => {
     setLoading(true);
     setError(null);
 
     try {
-      await updateBackgroundImage(selectedImage.id, {
-        title: formData.title,
-        description: formData.description,
-        display_order: formData.displayOrder,
-        is_active: formData.isActive,
+      await updateBackgroundImage(image.id, {
+        title: editValues[image.id]?.title || '',
+        description: editValues[image.id]?.description || '',
       });
 
       setSuccess('Background image updated successfully');
-      handleCloseEditDialog();
+      setEditingId(null);
       loadImages();
-    } catch (err) {
+    } catch (err: any) {
       setError('Failed to update image: ' + err.message);
       console.error(err);
     } finally {
@@ -190,7 +191,21 @@ const BackgroundImageManager = () => {
     }
   };
 
-  const handleDelete = async (image) => {
+  const handleCancelEdit = (imageId: string) => {
+    const image = images.find(img => img.id === imageId);
+    if (image) {
+      setEditValues({
+        ...editValues,
+        [imageId]: {
+          title: image.title || '',
+          description: image.description || ''
+        }
+      });
+    }
+    setEditingId(null);
+  };
+
+  const handleDelete = async (image: BackgroundImage) => {
     if (!window.confirm('Are you sure you want to delete this background image?')) {
       return;
     }
@@ -202,7 +217,7 @@ const BackgroundImageManager = () => {
       await deleteBackgroundImage(image.id, image.image_url);
       setSuccess('Background image deleted successfully');
       loadImages();
-    } catch (err) {
+    } catch (err: any) {
       setError('Failed to delete image: ' + err.message);
       console.error(err);
     } finally {
@@ -210,7 +225,7 @@ const BackgroundImageManager = () => {
     }
   };
 
-  const handleToggleStatus = async (image) => {
+  const handleToggleStatus = async (image: BackgroundImage) => {
     setLoading(true);
     setError(null);
 
@@ -218,7 +233,7 @@ const BackgroundImageManager = () => {
       await toggleBackgroundImageStatus(image.id, !image.is_active);
       setSuccess(`Image ${!image.is_active ? 'activated' : 'deactivated'} successfully`);
       loadImages();
-    } catch (err) {
+    } catch (err: any) {
       setError('Failed to toggle status: ' + err.message);
       console.error(err);
     } finally {
@@ -226,9 +241,40 @@ const BackgroundImageManager = () => {
     }
   };
 
-  const handleView = (image) => {
-    setSelectedImage(image);
-    setViewDialogOpen(true);
+  const handleMoveUp = async (image: BackgroundImage, index: number) => {
+    if (index === 0) return;
+    
+    const newImages = [...images];
+    [newImages[index - 1], newImages[index]] = [newImages[index], newImages[index - 1]];
+    
+    setImages(newImages);
+    
+    try {
+      await updateBackgroundImage(image.id, { display_order: index - 1 });
+      await updateBackgroundImage(newImages[index].id, { display_order: index });
+      setSuccess('Order updated successfully');
+    } catch (err: any) {
+      setError('Failed to reorder: ' + err.message);
+      loadImages();
+    }
+  };
+
+  const handleMoveDown = async (image: BackgroundImage, index: number) => {
+    if (index === images.length - 1) return;
+    
+    const newImages = [...images];
+    [newImages[index], newImages[index + 1]] = [newImages[index + 1], newImages[index]];
+    
+    setImages(newImages);
+    
+    try {
+      await updateBackgroundImage(image.id, { display_order: index + 1 });
+      await updateBackgroundImage(newImages[index].id, { display_order: index });
+      setSuccess('Order updated successfully');
+    } catch (err: any) {
+      setError('Failed to reorder: ' + err.message);
+      loadImages();
+    }
   };
 
   const handleCloseUploadDialog = () => {
@@ -236,18 +282,7 @@ const BackgroundImageManager = () => {
     setSelectedFiles([]);
     previewUrls.forEach(url => URL.revokeObjectURL(url));
     setPreviewUrls([]);
-    setFormData({ title: '', description: '', displayOrder: 0, isActive: true });
-  };
-
-  const handleCloseEditDialog = () => {
-    setEditDialogOpen(false);
-    setSelectedImage(null);
-    setFormData({ title: '', description: '', displayOrder: 0, isActive: true });
-  };
-
-  const handleCloseViewDialog = () => {
-    setViewDialogOpen(false);
-    setSelectedImage(null);
+    setUploadFormData({ title: '', description: '' });
   };
 
   const clearSelectedFiles = () => {
@@ -259,9 +294,9 @@ const BackgroundImageManager = () => {
   return (
     <Box>
       {/* Header */}
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-        <Typography variant="h4" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
-          Background Images
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="h5" sx={{ fontWeight: 'bold', color: 'text.primary', mb: 3 }}>
+          Slideshow Images ({images.length})
         </Typography>
         <Button
           variant="contained"
@@ -269,7 +304,7 @@ const BackgroundImageManager = () => {
           onClick={() => setUploadDialogOpen(true)}
           sx={{ borderRadius: 2 }}
         >
-          Upload Images
+          Upload New Image
         </Button>
       </Box>
 
@@ -285,85 +320,168 @@ const BackgroundImageManager = () => {
         </Alert>
       )}
 
-      {/* Image Grid */}
-      {loading && images.length === 0 ? (
-        <Typography>Loading...</Typography>
-      ) : (
-        <Grid container spacing={3}>
-          {images.map((image: any) => (
-            <Grid xs={12} sm={6} md={4} lg={3} key={image.id}>
-              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <CardMedia
-                  component="img"
-                  height="200"
-                  image={image.image_url}
-                  alt={image.title}
-                  sx={{ objectFit: 'cover' }}
-                />
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
-                    <Typography variant="h6" component="div" noWrap>
-                      {image.title || 'Untitled'}
-                    </Typography>
-                    <Chip
-                      label={image.is_active ? 'Active' : 'Inactive'}
-                      color={image.is_active ? 'success' : 'default'}
-                      size="small"
+      {/* Table */}
+      <TableContainer component={Paper} sx={{ borderRadius: 2 }}>
+        <Table>
+          <TableHead>
+            <TableRow sx={{ bgcolor: 'grey.50' }}>
+              <TableCell>Image</TableCell>
+              <TableCell>Title</TableCell>
+              <TableCell>Status</TableCell>
+              <TableCell>Sort Order</TableCell>
+              <TableCell>Created</TableCell>
+              <TableCell>Actions</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {images.length === 0 ? (
+              <TableRow>
+                <TableCell colSpan={6} align="center" sx={{ py: 4 }}>
+                  <Typography color="text.secondary">
+                    No background images yet. Upload your first image to get started.
+                  </Typography>
+                </TableCell>
+              </TableRow>
+            ) : (
+              images.map((image, index) => (
+                <TableRow key={image.id} hover>
+                  <TableCell>
+                    <Avatar
+                      src={image.image_url}
+                      variant="rounded"
+                      sx={{ width: 60, height: 60, cursor: 'pointer' }}
+                      onClick={() => window.open(image.image_url, '_blank')}
                     />
-                  </Box>
-                  <Typography variant="body2" color="text.secondary" noWrap>
-                    {image.description || 'No description'}
-                  </Typography>
-                  <Typography variant="caption" color="text.secondary" display="block" sx={{ mt: 1 }}>
-                    Order: {image.display_order}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Tooltip title="View">
-                    <IconButton size="small" onClick={() => handleView(image)}>
-                      <ViewIcon />
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title="Edit">
-                    <IconButton size="small" onClick={() => handleEdit(image)}>
-                      <EditIcon />
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title={image.is_active ? 'Deactivate' : 'Activate'}>
-                    <IconButton size="small" onClick={() => handleToggleStatus(image)}>
-                      {image.is_active ? <VisibilityOffIcon /> : <ViewIcon />}
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title="Delete">
-                    <IconButton size="small" color="error" onClick={() => handleDelete(image)}>
-                      <DeleteIcon />
-                    </IconButton>
-                  </Tooltip>
-                </CardActions>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      )}
-
-      {images.length === 0 && !loading && (
-        <Paper sx={{ p: 4, textAlign: 'center' }}>
-          <ImageIcon sx={{ fontSize: 64, color: 'text.secondary', mb: 2 }} />
-          <Typography variant="h6" color="text.secondary">
-            No background images yet
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-            Upload your first background image to get started
-          </Typography>
-          <Button
-            variant="contained"
-            startIcon={<UploadIcon />}
-            onClick={() => setUploadDialogOpen(true)}
-          >
-            Upload Images
-          </Button>
-        </Paper>
-      )}
+                  </TableCell>
+                  <TableCell>
+                    {editingId === image.id ? (
+                      <Box>
+                        <TextField
+                          size="small"
+                          fullWidth
+                          value={editValues[image.id]?.title || ''}
+                          onChange={(e) => setEditValues({
+                            ...editValues,
+                            [image.id]: { ...editValues[image.id], title: e.target.value }
+                          })}
+                          sx={{ mb: 1 }}
+                          placeholder="Title"
+                        />
+                        <TextField
+                          size="small"
+                          fullWidth
+                          value={editValues[image.id]?.description || ''}
+                          onChange={(e) => setEditValues({
+                            ...editValues,
+                            [image.id]: { ...editValues[image.id], description: e.target.value }
+                          })}
+                          placeholder="Description"
+                        />
+                      </Box>
+                    ) : (
+                      <Box>
+                        <Typography variant="body2" fontWeight="500">
+                          {image.title || 'N/A'}
+                        </Typography>
+                        <Typography variant="caption" color="text.secondary">
+                          {image.description || 'N/A'}
+                        </Typography>
+                      </Box>
+                    )}
+                  </TableCell>
+                  <TableCell>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                      <Switch
+                        checked={image.is_active}
+                        onChange={() => handleToggleStatus(image)}
+                        size="small"
+                      />
+                      <Chip
+                        label={image.is_active ? 'Active' : 'Inactive'}
+                        color={image.is_active ? 'success' : 'default'}
+                        size="small"
+                        icon={<Box component="span" sx={{ 
+                          width: 8, 
+                          height: 8, 
+                          borderRadius: '50%', 
+                          bgcolor: image.is_active ? 'success.main' : 'grey.400',
+                          ml: 1
+                        }} />}
+                      />
+                    </Box>
+                  </TableCell>
+                  <TableCell>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                      <IconButton
+                        size="small"
+                        onClick={() => handleMoveUp(image, index)}
+                        disabled={index === 0}
+                      >
+                        <ArrowUpIcon fontSize="small" />
+                      </IconButton>
+                      <Typography variant="body2" sx={{ minWidth: 30, textAlign: 'center' }}>
+                        {image.display_order}
+                      </Typography>
+                      <IconButton
+                        size="small"
+                        onClick={() => handleMoveDown(image, index)}
+                        disabled={index === images.length - 1}
+                      >
+                        <ArrowDownIcon fontSize="small" />
+                      </IconButton>
+                    </Box>
+                  </TableCell>
+                  <TableCell>
+                    <Typography variant="body2" color="text.secondary">
+                      {new Date(image.created_at).toLocaleDateString()}
+                    </Typography>
+                  </TableCell>
+                  <TableCell>
+                    <Box sx={{ display: 'flex', gap: 1 }}>
+                      {editingId === image.id ? (
+                        <>
+                          <IconButton
+                            size="small"
+                            color="primary"
+                            onClick={() => handleSaveEdit(image)}
+                            sx={{ bgcolor: 'primary.50' }}
+                          >
+                            <EditIcon fontSize="small" />
+                          </IconButton>
+                          <IconButton
+                            size="small"
+                            onClick={() => handleCancelEdit(image.id)}
+                          >
+                            <Box component="span" sx={{ fontSize: 18 }}>✕</Box>
+                          </IconButton>
+                        </>
+                      ) : (
+                        <>
+                          <IconButton
+                            size="small"
+                            onClick={() => handleStartEdit(image.id)}
+                            sx={{ bgcolor: 'grey.50' }}
+                          >
+                            <EditIcon fontSize="small" />
+                          </IconButton>
+                          <IconButton
+                            size="small"
+                            color="error"
+                            onClick={() => handleDelete(image)}
+                            sx={{ bgcolor: 'error.50' }}
+                          >
+                            <DeleteIcon fontSize="small" />
+                          </IconButton>
+                        </>
+                      )}
+                    </Box>
+                  </TableCell>
+                </TableRow>
+              ))
+            )}
+          </TableBody>
+        </Table>
+      </TableContainer>
 
       {/* Upload Dialog */}
       <Dialog open={uploadDialogOpen} onClose={handleCloseUploadDialog} maxWidth="md" fullWidth>
@@ -372,29 +490,19 @@ const BackgroundImageManager = () => {
           <Box sx={{ mt: 2 }}>
             <TextField
               fullWidth
-              label="Title"
-              value={formData.title}
-              onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+              label="Title (Optional)"
+              value={uploadFormData.title}
+              onChange={(e) => setUploadFormData({ ...uploadFormData, title: e.target.value })}
               sx={{ mb: 2 }}
-              helperText="Optional - Will be auto-generated if empty"
+              helperText="Will be auto-generated if empty"
             />
             <TextField
               fullWidth
-              label="Description"
-              value={formData.description}
-              onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+              label="Description (Optional)"
+              value={uploadFormData.description}
+              onChange={(e) => setUploadFormData({ ...uploadFormData, description: e.target.value })}
               multiline
               rows={3}
-              sx={{ mb: 2 }}
-            />
-            <FormControlLabel
-              control={
-                <Switch
-                  checked={formData.isActive}
-                  onChange={(e) => setFormData({ ...formData, isActive: e.target.checked })}
-                />
-              }
-              label="Active"
               sx={{ mb: 2 }}
             />
 
@@ -464,102 +572,6 @@ const BackgroundImageManager = () => {
             {loading ? 'Uploading...' : 'Upload'}
           </Button>
         </DialogActions>
-      </Dialog>
-
-      {/* Edit Dialog */}
-      <Dialog open={editDialogOpen} onClose={handleCloseEditDialog} maxWidth="sm" fullWidth>
-        <DialogTitle>Edit Background Image</DialogTitle>
-        <DialogContent>
-          <Box sx={{ mt: 2 }}>
-            {selectedImage && (
-              <Box sx={{ mb: 2, textAlign: 'center' }}>
-                <img
-                  src={selectedImage.image_url}
-                  alt={selectedImage.title}
-                  style={{ maxWidth: '100%', maxHeight: 200, borderRadius: 8 }}
-                />
-              </Box>
-            )}
-            <TextField
-              fullWidth
-              label="Title"
-              value={formData.title}
-              onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              sx={{ mb: 2 }}
-            />
-            <TextField
-              fullWidth
-              label="Description"
-              value={formData.description}
-              onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-              multiline
-              rows={3}
-              sx={{ mb: 2 }}
-            />
-            <TextField
-              fullWidth
-              label="Display Order"
-              type="number"
-              value={formData.displayOrder}
-              onChange={(e) => setFormData({ ...formData, displayOrder: parseInt(e.target.value) })}
-              sx={{ mb: 2 }}
-            />
-            <FormControlLabel
-              control={
-                <Switch
-                  checked={formData.isActive}
-                  onChange={(e) => setFormData({ ...formData, isActive: e.target.checked })}
-                />
-              }
-              label="Active"
-            />
-          </Box>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleCloseEditDialog}>Cancel</Button>
-          <Button onClick={handleUpdate} variant="contained" disabled={loading}>
-            {loading ? 'Updating...' : 'Update'}
-          </Button>
-        </DialogActions>
-      </Dialog>
-
-      {/* View Dialog */}
-      <Dialog open={viewDialogOpen} onClose={handleCloseViewDialog} maxWidth="md" fullWidth>
-        <DialogTitle>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>View Background Image</span>
-            <IconButton onClick={handleCloseViewDialog}>
-              <CloseIcon />
-            </IconButton>
-          </Box>
-        </DialogTitle>
-        <DialogContent>
-          {selectedImage && (
-            <Box>
-              <Box sx={{ mb: 2, textAlign: 'center', bgcolor: 'grey.100', p: 2, borderRadius: 2 }}>
-                <img
-                  src={selectedImage.image_url}
-                  alt={selectedImage.title}
-                  style={{ maxWidth: '100%', maxHeight: 400, borderRadius: 8 }}
-                />
-              </Box>
-              <Typography variant="h6" gutterBottom>
-                {selectedImage.title || 'Untitled'}
-              </Typography>
-              <Typography variant="body2" color="text.secondary" paragraph>
-                {selectedImage.description || 'No description'}
-              </Typography>
-              <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-                <Chip label={`Order: ${selectedImage.display_order}`} />
-                <Chip
-                  label={selectedImage.is_active ? 'Active' : 'Inactive'}
-                  color={selectedImage.is_active ? 'success' : 'default'}
-                />
-                <Chip label={`Created: ${new Date(selectedImage.created_at).toLocaleDateString()}`} />
-              </Box>
-            </Box>
-          )}
-        </DialogContent>
       </Dialog>
     </Box>
   );
