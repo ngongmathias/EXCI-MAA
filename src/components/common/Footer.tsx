@@ -34,7 +34,7 @@ const Footer: FC = () => {
               <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">E</span>
               </div>
-              <span className="ml-2 text-xl font-bold">EXCIMAA</span>
+              <span className="ml-2 text-xl font-bold">EXCI-MAA</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               {t('footer.description')}
@@ -191,7 +191,7 @@ const Footer: FC = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="text-center">
             <p className="text-gray-400 text-sm">
-              © 2025 EXCIMAA. {t('footer.allRightsReserved')}
+              © 2025 EXCI-MAA. {t('footer.allRightsReserved')}
             </p>
           </div>
         </div>
