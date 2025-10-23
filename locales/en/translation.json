@@ -950,7 +950,7 @@
     "hero": {
       "title": "About EXCI-MAA",
       "subtitle": "Your Trusted Financial Partner",
-      "description": "With over 27 years of excellence in financial services, EXCI-MAA has been a trusted partner for businesses across multiple countries, providing expert accounting, auditing, and consulting services.",
+      "description": "With over 10+ years of excellence in financial services, EXCI-MAA has been a trusted partner for businesses across multiple countries, providing expert accounting, auditing, and consulting services.",
       "getInTouch": "Get in Touch",
       "ourServices": "Our Services",
       "trustedByBusinesses": "Trusted by businesses worldwide",
@@ -1127,8 +1127,8 @@
     }
   },
   "partners": {
-    "label": "OUR LOGOS",
-    "title": "EXCI-MAA Group Logos",
+    "label": "",
+    "title": "",
     "subtitle": "Our professional identity and brand representation",
     "note": "Our logos represent our expertise and commitment to excellence",
     "founders": {

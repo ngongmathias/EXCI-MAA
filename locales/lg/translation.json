@@ -630,7 +630,7 @@
                                       "pierre":  {
                                                      "name":  "Pierre KEMENI",
                                                      "title":  "MBA, CPA, DEC",
-                                                     "description":  "Mukugu mu kubala n\u0027okukakasa, alina emyaka 27+ mu bintu by\u0027obukugu mu nsi yonna.",
+                                                     "description":  "Mukugu mu kubala n\u0027okukakasa, alina emyaka 10+ mu bintu by\u0027obukugu mu nsi yonna.",
                                                      "specialties":  [
                                                                          "Kubala kwa Mbadde mu Nsi yonna",
                                                                          "Okukakasa",
@@ -947,7 +947,7 @@
                       "hero":  {
                                    "title":  "Ku bireetera EXCI-MAA",
                                    "subtitle":  "Omufatanyabikorwa wo ow\u0027eby\u0027obusuubuzi okwesigika",
-                                   "description":  "N\u0027emyaka esinga 27 y\u0027obukulembeze mu by\u0027okukola by\u0027eby\u0027obusuubuzi, EXCI-MAA yabadde omufatanyabikorwa okwesigika ku bikoresho mu nsi nyingi, etanga obukulembeze bw\u0027omugaso mu kubala, okukakasa, n\u0027okukulembeza.",
+                                   "description":  "N\u0027emyaka esinga 10 y\u0027obukulembeze mu by\u0027okukola by\u0027eby\u0027obusuubuzi, EXCI-MAA yabadde omufatanyabikorwa okwesigika ku bikoresho mu nsi nyingi, etanga obukulembeze bw\u0027omugaso mu kubala, okukakasa, n\u0027okukulembeza.",
                                    "getInTouch":  "Okukwatagana",
                                    "ourServices":  "Eby\u0027okukola byaffe",
                                    "trustedByBusinesses":  "Okwesigika n\u0027ebikoresho ku nsi yonna",
@@ -1057,7 +1057,7 @@
                                                    {
                                                        "name":  "Pierre Kemeni",
                                                        "role":  "Omutandisi \u0026 Omukulembeze Mukulu",
-                                                       "bio":  "MBA, CPA, DEC n\u0027emyaka esinga 27 y\u0027obukulembeze bw\u0027ensi yonna mu kubala n\u0027okukakasa.",
+                                                       "bio":  "MBA, CPA, DEC n\u0027emyaka esinga 10+ y\u0027obukulembeze bw\u0027ensi yonna mu kubala n\u0027okukakasa.",
                                                        "expertise":  [
                                                                          "Kubala kw\u0027ensi yonna",
                                                                          "Okukakasa kw\u0027eby\u0027obusuubuzi",
@@ -1312,15 +1312,15 @@
                                            }
                            },
     "organizationalChart":  {
-                                "specialistsDetails":  "(Abasawo, Bayinginiya, Abalawule, Abasomesa by\u0027Obulamu, Abakulu, Abato ... EBIRALA)",
-                                "partnerGeneral":  "Munnakatale, Obuddukanya Okukulu, Ensimbi ne HR",
-                                "partnerAudit":  "Munnakatale Okukebera n\u0027Okubuulira",
-                                "partnerQuality":  "Munnakatale Omutukuvu n\u0027Okugondera",
-                                "seniorJuniorAuditors":  "Abakebera Abakulu n\u0027Abato",
-                                "specialists":  "Abakugu n\u0027Abaweesa ab\u0027Ebweru",
-                                "chairman":  "Ssentebe w\u0027Akakiiko k\u0027Abakulu",
-                                "title":  "ENKOLA Y\u0027EKIBIINA",
-                                "partnerManagement":  "Munnakatale Obuddukanya n\u0027Entegeka",
-                                "countryDirector":  "Omukulembeze w\u0027Eggwanga abazibaali"
+                               "title": "Ekifananyi ky'ekitongole ky'ekibiina",
+"chairman": "Omukulu w'ekibiina ky'abalabirizi",
+"partnerGeneral": "Omusabuzi, Okulondolola okw'abantu, Eby'ensimbi & Abakozi",
+"partnerQuality": "Omusabuzi Eby'emirimu & Omukulu w'okugoberera amateeka",
+"partnerAudit": "Omusabuzi Okuddirira & Okubuuza",
+"partnerManagement": "Omusabuzi Okulondolola & Ekibiina",
+"countryDirector": "Omulabirizi w'ensi abalabirizi b'ensimbi",
+"seniorJuniorAuditors": "Abadidirira abakulu n'abato",
+"specialists": "Abanyonyi & Ababuuza ab'ewoonse",
+"specialistsDetails": "(Abasawo, Abainjiniya, Abavunaanyizibwa, Abanyonyi b'abantu, Abakulu, Abato ... ETC)"
                             }
 }

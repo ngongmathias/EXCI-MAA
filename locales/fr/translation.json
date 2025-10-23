@@ -182,7 +182,7 @@
                                                    {
                                                        "name":  "Pierre Kemeni",
                                                        "role":  "Fondateur et PDG",
-                                                       "bio":  "MBA, CPA, DEC avec plus de 27 ans d\u0027exp√©rience internationale en comptabilit√© et audit.",
+                                                       "bio":  "MBA, CPA, DEC avec plus de 10+ ans d\u0027exp√©rience internationale en comptabilit√© et audit.",
                                                        "expertise":  [
                                                                          "Comptabilit√© Internationale",
                                                                          "Audit Financier",
@@ -773,7 +773,7 @@
                                     }
                     },
     "partners":  {
-                     "label":  "NOS LOGOS",
+                     "label":  "",
                      "title":  "Logos du Groupe EXCI-MAA",
                      "subtitle":  "Notre identit√© professionnelle et repr√©sentation de marque",
                      "note":  "Nos logos repr√©sentent notre expertise et notre engagement envers l\u0027excellence",
@@ -1283,15 +1283,15 @@
                                            }
                            },
     "organizationalChart":  {
-                                "specialistsDetails":  "(MÈdecins, IngÈnieurs, Avocats, Sociologues, Seniors, Juniors ... ETC)",
-                                "partnerGeneral":  "AssociÈ, Administration GÈnÈrale, Finance et RH",
-                                "partnerAudit":  "AssociÈ Audit et Conseil",
-                                "partnerQuality":  "AssociÈ QualitÈ et ConformitÈ",
-                                "seniorJuniorAuditors":  "Auditeurs Seniors et Juniors",
-                                "specialists":  "SpÈcialistes et Consultants Externes",
-                                "chairman":  "PrÈsident du Conseil d\u0027Administration",
-                                "title":  "ORGANIGRAMME DU GROUPE",
-                                "partnerManagement":  "AssociÈ Gestion et Organisation",
-                                "countryDirector":  "Directeur National comptables"
+                                "title": "ORGANIGRAMME DU GROUPE",
+"chairman": "Pr√©sident du Conseil d'Administration",
+"partnerGeneral": "Partenaire, Administration G√©n√©rale, Finance & RH",
+"partnerQuality": "Partenaire Officier Qualit√© & Conformit√©",
+"partnerAudit": "Partenaire Audit & Conseil",
+"partnerManagement": "Partenaire Gestion & Organisation",
+"countryDirector": "Directeur de Pays comptables",
+"seniorJuniorAuditors": "Auditeurs Seniors et Juniors",
+"specialists": "Sp√©cialistes & Consultants Externes",
+"specialistsDetails": "(M√©decins, Ing√©nieurs, Avocats, Sociologues, Seniors, Juniors ... ETC)"
                             }
 }

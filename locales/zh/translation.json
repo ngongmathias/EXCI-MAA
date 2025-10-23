@@ -328,7 +328,7 @@
                       "hero":  {
                                    "title":  "关于EXCI-MAA",
                                    "subtitle":  "您值得信赖的财务合作伙伴",
-                                   "description":  "凭借超过27年的金融服务卓越表现，EXCI-MAA一直是多个国家企业的值得信赖的合作伙伴，提供专业的会计、审计和咨询服务。",
+                                   "description":  "凭借超过10+ 年的金融服务卓越表现，EXCI-MAA一直是多个国家企业的值得信赖的合作伙伴，提供专业的会计、审计和咨询服务。",
                                    "getInTouch":  "联系我们",
                                    "ourServices":  "我们的服务",
                                    "trustedByBusinesses":  "受到全球企业的信赖",
@@ -1282,15 +1282,15 @@
                                            }
                            },
     "organizationalChart":  {
-                                "specialistsDetails":  "(????????????????????...?)",
-                                "partnerGeneral":  "???,??????????",
-                                "partnerAudit":  "????????",
-                                "partnerQuality":  "?????????",
-                                "seniorJuniorAuditors":  "????????",
-                                "specialists":  "???????",
-                                "chairman":  "?????",
-                                "title":  "???????",
-                                "partnerManagement":  "????????",
-                                "countryDirector":  "???????"
+                                "title": "集团组织结构图",
+"chairman": "董事会主席",
+"partnerGeneral": "合伙人，一般行政，财务与人力资源",
+"partnerQuality": "合伙人质量与合规官",
+"partnerAudit": "合伙人审计与咨询",
+"partnerManagement": "合伙人管理与组织",
+"countryDirector": "国家总监会计师",
+"seniorJuniorAuditors": "高级和初级审计师",
+"specialists": "专家与外部顾问",
+"specialistsDetails": "(医生，工程师，律师，社会学家，资深，初级 ... 等)"
                             }
 }

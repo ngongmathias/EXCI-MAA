@@ -8,7 +8,7 @@ const OrganizationalChart = () => {
     <div className="org-chart-container">
       {/* Title */}
       <div className="chart-title" >
-        {t('organizationalChart.title')}
+         {t('organizationalChart.title')}
       </div>
 
       {/* Top Level: Board of Directors */}

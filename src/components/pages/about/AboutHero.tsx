@@ -6,7 +6,7 @@ const AboutHero: FC = () => {
   const { t } = useLanguage();
   
   const stats = [
-    { id: 1, name: t('aboutPage.hero.stats.yearsExperience'), value: '27+', icon: <Award className="h-8 w-8 text-white" /> },
+    { id: 1, name: t('aboutPage.hero.stats.yearsExperience'), value: '10+', icon: <Award className="h-8 w-8 text-white" /> },
     { id: 2, name: t('aboutPage.hero.stats.countriesServed'), value: '6+', icon: <Globe className="h-8 w-8 text-white" /> },
     { id: 3, name: t('aboutPage.hero.stats.teamMembers'), value: '50+', icon: <Users className="h-8 w-8 text-white" /> },
     { id: 4, name: t('aboutPage.hero.stats.clientSatisfaction'), value: '98%', icon: <Award className="h-8 w-8 text-white" /> },
