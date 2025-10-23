@@ -145,7 +145,7 @@ const Footer: FC = () => {
                   pkemeni@excimaa.ca
                   </p>
                 </div>
-              </div> */}
+              </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
@@ -153,7 +153,8 @@ const Footer: FC = () => {
                   Douala, Cameroon
                   </p>
                 </div>
-              </div>
+              </div> 
+              */}
             </div>
           </div>
 
