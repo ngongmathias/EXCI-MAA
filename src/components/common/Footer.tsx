@@ -31,8 +31,12 @@ const Footer: FC = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">E</span>
+              <div className="h-8 w-8 rounded-lg flex items-center justify-center">
+                <img 
+                  src="/images/logos/logo-removebg-preview.png" 
+                  alt="EXCI-MAA Logo" 
+                  className="h-full w-auto object-contain"
+                />
               </div>
               <span className="ml-2 text-xl font-bold">EXCI-MAA</span>
             </div>
@@ -90,11 +94,11 @@ const Footer: FC = () => {
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
-                  +(237) 698 835 251
+                  (+250) 787 779 965
                   </p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
+              {/* <div className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
@@ -109,23 +113,23 @@ const Footer: FC = () => {
                   (+250) 787 779 965
                   </p>
                 </div>
-              </div>
-              <div className="flex items-start space-x-3">
+              </div> */}
+              {/* <div className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
                     +1 (555) 123-4567
                   </p>
                 </div>
-              </div>
-              <div className="flex items-start space-x-3">
+              </div> */}
+              {/* <div className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
                   pngatcha@excimaa.ca
                   </p>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
@@ -134,14 +138,14 @@ const Footer: FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
+              {/* <div className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-300 text-sm">
                   pkemeni@excimaa.ca
                   </p>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
