@@ -18,7 +18,7 @@ const PartnersSection: FC = () => {
   const partners: PartnerLogo[] = [
     {
       id: 'exci-maa-main',
-      name: 'Eximaa Partners ',
+      name: 'SRP ',
       description: 'Steuerberatungkammer Rhineland-Pfalz',
       logo: '/Logos/steuerberatungkammer-min.jpg',
       // website: 'https://www.exci-maa.com'
@@ -54,7 +54,7 @@ const PartnersSection: FC = () => {
     {
       id: 'onecca',
       name: 'ONECCA',
-      description: 'ordre national des experts comptables et comptables agréés du Senegal',
+      description: 'ordre national des experts comptables et comptables agréés du Cameroon',
       logo: '/Logos/images (1).png',
       //website: 'https://www.exci-maa.com'
     },
@@ -65,13 +65,13 @@ const PartnersSection: FC = () => {
       logo: '/Logos/Logo_de_l_ordre_des_experts_comptables.jpg',
       //website: 'https://www.exci-maa.com'
     },
-    {
-      id: 'onec',
-      name: 'ONEC',
-      description: 'Ordre National des Experts Comptables du Gabon',
-      logo: '/Logos/ONEC-LOGO-1.jph.webp',
-      //website: 'https://www.exci-maa.com'
-    },
+    // {
+    //   id: 'onec',
+    //   name: 'ONEC',
+    //   description: 'Ordre National des Experts Comptables du Gabon',
+    //   logo: '/Logos/ONEC-LOGO-1.jph.webp',
+    //   //website: 'https://www.exci-maa.com'
+    // },
     {
       id: 'onecca',
       name: 'ONECCA',
@@ -101,7 +101,7 @@ const PartnersSection: FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-2">
-            {t('aboutPage.partners.label', 'NOS LOGOS')}
+            {t('aboutPage.partners.label', '')}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {t('aboutPage.partners.title', 'EXCI-MAA Group')}
