@@ -15,6 +15,7 @@ export const offices: Office[] = [
     email: 'pngatcha@excimaa.ca',
     services: ['Audit & Assurance', 'Tax Consulting', 'Business Advisory'],
     image: '/images/offices/douala.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/ayEVREEvn4EeQqE19',
   },
   {
     id: '2',
@@ -30,6 +31,7 @@ export const offices: Office[] = [
     email: 'pkemeni@excimaa.ca',
     services: ['International Tax', 'Immigration Services', 'Financial Planning'],
     image: '/images/offices/toronto.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/gdGN6NoTTDSYcjed9',
   },
   {
     id: '3',
@@ -45,11 +47,12 @@ export const offices: Office[] = [
     email: 'mnkwain@excimaa.ca',
     services: ['Financial Advisory', 'Risk Management', 'Audit Services'],
     image: '/images/offices/kigali.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/CJXVnrwwJtq1fBbN8',
   },
   {
     id: '4',
     name: 'EXCI-MAA Washington DC',
-    address: '1629 K Street NW, Suite 300',
+    address: '300 K St NW',
     city: 'Washington DC',
     country: 'United States',
     coordinates: {
@@ -60,11 +63,12 @@ export const offices: Office[] = [
     email: 'washington@excimaa.ca',
     services: ['Government Relations', 'Compliance', 'International Tax'],
     image: '/images/offices/washington.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/3Le4R6CA4wJCfCkz6',
   },
   {
     id: '5',
     name: 'EXCI-MAA Paris',
-    address: '5 Square du Nord, 95500 Gonesse',
+    address: '5 Square du N',
     city: 'Paris',
     country: 'France',
     coordinates: {
@@ -75,11 +79,12 @@ export const offices: Office[] = [
     email: 'pkemeni@excimaa.ca',
     services: ['European Accounting', 'EU Compliance', 'Cross-border Consulting'],
     image: '/images/offices/paris.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/m8EMdBrLxP9QtRS77',
   },
   {
     id: '6',
     name: 'EXCI-MAA Bujumbura',
-    address: 'Boulevard Melchior NDADAYE N°68A (Be Forward Building)',
+    address: 'Boulevard Melchior Ndadaye',
     city: 'Bujumbura',
     country: 'Burundi',
     coordinates: {
@@ -90,11 +95,12 @@ export const offices: Office[] = [
     email: 'bujumbura@excimaa.ca',
     services: ['Local Accounting', 'Business Development', 'Regional Consulting'],
     image: '/images/offices/bujumbura.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/4KgUHHsUKw1F6Xwg7',
   },
   {
     id: '7',
     name: 'EXCI-MAA Kinshasa',
-    address: 'Avenue Colonel Mondjiba, Kinshasa',
+    address: 'Ave Colonel Mondjiba',
     city: 'Kinshasa',
     country: 'Democratic Republic of Congo',
     coordinates: {
@@ -105,11 +111,12 @@ export const offices: Office[] = [
     email: 'kinshasa@excimaa.ca',
     services: ['Audit Services', 'Tax Advisory', 'Business Consulting'],
     image: '/images/offices/kinshasa.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/jbSugb9b3gS4bgdz5',
   },
   {
     id: '8',
     name: 'EXCI-MAA Libreville',
-    address: 'Boulevard Triomphal Omar Bongo, Libreville',
+    address: 'Bd Triomphal',
     city: 'Libreville',
     country: 'Gabon',
     coordinates: {
@@ -120,11 +127,12 @@ export const offices: Office[] = [
     email: 'libreville@excimaa.ca',
     services: ['Financial Audit', 'Tax Compliance', 'Corporate Advisory'],
     image: '/images/offices/libreville.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/PE5zPXeQbDoeqWH67',
   },
   {
     id: '9',
     name: 'EXCI-MAA Dubai',
-    address: 'Business Bay, Dubai',
+    address: 'Business Bay',
     city: 'Dubai',
     country: 'United Arab Emirates',
     coordinates: {
@@ -133,7 +141,8 @@ export const offices: Office[] = [
     },
     phone: '+971 50 123 4567',
     email: 'dubai@excimaa.ca',
-    services: ['International Business Setup', 'Tax Planning', 'Financial Advisory'],
+    services: ['International Business Setup', 'Tax Planning', 'Financial Planning'],
     image: '/images/offices/dubai.jpg',
+    googleMapsUrl: 'https://maps.app.goo.gl/SUirHFpRKk4mMLbP8',
   },
 ];

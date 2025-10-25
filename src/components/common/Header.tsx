@@ -109,9 +109,14 @@ const Header: FC = () => {
             ))}
             
             {/* Services Dropdown */}
-            <div className="relative" ref={servicesRef}>
-              <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+            <div 
+              className="relative" 
+              ref={servicesRef}
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <Link
+                to="/services"
                 className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   location.pathname.startsWith('/services') || isServicesOpen
                     ? 'text-blue-600 bg-blue-50'
@@ -129,11 +134,11 @@ const Header: FC = () => {
                 <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
                   isServicesOpen ? 'rotate-180' : ''
                 }`} />
-              </button>
+              </Link>
 
               {/* Services Dropdown Menu */}
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[9999]">
                   <div className="py-2">
                     <div className="px-4 py-3 border-b border-gray-100">
                       <Link

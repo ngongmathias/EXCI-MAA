@@ -99,7 +99,7 @@
     },
     "officeModal": {
         "capitalCity": "Umurwa mukuru",
-        "contactMessage": "Duhamagare bijyanye n'ubutumwa bwacu muri {country}. Turi hano gufasha ibyangombwa byose by'ubucuruzi muri {capital}.",
+        "contactMessage": "Duhamagare bijyanye n'ubutumwa bwacu . Turi hano gufasha ibyangombwa byose by'ubucuruzi.",
         "email": "Imeyili",
         "phone": "Nimero za terefone"
     },

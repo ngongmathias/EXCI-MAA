@@ -25,6 +25,12 @@ const MapController: React.FC<{ selectedOffice: Office | null }> = ({ selectedOf
   useEffect(() => {
     if (selectedOffice) {
       map.setView([selectedOffice.coordinates.lat, selectedOffice.coordinates.lng], 10);
+    } else {
+      // Fit map to show all office locations
+      const bounds = offices.map(office => [office.coordinates.lat, office.coordinates.lng] as [number, number]);
+      if (bounds.length > 0) {
+        map.fitBounds(bounds, { padding: [20, 20] });
+      }
     }
   }, [selectedOffice, map]);
 
@@ -82,7 +88,7 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
       </div>
 
       {/* Map Container */}
-      <div className="mt-6 h-96 w-[180vh] rounded-lg overflow-hidden shadow-lg">
+      <div className="mt-6 h-96 w-full rounded-lg overflow-hidden shadow-lg">
         <MapContainer
           center={[centerLat, centerLng]}
           zoom={selectedOffice ? 10 : 2}
@@ -106,11 +112,18 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
                 iconUrl: selectedOffice?.id === office.id 
                   ? 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-red.png'
                   : 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-                iconSize: [25, 41],
-                iconAnchor: [12, 41],
+                iconSize: [30, 45],
+                iconAnchor: [15, 45],
                 popupAnchor: [1, -34],
-                shadowSize: [41, 41]
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+                shadowSize: [50, 64],
+                shadowAnchor: [4, 62]
               })}
+              eventHandlers={{
+                click: () => {
+                  setSelectedOffice(office);
+                }
+              }}
             >
               <Popup>
                 <div className="p-2">
@@ -138,6 +151,21 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
                       ))}
                     </div>
                   </div>
+                  {office.googleMapsUrl && (
+                    <div className="mt-3">
+                      <a
+                        href={office.googleMapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-1 bg-blue-600 text-white text-xs rounded-full hover:bg-blue-700 transition-colors"
+                      >
+                        <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg>
+                        View on Google Maps
+                      </a>
+                    </div>
+                  )}
                 </div>
               </Popup>
             </Marker>
@@ -171,6 +199,21 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
                   </svg>
                   {selectedOffice.email}
                 </p>
+                {selectedOffice.googleMapsUrl && (
+                  <div className="mt-3">
+                    <a
+                      href={selectedOffice.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors"
+                    >
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                      </svg>
+                      View on Google Maps
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
             <div>

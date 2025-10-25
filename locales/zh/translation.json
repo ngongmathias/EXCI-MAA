@@ -99,7 +99,7 @@
 },
 "officeModal": {
   "capitalCity": "首都",
-  "contactMessage": "联系我们了解我们在{country}的服务。我们在{capital}为您的所有业务需求提供帮助。",
+  "contactMessage": "联系我们了解我们在的服务。我们在为您的所有业务需求提供帮助。",
   "email": "邮箱",
   "phone": "电话号码"
 },

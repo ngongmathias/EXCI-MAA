@@ -137,7 +137,7 @@
   },
   "officeModal": {
     "capitalCity": "Capital City",
-    "contactMessage": "Get in touch with us regarding our services in {country}. We're here to help with all your business needs in {capital}.",
+    "contactMessage": "Get in touch with us regarding our services. We're here to help with all your business needs.",
     "email": "Email",
     "phone": "Phone Numbers"
   },

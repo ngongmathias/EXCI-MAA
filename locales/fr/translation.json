@@ -99,7 +99,7 @@
 },
 "officeModal": {
   "capitalCity": "Capitale",
-  "contactMessage": "Contactez-nous concernant nos services en {country}. Nous sommes là pour vous aider avec tous vos besoins d'affaires à {capital}.",
+  "contactMessage": "Contactez-nous concernant nos services. Nous sommes là pour vous aider avec tous vos besoins d'affaires.",
   "email": "Email",
   "phone": "Numéros de téléphone"
 },

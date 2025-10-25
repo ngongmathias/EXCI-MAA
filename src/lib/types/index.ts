@@ -19,6 +19,7 @@ export interface Office {
   email: string;
   services: string[];
   image?: string;
+  googleMapsUrl?: string;
 }
 
 export interface Service {

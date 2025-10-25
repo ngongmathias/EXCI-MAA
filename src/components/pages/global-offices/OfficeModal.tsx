@@ -61,7 +61,7 @@ const OfficeModal: React.FC<OfficeModalProps> = ({ country, capital, isOpen, onC
         <div className="p-6">
           <div className="mb-6">
             <p className="text-gray-700 mb-4">
-              {t('officeModal.contactMessage', { country, capital })}
+              {t('officeModal.contactMessage').replace('{country}', country).replace('{capital}', capital)}
             </p>
           </div>
 
