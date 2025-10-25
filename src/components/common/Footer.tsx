@@ -159,7 +159,7 @@ const Footer: FC = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-6">
               {t('partners.title')}
             </h3>
@@ -189,7 +189,7 @@ const Footer: FC = () => {
                 {t('hero.cta2')}
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Section */}
