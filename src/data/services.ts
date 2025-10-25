@@ -1,84 +1,95 @@
 import { Service } from '../lib/types';
 
-export const services: Service[] = [
+export const servicesData = [
   {
     id: '1',
-    title: 'Accounting Expertise',
-    description: 'Comprehensive accounting services for businesses of all sizes',
+    titleKey: 'servicesDropdown.services.accountingBookkeeping.title',
+    descriptionKey: 'servicesDropdown.services.accountingBookkeeping.description',
     icon: '📊',
-    features: [
-      'Bookkeeping and record keeping',
-      'Financial statement preparation',
-      'Tax compliance and reporting',
-      'Payroll management',
+    featuresKeys: [
+      'serviceModal.features.accounting.bookkeeping',
+      'serviceModal.features.accounting.statements',
+      'serviceModal.features.accounting.taxCompliance',
+      'serviceModal.features.accounting.payroll',
+      'serviceModal.features.accounting.reports',
+      'serviceModal.features.accounting.budget',
     ],
-    price: 'Starting at $500/month',
   },
   {
     id: '2',
-    title: 'Legal & Tax Audit',
-    description: 'Professional auditing services to ensure compliance and accuracy',
+    titleKey: 'servicesDropdown.services.auditAssurance.title',
+    descriptionKey: 'servicesDropdown.services.auditAssurance.description',
     icon: '🔍',
-    features: [
-      'Internal and external audits',
-      'Tax compliance reviews',
-      'Risk assessment',
-      'Regulatory compliance',
+    featuresKeys: [
+      'serviceModal.features.audit.internal',
+      'serviceModal.features.audit.taxReviews',
+      'serviceModal.features.audit.risk',
+      'serviceModal.features.audit.regulatory',
+      'serviceModal.features.audit.financial',
+      'serviceModal.features.audit.compliance',
     ],
-    price: 'Starting at $1,000/audit',
   },
   {
     id: '3',
-    title: 'Managerial Advice',
-    description: 'Strategic consulting to help your business grow and succeed',
+    titleKey: 'servicesDropdown.services.managerialAdvice.title',
+    descriptionKey: 'servicesDropdown.services.managerialAdvice.description',
     icon: '💼',
-    features: [
-      'Business strategy development',
-      'Financial planning',
-      'Performance optimization',
-      'Growth consulting',
+    featuresKeys: [
+      'serviceModal.features.managerial.strategy',
+      'serviceModal.features.managerial.planning',
+      'serviceModal.features.managerial.optimization',
+      'serviceModal.features.managerial.growth',
     ],
-    price: 'Starting at $200/hour',
   },
   {
     id: '4',
-    title: 'Payroll & Social Council',
-    description: 'Complete payroll management and social security compliance',
+    titleKey: 'servicesDropdown.services.payrollSocial.title',
+    descriptionKey: 'servicesDropdown.services.payrollSocial.description',
     icon: '👥',
-    features: [
-      'Payroll processing',
-      'Social security compliance',
-      'Employee benefits management',
-      'HR consulting',
+    featuresKeys: [
+      'serviceModal.features.payrollSocial.processing',
+      'serviceModal.features.payrollSocial.social',
+      'serviceModal.features.payrollSocial.benefits',
+      'serviceModal.features.payrollSocial.hr',
     ],
-    price: 'Starting at $300/month',
   },
   {
     id: '5',
-    title: 'Consolidation',
-    description: 'Financial consolidation services for multi-entity organizations',
+    titleKey: 'servicesDropdown.services.consolidation.title',
+    descriptionKey: 'servicesDropdown.services.consolidation.description',
     icon: '🏢',
-    features: [
-      'Multi-entity consolidation',
-      'Intercompany eliminations',
-      'Consolidated reporting',
-      'Group financial statements',
+    featuresKeys: [
+      'serviceModal.features.consolidation.multi',
+      'serviceModal.features.consolidation.intercompany',
+      'serviceModal.features.consolidation.reporting',
+      'serviceModal.features.consolidation.statements',
     ],
-    price: 'Starting at $2,000/month',
   },
   {
     id: '6',
-    title: 'Risk Consulting',
-    description: 'Comprehensive risk assessment and management services',
+    titleKey: 'servicesDropdown.services.risk.title',
+    descriptionKey: 'servicesDropdown.services.risk.description',
     icon: '⚠️',
-    features: [
-      'Risk identification and assessment',
-      'Risk mitigation strategies',
-      'Compliance monitoring',
-      'Internal controls review',
+    featuresKeys: [
+      'serviceModal.features.risk.identification',
+      'serviceModal.features.risk.mitigation',
+      'serviceModal.features.risk.monitoring',
+      'serviceModal.features.risk.controls',
     ],
-    price: 'Starting at $1,500/assessment',
   },
 ];
+
+// Helper function to get translated service data
+export const getTranslatedServices = (t: (key: string) => string) => {
+  return servicesData.map(service => ({
+    ...service,
+    title: t(service.titleKey),
+    description: t(service.descriptionKey),
+    features: service.featuresKeys.map(key => t(key))
+  }));
+};
+
+// For backward compatibility
+export const services = servicesData;
 
 

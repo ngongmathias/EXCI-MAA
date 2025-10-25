@@ -1,4 +1,98 @@
 {
+    "servicesDropdown": {
+        "ourServices": "Ibibazo byacu",
+        "viewAllServices": "Reba ibibazo byose →",
+        "services": {
+            "accountingBookkeeping": {
+                "title": "Imibare n'iyandikwa ry'amafaranga",
+                "description": "Iyandikwa ryuzuye ry'amafaranga n'inyandiko"
+            },
+            "auditAssurance": {
+                "title": "Isuzuma n'Iyemeza",
+                "description": "Isuzuma ryigenga ry'amafaranga n'ukubahiriza amategeko"
+            },
+            "managerialAdvice": {
+                "title": "Inama z'Ubuyobozi",
+                "description": "Inama z'ingenzi zo gufasha ubucuruzi bwawe gukura no gutsinda"
+            },
+            "payrollSocial": {
+                "title": "Imishahara n'Inama y'Imibereho",
+                "description": "Imicungire yuzuye y'imishahara n'ukubahiriza ubwishingizi bw'imibereho"
+            },
+            "consolidation": {
+                "title": "Guhuriza hamwe",
+                "description": "Serivisi zo guhuriza amafaranga ku miryango myinshi"
+            },
+            "risk": {
+                "title": "Inama z'Ibyago",
+                "description": "Isuzuma n'imicungire y'ibyago byose"
+            }
+        }
+    },
+    "serviceModal": {
+        "whatsIncluded": "Icyari kirimu",
+        "ourProcess": "Uburyo bwacu",
+        "readyToStart": "Witeguye gutangira?",
+        "discussText": "Reka tuganire ku buryo dushobora gufasha ubucuruzi bwawe gukura binyuze muri",
+        "servicesText": "serivisi zacu.",
+        "bookConsultation": "Baza ubwisanzure",
+        "process": {
+            "step1": {
+                "title": "Ubwisanzure bwa mbere",
+                "description": "Turagukenga ibikenewe kandi dugatanga uburyo bwiza"
+            },
+            "step2": {
+                "title": "Gushyira mu bikorwa",
+                "description": "Abahanga bacu batanga serivisi mu buryo bwiza kandi bwite"
+            },
+            "step3": {
+                "title": "Inkunga ikomeje",
+                "description": "Gukurikirana no gufasha bikomeje kugira ngo haboneke ibisubizo byiza"
+            }
+        },
+        "features": {
+            "accounting": {
+                "bookkeeping": "Iyandikwa ry'ibitabo n'iyandikwa",
+                "statements": "Gutegura raporo z'amafaranga",
+                "taxCompliance": "Ubunyangamugayo bw'imisoro n'inyandiko",
+                "payroll": "Imicungire y'imishahara",
+                "reports": "Raporo z'amafaranga za buri kwezi",
+                "budget": "Igenamigambi n'isesengura ry'ingengo y'imari"
+            },
+            "audit": {
+                "internal": "Isuzuma ry'imbere n'iryo hanze",
+                "taxReviews": "Isuzuma ry'ubunyangamugayo bw'imisoro",
+                "risk": "Isuzuma ry'ibyago",
+                "regulatory": "Ubunyangamugayo bw'amategeko",
+                "financial": "Isuzuma ry'inyandiko z'amafaranga",
+                "compliance": "Iperereza ry'ubunyangamugayo"
+            },
+            "managerial": {
+                "strategy": "Gutegura ingamba z'ubucuruzi",
+                "planning": "Igenamigambi ry'amafaranga",
+                "optimization": "Kunoza imikorere",
+                "growth": "Inama z'iterambere"
+            },
+            "payrollSocial": {
+                "processing": "Gutunganya imishahara",
+                "social": "Ubunyangamugayo bw'ubwishingizi bw'imibereho",
+                "benefits": "Imicungire y'inyungu z'abakozi",
+                "hr": "Inama z'umuntu-kamaro"
+            },
+            "consolidation": {
+                "multi": "Guhuriza ibigo byinshi",
+                "intercompany": "Gukuraho ubucuruzi hagati y'ibigo",
+                "reporting": "Raporo zihuriye",
+                "statements": "Inyandiko z'amafaranga z'itsinda"
+            },
+            "risk": {
+                "identification": "Kumenya no gusuzuma ibyago",
+                "mitigation": "Ingamba zo kugabanya ibyago",
+                "monitoring": "Gukurikirana ubunyangamugayo",
+                "controls": "Isuzuma ry'igenzura ry'imbere"
+            }
+        }
+    },
     "nav":  {
                 "home":  "Ubutangazamakuru",
                 "about":  "Ibyerekeye",

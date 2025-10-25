@@ -20,6 +20,7 @@ import {
   Alert,
   Chip,
   Avatar,
+  Collapse,
 } from '@mui/material';
 import {
   CloudUpload as UploadIcon,
@@ -29,6 +30,8 @@ import {
   ArrowDownward as ArrowDownIcon,
   Add as AddIcon,
   FileDownload as DownloadIcon,
+  FilterList as FilterIcon,
+  CalendarToday as CalendarIcon,
 } from '@mui/icons-material';
 import {
   getBackgroundImages,
@@ -71,6 +74,9 @@ const BackgroundImageManager = () => {
 
   // Inline edit states
   const [editValues, setEditValues] = useState<{[key: string]: {title: string, description: string}}>({});
+  const [showDateFilter, setShowDateFilter] = useState(false);
+  const [startDate, setStartDate] = useState<string>('');
+  const [endDate, setEndDate] = useState<string>('');
 
   useEffect(() => {
     loadImages();
@@ -310,16 +316,36 @@ const BackgroundImageManager = () => {
       { key: 'updated_at', label: 'Updated At', transform: excelFormatters.dateTime }
     ];
 
+    // Prepare date filter
+    const dateFilter = (startDate || endDate) ? {
+      startDate: startDate || undefined,
+      endDate: endDate || undefined,
+      dateField: 'created_at'
+    } : undefined;
+
+    // Create filename with date range if filtered
+    let filename = 'background_images_export';
+    if (dateFilter) {
+      if (startDate && endDate) {
+        filename += `_${startDate}_to_${endDate}`;
+      } else if (startDate) {
+        filename += `_from_${startDate}`;
+      } else if (endDate) {
+        filename += `_until_${endDate}`;
+      }
+    }
+
     try {
       exportToExcel({
         data: images,
-        filename: 'background_images_export',
+        filename,
         sheetName: 'Background Images',
-        columns
+        columns,
+        dateFilter
       });
     } catch (error) {
       console.error('Export failed:', error);
-      setError('Failed to export Excel file');
+      setError(error instanceof Error ? error.message : 'Failed to export Excel file');
     }
   };
 
@@ -332,6 +358,15 @@ const BackgroundImageManager = () => {
             Slideshow Images ({images.length})
           </Typography>
           <Box sx={{ display: 'flex', gap: 2 }}>
+            <Button
+              variant="outlined"
+              startIcon={<FilterIcon />}
+              onClick={() => setShowDateFilter(!showDateFilter)}
+              sx={{ borderRadius: 2 }}
+              color={showDateFilter ? "primary" : "inherit"}
+            >
+              Date Filter
+            </Button>
             <Button
               variant="outlined"
               startIcon={<DownloadIcon />}
@@ -353,6 +388,52 @@ const BackgroundImageManager = () => {
           </Box>
         </Box>
       </Box>
+
+      {/* Date Filter Section */}
+      <Collapse in={showDateFilter}>
+        <Paper sx={{ p: 3, mb: 3, backgroundColor: 'grey.50' }}>
+          <Typography variant="h6" sx={{ mb: 2, display: 'flex', alignItems: 'center', gap: 1 }}>
+            <CalendarIcon /> Date Range Filter
+          </Typography>
+          <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', flexWrap: 'wrap' }}>
+            <TextField
+              label="Start Date"
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+              InputLabelProps={{ shrink: true }}
+              size="small"
+              sx={{ minWidth: 150 }}
+            />
+            <TextField
+              label="End Date"
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+              InputLabelProps={{ shrink: true }}
+              size="small"
+              sx={{ minWidth: 150 }}
+            />
+            <Button
+              variant="outlined"
+              onClick={() => {
+                setStartDate('');
+                setEndDate('');
+              }}
+              size="small"
+            >
+              Clear Dates
+            </Button>
+            {(startDate || endDate) && (
+              <Typography variant="body2" color="primary" sx={{ fontWeight: 'medium' }}>
+                {startDate && endDate ? `Filtering: ${startDate} to ${endDate}` :
+                 startDate ? `From: ${startDate}` :
+                 `Until: ${endDate}`}
+              </Typography>
+            )}
+          </Box>
+        </Paper>
+      </Collapse>
 
       {/* Alerts */}
       {error && (

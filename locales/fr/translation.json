@@ -1,4 +1,98 @@
 {
+    "servicesDropdown": {
+  "ourServices": "Nos Services",
+  "viewAllServices": "Voir tous les services →",
+  "services": {
+    "accountingBookkeeping": {
+      "title": "Comptabilité et Tenue de livres",
+      "description": "Tenue de registres financiers complète et rapports"
+    },
+    "auditAssurance": {
+      "title": "Audit et Assurance",
+      "description": "Vérification financière indépendante et conformité"
+    },
+    "managerialAdvice": {
+      "title": "Conseils Managériaux",
+      "description": "Conseil stratégique pour aider votre entreprise à croître et réussir"
+    },
+    "payrollSocial": {
+      "title": "Paie et Conseil Social",
+      "description": "Gestion complète de la paie et conformité à la sécurité sociale"
+    },
+    "consolidation": {
+      "title": "Consolidation",
+      "description": "Services de consolidation financière pour les organisations multi-entités"
+    },
+    "risk": {
+      "title": "Conseil en Risques",
+      "description": "Évaluation et gestion complète des risques"
+    }
+  }
+},
+"serviceModal": {
+  "whatsIncluded": "Ce qui est inclus",
+  "ourProcess": "Notre Processus",
+  "readyToStart": "Prêt à commencer ?",
+  "discussText": "Discutons de la manière dont nous pouvons aider votre entreprise à croître grâce à nos",
+  "servicesText": "services.",
+  "bookConsultation": "Réserver une consultation",
+  "process": {
+    "step1": {
+      "title": "Consultation Initiale",
+      "description": "Nous évaluons vos besoins et créons une approche personnalisée"
+    },
+    "step2": {
+      "title": "Mise en œuvre",
+      "description": "Nos experts fournissent le service avec précision et soin"
+    },
+    "step3": {
+      "title": "Support Continu",
+      "description": "Suivi et assistance continue pour des résultats optimaux"
+    }
+  },
+  "features": {
+    "accounting": {
+      "bookkeeping": "Tenue de livres et enregistrement",
+      "statements": "Préparation des états financiers",
+      "taxCompliance": "Conformité et déclaration fiscale",
+      "payroll": "Gestion de la paie",
+      "reports": "Rapports financiers mensuels",
+      "budget": "Planification et analyse budgétaire"
+    },
+    "audit": {
+      "internal": "Audits internes et externes",
+      "taxReviews": "Examens de conformité fiscale",
+      "risk": "Évaluation des risques",
+      "regulatory": "Conformité réglementaire",
+      "financial": "Audits des états financiers",
+      "compliance": "Tests de conformité"
+    },
+    "managerial": {
+      "strategy": "Développement de la stratégie commerciale",
+      "planning": "Planification financière",
+      "optimization": "Optimisation des performances",
+      "growth": "Conseil en croissance"
+    },
+    "payrollSocial": {
+      "processing": "Traitement de la paie",
+      "social": "Conformité à la sécurité sociale",
+      "benefits": "Gestion des avantages des employés",
+      "hr": "Conseil en ressources humaines"
+    },
+    "consolidation": {
+      "multi": "Consolidation multi-entités",
+      "intercompany": "Éliminations intersociétés",
+      "reporting": "Rapport consolidé",
+      "statements": "États financiers du groupe"
+    },
+    "risk": {
+      "identification": "Identification et évaluation des risques",
+      "mitigation": "Stratégies d’atténuation des risques",
+      "monitoring": "Surveillance de la conformité",
+      "controls": "Examen des contrôles internes"
+    }
+  }
+},
     "nav":  {
                 "home":  "Accueil",
                 "about":  "À propos",
@@ -9,6 +103,7 @@
                 "careers":  "Carrières",
                 "contact":  "Contact"
             },
+
     "auth":  {
                  "signIn":  "Se connecter",
                  "signOut":  "Se déconnecter",

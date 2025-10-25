@@ -1,4 +1,98 @@
 {
+    "servicesDropdown": {
+  "ourServices": "我们的服务",
+  "viewAllServices": "查看所有服务 →",
+  "services": {
+    "accountingBookkeeping": {
+      "title": "会计与簿记",
+      "description": "全面的财务记录和报告服务"
+    },
+    "auditAssurance": {
+      "title": "审计与鉴证",
+      "description": "独立的财务验证与合规服务"
+    },
+    "managerialAdvice": {
+      "title": "管理咨询",
+      "description": "战略咨询，助力您的企业成长与成功"
+    },
+    "payrollSocial": {
+      "title": "薪资与社会保障咨询",
+      "description": "完整的薪资管理与社保合规服务"
+    },
+    "consolidation": {
+      "title": "财务合并",
+      "description": "为多实体组织提供财务合并服务"
+    },
+    "risk": {
+      "title": "风险咨询",
+      "description": "全面的风险评估与管理服务"
+    }
+  }
+},
+"serviceModal": {
+  "whatsIncluded": "包含内容",
+  "ourProcess": "我们的流程",
+  "readyToStart": "准备好开始了吗？",
+  "discussText": "让我们讨论一下如何通过我们的",
+  "servicesText": "服务帮助您的企业成长。",
+  "bookConsultation": "预约咨询",
+  "process": {
+    "step1": {
+      "title": "初步咨询",
+      "description": "我们评估您的需求并制定定制化方案"
+    },
+    "step2": {
+      "title": "实施阶段",
+      "description": "我们的专家以精准和细致的方式提供服务"
+    },
+    "step3": {
+      "title": "持续支持",
+      "description": "持续监控与支持以确保最佳结果"
+    }
+  },
+  "features": {
+    "accounting": {
+      "bookkeeping": "簿记与记录保存",
+      "statements": "财务报表编制",
+      "taxCompliance": "税务合规与申报",
+      "payroll": "薪资管理",
+      "reports": "月度财务报告",
+      "budget": "预算规划与分析"
+    },
+    "audit": {
+      "internal": "内部与外部审计",
+      "taxReviews": "税务合规审查",
+      "risk": "风险评估",
+      "regulatory": "法规合规",
+      "financial": "财务报表审计",
+      "compliance": "合规性测试"
+    },
+    "managerial": {
+      "strategy": "商业战略制定",
+      "planning": "财务规划",
+      "optimization": "绩效优化",
+      "growth": "增长咨询"
+    },
+    "payrollSocial": {
+      "processing": "薪资处理",
+      "social": "社会保障合规",
+      "benefits": "员工福利管理",
+      "hr": "人力资源咨询"
+    },
+    "consolidation": {
+      "multi": "多实体财务合并",
+      "intercompany": "公司间交易抵消",
+      "reporting": "合并报告",
+      "statements": "集团财务报表"
+    },
+    "risk": {
+      "identification": "风险识别与评估",
+      "mitigation": "风险缓解策略",
+      "monitoring": "合规监控",
+      "controls": "内部控制审查"
+    }
+  }
+},
     "nav":  {
                 "home":  "首页",
                 "about":  "关于我们",

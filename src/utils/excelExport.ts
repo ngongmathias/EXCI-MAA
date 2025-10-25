@@ -12,21 +12,53 @@ export interface ExcelExportOptions {
     label: string;
     transform?: (value: any) => any;
   }>;
+  dateFilter?: {
+    startDate?: string;
+    endDate?: string;
+    dateField?: string;
+  };
 }
 
 export function exportToExcel(options: ExcelExportOptions): void {
-  const { data, filename, sheetName = 'Sheet1', columns } = options;
+  const { data, filename, sheetName = 'Sheet1', columns, dateFilter } = options;
 
   if (!data || data.length === 0) {
     console.warn('No data to export');
     return;
   }
 
+  // Filter data by date if dateFilter is provided
+  let filteredData = data;
+  if (dateFilter && (dateFilter.startDate || dateFilter.endDate)) {
+    const dateField = dateFilter.dateField || 'created_at';
+    filteredData = data.filter(item => {
+      const itemDate = new Date(item[dateField]);
+      if (isNaN(itemDate.getTime())) return true; // Include items with invalid dates
+      
+      if (dateFilter.startDate) {
+        const startDate = new Date(dateFilter.startDate);
+        if (itemDate < startDate) return false;
+      }
+      
+      if (dateFilter.endDate) {
+        const endDate = new Date(dateFilter.endDate);
+        endDate.setHours(23, 59, 59, 999); // Include the entire end date
+        if (itemDate > endDate) return false;
+      }
+      
+      return true;
+    });
+  }
+
+  if (filteredData.length === 0) {
+    throw new Error('No data matches the selected date range');
+  }
+
   let exportData: any[];
 
   if (columns && columns.length > 0) {
     // Use specified columns with transformations
-    exportData = data.map(row => {
+    exportData = filteredData.map(row => {
       const transformedRow: any = {};
       columns.forEach(col => {
         const value = row[col.key];
@@ -36,7 +68,7 @@ export function exportToExcel(options: ExcelExportOptions): void {
     });
   } else {
     // Use all data as-is
-    exportData = data;
+    exportData = filteredData;
   }
 
   // Create workbook and worksheet

@@ -1,4 +1,98 @@
 {
+    "servicesDropdown": {
+  "ourServices": "Obuweereza bwaffe",
+  "viewAllServices": "Laba obuweereza bwonna →",
+  "services": {
+    "accountingBookkeeping": {
+      "title": "Okuwandiika n’Okubala Ensimbi",
+      "description": "Okuterekera n’okuteekateeka ebyensimbi mu ngeri entuufu"
+    },
+    "auditAssurance": {
+      "title": "Okukebera n’Okukakasa",
+      "description": "Okukebera ebyensimbi mu ngeri ey’obwenkanya n’okugoberera amateeka"
+    },
+    "managerialAdvice": {
+      "title": "Okugamba Abakulembeze",
+      "description": "Okugamba okw’enkola okuyamba bizinesi yo okukula n’okufuna obuwanguzi"
+    },
+    "payrollSocial": {
+      "title": "Empeera n’Obutale bw’Abakozi",
+      "description": "Okutambuza empeera n’okukakasa obutale bw’obwannakyewa"
+    },
+    "consolidation": {
+      "title": "Okusunsula Ebyensimbi",
+      "description": "Obuweereza obuyamba ku bitongole ebingi okussa wamu ebyensimbi"
+    },
+    "risk": {
+      "title": "Okukebera Obulabe",
+      "description": "Okulowooza ku bulabe n’okukola enteekateeka ez’okulwawo"
+    }
+  }
+},
+"serviceModal": {
+  "whatsIncluded": "Ebirimu",
+  "ourProcess": "Enkola yaffe",
+  "readyToStart": "Otegefu okutandika?",
+  "discussText": "Tukubaganye ebirowoozo ku ngeri gyetuyinza okuyamba bizinesi yo okukula nga tukozesa",
+  "servicesText": "obuweereza bwaffe.",
+  "bookConsultation": "Teeka Olukiiko",
+  "process": {
+    "step1": {
+      "title": "Okusisinkana Okusooka",
+      "description": "Tukebeera ebyetaago byo ne tuteekateeka enkola ekulondeddwa"
+    },
+    "step2": {
+      "title": "Okutandika Okukola",
+      "description": "Abakugu baffe bakola omulimu n’obwegendereza n’obukakafu"
+    },
+    "step3": {
+      "title": "Okuyambibwa Okugenda mu maaso",
+      "description": "Okulondoola n’okuyamba okusigala nga bikola bulungi"
+    }
+  },
+  "features": {
+    "accounting": {
+      "bookkeeping": "Okuwandiika ebyensimbi",
+      "statements": "Okuteekateeka ebipapula by’ebyensimbi",
+      "taxCompliance": "Okugoberera amateeka g’omusolo",
+      "payroll": "Okutambuza empeera",
+      "reports": "Ebiwandiiko by’ebyensimbi buli mwezi",
+      "budget": "Okuteekateeka n’okwekeneenya ensimbi"
+    },
+    "audit": {
+      "internal": "Okukebera munda ne wabweru",
+      "taxReviews": "Okukebera emitego gy’omusolo",
+      "risk": "Okulowooza ku bulabe",
+      "regulatory": "Okugoberera amateeka",
+      "financial": "Okukebera ebipapula by’ebyensimbi",
+      "compliance": "Okukakasa obugobererwa"
+    },
+    "managerial": {
+      "strategy": "Okutondawo enkola y’obusuubuzi",
+      "planning": "Okuteekateeka ebyensimbi",
+      "optimization": "Okukendeeza okutayimbwa n’okuzzaamu amaanyi",
+      "growth": "Okukula kw’obusuubuzi"
+    },
+    "payrollSocial": {
+      "processing": "Okutambuza empeera",
+      "social": "Okugoberera amateeka g’obwannakyewa",
+      "benefits": "Okutereeza eby’obuyambi by’abakozi",
+      "hr": "Okukubaganya ku nsonga z’abantu abakozi"
+    },
+    "consolidation": {
+      "multi": "Okussa wamu ebyensimbi by’ebitongole bingi",
+      "intercompany": "Okusazaamu ebyava mu bitongole ebikola wamu",
+      "reporting": "Okuteekateeka alipoota ez’omutindo",
+      "statements": "Ebipapula by’ebyensimbi by’ekibiina"
+    },
+    "risk": {
+      "identification": "Okuzuula n’okukebera obulabe",
+      "mitigation": "Enkola ez’okukendeeza ku bulabe",
+      "monitoring": "Okulondoola obugobererwa",
+      "controls": "Okukebera eby’okulondoola eby’omunda"
+    }
+  }
+},
     "nav":  {
                 "home":  "Enyumba",
                 "about":  "Ku bireetera",

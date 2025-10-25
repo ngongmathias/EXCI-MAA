@@ -1,4 +1,98 @@
 {
+    "servicesDropdown": {
+  "ourServices": "Serivisi zacu",
+  "viewAllServices": "Reba serivisi zose →",
+  "services": {
+    "accountingBookkeeping": {
+      "title": "Kubaruramari no Kubika Ibitabo",
+      "description": "Kubika no gutegura neza inyandiko z’imari"
+    },
+    "auditAssurance": {
+      "title": "Igenzura n’Iyemezabwizigame",
+      "description": "Igenzura ryigenga ry’imari no gukurikiza amategeko"
+    },
+    "managerialAdvice": {
+      "title": "Inama z'Ubuyobozi",
+      "description": "Inama z’ingenzi zifasha ubucuruzi bwawe gukura no gutsinda"
+    },
+    "payrollSocial": {
+      "title": "Imishahara n’Ubwiteganyirize",
+      "description": "Gucunga imishahara neza no gukurikiza amategeko y’ubwiteganyirize"
+    },
+    "consolidation": {
+      "title": "Guhuza Imari",
+      "description": "Serivisi zo guhuza imari ku bigo bifite amashami menshi"
+    },
+    "risk": {
+      "title": "Inama ku Byago",
+      "description": "Gusesengura no gucunga ibyago mu buryo bwimbitse"
+    }
+  }
+},
+"serviceModal": {
+  "whatsIncluded": "Ibirimo",
+  "ourProcess": "Uko dukora",
+  "readyToStart": "Witeguye gutangira?",
+  "discussText": "Reka tuganire uko twafasha ubucuruzi bwawe gukura dukoresheje",
+  "servicesText": "serivisi zacu.",
+  "bookConsultation": "Andikisha Inama",
+  "process": {
+    "step1": {
+      "title": "Inama y’Itangiriro",
+      "description": "Dusuzuma ibyo ukeneye tugategura uburyo bukubereye"
+    },
+    "step2": {
+      "title": "Is实施",
+      "description": "Abahanga bacu batanga serivisi neza kandi ku buryo bwitondewe"
+    },
+    "step3": {
+      "title": "Gukurikirana Gukomeza",
+      "description": "Gukomeza kugenzura no gushyigikira ngo bigende neza"
+    }
+  },
+  "features": {
+    "accounting": {
+      "bookkeeping": "Kubika inyandiko z’imari",
+      "statements": "Gutegura raporo z’imari",
+      "taxCompliance": "Kugenzura no kubahiriza amategeko y’imisoro",
+      "payroll": "Gucunga imishahara",
+      "reports": "Raporo z’imari z’ukwezi",
+      "budget": "Gahunda no isesengura by’ingengo y’imari"
+    },
+    "audit": {
+      "internal": "Igenzura ry’imbere n’iry’inyuma",
+      "taxReviews": "Igenzura ry’imisoro",
+      "risk": "Isesengura ry’ibyago",
+      "regulatory": "Kubahiriza amategeko agenga imari",
+      "financial": "Igenzura ry’inyandiko z’imari",
+      "compliance": "Kugenzura ubuziranenge mu mikorere"
+    },
+    "managerial": {
+      "strategy": "Gutunganya gahunda y’ubucuruzi",
+      "planning": "Gahunda y’imari",
+      "optimization": "Kunoza imikorere",
+      "growth": "Inama zo guteza imbere ubucuruzi"
+    },
+    "payrollSocial": {
+      "processing": "Gutunganya imishahara",
+      "social": "Kubahiriza amategeko y’ubwiteganyirize",
+      "benefits": "Gucunga iby’inyungu z’abakozi",
+      "hr": "Inama ku byerekeye abakozi (HR)"
+    },
+    "consolidation": {
+      "multi": "Guhuza amashami menshi y’ikigo",
+      "intercompany": "Gukuraho ibikorwa hagati y’amashami",
+      "reporting": "Raporo zihuriweho",
+      "statements": "Raporo z’imari z’itsinda"
+    },
+    "risk": {
+      "identification": "Guhanga amaso no gusesengura ibyago",
+      "mitigation": "Uburyo bwo kugabanya ibyago",
+      "monitoring": "Kugenzura ubahirizwa ry’amategeko",
+      "controls": "Gusuzuma uburyo bwo kugenzura imbere mu kigo"
+    }
+  }
+},
     "nav":  {
                 "home":  "Ubutangazamakuru",
                 "about":  "Ibyerekeye",
