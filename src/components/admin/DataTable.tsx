@@ -29,9 +29,11 @@ import {
   Image as ImageIcon,
   CloudUpload as UploadIcon,
   Close as CloseIcon,
+  FileDownload as DownloadIcon,
 } from '@mui/icons-material';
 import ImageUploadManager from './ImageUploadManager';
 import { uploadMultipleImages, addEventImages, addPostImages } from '../../services/imageUpload';
+import { exportToExcel, excelFormatters } from '../../utils/excelExport';
 
 interface DataTableProps {
   title: string;
@@ -349,6 +351,44 @@ const DataTable: React.FC<DataTableProps> = ({
     setPreviewUrls([]);
   };
 
+  // Handle Excel export
+  const handleExcelExport = () => {
+    const exportData = useSupabase ? (supa?.rows || []) : data;
+    
+    if (!exportData || exportData.length === 0) {
+      setError('No data available to export');
+      return;
+    }
+
+    // Define columns for export with proper formatting
+    const columns = [
+      ...fields.map(field => ({
+        key: field.key,
+        label: field.label,
+        transform: field.type === 'date' ? excelFormatters.date :
+                  field.type === 'textarea' ? excelFormatters.truncateText(200) :
+                  undefined
+      })),
+      {
+        key: 'created_at',
+        label: 'Created At',
+        transform: excelFormatters.dateTime
+      }
+    ];
+
+    try {
+      exportToExcel({
+        data: exportData,
+        filename: `${title.replace(/\s+/g, '_').toLowerCase()}_export`,
+        sheetName: title,
+        columns
+      });
+    } catch (error) {
+      console.error('Export failed:', error);
+      setError('Failed to export Excel file');
+    }
+  };
+
   // Remove individual file
   const removeFile = (index: number) => {
     URL.revokeObjectURL(previewUrls[index]);
@@ -415,14 +455,25 @@ const DataTable: React.FC<DataTableProps> = ({
         <Typography variant="h4" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
           {title}
         </Typography>
-        <Button
-          variant="contained"
-          startIcon={<AddIcon />}
-          onClick={handleAdd}
-          sx={{ borderRadius: 2 }}
-        >
-          Add New
-        </Button>
+        <Box sx={{ display: 'flex', gap: 2 }}>
+          <Button
+            variant="outlined"
+            startIcon={<DownloadIcon />}
+            onClick={handleExcelExport}
+            sx={{ borderRadius: 2 }}
+            color="success"
+          >
+            Export Excel
+          </Button>
+          <Button
+            variant="contained"
+            startIcon={<AddIcon />}
+            onClick={handleAdd}
+            sx={{ borderRadius: 2 }}
+          >
+            Add New
+          </Button>
+        </Box>
       </Box>
 
       {/* Error Alert */}

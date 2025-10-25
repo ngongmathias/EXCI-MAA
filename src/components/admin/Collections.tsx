@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { fetchAll, insertItem, updateItemById, deleteById } from '../../services/supabaseCrud';
+import { exportToExcel, excelFormatters } from '../../utils/excelExport';
 
 type CollectionKey = 'services' | 'events' | 'posts' | 'comments' | 'contact_submissions' | 'consultation_requests';
 
@@ -72,9 +73,58 @@ export const CollectionManager: React.FC<CollectionManagerProps> = ({ title, fie
 
   const pretty = useMemo(() => items.map((i: any) => ({ ...i })), [items]);
 
+  // Handle Excel export
+  const handleExcelExport = () => {
+    if (!items || items.length === 0) {
+      setError('No data available to export');
+      return;
+    }
+
+    // Define columns for export
+    const columns = [
+      ...fields.map(field => ({
+        key: field,
+        label: field.charAt(0).toUpperCase() + field.slice(1).replace(/_/g, ' ')
+      })),
+      {
+        key: 'created_at',
+        label: 'Created At',
+        transform: excelFormatters.dateTime
+      },
+      {
+        key: 'id',
+        label: 'ID'
+      }
+    ];
+
+    try {
+      exportToExcel({
+        data: items,
+        filename: `${title.replace(/\s+/g, '_').toLowerCase()}_export`,
+        sheetName: title,
+        columns
+      });
+    } catch (error) {
+      console.error('Export failed:', error);
+      setError('Failed to export Excel file');
+    }
+  };
+
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-      <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+        <button
+          onClick={handleExcelExport}
+          disabled={!items || items.length === 0}
+          className="px-3 py-1.5 text-sm rounded-md bg-green-600 text-white hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center gap-2"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Export Excel
+        </button>
+      </div>
       {error && <div className="mt-2 rounded-md bg-red-50 text-red-700 px-3 py-2 text-sm">{error}</div>}
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {fields.map((f: string) => (

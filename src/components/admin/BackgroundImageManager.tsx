@@ -28,6 +28,7 @@ import {
   ArrowUpward as ArrowUpIcon,
   ArrowDownward as ArrowDownIcon,
   Add as AddIcon,
+  FileDownload as DownloadIcon,
 } from '@mui/icons-material';
 import {
   getBackgroundImages,
@@ -37,6 +38,7 @@ import {
   deleteBackgroundImage,
   toggleBackgroundImageStatus,
 } from '../../services/backgroundImageService';
+import { exportToExcel, excelFormatters } from '../../utils/excelExport';
 
 interface BackgroundImage {
   id: string;
@@ -291,21 +293,65 @@ const BackgroundImageManager = () => {
     setPreviewUrls([]);
   };
 
+  // Handle Excel export
+  const handleExcelExport = () => {
+    if (!images || images.length === 0) {
+      setError('No background images available to export');
+      return;
+    }
+
+    const columns = [
+      { key: 'title', label: 'Title' },
+      { key: 'description', label: 'Description' },
+      { key: 'image_url', label: 'Image URL' },
+      { key: 'display_order', label: 'Display Order' },
+      { key: 'is_active', label: 'Active', transform: excelFormatters.boolean },
+      { key: 'created_at', label: 'Created At', transform: excelFormatters.dateTime },
+      { key: 'updated_at', label: 'Updated At', transform: excelFormatters.dateTime }
+    ];
+
+    try {
+      exportToExcel({
+        data: images,
+        filename: 'background_images_export',
+        sheetName: 'Background Images',
+        columns
+      });
+    } catch (error) {
+      console.error('Export failed:', error);
+      setError('Failed to export Excel file');
+    }
+  };
+
   return (
     <Box>
       {/* Header */}
       <Box sx={{ mb: 3 }}>
-        <Typography variant="h5" sx={{ fontWeight: 'bold', color: 'text.primary', mb: 3 }}>
-          Slideshow Images ({images.length})
-        </Typography>
-        <Button
-          variant="contained"
-          startIcon={<AddIcon />}
-          onClick={() => setUploadDialogOpen(true)}
-          sx={{ borderRadius: 2 }}
-        >
-          Upload New Image
-        </Button>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
+          <Typography variant="h5" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
+            Slideshow Images ({images.length})
+          </Typography>
+          <Box sx={{ display: 'flex', gap: 2 }}>
+            <Button
+              variant="outlined"
+              startIcon={<DownloadIcon />}
+              onClick={handleExcelExport}
+              sx={{ borderRadius: 2 }}
+              color="success"
+              disabled={!images || images.length === 0}
+            >
+              Export Excel
+            </Button>
+            <Button
+              variant="contained"
+              startIcon={<AddIcon />}
+              onClick={() => setUploadDialogOpen(true)}
+              sx={{ borderRadius: 2 }}
+            >
+              Upload New Image
+            </Button>
+          </Box>
+        </Box>
       </Box>
 
       {/* Alerts */}
