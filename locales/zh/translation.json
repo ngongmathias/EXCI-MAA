@@ -93,6 +93,19 @@
     }
   }
 },
+"globalOfficesDropdown": {
+  "ourOffices": "我们的全球办事处",
+  "viewAllOffices": "查看所有办事处 →"
+},
+"officeModal": {
+  "capitalCity": "首都",
+  "contactMessage": "联系我们了解我们在{country}的服务。我们在{capital}为您的所有业务需求提供帮助。",
+  "email": "邮箱",
+  "phone": "电话号码"
+},
+"common": {
+  "close": "关闭"
+},
     "nav":  {
                 "home":  "首页",
                 "about":  "关于我们",

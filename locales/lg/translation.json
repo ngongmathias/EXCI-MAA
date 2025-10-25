@@ -93,6 +93,19 @@
     }
   }
 },
+"globalOfficesDropdown": {
+  "ourOffices": "Amabiro gaffe ag'ensi yonna",
+  "viewAllOffices": "Laba amabiro gonna →"
+},
+"officeModal": {
+  "capitalCity": "Ekibuga ekikulu",
+  "contactMessage": "Twenyigire ku byeweeyo bwaffe mu {country}. Tuli wano okukuyamba mu byonna eby'ubuvunaanyizibwa mu {capital}.",
+  "email": "Imeeri",
+  "phone": "Ennamba z'essimu"
+},
+"common": {
+  "close": "Okuggalawo"
+},
     "nav":  {
                 "home":  "Enyumba",
                 "about":  "Ku bireetera",

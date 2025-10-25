@@ -67,6 +67,10 @@
       }
     }
   },
+  "globalOfficesDropdown": {
+    "ourOffices": "Our Global Offices",
+    "viewAllOffices": "View All Offices →"
+  },
   "serviceModal": {
     "whatsIncluded": "What's Included",
     "ourProcess": "Our Process",
@@ -130,6 +134,15 @@
         "controls": "Internal controls review"
       }
     }
+  },
+  "officeModal": {
+    "capitalCity": "Capital City",
+    "contactMessage": "Get in touch with us regarding our services in {country}. We're here to help with all your business needs in {capital}.",
+    "email": "Email",
+    "phone": "Phone Numbers"
+  },
+  "common": {
+    "close": "Close"
   },
   "hero": {
     "title": "Professional Accounting &",

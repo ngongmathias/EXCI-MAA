@@ -91,7 +91,20 @@
       "monitoring": "مراقبة الامتثال",
       "controls": "مراجعة الضوابط الداخلية"
     }
+  },
+  "globalOfficesDropdown": {
+    "ourOffices": "مكاتبنا العالمية",
+    "viewAllOffices": "عرض جميع المكاتب ←"
   }
+},
+"officeModal": {
+  "capitalCity": "العاصمة",
+  "contactMessage": "تواصل معنا بخصوص خدماتنا في {country}. نحن هنا لمساعدتك في جميع احتياجاتك التجارية في {capital}.",
+  "email": "البريد الإلكتروني",
+  "phone": "أرقام الهاتف"
+},
+"common": {
+  "close": "إغلاق"
 },
     "nav":  {
                 "home":  "الرئيسية",

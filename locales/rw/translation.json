@@ -93,6 +93,19 @@
     }
   }
 },
+"globalOfficesDropdown": {
+  "ourOffices": "Amabiro yacu y'isi",
+  "viewAllOffices": "Reba amabiro yose →"
+},
+"officeModal": {
+  "capitalCity": "Umurwa mukuru",
+  "contactMessage": "Duhamagare ku byerekeye serivisi zacu muri {country}. Turi hano kugufasha mu byose by'ubucuruzi muri {capital}.",
+  "email": "Imeyili",
+  "phone": "Nimero za terefone"
+},
+"common": {
+  "close": "Gufunga"
+},
     "nav":  {
                 "home":  "Ubutangazamakuru",
                 "about":  "Ibyerekeye",

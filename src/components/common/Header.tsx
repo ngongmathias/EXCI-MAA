@@ -5,35 +5,43 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import AuthButton from './AuthButton';
 import { getTranslatedServices } from '../../data/services';
+import { getOfficesForDropdown, getCapitalCity } from '../../data/officesHelper';
 import ServiceModal from '../pages/services/ServiceModal';
+import OfficeModal from '../pages/global-offices/OfficeModal';
 
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isOfficesOpen, setIsOfficesOpen] = useState(false);
   const [selectedService, setSelectedService] = useState<string | null>(null);
+  const [selectedOffice, setSelectedOffice] = useState<{ country: string; capital: string } | null>(null);
   const { t } = useLanguage();
   const location = useLocation();
   const navigate = useNavigate();
   const servicesRef = useRef<HTMLDivElement>(null);
+  const officesRef = useRef<HTMLDivElement>(null);
   
   const services = getTranslatedServices(t);
+  const offices = getOfficesForDropdown();
 
   const navigationBefore = [
     {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
   ];
 
   const navigationAfter = [
-    {name: t('nav.globalOffices'), href: '/global-offices', icon: <Globe className="h-4 w-4" />},
     {name: t('nav.careers'), href: '/careers', icon: <UserPlus className="h-4 w-4" />},
     {name: t('nav.insights'), href: '/insights', icon: <BookOpen className="h-4 w-4" />},
     {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />}
   ];
 
-  // Handle clicks outside services dropdown
+  // Handle clicks outside dropdowns
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
         setIsServicesOpen(false);
+      }
+      if (officesRef.current && !officesRef.current.contains(event.target as Node)) {
+        setIsOfficesOpen(false);
       }
     };
 
@@ -46,8 +54,17 @@ const Header: FC = () => {
     setIsServicesOpen(false);
   };
 
+  const handleOfficeClick = (country: string, capital: string) => {
+    setSelectedOffice({ country, capital });
+    setIsOfficesOpen(false);
+  };
+
   const closeServiceModal = () => {
     setSelectedService(null);
+  };
+
+  const closeOfficeModal = () => {
+    setSelectedOffice(null);
   };
 
   return (
@@ -118,6 +135,15 @@ const Header: FC = () => {
               {isServicesOpen && (
                 <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
                   <div className="py-2">
+                    <div className="px-4 py-3 border-b border-gray-100">
+                      <Link
+                        to="/services"
+                        onClick={() => setIsServicesOpen(false)}
+                        className="text-sm font-medium text-blue-600 hover:text-blue-700"
+                      >
+                        {t('servicesDropdown.viewAllServices')}
+                      </Link>
+                    </div>
                     <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide border-b border-gray-100">
                       {t('servicesDropdown.ourServices')}
                     </div>
@@ -136,15 +162,65 @@ const Header: FC = () => {
                         </div>
                       </button>
                     ))}
-                    <div className="px-4 py-3 border-t border-gray-100">
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Global Offices Dropdown */}
+            <div className="relative" ref={officesRef}>
+              <button
+                onClick={() => setIsOfficesOpen(!isOfficesOpen)}
+                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  location.pathname.startsWith('/global-offices') || isOfficesOpen
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                <span className={`transition-colors duration-200 ${
+                  location.pathname.startsWith('/global-offices') || isOfficesOpen
+                    ? 'text-blue-600'
+                    : 'text-gray-500 group-hover:text-blue-600'
+                }`}>
+                  <Globe className="h-4 w-4" />
+                </span>
+                <span>{t('nav.globalOffices')}</span>
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
+                  isOfficesOpen ? 'rotate-180' : ''
+                }`} />
+              </button>
+
+              {/* Offices Dropdown Menu */}
+              {isOfficesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                  <div className="py-2">
+                    <div className="px-4 py-3 border-b border-gray-100">
                       <Link
-                        to="/services"
-                        onClick={() => setIsServicesOpen(false)}
+                        to="/global-offices"
+                        onClick={() => setIsOfficesOpen(false)}
                         className="text-sm font-medium text-blue-600 hover:text-blue-700"
                       >
-                        {t('servicesDropdown.viewAllServices')}
+                        {t('globalOfficesDropdown.viewAllOffices')}
                       </Link>
                     </div>
+                    <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide border-b border-gray-100">
+                      {t('globalOfficesDropdown.ourOffices')}
+                    </div>
+                    {offices.map((office) => (
+                      <button
+                        key={office.id}
+                        onClick={() => handleOfficeClick(office.country, office.capital)}
+                        className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors duration-200 border-b border-gray-50 last:border-b-0"
+                      >
+                        <div className="flex items-start space-x-3">
+                          <span className="text-2xl">{office.flag}</span>
+                          <div>
+                            <div className="text-sm font-medium text-gray-900">{office.country}</div>
+                            <div className="text-xs text-gray-500 mt-1">{office.city}</div>
+                          </div>
+                        </div>
+                      </button>
+                    ))}
                   </div>
                 </div>
               )}
@@ -230,6 +306,13 @@ const Header: FC = () => {
                 </div>
               </div>
               <div className="ml-6 space-y-1">
+                <Link
+                  to="/services"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-3 py-2 rounded-md text-sm font-medium text-blue-600 hover:bg-blue-50"
+                >
+                  {t('servicesDropdown.viewAllServices')}
+                </Link>
                 {services.map((service) => (
                   <button
                     key={service.id}
@@ -245,13 +328,40 @@ const Header: FC = () => {
                     </div>
                   </button>
                 ))}
+              </div>
+            </div>
+
+            {/* Mobile Global Offices Section */}
+            <div className="border-t border-gray-200 pt-3 mt-3">
+              <div className="px-3 py-2">
+                <div className="flex items-center space-x-3">
+                  <Globe className="h-5 w-5 text-gray-500" />
+                  <span className="text-base font-medium text-gray-700">{t('nav.globalOffices')}</span>
+                </div>
+              </div>
+              <div className="ml-6 space-y-1">
                 <Link
-                  to="/services"
+                  to="/global-offices"
                   onClick={() => setIsMenuOpen(false)}
                   className="block px-3 py-2 rounded-md text-sm font-medium text-blue-600 hover:bg-blue-50"
                 >
-                  {t('servicesDropdown.viewAllServices')}
+                  {t('globalOfficesDropdown.viewAllOffices')}
                 </Link>
+                {offices.map((office) => (
+                  <button
+                    key={office.id}
+                    onClick={() => {
+                      handleOfficeClick(office.country, office.capital);
+                      setIsMenuOpen(false);
+                    }}
+                    className="w-full text-left px-3 py-2 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50"
+                  >
+                    <div className="flex items-center space-x-2">
+                      <span className="text-lg">{office.flag}</span>
+                      <span>{office.country}</span>
+                    </div>
+                  </button>
+                ))}
               </div>
             </div>
             
@@ -293,6 +403,16 @@ const Header: FC = () => {
           serviceId={selectedService}
           isOpen={!!selectedService}
           onClose={closeServiceModal}
+        />
+      )}
+
+      {/* Office Modal */}
+      {selectedOffice && (
+        <OfficeModal
+          country={selectedOffice.country}
+          capital={selectedOffice.capital}
+          isOpen={!!selectedOffice}
+          onClose={closeOfficeModal}
         />
       )}
     </header>

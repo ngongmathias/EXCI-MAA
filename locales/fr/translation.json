@@ -91,7 +91,20 @@
       "monitoring": "Surveillance de la conformité",
       "controls": "Examen des contrôles internes"
     }
+  },
+  "globalOfficesDropdown": {
+    "ourOffices": "Nos Bureaux Mondiaux",
+    "viewAllOffices": "Voir Tous les Bureaux →"
   }
+},
+"officeModal": {
+  "capitalCity": "Capitale",
+  "contactMessage": "Contactez-nous concernant nos services en {country}. Nous sommes là pour vous aider avec tous vos besoins d'affaires à {capital}.",
+  "email": "Email",
+  "phone": "Numéros de téléphone"
+},
+"common": {
+  "close": "Fermer"
 },
     "nav":  {
                 "home":  "Accueil",
