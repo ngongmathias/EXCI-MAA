@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../../contexts/LanguageContext';
-import { services as servicesData } from '../../../data/services';
+import { getTranslatedServices } from '../../../data/services';
 import { countries } from '../../../data/countries';
 import { insertItem } from '../../../services/supabaseCrud';
 
@@ -20,6 +20,9 @@ const ConsultationForm: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [submitting, setSubmitting] = useState(false);
+  
+  const servicesData = getTranslatedServices(t);
+  
   const [form, setForm] = useState<FormData>({
     fullName: '',
     email: '',
@@ -132,7 +135,7 @@ const ConsultationForm: FC = () => {
           required
         >
           {servicesData.map((s) => (
-            <option key={s.id} value={s.id}>{t(s.title)}</option>
+            <option key={s.id} value={s.id}>{s.title}</option>
           ))}
         </select>
       </div>

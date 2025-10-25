@@ -52,6 +52,7 @@ export async function addBackgroundImage(imageData) {
       image_url: imageData.url,
       title: imageData.title || 'Background Image',
       description: imageData.description || '',
+      link_url: imageData.linkUrl || null,
       display_order: imageData.displayOrder || 0,
       is_active: imageData.isActive !== undefined ? imageData.isActive : true,
       created_by: imageData.createdBy || 'admin'

@@ -48,6 +48,7 @@ interface BackgroundImage {
   image_url: string;
   title: string | null;
   description: string | null;
+  link_url: string | null;
   display_order: number;
   is_active: boolean;
   created_at: string;
@@ -70,10 +71,11 @@ const BackgroundImageManager = () => {
   const [uploadFormData, setUploadFormData] = useState({
     title: '',
     description: '',
+    linkUrl: '',
   });
 
   // Inline edit states
-  const [editValues, setEditValues] = useState<{[key: string]: {title: string, description: string}}>({});
+  const [editValues, setEditValues] = useState<{[key: string]: {title: string, description: string, linkUrl: string}}>({});
   const [showDateFilter, setShowDateFilter] = useState(false);
   const [startDate, setStartDate] = useState<string>('');
   const [endDate, setEndDate] = useState<string>('');
@@ -96,11 +98,12 @@ const BackgroundImageManager = () => {
       setImages(data);
       
       // Initialize edit values
-      const initialEditValues: {[key: string]: {title: string, description: string}} = {};
+      const initialEditValues: {[key: string]: {title: string, description: string, linkUrl: string}} = {};
       data.forEach((img: BackgroundImage) => {
         initialEditValues[img.id] = {
           title: img.title || '',
-          description: img.description || ''
+          description: img.description || '',
+          linkUrl: img.link_url || ''
         };
       });
       setEditValues(initialEditValues);
@@ -156,6 +159,7 @@ const BackgroundImageManager = () => {
             url: result.url,
             title: uploadFormData.title || `Background ${images.length + index + 1}`,
             description: uploadFormData.description,
+            linkUrl: uploadFormData.linkUrl,
             displayOrder: images.length + index,
             isActive: true,
             createdBy: 'admin',
@@ -175,6 +179,17 @@ const BackgroundImageManager = () => {
   };
 
   const handleStartEdit = (imageId: string) => {
+    const image = images.find(img => img.id === imageId);
+    if (image) {
+      setEditValues({
+        ...editValues,
+        [imageId]: {
+          title: image.title || '',
+          description: image.description || '',
+          linkUrl: image.link_url || ''
+        }
+      });
+    }
     setEditingId(imageId);
   };
 
@@ -186,6 +201,7 @@ const BackgroundImageManager = () => {
       await updateBackgroundImage(image.id, {
         title: editValues[image.id]?.title || '',
         description: editValues[image.id]?.description || '',
+        link_url: editValues[image.id]?.linkUrl || null,
       });
 
       setSuccess('Background image updated successfully');
@@ -206,7 +222,8 @@ const BackgroundImageManager = () => {
         ...editValues,
         [imageId]: {
           title: image.title || '',
-          description: image.description || ''
+          description: image.description || '',
+          linkUrl: image.link_url || ''
         }
       });
     }
@@ -290,7 +307,7 @@ const BackgroundImageManager = () => {
     setSelectedFiles([]);
     previewUrls.forEach(url => URL.revokeObjectURL(url));
     setPreviewUrls([]);
-    setUploadFormData({ title: '', description: '' });
+    setUploadFormData({ title: '', description: '', linkUrl: '' });
   };
 
   const clearSelectedFiles = () => {
@@ -309,6 +326,7 @@ const BackgroundImageManager = () => {
     const columns = [
       { key: 'title', label: 'Title' },
       { key: 'description', label: 'Description' },
+      { key: 'link_url', label: 'Link URL' },
       { key: 'image_url', label: 'Image URL' },
       { key: 'display_order', label: 'Display Order' },
       { key: 'is_active', label: 'Active', transform: excelFormatters.boolean },
@@ -454,6 +472,7 @@ const BackgroundImageManager = () => {
             <TableRow sx={{ bgcolor: 'grey.50' }}>
               <TableCell>Image</TableCell>
               <TableCell>Title</TableCell>
+              <TableCell>Link URL</TableCell>
               <TableCell>Status</TableCell>
               <TableCell>Sort Order</TableCell>
               <TableCell>Created</TableCell>
@@ -463,7 +482,7 @@ const BackgroundImageManager = () => {
           <TableBody>
             {images.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={6} align="center" sx={{ py: 4 }}>
+                <TableCell colSpan={7} align="center" sx={{ py: 4 }}>
                   <Typography color="text.secondary">
                     No background images yet. Upload your first image to get started.
                   </Typography>
@@ -513,6 +532,42 @@ const BackgroundImageManager = () => {
                         <Typography variant="caption" color="text.secondary">
                           {image.description || 'N/A'}
                         </Typography>
+                      </Box>
+                    )}
+                  </TableCell>
+                  <TableCell>
+                    {editingId === image.id ? (
+                      <TextField
+                        size="small"
+                        fullWidth
+                        value={editValues[image.id]?.linkUrl || ''}
+                        onChange={(e) => setEditValues({
+                          ...editValues,
+                          [image.id]: { ...editValues[image.id], linkUrl: e.target.value }
+                        })}
+                        placeholder="https://example.com"
+                        helperText="Optional link URL"
+                      />
+                    ) : (
+                      <Box>
+                        {image.link_url ? (
+                          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                            <Typography variant="body2" noWrap sx={{ maxWidth: 150 }}>
+                              {image.link_url}
+                            </Typography>
+                            <IconButton
+                              size="small"
+                              onClick={() => window.open(image.link_url, '_blank')}
+                              sx={{ color: 'primary.main' }}
+                            >
+                              🔗
+                            </IconButton>
+                          </Box>
+                        ) : (
+                          <Typography variant="body2" color="text.secondary">
+                            No link
+                          </Typography>
+                        )}
                       </Box>
                     )}
                   </TableCell>
@@ -631,6 +686,15 @@ const BackgroundImageManager = () => {
               multiline
               rows={3}
               sx={{ mb: 2 }}
+            />
+            <TextField
+              fullWidth
+              label="Link URL (Optional)"
+              value={uploadFormData.linkUrl}
+              onChange={(e) => setUploadFormData({ ...uploadFormData, linkUrl: e.target.value })}
+              sx={{ mb: 2 }}
+              helperText="When users click on the slide, they will be redirected to this URL"
+              placeholder="https://example.com"
             />
 
             <Box sx={{ p: 2, border: '2px dashed', borderColor: 'divider', borderRadius: 2 }}>

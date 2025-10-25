@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart2, Shield, Users, Globe } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import MotionInView from '../../enhanced/MotionInView';
-import BackgroundSlideshow from '../../common/BackgroundSlideshow';
 
 const features = (t: (k: string) => string) => [
   {
@@ -56,7 +55,7 @@ const Hero: FC = () => {
   
 
   return (
-    <BackgroundSlideshow className="min-h-[90vh]">
+    <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 min-h-[90vh] overflow-hidden">
       <section className="relative py-16 lg:py-28">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -189,7 +188,7 @@ const Hero: FC = () => {
       <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
     </section>
-    </BackgroundSlideshow>
+    </div>
   );
 };
 

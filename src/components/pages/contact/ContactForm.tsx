@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import { insertItem } from '../../../services/supabaseCrud';
-import { services as servicesData } from '../../../data/services';
+import { getTranslatedServices } from '../../../data/services';
 
 type ContactFormState = {
   name: string;
@@ -16,6 +16,8 @@ const ContactForm: FC = () => {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  const servicesData = getTranslatedServices(t);
   const [form, setForm] = useState<ContactFormState>({
     name: '',
     email: '',
@@ -54,7 +56,7 @@ const ContactForm: FC = () => {
   };
 
   return (
-    <section className="py-12" id='contact-form'>
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -110,7 +112,7 @@ const ContactForm: FC = () => {
               <option value="">{t?.('contact.form.select_subject') ?? 'Select a subject'}</option>
               {servicesData.map((service) => (
                 <option key={service.id} value={service.title}>
-                  {t?.(`services.service${service.id}Title`) ?? service.title}
+                  {service.title}
                 </option>
               ))}
               <option value="Other">{t?.('contact.form.other') ?? 'Other'}</option>
