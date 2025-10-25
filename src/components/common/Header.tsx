@@ -18,8 +18,11 @@ const Header: FC = () => {
   
   const services = getTranslatedServices(t);
 
-  const navigation = [
+  const navigationBefore = [
     {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
+  ];
+
+  const navigationAfter = [
     {name: t('nav.globalOffices'), href: '/global-offices', icon: <Globe className="h-4 w-4" />},
     {name: t('nav.careers'), href: '/careers', icon: <UserPlus className="h-4 w-4" />},
     {name: t('nav.insights'), href: '/insights', icon: <BookOpen className="h-4 w-4" />},
@@ -66,7 +69,8 @@ const Header: FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
-            {navigation.map((item) => (
+            {/* Navigation items before Services */}
+            {navigationBefore.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
@@ -145,6 +149,28 @@ const Header: FC = () => {
                 </div>
               )}
             </div>
+            
+            {/* Navigation items after Services */}
+            {navigationAfter.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                <span className={`transition-colors duration-200 ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600'
+                    : 'text-gray-500 group-hover:text-blue-600'
+                }`}>
+                  {item.icon}
+                </span>
+                <span>{item.name}</span>
+              </Link>
+            ))}
           </nav>
 
           { /* Desktop Actions */ }
@@ -172,7 +198,8 @@ const Header: FC = () => {
         {/* Mobile Navigation */}
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navigation.map((item) => (
+            {/* Navigation items before Services */}
+            {navigationBefore.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
@@ -227,6 +254,29 @@ const Header: FC = () => {
                 </Link>
               </div>
             </div>
+            
+            {/* Navigation items after Services */}
+            {navigationAfter.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <span className={`transition-colors duration-200 ${
+                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                    ? 'text-blue-600'
+                    : 'text-gray-500 group-hover:text-blue-600'
+                }`}>
+                  {item.icon}
+                </span>
+                <span>{item.name}</span>
+              </Link>
+            ))}
           </div>
           <div className="pt-4 border-t border-gray-200">
             <div className="flex items-center justify-between px-3 py-2">
