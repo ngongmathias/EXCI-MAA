@@ -166,7 +166,7 @@ const BlogSection: React.FC = () => {
                           console.log('Share button clicked for blog post:', post.id);
                           handleShare(post.id, post.title);
                         }}
-                        className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 z-20 relative border-2 border-white/50 backdrop-blur-sm"
+                        className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:from-blue-600 hover:to-purple-700 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 z-20 relative border-2 border-white/50 backdrop-blur-sm"
                         aria-label="Share blog post - copy link to clipboard"
                         style={{ minWidth: '90px' }}
                       >
@@ -288,7 +288,7 @@ const BlogDetailModal: React.FC<{
                       showShareNotification(result.message, result.success ? 'success' : 'error');
                     });
                   }}
-                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:from-blue-700 hover:to-purple-700 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
                 >
                   <Share2 className="w-4 h-4" />
                   Share Post
