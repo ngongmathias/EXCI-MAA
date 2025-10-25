@@ -55,13 +55,13 @@ const Hero: FC = () => {
   
 
   return (
-    <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 min-h-[90vh] overflow-hidden">
+    <div className="relative bg-gradient-to-br from-blue-50 to-white min-h-[90vh] overflow-hidden">
       <section className="relative py-16 lg:py-28">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/10 rounded-full mix-blend-overlay filter blur-xl animate-blob"></div>
-          <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-20 right-20 w-64 h-64 bg-white/10 rounded-full mix-blend-overlay filter blur-xl animate-blob animation-delay-4000"></div>
+          <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-20 right-20 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -74,18 +74,18 @@ const Hero: FC = () => {
                 {t('offices.subtitle')}
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-2xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 <span className="block">{t('hero.title')}</span>
-                <span className={`inline-block mt-2 bg-gradient-to-r from-blue-200 to-blue-100 bg-clip-text text-transparent transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
+                <span className={`inline-block mt-2 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
                   {heroTexts(t)[currentText]}
                 </span>
               </h1>
               
-              <p className="text-xl text-blue-100 font-semibold drop-shadow-lg">
+              <p className="text-xl text-blue-600 font-semibold">
                 {t('hero.subtitle')}
               </p>
               
-              <p className="text-lg text-white/90 leading-relaxed drop-shadow-lg">
+              <p className="text-lg text-gray-600 leading-relaxed">
                 {t('hero.description')}
               </p>
               </div>
@@ -134,35 +134,35 @@ const Hero: FC = () => {
             <div className="bg-blue-600 rounded-2xl p-8 text-white">
               <div className="space-y-6">
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-4">{t('offices.title')}</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">{t('offices.title')}</h3>
                   <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">Canada</div>
-                      <div className="text-blue-100">+1 416 624 2510</div>
+                    <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
+                      <div className="font-semibold text-gray-900">Canada</div>
+                      <div className="text-blue-900">+1 416 624 2510</div>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">France</div>
-                      <div className="text-blue-100">+33 652 452 1402</div>
+                    <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
+                      <div className="font-semibold text-gray-900">France</div>
+                      <div className="text-blue-900">+33 652 452 1402</div>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">Rwanda</div>
-                      <div className="text-blue-100">+250 787 779 965</div>
+                    <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
+                      <div className="font-semibold text-gray-900">Rwanda</div>
+                      <div className="text-blue-900">+250 787 779 965</div>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">Cameroon</div>
-                      <div className="text-blue-100">+237 698 835 251</div>
+                    <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
+                      <div className="font-semibold text-gray-900">Cameroon</div>
+                      <div className="text-blue-600">+237 698 835 251</div>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">Burundi</div>
-                      <div className="text-blue-100">+257 793 439 93</div>
+                    <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
+                      <div className="font-semibold text-gray-900">Burundi</div>
+                      <div className="text-blue-900">+257 793 439 93</div>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">United States of America</div>
-                      <div className="text-blue-100">+1 502 299 247</div>
+                    <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
+                      <div className="font-semibold text-gray-900">United States of America</div>
+                      <div className="text-blue-900">+1 502 299 247</div>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <div className="font-semibold">Republic of Congo</div>
-                      <div className="text-blue-100">+ 1(416) 624 2510 / +242 06 444 0729</div>
+                    <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
+                      <div className="font-semibold text-gray-900">Republic of Congo</div>
+                      <div className="text-blue-900">+ 1(416) 624 2510 / +242 06 444 0729</div>
                     </div>
                   </div>
                 </div>
@@ -185,8 +185,8 @@ const Hero: FC = () => {
       </div>
 
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/10 rounded-full mix-blend-overlay filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse pointer-events-none"></div>
     </section>
     </div>
   );
