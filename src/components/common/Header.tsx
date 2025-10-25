@@ -34,20 +34,7 @@ const Header: FC = () => {
     {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />}
   ];
 
-  // Handle clicks outside dropdowns
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
-        setIsServicesOpen(false);
-      }
-      if (officesRef.current && !officesRef.current.contains(event.target as Node)) {
-        setIsOfficesOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  // No need for click outside handlers since we're using hover
 
   const handleServiceClick = (serviceId: string) => {
     setSelectedService(serviceId);
@@ -173,9 +160,14 @@ const Header: FC = () => {
             </div>
 
             {/* Global Offices Dropdown */}
-            <div className="relative" ref={officesRef}>
-              <button
-                onClick={() => setIsOfficesOpen(!isOfficesOpen)}
+            <div 
+              className="relative" 
+              ref={officesRef}
+              onMouseEnter={() => setIsOfficesOpen(true)}
+              onMouseLeave={() => setIsOfficesOpen(false)}
+            >
+              <Link
+                to="/global-offices"
                 className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   location.pathname.startsWith('/global-offices') || isOfficesOpen
                     ? 'text-blue-600 bg-blue-50'
@@ -193,11 +185,11 @@ const Header: FC = () => {
                 <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
                   isOfficesOpen ? 'rotate-180' : ''
                 }`} />
-              </button>
+              </Link>
 
               {/* Offices Dropdown Menu */}
               {isOfficesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[9999]">
                   <div className="py-2">
                     <div className="px-4 py-3 border-b border-gray-100">
                       <Link
