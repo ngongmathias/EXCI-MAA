@@ -83,7 +83,7 @@ const CompactSlideshow: React.FC<CompactSlideshowProps> = ({
   }
 
   return (
-    <div className={`relative w-full max-w-2xl mx-auto h-36 overflow-hidden rounded-lg shadow-lg ${className}`}>
+    <div className={`relative w-full max-w-2xl mx-auto h-[30vh] overflow-hidden rounded-lg shadow-lg ${className}`}>
       {/* Slideshow Container */}
       <div className="relative w-full h-full">
         <AnimatePresence mode="wait">
