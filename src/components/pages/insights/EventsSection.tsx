@@ -1,9 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { Share2 } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import { fetchAll, insertItem } from '../../../services/supabaseCrud';
 import { getEventImages } from '../../../services/imageUpload';
 import { EventImage } from '../../../lib/types';
 import Pagination from '../../ui/Pagination';
+import { shareContent, getEventShareUrl, showShareNotification } from '../../../utils/shareUtils';
 
 type EventItem = {
   id: string;
@@ -77,6 +79,20 @@ const EventsSection: React.FC = () => {
   const [attendeesByEvent, setAttendeesByEvent] = useState<Record<string, Attendee[]>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const handleShare = async (eventId: string, title: string) => {
+    console.log('Sharing event:', eventId, title);
+    const url = getEventShareUrl(eventId, title);
+    console.log('Share URL:', url);
+    const result = await shareContent({
+      url,
+      title: `${title} | EXCI-MAA Event`,
+      text: `Join us at this event: ${title}`,
+    });
+    
+    console.log('Share result:', result);
+    showShareNotification(result.message, result.success ? 'success' : 'error');
+  };
   
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -268,18 +284,30 @@ const EventsSection: React.FC = () => {
                       target="_blank" 
                       rel="noreferrer" 
                       onClick={(e) => e.stopPropagation()}
-                      className="flex-1 min-w-[120px] px-3 py-2 text-xs font-medium text-center rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition-colors"
+                      className="flex-1 min-w-[100px] px-3 py-2 text-xs font-medium text-center rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition-colors"
                     >
-                      + Google Calendar
+                      + Calendar
                     </a>
                     <a 
                       href={icsUrl} 
                       download={`${evt.title}.ics`}
                       onClick={(e) => e.stopPropagation()}
-                      className="flex-1 min-w-[120px] px-3 py-2 text-xs font-medium text-center rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200 transition-colors"
+                      className="flex-1 min-w-[100px] px-3 py-2 text-xs font-medium text-center rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200 transition-colors"
                     >
-                      Download ICS
+                      Download
                     </a>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        console.log('Event share button clicked for event:', evt.id);
+                        handleShare(evt.id, evt.title);
+                      }}
+                      className="flex-1 min-w-[100px] px-3 py-2 text-sm font-medium text-center rounded-lg bg-blue-600  border-2 border-white/50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 inline-flex items-center justify-center gap-1 z-20 relative text-white backdrop-blur-sm"
+                      aria-label="Share event - copy link to clipboard"
+                    >
+                      <Share2 className="w-4 h-4" />
+                      Share
+                    </button>
                   </div>
                   
                   <button 
@@ -483,7 +511,7 @@ const EventDetailModal: React.FC<{
           <div className="flex flex-wrap gap-3 pt-6 border-t border-gray-200">
             <button 
               onClick={onRsvp}
-              className="flex-1 min-w-[150px] px-6 py-3 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
+              className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
             >
               RSVP Now
             </button>
@@ -491,17 +519,36 @@ const EventDetailModal: React.FC<{
               href={gcal} 
               target="_blank" 
               rel="noreferrer"
-              className="flex-1 min-w-[150px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition-colors"
+              className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition-colors"
             >
-              + Google Calendar
+              + Calendar
             </a>
             <a 
               href={icsUrl} 
               download={`${event.title}.ics`}
-              className="flex-1 min-w-[150px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200 transition-colors"
+              className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200 transition-colors"
             >
-              Download ICS
+              Download
             </a>
+            <button
+              onClick={() => {
+                console.log('Sharing event from modal:', event.id, event.title);
+                const url = getEventShareUrl(event.id, event.title);
+                shareContent({
+                  url,
+                  title: `${event.title} | EXCI-MAA Event`,
+                  text: `Join us at this event: ${event.title}`,
+                }).then(result => {
+                  console.log('Event share result:', result);
+                  showShareNotification(result.message, result.success ? 'success' : 'error');
+                });
+              }}
+              className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-blue-600  text-white transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
+              aria-label="Share event - copy link to clipboard"
+            >
+              <Share2 className="w-4 h-4" />
+              Share Event
+            </button>
           </div>
         </div>
       </div>

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Share2 } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import {fetchAll, insertItem } from '../../../services/supabaseCrud';
 import { getPostImages } from '../../../services/imageUpload';
 import { PostImage } from '../../../lib/types';
 import Pagination from '../../ui/Pagination';
+import { shareContent, getBlogPostShareUrl, showShareNotification } from '../../../utils/shareUtils';
 
 type Post = {
   id: string;
@@ -27,6 +29,20 @@ const BlogSection: React.FC = () => {
   const [commentsByPost, setCommentsByPost] = useState<Record<string, Comment[]>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const handleShare = async (postId: string, title: string) => {
+    console.log('Sharing blog post:', postId, title);
+    const url = getBlogPostShareUrl(postId, title);
+    console.log('Share URL:', url);
+    const result = await shareContent({
+      url,
+      title: `${title} | EXCI-MAA Blog`,
+      text: `Check out this blog post: ${title}`,
+    });
+    
+    console.log('Share result:', result);
+    showShareNotification(result.message, result.success ? 'success' : 'error');
+  };
   
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -143,7 +159,22 @@ const BlogSection: React.FC = () => {
                   <p className="mt-2 text-sm text-gray-700 flex-1 line-clamp-3">{post.content}</p>
                   <div className="mt-3 flex items-center justify-between text-sm text-gray-500">
                     <span>{new Date(post.createdAt).toLocaleDateString()}</span>
-                    <span className="text-blue-600 font-medium">Read more →</span>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          console.log('Share button clicked for blog post:', post.id);
+                          handleShare(post.id, post.title);
+                        }}
+                        className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 z-20 relative border-2 border-white/50 backdrop-blur-sm"
+                        aria-label="Share blog post - copy link to clipboard"
+                        style={{ minWidth: '90px' }}
+                      >
+                        <Share2 className="w-4 h-4" />
+                        Share
+                      </button>
+                      <span className="text-blue-600 font-medium">Read more →</span>
+                    </div>
                   </div>
                 </div>
               </article>
@@ -244,7 +275,25 @@ const BlogDetailModal: React.FC<{
           <div className="flex items-start justify-between mb-6">
             <div className="flex-1">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">{post.title}</h2>
-              <p className="text-sm text-gray-500">{new Date(post.createdAt).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+              <div className="flex items-center justify-between">
+                <p className="text-sm text-gray-500">{new Date(post.createdAt).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                <button
+                  onClick={() => {
+                    const url = getBlogPostShareUrl(post.id, post.title);
+                    shareContent({
+                      url,
+                      title: `${post.title} | EXCI-MAA Blog`,
+                      text: `Check out this blog post: ${post.title}`,
+                    }).then(result => {
+                      showShareNotification(result.message, result.success ? 'success' : 'error');
+                    });
+                  }}
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                >
+                  <Share2 className="w-4 h-4" />
+                  Share Post
+                </button>
+              </div>
             </div>
             <button 
               onClick={onClose}
