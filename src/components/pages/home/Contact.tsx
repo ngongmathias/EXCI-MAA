@@ -71,6 +71,46 @@ const Contact: FC = () => {
           </p>
         </div>
 
+        {/* Centered quick-contact boxes for all screens */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 max-w-5xl ml-[10vh]">
+          <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-xs flex-1 text-center">
+            <div className="flex flex-col items-center">
+              <div className="p-3 rounded-lg bg-blue-50 text-blue-600 mb-4">
+                <Mail className="h-6 w-6" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Email Us</h4>
+                <p className="text-sm text-gray-600 mb-3">Our team will get back to you within 24 hours</p>
+                <div className="text-blue-600 font-medium">contactcam@excimaa.ca</div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-xs flex-1 text-center">
+            <div className="flex flex-col items-center">
+              <div className="p-3 rounded-lg bg-green-50 text-green-600 mb-4">
+                <Phone className="h-6 w-6" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Call Us</h4>
+                <p className="text-sm text-gray-600 mb-3">Mon-Fri from 9am to 5pm</p>
+                <div className="font-medium">+1 (555) 123-4567</div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-xs flex-1 text-center">
+            <div className="flex flex-col items-center">
+              <div className="p-3 rounded-lg bg-yellow-50 text-yellow-600 mb-4">
+                <Clock className="h-6 w-6" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Office Hours</h4>
+                <p className="text-sm text-gray-600 mb-3">Our working hours</p>
+                <div className="font-medium">Mon - Fri: 9:00 - 18:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="card">
@@ -212,9 +252,9 @@ const Contact: FC = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-8">
-            {/* Quick Contact */}
-            <div className="card">
+          <div className="space-y-8 lg:flex lg:items-start lg:justify-center lg:gap-6 lg:space-y-0">
+            {/* Quick Contact (mobile only) */}
+            <div className="card w-full lg:w-80 mx-auto lg:hidden">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Get in Touch
               </h3>
@@ -255,7 +295,7 @@ const Contact: FC = () => {
             </div>
 
             {/* Newsletter Signup */}
-            <div className="card bg-blue-600 text-white">
+            <div className="card bg-blue-600 text-white w-full lg:w-80 mx-auto">
               <h3 className="text-2xl font-bold mb-4">
                 Join our mailing list
               </h3>
@@ -278,7 +318,7 @@ const Contact: FC = () => {
             </div>
 
             {/* Emergency Contact */}
-            <div className="card border-l-4 border-red-500">
+            <div className="card border-l-4 border-red-500 w-full lg:w-80 mx-auto">
               <h3 className="text-xl font-bold text-gray-900 mb-2">
                 Emergency Contact
               </h3>
