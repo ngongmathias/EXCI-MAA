@@ -104,11 +104,8 @@ const PartnersSection: FC = () => {
             {t('aboutPage.partners.label', '')}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {t('aboutPage.partners.title', 'EXCI-MAA Group')}
+            {t('aboutPage.partners.title', 'Our Partners & Affilliates')}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t('aboutPage.partners.subtitle', 'Découvrez nos différentes identités visuelles')}
-          </p>
         </div>
 
         {/* Slideshow Container */}
