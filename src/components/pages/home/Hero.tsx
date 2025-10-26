@@ -140,10 +140,16 @@ const Hero: FC = () => {
             </MotionInView>
             
             {/* Global Presence Card */}
-            <div className="bg-blue-600 rounded-2xl p-8 text-white">
+            <div className="bg-blue-600 rounded-2xl p-8 text-white relative">
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">{t('offices.title')}</h3>
+                  {/* Blue tick moved here */}
+                  <div className="absolute -top-2 -right-2 bg-white rounded-full p-2 shadow-lg">
+                    <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-600 font-bold text-sm">✓</span>
+                    </div>
+                  </div>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
                       <div className="font-semibold text-gray-900">Canada</div>
@@ -179,11 +185,6 @@ const Hero: FC = () => {
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 bg-white rounded-full p-4 shadow-lg">
-              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                <span className="text-blue-600 font-bold">✓</span>
-              </div>
-            </div>
             <div className="absolute -bottom-4 -left-4 bg-white rounded-full p-4 shadow-lg">
               <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                 <span className="text-blue-600 font-bold">★</span>
