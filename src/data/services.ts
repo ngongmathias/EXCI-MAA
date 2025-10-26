@@ -1,5 +1,3 @@
-import { Service } from '../lib/types';
-
 export const servicesData = [
   {
     id: '1',

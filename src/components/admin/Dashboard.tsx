@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { 
   TrendingUp, 
-  Users, 
   FileText, 
   Briefcase, 
   MessageSquare, 
   Calendar,
   Mail,
   CheckCircle,
-  Clock,
   AlertCircle
 } from 'lucide-react';
 import { supabase } from '../../lib/supabaseClient';
@@ -48,11 +46,7 @@ const Dashboard: React.FC = () => {
   const [recentActivities, setRecentActivities] = useState<RecentActivity[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetchDashboardData();
-  }, []);
-
-  const fetchDashboardData = async () => {
+  const fetchDashboardData = useCallback(async () => {
     try {
       setLoading(true);
 
@@ -141,7 +135,11 @@ const Dashboard: React.FC = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    fetchDashboardData();
+  }, [fetchDashboardData]);
 
   const formatTimeAgo = (timestamp: string): string => {
     const now = new Date();

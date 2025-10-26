@@ -19,13 +19,13 @@ interface UseSupabaseTableResult<T> {
   refresh: () => Promise<void>;
 }
 
-export function useSupabaseTable<T = any>(table: TableName | undefined, enabled: boolean = true): UseSupabaseTableResult<T> {
+export function useSupabaseTable<T = Record<string, unknown>>(table: TableName | undefined, enabled: boolean = true): UseSupabaseTableResult<T> {
   const [rows, setRows] = useState<T[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
   const hasConfig = useMemo(() => {
-    return Boolean((import.meta as any).env?.VITE_SUPABASE_URL) && Boolean((import.meta as any).env?.VITE_SUPABASE_ANON_KEY);
+    return Boolean((import.meta as { env?: Record<string, string> }).env?.VITE_SUPABASE_URL) && Boolean((import.meta as { env?: Record<string, string> }).env?.VITE_SUPABASE_ANON_KEY);
   }, []);
 
   const refresh = async () => {
@@ -44,8 +44,8 @@ export function useSupabaseTable<T = any>(table: TableName | undefined, enabled:
         .order('created_at', { ascending: false });
       if (err) throw new Error(`${status} ${statusText} - ${err.message}`);
       setRows((data as T[]) || []);
-    } catch (e: any) {
-      setError(e?.message || 'Failed to load data');
+    } catch (e: unknown) {
+      setError((e instanceof Error ? e.message : 'Failed to load data'));
     } finally {
       setLoading(false);
     }

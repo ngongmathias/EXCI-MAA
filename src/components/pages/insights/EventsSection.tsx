@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Share2 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import { fetchAll, insertItem } from '../../../services/supabaseCrud';
 import { getEventImages } from '../../../services/imageUpload';
@@ -71,9 +72,10 @@ function toIcs(evt: EventItem): string {
 
 const EventsSection: React.FC = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const [filter, setFilter] = useState<'upcoming' | 'past'>('upcoming');
   const [rsvpOpenFor, setRsvpOpenFor] = useState<string | null>(null);
-  const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
+
   const [events, setEvents] = useState<EventItem[]>([]);
   const [eventImages, setEventImages] = useState<Record<string, EventImage[]>>({});
   const [attendeesByEvent, setAttendeesByEvent] = useState<Record<string, Attendee[]>>({});
@@ -82,7 +84,7 @@ const EventsSection: React.FC = () => {
 
   const handleShare = async (eventId: string, title: string) => {
     console.log('Sharing event:', eventId, title);
-    const url = getEventShareUrl(eventId, title);
+    const url = getEventShareUrl(eventId);
     console.log('Share URL:', url);
     const result = await shareContent({
       url,
@@ -227,7 +229,7 @@ const EventsSection: React.FC = () => {
             const icsUrl = URL.createObjectURL(icsBlob);
 
             return (
-              <div key={evt.id} className="group relative rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => setSelectedEvent(evt)}>
+              <div key={evt.id} className="group relative rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => navigate(`/insights/events/${evt.id}`)}>
                 {displayImage && (
                   <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
                     <img 
@@ -343,15 +345,7 @@ const EventsSection: React.FC = () => {
           })}
         </div>
 
-        {selectedEvent && (
-          <EventDetailModal
-            event={selectedEvent}
-            images={eventImages[selectedEvent.id] || []}
-            attendees={attendeesByEvent[selectedEvent.id] || []}
-            onClose={() => setSelectedEvent(null)}
-            onRsvp={() => { setRsvpOpenFor(selectedEvent.id); setSelectedEvent(null); }}
-          />
-        )}
+
 
         {rsvpOpenFor && (
           <RsvpModal
@@ -533,7 +527,7 @@ const EventDetailModal: React.FC<{
             <button
               onClick={() => {
                 console.log('Sharing event from modal:', event.id, event.title);
-                const url = getEventShareUrl(event.id, event.title);
+                const url = getEventShareUrl(event.id);
                 shareContent({
                   url,
                   title: `${event.title} | EXCI-MAA Event`,

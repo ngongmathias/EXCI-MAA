@@ -4,13 +4,13 @@ import * as XLSX from 'xlsx';
  * Export data to Excel file
  */
 export interface ExcelExportOptions {
-  data: any[];
+  data: Record<string, unknown>[];
   filename: string;
   sheetName?: string;
   columns?: Array<{
     key: string;
     label: string;
-    transform?: (value: any) => any;
+    transform?: (value: unknown) => unknown;
   }>;
   dateFilter?: {
     startDate?: string;
@@ -32,7 +32,7 @@ export function exportToExcel(options: ExcelExportOptions): void {
   if (dateFilter && (dateFilter.startDate || dateFilter.endDate)) {
     const dateField = dateFilter.dateField || 'created_at';
     filteredData = data.filter(item => {
-      const itemDate = new Date(item[dateField]);
+      const itemDate = new Date(item[dateField] as string | number | Date);
       if (isNaN(itemDate.getTime())) return true; // Include items with invalid dates
       
       if (dateFilter.startDate) {
@@ -54,12 +54,12 @@ export function exportToExcel(options: ExcelExportOptions): void {
     throw new Error('No data matches the selected date range');
   }
 
-  let exportData: any[];
+  let exportData: Record<string, unknown>[];
 
   if (columns && columns.length > 0) {
     // Use specified columns with transformations
     exportData = filteredData.map(row => {
-      const transformedRow: any = {};
+      const transformedRow: Record<string, unknown> = {};
       columns.forEach(col => {
         const value = row[col.key];
         transformedRow[col.label] = col.transform ? col.transform(value) : value;
@@ -102,36 +102,36 @@ export function exportToExcel(options: ExcelExportOptions): void {
  * Format common data types for Excel export
  */
 export const excelFormatters = {
-  date: (value: any) => {
+  date: (value: unknown) => {
     if (!value) return '';
     try {
-      return new Date(value).toLocaleDateString();
+      return new Date(value as string).toLocaleDateString();
     } catch {
       return value;
     }
   },
   
-  dateTime: (value: any) => {
+  dateTime: (value: unknown) => {
     if (!value) return '';
     try {
-      return new Date(value).toLocaleString();
+      return new Date(value as string).toLocaleString();
     } catch {
       return value;
     }
   },
   
-  currency: (value: any) => {
+  currency: (value: unknown) => {
     if (value === null || value === undefined) return '';
     const num = Number(value);
     return isNaN(num) ? value : `$${num.toLocaleString()}`;
   },
   
-  boolean: (value: any) => {
+  boolean: (value: unknown) => {
     if (value === null || value === undefined) return '';
     return value ? 'Yes' : 'No';
   },
   
-  truncateText: (maxLength: number) => (value: any) => {
+  truncateText: (maxLength: number) => (value: unknown) => {
     if (!value) return '';
     const text = String(value);
     return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;

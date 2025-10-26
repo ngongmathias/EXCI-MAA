@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import { fetchAll, insertItem, updateItemById, deleteById } from '../../services/supabaseCrud';
 import { exportToExcel, excelFormatters } from '../../utils/excelExport';
 
@@ -11,8 +11,13 @@ interface CollectionManagerProps {
   disableCreate?: boolean;
 }
 
+interface CollectionItem {
+  id: string;
+  [key: string]: unknown;
+}
+
 export const CollectionManager: React.FC<CollectionManagerProps> = ({ title, fields, keyName, disableCreate }) => {
-  const [items, setItems] = useState<any[]>([]);
+  const [items, setItems] = useState<CollectionItem[]>([]);
   const [form, setForm] = useState<Record<string, string>>({});
   const [editing, setEditing] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -21,20 +26,20 @@ export const CollectionManager: React.FC<CollectionManagerProps> = ({ title, fie
   const [startDate, setStartDate] = useState<string>('');
   const [endDate, setEndDate] = useState<string>('');
 
-  async function refresh() {
+  const refresh = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
-      const data = await fetchAll<any>(keyName);
+      const data = await fetchAll<CollectionItem>(keyName);
       setItems(data);
-    } catch (e: any) {
-      setError(e.message || 'Failed to load');
+    } catch (e: unknown) {
+      setError((e instanceof Error ? e.message : 'Failed to load'));
     } finally {
       setLoading(false);
     }
-  }
+  }, [keyName]);
 
-  useEffect(() => { refresh(); }, [keyName]);
+  useEffect(() => { refresh(); }, [keyName, refresh]);
 
   async function submit() {
     const payload = fields.reduce<Record<string, string>>((acc: Record<string, string>, f: string) => ({ ...acc, [f]: form[f] || '' }), {});
@@ -45,15 +50,15 @@ export const CollectionManager: React.FC<CollectionManagerProps> = ({ title, fie
     }
     try {
       if (editing) {
-        await updateItemById<any>(keyName, editing, payload);
+        await updateItemById<Record<string, unknown>>(keyName, editing, payload);
       } else if (!disableCreate) {
-        await insertItem<any>(keyName, payload as any);
+        await insertItem<Record<string, unknown>>(keyName, payload);
       }
       setForm({});
       setEditing(null);
       await refresh();
-    } catch (e: any) {
-      setError(e.message || 'Operation failed');
+    } catch (e: unknown) {
+      setError((e instanceof Error ? e.message : 'Operation failed'));
     }
   }
 
@@ -61,7 +66,7 @@ export const CollectionManager: React.FC<CollectionManagerProps> = ({ title, fie
     setEditing(id);
     const item = items.find(i => i.id === id);
     const pre: Record<string, string> = {};
-    fields.forEach((f: string) => (pre[f] = (item as any)?.[f] || ''));
+    fields.forEach((f: string) => (pre[f] = String(item?.[f] || '')));
     setForm(pre);
   }
 
@@ -69,12 +74,12 @@ export const CollectionManager: React.FC<CollectionManagerProps> = ({ title, fie
     try {
       await deleteById(keyName, id);
       await refresh();
-    } catch (e: any) {
-      setError(e.message || 'Delete failed');
+    } catch (e: unknown) {
+      setError((e instanceof Error ? e.message : 'Delete failed'));
     }
   }
 
-  const pretty = useMemo(() => items.map((i: any) => ({ ...i })), [items]);
+  const pretty = useMemo(() => items.map((i: CollectionItem) => ({ ...i })), [items]);
 
   // Handle Excel export
   const handleExcelExport = () => {

@@ -15,8 +15,6 @@ import {
   Tab,
   IconButton,
   Collapse,
-  FormControl,
-  InputLabel,
 } from '@mui/material';
 import {
   DataGrid,

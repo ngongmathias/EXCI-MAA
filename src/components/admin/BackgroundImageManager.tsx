@@ -170,8 +170,8 @@ const BackgroundImageManager = () => {
       setSuccess(`Successfully uploaded ${uploadResults.length} image(s)`);
       handleCloseUploadDialog();
       loadImages();
-    } catch (err: any) {
-      setError('Failed to upload images: ' + err.message);
+    } catch (err: unknown) {
+      setError('Failed to upload images: ' + (err instanceof Error ? err.message : 'Unknown error'));
       console.error(err);
     } finally {
       setLoading(false);
@@ -207,8 +207,8 @@ const BackgroundImageManager = () => {
       setSuccess('Background image updated successfully');
       setEditingId(null);
       loadImages();
-    } catch (err: any) {
-      setError('Failed to update image: ' + err.message);
+    } catch (err: unknown) {
+      setError('Failed to update image: ' + (err instanceof Error ? err.message : 'Unknown error'));
       console.error(err);
     } finally {
       setLoading(false);
@@ -242,8 +242,8 @@ const BackgroundImageManager = () => {
       await deleteBackgroundImage(image.id, image.image_url);
       setSuccess('Background image deleted successfully');
       loadImages();
-    } catch (err: any) {
-      setError('Failed to delete image: ' + err.message);
+    } catch (err: unknown) {
+      setError('Failed to delete image: ' + (err instanceof Error ? err.message : 'Unknown error'));
       console.error(err);
     } finally {
       setLoading(false);
@@ -258,8 +258,8 @@ const BackgroundImageManager = () => {
       await toggleBackgroundImageStatus(image.id, !image.is_active);
       setSuccess(`Image ${!image.is_active ? 'activated' : 'deactivated'} successfully`);
       loadImages();
-    } catch (err: any) {
-      setError('Failed to toggle status: ' + err.message);
+    } catch (err: unknown) {
+      setError('Failed to toggle status: ' + (err instanceof Error ? err.message : 'Unknown error'));
       console.error(err);
     } finally {
       setLoading(false);
@@ -278,8 +278,8 @@ const BackgroundImageManager = () => {
       await updateBackgroundImage(image.id, { display_order: index - 1 });
       await updateBackgroundImage(newImages[index].id, { display_order: index });
       setSuccess('Order updated successfully');
-    } catch (err: any) {
-      setError('Failed to reorder: ' + err.message);
+    } catch (err: unknown) {
+      setError('Failed to reorder: ' + (err instanceof Error ? err.message : 'Unknown error'));
       loadImages();
     }
   };
@@ -296,8 +296,8 @@ const BackgroundImageManager = () => {
       await updateBackgroundImage(image.id, { display_order: index + 1 });
       await updateBackgroundImage(newImages[index].id, { display_order: index });
       setSuccess('Order updated successfully');
-    } catch (err: any) {
-      setError('Failed to reorder: ' + err.message);
+    } catch (err: unknown) {
+      setError('Failed to reorder: ' + (err instanceof Error ? err.message : 'Unknown error'));
       loadImages();
     }
   };
@@ -355,7 +355,7 @@ const BackgroundImageManager = () => {
 
     try {
       exportToExcel({
-        data: images,
+        data: images as unknown as Record<string, unknown>[],
         filename,
         sheetName: 'Background Images',
         columns,

@@ -19,6 +19,8 @@ import SignInPage from './pages/SignInPage';
 import SignUpPage from './pages/SignUpPage';
 import CountryPage from './pages/CountryPage';
 import ConsultationPage from './pages/ConsultationPage';
+import BlogPostPage from './pages/BlogPostPage';
+import EventDetailPage from './pages/EventDetailPage';
 import './App.css';
 
 const queryClient = new QueryClient({
@@ -51,6 +53,8 @@ function App() {
                     <Route path="/global-offices" element={<GlobalOfficesPage />} />
                       <Route path="global-offices/:slug" element={<CountryPage />} />
                       <Route path="insights" element={<InsightsPage />} />
+                      <Route path="insights/blog/:id" element={<BlogPostPage />} />
+                      <Route path="insights/events/:id" element={<EventDetailPage />} />
                       <Route path="careers" element={<CareersPage />} />
                       <Route path="contact" element={<ContactPage />} />
                       <Route path="admin" element={<AdminPage />} />

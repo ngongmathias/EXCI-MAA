@@ -104,6 +104,9 @@ export async function shareContent(options: ShareOptions): Promise<ShareResult> 
 export function getBlogPostShareUrl(postId: string, title?: string): string {
   const baseUrl = window.location.origin;
   const postUrl = `${baseUrl}/insights/blog/${postId}`;
+  if (title) {
+    return `${postUrl}?title=${encodeURIComponent(title)}`;
+  }
   return postUrl;
 }
 
@@ -113,6 +116,9 @@ export function getBlogPostShareUrl(postId: string, title?: string): string {
 export function getEventShareUrl(eventId: string, title?: string): string {
   const baseUrl = window.location.origin;
   const eventUrl = `${baseUrl}/insights/events/${eventId}`;
+  if (title) {
+    return `${eventUrl}?title=${encodeURIComponent(title)}`;
+  }
   return eventUrl;
 }
 
@@ -122,6 +128,13 @@ export function getEventShareUrl(eventId: string, title?: string): string {
 export function showShareNotification(message: string, type: 'success' | 'error' = 'success') {
   // Create a simple toast notification
   const toast = document.createElement('div');
+  toast.className = `fixed top-4 right-4 z-50 max-w-sm p-4 rounded-lg shadow-lg transition-transform duration-300 transform -translate-y-full ${
+    type === 'success' 
+      ? 'bg-green-600 text-white' 
+      : 'bg-red-600 text-white'
+  }`;
+  toast.textContent = message;
+  
   document.body.appendChild(toast);
   
   // Animate in
@@ -129,13 +142,13 @@ export function showShareNotification(message: string, type: 'success' | 'error'
     toast.style.transform = 'translateY(0)';
   }, 100);
   
-  // Remove after 3 seconds
+  // Remove after 4 seconds
   setTimeout(() => {
-    toast.style.transform = 'translateY(-100px)';
+    toast.style.transform = 'translateY(-100%)';
     setTimeout(() => {
       if (document.body.contains(toast)) {
         document.body.removeChild(toast);
       }
     }, 300);
-  }, 3000);
+  }, 4000);
 }

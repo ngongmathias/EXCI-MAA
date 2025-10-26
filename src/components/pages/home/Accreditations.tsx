@@ -1,6 +1,5 @@
 import { FC, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLanguage } from '../../../contexts/LanguageContext';
 
 type AccreditationLogo = {
   id: string;
@@ -11,7 +10,6 @@ type AccreditationLogo = {
 };
 
 const Accreditations: FC = () => {
-  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Accreditation logos data using actual logos from public/images/logosforaccreditations

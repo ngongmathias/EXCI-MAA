@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Share2 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import {fetchAll, insertItem } from '../../../services/supabaseCrud';
 import { getPostImages } from '../../../services/imageUpload';
@@ -23,16 +24,17 @@ type Comment = {
 
 const BlogSection: React.FC = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const [posts, setPosts] = useState<Post[]>([]);
   const [postImages, setPostImages] = useState<Record<string, PostImage[]>>({});
-  const [selectedPost, setSelectedPost] = useState<Post | null>(null);
+
   const [commentsByPost, setCommentsByPost] = useState<Record<string, Comment[]>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleShare = async (postId: string, title: string) => {
     console.log('Sharing blog post:', postId, title);
-    const url = getBlogPostShareUrl(postId, title);
+    const url = getBlogPostShareUrl(postId);
     console.log('Share URL:', url);
     const result = await shareContent({
       url,
@@ -132,7 +134,7 @@ const BlogSection: React.FC = () => {
             const displayImage = primaryImage?.image_url || post.image;
             
             return (
-              <article key={post.id} className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition flex flex-col overflow-hidden cursor-pointer" onClick={() => setSelectedPost(post)}>
+              <article key={post.id} className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition flex flex-col overflow-hidden cursor-pointer" onClick={() => navigate(`/insights/blog/${post.id}`)}>
                 {displayImage && (
                   <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
                     <img 
@@ -182,15 +184,7 @@ const BlogSection: React.FC = () => {
           })}
         </div>
         
-        {selectedPost && (
-          <BlogDetailModal
-            post={selectedPost}
-            images={postImages[selectedPost.id] || []}
-            comments={commentsByPost[selectedPost.id] || []}
-            onClose={() => setSelectedPost(null)}
-            onAddComment={(name, message) => addComment(selectedPost.id, { name, message, createdAt: new Date().toISOString() })}
-          />
-        )}
+
 
         {/* Pagination */}
         {posts.length > ITEMS_PER_PAGE && (
@@ -279,7 +273,7 @@ const BlogDetailModal: React.FC<{
                 <p className="text-sm text-gray-500">{new Date(post.createdAt).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
                 <button
                   onClick={() => {
-                    const url = getBlogPostShareUrl(post.id, post.title);
+                    const url = getBlogPostShareUrl(post.id);
                     shareContent({
                       url,
                       title: `${post.title} | EXCI-MAA Blog`,
