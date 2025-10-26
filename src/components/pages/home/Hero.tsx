@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart2, Shield, Users, Globe } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import MotionInView from '../../enhanced/MotionInView';
+import CompactSlideshow from '../../common/CompactSlideshow';
 
 const features = (t: (k: string) => string) => [
   {
@@ -130,7 +131,15 @@ const Hero: FC = () => {
           </div>
 
           {/* Visual Element */}
-          <div className="relative">
+          <div className="relative space-y-6">
+            {/* Slideshow Component */}
+            <MotionInView>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <CompactSlideshow className="h-64 md:h-80" />
+              </div>
+            </MotionInView>
+            
+            {/* Global Presence Card */}
             <div className="bg-blue-600 rounded-2xl p-8 text-white">
               <div className="space-y-6">
                 <div className="text-center">
