@@ -907,6 +907,25 @@
             "Soft skills training programs",
             "Industry-specific training modules"
           ]
+        },
+        "training": {
+          "title": "Training & Development",
+          "shortDesc": "Professional training programs and skill development services",
+          "description": "Enhance your team's capabilities with our comprehensive training and development programs. We offer customized training solutions designed to improve skills, ensure compliance, and drive professional growth across your organization.",
+          "features": [
+            "Professional development training",
+            "Compliance and regulatory training",
+            "Technical skills enhancement",
+            "Certification preparation programs",
+            "Customized workshops and seminars",
+            "Leadership development training",
+            "Soft skills training programs",
+            "Industry-specific training modules",
+            "Team building workshops",
+            "Performance improvement training",
+            "Digital literacy programs",
+            "Communication skills development"
+          ]
         }
       },
       "scheduleAppointment": "Schedule Appointment",

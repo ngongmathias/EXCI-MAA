@@ -895,7 +895,26 @@
                                                                                                "Gutezimbere ubwoba n\u0027ubushakashatsi",
                                                                                                "Ubwoba bw\u0027abakazi n\u0027ubwoba"
                                                                                            ]
-                                                                          }
+                                                                          },
+ "training": {
+  "title": "Amameri n’Iterambere",
+  "shortDesc": "Programe z’amameri y’umwuga n’amaserivise yo guteza imbere ubuhanga",
+  "description": "Ongera ubushobozi bw’ikipe yawe hamwe na programe zacu zose z’amameri n’iterambere. Tura amasubizo y’amameri yihariye yagenewe kunoza ubuhanga, kwemeza ubwizigirwa, no guteza imbere iterambere ry’umwuga muri sosiyete yawe yose.",
+  "features": [
+    "Amameri yo guteza imbere umwuga",
+    "Amameri y’ubwizigirwa n’amategeko",
+    "Kwiyongera ubuhanga bw’ikoranabuhanga",
+    "Programe zo kwitegura ivyemezo",
+    "Ibikorwa vy’amameri n’iseminari yihariye",
+    "Amameri yo guteza imbere ububwiriza",
+    "Programe z’amameri z’ubuhanga bworoshe",
+    "Modire z’amameri zihariye mu nganda",
+    "Ibikorwa vyo gufata hamwe ikipe",
+    "Amameri yo kunoza ibikorwa",
+    "Programe zo kwigisha ubumenyi bwa digitale",
+    "Iterambere ry’ubuhanga bwo kuvugana"
+  ]
+}
                                                                },
                                                   "scheduleAppointment":  "Gutegura umunsi",
                                                   "needCustomSolution":  "Ukeneye isubizo ry\u0027ubwoba? Abahanga bacu barimo gufasha.",

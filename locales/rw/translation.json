@@ -1023,7 +1023,26 @@
                                                                                                "Politiki z\u0027abakozi",
                                                                                                "Imicungire y\u0027inyungu z\u0027abakozi"
                                                                                            ]
-                                                                          }
+                                                                          },
+                                                                          "training": {
+  "title": "Amahugurwa n’Iterambere",
+  "shortDesc": "Programe z’amahugurwa y’umwuga n’amaserivise yo kwiyigisha ubumenyi",
+  "description": "Ongera ubushobozi bw’itsinda ryawe hamwe na programe zacu zose z’amahugurwa n’iterambere. Duha ibisubizo by’amahugurwa byihariye byagenewe kunoza ubumenyi, kwemeza ubwizigirwa, no guteza imbere iterambere ry’umwuga muri sosiyete yawe yose.",
+  "features": [
+    "Amahugurwa yo guteza imbere umwuga",
+    "Amahugurwa y’ubwizigirwa n’amategeko",
+    "Kwiyongera ubumenyi bw’ikoranabuhanga",
+    "Programe zo kwitegura ibyemezo",
+    "Ibikorwa by’amahugurwa n’iseminari yihariye",
+    "Amahugurwa yo guteza imbere ubuyobozi",
+    "Programe z’amahugurwa z’ubumenyi bworoshye",
+    "Modire z’amahugurwa zihariye mu nganda",
+    "Ibikorwa byo kubaka itsinda",
+    "Amahugurwa yo kunoza ibikorwa",
+    "Programe zo kwigisha ubumenyi bwa digitale",
+    "Iterambere ry’ubumenyi bwo guhanahana"
+  ]
+}
                                                                },
                                                   "scheduleAppointment":  "Teganya Umubonano",
                                                   "needCustomSolution":  "Ukeneye ibisubizo byihariye? Abahanga bacu barahari kugufasha.",

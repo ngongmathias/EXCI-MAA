@@ -1037,7 +1037,26 @@
                                                                                                "Planification de la main-d\u0027œuvre et analyses",
                                                                                                "Relations employés et résolution de conflits"
                                                                                            ]
-                                                                          }
+                                                                          },
+                                                                          "training": {
+  "title": "Formation et développement",
+  "shortDesc": "Programmes de formation professionnelle et services de développement des compétences",
+  "description": "Renforcez les capacités de votre équipe avec nos programmes complets de formation et de développement. Nous proposons des solutions de formation personnalisées conçues pour améliorer les compétences, assurer la conformité et favoriser la croissance professionnelle au sein de votre organisation.",
+  "features": [
+    "Formation au développement professionnel",
+    "Formation à la conformité et à la réglementation",
+    "Amélioration des compétences techniques",
+    "Programmes de préparation aux certifications",
+    "Ateliers et séminaires personnalisés",
+    "Formation au développement du leadership",
+    "Programmes de formation aux compétences douces",
+    "Modules de formation spécifiques à l'industrie",
+    "Ateliers de renforcement d'équipe",
+    "Formation à l'amélioration des performances",
+    "Programmes d'alphabétisation numérique",
+    "Développement des compétences en communication"
+  ]
+}
                                                                },
                                                   "scheduleAppointment":  "Planifier un Rendez-vous",
                                                   "needCustomSolution":  "Besoin d\u0027une solution personnalisée ? Nos experts sont là pour vous aider.",

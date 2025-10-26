@@ -73,6 +73,17 @@ const DetailedServices: FC = () => {
       color: 'from-indigo-500 to-indigo-600',
       bgColor: 'bg-indigo-50',
       iconBg: 'bg-indigo-100'
+    },
+    {
+      id: 'training',
+      title: t('servicesPage.detailedServices.services.training.title'),
+      icon: <Calendar className="h-8 w-8 text-orange-600" />,
+      shortDesc: t('servicesPage.detailedServices.services.training.shortDesc'),
+      description: t('servicesPage.detailedServices.services.training.description'),
+      features: t('servicesPage.detailedServices.services.training.features', { returnObjects: true }) as string[],
+      color: 'from-orange-500 to-orange-600',
+      bgColor: 'bg-orange-50',
+      iconBg: 'bg-orange-100'
     }
   ];
 

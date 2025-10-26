@@ -881,7 +881,26 @@
                                                                                                "Okutezimba obukulembeze bw\u0027abantu n\u0027obukulembeze",
                                                                                                "Obukulembeze bw\u0027abantu n\u0027obukulembeze"
                                                                                            ]
-                                                                          }
+                                                                          },
+                                                                          "training": {
+  "title": "Okuzigisa n’Okukulaakulanya",
+  "shortDesc": "Pulogulaamu z’okuzigisa ez’ekikugu n’amassasiro g’okukulaakulanya eby’obukugu",
+  "description": "Yawukanya obusobozi bw’ekibiina kyammwe ne pulogulaamu zaffe ez’okuzigisa n’okukulaakulanya ez’ekika. Tukuwa amagezi g’okuzigisa ag’okusobola okukola ag’okusobola okukyusa eby’obukugu, okukakasa okugondera amateeka, n’okutumbula okukulaakulanya okw’ekikugu mu kulungirira mu kibiina kyammwe kyonna.",
+  "features": [
+    "Okuzigisa okw’okukulaakulanya okw’ekikugu",
+    "Okuzigisa okw’okugondera amateeka",
+    "Okwongera eby’obukugu obw’ekika",
+    "Pulogulaamu z’okulungamya okufuna satifiketi",
+    "Amakolero n’asemina ag’okusobola",
+    "Okuzigisa okw’okukulaakulanya okw’okufuga",
+    "Pulogulaamu z’okuzigisa eby’obukugu obusuffu",
+    "Emirimu y’okuzigisa ey’ekika ky’enkola",
+    "Amakolero g’okuzimba ekibiina",
+    "Okuzigisa okw’okukyusa empeereza",
+    "Pulogulaamu z’okusoma mu by’ekyifuzi",
+    "Okukulaakulanya eby’obukugu mu kuvvuga"
+  ]
+}
                                                                },
                                                   "scheduleAppointment":  "Tekawo olunaku",
                                                   "needCustomSolution":  "Okenna isubizo ly\u0027obukulembeze? Abakulembeze baffe bali wano okukuyamba.",
