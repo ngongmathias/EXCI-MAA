@@ -26,6 +26,10 @@
     "risk": {
       "title": "Conseil en Risques",
       "description": "Évaluation et gestion complète des risques"
+    },
+    "training": {
+      "title": "Formation et Développement",
+      "description": "Programmes de formation professionnelle et services de développement des compétences"
     }
   }
 },

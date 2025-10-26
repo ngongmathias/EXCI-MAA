@@ -77,6 +77,20 @@ export const servicesData = [
       'serviceModal.features.risk.controls',
     ],
   },
+  {
+    id: '7',
+    titleKey: 'servicesDropdown.services.training.title',
+    descriptionKey: 'servicesDropdown.services.training.description',
+    icon: '🎓',
+    featuresKeys: [
+      'serviceModal.features.training.professional',
+      'serviceModal.features.training.compliance',
+      'serviceModal.features.training.skills',
+      'serviceModal.features.training.certification',
+      'serviceModal.features.training.workshops',
+      'serviceModal.features.training.custom',
+    ],
+  },
 ];
 
 // Helper function to get translated service data

@@ -64,6 +64,10 @@
       "risk": {
         "title": "Risk Consulting",
         "description": "Comprehensive risk assessment and management services"
+      },
+      "training": {
+        "title": "Training & Development",
+        "description": "Professional training programs and skill development services"
       }
     }
   },
@@ -132,6 +136,14 @@
         "mitigation": "Risk mitigation strategies",
         "monitoring": "Compliance monitoring",
         "controls": "Internal controls review"
+      },
+      "training": {
+        "professional": "Professional development training",
+        "compliance": "Compliance and regulatory training",
+        "skills": "Technical skills enhancement",
+        "certification": "Certification preparation programs",
+        "workshops": "Customized workshops and seminars",
+        "custom": "Tailored training solutions"
       }
     }
   },
@@ -873,8 +885,8 @@
         },
         "hr": {
           "title": "HR & Payroll Services",
-          "shortDesc": "Comprehensive HR and payroll solutions",
-          "description": "Our HR and payroll services help organizations manage their most valuable asset - their people - while ensuring compliance with employment laws and regulations.",
+          "shortDesc": "Comprehensive HR, payroll, and training solutions",
+          "description": "Our comprehensive HR and payroll services help organizations manage their most valuable asset - their people - while ensuring compliance with employment laws and regulations. We also provide professional training and development programs to enhance workforce capabilities.",
           "features": [
             "Payroll processing",
             "HR policy development",
@@ -885,7 +897,15 @@
             "Compensation and benefits analysis",
             "HR technology implementation",
             "Workforce planning and analytics",
-            "Employee relations and conflict resolution"
+            "Employee relations and conflict resolution",
+            "Professional development training",
+            "Compliance and regulatory training",
+            "Technical skills enhancement programs",
+            "Certification preparation courses",
+            "Customized workshops and seminars",
+            "Leadership development training",
+            "Soft skills training programs",
+            "Industry-specific training modules"
           ]
         }
       },

@@ -26,6 +26,10 @@
     "risk": {
       "title": "Inama ku Byago",
       "description": "Gusesengura no gucunga ibyago mu buryo bwimbitse"
+    },
+    "training": {
+      "title": "Amahugurwa n'Iterambere",
+      "description": "Gahunda z'amahugurwa y'umwuga no guteza imbere ubumenyi"
     }
   }
 },

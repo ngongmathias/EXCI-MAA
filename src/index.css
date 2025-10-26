@@ -240,3 +240,22 @@ body {
 .focus\:ring-exci-blue-500:focus {
   --tw-ring-color: var(--exci-blue-500);
 }
+
+/* Map z-index overrides to ensure dropdowns appear above maps */
+.leaflet-container,
+.leaflet-map-pane,
+.leaflet-control-container,
+.leaflet-popup-pane,
+.leaflet-marker-pane,
+.leaflet-tile-pane {
+  z-index: 1 !important;
+}
+
+.leaflet-popup {
+  z-index: 10 !important;
+}
+
+/* Ensure map doesn't interfere with navigation dropdowns */
+.leaflet-container * {
+  z-index: auto !important;
+}

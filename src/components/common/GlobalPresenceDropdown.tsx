@@ -64,7 +64,7 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
 
         {/* Dropdown Menu */}
         {isDropdownOpen && (
-          <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-64 overflow-y-auto">
+          <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-[99999] max-h-64 overflow-y-auto">
             <button
               onClick={handleViewAll}
               className="w-full px-4 py-3 text-left hover:bg-gray-50 border-b border-gray-100 text-gray-700 font-medium"
@@ -88,11 +88,11 @@ const GlobalPresenceDropdown: React.FC<GlobalPresenceDropdownProps> = ({ classNa
       </div>
 
       {/* Map Container */}
-      <div className="mt-6 h-96 w-full rounded-lg overflow-hidden shadow-lg">
+      <div className="mt-6 h-96 w-full rounded-lg overflow-hidden shadow-lg relative z-10">
         <MapContainer
           center={[centerLat, centerLng]}
           zoom={selectedOffice ? 10 : 2}
-          style={{ height: '100%', width: '100%' }}
+          style={{ height: '100%', width: '100%', zIndex: 1 }}
           scrollWheelZoom={true}
         >
           <TileLayer

@@ -26,6 +26,10 @@
             "risk": {
                 "title": "Inama z'Ibyago",
                 "description": "Isuzuma n'imicungire y'ibyago byose"
+            },
+            "training": {
+                "title": "Amahugurwa n'Iterambere",
+                "description": "Gahunda z'amahugurwa y'umwuga no guteza imbere ubumenyi"
             }
         }
     },
@@ -90,6 +94,14 @@
                 "mitigation": "Ingamba zo kugabanya ibyago",
                 "monitoring": "Gukurikirana ubunyangamugayo",
                 "controls": "Isuzuma ry'igenzura ry'imbere"
+            },
+            "training": {
+                "professional": "Amahugurwa yo guteza imbere umwuga",
+                "compliance": "Amahugurwa ku bukurikizi bw'amategeko",
+                "skills": "Guteza imbere ubumenyi bw'ikoranabuhanga",
+                "certification": "Gahunda zo guhugura impamyabushobozi",
+                "workshops": "Amahugurwa n'amasomo y'ihariye",
+                "custom": "Amahugurwa akozwe ku buryo bwihariye"
             }
         }
     },

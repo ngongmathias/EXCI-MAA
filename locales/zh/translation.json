@@ -26,6 +26,10 @@
     "risk": {
       "title": "风险咨询",
       "description": "全面的风险评估与管理服务"
+    },
+    "training": {
+      "title": "培训发展",
+      "description": "专业培训项目和技能发展服务"
     }
   }
 },
@@ -90,6 +94,14 @@
       "mitigation": "风险缓解策略",
       "monitoring": "合规监控",
       "controls": "内部控制审查"
+    },
+    "training": {
+      "professional": "专业发展培训",
+      "compliance": "合规与法规培训",
+      "skills": "技能提升培训",
+      "certification": "认证预备课程",
+      "workshops": "定制工作坊与研讨会",
+      "custom": "量身定制培训解决方案"
     }
   }
 },

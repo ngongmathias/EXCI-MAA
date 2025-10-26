@@ -125,9 +125,9 @@ const Header: FC = () => {
 
               {/* Services Dropdown Menu */}
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[9999]">
+                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[99999]">
                   <div className="py-2">
-                    <div className="px-4 py-3 border-b border-gray-100">
+                    {/* <div className="px-4 py-3 border-b border-gray-100">
                       <Link
                         to="/services"
                         onClick={() => setIsServicesOpen(false)}
@@ -135,7 +135,7 @@ const Header: FC = () => {
                       >
                         {t('servicesDropdown.viewAllServices')}
                       </Link>
-                    </div>
+                    </div> */}
                     <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide border-b border-gray-100">
                       {t('servicesDropdown.ourServices')}
                     </div>
@@ -189,9 +189,9 @@ const Header: FC = () => {
 
               {/* Offices Dropdown Menu */}
               {isOfficesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[9999]">
+                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[99999]">
                   <div className="py-2">
-                    <div className="px-4 py-3 border-b border-gray-100">
+                    {/* <div className="px-4 py-3 border-b border-gray-100">
                       <Link
                         to="/global-offices"
                         onClick={() => setIsOfficesOpen(false)}
@@ -199,7 +199,7 @@ const Header: FC = () => {
                       >
                         {t('globalOfficesDropdown.viewAllOffices')}
                       </Link>
-                    </div>
+                    </div> */}
                     <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide border-b border-gray-100">
                       {t('globalOfficesDropdown.ourOffices')}
                     </div>
