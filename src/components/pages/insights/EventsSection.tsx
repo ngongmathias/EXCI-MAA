@@ -298,7 +298,7 @@ const EventsSection: React.FC = () => {
                     >
                       Download
                     </a>
-                    <button
+                    {/* <button
                       onClick={(e) => {
                         e.stopPropagation();
                         console.log('Event share button clicked for event:', evt.id);
@@ -309,7 +309,7 @@ const EventsSection: React.FC = () => {
                     >
                       <Share2 className="w-4 h-4" />
                       Share
-                    </button>
+                    </button> */}
                   </div>
                   
                   <button 

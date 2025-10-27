@@ -162,7 +162,7 @@ const BlogSection: React.FC = () => {
                   <div className="mt-3 flex items-center justify-between text-sm text-gray-500">
                     <span>{new Date(post.createdAt).toLocaleDateString()}</span>
                     <div className="flex items-center gap-2">
-                      <button
+                      {/* <button
                         onClick={(e) => {
                           e.stopPropagation();
                           console.log('Share button clicked for blog post:', post.id);
@@ -174,7 +174,7 @@ const BlogSection: React.FC = () => {
                       >
                         <Share2 className="w-4 h-4" />
                         Share
-                      </button>
+                      </button> */}
                       <span className="text-blue-600 font-medium">Read more →</span>
                     </div>
                   </div>
