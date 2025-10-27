@@ -76,14 +76,51 @@ const BackgroundSlideshow = ({
           transition={{ duration: 1.5, ease: 'easeInOut' }}
           className="absolute inset-0"
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url(${images[currentIndex].image_url})`,
-            }}
-          />
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/40" />
+          {images[currentIndex].link_url ? (
+            <a
+              href={images[currentIndex].link_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute inset-0 block cursor-pointer"
+              aria-label={`Visit ${images[currentIndex].title || 'linked page'}`}
+            >
+              <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat hover:scale-105 transition-transform duration-700"
+                style={{
+                  backgroundImage: `url(${images[currentIndex].image_url})`,
+                }}
+              />
+              {/* Overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/40" />
+              {/* Link indicator */}
+              <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </div>
+            </a>
+          ) : (
+            <>
+              <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: `url(${images[currentIndex].image_url})`,
+                }}
+              />
+              {/* Overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/40" />
+            </>
+          )}
         </motion.div>
       </AnimatePresence>
 

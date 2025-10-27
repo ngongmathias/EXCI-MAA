@@ -1,6 +1,18 @@
 -- WARNING: This schema is for context only and is not meant to be run.
 -- Table order and constraints may not be valid for execution.
 
+CREATE TABLE public.background_images (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  image_url text NOT NULL,
+  title character varying,
+  description text,
+  display_order integer DEFAULT 0,
+  is_active boolean DEFAULT true,
+  created_by character varying,
+  created_at timestamp with time zone DEFAULT now(),
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT background_images_pkey PRIMARY KEY (id)
+);
 CREATE TABLE public.careers (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   title text NOT NULL,
@@ -59,6 +71,19 @@ CREATE TABLE public.event_attendees (
   CONSTRAINT event_attendees_pkey PRIMARY KEY (id),
   CONSTRAINT event_attendees_event_id_fkey FOREIGN KEY (event_id) REFERENCES public.events(id)
 );
+CREATE TABLE public.event_images (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  event_id uuid NOT NULL,
+  image_url text NOT NULL,
+  display_order integer DEFAULT 0,
+  caption text,
+  is_primary boolean DEFAULT false,
+  uploaded_by uuid,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT event_images_pkey PRIMARY KEY (id),
+  CONSTRAINT event_images_event_id_fkey FOREIGN KEY (event_id) REFERENCES public.events(id)
+);
 CREATE TABLE public.events (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   title text NOT NULL,
@@ -79,6 +104,19 @@ CREATE TABLE public.likes (
   CONSTRAINT likes_pkey PRIMARY KEY (id),
   CONSTRAINT likes_post_id_fkey FOREIGN KEY (post_id) REFERENCES public.posts(id)
 );
+CREATE TABLE public.post_images (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  post_id uuid NOT NULL,
+  image_url text NOT NULL,
+  display_order integer DEFAULT 0,
+  caption text,
+  is_primary boolean DEFAULT false,
+  uploaded_by uuid,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  updated_at timestamp with time zone DEFAULT now(),
+  CONSTRAINT post_images_pkey PRIMARY KEY (id),
+  CONSTRAINT post_images_post_id_fkey FOREIGN KEY (post_id) REFERENCES public.posts(id)
+);
 CREATE TABLE public.posts (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   title text NOT NULL,
@@ -95,30 +133,4 @@ CREATE TABLE public.services (
   price numeric,
   created_at timestamp with time zone NOT NULL DEFAULT now(),
   CONSTRAINT services_pkey PRIMARY KEY (id)
-);
-CREATE TABLE public.event_images (
-  id uuid NOT NULL DEFAULT gen_random_uuid(),
-  event_id uuid NOT NULL,
-  image_url text NOT NULL,
-  display_order integer DEFAULT 0,
-  caption text,
-  is_primary boolean DEFAULT false,
-  uploaded_by uuid,
-  created_at timestamp with time zone NOT NULL DEFAULT now(),
-  updated_at timestamp with time zone DEFAULT now(),
-  CONSTRAINT event_images_pkey PRIMARY KEY (id),
-  CONSTRAINT event_images_event_id_fkey FOREIGN KEY (event_id) REFERENCES public.events(id) ON DELETE CASCADE
-);
-CREATE TABLE public.post_images (
-  id uuid NOT NULL DEFAULT gen_random_uuid(),
-  post_id uuid NOT NULL,
-  image_url text NOT NULL,
-  display_order integer DEFAULT 0,
-  caption text,
-  is_primary boolean DEFAULT false,
-  uploaded_by uuid,
-  created_at timestamp with time zone NOT NULL DEFAULT now(),
-  updated_at timestamp with time zone DEFAULT now(),
-  CONSTRAINT post_images_pkey PRIMARY KEY (id),
-  CONSTRAINT post_images_post_id_fkey FOREIGN KEY (post_id) REFERENCES public.posts(id) ON DELETE CASCADE
 );
