@@ -59,8 +59,8 @@ export const countries: Country[] = [
   {
     slug: 'republic-of-congo',
     name: 'Republic of Congo',
-    capitalName: 'Brazzaville',
-    capital: { lat: -4.2634, lng: 15.2429 },
+    capitalName: 'Pointe-Noire',
+    capital: { lat: -4.7692, lng: 11.8636 },
     zoom: 6,
     phones: ['+242 06 900 0000'],
   },

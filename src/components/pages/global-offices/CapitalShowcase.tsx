@@ -15,7 +15,7 @@ const CapitalShowcase: React.FC = () => {
     'france': '/images/Cities/France-paris.jpg',
     'burundi': '/images/Cities/Burundi.jpeg',
     'united-states': '/images/Cities/USA-washington.jpeg',
-    'republic-of-congo': 'images/Cities/DRC.jpeg', // Brazzaville skyline
+    'republic-of-congo': 'images/Cities/DRC.jpeg', // Pointe-Noire skyline
     'gabon': 'images/Cities/Libreville-1.jpg', // Libreville
     'united-arab-emirates': 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80', // Dubai
   };
