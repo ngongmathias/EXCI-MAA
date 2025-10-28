@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import WhatsAppButton from './WhatsAppButton';
 
 const Layout: FC = () => {
   const { pathname } = useLocation();
@@ -14,6 +15,7 @@ const Layout: FC = () => {
         <Outlet />
       </main>
       <Footer />
+      {!hideHeader && <WhatsAppButton />}
     </div>
   );
 };

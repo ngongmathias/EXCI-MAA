@@ -123,19 +123,19 @@ export interface TeamMember {
     // USA TEAM (Washington DC)
     {
       id: 'paul-tchamake',
-      name: 'Paul Ngatcha',
+      name: 'Paul TCHAMAKE',
       title: 'Partner - International Tax & Transfer Pricing',
       qualifications: ['Ms', 'CPA (USA, France)'],
-      bio: 'Certified Chartered Accountant (American and French Regime). International Tax Specialist, ASC 740 (US GAAP Standards). Over 15 years of international financial and tax reporting practice with Big 4 experience at KPMG and PwC USA. Specialist in Transfer Pricing and BEPS.',
-      image: '/images/team/olivier-fodji.jpg',
+      bio: 'Certified Chartered Accountant (American and French Regime). Order of Certified Chartered Accountants of Ile-de-France, Paris France. ICPAR member and Practitioner. International Tax Specialist, ASC 740 (US GAAP Standards). More than 15 years of international financial and tax reporting practice in firms.',
+      image: '/images/team/paul-tchamake.jpg',
       officeId: '4', // Washington DC
       email: 'ptchamake@excimaa.ca',
       specialties: [
         'International Tax',
         'Transfer Pricing',
-        'BEPS',
         'US GAAP',
         'ASC 740',
+        'French & American Accounting',
         'Cross-border Taxation'
       ]
     },

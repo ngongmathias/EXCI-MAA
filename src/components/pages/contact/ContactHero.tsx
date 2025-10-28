@@ -16,11 +16,20 @@ const getContactMethods = (t: (key: string) => string) => [
     hoverColor: 'hover:bg-blue-100'
   },
   {
-    icon: <Phone className="h-6 w-6 text-green-600" />,
+    icon: <Phone className="h-6 w-6 text-blue-600" />,
     title: t('contact.hero.contactMethods.callUs'),
     description: t('contact.hero.contactMethods.callDescription'),
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567',
+    value: '+250 787 779 965',
+    href: 'tel:+250787779965',
+    color: 'bg-blue-50',
+    hoverColor: 'hover:bg-blue-100'
+  },
+  {
+    icon: <MessageSquare className="h-6 w-6 text-green-600" />,
+    title: 'WhatsApp',
+    description: 'Chat with us instantly',
+    value: '+250 787 779 965',
+    href: 'https://wa.me/250787779965?text=Hello%20EXCI-MAA%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.',
     color: 'bg-green-50',
     hoverColor: 'hover:bg-green-100'
   },
