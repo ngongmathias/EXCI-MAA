@@ -19,8 +19,8 @@ const ContentManager: React.FC<ContentManagerProps> = ({ active }) => {
     { key: 'title', label: 'Event Title', required: true },
     { key: 'description', label: 'Description', type: 'textarea' as const, required: true },
     { key: 'location', label: 'Location', required: true },
-    { key: 'start_at', label: 'Start Date', type: 'date' as const, required: true },
-    { key: 'end_at', label: 'End Date', type: 'date' as const, required: true },
+    { key: 'start_at', label: 'Start Date & Time', type: 'datetime-local' as const, required: true },
+    { key: 'end_at', label: 'End Date & Time', type: 'datetime-local' as const, required: true },
   ];
 
   const postsFields = [

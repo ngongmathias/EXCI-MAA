@@ -43,7 +43,7 @@ interface DataTableProps {
   fields: Array<{
     key: string;
     label: string;
-    type?: 'text' | 'email' | 'number' | 'date' | 'textarea' | 'url' | 'tel';
+    type?: 'text' | 'email' | 'number' | 'date' | 'datetime-local' | 'textarea' | 'url' | 'tel';
     required?: boolean;
   }>;
   storageKey: string; // localStorage key OR Supabase table name
@@ -194,6 +194,13 @@ const DataTable: React.FC<DataTableProps> = ({
             processedData[field.key] = date.toISOString().split('T')[0]; // YYYY-MM-DD format
           }
         }
+        if (field.type === 'datetime-local' && processedData[field.key]) {
+          // Convert datetime-local string to ISO format for database
+          const date = new Date(processedData[field.key]);
+          if (!isNaN(date.getTime())) {
+            processedData[field.key] = date.toISOString(); // Full ISO format with time
+          }
+        }
         // Convert number fields to proper numbers
         if (field.type === 'number' && processedData[field.key]) {
           processedData[field.key] = Number(processedData[field.key]);
@@ -271,6 +278,14 @@ const DataTable: React.FC<DataTableProps> = ({
           const date = new Date(value);
           if (!isNaN(date.getTime())) {
             value = date.toISOString().split('T')[0];
+          }
+        }
+        // Handle datetime-local fields for form display
+        if (field.type === 'datetime-local' && value) {
+          // Convert to YYYY-MM-DDTHH:mm format for datetime-local input
+          const date = new Date(value);
+          if (!isNaN(date.getTime())) {
+            value = date.toISOString().slice(0, 16); // Format: YYYY-MM-DDTHH:mm
           }
         }
         formData[field.key] = value;
@@ -433,6 +448,9 @@ const DataTable: React.FC<DataTableProps> = ({
         const value = params.value;
         if (field.type === 'date' && value) {
           return new Date(value).toLocaleDateString();
+        }
+        if (field.type === 'datetime-local' && value) {
+          return new Date(value).toLocaleString();
         }
         if (field.type === 'textarea' && value && value.length > 50) {
           return (
@@ -673,7 +691,8 @@ VITE_SUPABASE_ANON_KEY=your-supabase-anon-key-here
                             field.type === 'email' ? 'email' : 
                             field.type === 'url' ? 'url' : 
                             field.type === 'tel' ? 'tel' : 
-                            field.type === 'date' ? 'date' : 'text'}
+                            field.type === 'date' ? 'date' : 
+                            field.type === 'datetime-local' ? 'datetime-local' : 'text'}
                       multiline={field.type === 'textarea'}
                       rows={field.type === 'textarea' ? 3 : 1}
                       required={field.required}

@@ -5,6 +5,7 @@ import HistorySection from '../components/pages/about/HistorySection';
 // import TeamSection from '../components/pages/about/TeamSection';
 import MissionSection from '../components/pages/about/MissionSection';
 import StorySection from '../components/pages/about/StorySection';
+import KeysToSuccessSection from '../components/pages/about/KeysToSuccessSection';
 import ClientsSection from '../components/pages/about/ClientsSection';
 import OrganizationalStructure from '../components/pages/about/OrganizationalStructure';
 import TypicalOfficeOrganigram from '../components/pages/about/TypicalOfficeOrganigram';
@@ -16,9 +17,10 @@ const AboutPage: FC = () => {
     <div className="min-h-screen">
       <AboutHero />
       <MissionSection />
+      <StorySection />
+      <KeysToSuccessSection />
       <AccreditationsSection />
       <ClientSectorsSection />
-      <StorySection />
       <OrganizationalStructure />
       <HistorySection />
       <TypicalOfficeOrganigram />

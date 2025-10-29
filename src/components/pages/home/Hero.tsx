@@ -75,12 +75,17 @@ const Hero: FC = () => {
                 {t('offices.subtitle')}
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                <span className="block">{t('hero.title')}</span>
-                <span className={`inline-block mt-2 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
-                  {heroTexts(t)[currentText]}
-                </span>
-              </h1>
+              <div className="space-y-2">
+                <p className="text-sm md:text-base text-gray-600 font-medium tracking-wide uppercase">
+                  Experts Comptables Internationaux - MAA
+                </p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  <span className="block">{t('hero.title')}</span>
+                  <span className={`inline-block mt-2 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
+                    {heroTexts(t)[currentText]}
+                  </span>
+                </h1>
+              </div>
               
               <p className="text-xl text-blue-600 font-semibold">
                 {t('hero.subtitle')}
