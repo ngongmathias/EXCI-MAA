@@ -118,3 +118,6 @@ src/
 ## License
 
 This project is proprietary to EXCI-MAA.
+
+---
+*Last updated: January 2026*
