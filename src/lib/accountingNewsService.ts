@@ -189,19 +189,52 @@ export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise
     console.log(`🌐 DEBUG: Fetching RSS from ${source.url}...`);
     console.log(`📋 DEBUG: Source info: ${source.name} (${source.category})`);
     
-    // Fetch RSS feed
-    const response = await fetch(source.url, {
+    // Try direct fetch first
+    let response = await fetch(source.url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
         'Accept': 'application/rss+xml, application/xml, text/xml',
       },
     });
     
-    console.log(`📡 DEBUG: HTTP Status: ${response.status} ${response.statusText}`);
-    console.log(`📋 DEBUG: Response headers:`, Object.fromEntries(response.headers.entries()));
+    console.log(`📡 DEBUG: First attempt - HTTP Status: ${response.status} ${response.statusText}`);
+    
+    // If direct fetch fails, try CORS proxy
+    if (!response.ok) {
+      console.log(`🔄 DEBUG: Direct fetch failed, trying CORS proxy...`);
+      
+      // Try multiple CORS proxies in order
+      const proxyUrls = [
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(source.url)}`,
+        `https://corsproxy.io/?${encodeURIComponent(source.url)}`,
+        `https://thingproxy.freeboard.io/fetch/${encodeURIComponent(source.url)}`
+      ];
+      
+      for (const proxyUrl of proxyUrls) {
+        try {
+          console.log(`🔄 DEBUG: Trying proxy: ${proxyUrl}`);
+          response = await fetch(proxyUrl, {
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+              'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+            },
+          });
+          
+          console.log(`📡 DEBUG: Proxy attempt - HTTP Status: ${response.status} ${response.statusText}`);
+          
+          if (response.ok) {
+            console.log(`✅ DEBUG: Proxy worked: ${proxyUrl}`);
+            break;
+          }
+        } catch (proxyError) {
+          console.log(`❌ DEBUG: Proxy failed: ${proxyUrl}`, proxyError);
+          continue;
+        }
+      }
+    }
     
     if (!response.ok) {
-      console.error(`❌ DEBUG: HTTP error ${response.status} for ${source.url}`);
+      console.error(`❌ DEBUG: All attempts failed for ${source.url}`);
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
