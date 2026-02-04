@@ -1,5 +1,5 @@
 import React from 'react';
-import { SignedIn, SignedOut, RedirectToSignIn, useUser } from '@clerk/clerk-react';
+import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 import Dashboard from '../components/admin/Dashboard';
 import ContentManager from '../components/admin/ContentManager';
 import Analytics from '../components/admin/Analytics';
@@ -10,39 +10,32 @@ import BackgroundImageManager from '../components/admin/BackgroundImageManager';
 import AccountingNewsManager from '../components/admin/AccountingNewsManager';
 import AdminAccountManager from '../components/admin/AdminAccountManager';
 import AdminLayout from '../components/admin/AdminLayout';
+import AdminAuthGuard from '../components/admin/AdminAuthGuard';
 
 const AdminPage: React.FC = () => {
-  const { user, isLoaded } = useUser();
-
-  if (!isLoaded) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
-      </div>
-    );
-  }
-
   return (
     <>
       <SignedIn>
-        <AdminLayout>
-          {(active) => (
-            <>
-              {active === 'dashboard' && <Dashboard />}
-              {active === 'careers' && <CareersAdmin />}
-              {active === 'backgrounds' && <BackgroundImageManager />}
-              {active === 'services' && <ContentManager active="services" />}
-              {active === 'events' && <ContentManager active="events" />}
-              {active === 'posts' && <ContentManager active="posts" />}
-              {active === 'comments' && <ContentManager active="comments" />}
-              {active === 'accounting-news' && <AccountingNewsManager />}
-              {active === 'admin-accounts' && <AdminAccountManager />}
-              {active === 'contact' && <ContactSubmissions />}
-              {active === 'consultation' && <ConsultationRequests />}
-              {active === 'insights' && <Analytics />}
-            </>
-          )}
-        </AdminLayout>
+        <AdminAuthGuard>
+          <AdminLayout>
+            {(active) => (
+              <>
+                {active === 'dashboard' && <Dashboard />}
+                {active === 'careers' && <CareersAdmin />}
+                {active === 'backgrounds' && <BackgroundImageManager />}
+                {active === 'services' && <ContentManager active="services" />}
+                {active === 'events' && <ContentManager active="events" />}
+                {active === 'posts' && <ContentManager active="posts" />}
+                {active === 'comments' && <ContentManager active="comments" />}
+                {active === 'accounting-news' && <AccountingNewsManager />}
+                {active === 'admin-accounts' && <AdminAccountManager />}
+                {active === 'contact' && <ContactSubmissions />}
+                {active === 'consultation' && <ConsultationRequests />}
+                {active === 'insights' && <Analytics />}
+              </>
+            )}
+          </AdminLayout>
+        </AdminAuthGuard>
       </SignedIn>
       <SignedOut>
         <RedirectToSignIn redirectUrl="/admin" />
