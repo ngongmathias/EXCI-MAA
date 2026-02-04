@@ -1,6 +1,5 @@
 import React from 'react';
-import { useAuth } from '../contexts/AuthContext';
-import { Navigate } from 'react-router-dom';
+import { SignedIn, SignedOut, RedirectToSignIn, useUser } from '@clerk/clerk-react';
 import Dashboard from '../components/admin/Dashboard';
 import ContentManager from '../components/admin/ContentManager';
 import Analytics from '../components/admin/Analytics';
@@ -13,9 +12,9 @@ import AdminAccountManager from '../components/admin/AdminAccountManager';
 import AdminLayout from '../components/admin/AdminLayout';
 
 const AdminPage: React.FC = () => {
-  const { user, loading, isAuthenticated, isAdmin } = useAuth();
+  const { user, isLoaded } = useUser();
 
-  if (loading) {
+  if (!isLoaded) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
@@ -23,29 +22,32 @@ const AdminPage: React.FC = () => {
     );
   }
 
-  if (!isAuthenticated || !isAdmin) {
-    return <Navigate to="/signin" replace />;
-  }
-
   return (
-    <AdminLayout>
-      {(active) => (
-        <>
-          {active === 'dashboard' && <Dashboard />}
-          {active === 'careers' && <CareersAdmin />}
-          {active === 'backgrounds' && <BackgroundImageManager />}
-          {active === 'services' && <ContentManager active="services" />}
-          {active === 'events' && <ContentManager active="events" />}
-          {active === 'posts' && <ContentManager active="posts" />}
-          {active === 'comments' && <ContentManager active="comments" />}
-          {active === 'accounting-news' && <AccountingNewsManager />}
-          {active === 'admin-accounts' && <AdminAccountManager />}
-          {active === 'contact' && <ContactSubmissions />}
-          {active === 'consultation' && <ConsultationRequests />}
-          {active === 'insights' && <Analytics />}
-        </>
-      )}
-    </AdminLayout>
+    <>
+      <SignedIn>
+        <AdminLayout>
+          {(active) => (
+            <>
+              {active === 'dashboard' && <Dashboard />}
+              {active === 'careers' && <CareersAdmin />}
+              {active === 'backgrounds' && <BackgroundImageManager />}
+              {active === 'services' && <ContentManager active="services" />}
+              {active === 'events' && <ContentManager active="events" />}
+              {active === 'posts' && <ContentManager active="posts" />}
+              {active === 'comments' && <ContentManager active="comments" />}
+              {active === 'accounting-news' && <AccountingNewsManager />}
+              {active === 'admin-accounts' && <AdminAccountManager />}
+              {active === 'contact' && <ContactSubmissions />}
+              {active === 'consultation' && <ConsultationRequests />}
+              {active === 'insights' && <Analytics />}
+            </>
+          )}
+        </AdminLayout>
+      </SignedIn>
+      <SignedOut>
+        <RedirectToSignIn redirectUrl="/admin" />
+      </SignedOut>
+    </>
   );
 };
 
