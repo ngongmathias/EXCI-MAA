@@ -1,5 +1,6 @@
 import React from 'react';
 import AccountingNewsSection from '../components/pages/insights/AccountingNewsSection';
+import DatabaseTest from '../components/debug/DatabaseTest';
 
 const AccountingNewsPage: React.FC = () => {
   return (
@@ -16,6 +17,11 @@ const AccountingNewsPage: React.FC = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      {/* Debug Section - Temporary */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <DatabaseTest />
       </div>
 
       {/* Main Content */}

@@ -257,6 +257,8 @@ export const getAccountingNewsByCategory = async (
   offset: number = 0
 ): Promise<AccountingNewsArticle[]> => {
   try {
+    console.log('🔍 DEBUG: Fetching accounting news with params:', { category, limit, offset });
+    
     let query = supabase
       .from('accounting_news_articles')
       .select('*')
@@ -270,12 +272,14 @@ export const getAccountingNewsByCategory = async (
       .range(offset, offset + limit - 1)
       .limit(limit);
 
+    console.log('🔍 DEBUG: Query result:', { data, error, dataLength: data?.length });
+
     if (error) {
       console.error('Supabase query error:', error);
       throw error;
     }
 
-    return (data || []).map(article => ({
+    const result = (data || []).map(article => ({
       id: article.id,
       title: article.title,
       description: article.description,
@@ -287,6 +291,9 @@ export const getAccountingNewsByCategory = async (
       imageUrl: article.image_url,
       tags: article.tags || []
     }));
+
+    console.log('🔍 DEBUG: Mapped result:', { resultLength: result.length, firstArticle: result[0] });
+    return result;
   } catch (error) {
     console.error('Error getting accounting news by category:', error);
     return [];
@@ -295,6 +302,8 @@ export const getAccountingNewsByCategory = async (
 
 export const getFeaturedAccountingNews = async (limit: number = 5): Promise<AccountingNewsArticle[]> => {
   try {
+    console.log('🔍 DEBUG: Fetching featured accounting news with limit:', limit);
+    
     const { data, error } = await supabase
       .from('accounting_news_articles')
       .select('*')
@@ -303,12 +312,14 @@ export const getFeaturedAccountingNews = async (limit: number = 5): Promise<Acco
       .order('pub_date', { ascending: false })
       .limit(limit);
 
+    console.log('🔍 DEBUG: Featured news query result:', { data, error, dataLength: data?.length });
+
     if (error) {
       console.error('Supabase query error for featured news:', error);
       throw error;
     }
 
-    return (data || []).map(article => ({
+    const result = (data || []).map(article => ({
       id: article.id,
       title: article.title,
       description: article.description,
@@ -320,6 +331,9 @@ export const getFeaturedAccountingNews = async (limit: number = 5): Promise<Acco
       imageUrl: article.image_url,
       tags: article.tags || []
     }));
+
+    console.log('🔍 DEBUG: Featured news mapped result:', { resultLength: result.length, firstArticle: result[0] });
+    return result;
   } catch (error) {
     console.error('Error getting featured accounting news:', error);
     return [];
