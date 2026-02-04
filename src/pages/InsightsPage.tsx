@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import InsightsHero from '../components/pages/insights/InsightsHero';
 import EventsSection from '../components/pages/insights/EventsSection';
 import BlogSection from '../components/pages/insights/BlogSection';
-import AccountingNewsSectionFallback from '../components/pages/insights/AccountingNewsSectionFallback';
+import AccountingNewsSection from '../components/pages/insights/AccountingNewsSection';
 // import PromotionsSection from '../components/pages/insights/PromotionsSection';
 
 const InsightsPage: React.FC = () => {
@@ -64,7 +64,7 @@ const InsightsPage: React.FC = () => {
         {activeTab === 'blog' && <BlogSection />}
       </div>
       <div ref={newsRef}>
-        {activeTab === 'news' && <AccountingNewsSectionFallback />}
+        {activeTab === 'news' && <AccountingNewsSection />}
       </div>
       {/* <PromotionsSection /> */}
     </div>

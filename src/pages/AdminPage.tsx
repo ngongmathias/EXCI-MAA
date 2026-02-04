@@ -7,6 +7,7 @@ import CareersAdmin from '../components/admin/CareersAdmin';
 import ContactSubmissions from '../components/admin/ContactSubmissions';
 import ConsultationRequests from '../components/admin/ConsultationRequests';
 import BackgroundImageManager from '../components/admin/BackgroundImageManager';
+import AccountingNewsManager from '../components/admin/AccountingNewsManager';
 import AdminLayout from '../components/admin/AdminLayout';
 
 const AdminPage: React.FC = () => {
@@ -23,6 +24,7 @@ const AdminPage: React.FC = () => {
               {active === 'events' && <ContentManager active="events" />}
               {active === 'posts' && <ContentManager active="posts" />}
               {active === 'comments' && <ContentManager active="comments" />}
+              {active === 'accounting-news' && <AccountingNewsManager />}
               {active === 'contact' && <ContactSubmissions />}
               {active === 'consultation' && <ConsultationRequests />}
               {active === 'insights' && <Analytics />}

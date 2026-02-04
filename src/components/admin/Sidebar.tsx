@@ -24,6 +24,7 @@ import {
   Assessment as ReportsIcon,
   TrendingUp as TrendingIcon,
   Wallpaper as BackgroundIcon,
+  Feed as NewsIcon,
 } from '@mui/icons-material';
 
 type SidebarProps = {
@@ -42,6 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) =>
     { key: 'events', label: 'Events', icon: <EventsIcon /> },
     { key: 'posts', label: 'Blog Posts', icon: <PostsIcon /> },
     { key: 'comments', label: 'Comments', icon: <CommentsIcon /> },
+    { key: 'accounting-news', label: 'Accounting News', icon: <NewsIcon /> },
     { key: 'contact', label: 'Contact Submissions', icon: <ContactIcon /> },
     { key: 'consultation', label: 'Consultation Requests', icon: <ConsultationIcon /> },
     // { key: 'insights', label: 'Insights', icon: <InsightsIcon /> },
