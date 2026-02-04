@@ -189,19 +189,31 @@ export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise
     console.log(`🌐 DEBUG: Fetching RSS from ${source.url}...`);
     console.log(`📋 DEBUG: Source info: ${source.name} (${source.category})`);
     
+    let response: Response | null = null;
+    let directFetchFailed = false;
+    
     // Try direct fetch first
-    let response = await fetch(source.url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'application/rss+xml, application/xml, text/xml',
-      },
-    });
+    try {
+      response = await fetch(source.url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+          'Accept': 'application/rss+xml, application/xml, text/xml',
+        },
+      });
+      
+      console.log(`📡 DEBUG: First attempt - HTTP Status: ${response.status} ${response.statusText}`);
+      
+      if (!response.ok) {
+        directFetchFailed = true;
+      }
+    } catch (directError) {
+      console.log(`⚠️ DEBUG: Direct fetch failed (likely CORS): ${directError.message}`);
+      directFetchFailed = true;
+    }
     
-    console.log(`📡 DEBUG: First attempt - HTTP Status: ${response.status} ${response.statusText}`);
-    
-    // If direct fetch fails, try CORS proxy
-    if (!response.ok) {
-      console.log(`🔄 DEBUG: Direct fetch failed, trying CORS proxy...`);
+    // If direct fetch failed, try CORS proxies
+    if (directFetchFailed || !response) {
+      console.log(`🔄 DEBUG: Trying CORS proxies...`);
       
       // Try multiple CORS proxies in order
       const proxyUrls = [
@@ -212,7 +224,7 @@ export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise
       
       for (const proxyUrl of proxyUrls) {
         try {
-          console.log(`🔄 DEBUG: Trying proxy: ${proxyUrl}`);
+          console.log(`🔄 DEBUG: Trying proxy: ${proxyUrl.substring(0, 60)}...`);
           response = await fetch(proxyUrl, {
             headers: {
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -223,19 +235,19 @@ export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise
           console.log(`📡 DEBUG: Proxy attempt - HTTP Status: ${response.status} ${response.statusText}`);
           
           if (response.ok) {
-            console.log(`✅ DEBUG: Proxy worked: ${proxyUrl}`);
+            console.log(`✅ DEBUG: Proxy worked!`);
             break;
           }
         } catch (proxyError) {
-          console.log(`❌ DEBUG: Proxy failed: ${proxyUrl}`, proxyError);
+          console.log(`❌ DEBUG: Proxy failed: ${proxyError.message}`);
           continue;
         }
       }
     }
     
-    if (!response.ok) {
+    if (!response || !response.ok) {
       console.error(`❌ DEBUG: All attempts failed for ${source.url}`);
-      throw new Error(`HTTP error! status: ${response.status}`);
+      return [];
     }
 
     const xmlText = await response.text();
