@@ -5,7 +5,7 @@
  * Supports RSS feeds from IFAC, IASB, FASB, and major accounting publications
  */
 
-import { supabase } from './supabase';
+import { supabase } from './supabaseClient';
 
 export interface AccountingNewsArticle {
   id: string;
