@@ -37,52 +37,104 @@ export const parseRSSFeed = async (xmlString: string): Promise<AccountingNewsArt
   const parser = new DOMParser();
   const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
   
-  const items = xmlDoc.querySelectorAll('item');
+  // Check for XML parsing errors
+  const parseError = xmlDoc.querySelector('parsererror');
+  if (parseError) {
+    console.error('❌ DEBUG: XML parsing error:', parseError.textContent);
+    return [];
+  }
+
+  // Try different RSS formats
+  let items = xmlDoc.querySelectorAll('item');
+  if (items.length === 0) {
+    items = xmlDoc.querySelectorAll('entry'); // Atom feed format
+  }
+  if (items.length === 0) {
+    console.warn('⚠️ DEBUG: No items found in RSS feed');
+    console.log('🔍 DEBUG: XML structure:', xmlDoc.documentElement.tagName);
+    console.log('🔍 DEBUG: All child elements:', Array.from(xmlDoc.documentElement.children).map(el => el.tagName));
+    return [];
+  }
+
+  console.log(`📰 DEBUG: Found ${items.length} items in RSS feed`);
+
   const articles: AccountingNewsArticle[] = [];
 
-  items.forEach((item) => {
-    const title = item.querySelector('title')?.textContent?.trim();
-    const link = item.querySelector('link')?.textContent?.trim();
-    const description = item.querySelector('description')?.textContent?.trim();
-    const pubDate = item.querySelector('pubDate')?.textContent?.trim();
-    const author = item.querySelector('author')?.textContent?.trim();
-    const guid = item.querySelector('guid')?.textContent?.trim();
+  items.forEach((item, index) => {
+    try {
+      const title = item.querySelector('title')?.textContent?.trim();
+      const link = item.querySelector('link')?.textContent?.trim() || 
+                   item.querySelector('link')?.getAttribute('href')?.trim(); // Atom format
+      const description = item.querySelector('description')?.textContent?.trim() ||
+                        item.querySelector('summary')?.textContent?.trim(); // Atom format
+      const pubDate = item.querySelector('pubDate')?.textContent?.trim() ||
+                    item.querySelector('published')?.textContent?.trim() || // Atom format
+                    item.querySelector('updated')?.textContent?.trim(); // Atom format
+      const author = item.querySelector('author')?.textContent?.trim() ||
+                   item.querySelector('name')?.textContent?.trim(); // Atom format
+      const guid = item.querySelector('guid')?.textContent?.trim() ||
+                 item.querySelector('id')?.textContent?.trim() || // Atom format
+                 link; // Fallback to link
 
-    if (title && link) {
-      // Extract image from description if present
-      let imageUrl: string | undefined;
-      if (description) {
-        const imgMatch = description.match(/<img[^>]+src="([^">]+)"/);
-        if (imgMatch) {
-          imageUrl = imgMatch[1];
+      if (title && link) {
+        // Extract image from description if present
+        let imageUrl: string | undefined;
+        if (description) {
+          // Try multiple image extraction patterns
+          const imgPatterns = [
+            /<img[^>]+src="([^">]+)"/i,
+            /<img[^>]+src='([^'>]+)'/i,
+            /<enclosure[^>]+url="([^">]+)"/i, // Media RSS
+          ];
+          
+          for (const pattern of imgPatterns) {
+            const match = description.match(pattern);
+            if (match) {
+              imageUrl = match[1];
+              break;
+            }
+          }
         }
+
+        // Clean description (remove HTML tags)
+        let cleanDescription = description;
+        if (description) {
+          cleanDescription = description
+            .replace(/<[^>]*>/g, '') // Remove HTML tags
+            .replace(/&nbsp;/g, ' ') // Replace non-breaking spaces
+            .replace(/&amp;/g, '&') // Replace HTML entities
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, "'")
+            .trim();
+        }
+
+        // Extract tags from title/description
+        const tags = extractAccountingTags(title + ' ' + (cleanDescription || ''));
+
+        articles.push({
+          id: guid || link,
+          title,
+          description: cleanDescription || '',
+          link,
+          pubDate: pubDate ? new Date(pubDate).toISOString() : new Date().toISOString(),
+          author,
+          imageUrl,
+          tags,
+          source: '', // Will be set by fetcher
+          category: '', // Will be set by fetcher
+          content: cleanDescription
+        });
+      } else {
+        console.warn(`⚠️ DEBUG: Skipping item ${index} - missing title or link`, { title, link });
       }
-
-      // Clean description (remove HTML tags)
-      let cleanDescription = description;
-      if (description) {
-        cleanDescription = description.replace(/<[^>]*>/g, '').trim();
-      }
-
-      // Extract tags from title/description
-      const tags = extractAccountingTags(title + ' ' + (cleanDescription || ''));
-
-      articles.push({
-        id: guid || link,
-        title,
-        description: cleanDescription || '',
-        link,
-        pubDate: pubDate ? new Date(pubDate).toISOString() : new Date().toISOString(),
-        author,
-        imageUrl,
-        tags,
-        source: '', // Will be set by fetcher
-        category: '', // Will be set by fetcher
-        content: cleanDescription
-      });
+    } catch (error) {
+      console.error(`❌ DEBUG: Error parsing item ${index}:`, error);
     }
   });
 
+  console.log(`✅ DEBUG: Successfully parsed ${articles.length} articles from ${items.length} items`);
   return articles;
 };
 
@@ -135,9 +187,18 @@ export const extractAccountingTags = (text: string): string[] => {
 export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise<AccountingNewsArticle[]> => {
   try {
     console.log(`🌐 DEBUG: Fetching RSS from ${source.url}...`);
+    console.log(`📋 DEBUG: Source info: ${source.name} (${source.category})`);
     
     // Fetch RSS feed
-    const response = await fetch(source.url);
+    const response = await fetch(source.url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'application/rss+xml, application/xml, text/xml',
+      },
+    });
+    
+    console.log(`📡 DEBUG: HTTP Status: ${response.status} ${response.statusText}`);
+    console.log(`📋 DEBUG: Response headers:`, Object.fromEntries(response.headers.entries()));
     
     if (!response.ok) {
       console.error(`❌ DEBUG: HTTP error ${response.status} for ${source.url}`);
@@ -146,6 +207,20 @@ export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise
 
     const xmlText = await response.text();
     console.log(`📄 DEBUG: Got ${xmlText.length} characters of XML from ${source.name}`);
+    console.log(`🔍 DEBUG: First 200 chars:`, xmlText.substring(0, 200));
+
+    // Check if we got valid XML
+    if (!xmlText || xmlText.trim().length === 0) {
+      console.error(`❌ DEBUG: Empty response from ${source.url}`);
+      return [];
+    }
+
+    // Check if it's HTML instead of XML (common issue)
+    if (xmlText.toLowerCase().includes('<html') || xmlText.toLowerCase().includes('<!doctype html')) {
+      console.error(`❌ DEBUG: Got HTML instead of XML from ${source.url}`);
+      console.log(`📄 DEBUG: Full response:`, xmlText);
+      return [];
+    }
 
     // Parse RSS feed
     const articles = await parseRSSFeed(xmlText);
@@ -159,9 +234,13 @@ export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise
     }));
     
     console.log(`✅ DEBUG: Processed ${result.length} articles for ${source.name}`);
+    if (result.length > 0) {
+      console.log(`📰 DEBUG: First article:`, result[0]);
+    }
     return result;
   } catch (error) {
     console.error(`❌ DEBUG: Error fetching from ${source.name}:`, error);
+    console.error(`❌ DEBUG: Full error:`, error.stack);
     return [];
   }
 };
