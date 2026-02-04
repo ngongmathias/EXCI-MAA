@@ -89,13 +89,13 @@ const AdminAccountManager: React.FC = () => {
       const mappedUsers: AdminUser[] = (data || []).map(user => ({
         id: user.id,
         email: user.email,
-        firstName: user.first_name,
-        lastName: user.last_name,
-        role: user.role,
+        firstName: user.first_name || '',
+        lastName: user.last_name || '',
+        role: user.role as 'admin' | 'super_admin',
         isActive: user.is_active,
         lastLogin: user.last_login,
         createdAt: user.created_at,
-        clerkUserId: user.clerk_user_id,
+        clerkUserId: user.user_id,
       }));
 
       setUsers(mappedUsers);
@@ -130,7 +130,7 @@ const AdminAccountManager: React.FC = () => {
       if (selectedUser) {
         // Update existing user
         const { error } = await supabase.rpc('update_admin_user', {
-          p_user_id: selectedUser.id,
+          p_user_id: selectedUser.clerkUserId || selectedUser.id,
           p_email: formData.email,
           p_first_name: formData.firstName,
           p_last_name: formData.lastName,
@@ -142,7 +142,7 @@ const AdminAccountManager: React.FC = () => {
 
         setSuccess('User updated successfully');
       } else {
-        // Add new user
+        // Add new user (email-based, no Clerk ID needed)
         const { error } = await supabase.rpc('create_admin_user', {
           p_email: formData.email,
           p_first_name: formData.firstName,
@@ -152,7 +152,7 @@ const AdminAccountManager: React.FC = () => {
 
         if (error) throw error;
 
-        setSuccess('User added successfully');
+        setSuccess('User added successfully. They will be able to log in with their email.');
       }
       
       setEditDialogOpen(false);
@@ -176,7 +176,7 @@ const AdminAccountManager: React.FC = () => {
     if (selectedUser) {
       try {
         const { error } = await supabase.rpc('delete_admin_user', {
-          p_user_id: selectedUser.id,
+          p_user_id: selectedUser.clerkUserId || selectedUser.id,
         });
 
         if (error) throw error;
@@ -206,7 +206,8 @@ const AdminAccountManager: React.FC = () => {
   };
 
   const isCurrentUser = (user: AdminUser) => {
-    return user.clerkUserId === currentUser?.id;
+    return user.clerkUserId === currentUser?.id || 
+           (user.clerkUserId && user.clerkUserId.startsWith('pending_') && user.email === currentUser?.primaryEmailAddress?.emailAddress);
   };
 
   return (
