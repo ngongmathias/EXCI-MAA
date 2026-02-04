@@ -27,7 +27,7 @@ import {
   Alert,
   Snackbar,
   LinearProgress,
-  Grid2 as Grid,
+  Grid,
   Divider,
 } from '@mui/material';
 import {
