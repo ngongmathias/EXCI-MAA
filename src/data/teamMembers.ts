@@ -19,7 +19,7 @@ export interface TeamMember {
       title: 'Managing Director & Chairman',
       qualifications: ['MBA', 'CPA', 'CGA', 'FCAA', 'DEC'],
       bio: 'Partner, Managing Director at EXCI-MAA Group. COSUMAF Licensed Chartered Accountant & Statutory Auditor. Registered with ICPAR, ONECCA, CPA Canada, Quebec, Ontario & UK. Former Engagement Director at Deloitte Toronto. Specialist in Management, SYSCOHADA, Account Conversion. Senior International Consultant and Trainer.',
-      image: '/images/team/pierre-kemeni.jpg',
+      image: '/images/Pierre.PNG',
       officeId: '1', // Douala
       email: 'pkemeni@excimaa.ca',
       phone: '+237 698 835 251',
@@ -52,19 +52,20 @@ export interface TeamMember {
       ]
     },
     {
-      id: 'cloudin-ngong',
+      id: 'lazare-tchouameni',
       name: 'Lazare Tchouameni',
-      title: 'Supervisor - Chartered Accountancy Department',
+      title: 'Office Manager, EXCI-MAA Congo',
       qualifications: ['MSc Accounting and Finance'],
-      bio: 'Financial Analyst with expertise in Tax and Financial Auditing. Supervises the Chartered Accountancy department operations.',
+      bio: 'Office Manager for EXCI-MAA Congo operations. Financial Analyst with expertise in Tax and Financial Auditing.',
       image: '/images/team/lazare-TCHOUAMENI.jpg',
-      officeId: '1', // Douala
-      email: 'cngong@excimaa.ca',
+      officeId: '7', // Kinshasa
+      email: 'ltchouameni@excimaa.ca',
       specialties: [
+        'Office Management',
         'Financial Analysis',
         'Tax Auditing',
         'Financial Auditing',
-        'Department Supervision'
+        'Congo Operations'
       ]
     },
     {

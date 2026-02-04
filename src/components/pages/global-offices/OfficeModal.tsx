@@ -1,6 +1,8 @@
 import React from 'react';
 import { X, MapPin, Phone, Mail } from 'lucide-react';
 import { useLanguage } from '../../../contexts/LanguageContext';
+import { offices } from '../../../data/offices';
+import { countries, countryBySlug } from '../../../data/countries';
 
 interface OfficeModalProps {
   country: string;
@@ -9,108 +11,166 @@ interface OfficeModalProps {
   onClose: () => void;
 }
 
-// Capital cities mapping
-const getCapitalCity = (country: string): string => {
-  const capitals: { [key: string]: string } = {
-    'Cameroon': 'Yaoundé',
-    'Canada': 'Ottawa', 
-    'Rwanda': 'Kigali',
-    'United States': 'Washington DC',
-    'France': 'Paris',
-    'Burundi': 'Gitega',
-    'Democratic Republic of Congo': 'Kinshasa',
-    'Gabon': 'Libreville',
-    'United Arab Emirates': 'Abu Dhabi'
-  };
-  return capitals[country] || country;
-};
-
 const OfficeModal: React.FC<OfficeModalProps> = ({ country, capital, isOpen, onClose }) => {
   const { t } = useLanguage();
 
   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[60]">
-      <div className="bg-white rounded-lg shadow-xl max-w-lg w-full mx-4 relative">
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors duration-200"
-          aria-label="Close modal"
-        >
-          <X className="h-5 w-5 text-gray-500" />
-        </button>
+  // Find the office for this country
+  const office = offices.find(office => 
+    office.country.toLowerCase() === country.toLowerCase() ||
+    office.city.toLowerCase() === capital.toLowerCase()
+  );
 
+  // Find the country data
+  const countryData = countries.find(c => 
+    c.name.toLowerCase() === country.toLowerCase() ||
+    c.capitalName.toLowerCase() === capital.toLowerCase()
+  );
+
+  // Get city image mapping
+  const cityImageBySlug: Record<string, string> = {
+    'cameroon': '/images/Cities/Cameroon-Yaounde.jpg',
+    'canada': '/images/Cities/Canada.jpg',
+    'rwanda': '/images/Cities/rwanda.jpg',
+    'france': '/images/Cities/France-paris.jpg',
+    'burundi': '/images/Cities/Burundi.jpeg',
+    'united-states': '/images/Cities/USA-washington.jpeg',
+    'republic-of-congo': 'images/Cities/DRC.jpeg',
+    'gabon': 'images/Cities/Libreville-1.jpg',
+    'united-arab-emirates': 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
+  };
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50" onClick={onClose}>
+      <div className="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
         {/* Modal Header */}
-        <div className="p-6 border-b border-gray-200">
-          <div className="flex items-center space-x-3">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                <MapPin className="h-6 w-6 text-blue-600" />
-              </div>
-            </div>
-            <div>
-              <h2 className="text-xl font-semibold text-gray-900">{country}</h2>
-              <p className="text-sm text-gray-600">{t('officeModal.capitalCity')}: {capital}</p>
-            </div>
+        <div className="relative p-6 border-b border-gray-200">
+          <div className="pr-8">
+            <h3 className="text-2xl font-bold text-gray-900">{country}</h3>
+            <p className="text-lg text-blue-600">{capital}</p>
           </div>
+          <button
+            onClick={onClose}
+            className="absolute top-6 right-6 p-2 hover:bg-gray-100 rounded-full transition-colors"
+          >
+            <X className="h-5 w-5 text-gray-500" />
+          </button>
         </div>
 
-        {/* Modal Body */}
+        {/* Modal Content */}
         <div className="p-6">
-          <div className="mb-6">
-            <p className="text-gray-700 mb-4">
-              {t('officeModal.contactMessage').replace('{country}', country).replace('{capital}', capital)}
-            </p>
-          </div>
-
-          {/* Contact Information */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3 p-4 bg-blue-50 rounded-lg">
-              <Mail className="h-5 w-5 text-blue-600 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-medium text-gray-900">{t('officeModal.email')}</p>
-                <a 
-                  href="mailto:contactcam@excimaa.ca" 
-                  className="text-blue-600 hover:text-blue-700 text-sm"
-                >
-                  contactcam@excimaa.ca
-                </a>
+          {office ? (
+            <div className="space-y-6">
+              {/* Office Image */}
+              <div className="aspect-[16/9] overflow-hidden rounded-lg bg-gray-200">
+                <img
+                  src={countryData ? cityImageBySlug[countryData.slug] || office.image : office.image}
+                  alt={`${office.city}, ${office.country}`}
+                  className="h-full w-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/images/logos/logo-placeholder.svg';
+                  }}
+                />
               </div>
-            </div>
 
-            <div className="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
-              <Phone className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+              {/* Office Name */}
               <div>
-                <p className="text-sm font-medium text-gray-900 mb-2">{t('officeModal.phone')}</p>
-                <div className="space-y-1">
-                  <a 
-                    href="tel:+237233427940" 
-                    className="block text-green-600 hover:text-green-700 text-sm"
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">{office.name}</h4>
+              </div>
+
+              {/* Contact Information */}
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-gray-900">Address</p>
+                    <p className="text-gray-600">{office.address}</p>
+                    <p className="text-gray-600">{office.city}, {office.country}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <Phone className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-gray-900">Phone</p>
+                    <p className="text-gray-600">{office.phone}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <Mail className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-gray-900">Email</p>
+                    <a href={`mailto:${office.email}`} className="text-blue-600 hover:text-blue-700 transition-colors">
+                      {office.email}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Services */}
+              <div>
+                <p className="font-medium text-gray-900 mb-2">Services</p>
+                <div className="flex flex-wrap gap-2">
+                  {office.services.map((service, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full"
+                    >
+                      {service}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Google Maps Link */}
+              {office.googleMapsUrl && (
+                <div>
+                  <a
+                    href={office.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
                   >
-                    (+237) 233 427 940
+                    View on Google Maps
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
                   </a>
-                  <a 
-                    href="tel:+250787779965" 
-                    className="block text-green-600 hover:text-green-700 text-sm"
-                  >
-                    (+250) 787 779 965
-                  </a>
+                </div>
+              )}
+            </div>
+          ) : countryData ? (
+            <div className="space-y-4">
+              <div className="aspect-[16/9] overflow-hidden rounded-lg bg-gray-200">
+                <img
+                  src={cityImageBySlug[countryData.slug]}
+                  alt={`${countryData.capitalName}, ${countryData.name}`}
+                  className="h-full w-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/images/logos/logo-placeholder.svg';
+                  }}
+                />
+              </div>
+              
+              <div className="text-center py-4">
+                <p className="text-gray-600">Contact information for this location:</p>
+                <div className="mt-4 space-y-2">
+                  {countryData.phones.map((phone, index) => (
+                    <div key={index} className="flex items-center justify-center space-x-2">
+                      <Phone className="h-4 w-4 text-blue-600" />
+                      <span className="text-gray-900">{phone}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Modal Footer */}
-        <div className="px-6 py-4 bg-gray-50 rounded-b-lg">
-          <button
-            onClick={onClose}
-            className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
-          >
-            {t('common.close')}
-          </button>
+          ) : (
+            <div className="text-center py-8">
+              <p className="text-gray-600">No office information available for this location.</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { FC, useState, useRef, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, Users, Briefcase, Mail, BookOpen, Globe, UserPlus, ChevronDown } from 'lucide-react';
+import { Menu, X, Users, Briefcase, Mail, BookOpen, Globe, UserPlus, ChevronDown, Newspaper } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import AuthButton from './AuthButton';
@@ -31,6 +31,7 @@ const Header: FC = () => {
   const navigationAfter = [
     {name: t('nav.careers'), href: '/careers', icon: <UserPlus className="h-4 w-4" />},
     {name: t('nav.insights'), href: '/insights', icon: <BookOpen className="h-4 w-4" />},
+    {name: t('nav.accountingNews'), href: '/accounting-news', icon: <Newspaper className="h-4 w-4" />},
     {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />}
   ];
 

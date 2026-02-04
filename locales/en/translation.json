@@ -6,6 +6,7 @@
     "training": "Training",
     "globalOffices": "Global Offices",
     "insights": "Insights",
+    "accountingNews": "Accounting News",
     "careers": "Careers",
     "contact": "Contact"
   },
@@ -242,6 +243,8 @@
     "eventsSubtitle": "Upcoming and past events",
     "blogTitle": "Blog",
     "blogSubtitle": "Latest articles and insights",
+    "newsTitle": "Accounting News",
+    "newsSubtitle": "Latest updates from IFAC, IASB, FASB, and industry sources",
     "promotionsTitle": "Promotions",
     "promotionsSubtitle": "Special offers and announcements"
   },
@@ -492,11 +495,11 @@
         "Acquisition Audit"
       ]
     },
-    "cloudin-ngong": {
-      "name": "Cloudin NGONG",
-      "title": "Supervisor - Chartered Accountancy Department",
+    "lazare-tchouameni": {
+      "name": "Lazare Tchouameni",
+      "title": "Office Manager, EXCI-MAA Congo",
       "qualifications": ["MSc Accounting and Finance"],
-      "bio": "Financial Analyst with expertise in Tax and Financial Auditing. Supervises the Chartered Accountancy department operations.",
+      "bio": "Office Manager for EXCI-MAA Congo operations. Financial Analyst with expertise in Tax and Financial Auditing.",
       "specialties": [
         "Financial Analysis",
         "Tax Auditing",

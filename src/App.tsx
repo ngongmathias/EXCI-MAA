@@ -12,6 +12,7 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import GlobalOfficesPage from './pages/GlobalOfficesPage';
 import InsightsPage from './pages/InsightsPage';
+import AccountingNewsPage from './pages/AccountingNewsPage';
 import CareersPage from './pages/CareersPage';
 import ContactPage from './pages/ContactPage';
 import AdminPage from './pages/AdminPage';
@@ -55,6 +56,7 @@ function App() {
                       <Route path="insights" element={<InsightsPage />} />
                       <Route path="insights/blog/:id" element={<BlogPostPage />} />
                       <Route path="insights/events/:id" element={<EventDetailPage />} />
+                      <Route path="accounting-news" element={<AccountingNewsPage />} />
                       <Route path="careers" element={<CareersPage />} />
                       <Route path="contact" element={<ContactPage />} />
                       <Route path="admin" element={<AdminPage />} />
