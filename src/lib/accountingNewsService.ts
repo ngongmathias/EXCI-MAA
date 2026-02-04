@@ -257,14 +257,23 @@ export const getAccountingNewsByCategory = async (
   offset: number = 0
 ): Promise<AccountingNewsArticle[]> => {
   try {
-    const { data, error } = await supabase
-      .rpc('get_accounting_news_by_category', {
-        p_category: category,
-        p_limit: limit,
-        p_offset: offset
-      });
+    let query = supabase
+      .from('accounting_news_articles')
+      .select('*')
+      .order('pub_date', { ascending: false });
 
-    if (error) throw error;
+    if (category && category !== '') {
+      query = query.eq('category', category);
+    }
+
+    const { data, error } = await query
+      .range(offset, offset + limit - 1)
+      .limit(limit);
+
+    if (error) {
+      console.error('Supabase query error:', error);
+      throw error;
+    }
 
     return (data || []).map(article => ({
       id: article.id,
@@ -276,7 +285,7 @@ export const getAccountingNewsByCategory = async (
       category: article.category,
       author: article.author,
       imageUrl: article.image_url,
-      tags: article.tags
+      tags: article.tags || []
     }));
   } catch (error) {
     console.error('Error getting accounting news by category:', error);
@@ -287,11 +296,17 @@ export const getAccountingNewsByCategory = async (
 export const getFeaturedAccountingNews = async (limit: number = 5): Promise<AccountingNewsArticle[]> => {
   try {
     const { data, error } = await supabase
-      .rpc('get_featured_accounting_news', {
-        p_limit: limit
-      });
+      .from('accounting_news_articles')
+      .select('*')
+      .in('category', ['ifac', 'iasb', 'fasb', 'regulatory'])
+      .gte('pub_date', new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()) // Last 7 days
+      .order('pub_date', { ascending: false })
+      .limit(limit);
 
-    if (error) throw error;
+    if (error) {
+      console.error('Supabase query error for featured news:', error);
+      throw error;
+    }
 
     return (data || []).map(article => ({
       id: article.id,
@@ -303,7 +318,7 @@ export const getFeaturedAccountingNews = async (limit: number = 5): Promise<Acco
       category: article.category,
       author: article.author,
       imageUrl: article.image_url,
-      tags: article.tags
+      tags: article.tags || []
     }));
   } catch (error) {
     console.error('Error getting featured accounting news:', error);

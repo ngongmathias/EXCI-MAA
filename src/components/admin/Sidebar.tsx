@@ -44,6 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({ active, onSelect, open, onClose }) =>
     { key: 'posts', label: 'Blog Posts', icon: <PostsIcon /> },
     { key: 'comments', label: 'Comments', icon: <CommentsIcon /> },
     { key: 'accounting-news', label: 'Accounting News', icon: <NewsIcon /> },
+    { key: 'admin-accounts', label: 'Admin Accounts', icon: <SecurityIcon /> },
     { key: 'contact', label: 'Contact Submissions', icon: <ContactIcon /> },
     { key: 'consultation', label: 'Consultation Requests', icon: <ConsultationIcon /> },
     // { key: 'insights', label: 'Insights', icon: <InsightsIcon /> },
