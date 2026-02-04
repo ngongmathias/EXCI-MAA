@@ -1,5 +1,5 @@
 import React from 'react';
-import AccountingNewsSection from '../components/pages/insights/AccountingNewsSection';
+import AccountingNewsSectionFallback from '../components/pages/insights/AccountingNewsSectionFallback';
 
 const AccountingNewsPage: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const AccountingNewsPage: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <AccountingNewsSection />
+      <AccountingNewsSectionFallback />
     </div>
   );
 };
