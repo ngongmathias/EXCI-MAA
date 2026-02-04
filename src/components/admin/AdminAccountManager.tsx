@@ -27,7 +27,7 @@ import {
   Alert,
   Snackbar,
   LinearProgress,
-  Grid,
+  Grid2 as Grid,
   Divider,
 } from '@mui/material';
 import {
@@ -39,6 +39,8 @@ import {
   AdminPanelSettings as AdminIcon,
   Refresh as RefreshIcon,
 } from '@mui/icons-material';
+import { supabase } from '../../lib/supabaseClient';
+import { useUser } from '@clerk/clerk-react';
 
 interface AdminUser {
   id: string;
@@ -49,7 +51,7 @@ interface AdminUser {
   isActive: boolean;
   lastLogin?: string;
   createdAt: string;
-  avatar?: string;
+  clerkUserId?: string;
 }
 
 const AdminAccountManager: React.FC = () => {
@@ -68,7 +70,8 @@ const AdminAccountManager: React.FC = () => {
     isActive: true,
   });
 
-  // Mock data for demonstration - replace with actual API calls
+  const { user: currentUser } = useUser();
+
   useEffect(() => {
     loadUsers();
   }, []);
@@ -76,48 +79,29 @@ const AdminAccountManager: React.FC = () => {
   const loadUsers = async () => {
     setLoading(true);
     try {
-      // In a real implementation, this would call your backend API
-      // const response = await fetch('/api/admin/users');
-      // const data = await response.json();
-      
-      // Mock data for now
-      const mockUsers: AdminUser[] = [
-        {
-          id: '1',
-          email: 'admin@exci-maa.com',
-          firstName: 'Super',
-          lastName: 'Admin',
-          role: 'super_admin',
-          isActive: true,
-          lastLogin: new Date().toISOString(),
-          createdAt: '2024-01-01T00:00:00Z',
-        },
-        {
-          id: '2',
-          email: 'manager@exci-maa.com',
-          firstName: 'Office',
-          lastName: 'Manager',
-          role: 'admin',
-          isActive: true,
-          lastLogin: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
-          createdAt: '2024-02-01T00:00:00Z',
-        },
-        {
-          id: '3',
-          email: 'staff@exci-maa.com',
-          firstName: 'Support',
-          lastName: 'Staff',
-          role: 'admin',
-          isActive: false,
-          lastLogin: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
-          createdAt: '2024-03-01T00:00:00Z',
-        },
-      ];
-      
-      setUsers(mockUsers);
+      const { data, error } = await supabase
+        .from('admin_users')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) throw error;
+
+      const mappedUsers: AdminUser[] = (data || []).map(user => ({
+        id: user.id,
+        email: user.email,
+        firstName: user.first_name,
+        lastName: user.last_name,
+        role: user.role,
+        isActive: user.is_active,
+        lastLogin: user.last_login,
+        createdAt: user.created_at,
+        clerkUserId: user.clerk_user_id,
+      }));
+
+      setUsers(mappedUsers);
       setError(null);
-    } catch (err) {
-      setError('Failed to load admin users');
+    } catch (err: any) {
+      setError('Failed to load admin users: ' + err.message);
       console.error('Error loading users:', err);
     } finally {
       setLoading(false);
@@ -145,20 +129,29 @@ const AdminAccountManager: React.FC = () => {
     try {
       if (selectedUser) {
         // Update existing user
-        setUsers(users.map(user => 
-          user.id === selectedUser.id 
-            ? { ...user, ...formData }
-            : user
-        ));
+        const { error } = await supabase.rpc('update_admin_user', {
+          p_user_id: selectedUser.id,
+          p_email: formData.email,
+          p_first_name: formData.firstName,
+          p_last_name: formData.lastName,
+          p_role: formData.role,
+          p_is_active: formData.isActive,
+        });
+
+        if (error) throw error;
+
         setSuccess('User updated successfully');
       } else {
         // Add new user
-        const newUser: AdminUser = {
-          id: Date.now().toString(),
-          ...formData,
-          createdAt: new Date().toISOString(),
-        };
-        setUsers([...users, newUser]);
+        const { error } = await supabase.rpc('create_admin_user', {
+          p_email: formData.email,
+          p_first_name: formData.firstName,
+          p_last_name: formData.lastName,
+          p_role: formData.role,
+        });
+
+        if (error) throw error;
+
         setSuccess('User added successfully');
       }
       
@@ -171,8 +164,10 @@ const AdminAccountManager: React.FC = () => {
         role: 'admin',
         isActive: true,
       });
-    } catch (err) {
-      setError('Failed to save user');
+      
+      await loadUsers(); // Reload users
+    } catch (err: any) {
+      setError('Failed to save user: ' + err.message);
       console.error('Error saving user:', err);
     }
   };
@@ -180,12 +175,19 @@ const AdminAccountManager: React.FC = () => {
   const handleConfirmDelete = async () => {
     if (selectedUser) {
       try {
-        setUsers(users.filter(user => user.id !== selectedUser.id));
+        const { error } = await supabase.rpc('delete_admin_user', {
+          p_user_id: selectedUser.id,
+        });
+
+        if (error) throw error;
+
         setSuccess('User deleted successfully');
         setDeleteDialogOpen(false);
         setSelectedUser(null);
-      } catch (err) {
-        setError('Failed to delete user');
+        
+        await loadUsers(); // Reload users
+      } catch (err: any) {
+        setError('Failed to delete user: ' + err.message);
         console.error('Error deleting user:', err);
       }
     }
@@ -201,6 +203,10 @@ const AdminAccountManager: React.FC = () => {
 
   const getInitials = (firstName: string, lastName: string) => {
     return `${firstName.charAt(0)}${lastName.charAt(0)}`.toUpperCase();
+  };
+
+  const isCurrentUser = (user: AdminUser) => {
+    return user.clerkUserId === currentUser?.id;
   };
 
   return (
@@ -327,6 +333,9 @@ const AdminAccountManager: React.FC = () => {
                         <Box>
                           <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
                             {user.firstName} {user.lastName}
+                            {isCurrentUser(user) && (
+                              <Chip size="small" label="You" sx={{ ml: 1 }} />
+                            )}
                           </Typography>
                           <Typography variant="caption" color="text.secondary">
                             ID: {user.id}
@@ -371,7 +380,10 @@ const AdminAccountManager: React.FC = () => {
                           size="small"
                           onClick={() => handleDeleteUser(user)}
                           color="error"
-                          disabled={user.role === 'super_admin' && users.filter(u => u.role === 'super_admin').length === 1}
+                          disabled={
+                            user.role === 'super_admin' && 
+                            users.filter(u => u.role === 'super_admin').length === 1
+                          }
                         >
                           <DeleteIcon />
                         </IconButton>
@@ -413,6 +425,7 @@ const AdminAccountManager: React.FC = () => {
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               fullWidth
               required
+              disabled={!!selectedUser} // Don't allow email change for existing users
             />
             <FormControl fullWidth>
               <InputLabel>Role</InputLabel>
