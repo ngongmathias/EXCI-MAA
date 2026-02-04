@@ -126,7 +126,7 @@ const Header: FC = () => {
 
               {/* Services Dropdown Menu */}
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[99999]">
+                <div className="absolute top-full left-0 mt-0.5 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[99999]">
                   <div className="py-2">
                     {/* <div className="px-4 py-3 border-b border-gray-100">
                       <Link
@@ -190,7 +190,7 @@ const Header: FC = () => {
 
               {/* Offices Dropdown Menu */}
               {isOfficesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[99999]">
+                <div className="absolute top-full left-0 mt-0.5 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[99999]">
                   <div className="py-2">
                     {/* <div className="px-4 py-3 border-b border-gray-100">
                       <Link
