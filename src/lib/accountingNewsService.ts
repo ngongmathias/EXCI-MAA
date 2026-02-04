@@ -134,27 +134,34 @@ export const extractAccountingTags = (text: string): string[] => {
 // ============================================
 export const fetchAccountingNewsFromSource = async (source: NewsSource): Promise<AccountingNewsArticle[]> => {
   try {
-    const response = await fetch(source.url, {
-      headers: {
-        'User-Agent': 'EXCI-MAA Accounting News Aggregator (+https://excimaa.ca)'
-      }
-    });
-
+    console.log(`🌐 DEBUG: Fetching RSS from ${source.url}...`);
+    
+    // Fetch RSS feed
+    const response = await fetch(source.url);
+    
     if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      console.error(`❌ DEBUG: HTTP error ${response.status} for ${source.url}`);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     const xmlText = await response.text();
+    console.log(`📄 DEBUG: Got ${xmlText.length} characters of XML from ${source.name}`);
+
+    // Parse RSS feed
     const articles = await parseRSSFeed(xmlText);
+    console.log(`📰 DEBUG: Parsed ${articles.length} articles from ${source.name}`);
 
     // Add source and category to each article
-    return articles.map(article => ({
+    const result = articles.map(article => ({
       ...article,
       source: source.name,
       category: source.category
     }));
+    
+    console.log(`✅ DEBUG: Processed ${result.length} articles for ${source.name}`);
+    return result;
   } catch (error) {
-    console.error(`Error fetching from ${source.name}:`, error);
+    console.error(`❌ DEBUG: Error fetching from ${source.name}:`, error);
     return [];
   }
 };
@@ -169,13 +176,20 @@ export const fetchAllAccountingNews = async (): Promise<{
   sourcesProcessed: number;
 }> => {
   try {
+    console.log('🔄 DEBUG: Starting fetchAllAccountingNews...');
+    
     // Get all active sources
     const { data: sources, error: sourcesError } = await supabase
       .from('accounting_news_sources')
       .select('*')
       .eq('is_active', true);
 
-    if (sourcesError) throw sourcesError;
+    if (sourcesError) {
+      console.error('❌ DEBUG: Error fetching sources:', sourcesError);
+      throw sourcesError;
+    }
+
+    console.log(`📊 DEBUG: Found ${sources?.length || 0} active sources:`, sources?.map(s => s.name));
 
     let totalArticles = 0;
     const errors: string[] = [];
@@ -184,8 +198,10 @@ export const fetchAllAccountingNews = async (): Promise<{
     // Fetch from each source
     for (const source of sources || []) {
       try {
-        console.log(`Fetching from ${source.name}...`);
+        console.log(`🔍 DEBUG: Fetching from ${source.name} (${source.url})...`);
         const articles = await fetchAccountingNewsFromSource(source);
+        
+        console.log(`📰 DEBUG: Got ${articles.length} articles from ${source.name}`);
 
         // Cache articles in database
         for (const article of articles) {
@@ -211,6 +227,8 @@ export const fetchAllAccountingNews = async (): Promise<{
 
           if (!error) {
             totalArticles++;
+          } else {
+            console.error(`❌ DEBUG: Error upserting article:`, error);
           }
         }
 
@@ -221,16 +239,19 @@ export const fetchAllAccountingNews = async (): Promise<{
           .eq('id', source.id);
 
         sourcesProcessed++;
-        console.log(`✅ ${source.name}: ${articles.length} articles`);
+        console.log(`✅ DEBUG: ${source.name}: ${articles.length} articles processed`);
       } catch (error) {
-        console.error(`Error processing ${source.name}:`, error);
+        console.error(`❌ DEBUG: Error processing ${source.name}:`, error);
         errors.push(`${source.name}: ${error}`);
       }
     }
 
     // Clean old articles
+    console.log('🧹 DEBUG: Cleaning old articles...');
     await supabase.rpc('clean_old_accounting_news');
 
+    console.log(`🎉 DEBUG: Fetch complete. ${totalArticles} articles added, ${sourcesProcessed} sources processed`);
+    
     return {
       success: true,
       articlesAdded: totalArticles,
@@ -238,7 +259,7 @@ export const fetchAllAccountingNews = async (): Promise<{
       sourcesProcessed
     };
   } catch (error) {
-    console.error('Error in fetchAllAccountingNews:', error);
+    console.error('❌ DEBUG: Error in fetchAllAccountingNews:', error);
     return {
       success: false,
       articlesAdded: 0,
