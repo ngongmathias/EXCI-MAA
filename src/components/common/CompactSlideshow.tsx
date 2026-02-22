@@ -11,13 +11,28 @@ interface CompactSlideshowProps {
 
 const FALLBACK_SLIDES = [
   {
-    image_url: '/images/Hero/hero-excimaa-1.png',
+    image_url: '/images/Hero/hero-1.png',
     title: 'EXCI-MAA — Professional Excellence Across Africa',
     link_url: null,
   },
   {
-    image_url: '/images/Hero/hero-excimaa-2.png',
+    image_url: '/images/Hero/hero-2.png',
     title: 'Audit, Tax & Advisory — Since 2012',
+    link_url: null,
+  },
+  {
+    image_url: '/images/Hero/hero-3.png',
+    title: 'Global Presence, Local Expertise',
+    link_url: null,
+  },
+  {
+    image_url: '/images/Hero/hero-4.png',
+    title: 'Your Trusted Partner in Strategic Growth',
+    link_url: null,
+  },
+  {
+    image_url: '/images/Hero/hero-5.png',
+    title: 'Serving Corporate Leaders Across the Continent',
     link_url: null,
   },
 ];
