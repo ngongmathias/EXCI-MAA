@@ -253,7 +253,7 @@ const AdminAccountManager: React.FC = () => {
 
       {/* Stats Cards */}
       <Grid container spacing={3} sx={{ mb: 3 }}>
-        <Grid xs={12} sm={6} md={3}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <AdminIcon sx={{ fontSize: 40, color: 'primary.main', mb: 1 }} />
@@ -266,7 +266,7 @@ const AdminAccountManager: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} sm={6} md={3}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <SecurityIcon sx={{ fontSize: 40, color: 'success.main', mb: 1 }} />
@@ -279,7 +279,7 @@ const AdminAccountManager: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} sm={6} md={3}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <PersonIcon sx={{ fontSize: 40, color: 'error.main', mb: 1 }} />
@@ -292,7 +292,7 @@ const AdminAccountManager: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid xs={12} sm={6} md={3}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <PersonIcon sx={{ fontSize: 40, color: 'warning.main', mb: 1 }} />
