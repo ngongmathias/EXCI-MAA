@@ -9,11 +9,14 @@
 - [x] Redirect Clerk SignUp/SignIn to /admin and relax admin gate
 - [ ] Integrate Supabase for Events, Posts, Comments, Services
 - [ ] Replace local storage with Supabase CRUD and RLS
-
+all done
 ## Next
 - Provide Supabase SQL tables and open policies (below)
 
 ## Supabase SQL (PostgreSQL)
+
+
+
 
 ```sql
 -- SCHEMA
