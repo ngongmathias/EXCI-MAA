@@ -182,18 +182,18 @@
     "feature2Desc": "Extensive experience across North America, Europe, and major African markets.",
     "feature3Title": "Strategic Partnership",
     "feature3Desc": "Building long-term value through deep understanding of our clients' unique business needs.",
+    "feature4Title": "Expert Team",
+    "feature4Desc": "Our experienced professionals deliver exceptional results through multidisciplinary collaboration.",
     "heroTitle": "About EXCI-MAA",
     "heroSubtitle": "Professional accounting, auditing, and consulting firm with international presence",
     "historyTitle": "Our History",
-    "historySubtitle": "Building trust through excellence since our founding",
+    "historySubtitle": "Building trust through excellence since our founding in 2012",
     "valuesTitle": "Our Values",
     "valuesSubtitle": "The principles that guide everything we do",
     "teamTitle": "Our Team",
     "teamSubtitle": "Meet the professionals behind our success",
     "testimonialsTitle": "Client Testimonials",
     "testimonialsSubtitle": "What our clients say about us",
-    "feature4Title": "Expert Team",
-    "feature4Desc": "Our experienced professionals deliver exceptional results through multidisciplinary collaboration.",
     "stats": {
       "yearsExperience": "Years of Experience",
       "countriesServed": "Countries Served",
@@ -1133,7 +1133,7 @@
       "subtitle": "A decade of excellence in financial services",
       "timeline": [
         {
-          "year": "2014",
+          "year": "2012",
           "title": "Foundation of EXCI-MAA",
           "description": "Founded in Douala, Cameroon, with a vision to provide exceptional accounting and financial services to local businesses."
         },
