@@ -11,7 +11,10 @@ const getCapitalCity = (country: string): string => {
     'Burundi': 'Gitega',
     'Democratic Republic of Congo': 'Kinshasa',
     'Gabon': 'Libreville',
-    'United Arab Emirates': 'Abu Dhabi'
+    'United Arab Emirates': 'Abu Dhabi',
+    'Uganda': 'Kampala',
+    'Tanzania': 'Dodoma',
+    'Republic of Congo': 'Brazzaville'
   };
   return capitals[country] || country;
 };
@@ -38,7 +41,10 @@ const getCountryFlag = (country: string): string => {
     'Burundi': '🇧🇮',
     'Democratic Republic of Congo': '🇨🇩',
     'Gabon': '🇬🇦',
-    'United Arab Emirates': '🇦🇪'
+    'United Arab Emirates': '🇦🇪',
+    'Uganda': '🇺🇬',
+    'Tanzania': '🇹🇿',
+    'Republic of Congo': '🇨🇬'
   };
   return flags[country] || '🌍';
 };
