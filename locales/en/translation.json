@@ -8,10 +8,11 @@
     "insights": "Insights",
     "accountingNews": "Accounting News",
     "careers": "Careers",
-    "contact": "Contact"
+    "contact": "Contact",
+    "signIn": "Client Portal"
   },
   "auth": {
-    "signIn": "Sign In",
+    "signIn": "Client Portal",
     "signOut": "Sign Out",
     "admin": "Admin",
     "adminPanel": "Admin Panel"
@@ -29,52 +30,57 @@
     "cookiePolicy": "Cookie Policy"
   },
   "serviceCategories": {
-    "accounting": "Accounting Expertise",
-    "legal": "Legal & Tax Audit",
-    "managerial": "Managerial Advice",
-    "payroll": "Payroll & Social Council",
+    "accounting": "Accounting & Outsourcing",
+    "legal": "Audit & Assurance",
+    "managerial": "Advisory / Transactions",
+    "payroll": "Payroll & HR Compliance",
     "consolidation": "Consolidation",
-    "risk": "Risk Consulting",
+    "risk": "Risk / Internal Audit",
     "it": "IT Consulting",
-    "financial": "Financial Reporting"
+    "financial": "Financial Reporting",
+    "tax": "Tax"
   },
   "servicesDropdown": {
     "ourServices": "Our Services",
-    "viewAllServices": "View All Services →",
+    "viewAllServices": "View All Services ΓåÆ",
     "services": {
       "accountingBookkeeping": {
-        "title": "Accounting & Bookkeeping",
-        "description": "Comprehensive financial record keeping and reporting"
+        "title": "Accounting & Outsourcing",
+        "description": "Comprehensive accounting services and business process outsourcing"
       },
       "auditAssurance": {
         "title": "Audit & Assurance",
-        "description": "Independent financial verification and compliance"
+        "description": "Independent financial verification and professional assurance"
       },
       "managerialAdvice": {
-        "title": "Managerial Advice",
-        "description": "Strategic consulting to help your business grow and succeed"
+        "title": "Advisory / Transactions",
+        "description": "Strategic advisory and transaction support for business growth"
       },
       "payrollSocial": {
-        "title": "Payroll & Social Council",
-        "description": "Complete payroll management and social security compliance"
+        "title": "Payroll & HR Compliance",
+        "description": "Complete payroll management and human resources compliance"
       },
       "consolidation": {
         "title": "Consolidation",
-        "description": "Financial consolidation services for multi-entity organizations"
+        "description": "Expert financial consolidation for complex multi-entity structures"
       },
       "risk": {
-        "title": "Risk Consulting",
-        "description": "Comprehensive risk assessment and management services"
+        "title": "Risk / Internal Audit",
+        "description": "Comprehensive risk assessment and internal audit solutions"
       },
       "training": {
         "title": "Training & Development",
-        "description": "Professional training programs and skill development services"
+        "description": "Professional development and specialized training programs"
+      },
+      "legalSecretarial": {
+        "title": "Legal / Corporate Secretarial",
+        "description": "Professional legal support and corporate secretarial services"
       }
     }
   },
   "globalOfficesDropdown": {
     "ourOffices": "Our Global Offices",
-    "viewAllOffices": "View All Offices →"
+    "viewAllOffices": "View All Offices ΓåÆ"
   },
   "serviceModal": {
     "whatsIncluded": "What's Included",
@@ -101,7 +107,7 @@
       "accounting": {
         "bookkeeping": "Bookkeeping and record keeping",
         "statements": "Financial statement preparation",
-        "taxCompliance": "Tax compliance and reporting", 
+        "taxCompliance": "Tax compliance and reporting",
         "payroll": "Payroll management",
         "reports": "Monthly financial reports",
         "budget": "Budget planning and analysis"
@@ -165,18 +171,17 @@
     "feature2": "Comprehensive audit and consulting services",
     "feature3": "Dedicated support for your business success",
     "cta1": "Explore Services",
-    "cta2": "Get Consultation",
-    "description": "We deliver innovative financial solutions and strategic guidance to help businesses and individuals navigate complex financial landscapes with confidence and clarity."
+    "cta2": "Get Consultation"
   },
   "about": {
     "title": "About Us",
     "subtitle": "Learn more about our company and values",
     "feature1Title": "Professional Excellence",
-    "feature1Desc": "We maintain the highest standards in all our services",
-    "feature2Title": "Global Reach",
-    "feature2Desc": "Serving clients across multiple countries and regions",
-    "feature3Title": "Expert Team",
-    "feature3Desc": "Our experienced professionals deliver exceptional results",
+    "feature1Desc": "Unwavering commitment to the highest international standards of quality and ethics.",
+    "feature2Title": "Global Expertise",
+    "feature2Desc": "Extensive experience across North America, Europe, and major African markets.",
+    "feature3Title": "Strategic Partnership",
+    "feature3Desc": "Building long-term value through deep understanding of our clients' unique business needs.",
     "heroTitle": "About EXCI-MAA",
     "heroSubtitle": "Professional accounting, auditing, and consulting firm with international presence",
     "historyTitle": "Our History",
@@ -186,7 +191,17 @@
     "teamTitle": "Our Team",
     "teamSubtitle": "Meet the professionals behind our success",
     "testimonialsTitle": "Client Testimonials",
-    "testimonialsSubtitle": "What our clients say about us"
+    "testimonialsSubtitle": "What our clients say about us",
+    "feature4Title": "Expert Team",
+    "feature4Desc": "Our experienced professionals deliver exceptional results through multidisciplinary collaboration.",
+    "stats": {
+      "yearsExperience": "Years of Experience",
+      "countriesServed": "Countries Served",
+      "teamMembers": "Team Members",
+      "clientSatisfaction": "Client Satisfaction",
+      "clientsServed": "Clients Served",
+      "successRate": "Success Rate"
+    }
   },
   "services": {
     "title": "Our Services",
@@ -203,9 +218,9 @@
     },
     "pricingTitle": "Pricing",
     "pricingSubtitle": "Transparent pricing for all our services",
-      "schedule": "Schedule",
-      "getStarted": "Get Started",
-      "keyFeatures": "Key Features",
+    "schedule": "Schedule",
+    "getStarted": "Get Started",
+    "keyFeatures": "Key Features",
     "learnMore": "Learn More",
     "viewAll": "View All Services",
     "service1Title": "Accounting Expertise",
@@ -219,8 +234,7 @@
     "service5Title": "Consolidation",
     "service5Desc": "Financial consolidation for multi-entity organizations",
     "service6Title": "Risk Consulting",
-    "service6Desc": "Comprehensive risk assessment and management"
-    ,
+    "service6Desc": "Comprehensive risk assessment and management",
     "categories": {
       "all": "All Services",
       "finance": "Financial Services",
@@ -229,12 +243,15 @@
   },
   "globalOffices": {
     "heroTitle": "Global Offices",
-    "heroSubtitle": "Our international presence and local expertise",
-    "mapTitle": "Interactive Map",
-    "mapSubtitle": "Explore our offices around the world",
-    "listTitle": "Office Locations",
+    "heroSubtitle": "Our global presence and client expertise",
+    "mapTitle": "Presence Map",
+    "mapSubtitle": "View our offices worldwide",
+    "listTitle": "Where Offices Are",
     "selectOffice": "Select an office",
-    "viewAllOffices": "View All Offices"
+    "viewAllOffices": "View All Offices",
+    "title": "Interactive Global Presence",
+    "subtitle": "Explore our offices around the world and discover the services we offer in each location",
+    "listSubtitle": "Discover the office nearest to you"
   },
   "insights": {
     "heroTitle": "Insights & News",
@@ -272,7 +289,7 @@
     "cta": "Contact Us Now",
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Find answers to common questions about our services and company",
+      "description": "Find answers to common questions about our services, processes, and how we can help your business thrive.",
       "questions": [
         {
           "question": "What services does EXCI-MAA provide?",
@@ -299,40 +316,21 @@
           "answer": "We take data security very seriously. All client information is handled with the utmost confidentiality and protected using industry-standard security measures, including encryption and secure file sharing systems."
         }
       ],
-      "stillHaveQuestions": "Still Have Questions?",
-      "stillHaveDescription": "Can't find the answer you're looking for? Please contact our friendly team.",
-      "chatWithUs": "Chat With Us",
-      "chatDescription": "Our friendly team is here to help.",
+      "stillHaveQuestions": "Still have questions?",
+      "stillHaveDescription": "Can't find the answer you're looking for? Our team is here to help. Reach out to us and we'll get back to you as soon as possible.",
+      "chatWithUs": "Chat with us",
+      "chatDescription": "Our team is here to help",
       "sendUsMessage": "Send us a message",
-      "callUs": "Call Us",
-      "callDescription": "Mon-Fri from 9am to 6pm.",
-      "emailUs": "Email Us",
-      "emailDescription": "We'll respond within 24 hours.",
-      "cantFindWhat": "Can't find what you need?",
-      "expertsDescription": "Contact our experts for personalized assistance with your specific needs.",
+      "callUs": "Call us",
+      "callDescription": "Monday to Friday, 9am to 6pm",
+      "emailUs": "Email us",
+      "emailDescription": "We'll get back to you within 24 hours",
+      "cantFindWhat": "Can't find what you're looking for?",
+      "expertsDescription": "Our team of experts is here to answer any questions you may have.",
       "contactSupport": "Contact Support"
     },
     "hero": {
-      "getInTouch": "Get in Touch",
-      "letsTalkAbout": "Let's Talk About Your",
-      "businessNeeds": "Business Needs",
-      "description": "Our team of financial experts is ready to help you navigate your business challenges. Reach out through any channel below or send us a message directly.",
-      "contactMethods": {
-        "emailUs": "Email Us",
-        "emailDescription": "Our team will get back to you within 24 hours",
-        "emailValue": "contactcam@excimaa.ca",
-        "callUs": "Call Us",
-        "callDescription": "Mon-Fri from 9am to 5pm",
-        "callValue": "+1 (555) 123-4567",
-        "visitUs": "Visit Us",
-        "visitDescription": "Come say hello at our office",
-        "visitValue": "BP 2606 Boulevard de la république – Douala (Cameroun)",
-        "officeHours": "Office Hours",
-        "hoursDescription": "Our working hours",
-        "hoursValue": "Mon - Fri: 9:00 - 18:00"
-      },
-      "orFillOut": "Or fill out our contact form and we'll get back to you within 24 hours.",
-      "sendUsMessage": "Send us a Message"
+      "description": "We deliver innovative financial solutions and strategic guidance to help businesses and individuals navigate complex financial landscapes with confidence and clarity."
     },
     "form": {
       "title": "Get in Touch",
@@ -410,265 +408,261 @@
       "helpDescription": "Our office is conveniently located in the heart of the business district with easy access to public transportation.",
       "centerMap": "Center Map on Our Location",
       "officeLocation": {
-        "address": "BP 2606 Boulevard de la république – Douala (Cameroun)",
+        "address": "BP 2606 Boulevard de la r├⌐publique ΓÇô Douala (Cameroun)",
         "phone": "+237233427940 && +237698835251",
         "email": "riyadh@exci-maa.com",
         "hours": "Monday - Friday: 9:00 AM - 6:00 PM"
       }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Find answers to common questions about our services, processes, and how we can help your business thrive.",
-      "questions": [
-        {
-          "question": "What services does EXCI-MAA provide?",
-          "answer": "We offer a comprehensive range of accounting, auditing, tax, and business advisory services tailored to meet the unique needs of businesses in Saudi Arabia and beyond. Our services include financial reporting, tax planning, internal auditing, and business consulting."
-        },
-        {
-          "question": "How can I schedule a consultation?",
-          "answer": "You can schedule a consultation by calling our office, sending us an email, or using the contact form on this page. Our team will get back to you within 24 hours to confirm your appointment."
-        },
-        {
-          "question": "What industries do you specialize in?",
-          "answer": "We have extensive experience working with various industries including healthcare, construction, retail, technology, and professional services. Our team has the expertise to handle the unique financial challenges of each sector."
-        },
-        {
-          "question": "What are your business hours?",
-          "answer": "Our office is open from Sunday to Thursday, 9:00 AM to 6:00 PM. We are closed on Fridays and Saturdays as well as on public holidays."
-        },
-        {
-          "question": "Do you offer remote or virtual services?",
-          "answer": "Yes, we offer both in-person and virtual consultation services to accommodate our clients' needs. Our team is equipped with secure video conferencing tools to provide the same level of service remotely."
-        },
-        {
-          "question": "How do you ensure data security and confidentiality?",
-          "answer": "We take data security very seriously. All client information is handled with the utmost confidentiality and protected using industry-standard security measures, including encryption and secure file sharing systems."
-        }
-      ],
-      "stillHaveQuestions": "Still have questions?",
-      "stillHaveDescription": "Can't find the answer you're looking for? Our team is here to help. Reach out to us and we'll get back to you as soon as possible.",
-      "chatWithUs": "Chat with us",
-      "chatDescription": "Our team is here to help",
-      "sendUsMessage": "Send us a message",
-      "callUs": "Call us",
-      "callDescription": "Monday to Friday, 9am to 6pm",
-      "emailUs": "Email us",
-      "emailDescription": "We'll get back to you within 24 hours",
-      "cantFindWhat": "Can't find what you're looking for?",
-      "expertsDescription": "Our team of experts is here to answer any questions you may have.",
-      "contactSupport": "Contact Support"
     }
   },
   "teamMembers": {
-  "title": "Our Global Team",
-  "subtitle": "Meet the professionals driving excellence across all our locations",
-  "readMore": "Read More",
-  "showLess": "Show Less",
-  "specialties": "Specialties",
-  "noMembers": "No team members currently assigned to this office",
-  "members": {
-    "pierre-kemeni": {
-      "name": "Pierre KEMENI",
-      "title": "Managing Director & Chairman",
-      "qualifications": ["MBA", "CPA", "CGA", "FCAA", "DEC"],
-      "bio": "Partner, Managing Director at EXCI-MAA Group. COSUMAF Licensed Chartered Accountant & Statutory Auditor. Registered with ICPAR, ONECCA, CPA Canada, Quebec, Ontario & UK. Former Engagement Director at Deloitte Toronto. Specialist in Management, SYSCOHADA, Account Conversion. Senior International Consultant and Trainer.",
-      "specialties": [
-        "International Accounting",
-        "Financial Audit",
-        "Management Consulting",
-        "SYSCOHADA Specialist",
-        "Account Conversion",
-        "Banking Sector Specialist"
-      ]
-    },
-    "patrick-ngatcha": {
-      "name": "Patrick NGATCHA",
-      "title": "Partner - General Manager",
-      "qualifications": ["DEC", "DSCG", "Master CCA", "MSTCF"],
-      "bio": "Chartered accountant registered with the Institute of Chartered Accountants of Paris Ile de France. Statutory Auditor. Expert in Tax and Financial Audit, Acquisition audit, Consolidation (regulation 99-02 / IFRS).",
-      "specialties": [
-        "Business Development",
-        "Financial Consulting",
-        "Tax Planning",
-        "IFRS",
-        "Consolidation",
-        "Acquisition Audit"
-      ]
-    },
-    "lazare-tchouameni": {
-      "name": "Lazare Tchouameni",
-      "title": "Office Manager, EXCI-MAA Congo",
-      "qualifications": ["MSc Accounting and Finance"],
-      "bio": "Office Manager for EXCI-MAA Congo operations. Financial Analyst with expertise in Tax and Financial Auditing.",
-      "specialties": [
-        "Financial Analysis",
-        "Tax Auditing",
-        "Financial Auditing",
-        "Department Supervision"
-      ]
-    },
-    "janot-hiag": {
-      "name": "Janot HIAG",
-      "title": "Actuarial Evaluator & Oil Cost Auditor",
-      "qualifications": ["Actuarial Certification"],
-      "bio": "Specialist in Oil Cost Auditing, Revenue Security, Asset Inventory and Revaluation, Operational and Legal Auditing, and Statutory Auditing.",
-      "specialties": [
-        "Oil Cost Auditing",
-        "Revenue Security",
-        "Asset Revaluation",
-        "Operational Audit",
-        "Legal Audit"
-      ]
-    },
-    "eric-kabeza": {
-      "name": "Eric KABEZA",
-      "title": "Tax Lead Partner - Rwanda",
-      "qualifications": ["Tax Expert"],
-      "bio": "Expert in local and international taxation with more than 20 years working at the Rwanda Revenue Authority. Tax Consultant/Advisor for Corporate and Personal taxes. Tax Compliance Officer and Policy Analyst.",
-      "specialties": [
-        "Local Taxation",
-        "International Tax",
-        "Tax Compliance",
-        "Policy Analysis",
-        "Corporate Tax",
-        "Personal Tax"
-      ]
-    },
-    "jean-nahimana": {
-      "name": "Jean Berchmas",
-      "title": "Partner - Financial & Tax Audit",
-      "qualifications": ["CPA", "FMVA®", "BIDA®"],
-      "bio": "Chartered Accountant, Member of ICPAR. Financial and Tax Auditor. Senior Accounts Analyst and Financial Modelist with extensive experience in financial planning and analysis.",
-      "specialties": [
-        "Financial Audit",
-        "Tax Audit",
-        "Financial Modeling",
-        "Accounts Analysis"
-      ]
-    },
-    "martin-nkwain": {
-      "name": "Marcel NKWAIN",
-      "title": "Regional Manager - East Africa",
-      "qualifications": ["IPA(UA)", "IFA(UK)"],
-      "bio": "HARDCAT Expert in Fixed Asset Management. Financial and Tax Auditor. International Consultant and Trainer leading EXCI-MAA operations in East Africa.",
-      "specialties": [
-        "Fixed Asset Management",
-        "Regional Management",
-        "Financial Audit",
-        "Tax Audit",
-        "International Training"
-      ]
-    },
-    "paul-tchamake": {
-      "name": "Olivier Fodji",
-      "title": "Partner - International Tax & Transfer Pricing",
-      "qualifications": ["Ms", "CPA (USA, France)"],
-      "bio": "Certified Chartered Accountant (American and French Regime). International Tax Specialist, ASC 740 (US GAAP Standards). Over 15 years of international financial and tax reporting practice with Big 4 experience at KPMG and PwC USA. Specialist in Transfer Pricing and BEPS.",
-      "specialties": [
-        "International Tax",
-        "Transfer Pricing",
-        "BEPS",
-        "US GAAP",
-        "ASC 740",
-        "Cross-border Taxation"
-      ]
-    },
-    "diane-dusabe": {
-      "name": "Diane DUSABE",
-      "title": "Office Manager - Burundi",
-      "qualifications": ["BBA", "Accounting"],
-      "bio": "Experienced office manager overseeing EXCI-MAA operations in Burundi. Specializes in client relations and local business development.",
-      "specialties": [
-        "Office Management",
-        "Client Relations",
-        "Business Development",
-        "Local Operations"
-      ]
-    },
-    "onesphore-ofodji": {
-      "name": "Onesphore OFODJI",
-      "title": "Senior Consultant - Burundi",
-      "qualifications": ["CPA", "MBA"],
-      "bio": "Senior business consultant specializing in regional market development and financial advisory services for businesses in Burundi.",
-      "specialties": [
-        "Business Consulting",
-        "Financial Advisory",
-        "Market Development",
-        "Strategic Planning"
-      ]
-    },
-    "congo-director": {
-      "name": "Regional Director",
-      "title": "Director - DRC Operations",
-      "qualifications": ["CPA", "MBA"],
-      "bio": "Leading EXCI-MAA operations in the Democratic Republic of Congo, focusing on audit services and business consulting.",
-      "specialties": [
-        "Audit Services",
-        "Business Consulting",
-        "Regional Operations",
-        "Tax Advisory"
-      ]
-    },
-    "gabon-manager": {
-      "name": "Regional Manager",
-      "title": "Manager - Gabon Operations",
-      "qualifications": ["Expert Comptable", "CEMAC"],
-      "bio": "Managing EXCI-MAA services in Gabon with focus on financial audit and corporate advisory for local and international clients.",
-      "specialties": [
-        "Financial Audit",
-        "Corporate Advisory",
-        "CEMAC Regulations",
-        "Local Compliance"
-      ]
-    },
-    "dubai-consultant": {
-      "name": "Senior Consultant",
-      "title": "Senior Business Consultant - Dubai",
-      "qualifications": ["CPA", "ACCA"],
-      "bio": "Specialized in international business setup and tax planning for companies expanding into Middle East markets.",
-      "specialties": [
-        "Business Setup",
-        "Tax Planning",
-        "International Expansion",
-        "Middle East Markets"
-      ]
-    },
-    "france-partner": {
-      "name": "Partner",
-      "title": "Partner - France Operations",
-      "qualifications": ["Expert Comptable", "Commissaire aux Comptes"],
-      "bio": "Leading European operations with expertise in EU compliance and cross-border consulting.",
-      "specialties": [
-        "EU Compliance",
-        "Cross-border Consulting",
-        "European Accounting",
-        "International Tax"
-      ]
-    },
-    "canada-consultant": {
-      "name": "Senior Consultant",
-      "title": "Immigration & Tax Consultant",
-      "qualifications": ["CPA", "RCIC"],
-      "bio": "Specializing in Canadian immigration services and international tax planning for new immigrants and businesses.",
-      "specialties": [
-        "Immigration Services",
-        "International Tax",
-        "Financial Planning",
-        "Business Immigration"
-      ]
+    "title": "Our Global Team",
+    "subtitle": "Meet the professionals driving excellence across all our locations",
+    "readMore": "Read More",
+    "showLess": "Show Less",
+    "specialties": "Specialties",
+    "noMembers": "No team members currently assigned to this office",
+    "members": {
+      "pierre-kemeni": {
+        "name": "Pierre KEMENI",
+        "title": "Managing Director & Chairman",
+        "qualifications": [
+          "MBA",
+          "CPA",
+          "CGA",
+          "FCAA",
+          "DEC"
+        ],
+        "bio": "Partner, Managing Director at EXCI-MAA Group. COSUMAF Licensed Chartered Accountant & Statutory Auditor. Registered with ICPAR, ONECCA, CPA Canada, Quebec, Ontario & UK. Former Engagement Director at Deloitte Toronto. Specialist in Management, SYSCOHADA, Account Conversion. Senior International Consultant and Trainer.",
+        "specialties": [
+          "International Accounting",
+          "Financial Audit",
+          "Management Consulting",
+          "SYSCOHADA Specialist",
+          "Account Conversion",
+          "Banking Sector Specialist"
+        ]
+      },
+      "patrick-ngatcha": {
+        "name": "Patrick NGATCHA",
+        "title": "Partner - General Manager",
+        "qualifications": [
+          "DEC",
+          "DSCG",
+          "Master CCA",
+          "MSTCF"
+        ],
+        "bio": "Chartered accountant registered with the Institute of Chartered Accountants of Paris Ile de France. Statutory Auditor. Expert in Tax and Financial Audit, Acquisition audit, Consolidation (regulation 99-02 / IFRS).",
+        "specialties": [
+          "Business Development",
+          "Financial Consulting",
+          "Tax Planning",
+          "IFRS",
+          "Consolidation",
+          "Acquisition Audit"
+        ]
+      },
+      "lazare-tchouameni": {
+        "name": "Lazare Tchouameni",
+        "title": "Office Manager, EXCI-MAA Congo",
+        "qualifications": [
+          "MSc Accounting and Finance"
+        ],
+        "bio": "Office Manager for EXCI-MAA Congo operations. Financial Analyst with expertise in Tax and Financial Auditing.",
+        "specialties": [
+          "Financial Analysis",
+          "Tax Auditing",
+          "Financial Auditing",
+          "Department Supervision"
+        ]
+      },
+      "janot-hiag": {
+        "name": "Janot HIAG",
+        "title": "Actuarial Evaluator & Oil Cost Auditor",
+        "qualifications": [
+          "Actuarial Certification"
+        ],
+        "bio": "Specialist in Oil Cost Auditing, Revenue Security, Asset Inventory and Revaluation, Operational and Legal Auditing, and Statutory Auditing.",
+        "specialties": [
+          "Oil Cost Auditing",
+          "Revenue Security",
+          "Asset Revaluation",
+          "Operational Audit",
+          "Legal Audit"
+        ]
+      },
+      "eric-kabeza": {
+        "name": "Eric KABEZA",
+        "title": "Tax Lead Partner - Rwanda",
+        "qualifications": [
+          "Tax Expert"
+        ],
+        "bio": "Expert in local and international taxation with more than 20 years working at the Rwanda Revenue Authority. Tax Consultant/Advisor for Corporate and Personal taxes. Tax Compliance Officer and Policy Analyst.",
+        "specialties": [
+          "Local Taxation",
+          "International Tax",
+          "Tax Compliance",
+          "Policy Analysis",
+          "Corporate Tax",
+          "Personal Tax"
+        ]
+      },
+      "jean-nahimana": {
+        "name": "Jean Berchmas",
+        "title": "Partner - Financial & Tax Audit",
+        "qualifications": [
+          "CPA",
+          "FMVA┬«",
+          "BIDA┬«"
+        ],
+        "bio": "Chartered Accountant, Member of ICPAR. Financial and Tax Auditor. Senior Accounts Analyst and Financial Modelist with extensive experience in financial planning and analysis.",
+        "specialties": [
+          "Financial Audit",
+          "Tax Audit",
+          "Financial Modeling",
+          "Accounts Analysis"
+        ]
+      },
+      "martin-nkwain": {
+        "name": "Marcel NKWAIN",
+        "title": "Regional Manager - East Africa",
+        "qualifications": [
+          "IPA(UA)",
+          "IFA(UK)"
+        ],
+        "bio": "HARDCAT Expert in Fixed Asset Management. Financial and Tax Auditor. International Consultant and Trainer leading EXCI-MAA operations in East Africa.",
+        "specialties": [
+          "Fixed Asset Management",
+          "Regional Management",
+          "Financial Audit",
+          "Tax Audit",
+          "International Training"
+        ]
+      },
+      "paul-tchamake": {
+        "name": "Olivier Fodji",
+        "title": "Partner - International Tax & Transfer Pricing",
+        "qualifications": [
+          "Ms",
+          "CPA (USA, France)"
+        ],
+        "bio": "Certified Chartered Accountant (American and French Regime). International Tax Specialist, ASC 740 (US GAAP Standards). Over 15 years of international financial and tax reporting practice with Big 4 experience at KPMG and PwC USA. Specialist in Transfer Pricing and BEPS.",
+        "specialties": [
+          "International Tax",
+          "Transfer Pricing",
+          "BEPS",
+          "US GAAP",
+          "ASC 740",
+          "Cross-border Taxation"
+        ]
+      },
+      "diane-dusabe": {
+        "name": "Diane DUSABE",
+        "title": "Office Manager - Burundi",
+        "qualifications": [
+          "BBA",
+          "Accounting"
+        ],
+        "bio": "Experienced office manager overseeing EXCI-MAA operations in Burundi. Specializes in client relations and local business development.",
+        "specialties": [
+          "Office Management",
+          "Client Relations",
+          "Business Development",
+          "Local Operations"
+        ]
+      },
+      "onesphore-ofodji": {
+        "name": "Onesphore OFODJI",
+        "title": "Senior Consultant - Burundi",
+        "qualifications": [
+          "CPA",
+          "MBA"
+        ],
+        "bio": "Senior business consultant specializing in regional market development and financial advisory services for businesses in Burundi.",
+        "specialties": [
+          "Business Consulting",
+          "Financial Advisory",
+          "Market Development",
+          "Strategic Planning"
+        ]
+      },
+      "congo-director": {
+        "name": "Regional Director",
+        "title": "Director - DRC Operations",
+        "qualifications": [
+          "CPA",
+          "MBA"
+        ],
+        "bio": "Leading EXCI-MAA operations in the Democratic Republic of Congo, focusing on audit services and business consulting.",
+        "specialties": [
+          "Audit Services",
+          "Business Consulting",
+          "Regional Operations",
+          "Tax Advisory"
+        ]
+      },
+      "gabon-manager": {
+        "name": "Regional Manager",
+        "title": "Manager - Gabon Operations",
+        "qualifications": [
+          "Expert Comptable",
+          "CEMAC"
+        ],
+        "bio": "Managing EXCI-MAA services in Gabon with focus on financial audit and corporate advisory for local and international clients.",
+        "specialties": [
+          "Financial Audit",
+          "Corporate Advisory",
+          "CEMAC Regulations",
+          "Local Compliance"
+        ]
+      },
+      "dubai-consultant": {
+        "name": "Senior Consultant",
+        "title": "Senior Business Consultant - Dubai",
+        "qualifications": [
+          "CPA",
+          "ACCA"
+        ],
+        "bio": "Specialized in international business setup and tax planning for companies expanding into Middle East markets.",
+        "specialties": [
+          "Business Setup",
+          "Tax Planning",
+          "International Expansion",
+          "Middle East Markets"
+        ]
+      },
+      "france-partner": {
+        "name": "Partner",
+        "title": "Partner - France Operations",
+        "qualifications": [
+          "Expert Comptable",
+          "Commissaire aux Comptes"
+        ],
+        "bio": "Leading European operations with expertise in EU compliance and cross-border consulting.",
+        "specialties": [
+          "EU Compliance",
+          "Cross-border Consulting",
+          "European Accounting",
+          "International Tax"
+        ]
+      },
+      "canada-consultant": {
+        "name": "Senior Consultant",
+        "title": "Immigration & Tax Consultant",
+        "qualifications": [
+          "CPA",
+          "RCIC"
+        ],
+        "bio": "Specializing in Canadian immigration services and international tax planning for new immigrants and businesses.",
+        "specialties": [
+          "Immigration Services",
+          "International Tax",
+          "Financial Planning",
+          "Business Immigration"
+        ]
+      }
     }
-  }
-},
-"globalOffices": {
-  "title": "Interactive Global Presence",
-  "subtitle": "Explore our offices around the world and discover the services we offer in each location",
-  "heroTitle": "Global Offices",
-    "heroSubtitle": "Our global presence and client expertise",
-    "mapTitle": "Presence Map",
-    "mapSubtitle": "View our offices worldwide",
-    "listTitle": "Where Offices Are",
-    "listSubtitle": "Discover the office nearest to you"
-},
+  },
   "training": {
     "title": "Training Programs",
     "subtitle": "We offer Professional development and certification programs",
@@ -700,12 +694,12 @@
           "Theory and practice of management control",
           "Dashboards and performance evaluation",
           "External audit (Audit firm)",
-          "Internal Audit – Planning and Execution",
+          "Internal Audit ΓÇô Planning and Execution",
           "Statutory audit",
           "Optimal management of your cash flow, particularly your overdraft",
           "Understanding treasury expectations from the subsidiary and head office perspective",
           "Balance your supplier payments with your customer collections",
-          "Evaluation of your information system – ICT IS",
+          "Evaluation of your information system ΓÇô ICT IS",
           "Understand ERPs, their processes and see if your business may need them",
           "Review of fundamental concepts in internal control",
           "Review of fundamental concepts in internal auditing",
@@ -726,7 +720,7 @@
           "How to practice account consolidation in the OHADA area",
           "Writing a bankable business plan",
           "Business creation methodology",
-          "Mergers – Acquisitions",
+          "Mergers ΓÇô Acquisitions",
           "Legal, social and tax audit",
           "Support for drafting an internal control procedures manual"
         ],
@@ -752,8 +746,8 @@
     }
   },
   "partners": {
-    "title": "Our Leaders",
-    "subtitle": "Trusted organizations we work with",
+    "title": "",
+    "subtitle": "Our professional identity and brand representation",
     "founders": {
       "pierre": {
         "name": "Pierre KEMENI",
@@ -775,7 +769,9 @@
           "Risk Management"
         ]
       }
-    }
+    },
+    "label": "",
+    "note": "Our logos represent our expertise and commitment to excellence"
   },
   "offices": {
     "title": "Global Presence",
@@ -1115,7 +1111,7 @@
     "mission": {
       "title": "Our Mission",
       "description1": "Our primary mission is to support and accompany companies operating in the African market toward financial excellence. Leveraging deep knowledge of both for-profit and non-profit sectors, we deliver advisory, statutory audit, and consulting engagements tailored to every organization size.",
-      "description2": "Our solutions are designed to address the specific needs of businesses across the African continent, providing end-to-end service and real added value—at a fair budget. Our multidisciplinary and multicultural team ensures bespoke support, adapted to the scale and capabilities of your structure."
+      "description2": "Our solutions are designed to address the specific needs of businesses across the African continent, providing end-to-end service and real added valueΓÇöat a fair budget. Our multidisciplinary and multicultural team ensures bespoke support, adapted to the scale and capabilities of your structure."
     },
     "story": {
       "title": "Our Story",
@@ -1275,34 +1271,6 @@
       ]
     }
   },
-  "partners": {
-    "label": "",
-    "title": "",
-    "subtitle": "Our professional identity and brand representation",
-    "note": "Our logos represent our expertise and commitment to excellence",
-    "founders": {
-      "pierre": {
-        "name": "Pierre KEMENI",
-        "title": "MBA, CPA, DEC",
-        "description": "Chartered accountant and auditor with over 27 years of experience in international accounting and auditing.",
-        "specialties": [
-          "International Accounting",
-          "Auditing",
-          "Tax Consulting"
-        ]
-      },
-      "patrick": {
-        "name": "Patrick NGATCHA",
-        "title": "DEC, DSCG, Master CCA, MSTCF",
-        "description": "Chartered accountant and auditor with over 13 years of experience in business development and financial consulting.",
-        "specialties": [
-          "Business Development",
-          "Financial Consulting",
-          "Risk Management"
-        ]
-      }
-    }
-  },
   "organizationalStructure": {
     "title": "GROUP ORGANIZATIONAL CHART",
     "subtitle": "Our leadership and team structure",
@@ -1441,12 +1409,12 @@
         "Management and management of management management",
         "Information and management management",
         "Internal auditing (auditing center)",
-        "Internal auditing – Development and management",
+        "Internal auditing ΓÇô Development and management",
         "Legal auditing",
         "Properly managing financial management, especially management",
         "Understanding financial needs from management and management",
         "Financial management between people and business with customers",
-        "Measuring information system – ICT IS",
+        "Measuring information system ΓÇô ICT IS",
         "Understanding ERP, its management and see if your business needs it",
         "Auditing internal management management",
         "Auditing internal auditing management",
@@ -1467,7 +1435,7 @@
         "Methods of working information management in OHADA area",
         "Writing business management",
         "Methods of working business",
-        "Merging – Acquisition",
+        "Merging ΓÇô Acquisition",
         "Legal auditing, management and tax",
         "Helping in writing internal management management"
       ],

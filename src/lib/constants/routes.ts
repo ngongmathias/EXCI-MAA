@@ -8,6 +8,12 @@ export const ROUTES = {
   CAREERS: '/careers',
   CONTACT: '/contact',
   ADMIN: '/admin',
+  LEADERSHIP: '/about/leadership',
+  QUALITY: '/about/quality',
+  ETHICS: '/about/ethics',
+  CASE_STUDIES: '/insights/case-studies',
+  PRIVACY_POLICY: '/privacy-policy',
+  COOKIE_POLICY: '/cookie-policy',
 } as const;
 
 export const API_ROUTES = {

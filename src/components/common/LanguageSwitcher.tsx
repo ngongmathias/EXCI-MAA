@@ -14,6 +14,7 @@ const LanguageSwitcher: React.FC = () => {
     { code: 'ki' as SupportedLanguage, name: 'Kirundi', flag: '🇧🇮' },
     { code: 'zh' as SupportedLanguage, name: '中文', flag: '🇨🇳' },
     { code: 'lg' as SupportedLanguage, name: 'Luganda', flag: '🇺🇬' },
+    { code: 'sw' as SupportedLanguage, name: 'Kiswahili', flag: '🇹🇿' },
   ];
 
   const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
@@ -39,9 +40,8 @@ const LanguageSwitcher: React.FC = () => {
                 setLanguage(language.code);
                 setIsOpen(false);
               }}
-              className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center space-x-3 ${
-                currentLanguage === language.code ? 'bg-exci-blue-50 text-exci-blue-600' : 'text-gray-700'
-              }`}
+              className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center space-x-3 ${currentLanguage === language.code ? 'bg-exci-blue-50 text-exci-blue-600' : 'text-gray-700'
+                }`}
             >
               <span className="text-lg">{language.flag}</span>
               <span>{language.name}</span>

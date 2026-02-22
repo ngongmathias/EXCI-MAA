@@ -9,15 +9,28 @@ interface CompactSlideshowProps {
   duration?: number;
 }
 
-const CompactSlideshow: React.FC<CompactSlideshowProps> = ({ 
+const FALLBACK_SLIDES = [
+  {
+    image_url: '/images/Hero/hero-excimaa-1.png',
+    title: 'EXCI-MAA — Professional Excellence Across Africa',
+    link_url: null,
+  },
+  {
+    image_url: '/images/Hero/hero-excimaa-2.png',
+    title: 'Audit, Tax & Advisory — Since 2012',
+    link_url: null,
+  },
+];
+
+const CompactSlideshow: React.FC<CompactSlideshowProps> = ({
   className = '',
   autoPlay = true,
   duration = 5000
 }) => {
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     loadBackgroundImages();
@@ -39,12 +52,12 @@ const CompactSlideshow: React.FC<CompactSlideshowProps> = ({
       if (data && data.length > 0) {
         setImages(data);
       } else {
-        setImages([]);
+        setImages(FALLBACK_SLIDES);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error('Failed to load background images:', err);
       setError(err.message);
-      setImages([]);
+      setImages(FALLBACK_SLIDES);
     } finally {
       setLoading(false);
     }
@@ -55,7 +68,7 @@ const CompactSlideshow: React.FC<CompactSlideshowProps> = ({
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
@@ -105,10 +118,10 @@ const CompactSlideshow: React.FC<CompactSlideshowProps> = ({
                 target.style.display = 'none';
               }}
             />
-            
+
             {/* Overlay for better visibility of controls */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-            
+
             {/* Title overlay if available */}
             {images[currentIndex].title && (
               <div className="absolute bottom-2 left-2 right-2">
@@ -156,11 +169,10 @@ const CompactSlideshow: React.FC<CompactSlideshowProps> = ({
                   e.stopPropagation();
                   setCurrentIndex(index);
                 }}
-                className={`h-1.5 rounded-full transition-all duration-200 ${
-                  index === currentIndex
-                    ? 'w-4 bg-white'
-                    : 'w-1.5 bg-white/60 hover:bg-white/80'
-                }`}
+                className={`h-1.5 rounded-full transition-all duration-200 ${index === currentIndex
+                  ? 'w-4 bg-white'
+                  : 'w-1.5 bg-white/60 hover:bg-white/80'
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

@@ -5,8 +5,8 @@ import { Users, Globe, Award, Target, BarChart2, Shield, Lightbulb, UserPlus, Ar
 import { useLanguage } from '../../../contexts/LanguageContext';
 
 const stats = [
-  { icon: Users, value: '10+', labelKey: 'aboutPage.hero.stats.yearsExperience' },
-  { icon: Globe, value: '6+', labelKey: 'aboutPage.hero.stats.countriesServed' },
+  { icon: Users, value: '30+', labelKey: 'aboutPage.hero.stats.yearsExperience' },
+  { icon: Globe, value: '9+', labelKey: 'aboutPage.hero.stats.countriesServed' },
   { icon: Award, value: '500+', labelKey: 'aboutPage.hero.stats.clientsServed' },
   { icon: Target, value: '99%', labelKey: 'aboutPage.hero.stats.successRate' },
 ];
@@ -14,23 +14,23 @@ const stats = [
 const coreValues = [
   {
     icon: <BarChart2 className="h-6 w-6" />,
-    title: 'Excellence',
-    description: 'Delivering exceptional quality in every service we provide.'
+    titleKey: 'about.feature1Title',
+    descKey: 'about.feature1Desc'
   },
   {
     icon: <Shield className="h-6 w-6" />,
-    title: 'Integrity',
-    description: 'Upholding the highest standards of professionalism and ethics.'
+    titleKey: 'about.feature2Title',
+    descKey: 'about.feature2Desc'
   },
   {
     icon: <Lightbulb className="h-6 w-6" />,
-    title: 'Innovation',
-    description: 'Embracing new ideas and technologies to drive success.'
+    titleKey: 'about.feature3Title',
+    descKey: 'about.feature3Desc'
   },
   {
     icon: <UserPlus className="h-6 w-6" />,
-    title: 'Partnership',
-    description: 'Building lasting relationships based on trust and mutual success.'
+    titleKey: 'about.feature4Title',
+    descKey: 'about.feature4Desc'
   }
 ];
 
@@ -43,14 +43,14 @@ const About: FC = () => {
     <section id="about" className="py-20 bg-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 text-sm font-semibold text-blue-700 bg-blue-100 rounded-full mb-4">
             {t('about.title')}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            {t('about.subtitle')} <span className="text-blue-600">Since 1996</span>
+            {t('about.subtitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto rounded-full"></div>
         </div>
@@ -86,8 +86,8 @@ const About: FC = () => {
                       {value.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">{t('about.feature1Title')}</h3>
-                      <p className="text-sm text-gray-600">{t('about.feature1Desc')}</p>
+                      <h3 className="font-semibold text-gray-900">{t(value.titleKey as any)}</h3>
+                      <p className="text-sm text-gray-600">{t(value.descKey as any)}</p>
                     </div>
                   </div>
                 </motion.div>

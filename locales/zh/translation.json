@@ -1,1434 +1,1432 @@
 {
     "servicesDropdown": {
-  "ourServices": "我们的服务",
-  "viewAllServices": "查看所有服务 →",
-  "services": {
-    "accountingBookkeeping": {
-      "title": "会计与簿记",
-      "description": "全面的财务记录和报告服务"
-    },
-    "auditAssurance": {
-      "title": "审计与鉴证",
-      "description": "独立的财务验证与合规服务"
-    },
-    "managerialAdvice": {
-      "title": "管理咨询",
-      "description": "战略咨询，助力您的企业成长与成功"
-    },
-    "payrollSocial": {
-      "title": "薪资与社会保障咨询",
-      "description": "完整的薪资管理与社保合规服务"
-    },
-    "consolidation": {
-      "title": "财务合并",
-      "description": "为多实体组织提供财务合并服务"
-    },
-    "risk": {
-      "title": "风险咨询",
-      "description": "全面的风险评估与管理服务"
-    },
-    "training": {
-      "title": "培训发展",
-      "description": "专业培训项目和技能发展服务"
-    }
-  }
-},
-"serviceModal": {
-  "whatsIncluded": "包含内容",
-  "ourProcess": "我们的流程",
-  "readyToStart": "准备好开始了吗？",
-  "discussText": "让我们讨论一下如何通过我们的",
-  "servicesText": "服务帮助您的企业成长。",
-  "bookConsultation": "预约咨询",
-  "process": {
-    "step1": {
-      "title": "初步咨询",
-      "description": "我们评估您的需求并制定定制化方案"
-    },
-    "step2": {
-      "title": "实施阶段",
-      "description": "我们的专家以精准和细致的方式提供服务"
-    },
-    "step3": {
-      "title": "持续支持",
-      "description": "持续监控与支持以确保最佳结果"
-    }
-  },
-  "features": {
-    "accounting": {
-      "bookkeeping": "簿记与记录保存",
-      "statements": "财务报表编制",
-      "taxCompliance": "税务合规与申报",
-      "payroll": "薪资管理",
-      "reports": "月度财务报告",
-      "budget": "预算规划与分析"
-    },
-    "audit": {
-      "internal": "内部与外部审计",
-      "taxReviews": "税务合规审查",
-      "risk": "风险评估",
-      "regulatory": "法规合规",
-      "financial": "财务报表审计",
-      "compliance": "合规性测试"
-    },
-    "managerial": {
-      "strategy": "商业战略制定",
-      "planning": "财务规划",
-      "optimization": "绩效优化",
-      "growth": "增长咨询"
-    },
-    "payrollSocial": {
-      "processing": "薪资处理",
-      "social": "社会保障合规",
-      "benefits": "员工福利管理",
-      "hr": "人力资源咨询"
-    },
-    "consolidation": {
-      "multi": "多实体财务合并",
-      "intercompany": "公司间交易抵消",
-      "reporting": "合并报告",
-      "statements": "集团财务报表"
-    },
-    "risk": {
-      "identification": "风险识别与评估",
-      "mitigation": "风险缓解策略",
-      "monitoring": "合规监控",
-      "controls": "内部控制审查"
-    },
-    "training": {
-      "professional": "专业发展培训",
-      "compliance": "合规与法规培训",
-      "skills": "技能提升培训",
-      "certification": "认证预备课程",
-      "workshops": "定制工作坊与研讨会",
-      "custom": "量身定制培训解决方案"
-    }
-  }
-},
-"globalOfficesDropdown": {
-  "ourOffices": "我们的全球办事处",
-  "viewAllOffices": "查看所有办事处 →"
-},
-"officeModal": {
-  "capitalCity": "首都",
-  "contactMessage": "联系我们了解我们在的服务。我们在为您的所有业务需求提供帮助。",
-  "email": "邮箱",
-  "phone": "电话号码"
-},
-"common": {
-  "close": "关闭"
-},
-    "nav":  {
-                "home":  "首页",
-                "about":  "关于我们",
-                "services":  "服务",
-                "training":  "培训",
-                "globalOffices":  "全球办事处",
-                "insights":  "洞察",
-                "careers":  "职业",
-                "contact":  "联系我们"
+        "ourServices": "我们的服务",
+        "viewAllServices": "查看所有服务 →",
+        "services": {
+            "accountingBookkeeping": {
+                "title": "会计与簿记",
+                "description": "全面的财务记录和报告服务"
             },
-    "globalOffices":  {
-                          "heroTitle":  "全球办事处",
-                          "heroSubtitle":  "我们的国际影响力和本地专业知识",
-                          "mapTitle":  "交互式地图",
-                          "mapSubtitle":  "探索我们在世界各地的办事处",
-                          "listTitle":  "办事处位置",
-                          "listSubtitle":  "找到离您最近的办事处"
-                      },
-    "teamMembers":  {
-                        "title":  "我们的全球团队",
-                        "subtitle":  "认识在所有地点推动卓越表现的专业人士",
-                        "readMore":  "阅读更多",
-                        "showLess":  "显示更少",
-                        "specialties":  "专长",
-                        "noMembers":  "目前没有团队成员分配到这个办公室",
-                        "members":  {
-                                        "pierre-kemeni":  {
-                                                              "name":  "皮埃尔·凯梅尼",
-                                                              "title":  "董事总经理兼主席",
-                                                              "qualifications":  [
-                                                                                     "MBA",
-                                                                                     "CPA",
-                                                                                     "CGA",
-                                                                                     "FCAA",
-                                                                                     "DEC"
-                                                                                 ],
-                                                              "bio":  "EXCI-MAA集团的合伙人、董事总经理。COSUMAF许可的注册会计师和法定审计师。在ICPAR、ONECCA、加拿大CPA、魁北克、安大略及英国注册。前德勤多伦多业务主任。擅长管理、SYSCOHADA、账户转换。高级国际顾问和培训师。",
-                                                              "specialties":  [
-                                                                                  "国际会计",
-                                                                                  "财务审计",
-                                                                                  "管理咨询",
-                                                                                  "SYSCOHADA专家",
-                                                                                  "账户转换",
-                                                                                  "银行业专家"
-                                                                              ]
-                                                          },
-                                        "patrick-ngatcha":  {
-                                                                "name":  "帕特里克·恩加查",
-                                                                "title":  "合伙人 - 总经理",
-                                                                "qualifications":  [
-                                                                                       "DEC",
-                                                                                       "DSCG",
-                                                                                       "Master CCA",
-                                                                                       "MSTCF"
-                                                                                   ],
-                                                                "bio":  "在巴黎法兰西岛注册会计师协会注册的注册会计师。法定审计师。税务和财务审计、收购审计、合并（法规99-02 / IFRS）专家。",
-                                                                "specialties":  [
-                                                                                    "业务发展",
-                                                                                    "财务咨询",
-                                                                                    "税务规划",
-                                                                                    "IFRS",
-                                                                                    "合并",
-                                                                                    "收购审计"
-                                                                                ]
-                                                            },
-                                        "lazare-tchouameni":  {
-                                                              "name":  "Lazare Tchouameni",
-                                                              "title":  "Office Manager, EXCI-MAA Congo",
-                                                              "qualifications":  [
-                                                                                     "MSc Accounting and Finance"
-                                                                                 ],
-                                                              "bio":  "财务分析师，擅长税务和财务审计。负责监督注册会计部门的运营。",
-                                                              "specialties":  [
-                                                                                  "财务分析",
-                                                                                  "税务审计",
-                                                                                  "财务审计",
-                                                                                  "部门监督"
-                                                                              ]
-                                                          },
-                                        "janot-hiag":  {
-                                                           "name":  "贾诺·希亚格",
-                                                           "title":  "精算评估师及石油成本审计师",
-                                                           "qualifications":  [
-                                                                                  "Actuarial Certification"
-                                                                              ],
-                                                           "bio":  "石油成本审计、收入保障、资产盘点和重新评估、运营和法律审计以及法定审计专家。",
-                                                           "specialties":  [
-                                                                               "石油成本审计",
-                                                                               "收入保障",
-                                                                               "资产重新评估",
-                                                                               "运营审计",
-                                                                               "法律审计"
-                                                                           ]
-                                                       },
-                                        "eric-kabeza":  {
-                                                            "name":  "埃里克·卡贝扎",
-                                                            "title":  "税务首席合伙人 - 卢旺达",
-                                                            "qualifications":  [
-                                                                                   "Tax Expert"
-                                                                               ],
-                                                            "bio":  "在卢旺达税务局工作超过20年的本地和国际税务专家。企业和个人税务顾问/咨询师。税务合规官和政策分析师。",
-                                                            "specialties":  [
-                                                                                "本地税务",
-                                                                                "国际税务",
-                                                                                "税务合规",
-                                                                                "政策分析",
-                                                                                "企业税务",
-                                                                                "个人税务"
-                                                                            ]
-                                                        },
-                                        "jean-nahimana":  {
-                                                              "name":  "让·内波穆塞内·纳希马纳",
-                                                              "title":  "合伙人 - 财务与税务审计",
-                                                              "qualifications":  [
-                                                                                     "CPA",
-                                                                                     "FMVA®",
-                                                                                     "BIDA®"
-                                                                                 ],
-                                                              "bio":  "注册会计师，ICPAR成员。财务和税务审计师。高级账户分析师和财务建模师，拥有丰富的财务规划和分析经验。",
-                                                              "specialties":  [
-                                                                                  "财务审计",
-                                                                                  "税务审计",
-                                                                                  "财务建模",
-                                                                                  "账户分析"
-                                                                              ]
-                                                          },
-                                        "martin-nkwain":  {
-                                                              "name":  "马塞尔·恩克温",
-                                                              "title":  "区域经理 - 东非",
-                                                              "qualifications":  [
-                                                                                     "IPA(UA)",
-                                                                                     "IFA(UK)"
-                                                                                 ],
-                                                              "bio":  "固定资产管理HARDCAT专家。财务和税务审计师。领导EXCI-MAA在东非的运营的国际顾问和培训师。",
-                                                              "specialties":  [
-                                                                                  "固定资产管理",
-                                                                                  "区域管理",
-                                                                                  "财务审计",
-                                                                                  "税务审计",
-                                                                                  "国际培训"
-                                                                              ]
-                                                          },
-                                        "paul-tchamake":  {
-                                                              "name":  "保罗·查马凯",
-                                                              "title":  "合伙人 - 国际税务与转让定价",
-                                                              "qualifications":  [
-                                                                                     "Ms",
-                                                                                     "CPA (USA, France)"
-                                                                                 ],
-                                                              "bio":  "认证注册会计师（美国和法国制度）。国际税务专家，ASC 740（美国GAAP标准）。在KPMG和普华永道美国拥有超过15年的国际财务和税务报告经验。转让定价和BEPS专家。",
-                                                              "specialties":  [
-                                                                                  "国际税务",
-                                                                                  "转让定价",
-                                                                                  "BEPS",
-                                                                                  "美国GAAP",
-                                                                                  "ASC 740",
-                                                                                  "跨境税务"
-                                                                              ]
-                                                          },
-                                        "diane-dusabe":  {
-                                                             "name":  "黛安·杜萨贝",
-                                                             "title":  "办公室经理 - 布隆迪",
-                                                             "qualifications":  [
-                                                                                    "BBA",
-                                                                                    "Accounting"
-                                                                                ],
-                                                             "bio":  "经验丰富的办公室经理，负责监督EXCI-MAA在布隆迪的运营。擅长客户关系和本地业务发展。",
-                                                             "specialties":  [
-                                                                                 "办公室管理",
-                                                                                 "客户关系",
-                                                                                 "业务发展",
-                                                                                 "本地运营"
-                                                                             ]
-                                                         },
-                                        "onesphore-ofodji":  {
-                                                                 "name":  "奥内斯福尔·奥福吉",
-                                                                 "title":  "高级顾问 - 布隆迪",
-                                                                 "qualifications":  [
-                                                                                        "CPA",
-                                                                                        "MBA"
-                                                                                    ],
-                                                                 "bio":  "高级业务顾问，专注于布隆迪的区域市场开发和财务咨询服务。",
-                                                                 "specialties":  [
-                                                                                     "业务咨询",
-                                                                                     "财务咨询",
-                                                                                     "市场开发",
-                                                                                     "战略规划"
-                                                                                 ]
-                                                             },
-                                        "congo-director":  {
-                                                               "name":  "区域总监",
-                                                               "title":  "总监 - 刚果民主共和国运营",
-                                                               "qualifications":  [
-                                                                                      "CPA",
-                                                                                      "MBA"
-                                                                                  ],
-                                                               "bio":  "领导EXCI-MAA在刚果民主共和国的运营，专注于审计服务和业务咨询。",
-                                                               "specialties":  [
-                                                                                   "审计服务",
-                                                                                   "业务咨询",
-                                                                                   "区域运营",
-                                                                                   "税务咨询"
-                                                                               ]
-                                                           },
-                                        "gabon-manager":  {
-                                                              "name":  "区域经理",
-                                                              "title":  "经理 - 加蓬运营",
-                                                              "qualifications":  [
-                                                                                     "Expert Comptable",
-                                                                                     "CEMAC"
-                                                                                 ],
-                                                              "bio":  "管理EXCI-MAA在加蓬的服务，专注于本地和国际客户的财务审计和企业咨询。",
-                                                              "specialties":  [
-                                                                                  "财务审计",
-                                                                                  "企业咨询",
-                                                                                  "CEMAC法规",
-                                                                                  "本地合规"
-                                                                              ]
-                                                          },
-                                        "dubai-consultant":  {
-                                                                 "name":  "高级顾问",
-                                                                 "title":  "高级业务顾问 - 迪拜",
-                                                                 "qualifications":  [
-                                                                                        "CPA",
-                                                                                        "ACCA"
-                                                                                    ],
-                                                                 "bio":  "专注于国际业务设立和税务规划，服务于扩展到中东市场的公司。",
-                                                                 "specialties":  [
-                                                                                     "业务设立",
-                                                                                     "税务规划",
-                                                                                     "国际扩展",
-                                                                                     "中东市场"
-                                                                                 ]
-                                                             },
-                                        "france-partner":  {
-                                                               "name":  "合伙人",
-                                                               "title":  "合伙人 - 法国运营",
-                                                               "qualifications":  [
-                                                                                      "Expert Comptable",
-                                                                                      "Commissaire aux Comptes"
-                                                                                  ],
-                                                               "bio":  "领导欧洲运营，擅长欧盟合规和跨境咨询。",
-                                                               "specialties":  [
-                                                                                   "欧盟合规",
-                                                                                   "跨境咨询",
-                                                                                   "欧洲会计",
-                                                                                   "国际税务"
-                                                                               ]
-                                                           },
-                                        "canada-consultant":  {
-                                                                  "name":  "高级顾问",
-                                                                  "title":  "移民与税务顾问",
-                                                                  "qualifications":  [
-                                                                                         "CPA",
-                                                                                         "RCIC"
-                                                                                     ],
-                                                                  "bio":  "专注于加拿大移民服务和新移民及企业的国际税务规划。",
-                                                                  "specialties":  [
-                                                                                      "移民服务",
-                                                                                      "国际税务",
-                                                                                      "财务规划",
-                                                                                      "业务移民"
-                                                                                  ]
-                                                              }
-                                    }
-                    },
-    "auth":  {
-                 "signIn":  "登录",
-                 "signOut":  "退出",
-                 "admin":  "管理员",
-                 "adminPanel":  "管理面板"
-             },
-    "footer":  {
-                   "description":  "具有国际影响力的专业会计、审计和咨询公司。我们提供全面的专业知识来支持您的业务需求。",
-                   "quickLinks":  "快速链接",
-                   "ourServices":  "我们的服务",
-                   "contactInfo":  "联系信息",
-                   "douala":  "杜阿拉，喀麦隆",
-                   "globalPresence":  "全球存在",
-                   "allRightsReserved":  "版权所有。",
-                   "privacyPolicy":  "隐私政策",
-                   "termsOfService":  "服务条款",
-                   "cookiePolicy":  "Cookie政策"
-               },
-    "serviceCategories":  {
-                              "accounting":  "会计专业知识",
-                              "legal":  "法律和税务审计",
-                              "managerial":  "管理建议",
-                              "payroll":  "工资和社会委员会",
-                              "consolidation":  "合并",
-                              "risk":  "风险咨询",
-                              "it":  "IT咨询",
-                              "financial":  "财务报告"
-                          },
-    "hero":  {
-                 "title":  "专业会计与",
-                 "titleHighlight":  "咨询卓越",
-                 "subtitle":  "全面的会计、审计和咨询服务，具有国际影响力。我们提供专家解决方案来支持您的业务增长。",
-                 "feature1":  "具有本地理解的国际专业知识",
-                 "feature2":  "全面的审计和咨询服务",
-                 "feature3":  "为您的业务成功提供专门支持",
-                 "cta1":  "探索服务",
-                 "cta2":  "获得咨询",
-                 "description":  "我们提供创新的金融解决方案和战略指导，帮助企业和个人自信、清晰地应对复杂的金融环境。"
-             },
-    "about":  {
-                  "title":  "关于我们",
-                  "subtitle":  "了解更多关于我们公司和价值观的信息",
-                  "feature1Title":  "专业卓越",
-                  "feature1Desc":  "我们在所有服务中保持最高标准",
-                  "feature2Title":  "全球覆盖",
-                  "feature2Desc":  "为多个国家和地区的客户提供服务",
-                  "feature3Title":  "专家团队",
-                  "feature3Desc":  "我们经验丰富的专业人士提供卓越成果",
-                  "heroTitle":  "关于EXCI-MAA",
-                  "heroSubtitle":  "具有国际影响力的专业会计、审计和咨询公司",
-                  "historyTitle":  "我们的历史",
-                  "historySubtitle":  "自成立以来通过卓越建立信任",
-                  "valuesTitle":  "我们的价值观",
-                  "valuesSubtitle":  "指导我们所做一切的原则",
-                  "teamTitle":  "我们的团队",
-                  "teamSubtitle":  "认识我们成功背后的专业人士",
-                  "testimonialsTitle":  "客户推荐",
-                  "testimonialsSubtitle":  "我们的客户对我们的评价"
-              },
-    "aboutPage":  {
-                      "hero":  {
-                                   "title":  "关于EXCI-MAA",
-                                   "subtitle":  "您值得信赖的财务合作伙伴",
-                                   "description":  "凭借超过10+ 年的金融服务卓越表现，EXCI-MAA一直是多个国家企业的值得信赖的合作伙伴，提供专业的会计、审计和咨询服务。",
-                                   "getInTouch":  "联系我们",
-                                   "ourServices":  "我们的服务",
-                                   "trustedByBusinesses":  "受到全球企业的信赖",
-                                   "stats":  {
-                                                 "yearsExperience":  "年经验",
-                                                 "countriesServed":  "服务国家",
-                                                 "teamMembers":  "团队成员",
-                                                 "clientSatisfaction":  "客户满意度",
-                                                 "clientsServed":  "服务客户",
-                                                 "successRate":  "成功率"
-                                             }
-                               },
-                      "mission":  {
-                                      "title":  "我们的使命",
-                                      "description1":  "我们的主要使命是支持和陪伴在非洲市场运营的公司走向财务卓越。利用对营利和非营利部门的深入了解，我们提供适合每个组织规模的咨询、法定审计和咨询业务。",
-                                      "description2":  "我们的解决方案旨在满足整个非洲大陆企业的特定需求，提供端到端服务和真正的附加价值——以合理的预算。我们的多学科和多元文化团队确保量身定制的支持，适应您结构的规模和能力。"
-                                  },
-                      "story":  {
-                                    "title":  "我们的故事",
-                                    "description1":  "EXCI-MAA由审计、会计、税务、业务开发、管理信息系统和法律方面的专家创立。在加拿大、美国、法国、英国和整个非洲都有业务，我们带来适合每个当地环境的国际专业知识。",
-                                    "description2":  "我们在客户活动的整个价值链中运营，确保与利益相关者的透明度和合规性。我们的公司通过强大的网络和实地团队陪伴多个国家的组织，提供贴近的服务和适应当地现实的解决方案。",
-                                    "description3":  "今天，我们继续扩大我们的足迹，同时坚持我们的创始原则：卓越、诚信和影响力。从法定和合同审计到风险管理和个性化咨询，我们的团队提供持久、有效的任务，推动可持续的结果。",
-                                    "whatWeDo":  "我们做什么",
-                                    "services":  [
-                                                     "支持开发、合并、创建或转型项目",
-                                                     "法定或合同审计",
-                                                     "会计专业知识",
-                                                     "内部控制分析和风险管理",
-                                                     "石油成本审计",
-                                                     "为企业和中小企业提供个性化咨询"
-                                                 ]
-                                },
-                      "history":  {
-                                      "title":  "我们的历程",
-                                      "subtitle":  "超过二十年的金融服务卓越表现",
-                                      "timeline":  [
-                                                       {
-                                                           "year":  "1996",
-                                                           "title":  "EXCI-MAA的成立",
-                                                           "description":  "在喀麦隆雅温得成立，愿景是为当地企业提供卓越的会计和金融服务。"
-                                                       },
-                                                       {
-                                                           "year":  "2002",
-                                                           "title":  "区域扩张",
-                                                           "description":  "扩展服务覆盖中非，在该地区主要经济中心建立办事处。"
-                                                       },
-                                                       {
-                                                           "year":  "2010",
-                                                           "title":  "国际认可",
-                                                           "description":  "在金融服务和合规标准方面获得国际认可。"
-                                                       },
-                                                       {
-                                                           "year":  "2015",
-                                                           "title":  "数字化转型",
-                                                           "description":  "实施尖端金融技术，增强服务交付和客户体验。"
-                                                       },
-                                                       {
-                                                           "year":  "2020",
-                                                           "title":  "全球覆盖",
-                                                           "description":  "与国际公司建立合作伙伴关系，将我们的服务扩展到6个以上国家的客户。"
-                                                       },
-                                                       {
-                                                           "year":  "2023",
-                                                           "title":  "团队成长",
-                                                           "description":  "我们的团队增长到50多名专业人士，巩固了我们作为领先金融服务公司的地位。"
-                                                       }
-                                                   ],
-                                      "journeyContinues":  "我们的历程继续，我们努力在我们提供的每项服务中追求卓越。",
-                                      "learnMoreStory":  "了解更多关于我们的故事"
-                                  },
-                      "values":  {
-                                     "title":  "我们的核心价值观",
-                                     "subtitle":  "指导我们工作并定义我们文化的原则",
-                                     "values":  [
-                                                    {
-                                                        "name":  "卓越",
-                                                        "description":  "我们致力于提供最高质量的服务，持续改进我们的技能和流程，超越客户期望。"
-                                                    },
-                                                    {
-                                                        "name":  "诚信",
-                                                        "description":  "我们坚持最高的道德标准，确保在所有互动中的透明度、诚实和专业精神。"
-                                                    },
-                                                    {
-                                                        "name":  "创新",
-                                                        "description":  "我们拥抱新技术和创意解决方案，提供推动客户成功的尖端服务。"
-                                                    },
-                                                    {
-                                                        "name":  "客户专注",
-                                                        "description":  "我们通过理解客户的独特需求并提供创造真正价值的定制解决方案来建立持久的关系。"
-                                                    },
-                                                    {
-                                                        "name":  "专业精神",
-                                                        "description":  "我们在工作的各个方面保持最高的专业知识、可靠性和问责制标准。"
-                                                    },
-                                                    {
-                                                        "name":  "合作伙伴关系",
-                                                        "description":  "我们相信与客户密切合作，作为他们团队的延伸工作，实现共同成功。"
-                                                    }
-                                                ],
-                                     "learnMore":  "了解更多",
-                                     "learnMoreCulture":  "了解更多关于我们的文化"
-                                 },
-                      "team":  {
-                                   "title":  "认识我们的领导团队",
-                                   "subtitle":  "我们经验丰富的团队致力于为客户提供卓越的服务和价值。",
-                                   "members":  [
-                                                   {
-                                                       "name":  "皮埃尔·凯梅尼",
-                                                       "role":  "创始人兼首席执行官",
-                                                       "bio":  "工商管理硕士，注册会计师，拥有超过27年国际会计和审计经验。",
-                                                       "expertise":  [
-                                                                         "国际会计",
-                                                                         "财务审计",
-                                                                         "商业策略",
-                                                                         "企业财务"
-                                                                     ]
-                                                   },
-                                                   {
-                                                       "name":  "帕特里克·恩加查",
-                                                       "role":  "董事总经理",
-                                                       "bio":  "拥有13年以上业务开发和财务咨询经验的注册会计师。",
-                                                       "expertise":  [
-                                                                         "业务开发",
-                                                                         "财务咨询",
-                                                                         "税务规划",
-                                                                         "企业策略"
-                                                                     ]
-                                                   },
-                                                   {
-                                                       "name":  "玛丽·劳尔·恩戈·比科伊",
-                                                       "role":  "高级审计经理",
-                                                       "bio":  "拥有15年以上审计和财务咨询服务经验。",
-                                                       "expertise":  [
-                                                                         "财务审计",
-                                                                         "内部控制",
-                                                                         "风险管理",
-                                                                         "合规"
-                                                                     ]
-                                                   }
-                                               ],
-                                   "expertise":  "专业知识",
-                                   "viewAllMembers":  "查看所有团队成员"
-                               }
-                  },
-    "services":  {
-                     "title":  "我们的服务",
-                     "subtitle":  "为您的业务需求提供全面解决方案",
-                     "heroTitle":  "专业服务",
-                     "heroSubtitle":  "根据您的业务需求定制的专家解决方案",
-                     "detailedTitle":  "服务详情",
-                     "detailedSubtitle":  "关于我们产品的深入信息",
-                     "processTitle":  "我们的流程",
-                     "processSubtitle":  "我们如何提供卓越成果",
-                     "faqTitle":  "常见问题",
-                     "faqSubtitle":  "关于我们服务的常见问题",
-                     "pricingTitle":  "定价",
-                     "pricingSubtitle":  "我们所有服务的透明定价",
-                     "schedule":  "预约",
-                     "getStarted":  "开始",
-                     "keyFeatures":  "关键特点",
-                     "learnMore":  "了解更多",
-                     "viewAll":  "查看所有服务",
-                     "service1Title":  "会计专业知识",
-                     "service1Desc":  "为企业的全面会计服务",
-                     "service2Title":  "法律和税务审计",
-                     "service2Desc":  "专业审计和合规服务",
-                     "service3Title":  "管理建议",
-                     "service3Desc":  "业务增长的战略咨询",
-                     "service4Title":  "工资和社会委员会",
-                     "service4Desc":  "完整的工资和人力资源管理",
-                     "service5Title":  "合并",
-                     "service5Desc":  "多实体组织的财务合并",
-                     "service6Title":  "风险咨询",
-                     "service6Desc":  "全面的风险评估和管理",
-                     "categories":  {
-                                        "all":  "所有服务",
-                                        "finance":  "金融服务",
-                                        "business":  "商务服务"
-                                    }
-                 },
-    "insights":  {
-                     "heroTitle":  "洞察与新闻",
-                     "heroSubtitle":  "了解行业洞察和公司新闻的最新信息",
-                     "eventsTitle":  "活动",
-                     "eventsSubtitle":  "即将到来和过去的活动",
-                     "blogTitle":  "博客",
-                     "blogSubtitle":  "最新文章和洞察",
-                     "promotionsTitle":  "促销活动",
-                     "promotionsSubtitle":  "特别优惠和公告"
-                 },
-    "careers":  {
-                    "heroTitle":  "加入我们的团队",
-                    "heroSubtitle":  "与EXCI-MAA一起建设您的职业生涯",
-                    "jobsTitle":  "开放职位",
-                    "jobsSubtitle":  "当前的工作机会",
-                    "chartTitle":  "组织结构图",
-                    "chartSubtitle":  "我们的公司结构和领导层",
-                    "benefitsTitle":  "福利和津贴",
-                    "benefitsSubtitle":  "我们为员工提供的福利"
+            "auditAssurance": {
+                "title": "审计与鉴证",
+                "description": "独立的财务验证与合规服务"
+            },
+            "managerialAdvice": {
+                "title": "管理咨询",
+                "description": "战略咨询，助力您的企业成长与成功"
+            },
+            "payrollSocial": {
+                "title": "薪资与社会保障咨询",
+                "description": "完整的薪资管理与社保合规服务"
+            },
+            "consolidation": {
+                "title": "财务合并",
+                "description": "为多实体组织提供财务合并服务"
+            },
+            "risk": {
+                "title": "风险咨询",
+                "description": "全面的风险评估与管理服务"
+            },
+            "training": {
+                "title": "培训发展",
+                "description": "专业培训项目和技能发展服务"
+            }
+        }
+    },
+    "serviceModal": {
+        "whatsIncluded": "包含内容",
+        "ourProcess": "我们的流程",
+        "readyToStart": "准备好开始了吗？",
+        "discussText": "让我们讨论一下如何通过我们的",
+        "servicesText": "服务帮助您的企业成长。",
+        "bookConsultation": "预约咨询",
+        "process": {
+            "step1": {
+                "title": "初步咨询",
+                "description": "我们评估您的需求并制定定制化方案"
+            },
+            "step2": {
+                "title": "实施阶段",
+                "description": "我们的专家以精准和细致的方式提供服务"
+            },
+            "step3": {
+                "title": "持续支持",
+                "description": "持续监控与支持以确保最佳结果"
+            }
+        },
+        "features": {
+            "accounting": {
+                "bookkeeping": "簿记与记录保存",
+                "statements": "财务报表编制",
+                "taxCompliance": "税务合规与申报",
+                "payroll": "薪资管理",
+                "reports": "月度财务报告",
+                "budget": "预算规划与分析"
+            },
+            "audit": {
+                "internal": "内部与外部审计",
+                "taxReviews": "税务合规审查",
+                "risk": "风险评估",
+                "regulatory": "法规合规",
+                "financial": "财务报表审计",
+                "compliance": "合规性测试"
+            },
+            "managerial": {
+                "strategy": "商业战略制定",
+                "planning": "财务规划",
+                "optimization": "绩效优化",
+                "growth": "增长咨询"
+            },
+            "payrollSocial": {
+                "processing": "薪资处理",
+                "social": "社会保障合规",
+                "benefits": "员工福利管理",
+                "hr": "人力资源咨询"
+            },
+            "consolidation": {
+                "multi": "多实体财务合并",
+                "intercompany": "公司间交易抵消",
+                "reporting": "合并报告",
+                "statements": "集团财务报表"
+            },
+            "risk": {
+                "identification": "风险识别与评估",
+                "mitigation": "风险缓解策略",
+                "monitoring": "合规监控",
+                "controls": "内部控制审查"
+            },
+            "training": {
+                "professional": "专业发展培训",
+                "compliance": "合规与法规培训",
+                "skills": "技能提升培训",
+                "certification": "认证预备课程",
+                "workshops": "定制工作坊与研讨会",
+                "custom": "量身定制培训解决方案"
+            }
+        }
+    },
+    "globalOfficesDropdown": {
+        "ourOffices": "我们的全球办事处",
+        "viewAllOffices": "查看所有办事处 →"
+    },
+    "officeModal": {
+        "capitalCity": "首都",
+        "contactMessage": "联系我们了解我们在的服务。我们在为您的所有业务需求提供帮助。",
+        "email": "邮箱",
+        "phone": "电话号码"
+    },
+    "common": {
+        "close": "关闭"
+    },
+    "nav": {
+        "home": "首页",
+        "about": "关于我们",
+        "services": "服务",
+        "training": "培训",
+        "globalOffices": "全球办事处",
+        "insights": "洞察",
+        "careers": "职业",
+        "contact": "联系我们"
+    },
+    "globalOffices": {
+        "heroTitle": "全球办事处",
+        "heroSubtitle": "我们的国际影响力和本地专业知识",
+        "mapTitle": "交互式地图",
+        "mapSubtitle": "探索我们在世界各地的办事处",
+        "listTitle": "办事处位置",
+        "listSubtitle": "找到离您最近的办事处"
+    },
+    "teamMembers": {
+        "title": "我们的全球团队",
+        "subtitle": "认识在所有地点推动卓越表现的专业人士",
+        "readMore": "阅读更多",
+        "showLess": "显示更少",
+        "specialties": "专长",
+        "noMembers": "目前没有团队成员分配到这个办公室",
+        "members": {
+            "pierre-kemeni": {
+                "name": "皮埃尔·凯梅尼",
+                "title": "董事总经理兼主席",
+                "qualifications": [
+                    "MBA",
+                    "CPA",
+                    "CGA",
+                    "FCAA",
+                    "DEC"
+                ],
+                "bio": "EXCI-MAA集团的合伙人、董事总经理。COSUMAF许可的注册会计师和法定审计师。在ICPAR、ONECCA、加拿大CPA、魁北克、安大略及英国注册。前德勤多伦多业务主任。擅长管理、SYSCOHADA、账户转换。高级国际顾问和培训师。",
+                "specialties": [
+                    "国际会计",
+                    "财务审计",
+                    "管理咨询",
+                    "SYSCOHADA专家",
+                    "账户转换",
+                    "银行业专家"
+                ]
+            },
+            "patrick-ngatcha": {
+                "name": "帕特里克·恩加查",
+                "title": "合伙人 - 总经理",
+                "qualifications": [
+                    "DEC",
+                    "DSCG",
+                    "Master CCA",
+                    "MSTCF"
+                ],
+                "bio": "在巴黎法兰西岛注册会计师协会注册的注册会计师。法定审计师。税务和财务审计、收购审计、合并（法规99-02 / IFRS）专家。",
+                "specialties": [
+                    "业务发展",
+                    "财务咨询",
+                    "税务规划",
+                    "IFRS",
+                    "合并",
+                    "收购审计"
+                ]
+            },
+            "lazare-tchouameni": {
+                "name": "Lazare Tchouameni",
+                "title": "Office Manager, EXCI-MAA Congo",
+                "qualifications": [
+                    "MSc Accounting and Finance"
+                ],
+                "bio": "财务分析师，擅长税务和财务审计。负责监督注册会计部门的运营。",
+                "specialties": [
+                    "财务分析",
+                    "税务审计",
+                    "财务审计",
+                    "部门监督"
+                ]
+            },
+            "janot-hiag": {
+                "name": "贾诺·希亚格",
+                "title": "精算评估师及石油成本审计师",
+                "qualifications": [
+                    "Actuarial Certification"
+                ],
+                "bio": "石油成本审计、收入保障、资产盘点和重新评估、运营和法律审计以及法定审计专家。",
+                "specialties": [
+                    "石油成本审计",
+                    "收入保障",
+                    "资产重新评估",
+                    "运营审计",
+                    "法律审计"
+                ]
+            },
+            "eric-kabeza": {
+                "name": "埃里克·卡贝扎",
+                "title": "税务首席合伙人 - 卢旺达",
+                "qualifications": [
+                    "Tax Expert"
+                ],
+                "bio": "在卢旺达税务局工作超过20年的本地和国际税务专家。企业和个人税务顾问/咨询师。税务合规官和政策分析师。",
+                "specialties": [
+                    "本地税务",
+                    "国际税务",
+                    "税务合规",
+                    "政策分析",
+                    "企业税务",
+                    "个人税务"
+                ]
+            },
+            "jean-nahimana": {
+                "name": "让·内波穆塞内·纳希马纳",
+                "title": "合伙人 - 财务与税务审计",
+                "qualifications": [
+                    "CPA",
+                    "FMVA®",
+                    "BIDA®"
+                ],
+                "bio": "注册会计师，ICPAR成员。财务和税务审计师。高级账户分析师和财务建模师，拥有丰富的财务规划和分析经验。",
+                "specialties": [
+                    "财务审计",
+                    "税务审计",
+                    "财务建模",
+                    "账户分析"
+                ]
+            },
+            "martin-nkwain": {
+                "name": "马塞尔·恩克温",
+                "title": "区域经理 - 东非",
+                "qualifications": [
+                    "IPA(UA)",
+                    "IFA(UK)"
+                ],
+                "bio": "固定资产管理HARDCAT专家。财务和税务审计师。领导EXCI-MAA在东非的运营的国际顾问和培训师。",
+                "specialties": [
+                    "固定资产管理",
+                    "区域管理",
+                    "财务审计",
+                    "税务审计",
+                    "国际培训"
+                ]
+            },
+            "paul-tchamake": {
+                "name": "保罗·查马凯",
+                "title": "合伙人 - 国际税务与转让定价",
+                "qualifications": [
+                    "Ms",
+                    "CPA (USA, France)"
+                ],
+                "bio": "认证注册会计师（美国和法国制度）。国际税务专家，ASC 740（美国GAAP标准）。在KPMG和普华永道美国拥有超过15年的国际财务和税务报告经验。转让定价和BEPS专家。",
+                "specialties": [
+                    "国际税务",
+                    "转让定价",
+                    "BEPS",
+                    "美国GAAP",
+                    "ASC 740",
+                    "跨境税务"
+                ]
+            },
+            "diane-dusabe": {
+                "name": "黛安·杜萨贝",
+                "title": "办公室经理 - 布隆迪",
+                "qualifications": [
+                    "BBA",
+                    "Accounting"
+                ],
+                "bio": "经验丰富的办公室经理，负责监督EXCI-MAA在布隆迪的运营。擅长客户关系和本地业务发展。",
+                "specialties": [
+                    "办公室管理",
+                    "客户关系",
+                    "业务发展",
+                    "本地运营"
+                ]
+            },
+            "onesphore-ofodji": {
+                "name": "奥内斯福尔·奥福吉",
+                "title": "高级顾问 - 布隆迪",
+                "qualifications": [
+                    "CPA",
+                    "MBA"
+                ],
+                "bio": "高级业务顾问，专注于布隆迪的区域市场开发和财务咨询服务。",
+                "specialties": [
+                    "业务咨询",
+                    "财务咨询",
+                    "市场开发",
+                    "战略规划"
+                ]
+            },
+            "congo-director": {
+                "name": "区域总监",
+                "title": "总监 - 刚果民主共和国运营",
+                "qualifications": [
+                    "CPA",
+                    "MBA"
+                ],
+                "bio": "领导EXCI-MAA在刚果民主共和国的运营，专注于审计服务和业务咨询。",
+                "specialties": [
+                    "审计服务",
+                    "业务咨询",
+                    "区域运营",
+                    "税务咨询"
+                ]
+            },
+            "gabon-manager": {
+                "name": "区域经理",
+                "title": "经理 - 加蓬运营",
+                "qualifications": [
+                    "Expert Comptable",
+                    "CEMAC"
+                ],
+                "bio": "管理EXCI-MAA在加蓬的服务，专注于本地和国际客户的财务审计和企业咨询。",
+                "specialties": [
+                    "财务审计",
+                    "企业咨询",
+                    "CEMAC法规",
+                    "本地合规"
+                ]
+            },
+            "dubai-consultant": {
+                "name": "高级顾问",
+                "title": "高级业务顾问 - 迪拜",
+                "qualifications": [
+                    "CPA",
+                    "ACCA"
+                ],
+                "bio": "专注于国际业务设立和税务规划，服务于扩展到中东市场的公司。",
+                "specialties": [
+                    "业务设立",
+                    "税务规划",
+                    "国际扩展",
+                    "中东市场"
+                ]
+            },
+            "france-partner": {
+                "name": "合伙人",
+                "title": "合伙人 - 法国运营",
+                "qualifications": [
+                    "Expert Comptable",
+                    "Commissaire aux Comptes"
+                ],
+                "bio": "领导欧洲运营，擅长欧盟合规和跨境咨询。",
+                "specialties": [
+                    "欧盟合规",
+                    "跨境咨询",
+                    "欧洲会计",
+                    "国际税务"
+                ]
+            },
+            "canada-consultant": {
+                "name": "高级顾问",
+                "title": "移民与税务顾问",
+                "qualifications": [
+                    "CPA",
+                    "RCIC"
+                ],
+                "bio": "专注于加拿大移民服务和新移民及企业的国际税务规划。",
+                "specialties": [
+                    "移民服务",
+                    "国际税务",
+                    "财务规划",
+                    "业务移民"
+                ]
+            }
+        }
+    },
+    "auth": {
+        "signIn": "登录",
+        "signOut": "退出",
+        "admin": "管理员",
+        "adminPanel": "管理面板"
+    },
+    "footer": {
+        "description": "具有国际影响力的专业会计、审计和咨询公司。我们提供全面的专业知识来支持您的业务需求。",
+        "quickLinks": "快速链接",
+        "ourServices": "我们的服务",
+        "contactInfo": "联系信息",
+        "douala": "杜阿拉，喀麦隆",
+        "globalPresence": "全球存在",
+        "allRightsReserved": "版权所有。",
+        "privacyPolicy": "隐私政策",
+        "termsOfService": "服务条款",
+        "cookiePolicy": "Cookie政策"
+    },
+    "serviceCategories": {
+        "accounting": "会计专业知识",
+        "legal": "法律和税务审计",
+        "managerial": "管理建议",
+        "payroll": "工资和社会委员会",
+        "consolidation": "合并",
+        "risk": "风险咨询",
+        "it": "IT咨询",
+        "financial": "财务报告"
+    },
+    "hero": {
+        "title": "专业会计与",
+        "titleHighlight": "咨询卓越",
+        "subtitle": "全面的会计、审计和咨询服务，具有国际影响力。我们提供专家解决方案来支持您的业务增长。",
+        "feature1": "具有本地理解的国际专业知识",
+        "feature2": "全面的审计和咨询服务",
+        "feature3": "为您的业务成功提供专门支持",
+        "cta1": "探索服务",
+        "cta2": "获得咨询",
+        "description": "我们提供创新的金融解决方案和战略指导，帮助企业和个人自信、清晰地应对复杂的金融环境。"
+    },
+    "about": {
+        "title": "关于我们",
+        "subtitle": "了解更多关于我们公司和价值观的信息",
+        "feature1Title": "专业卓越",
+        "feature1Desc": "我们在所有服务中保持最高标准",
+        "feature2Title": "全球覆盖",
+        "feature2Desc": "为多个国家和地区的客户提供服务",
+        "feature3Title": "专家团队",
+        "feature3Desc": "我们经验丰富的专业人士提供卓越成果",
+        "heroTitle": "关于EXCI-MAA",
+        "heroSubtitle": "具有国际影响力的专业会计、审计和咨询公司",
+        "historyTitle": "我们的历史",
+        "historySubtitle": "自成立以来通过卓越建立信任",
+        "valuesTitle": "我们的价值观",
+        "valuesSubtitle": "指导我们所做一切的原则",
+        "teamTitle": "我们的团队",
+        "teamSubtitle": "认识我们成功背后的专业人士",
+        "testimonialsTitle": "客户推荐",
+        "testimonialsSubtitle": "我们的客户对我们的评价"
+    },
+    "aboutPage": {
+        "hero": {
+            "title": "关于EXCI-MAA",
+            "subtitle": "您值得信赖的财务合作伙伴",
+            "description": "凭借超过 14 年以上的金融服务卓越表现，EXCI-MAA 一直是多个国家企业的值得信赖的合作伙伴，提供专业的会计、审计和咨询服务。",
+            "getInTouch": "联系我们",
+            "ourServices": "我们的服务",
+            "trustedByBusinesses": "受到全球企业的信赖",
+            "stats": {
+                "yearsExperience": "年经验",
+                "countriesServed": "服务国家",
+                "teamMembers": "团队成员",
+                "clientSatisfaction": "客户满意度",
+                "clientsServed": "服务客户",
+                "successRate": "成功率"
+            }
+        },
+        "mission": {
+            "title": "我们的使命",
+            "description1": "我们的主要使命是支持和陪伴在非洲市场运营的公司走向财务卓越。利用对营利和非营利部门的深入了解，我们提供适合每个组织规模的咨询、法定审计和咨询业务。",
+            "description2": "我们的解决方案旨在满足整个非洲大陆企业的特定需求，提供端到端服务和真正的附加价值——以合理的预算。我们的多学科和多元文化团队确保量身定制的支持，适应您结构的规模和能力。"
+        },
+        "story": {
+            "title": "我们的故事",
+            "description1": "EXCI-MAA由审计、会计、税务、业务开发、管理信息系统和法律方面的专家创立。在加拿大、美国、法国、英国和整个非洲都有业务，我们带来适合每个当地环境的国际专业知识。",
+            "description2": "我们在客户活动的整个价值链中运营，确保与利益相关者的透明度和合规性。我们的公司通过强大的网络和实地团队陪伴多个国家的组织，提供贴近的服务和适应当地现实的解决方案。",
+            "description3": "今天，我们继续扩大我们的足迹，同时坚持我们的创始原则：卓越、诚信和影响力。从法定和合同审计到风险管理和个性化咨询，我们的团队提供持久、有效的任务，推动可持续的结果。",
+            "whatWeDo": "我们做什么",
+            "services": [
+                "支持开发、合并、创建或转型项目",
+                "法定或合同审计",
+                "会计专业知识",
+                "内部控制分析和风险管理",
+                "石油成本审计",
+                "为企业和中小企业提供个性化咨询"
+            ]
+        },
+        "history": {
+            "title": "我们的历程",
+            "subtitle": "超过十年的金融服务卓越表现",
+            "timeline": [
+                {
+                    "year": "2012",
+                    "title": "EXCI-MAA的成立",
+                    "description": "在喀麦隆雅温得成立，愿景是为当地企业提供卓越的会计和金融服务。"
                 },
-    "contact":  {
-                    "title":  "联系我们",
-                    "subtitle":  "与我们的团队取得联系",
-                    "heroTitle":  "联系我们",
-                    "heroSubtitle":  "我们在这里帮助您满足业务需求",
-                    "formTitle":  "给我们发送消息",
-                    "formSubtitle":  "填写下面的表格，我们会回复您",
-                    "mapTitle":  "找到我们",
-                    "mapSubtitle":  "访问我们在世界各地的办事处",
-                    "infoTitle":  "联系信息",
-                    "infoSubtitle":  "多种联系我们方式",
-                    "cta":  "立即联系我们",
-                    "hero":  {
-                                 "getInTouch":  "联系我们",
-                                 "letsTalkAbout":  "让我们谈谈您的",
-                                 "businessNeeds":  "业务需求",
-                                 "description":  "我们的财务专家团队随时准备帮助您应对业务挑战。通过下面的任何渠道联系我们，或直接发送消息。",
-                                 "contactMethods":  {
-                                                        "emailUs":  "发送邮件",
-                                                        "emailDescription":  "我们的团队将在24小时内回复您",
-                                                        "emailValue":  "contactcam@excimaa.ca",
-                                                        "callUs":  "致电我们",
-                                                        "callDescription":  "周一至周五上午9点至下午5点",
-                                                        "callValue":  "+1 (555) 123-4567",
-                                                        "visitUs":  "访问我们",
-                                                        "visitDescription":  "来我们办公室打个招呼",
-                                                        "visitValue":  "123商业大道，城市，国家",
-                                                        "officeHours":  "办公时间",
-                                                        "hoursDescription":  "我们的工作时间",
-                                                        "hoursValue":  "周一 - 周五: 9:00 - 18:00"
-                                                    },
-                                 "orFillOut":  "或填写我们的联系表格，我们将在24小时内回复您。",
-                                 "sendUsMessage":  "给我们发送消息"
-                             },
-                    "form":  {
-                                 "title":  "联系我们",
-                                 "subtitle":  "有问题或准备开始您的项目？填写下面的表格，我们的团队将尽快回复您。",
-                                 "getInTouch":  "联系我们",
-                                 "description":  "有问题或准备开始您的项目？填写下面的表格，我们的团队将尽快回复您。",
-                                 "contactInformation":  "联系信息",
-                                 "contactDescription":  "填写表格，我们的团队将在24小时内回复您。如需即时帮助，请直接致电我们。",
-                                 "callUs":  "致电我们",
-                                 "emailUs":  "发送邮件",
-                                 "visitUs":  "访问我们",
-                                 "businessHours":  "办公时间",
-                                 "mondayFriday":  "周一 - 周五: 上午9:00 - 下午6:00",
-                                 "saturdaySunday":  "周六 - 周日: 休息",
-                                 "name":  "姓名",
-                                 "name_placeholder":  "张三",
-                                 "email":  "电子邮件",
-                                 "email_placeholder":  "zhang@example.com",
-                                 "phone":  "电话",
-                                 "phone_placeholder":  "+86 138 0013 8000",
-                                 "subject":  "主题",
-                                 "select_subject":  "选择主题",
-                                 "other":  "其他",
-                                 "message":  "消息",
-                                 "message_placeholder":  "告诉我们更多...",
-                                 "submit":  "发送消息",
-                                 "submitting":  "发送中...",
-                                 "success":  "谢谢！您的消息已发送。",
-                                 "error":  "无法提交。请重试。",
-                                 "fullName":  "全名",
-                                 "emailAddress":  "电子邮件地址",
-                                 "phoneNumber":  "电话号码",
-                                 "required":  "*",
-                                 "placeholders":  {
-                                                      "fullName":  "张三",
-                                                      "email":  "you@example.com",
-                                                      "phone":  "+86 138 0013 8000",
-                                                      "selectSubject":  "选择主题",
-                                                      "message":  "我们如何帮助您？"
-                                                  },
-                                 "subjects":  {
-                                                  "generalInquiry":  "一般咨询",
-                                                  "accountingServices":  "会计服务",
-                                                  "auditServices":  "审计服务",
-                                                  "taxConsultation":  "税务咨询",
-                                                  "other":  "其他"
-                                              },
-                                 "validation":  {
-                                                    "nameRequired":  "姓名是必填项",
-                                                    "emailRequired":  "电子邮件是必填项",
-                                                    "emailInvalid":  "无效的电子邮件地址",
-                                                    "subjectRequired":  "主题是必填项",
-                                                    "messageRequired":  "消息是必填项",
-                                                    "messageMinLength":  "消息至少需要10个字符"
-                                                },
-                                 "sendMessage":  "发送消息",
-                                 "sending":  "发送中...",
-                                 "successTitle":  "消息发送成功！",
-                                 "successDescription":  "感谢您的联系。我们已收到您的消息，将在24小时内回复您。",
-                                 "sendAnotherMessage":  "发送另一条消息",
-                                 "errorTitle":  "错误",
-                                 "errorMessage":  "发送消息失败。请稍后重试。",
-                                 "privacyNote":  "我们将在24小时内回复您。您的信息是安全的。"
-                             },
-                    "map":  {
-                                "findOurOffice":  "找到我们的办公室",
-                                "description":  "访问我们位置便利的办公室。我们在这里协助您满足所有财务需求。",
-                                "ourOffice":  "我们的办公室",
-                                "address":  "地址",
-                                "phone":  "电话",
-                                "email":  "电子邮件",
-                                "businessHours":  "办公时间",
-                                "getDirections":  "获取路线",
-                                "needHelpFinding":  "需要帮助找到我们？",
-                                "helpDescription":  "我们的办公室位于商业区中心，交通便利，可轻松到达公共交通。",
-                                "centerMap":  "将地图居中到我们的位置",
-                                "officeLocation":  {
-                                                       "address":  "123商业大道，利雅得12345，沙特阿拉伯",
-                                                       "phone":  "+237233427940 \u0026\u0026 +237698835251",
-                                                       "email":  "riyadh@exci-maa.com",
-                                                       "hours":  "周一 - 周五: 上午9:00 - 下午6:00"
-                                                   }
-                            },
-                    "faq":  {
-                                "title":  "常见问题",
-                                "description":  "找到关于我们的服务、流程以及我们如何帮助您的业务发展的常见问题答案。",
-                                "questions":  [
-                                                  {
-                                                      "question":  "EXCI-MAA提供哪些服务？",
-                                                      "answer":  "我们提供全面的会计、审计、税务和商业咨询服务，专门满足沙特阿拉伯及周边地区企业的独特需求。我们的服务包括财务报告、税务规划、内部审计和商业咨询。"
-                                                  },
-                                                  {
-                                                      "question":  "如何安排咨询？",
-                                                      "answer":  "您可以通过致电我们的办公室、发送电子邮件或使用此页面上的联系表格来安排咨询。我们的团队将在24小时内回复您以确认您的预约。"
-                                                  },
-                                                  {
-                                                      "question":  "您专长于哪些行业？",
-                                                      "answer":  "我们在与各种行业合作方面拥有丰富经验，包括医疗保健、建筑、零售、技术和专业服务。我们的团队具备处理每个行业独特财务挑战的专业知识。"
-                                                  },
-                                                  {
-                                                      "question":  "您的办公时间是什么？",
-                                                      "answer":  "我们的办公室开放时间为周日至周四上午9:00至下午6:00。我们在周五和周六以及公共假期关闭。"
-                                                  },
-                                                  {
-                                                      "question":  "您是否提供远程或虚拟服务？",
-                                                      "answer":  "是的，我们提供面对面和虚拟咨询服务，以满足客户的需求。我们的团队配备了安全的视频会议工具，可以远程提供相同水平的服务。"
-                                                  },
-                                                  {
-                                                      "question":  "您如何确保数据安全和保密性？",
-                                                      "answer":  "我们非常重视数据安全。所有客户信息都以最高保密性处理，并使用行业标准安全措施保护，包括加密和安全文件共享系统。"
-                                                  }
-                                              ],
-                                "stillHaveQuestions":  "还有问题？",
-                                "stillHaveDescription":  "找不到您要找的答案？我们的团队在这里为您提供帮助。联系我们，我们将尽快回复您。",
-                                "chatWithUs":  "与我们聊天",
-                                "chatDescription":  "我们的团队在这里为您提供帮助",
-                                "sendUsMessage":  "给我们发送消息",
-                                "callUs":  "致电我们",
-                                "callDescription":  "周一至周五，上午9点至下午6点",
-                                "emailUs":  "发送邮件",
-                                "emailDescription":  "我们将在24小时内回复您",
-                                "cantFindWhat":  "找不到您要找的内容？",
-                                "expertsDescription":  "我们的专家团队在这里回答您可能有的任何问题。",
-                                "contactSupport":  "联系支持"
-                            }
+                {
+                    "year": "2016",
+                    "title": "区域扩张",
+                    "description": "扩展服务覆盖中非，在该地区主要经济中心建立办事处。"
                 },
-    "training":  {
-                     "title":  "培训计划",
-                     "subtitle":  "我们提供专业发展和认证计划",
-                     "categories":  {
-                                        "accounting":  {
-                                                           "title":  "会计/税务/社会",
-                                                           "courses":  [
-                                                                           "如何保持和整理商业账户",
-                                                                           "如何创建或准备税务申报及其附件",
-                                                                           "增值税扣除和报告规则",
-                                                                           "如何预测和管理您的税务审计",
-                                                                           "刚果、喀麦隆、卢旺达、布隆迪、加蓬的增值税问题",
-                                                                           "自信地建立您的运营账户和现金流计划",
-                                                                           "检测税务申报欺诈的技术",
-                                                                           "ARD和税务赤字对应税收入的影响",
-                                                                           "DAS、申报和DSF之间的框架：CNSS控制案例",
-                                                                           "创建会计分配手册"
-                                                                       ],
-                                                           "price":  "$299",
-                                                           "duration":  "3天"
-                                                       },
-                                        "audit":  {
-                                                      "title":  "法定审计/管理控制",
-                                                      "courses":  [
-                                                                      "为什么要审计您的账户？",
-                                                                      "会计和财务审计方法",
-                                                                      "审计对税务申报的影响是什么？",
-                                                                      "中小企业、银行和保险内部审计的理论和实践",
-                                                                      "管理控制的理论和实践",
-                                                                      "仪表板和绩效评估",
-                                                                      "外部审计（审计公司）",
-                                                                      "内部审计–规划和执行",
-                                                                      "法定审计",
-                                                                      "优化您的现金流管理，特别是您的透支",
-                                                                      "从子公司和总部角度理解财务期望",
-                                                                      "平衡您的供应商付款与客户收款",
-                                                                      "评估您的信息系统–ICT IS",
-                                                                      "了解ERP、其流程并了解您的业务是否需要它们",
-                                                                      "审查内部控制的基本概念",
-                                                                      "审查内部审计的基本概念",
-                                                                      "检测和预防欺诈",
-                                                                      "广告行业风险管理"
-                                                                  ],
-                                                      "price":  "$399",
-                                                      "duration":  "5天"
-                                                  },
-                                        "advice":  {
-                                                       "title":  "建议",
-                                                       "courses":  [
-                                                                       "合并账户实践和递延税处理",
-                                                                       "理解国际税收的基础和主要问题：转移定价",
-                                                                       "OHADA地区公司评估",
-                                                                       "资产负债表重估：所有公司的必要性",
-                                                                       "OHADA地区合并、分拆和清算实践",
-                                                                       "如何在OHADA地区实践账户合并",
-                                                                       "编写可融资的商业计划",
-                                                                       "商业创建方法",
-                                                                       "合并–收购",
-                                                                       "法律、社会和税务审计",
-                                                                       "支持起草内部控制程序手册"
-                                                                   ],
-                                                       "price":  "$349",
-                                                       "duration":  "4天"
-                                                   },
-                                        "various":  {
-                                                        "title":  "各种主题",
-                                                        "courses":  [
-                                                                        "如何处理困难客户",
-                                                                        "释放您的魅力并在商业及其他领域发展领导力",
-                                                                        "办公室/公司的质量",
-                                                                        "如何成为财务/管理控制员或CFO及有效技术",
-                                                                        "使用会计和管理控制来控制银行风险",
-                                                                        "OHADA商业法",
-                                                                        "公司税务",
-                                                                        "掌握和审计永久银行控制",
-                                                                        "保险监管系统合规审计"
-                                                                    ],
-                                                        "price":  "$199",
-                                                        "duration":  "2天"
-                                                    }
-                                    }
-                 },
-    "partners":  {
-                     "label":  "我们的标志",
-                     "title":  "EXCI-MAA集团标志",
-                     "subtitle":  "我们的专业身份和品牌代表",
-                     "note":  "我们的标志代表我们的专业知识和对卓越的承诺",
-                     "founders":  {
-                                      "pierre":  {
-                                                     "name":  "Pierre KEMENI",
-                                                     "title":  "MBA, CPA, DEC",
-                                                     "description":  "拥有27年以上国际会计与审计经验的注册会计师与审计师。",
-                                                     "specialties":  [
-                                                                         "国际会计",
-                                                                         "审计",
-                                                                         "税务咨询"
-                                                                     ]
-                                                 },
-                                      "patrick":  {
-                                                      "name":  "Patrick NGATCHA",
-                                                      "title":  "DEC, DSCG, Master CCA, MSTCF",
-                                                      "description":  "拥有13年以上业务发展与金融咨询经验的注册会计师与审计师。",
-                                                      "specialties":  [
-                                                                          "业务发展",
-                                                                          "金融咨询",
-                                                                          "风险管理"
-                                                                      ]
-                                                  }
-                                  }
-                 },
-    "offices":  {
-                    "title":  "全球影响力",
-                    "subtitle":  "为世界各地的客户提供服务"
+                {
+                    "year": "2020",
+                    "title": "国际认可",
+                    "description": "在金融服务和合规标准方面获得国际认可。"
                 },
-    "admin":  {
-                  "dashboardTitle":  "管理仪表板",
-                  "dashboardSubtitle":  "管理您的内容和分析",
-                  "contentTitle":  "内容管理",
-                  "contentSubtitle":  "管理服务、活动和博客文章",
-                  "analyticsTitle":  "分析",
-                  "analyticsSubtitle":  "查看性能指标和洞察"
-              },
-    "servicesPage":  {
-                         "hero":  {
-                                      "title":  "用",
-                                      "titleHighlight":  "专业财务解决方案",
-                                      "titleSuffix":  "改变您的业务",
-                                      "subtitle":  "了解我们全面的金融服务如何推动增长、确保合规并优化您的业务绩效。"
-                                  },
-                         "detailedServices":  {
-                                                  "title":  "我们的",
-                                                  "titleHighlight":  "全面",
-                                                  "titleSuffix":  "服务",
-                                                  "subtitle":  "量身定制的财务解决方案，满足您独特的业务需求并推动可持续增长。",
-                                                  "services":  {
-                                                                   "accounting":  {
-                                                                                      "title":  "会计与簿记",
-                                                                                      "shortDesc":  "全面的财务记录保存和报告",
-                                                                                      "description":  "我们的专业会计团队提供全面的簿记服务，保持您的财务记录准确和最新。我们处理从日常交易到复杂财务报告的一切，确保符合所有相关法规。",
-                                                                                      "features":  [
-                                                                                                       "月度簿记和财务报表",
-                                                                                                       "应付和应收账款管理",
-                                                                                                       "银行和信用卡对账",
-                                                                                                       "工资处理和报告",
-                                                                                                       "财务报告和分析",
-                                                                                                       "会计科目设置和维护",
-                                                                                                       "库存跟踪和估值",
-                                                                                                       "固定资产管理",
-                                                                                                       "现金流分析和预测",
-                                                                                                       "预算准备和监控"
-                                                                                                   ]
-                                                                                  },
-                                                                   "audit":  {
-                                                                                 "title":  "审计与鉴证",
-                                                                                 "shortDesc":  "独立的财务验证和合规",
-                                                                                 "description":  "我们的审计服务提供对您财务报表的独立验证，确保准确性和符合会计准则。我们帮助识别风险并改善您的财务流程。",
-                                                                                 "features":  [
-                                                                                                  "财务报表审计",
-                                                                                                  "内部控制评估",
-                                                                                                  "合规审计",
-                                                                                                  "运营审计",
-                                                                                                  "专项审计",
-                                                                                                  "风险评估和管理",
-                                                                                                  "欺诈检测和预防",
-                                                                                                  "监管合规审查",
-                                                                                                  "尽职调查服务",
-                                                                                                  "绩效和效率审计"
-                                                                                              ]
-                                                                             },
-                                                                   "tax":  {
-                                                                               "title":  "税务咨询",
-                                                                               "shortDesc":  "战略性税务规划和合规",
-                                                                               "description":  "我们的税务专家提供全面的税务规划和合规服务，以最小化您的税务负担，同时确保完全符合所有税务法律法规。",
-                                                                               "features":  [
-                                                                                                "税务规划和策略",
-                                                                                                "企业和个人税务申报",
-                                                                                                "税务审计支持",
-                                                                                                "国际税务规划",
-                                                                                                "税务争议解决",
-                                                                                                "税务合规和申报",
-                                                                                                "转让定价文件",
-                                                                                                "税务优化策略",
-                                                                                                "遗产和继承规划",
-                                                                                                "多管辖区税务协调"
-                                                                                            ]
-                                                                           },
-                                                                   "advisory":  {
-                                                                                    "title":  "商业咨询",
-                                                                                    "shortDesc":  "战略性商业咨询和规划",
-                                                                                    "description":  "我们的商业咨询服务帮助组织应对复杂的商业挑战，改善绩效，并通过战略规划和实施实现可持续增长。",
-                                                                                    "features":  [
-                                                                                                     "商业规划和策略",
-                                                                                                     "财务建模和预测",
-                                                                                                     "并购",
-                                                                                                     "商业估值",
-                                                                                                     "绩效改善",
-                                                                                                     "战略规划和执行",
-                                                                                                     "市场分析和竞争情报",
-                                                                                                     "投资分析和尽职调查",
-                                                                                                     "变革管理和转型",
-                                                                                                     "董事会咨询和治理"
-                                                                                                 ]
-                                                                                },
-                                                                   "risk":  {
-                                                                                "title":  "风险管理",
-                                                                                "shortDesc":  "识别和减轻业务风险",
-                                                                                "description":  "我们的风险管理服务帮助组织识别、评估和减轻可能影响其业务目标和运营的风险。",
-                                                                                "features":  [
-                                                                                                 "风险评估和分析",
-                                                                                                 "内部审计服务",
-                                                                                                 "欺诈预防和检测",
-                                                                                                 "合规监控",
-                                                                                                 "业务连续性规划",
-                                                                                                 "企业风险管理",
-                                                                                                 "运营风险评估",
-                                                                                                 "财务风险评估",
-                                                                                                 "监管合规框架",
-                                                                                                 "危机管理和恢复"
-                                                                                             ]
-                                                                            },
-                                                                   "hr":  {
-                                                                              "title":  "人力资源和工资服务",
-                                                                              "shortDesc":  "全面的人力资源和工资解决方案",
-                                                                              "description":  "我们的人力资源和工资服务帮助组织管理其最宝贵的资产——员工——同时确保符合就业法律法规。",
-                                                                              "features":  [
-                                                                                               "工资处理",
-                                                                                               "人力资源政策制定",
-                                                                                               "员工福利管理",
-                                                                                               "绩效管理",
-                                                                                               "劳动法合规",
-                                                                                               "员工入职和离职",
-                                                                                               "薪酬和福利分析",
-                                                                                               "人力资源技术实施",
-                                                                                               "劳动力规划和分析",
-                                                                                               "员工关系和冲突解决"
-                                                                                           ]
-                                                                          },
-                                                                          "training": {
-  "title": "培训与发展",
-  "shortDesc": "专业培训项目和技能发展服务",
-  "description": "通过我们全面的培训和发展项目提升您团队的能力。我们提供定制的培训解决方案，旨在提高技能、确保合规性，并推动整个组织内的职业成长。",
-  "features": [
-    "职业发展培训",
-    "合规性和法规培训",
-    "技术技能提升",
-    "认证准备项目",
-    "定制研讨会和讲座",
-    "领导力发展培训",
-    "软技能培训项目",
-    "行业特定培训模块",
-    "团队建设研讨会",
-    "绩效提升培训",
-    "数字素养项目",
-    "沟通技能发展"
-  ]
-}
-                                                               },
-                                                  "scheduleAppointment":  "安排预约",
-                                                  "needCustomSolution":  "需要定制解决方案？我们的专家在这里为您提供帮助。",
-                                                  "getFreeConsultation":  "获得免费咨询"
-                                              },
-                         "process":  {
-                                         "title":  "我们的",
-                                         "titleHighlight":  "成熟",
-                                         "titleSuffix":  "流程",
-                                         "subtitle":  "一种结构化的方法，提供适合您业务需求的卓越金融服务。",
-                                         "steps":  [
-                                                       {
-                                                           "title":  "发现与分析",
-                                                           "description":  "我们通过深入讨论和分析开始了解您的业务需求、挑战和目标。",
-                                                           "duration":  "1-2周",
-                                                           "keyPoints":  [
-                                                                             "初步咨询",
-                                                                             "业务评估",
-                                                                             "需求收集",
-                                                                             "范围定义"
-                                                                         ]
-                                                       },
-                                                       {
-                                                           "title":  "提案与规划",
-                                                           "description":  "我们制定定制的服务计划，具有明确的目标、时间表和适合您需求的交付成果。",
-                                                           "duration":  "3-5天",
-                                                           "keyPoints":  [
-                                                                             "定制服务计划",
-                                                                             "定价结构",
-                                                                             "时间表协议",
-                                                                             "团队分配"
-                                                                         ]
-                                                       },
-                                                       {
-                                                           "title":  "团队入职",
-                                                           "description":  "我们的专家团队被分配到您的项目中，确保适合您特定需求的技能和专业知识。",
-                                                           "duration":  "2-3天",
-                                                           "keyPoints":  [
-                                                                             "专属客户经理",
-                                                                             "团队介绍",
-                                                                             "工具访问",
-                                                                             "沟通设置"
-                                                                         ]
-                                                       },
-                                                       {
-                                                           "title":  "实施",
-                                                           "description":  "我们精确执行商定的服务，让您在流程的每一步都保持知情。",
-                                                           "duration":  "因项目而异",
-                                                           "keyPoints":  [
-                                                                             "定期进度更新",
-                                                                             "质量保证",
-                                                                             "问题解决",
-                                                                             "里程碑审查"
-                                                                         ]
-                                                       },
-                                                       {
-                                                           "title":  "审查与报告",
-                                                           "description":  "我们提供全面的报告和分析，确保结果的完全透明和理解。",
-                                                           "duration":  "1周",
-                                                           "keyPoints":  [
-                                                                             "绩效指标",
-                                                                             "财务报告",
-                                                                             "合规检查",
-                                                                             "建议"
-                                                                         ]
-                                                       },
-                                                       {
-                                                           "title":  "持续支持",
-                                                           "description":  "我们的关系通过持续支持、定期审查和持续改进的战略指导继续。",
-                                                           "duration":  "持续",
-                                                           "keyPoints":  [
-                                                                             "专属支持",
-                                                                             "定期检查",
-                                                                             "战略建议",
-                                                                             "服务优化"
-                                                                         ]
-                                                       }
-                                                   ],
-                                         "readyToGetStarted":  "准备开始了吗？",
-                                         "readyDescription":  "我们的专家团队准备指导您完成我们的流程，并为您的业务提供卓越的金融服务。",
-                                         "getFreeConsultation":  "获得免费咨询",
-                                         "exploreServices":  "探索我们的服务"
-                                     },
-                         "pricing":  {
-                                         "title":  "简单透明的",
-                                         "titleHighlight":  "定价",
-                                         "titleSuffix":  "",
-                                         "subtitle":  "为您的业务需求选择完美的计划。无隐藏费用，随时取消。",
-                                         "monthlyBilling":  "月度计费",
-                                         "annualBilling":  "年度计费",
-                                         "saveUpTo":  "（节省高达20%）",
-                                         "plans":  {
-                                                       "starter":  {
-                                                                       "name":  "入门版",
-                                                                       "description":  "适合刚开始的小企业",
-                                                                       "features":  [
-                                                                                        "基础簿记",
-                                                                                        "月度财务报告",
-                                                                                        "季度税务估算",
-                                                                                        "电子邮件支持",
-                                                                                        "每月最多50笔交易",
-                                                                                        "基础财务仪表板"
-                                                                                    ],
-                                                                       "notIncluded":  [
-                                                                                           "审计支持",
-                                                                                           "专属客户经理",
-                                                                                           "定制报告",
-                                                                                           "税务申报",
-                                                                                           "库存管理"
-                                                                                       ],
-                                                                       "buttonText":  "开始"
-                                                                   },
-                                                       "professional":  {
-                                                                            "name":  "专业版",
-                                                                            "description":  "适合成长中的企业",
-                                                                            "features":  [
-                                                                                             "入门版的所有功能",
-                                                                                             "高级簿记",
-                                                                                             "每周财务报告",
-                                                                                             "月度税务估算",
-                                                                                             "优先电子邮件和电话支持",
-                                                                                             "每月最多200笔交易",
-                                                                                             "高级财务仪表板",
-                                                                                             "基础税务申报",
-                                                                                             "库存跟踪"
-                                                                                         ],
-                                                                            "notIncluded":  [
-                                                                                                "审计支持",
-                                                                                                "专属客户经理",
-                                                                                                "定制报告",
-                                                                                                "高级税务规划"
-                                                                                            ],
-                                                                            "buttonText":  "开始"
-                                                                        },
-                                                       "enterprise":  {
-                                                                          "name":  "企业版",
-                                                                          "description":  "适合有复杂需求的成熟企业",
-                                                                          "features":  [
-                                                                                           "专业版的所有功能",
-                                                                                           "全方位会计服务",
-                                                                                           "定制财务报告",
-                                                                                           "专属客户经理",
-                                                                                           "24/7优先支持",
-                                                                                           "无限交易",
-                                                                                           "高级税务规划",
-                                                                                           "审计支持",
-                                                                                           "定制集成",
-                                                                                           "董事会会议准备",
-                                                                                           "CFO咨询服务"
-                                                                                       ],
-                                                                          "notIncluded":  [
-
-                                                                                          ],
-                                                                          "buttonText":  "联系销售"
-                                                                      }
-                                                   },
-                                         "whatsIncluded":  "包含内容：",
-                                         "notIncluded":  "不包含：",
-                                         "billedAnnually":  "年度计费",
-                                         "orBilledAnnually":  "或年度计费${{annualPrice}}",
-                                         "save":  "节省{{percentage}}%",
-                                         "needCustomSolution":  "需要定制解决方案？我们为有独特需求的企业提供量身定制的套餐。",
-                                         "getCustomQuote":  "获得定制报价",
-                                         "notSureWhichPlan":  "不确定哪个计划适合您？",
-                                         "expertsHelp":  "我们的专家在这里帮助您为业务需求选择完美的解决方案。安排30分钟免费咨询来讨论您的需求。",
-                                         "scheduleFreeConsultation":  "安排免费咨询"
-                                     }
-                     },
-    "organizationalStructure":  {
-                                    "title":  "集团组织结构图",
-                                    "subtitle":  "我们的领导层和团队结构",
-                                    "chairman":  {
-                                                     "title":  "合伙人",
-                                                     "subtitle":  "董事会主席\n发展总监",
-                                                     "description":  "EXCI-MAA集团的全面领导和战略方向。"
-                                                 },
-                                    "adminPartner":  {
-                                                         "title":  "合伙人，总管理，财务和人力资源",
-                                                         "description":  "监督管理、财务和人力资源。"
-                                                     },
-                                    "auditPartner":  {
-                                                         "title":  "合伙人审计和咨询",
-                                                         "description":  "领导审计和咨询业务。"
-                                                     },
-                                    "managementPartner":  {
-                                                              "title":  "合伙人管理和组织",
-                                                              "description":  "处理管理和组织发展。"
-                                                          },
-                                    "qualityCompliance":  {
-                                                              "title":  "合伙人",
-                                                              "subtitle":  "质量和合规官",
-                                                              "description":  "确保整个组织的质量标准和合规性。"
-                                                          },
-                                    "countryDirector":  {
-                                                            "title":  "国家总监会计师\n高级和初级审计师",
-                                                            "description":  "管理国家业务，配备会计和审计团队。"
-                                                        },
-                                    "specialists":  {
-                                                        "title":  "专家和外部顾问",
-                                                        "subtitle":  "（医生、工程师、律师、社会学家、高级、初级...等）",
-                                                        "description":  "多学科的外部顾问和专家团队。"
-                                                    }
-                                },
-    "typicalOfficeOrganigram":  {
-                                    "title":  "典型办公室组织图",
-                                    "subtitle":  "专业服务的标准组织结构",
-                                    "officeManager":  {
-                                                          "title":  "办公室经理/总监",
-                                                          "description":  "全面管理和战略方向"
-                                                      },
-                                    "audit":  {
-                                                  "title":  "审计",
-                                                  "legal":  {
-                                                                "title":  "法律",
-                                                                "services":  [
-                                                                                 "法定审计",
-                                                                                 "公司账户审计，合并和综合账户",
-                                                                                 "分拆、合并等"
-                                                                             ]
-                                                            },
-                                                  "contractual":  {
-                                                                      "title":  "合同",
-                                                                      "services":  [
-                                                                                       "非政府组织项目审计",
-                                                                                       "预测账户",
-                                                                                       "石油成本审计",
-                                                                                       "内部控制"
-                                                                                   ]
-                                                                  }
-                                              },
-                                    "advisory":  {
-                                                     "title":  "咨询",
-                                                     "taxSocial":  {
-                                                                       "title":  "税务和社交",
-                                                                       "services":  [
-                                                                                        "法律建议：宪法、OHADA更新、审计、法律秘书处",
-                                                                                        "税法：尽职调查、税务建议和税务合规、审计",
-                                                                                        "社会法：招聘、雇佣合同、工资单、申报、审计"
-                                                                                    ]
-                                                                   },
-                                                     "training":  {
-                                                                      "title":  "培训",
-                                                                      "services":  [
-                                                                                       "培训",
-                                                                                       "在我们年度小组中选择主题"
-                                                                                   ]
-                                                                  },
-                                                     "finance":  {
-                                                                     "title":  "财务",
-                                                                     "services":  [
-                                                                                      "商业计划",
-                                                                                      "信贷组合分析",
-                                                                                      "评级",
-                                                                                      "评估"
-                                                                                  ]
-                                                                 }
-                                                 },
-                                    "management":  {
-                                                       "title":  "管理",
-                                                       "accounting":  {
-                                                                          "title":  "会计和税务协助",
-                                                                          "services":  [
-                                                                                           "年度或预测财务报表",
-                                                                                           "建立会计组织",
-                                                                                           "管理软件",
-                                                                                           "簿记",
-                                                                                           "税务申报"
-                                                                                       ]
-                                                                      },
-                                                       "facility":  {
-                                                                        "title":  "设施管理和MYCODEBAR",
-                                                                        "services":  [
-                                                                                         "设施管理",
-                                                                                         "通过条形码进行库存和资产的电子管理"
-                                                                                     ]
-                                                                    }
-                                                   }
-                                },
-    "trainingCategories":  {
-                               "accounting":  {
-                                                  "title":  "会计/税务/管理",
-                                                  "courses":  [
-                                                                  "会计和跟踪业务信息的方法",
-                                                                  "工作或准备税务报告和其他方法",
-                                                                  "税法和管理指导原则",
-                                                                  "审计和管理税务管理的方法",
-                                                                  "刚果、喀麦隆、卢旺达、布隆迪、加蓬的税法问题",
-                                                                  "建立您的商业账户和财务管理",
-                                                                  "在税务报告中找到管理的方法",
-                                                                  "税务和税务对税收的影响",
-                                                                  "DAS、信息和DSF之间的管理：CNSS问题",
-                                                                  "工作会计管理"
-                                                              ],
-                                                  "price":  "$299",
-                                                  "duration":  "3天"
-                                              },
-                               "audit":  {
-                                             "title":  "法律审计/管理管理",
-                                             "courses":  [
-                                                             "为什么要审计您的信息？",
-                                                             "审计商业和财务的方法",
-                                                             "审计对税务报告的影响是什么？",
-                                                             "小企业、银行和管理中内部审计的管理和管理",
-                                                             "管理和管理管理",
-                                                             "信息和管理管理",
-                                                             "内部审计（审计中心）",
-                                                             "内部审计–开发和管理",
-                                                             "法律审计",
-                                                             "正确管理财务管理，特别是管理",
-                                                             "理解管理和管理的财务需求",
-                                                             "人员和企业与客户的财务管理",
-                                                             "测量信息系统–ICT IS",
-                                                             "理解ERP、其管理并查看您的业务是否需要它",
-                                                             "审计内部管理管理",
-                                                             "审计内部审计管理",
-                                                             "寻找和预防管理",
-                                                             "在审计管理中管理管理"
-                                                         ],
-                                             "price":  "$399",
-                                             "duration":  "5天"
-                                         },
-                               "advice":  {
-                                              "title":  "建议",
-                                              "courses":  [
-                                                              "工作业务信息和税务管理的管理",
-                                                              "理解全球税务需求和需求：定价",
-                                                              "在OHADA地区测量企业",
-                                                              "重新评估管理：所有企业的需求",
-                                                              "OHADA地区合并、分离和停止的管理",
-                                                              "OHADA地区信息管理的工作方法",
-                                                              "编写业务管理",
-                                                              "工作业务的方法",
-                                                              "合并–收购",
-                                                              "法律审计、管理和税务",
-                                                              "帮助编写内部管理管理"
-                                                          ],
-                                              "price":  "$349",
-                                              "duration":  "4天"
-                                          },
-                               "various":  {
-                                               "title":  "各种",
-                                               "courses":  [
-                                                               "与管理客户合作的方法",
-                                                               "摆脱您的管理并增加您在业务和其他方面的管理",
-                                                               "办公室/中心的管理",
-                                                               "成为财务经理/管理或CFO和管理的方法",
-                                                               "使用业务和管理管理来预防银行管理",
-                                                               "OHADA商业法",
-                                                               "商业税",
-                                                               "使用和审计银行管理",
-                                                               "审计管理管理管理"
-                                                           ],
-                                               "price":  "$199",
-                                               "duration":  "2天"
-                                           }
-                           },
-    "organizationalChart":  {
-                                "title": "集团组织结构图",
-"chairman": "董事会主席",
-"partnerGeneral": "合伙人，一般行政，财务与人力资源",
-"partnerQuality": "合伙人质量与合规官",
-"partnerAudit": "合伙人审计与咨询",
-"partnerManagement": "合伙人管理与组织",
-"countryDirector": "国家总监会计师",
-"seniorJuniorAuditors": "高级和初级审计师",
-"specialists": "专家与外部顾问",
-"specialistsDetails": "(医生，工程师，律师，社会学家，资深，初级 ... 等)"
-                            }
+                {
+                    "year": "2022",
+                    "title": "数字化转型",
+                    "description": "实施尖端金融技术，增强服务交付和客户体验。"
+                },
+                {
+                    "year": "2024",
+                    "title": "全球覆盖",
+                    "description": "与国际公司建立合作伙伴关系，将我们的服务扩展到6个以上国家的客户。"
+                },
+                {
+                    "year": "2026",
+                    "title": "团队成长",
+                    "description": "我们的团队增长到50多名专业人士，巩固了我们作为领先金融服务公司的地位。"
+                }
+            ],
+            "journeyContinues": "我们的历程继续，我们努力在我们提供的每项服务中追求卓越。",
+            "learnMoreStory": "了解更多关于我们的故事"
+        },
+        "values": {
+            "title": "我们的核心价值观",
+            "subtitle": "指导我们工作并定义我们文化的原则",
+            "values": [
+                {
+                    "name": "卓越",
+                    "description": "我们致力于提供最高质量的服务，持续改进我们的技能和流程，超越客户期望。"
+                },
+                {
+                    "name": "诚信",
+                    "description": "我们坚持最高的道德标准，确保在所有互动中的透明度、诚实和专业精神。"
+                },
+                {
+                    "name": "创新",
+                    "description": "我们拥抱新技术和创意解决方案，提供推动客户成功的尖端服务。"
+                },
+                {
+                    "name": "客户专注",
+                    "description": "我们通过理解客户的独特需求并提供创造真正价值的定制解决方案来建立持久的关系。"
+                },
+                {
+                    "name": "专业精神",
+                    "description": "我们在工作的各个方面保持最高的专业知识、可靠性和问责制标准。"
+                },
+                {
+                    "name": "合作伙伴关系",
+                    "description": "我们相信与客户密切合作，作为他们团队的延伸工作，实现共同成功。"
+                }
+            ],
+            "learnMore": "了解更多",
+            "learnMoreCulture": "了解更多关于我们的文化"
+        },
+        "team": {
+            "title": "认识我们的领导团队",
+            "subtitle": "我们经验丰富的团队致力于为客户提供卓越的服务和价值。",
+            "members": [
+                {
+                    "name": "皮埃尔·凯梅尼",
+                    "role": "创始人兼首席执行官",
+                    "bio": "工商管理硕士，注册会计师，拥有超过 14 年国际会计和审计经验。",
+                    "expertise": [
+                        "国际会计",
+                        "财务审计",
+                        "商业策略",
+                        "企业财务"
+                    ]
+                },
+                {
+                    "name": "帕特里克·恩加查",
+                    "role": "董事总经理",
+                    "bio": "拥有13年以上业务开发和财务咨询经验的注册会计师。",
+                    "expertise": [
+                        "业务开发",
+                        "财务咨询",
+                        "税务规划",
+                        "企业策略"
+                    ]
+                },
+                {
+                    "name": "玛丽·劳尔·恩戈·比科伊",
+                    "role": "高级审计经理",
+                    "bio": "拥有15年以上审计和财务咨询服务经验。",
+                    "expertise": [
+                        "财务审计",
+                        "内部控制",
+                        "风险管理",
+                        "合规"
+                    ]
+                }
+            ],
+            "expertise": "专业知识",
+            "viewAllMembers": "查看所有团队成员"
+        }
+    },
+    "services": {
+        "title": "我们的服务",
+        "subtitle": "为您的业务需求提供全面解决方案",
+        "heroTitle": "专业服务",
+        "heroSubtitle": "根据您的业务需求定制的专家解决方案",
+        "detailedTitle": "服务详情",
+        "detailedSubtitle": "关于我们产品的深入信息",
+        "processTitle": "我们的流程",
+        "processSubtitle": "我们如何提供卓越成果",
+        "faqTitle": "常见问题",
+        "faqSubtitle": "关于我们服务的常见问题",
+        "pricingTitle": "定价",
+        "pricingSubtitle": "我们所有服务的透明定价",
+        "schedule": "预约",
+        "getStarted": "开始",
+        "keyFeatures": "关键特点",
+        "learnMore": "了解更多",
+        "viewAll": "查看所有服务",
+        "service1Title": "会计专业知识",
+        "service1Desc": "为企业的全面会计服务",
+        "service2Title": "法律和税务审计",
+        "service2Desc": "专业审计和合规服务",
+        "service3Title": "管理建议",
+        "service3Desc": "业务增长的战略咨询",
+        "service4Title": "工资和社会委员会",
+        "service4Desc": "完整的工资和人力资源管理",
+        "service5Title": "合并",
+        "service5Desc": "多实体组织的财务合并",
+        "service6Title": "风险咨询",
+        "service6Desc": "全面的风险评估和管理",
+        "categories": {
+            "all": "所有服务",
+            "finance": "金融服务",
+            "business": "商务服务"
+        }
+    },
+    "insights": {
+        "heroTitle": "洞察与新闻",
+        "heroSubtitle": "了解行业洞察和公司新闻的最新信息",
+        "eventsTitle": "活动",
+        "eventsSubtitle": "即将到来和过去的活动",
+        "blogTitle": "博客",
+        "blogSubtitle": "最新文章和洞察",
+        "promotionsTitle": "促销活动",
+        "promotionsSubtitle": "特别优惠和公告"
+    },
+    "careers": {
+        "heroTitle": "加入我们的团队",
+        "heroSubtitle": "与EXCI-MAA一起建设您的职业生涯",
+        "jobsTitle": "开放职位",
+        "jobsSubtitle": "当前的工作机会",
+        "chartTitle": "组织结构图",
+        "chartSubtitle": "我们的公司结构和领导层",
+        "benefitsTitle": "福利和津贴",
+        "benefitsSubtitle": "我们为员工提供的福利"
+    },
+    "contact": {
+        "title": "联系我们",
+        "subtitle": "与我们的团队取得联系",
+        "heroTitle": "联系我们",
+        "heroSubtitle": "我们在这里帮助您满足业务需求",
+        "formTitle": "给我们发送消息",
+        "formSubtitle": "填写下面的表格，我们会回复您",
+        "mapTitle": "找到我们",
+        "mapSubtitle": "访问我们在世界各地的办事处",
+        "infoTitle": "联系信息",
+        "infoSubtitle": "多种联系我们方式",
+        "cta": "立即联系我们",
+        "hero": {
+            "getInTouch": "联系我们",
+            "letsTalkAbout": "让我们谈谈您的",
+            "businessNeeds": "业务需求",
+            "description": "我们的财务专家团队随时准备帮助您应对业务挑战。通过下面的任何渠道联系我们，或直接发送消息。",
+            "contactMethods": {
+                "emailUs": "发送邮件",
+                "emailDescription": "我们的团队将在24小时内回复您",
+                "emailValue": "contactcam@excimaa.ca",
+                "callUs": "致电我们",
+                "callDescription": "周一至周五上午9点至下午5点",
+                "callValue": "+1 (555) 123-4567",
+                "visitUs": "访问我们",
+                "visitDescription": "来我们办公室打个招呼",
+                "visitValue": "123商业大道，城市，国家",
+                "officeHours": "办公时间",
+                "hoursDescription": "我们的工作时间",
+                "hoursValue": "周一 - 周五: 9:00 - 18:00"
+            },
+            "orFillOut": "或填写我们的联系表格，我们将在24小时内回复您。",
+            "sendUsMessage": "给我们发送消息"
+        },
+        "form": {
+            "title": "联系我们",
+            "subtitle": "有问题或准备开始您的项目？填写下面的表格，我们的团队将尽快回复您。",
+            "getInTouch": "联系我们",
+            "description": "有问题或准备开始您的项目？填写下面的表格，我们的团队将尽快回复您。",
+            "contactInformation": "联系信息",
+            "contactDescription": "填写表格，我们的团队将在24小时内回复您。如需即时帮助，请直接致电我们。",
+            "callUs": "致电我们",
+            "emailUs": "发送邮件",
+            "visitUs": "访问我们",
+            "businessHours": "办公时间",
+            "mondayFriday": "周一 - 周五: 上午9:00 - 下午6:00",
+            "saturdaySunday": "周六 - 周日: 休息",
+            "name": "姓名",
+            "name_placeholder": "张三",
+            "email": "电子邮件",
+            "email_placeholder": "zhang@example.com",
+            "phone": "电话",
+            "phone_placeholder": "+86 138 0013 8000",
+            "subject": "主题",
+            "select_subject": "选择主题",
+            "other": "其他",
+            "message": "消息",
+            "message_placeholder": "告诉我们更多...",
+            "submit": "发送消息",
+            "submitting": "发送中...",
+            "success": "谢谢！您的消息已发送。",
+            "error": "无法提交。请重试。",
+            "fullName": "全名",
+            "emailAddress": "电子邮件地址",
+            "phoneNumber": "电话号码",
+            "required": "*",
+            "placeholders": {
+                "fullName": "张三",
+                "email": "you@example.com",
+                "phone": "+86 138 0013 8000",
+                "selectSubject": "选择主题",
+                "message": "我们如何帮助您？"
+            },
+            "subjects": {
+                "generalInquiry": "一般咨询",
+                "accountingServices": "会计服务",
+                "auditServices": "审计服务",
+                "taxConsultation": "税务咨询",
+                "other": "其他"
+            },
+            "validation": {
+                "nameRequired": "姓名是必填项",
+                "emailRequired": "电子邮件是必填项",
+                "emailInvalid": "无效的电子邮件地址",
+                "subjectRequired": "主题是必填项",
+                "messageRequired": "消息是必填项",
+                "messageMinLength": "消息至少需要10个字符"
+            },
+            "sendMessage": "发送消息",
+            "sending": "发送中...",
+            "successTitle": "消息发送成功！",
+            "successDescription": "感谢您的联系。我们已收到您的消息，将在24小时内回复您。",
+            "sendAnotherMessage": "发送另一条消息",
+            "errorTitle": "错误",
+            "errorMessage": "发送消息失败。请稍后重试。",
+            "privacyNote": "我们将在24小时内回复您。您的信息是安全的。"
+        },
+        "map": {
+            "findOurOffice": "找到我们的办公室",
+            "description": "访问我们位置便利的办公室。我们在这里协助您满足所有财务需求。",
+            "ourOffice": "我们的办公室",
+            "address": "地址",
+            "phone": "电话",
+            "email": "电子邮件",
+            "businessHours": "办公时间",
+            "getDirections": "获取路线",
+            "needHelpFinding": "需要帮助找到我们？",
+            "helpDescription": "我们的办公室位于商业区中心，交通便利，可轻松到达公共交通。",
+            "centerMap": "将地图居中到我们的位置",
+            "officeLocation": {
+                "address": "123商业大道，利雅得12345，沙特阿拉伯",
+                "phone": "+237233427940 \u0026\u0026 +237698835251",
+                "email": "riyadh@exci-maa.com",
+                "hours": "周一 - 周五: 上午9:00 - 下午6:00"
+            }
+        },
+        "faq": {
+            "title": "常见问题",
+            "description": "找到关于我们的服务、流程以及我们如何帮助您的业务发展的常见问题答案。",
+            "questions": [
+                {
+                    "question": "EXCI-MAA提供哪些服务？",
+                    "answer": "我们提供全面的会计、审计、税务和商业咨询服务，专门满足沙特阿拉伯及周边地区企业的独特需求。我们的服务包括财务报告、税务规划、内部审计和商业咨询。"
+                },
+                {
+                    "question": "如何安排咨询？",
+                    "answer": "您可以通过致电我们的办公室、发送电子邮件或使用此页面上的联系表格来安排咨询。我们的团队将在24小时内回复您以确认您的预约。"
+                },
+                {
+                    "question": "您专长于哪些行业？",
+                    "answer": "我们在与各种行业合作方面拥有丰富经验，包括医疗保健、建筑、零售、技术和专业服务。我们的团队具备处理每个行业独特财务挑战的专业知识。"
+                },
+                {
+                    "question": "您的办公时间是什么？",
+                    "answer": "我们的办公室开放时间为周日至周四上午9:00至下午6:00。我们在周五和周六以及公共假期关闭。"
+                },
+                {
+                    "question": "您是否提供远程或虚拟服务？",
+                    "answer": "是的，我们提供面对面和虚拟咨询服务，以满足客户的需求。我们的团队配备了安全的视频会议工具，可以远程提供相同水平的服务。"
+                },
+                {
+                    "question": "您如何确保数据安全和保密性？",
+                    "answer": "我们非常重视数据安全。所有客户信息都以最高保密性处理，并使用行业标准安全措施保护，包括加密和安全文件共享系统。"
+                }
+            ],
+            "stillHaveQuestions": "还有问题？",
+            "stillHaveDescription": "找不到您要找的答案？我们的团队在这里为您提供帮助。联系我们，我们将尽快回复您。",
+            "chatWithUs": "与我们聊天",
+            "chatDescription": "我们的团队在这里为您提供帮助",
+            "sendUsMessage": "给我们发送消息",
+            "callUs": "致电我们",
+            "callDescription": "周一至周五，上午9点至下午6点",
+            "emailUs": "发送邮件",
+            "emailDescription": "我们将在24小时内回复您",
+            "cantFindWhat": "找不到您要找的内容？",
+            "expertsDescription": "我们的专家团队在这里回答您可能有的任何问题。",
+            "contactSupport": "联系支持"
+        }
+    },
+    "training": {
+        "title": "培训计划",
+        "subtitle": "我们提供专业发展和认证计划",
+        "categories": {
+            "accounting": {
+                "title": "会计/税务/社会",
+                "courses": [
+                    "如何保持和整理商业账户",
+                    "如何创建或准备税务申报及其附件",
+                    "增值税扣除和报告规则",
+                    "如何预测和管理您的税务审计",
+                    "刚果、喀麦隆、卢旺达、布隆迪、加蓬的增值税问题",
+                    "自信地建立您的运营账户和现金流计划",
+                    "检测税务申报欺诈的技术",
+                    "ARD和税务赤字对应税收入的影响",
+                    "DAS、申报和DSF之间的框架：CNSS控制案例",
+                    "创建会计分配手册"
+                ],
+                "price": "$299",
+                "duration": "3天"
+            },
+            "audit": {
+                "title": "法定审计/管理控制",
+                "courses": [
+                    "为什么要审计您的账户？",
+                    "会计和财务审计方法",
+                    "审计对税务申报的影响是什么？",
+                    "中小企业、银行和保险内部审计的理论和实践",
+                    "管理控制的理论和实践",
+                    "仪表板和绩效评估",
+                    "外部审计（审计公司）",
+                    "内部审计–规划和执行",
+                    "法定审计",
+                    "优化您的现金流管理，特别是您的透支",
+                    "从子公司和总部角度理解财务期望",
+                    "平衡您的供应商付款与客户收款",
+                    "评估您的信息系统–ICT IS",
+                    "了解ERP、其流程并了解您的业务是否需要它们",
+                    "审查内部控制的基本概念",
+                    "审查内部审计的基本概念",
+                    "检测和预防欺诈",
+                    "广告行业风险管理"
+                ],
+                "price": "$399",
+                "duration": "5天"
+            },
+            "advice": {
+                "title": "建议",
+                "courses": [
+                    "合并账户实践和递延税处理",
+                    "理解国际税收的基础和主要问题：转移定价",
+                    "OHADA地区公司评估",
+                    "资产负债表重估：所有公司的必要性",
+                    "OHADA地区合并、分拆和清算实践",
+                    "如何在OHADA地区实践账户合并",
+                    "编写可融资的商业计划",
+                    "商业创建方法",
+                    "合并–收购",
+                    "法律、社会和税务审计",
+                    "支持起草内部控制程序手册"
+                ],
+                "price": "$349",
+                "duration": "4天"
+            },
+            "various": {
+                "title": "各种主题",
+                "courses": [
+                    "如何处理困难客户",
+                    "释放您的魅力并在商业及其他领域发展领导力",
+                    "办公室/公司的质量",
+                    "如何成为财务/管理控制员或CFO及有效技术",
+                    "使用会计和管理控制来控制银行风险",
+                    "OHADA商业法",
+                    "公司税务",
+                    "掌握和审计永久银行控制",
+                    "保险监管系统合规审计"
+                ],
+                "price": "$199",
+                "duration": "2天"
+            }
+        }
+    },
+    "partners": {
+        "label": "我们的标志",
+        "title": "EXCI-MAA集团标志",
+        "subtitle": "我们的专业身份和品牌代表",
+        "note": "我们的标志代表我们的专业知识和对卓越的承诺",
+        "founders": {
+            "pierre": {
+                "name": "Pierre KEMENI",
+                "title": "MBA, CPA, DEC",
+                "description": "拥有27年以上国际会计与审计经验的注册会计师与审计师。",
+                "specialties": [
+                    "国际会计",
+                    "审计",
+                    "税务咨询"
+                ]
+            },
+            "patrick": {
+                "name": "Patrick NGATCHA",
+                "title": "DEC, DSCG, Master CCA, MSTCF",
+                "description": "拥有13年以上业务发展与金融咨询经验的注册会计师与审计师。",
+                "specialties": [
+                    "业务发展",
+                    "金融咨询",
+                    "风险管理"
+                ]
+            }
+        }
+    },
+    "offices": {
+        "title": "全球影响力",
+        "subtitle": "为世界各地的客户提供服务"
+    },
+    "admin": {
+        "dashboardTitle": "管理仪表板",
+        "dashboardSubtitle": "管理您的内容和分析",
+        "contentTitle": "内容管理",
+        "contentSubtitle": "管理服务、活动和博客文章",
+        "analyticsTitle": "分析",
+        "analyticsSubtitle": "查看性能指标和洞察"
+    },
+    "servicesPage": {
+        "hero": {
+            "title": "用",
+            "titleHighlight": "专业财务解决方案",
+            "titleSuffix": "改变您的业务",
+            "subtitle": "了解我们全面的金融服务如何推动增长、确保合规并优化您的业务绩效。"
+        },
+        "detailedServices": {
+            "title": "我们的",
+            "titleHighlight": "全面",
+            "titleSuffix": "服务",
+            "subtitle": "量身定制的财务解决方案，满足您独特的业务需求并推动可持续增长。",
+            "services": {
+                "accounting": {
+                    "title": "会计与簿记",
+                    "shortDesc": "全面的财务记录保存和报告",
+                    "description": "我们的专业会计团队提供全面的簿记服务，保持您的财务记录准确和最新。我们处理从日常交易到复杂财务报告的一切，确保符合所有相关法规。",
+                    "features": [
+                        "月度簿记和财务报表",
+                        "应付和应收账款管理",
+                        "银行和信用卡对账",
+                        "工资处理和报告",
+                        "财务报告和分析",
+                        "会计科目设置和维护",
+                        "库存跟踪和估值",
+                        "固定资产管理",
+                        "现金流分析和预测",
+                        "预算准备和监控"
+                    ]
+                },
+                "audit": {
+                    "title": "审计与鉴证",
+                    "shortDesc": "独立的财务验证和合规",
+                    "description": "我们的审计服务提供对您财务报表的独立验证，确保准确性和符合会计准则。我们帮助识别风险并改善您的财务流程。",
+                    "features": [
+                        "财务报表审计",
+                        "内部控制评估",
+                        "合规审计",
+                        "运营审计",
+                        "专项审计",
+                        "风险评估和管理",
+                        "欺诈检测和预防",
+                        "监管合规审查",
+                        "尽职调查服务",
+                        "绩效和效率审计"
+                    ]
+                },
+                "tax": {
+                    "title": "税务咨询",
+                    "shortDesc": "战略性税务规划和合规",
+                    "description": "我们的税务专家提供全面的税务规划和合规服务，以最小化您的税务负担，同时确保完全符合所有税务法律法规。",
+                    "features": [
+                        "税务规划和策略",
+                        "企业和个人税务申报",
+                        "税务审计支持",
+                        "国际税务规划",
+                        "税务争议解决",
+                        "税务合规和申报",
+                        "转让定价文件",
+                        "税务优化策略",
+                        "遗产和继承规划",
+                        "多管辖区税务协调"
+                    ]
+                },
+                "advisory": {
+                    "title": "商业咨询",
+                    "shortDesc": "战略性商业咨询和规划",
+                    "description": "我们的商业咨询服务帮助组织应对复杂的商业挑战，改善绩效，并通过战略规划和实施实现可持续增长。",
+                    "features": [
+                        "商业规划和策略",
+                        "财务建模和预测",
+                        "并购",
+                        "商业估值",
+                        "绩效改善",
+                        "战略规划和执行",
+                        "市场分析和竞争情报",
+                        "投资分析和尽职调查",
+                        "变革管理和转型",
+                        "董事会咨询和治理"
+                    ]
+                },
+                "risk": {
+                    "title": "风险管理",
+                    "shortDesc": "识别和减轻业务风险",
+                    "description": "我们的风险管理服务帮助组织识别、评估和减轻可能影响其业务目标和运营的风险。",
+                    "features": [
+                        "风险评估和分析",
+                        "内部审计服务",
+                        "欺诈预防和检测",
+                        "合规监控",
+                        "业务连续性规划",
+                        "企业风险管理",
+                        "运营风险评估",
+                        "财务风险评估",
+                        "监管合规框架",
+                        "危机管理和恢复"
+                    ]
+                },
+                "hr": {
+                    "title": "人力资源和工资服务",
+                    "shortDesc": "全面的人力资源和工资解决方案",
+                    "description": "我们的人力资源和工资服务帮助组织管理其最宝贵的资产——员工——同时确保符合就业法律法规。",
+                    "features": [
+                        "工资处理",
+                        "人力资源政策制定",
+                        "员工福利管理",
+                        "绩效管理",
+                        "劳动法合规",
+                        "员工入职和离职",
+                        "薪酬和福利分析",
+                        "人力资源技术实施",
+                        "劳动力规划和分析",
+                        "员工关系和冲突解决"
+                    ]
+                },
+                "training": {
+                    "title": "培训与发展",
+                    "shortDesc": "专业培训项目和技能发展服务",
+                    "description": "通过我们全面的培训和发展项目提升您团队的能力。我们提供定制的培训解决方案，旨在提高技能、确保合规性，并推动整个组织内的职业成长。",
+                    "features": [
+                        "职业发展培训",
+                        "合规性和法规培训",
+                        "技术技能提升",
+                        "认证准备项目",
+                        "定制研讨会和讲座",
+                        "领导力发展培训",
+                        "软技能培训项目",
+                        "行业特定培训模块",
+                        "团队建设研讨会",
+                        "绩效提升培训",
+                        "数字素养项目",
+                        "沟通技能发展"
+                    ]
+                }
+            },
+            "scheduleAppointment": "安排预约",
+            "needCustomSolution": "需要定制解决方案？我们的专家在这里为您提供帮助。",
+            "getFreeConsultation": "获得免费咨询"
+        },
+        "process": {
+            "title": "我们的",
+            "titleHighlight": "成熟",
+            "titleSuffix": "流程",
+            "subtitle": "一种结构化的方法，提供适合您业务需求的卓越金融服务。",
+            "steps": [
+                {
+                    "title": "发现与分析",
+                    "description": "我们通过深入讨论和分析开始了解您的业务需求、挑战和目标。",
+                    "duration": "1-2周",
+                    "keyPoints": [
+                        "初步咨询",
+                        "业务评估",
+                        "需求收集",
+                        "范围定义"
+                    ]
+                },
+                {
+                    "title": "提案与规划",
+                    "description": "我们制定定制的服务计划，具有明确的目标、时间表和适合您需求的交付成果。",
+                    "duration": "3-5天",
+                    "keyPoints": [
+                        "定制服务计划",
+                        "定价结构",
+                        "时间表协议",
+                        "团队分配"
+                    ]
+                },
+                {
+                    "title": "团队入职",
+                    "description": "我们的专家团队被分配到您的项目中，确保适合您特定需求的技能和专业知识。",
+                    "duration": "2-3天",
+                    "keyPoints": [
+                        "专属客户经理",
+                        "团队介绍",
+                        "工具访问",
+                        "沟通设置"
+                    ]
+                },
+                {
+                    "title": "实施",
+                    "description": "我们精确执行商定的服务，让您在流程的每一步都保持知情。",
+                    "duration": "因项目而异",
+                    "keyPoints": [
+                        "定期进度更新",
+                        "质量保证",
+                        "问题解决",
+                        "里程碑审查"
+                    ]
+                },
+                {
+                    "title": "审查与报告",
+                    "description": "我们提供全面的报告和分析，确保结果的完全透明和理解。",
+                    "duration": "1周",
+                    "keyPoints": [
+                        "绩效指标",
+                        "财务报告",
+                        "合规检查",
+                        "建议"
+                    ]
+                },
+                {
+                    "title": "持续支持",
+                    "description": "我们的关系通过持续支持、定期审查和持续改进的战略指导继续。",
+                    "duration": "持续",
+                    "keyPoints": [
+                        "专属支持",
+                        "定期检查",
+                        "战略建议",
+                        "服务优化"
+                    ]
+                }
+            ],
+            "readyToGetStarted": "准备开始了吗？",
+            "readyDescription": "我们的专家团队准备指导您完成我们的流程，并为您的业务提供卓越的金融服务。",
+            "getFreeConsultation": "获得免费咨询",
+            "exploreServices": "探索我们的服务"
+        },
+        "pricing": {
+            "title": "简单透明的",
+            "titleHighlight": "定价",
+            "titleSuffix": "",
+            "subtitle": "为您的业务需求选择完美的计划。无隐藏费用，随时取消。",
+            "monthlyBilling": "月度计费",
+            "annualBilling": "年度计费",
+            "saveUpTo": "（节省高达20%）",
+            "plans": {
+                "starter": {
+                    "name": "入门版",
+                    "description": "适合刚开始的小企业",
+                    "features": [
+                        "基础簿记",
+                        "月度财务报告",
+                        "季度税务估算",
+                        "电子邮件支持",
+                        "每月最多50笔交易",
+                        "基础财务仪表板"
+                    ],
+                    "notIncluded": [
+                        "审计支持",
+                        "专属客户经理",
+                        "定制报告",
+                        "税务申报",
+                        "库存管理"
+                    ],
+                    "buttonText": "开始"
+                },
+                "professional": {
+                    "name": "专业版",
+                    "description": "适合成长中的企业",
+                    "features": [
+                        "入门版的所有功能",
+                        "高级簿记",
+                        "每周财务报告",
+                        "月度税务估算",
+                        "优先电子邮件和电话支持",
+                        "每月最多200笔交易",
+                        "高级财务仪表板",
+                        "基础税务申报",
+                        "库存跟踪"
+                    ],
+                    "notIncluded": [
+                        "审计支持",
+                        "专属客户经理",
+                        "定制报告",
+                        "高级税务规划"
+                    ],
+                    "buttonText": "开始"
+                },
+                "enterprise": {
+                    "name": "企业版",
+                    "description": "适合有复杂需求的成熟企业",
+                    "features": [
+                        "专业版的所有功能",
+                        "全方位会计服务",
+                        "定制财务报告",
+                        "专属客户经理",
+                        "24/7优先支持",
+                        "无限交易",
+                        "高级税务规划",
+                        "审计支持",
+                        "定制集成",
+                        "董事会会议准备",
+                        "CFO咨询服务"
+                    ],
+                    "notIncluded": [],
+                    "buttonText": "联系销售"
+                }
+            },
+            "whatsIncluded": "包含内容：",
+            "notIncluded": "不包含：",
+            "billedAnnually": "年度计费",
+            "orBilledAnnually": "或年度计费${{annualPrice}}",
+            "save": "节省{{percentage}}%",
+            "needCustomSolution": "需要定制解决方案？我们为有独特需求的企业提供量身定制的套餐。",
+            "getCustomQuote": "获得定制报价",
+            "notSureWhichPlan": "不确定哪个计划适合您？",
+            "expertsHelp": "我们的专家在这里帮助您为业务需求选择完美的解决方案。安排30分钟免费咨询来讨论您的需求。",
+            "scheduleFreeConsultation": "安排免费咨询"
+        }
+    },
+    "organizationalStructure": {
+        "title": "集团组织结构图",
+        "subtitle": "我们的领导层和团队结构",
+        "chairman": {
+            "title": "合伙人",
+            "subtitle": "董事会主席\n发展总监",
+            "description": "EXCI-MAA集团的全面领导和战略方向。"
+        },
+        "adminPartner": {
+            "title": "合伙人，总管理，财务和人力资源",
+            "description": "监督管理、财务和人力资源。"
+        },
+        "auditPartner": {
+            "title": "合伙人审计和咨询",
+            "description": "领导审计和咨询业务。"
+        },
+        "managementPartner": {
+            "title": "合伙人管理和组织",
+            "description": "处理管理和组织发展。"
+        },
+        "qualityCompliance": {
+            "title": "合伙人",
+            "subtitle": "质量和合规官",
+            "description": "确保整个组织的质量标准和合规性。"
+        },
+        "countryDirector": {
+            "title": "国家总监会计师\n高级和初级审计师",
+            "description": "管理国家业务，配备会计和审计团队。"
+        },
+        "specialists": {
+            "title": "专家和外部顾问",
+            "subtitle": "（医生、工程师、律师、社会学家、高级、初级...等）",
+            "description": "多学科的外部顾问和专家团队。"
+        }
+    },
+    "typicalOfficeOrganigram": {
+        "title": "典型办公室组织图",
+        "subtitle": "专业服务的标准组织结构",
+        "officeManager": {
+            "title": "办公室经理/总监",
+            "description": "全面管理和战略方向"
+        },
+        "audit": {
+            "title": "审计",
+            "legal": {
+                "title": "法律",
+                "services": [
+                    "法定审计",
+                    "公司账户审计，合并和综合账户",
+                    "分拆、合并等"
+                ]
+            },
+            "contractual": {
+                "title": "合同",
+                "services": [
+                    "非政府组织项目审计",
+                    "预测账户",
+                    "石油成本审计",
+                    "内部控制"
+                ]
+            }
+        },
+        "advisory": {
+            "title": "咨询",
+            "taxSocial": {
+                "title": "税务和社交",
+                "services": [
+                    "法律建议：宪法、OHADA更新、审计、法律秘书处",
+                    "税法：尽职调查、税务建议和税务合规、审计",
+                    "社会法：招聘、雇佣合同、工资单、申报、审计"
+                ]
+            },
+            "training": {
+                "title": "培训",
+                "services": [
+                    "培训",
+                    "在我们年度小组中选择主题"
+                ]
+            },
+            "finance": {
+                "title": "财务",
+                "services": [
+                    "商业计划",
+                    "信贷组合分析",
+                    "评级",
+                    "评估"
+                ]
+            }
+        },
+        "management": {
+            "title": "管理",
+            "accounting": {
+                "title": "会计和税务协助",
+                "services": [
+                    "年度或预测财务报表",
+                    "建立会计组织",
+                    "管理软件",
+                    "簿记",
+                    "税务申报"
+                ]
+            },
+            "facility": {
+                "title": "设施管理和MYCODEBAR",
+                "services": [
+                    "设施管理",
+                    "通过条形码进行库存和资产的电子管理"
+                ]
+            }
+        }
+    },
+    "trainingCategories": {
+        "accounting": {
+            "title": "会计/税务/管理",
+            "courses": [
+                "会计和跟踪业务信息的方法",
+                "工作或准备税务报告和其他方法",
+                "税法和管理指导原则",
+                "审计和管理税务管理的方法",
+                "刚果、喀麦隆、卢旺达、布隆迪、加蓬的税法问题",
+                "建立您的商业账户和财务管理",
+                "在税务报告中找到管理的方法",
+                "税务和税务对税收的影响",
+                "DAS、信息和DSF之间的管理：CNSS问题",
+                "工作会计管理"
+            ],
+            "price": "$299",
+            "duration": "3天"
+        },
+        "audit": {
+            "title": "法律审计/管理管理",
+            "courses": [
+                "为什么要审计您的信息？",
+                "审计商业和财务的方法",
+                "审计对税务报告的影响是什么？",
+                "小企业、银行和管理中内部审计的管理和管理",
+                "管理和管理管理",
+                "信息和管理管理",
+                "内部审计（审计中心）",
+                "内部审计–开发和管理",
+                "法律审计",
+                "正确管理财务管理，特别是管理",
+                "理解管理和管理的财务需求",
+                "人员和企业与客户的财务管理",
+                "测量信息系统–ICT IS",
+                "理解ERP、其管理并查看您的业务是否需要它",
+                "审计内部管理管理",
+                "审计内部审计管理",
+                "寻找和预防管理",
+                "在审计管理中管理管理"
+            ],
+            "price": "$399",
+            "duration": "5天"
+        },
+        "advice": {
+            "title": "建议",
+            "courses": [
+                "工作业务信息和税务管理的管理",
+                "理解全球税务需求和需求：定价",
+                "在OHADA地区测量企业",
+                "重新评估管理：所有企业的需求",
+                "OHADA地区合并、分离和停止的管理",
+                "OHADA地区信息管理的工作方法",
+                "编写业务管理",
+                "工作业务的方法",
+                "合并–收购",
+                "法律审计、管理和税务",
+                "帮助编写内部管理管理"
+            ],
+            "price": "$349",
+            "duration": "4天"
+        },
+        "various": {
+            "title": "各种",
+            "courses": [
+                "与管理客户合作的方法",
+                "摆脱您的管理并增加您在业务和其他方面的管理",
+                "办公室/中心的管理",
+                "成为财务经理/管理或CFO和管理的方法",
+                "使用业务和管理管理来预防银行管理",
+                "OHADA商业法",
+                "商业税",
+                "使用和审计银行管理",
+                "审计管理管理管理"
+            ],
+            "price": "$199",
+            "duration": "2天"
+        }
+    },
+    "organizationalChart": {
+        "title": "集团组织结构图",
+        "chairman": "董事会主席",
+        "partnerGeneral": "合伙人，一般行政，财务与人力资源",
+        "partnerQuality": "合伙人质量与合规官",
+        "partnerAudit": "合伙人审计与咨询",
+        "partnerManagement": "合伙人管理与组织",
+        "countryDirector": "国家总监会计师",
+        "seniorJuniorAuditors": "高级和初级审计师",
+        "specialists": "专家与外部顾问",
+        "specialistsDetails": "(医生，工程师，律师，社会学家，资深，初级 ... 等)"
+    }
 }

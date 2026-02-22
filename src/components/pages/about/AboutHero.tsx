@@ -4,9 +4,9 @@ import { useLanguage } from '../../../contexts/LanguageContext';
 
 const AboutHero: FC = () => {
   const { t } = useLanguage();
-  
+
   const stats = [
-    { id: 1, name: t('aboutPage.hero.stats.yearsExperience'), value: '10+', icon: <Award className="h-8 w-8 text-white" /> },
+    { id: 1, name: t('aboutPage.hero.stats.yearsExperience'), value: '14+', icon: <Award className="h-8 w-8 text-white" /> },
     { id: 2, name: t('aboutPage.hero.stats.countriesServed'), value: '6+', icon: <Globe className="h-8 w-8 text-white" /> },
     { id: 3, name: t('aboutPage.hero.stats.teamMembers'), value: '50+', icon: <Users className="h-8 w-8 text-white" /> },
     { id: 4, name: t('aboutPage.hero.stats.clientSatisfaction'), value: '98%', icon: <Award className="h-8 w-8 text-white" /> },
@@ -20,7 +20,7 @@ const AboutHero: FC = () => {
         <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
         <div className="absolute -bottom-20 right-20 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-16 lg:px-8 xl:mt-20">
@@ -54,7 +54,7 @@ const AboutHero: FC = () => {
           </main>
         </div>
       </div>
-      
+
       {/* Stats */}
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">

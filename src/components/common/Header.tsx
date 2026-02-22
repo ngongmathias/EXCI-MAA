@@ -20,19 +20,20 @@ const Header: FC = () => {
   const navigate = useNavigate();
   const servicesRef = useRef<HTMLDivElement>(null);
   const officesRef = useRef<HTMLDivElement>(null);
-  
+
   const services = getTranslatedServices(t);
   const offices = getOfficesForDropdown();
 
   const navigationBefore = [
-    {name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" />},
+    { name: t('nav.about'), href: '/about', icon: <Users className="h-4 w-4" /> },
   ];
 
   const navigationAfter = [
-    {name: t('nav.careers'), href: '/careers', icon: <UserPlus className="h-4 w-4" />},
-    {name: t('nav.insights'), href: '/insights', icon: <BookOpen className="h-4 w-4" />},
-    {name: t('nav.accountingNews'), href: '/accounting-news', icon: <Newspaper className="h-4 w-4" />},
-    {name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" />}
+    { name: t('nav.industries', 'Industries'), href: '/industries', icon: <Briefcase className="h-4 w-4" /> },
+    { name: t('nav.globalOffices'), href: '/global-offices', icon: <Globe className="h-4 w-4" /> },
+    { name: t('nav.insights'), href: '/insights', icon: <BookOpen className="h-4 w-4" /> },
+    { name: t('nav.careers'), href: '/careers', icon: <UserPlus className="h-4 w-4" /> },
+    { name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" /> }
   ];
 
   // No need for click outside handlers since we're using hover
@@ -63,9 +64,9 @@ const Header: FC = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <div className="h-12 w-auto">
-                <img 
-                  src="/images/logos/logo.png" 
-                  alt="EXCI-MAA Logo" 
+                <img
+                  src="/images/logos/logo.png"
+                  alt="EXCI-MAA Logo"
                   className="h-full w-auto object-contain"
                 />
               </div>
@@ -79,49 +80,44 @@ const Header: FC = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
+                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
               >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
+                <span className={`transition-colors duration-200 ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600'
+                  : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
                   {item.icon}
                 </span>
                 <span>{item.name}</span>
               </Link>
             ))}
-            
+
             {/* Services Dropdown */}
-            <div 
-              className="relative" 
+            <div
+              className="relative"
               ref={servicesRef}
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <Link
                 to="/services"
-                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                  location.pathname.startsWith('/services') || isServicesOpen
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
+                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${location.pathname.startsWith('/services') || isServicesOpen
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
               >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname.startsWith('/services') || isServicesOpen
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
+                <span className={`transition-colors duration-200 ${location.pathname.startsWith('/services') || isServicesOpen
+                  ? 'text-blue-600'
+                  : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
                   <Briefcase className="h-4 w-4" />
                 </span>
                 <span>{t('nav.services')}</span>
-                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
-                  isServicesOpen ? 'rotate-180' : ''
-                }`} />
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''
+                  }`} />
               </Link>
 
               {/* Services Dropdown Menu */}
@@ -161,31 +157,28 @@ const Header: FC = () => {
             </div>
 
             {/* Global Offices Dropdown */}
-            <div 
-              className="relative" 
+            <div
+              className="relative"
               ref={officesRef}
               onMouseEnter={() => setIsOfficesOpen(true)}
               onMouseLeave={() => setIsOfficesOpen(false)}
             >
               <Link
                 to="/global-offices"
-                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                  location.pathname.startsWith('/global-offices') || isOfficesOpen
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
+                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${location.pathname.startsWith('/global-offices') || isOfficesOpen
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
               >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname.startsWith('/global-offices') || isOfficesOpen
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
+                <span className={`transition-colors duration-200 ${location.pathname.startsWith('/global-offices') || isOfficesOpen
+                  ? 'text-blue-600'
+                  : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
                   <Globe className="h-4 w-4" />
                 </span>
                 <span>{t('nav.globalOffices')}</span>
-                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
-                  isOfficesOpen ? 'rotate-180' : ''
-                }`} />
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOfficesOpen ? 'rotate-180' : ''
+                  }`} />
               </Link>
 
               {/* Offices Dropdown Menu */}
@@ -223,23 +216,21 @@ const Header: FC = () => {
                 </div>
               )}
             </div>
-            
+
             {/* Navigation items after Services */}
             {navigationAfter.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
+                className={`group flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
               >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
+                <span className={`transition-colors duration-200 ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600'
+                  : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
                   {item.icon}
                 </span>
                 <span>{item.name}</span>
@@ -247,7 +238,7 @@ const Header: FC = () => {
             ))}
           </nav>
 
-          { /* Desktop Actions */ }
+          { /* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             <LanguageSwitcher />
             <AuthButton />
@@ -277,24 +268,22 @@ const Header: FC = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
+                className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
+                <span className={`transition-colors duration-200 ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600'
+                  : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
                   {item.icon}
                 </span>
                 <span>{item.name}</span>
               </Link>
             ))}
-            
+
             {/* Mobile Services Section */}
             <div className="border-t border-gray-200 pt-3 mt-3">
               <div className="px-3 py-2">
@@ -362,24 +351,33 @@ const Header: FC = () => {
                 ))}
               </div>
             </div>
-            
-            {/* Navigation items after Services */}
+
+            {/* Mobile Navigation items */}
+            <div className="border-t border-gray-200 pt-3 mt-3">
+              <Link
+                to="/industries"
+                className="group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Briefcase className="h-5 w-5 text-gray-500" />
+                <span>{t('nav.industries', 'Industries')}</span>
+              </Link>
+            </div>
+
             {navigationAfter.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
+                className={`group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                <span className={`transition-colors duration-200 ${
-                  location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
-                    ? 'text-blue-600'
-                    : 'text-gray-500 group-hover:text-blue-600'
-                }`}>
+                <span className={`transition-colors duration-200 ${location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href))
+                  ? 'text-blue-600'
+                  : 'text-gray-500 group-hover:text-blue-600'
+                  }`}>
                   {item.icon}
                 </span>
                 <span>{item.name}</span>

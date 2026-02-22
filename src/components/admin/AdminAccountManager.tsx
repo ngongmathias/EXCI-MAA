@@ -154,7 +154,7 @@ const AdminAccountManager: React.FC = () => {
 
         setSuccess('User added successfully. They will be able to log in with their email.');
       }
-      
+
       setEditDialogOpen(false);
       setSelectedUser(null);
       setFormData({
@@ -164,7 +164,7 @@ const AdminAccountManager: React.FC = () => {
         role: 'admin',
         isActive: true,
       });
-      
+
       await loadUsers(); // Reload users
     } catch (err: any) {
       setError('Failed to save user: ' + err.message);
@@ -184,7 +184,7 @@ const AdminAccountManager: React.FC = () => {
         setSuccess('User deleted successfully');
         setDeleteDialogOpen(false);
         setSelectedUser(null);
-        
+
         await loadUsers(); // Reload users
       } catch (err: any) {
         setError('Failed to delete user: ' + err.message);
@@ -206,8 +206,8 @@ const AdminAccountManager: React.FC = () => {
   };
 
   const isCurrentUser = (user: AdminUser) => {
-    return user.clerkUserId === currentUser?.id || 
-           (user.clerkUserId && user.clerkUserId.startsWith('pending_') && user.email === currentUser?.primaryEmailAddress?.emailAddress);
+    return user.clerkUserId === currentUser?.id ||
+      (user.clerkUserId && user.clerkUserId.startsWith('pending_') && user.email === currentUser?.primaryEmailAddress?.emailAddress);
   };
 
   return (
@@ -253,7 +253,7 @@ const AdminAccountManager: React.FC = () => {
 
       {/* Stats Cards */}
       <Grid container spacing={3} sx={{ mb: 3 }}>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <AdminIcon sx={{ fontSize: 40, color: 'primary.main', mb: 1 }} />
@@ -266,7 +266,7 @@ const AdminAccountManager: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <SecurityIcon sx={{ fontSize: 40, color: 'success.main', mb: 1 }} />
@@ -279,7 +279,7 @@ const AdminAccountManager: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <PersonIcon sx={{ fontSize: 40, color: 'error.main', mb: 1 }} />
@@ -292,7 +292,7 @@ const AdminAccountManager: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={6} md={3}>
           <Card>
             <CardContent sx={{ textAlign: 'center' }}>
               <PersonIcon sx={{ fontSize: 40, color: 'warning.main', mb: 1 }} />
@@ -362,7 +362,7 @@ const AdminAccountManager: React.FC = () => {
                     </TableCell>
                     <TableCell>
                       <Typography variant="body2">
-                        {user.lastLogin 
+                        {user.lastLogin
                           ? new Date(user.lastLogin).toLocaleDateString()
                           : 'Never'
                         }
@@ -382,7 +382,7 @@ const AdminAccountManager: React.FC = () => {
                           onClick={() => handleDeleteUser(user)}
                           color="error"
                           disabled={
-                            user.role === 'super_admin' && 
+                            user.role === 'super_admin' &&
                             users.filter(u => u.role === 'super_admin').length === 1
                           }
                         >
@@ -465,7 +465,7 @@ const AdminAccountManager: React.FC = () => {
         <DialogTitle>Confirm Delete</DialogTitle>
         <DialogContent>
           <Typography>
-            Are you sure you want to delete {selectedUser?.firstName} {selectedUser?.lastName}? 
+            Are you sure you want to delete {selectedUser?.firstName} {selectedUser?.lastName}?
             This action cannot be undone.
           </Typography>
         </DialogContent>

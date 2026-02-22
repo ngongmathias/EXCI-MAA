@@ -6,7 +6,7 @@ import { BarChart3, FileText, PieChart, Briefcase, Shield, Users, CheckCircle, C
 
 const DetailedServices: FC = () => {
   const { t } = useTranslation();
-  
+
   const services = [
     {
       id: 'accounting',
@@ -17,7 +17,8 @@ const DetailedServices: FC = () => {
       features: t('servicesPage.detailedServices.services.accounting.features', { returnObjects: true }) as string[],
       color: 'from-blue-500 to-blue-600',
       bgColor: 'bg-blue-50',
-      iconBg: 'bg-blue-100'
+      iconBg: 'bg-blue-100',
+      detailPath: '/services/accounting-outsourcing',
     },
     {
       id: 'audit',
@@ -28,7 +29,8 @@ const DetailedServices: FC = () => {
       features: t('servicesPage.detailedServices.services.audit.features', { returnObjects: true }) as string[],
       color: 'from-green-500 to-green-600',
       bgColor: 'bg-green-50',
-      iconBg: 'bg-green-100'
+      iconBg: 'bg-green-100',
+      detailPath: '/services/audit-assurance',
     },
     {
       id: 'tax',
@@ -39,7 +41,8 @@ const DetailedServices: FC = () => {
       features: t('servicesPage.detailedServices.services.tax.features', { returnObjects: true }) as string[],
       color: 'from-purple-500 to-purple-600',
       bgColor: 'bg-purple-50',
-      iconBg: 'bg-purple-100'
+      iconBg: 'bg-purple-100',
+      detailPath: '/services/tax',
     },
     {
       id: 'advisory',
@@ -50,7 +53,8 @@ const DetailedServices: FC = () => {
       features: t('servicesPage.detailedServices.services.advisory.features', { returnObjects: true }) as string[],
       color: 'from-yellow-500 to-yellow-600',
       bgColor: 'bg-yellow-50',
-      iconBg: 'bg-yellow-100'
+      iconBg: 'bg-yellow-100',
+      detailPath: '/services/advisory',
     },
     {
       id: 'risk',
@@ -61,7 +65,8 @@ const DetailedServices: FC = () => {
       features: t('servicesPage.detailedServices.services.risk.features', { returnObjects: true }) as string[],
       color: 'from-red-500 to-red-600',
       bgColor: 'bg-red-50',
-      iconBg: 'bg-red-100'
+      iconBg: 'bg-red-100',
+      detailPath: '/services/risk-internal-audit',
     },
     {
       id: 'hr',
@@ -72,7 +77,8 @@ const DetailedServices: FC = () => {
       features: t('servicesPage.detailedServices.services.hr.features', { returnObjects: true }) as string[],
       color: 'from-indigo-500 to-indigo-600',
       bgColor: 'bg-indigo-50',
-      iconBg: 'bg-indigo-100'
+      iconBg: 'bg-indigo-100',
+      detailPath: '/services/payroll-hr',
     },
     {
       id: 'training',
@@ -83,7 +89,8 @@ const DetailedServices: FC = () => {
       features: t('servicesPage.detailedServices.services.training.features', { returnObjects: true }) as string[],
       color: 'from-orange-500 to-orange-600',
       bgColor: 'bg-orange-50',
-      iconBg: 'bg-orange-100'
+      iconBg: 'bg-orange-100',
+      detailPath: null,
     }
   ];
 
@@ -109,7 +116,7 @@ const DetailedServices: FC = () => {
         transition={{ duration: 0.5, delay: index * 0.1 }}
         className={`rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ${service.bgColor} border border-gray-100`}
       >
-        <div 
+        <div
           className="p-6 cursor-pointer"
           onClick={onToggle}
         >
@@ -131,7 +138,7 @@ const DetailedServices: FC = () => {
             </MotionDiv>
           </div>
         </div>
-        
+
         <MotionDiv
           initial={false}
           animate={{
@@ -159,6 +166,14 @@ const DetailedServices: FC = () => {
                 <Calendar className="mr-2 h-4 w-4" />
                 {t('servicesPage.detailedServices.scheduleAppointment')}
               </Link>
+              {service.detailPath && (
+                <Link
+                  to={service.detailPath}
+                  className="inline-flex items-center justify-center px-4 py-2 border border-blue-600 text-blue-700 rounded-lg hover:bg-blue-50 transition-colors text-sm font-medium"
+                >
+                  View Full Details →
+                </Link>
+              )}
             </div>
           </div>
         </MotionDiv>
@@ -172,7 +187,7 @@ const DetailedServices: FC = () => {
     <section id="services" className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <MotionDiv 
+          <MotionDiv
             className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -182,7 +197,7 @@ const DetailedServices: FC = () => {
               {t('servicesPage.detailedServices.title')} <span className="text-blue-600">{t('servicesPage.detailedServices.titleHighlight')}</span> {t('servicesPage.detailedServices.titleSuffix')}
             </h2>
           </MotionDiv>
-          <MotionDiv 
+          <MotionDiv
             className="mt-4 text-xl text-gray-600"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -196,7 +211,7 @@ const DetailedServices: FC = () => {
 
         <div ref={ref} className="grid grid-cols-1 gap-6 max-w-4xl mx-auto">
           {services.map((service, index) => (
-            <ServiceCard 
+            <ServiceCard
               key={service.id}
               service={service}
               index={index}

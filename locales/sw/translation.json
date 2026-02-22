@@ -1,0 +1,15 @@
+{
+    "nav": {
+        "about": "Kuhusu",
+        "services": "Huduma",
+        "industries": "Viwanda",
+        "globalOffices": "Ofisi za Kimataifa",
+        "careers": "Ajira",
+        "insights": "Maarifa",
+        "contact": "Wasiliana",
+        "clientPortal": "Portal ya Mteja"
+    },
+    "auth": {
+        "signIn": "Portal ya Mteja"
+    }
+}

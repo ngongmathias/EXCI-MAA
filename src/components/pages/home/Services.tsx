@@ -1,12 +1,12 @@
 import { FC, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  ArrowRight, 
-  Calculator, 
-  FileText, 
-  BarChart3, 
-  Shield, 
+import {
+  ArrowRight,
+  Calculator,
+  FileText,
+  BarChart3,
+  Shield,
   Briefcase,
   FileCheck,
   Calendar,
@@ -33,37 +33,37 @@ const Services: FC = () => {
   const [activeTab, setActiveTab] = useState('all');
   const { t } = useLanguage();
   const [selectedService, setSelectedService] = useState<Service | null>(null);
-  
+
   const services: Service[] = [
-    {
-      id: 'accounting',
-      icon: Calculator,
-      title: 'services.service1Title',
-      shortDesc: t('services.service1Desc'),
-      description: t('services.service1Desc'),
-      color: 'bg-blue-500',
-      category: 'finance',
-      features: (t as any)('servicesPage.detailedServices.services.accounting.features', { returnObjects: true }) as string[]
-    },
     {
       id: 'audit',
       icon: FileCheck,
       title: 'services.service2Title',
       shortDesc: t('services.service2Desc'),
       description: t('services.service2Desc'),
-      color: 'bg-green-500',
+      color: 'bg-blue-900',
       category: 'finance',
-      features: (t as any)('servicesPage.detailedServices.services.audit.features', { returnObjects: true }) as string[]
+      features: (t as any)('serviceModal.features.audit', { returnObjects: true }) ? Object.values((t as any)('serviceModal.features.audit', { returnObjects: true })) : []
     },
     {
       id: 'tax',
       icon: FileText,
-      title: 'services.service2Title',
-      shortDesc: t('services.service2Desc'),
-      description: t('services.service2Desc'),
-      color: 'bg-purple-500',
+      title: 'services.service7Title',
+      shortDesc: t('services.service7Desc'),
+      description: t('services.service7Desc'),
+      color: 'bg-blue-900',
       category: 'finance',
-      features: (t as any)('servicesPage.detailedServices.services.tax.features', { returnObjects: true }) as string[]
+      features: (t as any)('serviceModal.features.audit', { returnObjects: true }) ? Object.values((t as any)('serviceModal.features.audit', { returnObjects: true })) : []
+    },
+    {
+      id: 'accounting',
+      icon: Calculator,
+      title: 'services.service1Title',
+      shortDesc: t('services.service1Desc'),
+      description: t('services.service1Desc'),
+      color: 'bg-blue-900',
+      category: 'finance',
+      features: (t as any)('serviceModal.features.accounting', { returnObjects: true }) ? Object.values((t as any)('serviceModal.features.accounting', { returnObjects: true })) : []
     },
     {
       id: 'advisory',
@@ -71,9 +71,9 @@ const Services: FC = () => {
       title: 'services.service3Title',
       shortDesc: t('services.service3Desc'),
       description: t('services.service3Desc'),
-      color: 'bg-yellow-500',
+      color: 'bg-blue-900',
       category: 'business',
-      features: (t as any)('servicesPage.detailedServices.services.advisory.features', { returnObjects: true }) as string[]
+      features: (t as any)('serviceModal.features.managerial', { returnObjects: true }) ? Object.values((t as any)('serviceModal.features.managerial', { returnObjects: true })) : []
     },
     {
       id: 'risk',
@@ -81,29 +81,35 @@ const Services: FC = () => {
       title: 'services.service6Title',
       shortDesc: t('services.service6Desc'),
       description: t('services.service6Desc'),
-      color: 'bg-red-500',
+      color: 'bg-blue-900',
       category: 'business',
-      features: (t as any)('servicesPage.detailedServices.services.risk.features', { returnObjects: true }) as string[]
+      features: (t as any)('serviceModal.features.risk', { returnObjects: true }) ? Object.values((t as any)('serviceModal.features.risk', { returnObjects: true })) : []
     },
     {
-      id: 'reporting',
+      id: 'payroll',
       icon: BarChart3,
       title: 'services.service4Title',
       shortDesc: t('services.service4Desc'),
       description: t('services.service4Desc'),
-      color: 'bg-indigo-500',
-      category: 'finance',
-      features: [
-        t('servicesPage.detailedServices.services.accounting.features.0'),
-        t('servicesPage.detailedServices.services.accounting.features.4'),
-        t('servicesPage.detailedServices.services.accounting.features.9')
-      ]
+      color: 'bg-blue-900',
+      category: 'business',
+      features: (t as any)('serviceModal.features.payrollSocial', { returnObjects: true }) ? Object.values((t as any)('serviceModal.features.payrollSocial', { returnObjects: true })) : []
+    },
+    {
+      id: 'legal',
+      icon: FileText,
+      title: 'services.service8Title',
+      shortDesc: t('services.service8Desc'),
+      description: t('services.service8Desc'),
+      color: 'bg-blue-900',
+      category: 'business',
+      features: []
     }
   ];
 
   // Filter services based on active tab
-  const filteredServices = activeTab === 'all' 
-    ? services 
+  const filteredServices = activeTab === 'all'
+    ? services
     : services.filter(service => service.category === activeTab);
 
   return (
@@ -120,31 +126,28 @@ const Services: FC = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <button
             onClick={() => setActiveTab('all')}
-            className={`px-6 py-2 rounded-full font-medium transition-colors ${
-              activeTab === 'all' 
-                ? 'bg-blue-600 text-white' 
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
+            className={`px-6 py-2 rounded-full font-medium transition-colors ${activeTab === 'all'
+              ? 'bg-blue-600 text-white'
+              : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
           >
             {t('services.categories.all')}
           </button>
           <button
             onClick={() => setActiveTab('finance')}
-            className={`px-6 py-2 rounded-full font-medium transition-colors ${
-              activeTab === 'finance' 
-                ? 'bg-blue-600 text-white' 
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
+            className={`px-6 py-2 rounded-full font-medium transition-colors ${activeTab === 'finance'
+              ? 'bg-blue-600 text-white'
+              : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
           >
             {t('services.categories.finance')}
           </button>
           <button
             onClick={() => setActiveTab('business')}
-            className={`px-6 py-2 rounded-full font-medium transition-colors ${
-              activeTab === 'business' 
-                ? 'bg-blue-600 text-white' 
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
+            className={`px-6 py-2 rounded-full font-medium transition-colors ${activeTab === 'business'
+              ? 'bg-blue-600 text-white'
+              : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
           >
             {t('services.categories.business')}
           </button>
@@ -155,40 +158,39 @@ const Services: FC = () => {
           {filteredServices.map((service) => (
             <MotionInView key={service.id}>
               <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <div className={`h-2 ${service.color}`}></div>
-              <div className="p-6">
-                <div className={`w-12 h-12 ${service.color} bg-opacity-10 rounded-lg flex items-center justify-center mb-4`}>
-                  <service.icon className={`h-6 w-6 ${service.color.replace('bg-', 'text-')}`} />
+                <div className="p-6">
+                  <div className="w-12 h-12 bg-blue-900 bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                    <service.icon className="h-6 w-6 text-blue-900" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{t(service.title)}</h3>
+                  <p className="text-gray-600 mb-4">{service.shortDesc}</p>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.slice(0, 3).map((feature, i) => (
+                      <li key={i} className="flex items-center text-gray-700">
+                        <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <Link
+                      to={ROUTES.CONSULTATION}
+                      className="inline-flex items-center justify-center px-3 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors text-sm font-medium"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" />
+                      {t('services.schedule')}
+                    </Link>
+                    <button
+                      onClick={() => setSelectedService(service)}
+                      className="text-blue-900 font-medium flex items-center hover:text-blue-800 transition-colors text-sm"
+                    >
+                      {t('services.learnMore')}
+                      <ArrowRight className="w-3 h-3 ml-1" />
+                    </button>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{t(service.title)}</h3>
-                <p className="text-gray-600 mb-4">{service.shortDesc}</p>
-                <ul className="space-y-2 mb-6">
-                  {service.features.slice(0, 3).map((feature, i) => (
-                    <li key={i} className="flex items-center text-gray-700">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex flex-col sm:flex-row gap-2">
-                  <Link
-                    to={ROUTES.CONSULTATION}
-                    className="inline-flex items-center justify-center px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
-                  >
-                    <Calendar className="mr-1 h-3 w-3" />
-                    {t('services.schedule')}
-                  </Link>
-                  <button
-                    onClick={() => setSelectedService(service)}
-                    className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors text-sm"
-                  >
-                    {t('services.learnMore')}
-                    <ArrowRight className="w-3 h-3 ml-1" />
-                  </button>
-                </div>
-              </div>
               </div>
             </MotionInView>
           ))}
@@ -234,7 +236,7 @@ const Services: FC = () => {
 
                 <div className="prose max-w-none">
                   <p className="text-gray-700 mb-6">{selectedService.description}</p>
-                  
+
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">{t('services.keyFeatures')}</h4>
                   <ul className="space-y-2 mb-6">
                     {selectedService.features.map((feature, i) => (
@@ -248,8 +250,8 @@ const Services: FC = () => {
                   </ul>
 
                   <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                    <Link 
-                      to="/contact" 
+                    <Link
+                      to="/contact"
                       className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium text-center hover:bg-blue-700 transition-colors"
                     >
                       {t('services.getStarted')}

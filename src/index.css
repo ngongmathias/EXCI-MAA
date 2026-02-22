@@ -1,7 +1,11 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+:root {
+  --exci-navy: #0f172a; /* Slate 900 */
+  --exci-primary: #1e3a8a; /* Blue 900 */
+  --exci-secondary: #3b82f6; /* Blue 500 */
+  --exci-accent: #64748b; /* Slate 500 */
+  --exci-bg-light: #f8fafc; /* Slate 50 */
+  --exci-border: #e2e8f0; /* Slate 200 */
+}
 
 /* Base styles */
 html {
@@ -10,10 +14,11 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  background-color: var(--exci-bg-light);
+  color: var(--exci-navy);
 }
 
 #root {
@@ -22,25 +27,15 @@ body {
 
 /* Custom animations */
 @keyframes blob {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-  }
-  33% {
-    transform: translate(30px, -50px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-  }
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
 }
 
 /* Animated text gradient */
 @keyframes text-gradient {
-  to {
-    background-position: 200% center;
-  }
+  to { background-position: 200% center; }
 }
 
 .animate-text-gradient {
@@ -57,146 +52,60 @@ body {
 
 /* Glass morphism effect */
 .glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #fdfdfd;
-  border-radius: 10px;
+  background: var(--exci-bg-light);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1f2937; /* very dark gray */
-  border-radius: 10px;
-  border: 2px solid #0a0a0a;
-  transition: all 0.3s ease;
+  background: var(--exci-accent);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b1c6f5; /* darker on hover */
-}
-
-/* Animation delays */
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-  animation-delay: 4s;
-}
-
-/* Custom underline animation */
-.hover-underline-animation {
-  position: relative;
-  display: inline-block;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-}
-
-.hover-underline-animation:hover::after {
-  width: 100%;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Simple opacity fade-in utility used for images */
-@keyframes fadeInOnly {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.fade-in-only {
-  animation: fadeInOnly 0.5s ease-out forwards;
-}
-
-.fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
+  background: var(--exci-primary);
 }
 
 /* Button styles */
 .btn-primary {
-  @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200;
+  @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg shadow-sm text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900 transition-all duration-200 transform hover:-translate-y-0.5;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200;
+  @apply inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-semibold rounded-lg shadow-sm text-slate-700 bg-white hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900 transition-all duration-200 transform hover:-translate-y-0.5;
 }
 
 /* Card styles */
 .card {
-  @apply bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300;
+  @apply bg-white rounded-xl shadow-sm p-6 border border-slate-200 hover:shadow-lg hover:border-blue-900/20 transition-all duration-300;
 }
 
-/* EXCI Blue color scheme */
-.text-exci-blue-600 {
-  color: #2563eb;
-}
+/* Professional Color Classes */
+.text-navy { color: var(--exci-navy); }
+.text-primary { color: var(--exci-primary); }
+.bg-navy { background-color: var(--exci-navy); }
+.bg-primary { background-color: var(--exci-primary); }
+.border-primary { border-color: var(--exci-primary); }
 
-.bg-exci-blue-50 {
-  background-color: #eff6ff;
-}
+/* EXCI Blue color scheme overrides */
+.text-exci-blue-600 { color: var(--exci-primary); }
+.bg-exci-blue-50 { background-color: #f1f5f9; }
+.bg-exci-blue-600 { background-color: var(--exci-primary); }
+.border-exci-blue-600 { border-color: var(--exci-primary); }
+.hover\:bg-exci-blue-700:hover { background-color: #1e3a8a; }
+.hover\:text-exci-blue-600:hover { color: #1e3a8a; }
 
-.bg-exci-blue-100 {
-  background-color: #dbeafe;
-}
-
-.bg-exci-blue-200 {
-  background-color: #bfdbfe;
-}
-
-.bg-exci-blue-300 {
-  background-color: #93c5fd;
-}
-
-.text-exci-blue-700 {
-  color: #1d4ed8;
-}
-
-.text-exci-blue-800 {
-  color: #1e40af;
-}
-
-.border-exci-blue-600 {
-  border-color: #2563eb;
-}
-
-.hover\:bg-exci-blue-700:hover {
-  background-color: #1d4ed8;
-}
-
-.hover\:text-exci-blue-600:hover {
-  color: #2563eb;
-}
-
-.focus\:ring-exci-blue-500:focus {
-  --tw-ring-color: #3b82f6;
-}
-
-.focus\:ring-offset-exci-blue-500:focus {
-  --tw-ring-offset-color: #3b82f6;
-}
 
 /* Form styles */
 .form-input {

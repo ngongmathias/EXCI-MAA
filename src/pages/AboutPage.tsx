@@ -11,10 +11,16 @@ import OrganizationalStructure from '../components/pages/about/OrganizationalStr
 import TypicalOfficeOrganigram from '../components/pages/about/TypicalOfficeOrganigram';
 import AccreditationsSection from '../components/pages/about/AccreditationsSection';
 import ClientSectorsSection from '../components/pages/about/ClientSectorsSection';
+import AboutNavigation from '../components/pages/about/AboutNavigation';
+import Meta from '../components/common/Meta';
 
 const AboutPage: FC = () => {
   return (
     <div className="min-h-screen">
+      <Meta
+        title="About Our Firm"
+        description="Learn about EXCI-MAA's history since 2012, our mission to support African business excellence, and our global network of professional experts."
+      />
       <AboutHero />
       <MissionSection />
       <StorySection />
@@ -22,9 +28,10 @@ const AboutPage: FC = () => {
       <AccreditationsSection />
       <ClientSectorsSection />
       <OrganizationalStructure />
+      <AboutNavigation />
       <HistorySection />
       <TypicalOfficeOrganigram />
-      <ClientsSection/>
+      <ClientsSection />
       {/* <ValuesSection /> */}
       {/* <TeamSection /> */}
     </div>

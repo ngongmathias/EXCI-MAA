@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import i18n from '../i18n';
 
-export type SupportedLanguage = 'en' | 'fr' | 'ar' | 'rw' | 'ki' | 'zh' | 'lg';
+export type SupportedLanguage = 'en' | 'fr' | 'ar' | 'rw' | 'ki' | 'zh' | 'lg' | 'sw';
 
 interface LanguageContextType {
   currentLanguage: SupportedLanguage;
@@ -33,7 +33,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     const initI18n = async () => {
       try {
         const savedLanguage = localStorage.getItem('language') as SupportedLanguage;
-        if (savedLanguage && ['en', 'fr', 'ar', 'rw', 'ki', 'zh', 'lg'].includes(savedLanguage)) {
+        if (savedLanguage && ['en', 'fr', 'ar', 'rw', 'ki', 'zh', 'lg', 'sw'].includes(savedLanguage)) {
           setCurrentLanguage(savedLanguage);
           await i18n.changeLanguage(savedLanguage);
           document.documentElement.lang = savedLanguage;

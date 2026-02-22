@@ -10,6 +10,7 @@ import rw from '../locales/rw/translation.json';
 import ki from '../locales/ki/translation.json';
 import zh from '../locales/zh/translation.json';
 import lg from '../locales/lg/translation.json';
+import sw from '../locales/sw/translation.json';
 
 const resources = {
   en: { translation: en },
@@ -19,6 +20,7 @@ const resources = {
   ki: { translation: ki },
   zh: { translation: zh },
   lg: { translation: lg },
+  sw: { translation: sw },
 };
 
 i18n

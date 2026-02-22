@@ -12,14 +12,14 @@ const AuthButton: React.FC = () => {
       <SignedIn>
         <UserButton afterSignOutUrl="/" />
       </SignedIn>
- 
+
       <SignedOut>
         <Link
           to="/sign-in"
-          className="inline-flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-exci-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
+          className="inline-flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50 rounded-md transition-colors duration-200"
         >
           <User className="h-4 w-4" />
-          <span>{t('auth.signIn', 'Sign In')}</span>
+          <span>{t('auth.signIn', 'Client Portal')}</span>
         </Link>
       </SignedOut>
     </div>
