@@ -33,16 +33,13 @@ const BlogSection: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   const handleShare = async (postId: string, title: string) => {
-    console.log('Sharing blog post:', postId, title);
     const url = getBlogPostShareUrl(postId);
-    console.log('Share URL:', url);
     const result = await shareContent({
       url,
       title: `${title} | EXCI-MAA Blog`,
       text: `Check out this blog post: ${title}`,
     });
     
-    console.log('Share result:', result);
     showShareNotification(result.message, result.success ? 'success' : 'error');
   };
   

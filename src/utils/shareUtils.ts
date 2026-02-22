@@ -18,11 +18,6 @@ interface ShareResult {
  */
 export async function shareContent(options: ShareOptions): Promise<ShareResult> {
   const { url, title, text } = options;
-  
-  console.log('shareContent called with:', { url, title, text });
-  console.log('Web Share API supported:', !!navigator.share);
-  console.log('Clipboard API supported:', !!navigator.clipboard);
-  console.log('Is secure context:', window.isSecureContext);
 
   // Check if Web Share API is supported (mobile devices, some desktop browsers)
   if (navigator.share) {
@@ -54,7 +49,6 @@ export async function shareContent(options: ShareOptions): Promise<ShareResult> 
   if (navigator.clipboard && window.isSecureContext) {
     try {
       await navigator.clipboard.writeText(url);
-      console.log('Successfully copied to clipboard:', url);
       return {
         success: true,
         method: 'clipboard',
@@ -80,7 +74,6 @@ export async function shareContent(options: ShareOptions): Promise<ShareResult> 
     document.body.removeChild(textArea);
     
     if (successful) {
-      console.log('Successfully copied using fallback method:', url);
       return {
         success: true,
         method: 'clipboard',

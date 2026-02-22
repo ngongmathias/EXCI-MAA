@@ -83,19 +83,16 @@ const EventsSection: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   const handleShare = async (eventId: string, title: string) => {
-    console.log('Sharing event:', eventId, title);
     const url = getEventShareUrl(eventId);
-    console.log('Share URL:', url);
     const result = await shareContent({
       url,
       title: `${title} | EXCI-MAA Event`,
       text: `Join us at this event: ${title}`,
     });
-    
-    console.log('Share result:', result);
+
     showShareNotification(result.message, result.success ? 'success' : 'error');
   };
-  
+
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const ITEMS_PER_PAGE = 10;
@@ -165,12 +162,12 @@ const EventsSection: React.FC = () => {
   }, [now, events]);
 
   const filteredList = filter === 'upcoming' ? upcoming : past;
-  
+
   // Reset to first page when filter changes
   useEffect(() => {
     setCurrentPage(1);
   }, [filter]);
-  
+
   // Calculate pagination
   const totalPages = Math.ceil(filteredList.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -223,7 +220,7 @@ const EventsSection: React.FC = () => {
             const images = eventImages[evt.id] || [];
             const primaryImage = images.find(img => img.is_primary) || images[0];
             const displayImage = primaryImage?.image_url || evt.image;
-            
+
             const gcal = toGoogleCalendarUrl(evt);
             const icsBlob = new Blob([toIcs(evt)], { type: 'text/calendar;charset=utf-8' });
             const icsUrl = URL.createObjectURL(icsBlob);
@@ -232,10 +229,10 @@ const EventsSection: React.FC = () => {
               <div key={evt.id} className="group relative rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => navigate(`/insights/events/${evt.id}`)}>
                 {displayImage && (
                   <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
-                    <img 
-                      src={displayImage} 
-                      alt={evt.title} 
-                      className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                    <img
+                      src={displayImage}
+                      alt={evt.title}
+                      className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     {images.length > 1 && (
                       <div className="absolute bottom-2 right-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded-full">
@@ -254,7 +251,7 @@ const EventsSection: React.FC = () => {
                 <div className="p-5">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{evt.title}</h3>
                   <p className="text-sm text-gray-600 line-clamp-2 mb-4">{evt.description}</p>
-                  
+
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-sm text-gray-500">
                       <svg className="w-4 h-4 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -279,19 +276,19 @@ const EventsSection: React.FC = () => {
                       <span>{attendees.length} {attendees.length === 1 ? 'Attendee' : 'Attendees'}</span>
                     </div>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <a 
-                      href={gcal} 
-                      target="_blank" 
-                      rel="noreferrer" 
+                    <a
+                      href={gcal}
+                      target="_blank"
+                      rel="noreferrer"
                       onClick={(e) => e.stopPropagation()}
                       className="flex-1 min-w-[100px] px-3 py-2 text-xs font-medium text-center rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition-colors"
                     >
                       + Calendar
                     </a>
-                    <a 
-                      href={icsUrl} 
+                    <a
+                      href={icsUrl}
                       download={`${evt.title}.ics`}
                       onClick={(e) => e.stopPropagation()}
                       className="flex-1 min-w-[100px] px-3 py-2 text-xs font-medium text-center rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200 transition-colors"
@@ -311,14 +308,14 @@ const EventsSection: React.FC = () => {
                       Share
                     </button> */}
                   </div>
-                  
-                  <button 
-                    onClick={(e) => { e.stopPropagation(); setRsvpOpenFor(evt.id); }} 
+
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setRsvpOpenFor(evt.id); }}
                     className="w-full px-4 py-2.5 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-sm"
                   >
                     RSVP Now
                   </button>
-                  
+
                   {attendees.length > 0 && (
                     <details className="mt-4 pt-4 border-t border-gray-100">
                       <summary className="text-sm font-medium text-gray-700 cursor-pointer hover:text-blue-600 transition-colors">
@@ -356,14 +353,14 @@ const EventsSection: React.FC = () => {
             }}
           />
         )}
-        
+
         {/* Pagination */}
         {filteredList.length > ITEMS_PER_PAGE && (
           <div className="mt-8 flex flex-col items-center">
             <p className="text-sm text-gray-600 mb-2">
               Showing {startIndex + 1} to {endIndex} of {filteredList.length} events
             </p>
-            <Pagination 
+            <Pagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}
@@ -385,8 +382,8 @@ const EventDetailModal: React.FC<{
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const primaryImage = images.find(img => img.is_primary) || images[0];
   const displayImage = primaryImage?.image_url || event.image;
-  
-  const allImages = images.length > 0 
+
+  const allImages = images.length > 0
     ? images.map(img => img.image_url)
     : displayImage ? [displayImage] : [];
 
@@ -408,8 +405,8 @@ const EventDetailModal: React.FC<{
         {/* Image Gallery */}
         {allImages.length > 0 && (
           <div className="relative aspect-video w-full overflow-hidden rounded-t-2xl bg-gray-900">
-            <img 
-              src={allImages[currentImageIndex]} 
+            <img
+              src={allImages[currentImageIndex]}
               alt={event.title}
               className="h-full w-full object-contain"
             />
@@ -438,12 +435,12 @@ const EventDetailModal: React.FC<{
             )}
           </div>
         )}
-        
+
         {/* Content */}
         <div className="p-8 max-h-[60vh] overflow-y-auto">
           <div className="flex items-start justify-between mb-6">
             <h2 className="text-3xl font-bold text-gray-900 flex-1">{event.title}</h2>
-            <button 
+            <button
               onClick={onClose}
               className="text-gray-400 hover:text-gray-600 transition-colors ml-4"
             >
@@ -503,22 +500,22 @@ const EventDetailModal: React.FC<{
           )}
 
           <div className="flex flex-wrap gap-3 pt-6 border-t border-gray-200">
-            <button 
+            <button
               onClick={onRsvp}
               className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
             >
               RSVP Now
             </button>
-            <a 
-              href={gcal} 
-              target="_blank" 
+            <a
+              href={gcal}
+              target="_blank"
               rel="noreferrer"
               className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition-colors"
             >
               + Calendar
             </a>
-            <a 
-              href={icsUrl} 
+            <a
+              href={icsUrl}
               download={`${event.title}.ics`}
               className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200 transition-colors"
             >
@@ -537,7 +534,7 @@ const EventDetailModal: React.FC<{
                   showShareNotification(result.message, result.success ? 'success' : 'error');
                 });
               }}
-              className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-blue-600  text-white transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
+              className="flex-1 min-w-[120px] px-6 py-3 text-sm font-medium text-center rounded-lg bg-blue-600 text-white transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
               aria-label="Share event - copy link to clipboard"
             >
               <Share2 className="w-4 h-4" />
@@ -555,7 +552,7 @@ const RsvpModal: React.FC<{ onClose: () => void; onSubmit: (a: Attendee) => void
   const [email, setEmail] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const isValid = name.trim().length > 1 && /.+@.+/.test(email);
-  
+
   const handleSubmit = async () => {
     if (!isValid) return;
     setSubmitting(true);
@@ -565,13 +562,13 @@ const RsvpModal: React.FC<{ onClose: () => void; onSubmit: (a: Attendee) => void
       setSubmitting(false);
     }
   };
-  
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm" onClick={onClose}>
       <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-2xl transform transition-all" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-6">
           <h4 className="text-2xl font-bold text-gray-900">RSVP for Event</h4>
-          <button 
+          <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-600 transition-colors"
           >
@@ -584,39 +581,38 @@ const RsvpModal: React.FC<{ onClose: () => void; onSubmit: (a: Attendee) => void
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-            <input 
-              value={name} 
-              onChange={(e) => setName(e.target.value)} 
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
-              placeholder="John Doe" 
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+              placeholder="John Doe"
             />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-            <input 
+            <input
               type="email"
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
-              placeholder="john@example.com" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+              placeholder="john@example.com"
             />
           </div>
         </div>
         <div className="mt-8 flex items-center gap-3">
-          <button 
-            onClick={onClose} 
+          <button
+            onClick={onClose}
             className="flex-1 px-4 py-3 text-sm font-medium rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
           >
             Cancel
           </button>
-          <button 
-            disabled={!isValid || submitting} 
-            onClick={handleSubmit} 
-            className={`flex-1 px-4 py-3 text-sm font-medium rounded-lg text-white transition-all ${
-              isValid && !submitting
-                ? 'bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/30' 
+          <button
+            disabled={!isValid || submitting}
+            onClick={handleSubmit}
+            className={`flex-1 px-4 py-3 text-sm font-medium rounded-lg text-white transition-all ${isValid && !submitting
+                ? 'bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/30'
                 : 'bg-blue-300 cursor-not-allowed'
-            }`}
+              }`}
           >
             {submitting ? 'Confirming...' : 'Confirm RSVP'}
           </button>
