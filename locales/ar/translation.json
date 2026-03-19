@@ -126,7 +126,9 @@
         "globalOffices": "المكاتب العالمية",
         "insights": "الرؤى",
         "careers": "الوظائف",
-        "contact": "اتصل بنا"
+        "contact": "اتصل بنا",
+        "signIn": "تسجيل الدخول",
+        "signUp": "إنشاء حساب"
     },
     "organizationalChart": {
         "title": "هيكل تنظيمي للمجموعة",
@@ -398,6 +400,7 @@
     },
     "auth": {
         "signIn": "تسجيل الدخول",
+        "signUp": "إنشاء حساب",
         "signOut": "تسجيل الخروج",
         "admin": "مدير",
         "adminPanel": "لوحة الإدارة"

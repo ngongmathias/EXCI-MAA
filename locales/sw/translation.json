@@ -7,9 +7,13 @@
         "careers": "Ajira",
         "insights": "Maarifa",
         "contact": "Wasiliana",
+        "signIn": "Ingia kwenye akaunti",
+        "signUp": "Jisajili kwa akaunti",
         "clientPortal": "Portal ya Mteja"
     },
     "auth": {
-        "signIn": "Portal ya Mteja"
+        "signIn": "Ingia kwenye akaunti",
+        "signUp": "Jisajili kwa akaunti",
+        "signOut": "Ondoka"
     }
 }

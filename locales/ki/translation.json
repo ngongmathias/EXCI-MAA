@@ -126,10 +126,13 @@
         "globalOffices": "Amabiro y\u0027isi",
         "insights": "Ubushakashatsi",
         "careers": "Akazi",
-        "contact": "Kwandikira"
+        "contact": "Kwandikira",
+        "signIn": "Kwinjiramo",
+        "signUp": "Kwiyandikishamo"
     },
     "auth": {
-        "signIn": "Kwiyandikisha",
+        "signIn": "Kwinjiramo",
+        "signUp": "Kwiyandikishamo",
         "signOut": "Gusohoka",
         "admin": "Umuyobozi",
         "adminPanel": "Ikibaho cy\u0027ubuyobozi"

@@ -119,10 +119,13 @@
         "insights": "Perspectives",
         "careers": "Carrières",
         "contact": "Contact",
-        "clientPortal": "Portail Client"
+        "clientPortal": "Portail Client",
+        "signIn": "Se connecter",
+        "signUp": "S'inscrire"
     },
     "auth": {
-        "signIn": "Portail Client",
+        "signIn": "Se connecter",
+        "signUp": "S'inscrire",
         "signOut": "Se déconnecter",
         "admin": "Admin",
         "adminPanel": "Panneau d\u0027administration"

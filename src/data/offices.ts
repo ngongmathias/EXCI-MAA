@@ -142,7 +142,7 @@ export const offices: Office[] = [
     phone: '+971 50 123 4567',
     email: 'dubai@excimaa.ca',
     services: ['International Business Setup', 'Tax Planning', 'Financial Planning'],
-    image: '/images/Cities/USA-washington.jpeg',
+    image: '/images/Cities/France-paris.jpg',
     googleMapsUrl: 'https://maps.app.goo.gl/SUirHFpRKk4mMLbP8',
   },
   {
@@ -158,7 +158,7 @@ export const offices: Office[] = [
     phone: '+256 700 000 000',
     email: 'kampala@excimaa.ca',
     services: ['Audit & Assurance', 'Tax Compliance', 'Payroll & HR Compliance'],
-    image: '/images/Cities/Burundi.jpeg',
+    image: '/images/Cities/rwanda.jpg',
     googleMapsUrl: 'https://maps.app.goo.gl/kampala',
   },
   {
@@ -174,7 +174,7 @@ export const offices: Office[] = [
     phone: '+255 700 000 000',
     email: 'daressalaam@excimaa.ca',
     services: ['Audit & Assurance', 'Accounting & Outsourcing', 'Advisory'],
-    image: '/images/Cities/DRC.jpeg',
+    image: '/images/Cities/Cameroon-Yaounde.jpg',
     googleMapsUrl: 'https://maps.app.goo.gl/daressalaam',
   },
 ];

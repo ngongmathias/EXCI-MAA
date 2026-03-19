@@ -126,7 +126,9 @@
         "globalOffices": "全球办事处",
         "insights": "洞察",
         "careers": "职业",
-        "contact": "联系我们"
+        "contact": "联系我们",
+        "signIn": "登录",
+        "signUp": "注册"
     },
     "globalOffices": {
         "heroTitle": "全球办事处",
@@ -386,6 +388,7 @@
     },
     "auth": {
         "signIn": "登录",
+        "signUp": "注册",
         "signOut": "退出",
         "admin": "管理员",
         "adminPanel": "管理面板"

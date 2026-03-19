@@ -302,11 +302,8 @@ const Header: FC = () => {
                 {services.map((service) => (
                   <button
                     key={service.id}
-                    onClick={() => {
-                      handleServiceClick(service.id);
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full text-left px-3 py-2 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50"
+                    onClick={() => handleServiceClick(service.id)}
+                    className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50"
                   >
                     <div className="flex items-center space-x-2">
                       <span className="text-lg">{service.icon}</span>
@@ -326,21 +323,17 @@ const Header: FC = () => {
                 </div>
               </div>
               <div className="ml-6 space-y-1">
-                <Link
-                  to="/global-offices"
-                  onClick={() => setIsMenuOpen(false)}
+                <button
+                  onClick={() => navigate('/global-offices')}
                   className="block px-3 py-2 rounded-md text-sm font-medium text-blue-600 hover:bg-blue-50"
                 >
                   {t('globalOfficesDropdown.viewAllOffices')}
-                </Link>
+                </button>
                 {offices.map((office) => (
                   <button
                     key={office.id}
-                    onClick={() => {
-                      handleOfficeClick(office.country, office.capital);
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full text-left px-3 py-2 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50"
+                    onClick={() => handleOfficeClick(office.country, office.capital)}
+                    className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50"
                   >
                     <div className="flex items-center space-x-2">
                       <span className="text-lg">{office.flag}</span>
@@ -349,18 +342,6 @@ const Header: FC = () => {
                   </button>
                 ))}
               </div>
-            </div>
-
-            {/* Mobile Navigation items */}
-            <div className="border-t border-gray-200 pt-3 mt-3">
-              <Link
-                to="/industries"
-                className="group flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <Briefcase className="h-5 w-5 text-gray-500" />
-                <span>{t('nav.industries', 'Industries')}</span>
-              </Link>
             </div>
 
             {navigationAfter.map((item) => (

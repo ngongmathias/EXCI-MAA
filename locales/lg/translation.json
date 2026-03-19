@@ -114,10 +114,13 @@
         "globalOffices": "Amabiro ag\u0027ensi yonna",
         "insights": "Okutegeera",
         "careers": "Emirimu",
-        "contact": "Okukwatagana"
+        "contact": "Okukwatagana",
+        "signIn": "Kwenyigira mu konto",
+        "signUp": "Kwewandiisa mu konto"
     },
     "auth": {
-        "signIn": "Okwenyigira",
+        "signIn": "Kwenyigira mu konto",
+        "signUp": "Kwewandiisa mu konto",
         "signOut": "Okuggyako",
         "admin": "Omukulembeze",
         "adminPanel": "Ekibaho ky\u0027okukulembeza"
