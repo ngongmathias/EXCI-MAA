@@ -9,10 +9,12 @@
     "accountingNews": "Accounting News",
     "careers": "Careers",
     "contact": "Contact",
-    "signIn": "Client Portal"
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
   },
   "auth": {
-    "signIn": "Client Portal",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
     "signOut": "Sign Out",
     "admin": "Admin",
     "adminPanel": "Admin Panel"
