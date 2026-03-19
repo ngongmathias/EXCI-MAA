@@ -146,13 +146,22 @@ const Hero: FC = () => {
                 <div className="space-y-6">
                   <div className="text-center">
                     <h3 className="text-2xl font-bold mb-6 text-white">{t('offices.title')}</h3>
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      {offices.slice(0, 8).map((office) => (
-                        <div key={office.id} className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/20 hover:bg-white/20 transition-all cursor-default">
-                          <div className="font-bold text-white mb-1">{office.country}</div>
-                          <div className="text-blue-100 text-xs overflow-hidden text-ellipsis whitespace-nowrap">{office.phone}</div>
-                        </div>
-                      ))}
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      {[...offices]
+                        .sort((a, b) => a.country.localeCompare(b.country))
+                        .map((office) => (
+                          <div key={office.id} className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/20 hover:bg-white/20 transition-all cursor-default">
+                            <div className="font-bold text-white mb-0.5 leading-tight">
+                              {office.country}
+                            </div>
+                            <div className="text-blue-100 text-[10px] opacity-90 mb-1 leading-tight">
+                              {office.city}
+                            </div>
+                            <div className="text-white/70 text-[10px] overflow-hidden text-ellipsis whitespace-nowrap">
+                              {office.phone}
+                            </div>
+                          </div>
+                        ))}
                     </div>
                   </div>
                 </div>

@@ -54,7 +54,7 @@ const GlobalOfficesPage: FC = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {offices.map((office, index) => (
+            {[...offices].sort((a, b) => a.country.localeCompare(b.country)).map((office, index) => (
               <MotionInView key={office.id} delay={index * 0.05}>
                 <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl hover:border-blue-900/10 transition-all duration-300 flex flex-col h-full group">
                   <div className="relative h-48 overflow-hidden">
