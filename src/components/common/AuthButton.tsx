@@ -14,13 +14,21 @@ const AuthButton: React.FC = () => {
       </SignedIn>
 
       <SignedOut>
-        <Link
-          to="/sign-in"
-          className="inline-flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50 rounded-md transition-colors duration-200"
-        >
-          <User className="h-4 w-4" />
-          <span>{t('auth.signIn', 'Client Portal')}</span>
-        </Link>
+        <div className="flex items-center space-x-2">
+          <Link
+            to="/sign-in"
+            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200"
+          >
+            {t('auth.signIn', 'Sign In')}
+          </Link>
+          <span className="text-gray-300">|</span>
+          <Link
+            to="/sign-up"
+            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200 shadow-sm"
+          >
+            {t('auth.signUp', 'Sign Up')}
+          </Link>
+        </div>
       </SignedOut>
     </div>
   );

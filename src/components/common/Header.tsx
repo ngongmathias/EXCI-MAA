@@ -30,7 +30,6 @@ const Header: FC = () => {
 
   const navigationAfter = [
     { name: t('nav.industries', 'Industries'), href: '/industries', icon: <Briefcase className="h-4 w-4" /> },
-    { name: t('nav.globalOffices'), href: '/global-offices', icon: <Globe className="h-4 w-4" /> },
     { name: t('nav.insights'), href: '/insights', icon: <BookOpen className="h-4 w-4" /> },
     { name: t('nav.careers'), href: '/careers', icon: <UserPlus className="h-4 w-4" /> },
     { name: t('nav.contact'), href: '/contact', icon: <Mail className="h-4 w-4" /> }
