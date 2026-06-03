@@ -140,7 +140,21 @@ export interface TeamMember {
         'Cross-border Taxation'
       ]
     },
-  
+    {
+      id: 'joerg-seifert',
+      name: 'Joerg Seifert',
+      title: 'Partner - Advisory',
+      qualifications: [],
+      bio: 'Partner in the Advisory practice at EXCI-MAA Group, supporting clients with strategic and business advisory services.',
+      image: '/images/team/joerg-seifert.jpg',
+      officeId: '', // not tied to a specific office
+      specialties: [
+        'Business Advisory',
+        'Strategic Consulting',
+        'Advisory Services'
+      ]
+    },
+
     // BURUNDI TEAM
     // {
     //   id: 'diane-dusabe',

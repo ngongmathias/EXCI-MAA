@@ -558,6 +558,17 @@
           "Cross-border Taxation"
         ]
       },
+      "joerg-seifert": {
+        "name": "Joerg Seifert",
+        "title": "Partner - Advisory",
+        "qualifications": [],
+        "bio": "Partner in the Advisory practice at EXCI-MAA Group, supporting clients with strategic and business advisory services.",
+        "specialties": [
+          "Business Advisory",
+          "Strategic Consulting",
+          "Advisory Services"
+        ]
+      },
       "diane-dusabe": {
         "name": "Diane DUSABE",
         "title": "Office Manager - Burundi",
@@ -769,6 +780,16 @@
           "Business Development",
           "Financial Consulting",
           "Risk Management"
+        ]
+      },
+      "joerg": {
+        "name": "Joerg Seifert",
+        "title": "Partner - Advisory",
+        "description": "Partner in the Advisory practice, supporting clients with strategic and business advisory services.",
+        "specialties": [
+          "Business Advisory",
+          "Strategic Consulting",
+          "Advisory Services"
         ]
       }
     },
