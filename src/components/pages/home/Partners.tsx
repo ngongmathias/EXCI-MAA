@@ -24,13 +24,6 @@ const Partners: FC = () => {
       image: '/images/Patrick Ngatcha.PNG',
       specialties: toArray(t('partners.founders.patrick.specialties', { returnObjects: true })),
     },
-    {
-      name: t('partners.founders.joerg.name'),
-      title: t('partners.founders.joerg.title'),
-      description: t('partners.founders.joerg.description'),
-      image: '/images/team/joerg-seifert.jpg',
-      specialties: toArray(t('partners.founders.joerg.specialties', { returnObjects: true })),
-    },
   ];
 
   // intentionally no partners grid for now
