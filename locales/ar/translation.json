@@ -130,18 +130,6 @@
         "signIn": "تسجيل الدخول",
         "signUp": "إنشاء حساب"
     },
-    "organizationalChart": {
-        "title": "هيكل تنظيمي للمجموعة",
-        "chairman": "رئيس مجلس الإدارة",
-        "partnerGeneral": "شريك، الإدارة العامة، المالية والموارد البشرية",
-        "partnerQuality": "شريك ضابط الجودة والامتثال",
-        "partnerAudit": "شريك التدقيق والاستشارات",
-        "partnerManagement": "شريك الإدارة والتنظيم",
-        "countryDirector": "مدير البلد المحاسبون",
-        "seniorJuniorAuditors": "المدققون الكبار والصغار",
-        "specialists": "المتخصصون والمستشارون الخارجيون",
-        "specialistsDetails": "(الأطباء، المهندسون، المحامون، علماء الاجتماع، الكبار، الصغار ... إلخ)"
-    },
     "globalOffices": {
         "heroTitle": "المكاتب العالمية",
         "heroSubtitle": "حضورنا الدولي وخبرتنا المحلية",
@@ -199,7 +187,7 @@
             },
             "lazare-tchouameni": {
                 "name": "Lazare Tchouameni",
-                "title": "Office Manager, EXCI-MAA Congo",
+                "title": "مدير المكتب، الكونغو",
                 "qualifications": [
                     "MSc Accounting and Finance"
                 ],

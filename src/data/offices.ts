@@ -158,7 +158,7 @@ export const offices: Office[] = [
     phone: '+256 700 000 000',
     email: 'kampala@excimaa.ca',
     services: ['Audit & Assurance', 'Tax Compliance', 'Payroll & HR Compliance'],
-    image: '/images/Cities/rwanda.jpg',
+    image: '/images/Cities/Burundi.jpeg',
     googleMapsUrl: 'https://maps.app.goo.gl/kampala',
   },
   {
@@ -174,7 +174,7 @@ export const offices: Office[] = [
     phone: '+255 700 000 000',
     email: 'daressalaam@excimaa.ca',
     services: ['Audit & Assurance', 'Accounting & Outsourcing', 'Advisory'],
-    image: '/images/Cities/Cameroon-Yaounde.jpg',
+    image: '/images/Cities/DRC.jpeg',
     googleMapsUrl: 'https://maps.app.goo.gl/daressalaam',
   },
 ];
