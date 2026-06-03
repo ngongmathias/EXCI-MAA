@@ -5,6 +5,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { offices } from '../data/offices';
 import MotionInView from '../components/enhanced/MotionInView';
 import Meta from '../components/common/Meta';
+import TeamMembers from '../components/pages/global-offices/TeamMembers';
 
 const GlobalOfficesPage: FC = () => {
   const { t } = useLanguage();
@@ -122,6 +123,9 @@ const GlobalOfficesPage: FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Our Global Team */}
+      <TeamMembers />
 
       {/* Global Support Section */}
       <section className="py-20 bg-white border-y border-slate-200">
